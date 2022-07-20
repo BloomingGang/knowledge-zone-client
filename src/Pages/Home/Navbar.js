@@ -103,7 +103,7 @@ const Navbar = () => {
           </li>
         </ul>
       </div>
-      <div className="mr-10">
+      <div className="md:mr-10 navbar-end">
         <button class="btn btn-outline text-white">Login</button>
       </div>
     </div>
