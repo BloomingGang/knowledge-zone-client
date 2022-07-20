@@ -98,14 +98,14 @@ const Reviews = () => {
         },
         mobile: {
             breakpoint: { max: 464, min: 0 },
-            items: 2
+            items: 1
         }
     };
 
     return (
         <div>
           <section
-            className='my-20'
+            // className='my-20'
             id='team-section'
         >
             <div className='container mx-auto'>
