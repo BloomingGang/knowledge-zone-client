@@ -12,7 +12,7 @@ const CardK = () => {
           </div>
           <div className="px-16  w-2/5">
             <h1 class="text-5xl font-bold">Available on all Platforms</h1>
-            <h1>Our products can be used on all devices</h1>
+            <h1>Our products can be used on all devices.</h1>
             <img src={devices} alt="" />
           </div>
         </div>
