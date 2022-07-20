@@ -7,37 +7,34 @@ import GradeThree from "./Pages/Routes/LearningProgram/GradeThree";
 import LearningProgram from "./Pages/Routes/LearningProgram/LearningProgram";
 
 
-import { Routes, Route } from "react-router-dom";
 import Home from "./Pages/Home/Home";
 import Footer from "./Pages/Shared/Footer";
-import Navbar from "./Pages/Shared/Navbar";
 import NotFound from "./Pages/Shared/NotFound";
 
-import Home from "./Pages/Home/Home";
 
 
 
 function App() {
   return (
     <div>
+      <Navbar />
 
-           <Routes>
-           <Route path="/home" element={<LearningProgram/>} >
-          <Route path="gradeThree" element={<GradeThree/>}/>
-          <Route path="gradeEight" element={<GradeFourToEight/>}/>
-          <Route path="gradeTwelve" element={<GradeNineToTwelve/>}/>
-        </Route>
-           </Routes>
-
-
-      <Navbar/>
-       <Routes>
+      <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="*" element={<NotFound />} />
-      </Routes>
-      <Footer/>
+        <Route path="/home" element={<LearningProgram />} >
+          <Route path="gradeThree" element={<GradeThree />} />
+          <Route path="gradeEight" element={<GradeFourToEight />} />
+          <Route path="gradeTwelve" element={<GradeNineToTwelve />} />
 
-      <Home></Home>
+        </Route>
+        <Route path="*" element={<NotFound />} />
+
+      </Routes>
+
+
+
+      <Footer />
+
 
 
     </div>

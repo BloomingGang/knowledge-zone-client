@@ -1,7 +1,6 @@
 
 import React from 'react';
 import CoursesAutoSlider from './CoursesAutoSlider';
-import React from "react";
 import HeroBanner from "../HeroBanner";
 import Navbar from "../Home/Navbar";
 import CardK from "./CardK";
@@ -25,14 +24,13 @@ const Home = () => {
       <HeroBanner/>
       <Learners/>
 
-      <HeroBanner />
 
       <CardK></CardK>
       <Reviews></Reviews>
-      <CarouselOne />
-      <CardOne />
       <EduBanner></EduBanner>
       <Investor></Investor>
+      <CarouselOne />
+      <CardOne />
         <CoursesAutoSlider></CoursesAutoSlider>
 
     </div>
