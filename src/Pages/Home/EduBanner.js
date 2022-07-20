@@ -3,6 +3,7 @@ import React from 'react';
 const EduBanner = () => {
     return (
         <div>
+
             <div class="hero min-h-screen">
                 <div class="hero-content flex-col lg:flex-row">
                     <div className="flex justify-center  ">
