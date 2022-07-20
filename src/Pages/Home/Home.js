@@ -2,12 +2,10 @@
 
 import React from 'react';
 import CoursesAutoSlider from './CoursesAutoSlider';
-import React from "react";
 
 import HeroBanner from "../HeroBanner";
 import Navbar from "../Home/Navbar";
 import CardK from "./CardK";
-import CoursesAutoSlider from "./CoursesAutoSlider";
 
 import Learners from "./Learners";
 
@@ -21,27 +19,15 @@ const Home = () => {
   return (
     <div>
       <Navbar></Navbar>
-
-
       <HeroBanner/>
       <Learners/>
-
-
-
-      <HeroBanner />
-      <Learners />
-
       <CardK></CardK>
       <Reviews></Reviews>
       <EduBanner></EduBanner>
       <Investor></Investor>
-
       <CarouselOne />
       <CardOne />
-        <CoursesAutoSlider></CoursesAutoSlider>
-
       <CoursesAutoSlider></CoursesAutoSlider>
-
     </div>
   );
 };
