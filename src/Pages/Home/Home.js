@@ -1,4 +1,9 @@
+
+
+import React from 'react';
+import CoursesAutoSlider from './CoursesAutoSlider';
 import React from "react";
+
 import HeroBanner from "../HeroBanner";
 import Navbar from "../Home/Navbar";
 import CardK from "./CardK";
@@ -16,15 +21,27 @@ const Home = () => {
   return (
     <div>
       <Navbar></Navbar>
+
+
+      <HeroBanner/>
+      <Learners/>
+
+
+
       <HeroBanner />
       <Learners />
+
       <CardK></CardK>
       <Reviews></Reviews>
-      <CarouselOne />
-      <CardOne />
       <EduBanner></EduBanner>
       <Investor></Investor>
+
+      <CarouselOne />
+      <CardOne />
+        <CoursesAutoSlider></CoursesAutoSlider>
+
       <CoursesAutoSlider></CoursesAutoSlider>
+
     </div>
   );
 };

@@ -31,7 +31,7 @@ const EduBanner = () => {
 </div>
 
 
-      <button class="btn btn-primary">Get Started</button>
+      <button class="btn btn-primary">Know More</button>
     </div>
   </div>
 </div>
