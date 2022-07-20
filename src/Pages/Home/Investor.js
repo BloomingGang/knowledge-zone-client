@@ -5,13 +5,40 @@ import "slick-carousel/slick/slick-theme.css";
 
 
 const Investor = () => {
-    const settings = {
+    var settings = {
         dots: true,
-        infinite: true,
+        infinite: false,
         speed: 500,
         slidesToShow: 3,
-        slidesToScroll: 3
-    };
+        slidesToScroll: 3,
+        initialSlide: 0,
+        responsive: [
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 3,
+              infinite: true,
+              dots: true
+            }
+          },
+          {
+            breakpoint: 600,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2,
+              initialSlide: 2
+            }
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          }
+        ]
+      };
 
     const investors = [
         {
@@ -75,6 +102,10 @@ const Investor = () => {
 
         },
     ]
+
+
+
+
     return (
         <div>
             <div className='bg-blue-100 p-10'>
@@ -90,7 +121,7 @@ const Investor = () => {
                         >
 
                            <div className="py-16 px-10">
-                           <div class="card w-96 bg-base-100 shadow-xl">
+                           <div class="card bg-base-100 shadow-xl">
                                 <figure class="px-10 pt-10">
                                     <img src={investor.avatar} alt="Shoes" class="rounded-xl" />
                                 </figure>
