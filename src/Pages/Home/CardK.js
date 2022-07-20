@@ -1,6 +1,6 @@
 import React from "react";
-import img from "../../img/handelDevice.png";
 import devices from "../../img/devices.svg";
+import img from "../../img/handelDevice.png";
 
 const CardK = () => {
   return (
