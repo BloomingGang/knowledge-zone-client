@@ -6,9 +6,9 @@ const HeroBanner = () => {
     <div class="hero min-h-screen bg-gradient-to-r from-blue-500 to-blue-900 text-white">
       <div class="hero-content flex-col lg:flex-row-reverse ">
         <div className="w-1/2 flex justify-center">
-          <img src={heroIMG} alt="" class="max-w-sm  " />
+          <img src={heroIMG} alt="" class="max-w-sm pt-10 " />
         </div>
-        <div className="w-1/2 px-12">
+        <div className="md:w-1/2 px-12">
           <h1 class="text-5xl font-bold">Welcome to the future of learning</h1>
           <p class="py-6">
             BYJU'S makes learning engaging & effective by leveraging deep
