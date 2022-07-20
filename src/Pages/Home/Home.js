@@ -1,6 +1,11 @@
-import React from "react";
+
+
+import React from 'react';
+import CoursesAutoSlider from './CoursesAutoSlider';
+
 import HeroBanner from "../HeroBanner";
 import Navbar from "../Home/Navbar";
+
 import CardK from './CardK';
 import CardOne from './CardOne';
 import CarouselOne from './CarouselOne';
@@ -12,18 +17,19 @@ import Reviews from './Reviews';
 
 
 
+
 const Home = () => {
   return (
     <div>
       <Navbar></Navbar>
-      <HeroBanner />
-      <Learners />
+      <HeroBanner/>
+      <Learners/>
       <CardK></CardK>
       <Reviews></Reviews>
-      <CarouselOne />
-      <CardOne />
       <EduBanner></EduBanner>
       <Investor></Investor>
+      <CarouselOne />
+      <CardOne />
       <CoursesAutoSlider></CoursesAutoSlider>
     </div>
   );
