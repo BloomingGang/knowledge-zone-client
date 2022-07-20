@@ -1,12 +1,18 @@
+import { Routes, Route } from "react-router-dom";
+import Home from "./Pages/Home/Home";
+import Footer from "./Pages/Shared/Footer";
+import Navbar from "./Pages/Shared/Navbar";
+import NotFound from "./Pages/Shared/NotFound";
+
 function App() {
   return (
     <div>
-      <h1>knowledge zone</h1>
-      <h1>kausar</h1>
-      <h1>Faisal Karim</h1>
-      <h1>Hello Developer</h1>
-<h1>Hello everyone....</h1>
-<h1>Nipa Branch Create</h1>
+      <Navbar/>
+       <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="*" element={<NotFound />} />
+      </Routes>
+      <Footer/>
     </div>
   );
 }
