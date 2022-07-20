@@ -5,8 +5,10 @@ const EduBanner = () => {
         <div>
           <div class="hero min-h-screen">
   <div class="hero-content flex-col lg:flex-row">
+
   <div className="flex justify-center  ">
     <img src="https://byjus-f9igwgtqi.whjr.dev/images/aboutus/kids.png?auto=format&fit=max&w=1920" class="max-w-sm rounded-lg shadow-2xl" />
+
     </div>
     <div>
       <h1 class="text-5xl text-blue-500 font-bold">Education for All</h1>
