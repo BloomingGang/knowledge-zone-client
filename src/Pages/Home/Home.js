@@ -1,16 +1,14 @@
 
 
 import React from 'react';
-import CoursesAutoSlider from './CoursesAutoSlider';
 
 import HeroBanner from "../HeroBanner";
+import EduBanner from '../Home/EduBanner';
 import Navbar from "../Home/Navbar";
-
 import CardK from './CardK';
 import CardOne from './CardOne';
 import CarouselOne from './CarouselOne';
 import CoursesAutoSlider from './CoursesAutoSlider';
-import EduBanner from "./EduBanner";
 import Investor from './Investor';
 import Learners from './Learners';
 import Reviews from './Reviews';
