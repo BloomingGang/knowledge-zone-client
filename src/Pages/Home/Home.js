@@ -25,7 +25,7 @@ const Home = () => {
       <Investor></Investor>
       <CarouselOne />
       <CardOne />
-      <CoursesAutoSlider></CoursesAutoSlider>
+      {/* <CoursesAutoSlider></CoursesAutoSlider> */}
     </div>
   );
 };
