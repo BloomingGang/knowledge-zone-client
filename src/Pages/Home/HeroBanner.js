@@ -1,9 +1,9 @@
 import React from "react";
-import heroIMG from "../img/header_image_1.png";
+import heroIMG from "../../img/header_image_1.png";
 
 const HeroBanner = () => {
   return (
-    <div class="hero min-h-screen bg-gradient-to-r from-blue-500 to-blue-900 text-white">
+    <div class="hero min-h-screen bg-gradient-to-r from-blue-900 via-indigo-900 to-purple-900 text-white py-12">
       <div class="hero-content flex-col lg:flex-row-reverse ">
         <div className="w-1/2 flex justify-center">
           <img src={heroIMG} alt="" class="max-w-sm pt-10 " />

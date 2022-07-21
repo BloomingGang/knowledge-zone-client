@@ -88,7 +88,7 @@ const Investor = () => {
         {
             avatar: "https://byjus-f9igwgtqi.whjr.dev/images/aboutus/investors/Qatar.png?auto=format&fit=max&w=256",
             name: 'Mansoor Bin Ebrahim Al Mahmoud            ',
-            description: 'We are excited to partner with BYJU’S and look forward to working with them as BYJU’S builds on and accelerates its compelling growth trajectory by forging new partnerships and continuing to cultivate a comprehensive ecosystem of innovative educational offerings.            ',
+            description: 'We are excited to partner with BYJU’S and  working with them as BYJU’S builds on and accelerates its  growth trajectory by forging new partnerships and continuing to cultivate a comprehensive ecosystem of innovative educational offerings.            ',
 
         },
         {
@@ -129,7 +129,7 @@ const Investor = () => {
                         >
 
                            <div className="py-16 px-10">
-                           <div class="card bg-base-100 shadow-xl">
+                           <div class="card bg-base-100 shadow-xl min-h-[400px]">
                                 <figure class="px-10 pt-10">
                                     <img src={investor.avatar} alt="Shoes" class="rounded-xl" />
                                 </figure>
