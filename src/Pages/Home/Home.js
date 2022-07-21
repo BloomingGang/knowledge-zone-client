@@ -13,9 +13,9 @@ import Reviews from './Reviews';
 const Home = () => {
   return (
     <div>
-      <HeroBanner />
-      <Learners />
-      <LearningProgram />
+      <HeroBanner/>
+      <Learners/>
+      <LearningProgram/>
       <CardK></CardK>
       <Reviews></Reviews>
       <EduBanner></EduBanner>
