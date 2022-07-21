@@ -39,21 +39,25 @@ const CoursesAutoSlider = () => {
     return (
         <div className="bg-gradient-to-r from-blue-800 via-indigo-800 to-purple-800 py-12">
             <div className="">
-            <img style={{marginTop:"-100px"}} width={100} className='bg-blue-200 p-3 rounded-full mx-auto' src="/images/logo/kz.png" alt="" />
+                <img style={{ marginTop: "-100px" }} width={100} className='bg-blue-200 p-3 rounded-full mx-auto' src="/images/logo/kz.png" alt="" />
             </div>
 
             <h1 className="text-white text-center text-3xl my-8">Our Brands & Products</h1>
-           
+
             <div className="container mx-auto">
                 <Slider {...settings}>
+
                     {
-                        sliderItems.map((item, index) => <div
-                        className="bg-white p-8 rounded-2xl m-4 font-bold"
-                            key={index}>
-                            <i className="text-2xl text-indigo-900">K<span className="text-purple-900">Z</span></i>
-                            <h2 className="text-orange-800 text-xl">{item.course}</h2>
+                        sliderItems.map((item, index) => <div className="mx-4">
+                            <div
+                                className="bg-white p-8 rounded-2xl m-4 font-bold"
+                                key={index}>
+                                <i className="text-2xl text-indigo-900">K<span className="text-purple-900">Z</span></i>
+                                <h2 className="text-orange-800 text-xl">{item.course}</h2>
+                            </div>
                         </div>)
                     }
+
                 </Slider>
             </div>
 
