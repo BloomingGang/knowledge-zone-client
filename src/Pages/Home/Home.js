@@ -10,13 +10,15 @@ import Investor from "./Investor";
 import Learners from "./Learners";
 import Reviews from "./Reviews";
 import HeroBanner from "./HeroBanner";
+import LearningProgram from "../Routes/LearningProgram/LearningProgram";
 
 const Home = () => {
   return (
     <div>
       <Navbar></Navbar>
-      <HeroBanner />
-      <Learners />
+      <HeroBanner/>
+      <Learners/>
+      <LearningProgram/>
       <CardK></CardK>
       <Reviews></Reviews>
       <EduBanner></EduBanner>
