@@ -14,14 +14,14 @@ const EduBanner = () => {
 
 
                     <div class="carousel w-full py-8">
-                        <div id="item1" class="carousel-item">
+                        <div id="item1" class="carousel-item w-full">
 
-                            <h1 class="text-3xl font-bold">Making dreams come true with the power of education.</h1>
+                            <h1 class="text-3xl font-bold ">Making dreams come true with the power of education.</h1>
                         </div>
-                        <div id="item2" class="carousel-item">
+                        <div id="item2" class="carousel-item w-full">
                             <h1 class="text-3xl font-bold">3.4 Millions+ students connected to the education within a year.</h1>
                         </div>
-                        <div id="item3" class="carousel-item">
+                        <div id="item3" class="carousel-item w-full">
                             <h1 class="text-3xl font-bold">On a mission to empower 10 Million+ children by 2025.</h1>
                         </div>
 
