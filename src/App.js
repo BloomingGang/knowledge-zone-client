@@ -1,11 +1,9 @@
-
+import React from 'react';
 import { Routes, Route } from "react-router-dom";
 import Home from "./Pages/Home/Home";
 import Footer from "./Pages/Shared/Footer";
 import Navbar from "./Pages/Shared/Navbar";
 import NotFound from "./Pages/Shared/NotFound";
-
-import Home from "./Pages/Home/Home";
 
 
 function App() {
@@ -19,7 +17,6 @@ function App() {
       </Routes>
       <Footer/>
 
-      <Home></Home>
 
     </div>
   );
