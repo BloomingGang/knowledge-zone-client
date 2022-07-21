@@ -28,8 +28,8 @@ const CoursesAutoSlider = () => {
         },
     ]
     var settings = {
-        infinite: false,
-        speed: 500,
+        infinite: true,
+        speed: 5000,
         slidesToShow: 5,
         slidesToScroll: 5,
         initialSlide: 0,
@@ -75,7 +75,7 @@ const CoursesAutoSlider = () => {
                 <Slider {...settings}>
 
                     {
-                        sliderItems.map((item, index) => <div className="mx-4">
+                        sliderItems.map((item, index) => <div>
                             <div
                                 className="bg-white p-8 rounded-2xl m-4 font-bold"
                                 key={index}>
