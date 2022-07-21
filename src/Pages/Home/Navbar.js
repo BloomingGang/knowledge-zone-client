@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from 'react-router-dom';
+
 
 const Navbar = () => {
   return (
@@ -49,7 +51,9 @@ const Navbar = () => {
             </li>
           </ul>
         </div>
-        <a class="btn btn-ghost normal-case text-xl">Knowledge Zone</a>
+        <Link to="/" class="btn btn-ghost normal-case text-xl">
+          Knowledge Zone
+        </Link>
       </div>
       <div class="navbar-start hidden lg:flex">
         <ul class="menu menu-horizontal p-0">
@@ -99,8 +103,8 @@ const Navbar = () => {
           </li>
         </ul>
       </div>
-      <div class="navbar-end">
-        <a class="btn">Get started</a>
+      <div className="md:mr-10 navbar-end">
+        <button class="btn btn-outline text-white">Login</button>
       </div>
     </div>
   );
