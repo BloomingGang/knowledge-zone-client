@@ -1,8 +1,7 @@
-
 import React from 'react';
 import { Route, Routes } from "react-router-dom";
 import Home from "./Pages/Home/Home";
-import Navbar from "./Pages/Home/Navbar";
+import Navbar from "./Pages/Shared/Navbar";
 import GradeFourToEight from "./Pages/Routes/LearningProgram/GradeFourToEight";
 import GradeNineToTwelve from "./Pages/Routes/LearningProgram/GradeNineToTwelve";
 import GradeThree from "./Pages/Routes/LearningProgram/GradeThree";
@@ -23,7 +22,6 @@ function App() {
           <Route path="gradeTwelve" element={<GradeNineToTwelve />} />
         </Route>
         <Route path="*" element={<NotFound />} />
-
       </Routes>
       <Footer />
 
