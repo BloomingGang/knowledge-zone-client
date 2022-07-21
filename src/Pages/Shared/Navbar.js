@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   return (
-    <div class="navbar bg-gradient-to-r from-blue-900 via-indigo-900 to-purple-900 text-white fixed z-50">
+    <div class="navbar bg-gradient-to-r from-blue-900 via-indigo-900 to-purple-900 text-white fixed z-50 w-full overflow-hidden">
       <div class="navbar-start">
         <div class="dropdown">
           <label tabindex="0" class="btn btn-ghost lg:hidden">
