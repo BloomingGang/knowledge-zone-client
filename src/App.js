@@ -23,7 +23,6 @@ function App() {
           <Route path="gradeTwelve" element={<GradeNineToTwelve />} />
         </Route>
         <Route path="*" element={<NotFound />} />
-
       </Routes>
       <Footer />
 
