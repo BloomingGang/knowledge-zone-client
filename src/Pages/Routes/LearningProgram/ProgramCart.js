@@ -27,7 +27,7 @@ const ProgramCart = ({info}) => {
                                 </p>
                             </div>
                             <div>
-                                <Link to={'#'} className="btn"> EXPLORE </Link>
+                                <Link to={'#'} className="btn"> EXPLORE &gt; </Link>
                             </div>
 
 
