@@ -1,7 +1,6 @@
 
 import React from "react";
 import CoursesAutoSlider from "./CoursesAutoSlider";
-import Navbar from "../Shared/Navbar";
 import CardK from "./CardK";
 import CardOne from "./CardOne";
 import CarouselOne from "./CarouselOne";
@@ -15,7 +14,6 @@ import LearningProgram from "../Routes/LearningProgram/LearningProgram";
 const Home = () => {
   return (
     <div>
-      <Navbar></Navbar>
       <HeroBanner/>
       <Learners/>
       <LearningProgram/>
