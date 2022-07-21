@@ -34,7 +34,6 @@ const CoursesAutoSlider = () => {
         slidesToScroll: 5,
         initialSlide: 0,
         autoplay: true,
-        speed: 5000,
         autoplaySpeed: 5000,
         cssEase: "linear",
         responsive: [
@@ -74,15 +73,18 @@ const CoursesAutoSlider = () => {
 
             <div className="container mx-auto">
                 <Slider {...settings}>
+
                     {
-                        sliderItems.map((item, index) => <div
-                        className="bg-white p-8 rounded-xl font-bold"
-                            key={index}>
-                        
+                        sliderItems.map((item, index) => <div className="mx-4">
+                            <div
+                                className="bg-white p-8 rounded-2xl m-4 font-bold"
+                                key={index}>
                                 <i className="text-2xl text-indigo-900">K<span className="text-purple-900">Z</span></i>
                                 <h2 className="text-orange-800 text-xl">{item.course}</h2>
+                            </div>
                         </div>)
                     }
+
                 </Slider>
             </div>
 

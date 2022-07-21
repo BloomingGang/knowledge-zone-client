@@ -1,22 +1,21 @@
-
 import React from "react";
-import Navbar from "../Shared/Navbar";
-import CardK from "./CardK";
-import CardOne from "./CardOne";
-import CarouselOne from "./CarouselOne";
+import LearningProgram from './../Routes/LearningProgram/LearningProgram';
+import CardK from './CardK';
+import CardOne from './CardOne';
+import CarouselOne from './CarouselOne';
 import CoursesAutoSlider from "./CoursesAutoSlider";
 import EduBanner from "./EduBanner";
-import HeroBanner from "./HeroBanner";
-import Investor from "./Investor";
+import HeroBanner from './HeroBanner';
+import Investor from './Investor';
 import Learners from "./Learners";
-import Reviews from "./Reviews";
+import Reviews from './Reviews';
 
 const Home = () => {
   return (
     <div>
-      <Navbar></Navbar>
       <HeroBanner />
       <Learners />
+      <LearningProgram />
       <CardK></CardK>
       <Reviews></Reviews>
       <EduBanner></EduBanner>
