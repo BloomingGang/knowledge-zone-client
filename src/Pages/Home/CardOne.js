@@ -9,7 +9,8 @@ import logo3 from "../../img/assets/wef-logo.png";
 const CardOne = () => {
   return (
     <div className="bg-gradient-to-r from-blue-900 via-indigo-900 to-purple-900 pb-12">
-      <div className="grid md:grid-cols-3 gap-10 py-16 px-10">
+      <div className="container mx-auto">
+      <div className="grid md:grid-cols-3 gap-10 py-16 ">
         <div className="bg-white rounded-xl p-5">
           <img src={logo1} alt="" className="w-[100px] h-[80px] pb-5" />
           <img src={img1} alt="" className="rounded-lg pb-5" />
@@ -37,6 +38,7 @@ const CardOne = () => {
             surged.
           </p>
         </div>
+      </div>
       </div>
     </div>
   );
