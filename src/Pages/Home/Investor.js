@@ -88,7 +88,7 @@ const Investor = () => {
         {
             avatar: "https://byjus-f9igwgtqi.whjr.dev/images/aboutus/investors/Qatar.png?auto=format&fit=max&w=256",
             name: 'Mansoor Bin Ebrahim Al Mahmoud            ',
-            description: 'We are excited to partner with BYJU’S and  working with them as BYJU’S builds on and accelerates its  growth trajectory by forging new partnerships and continuing to cultivate a comprehensive ecosystem of innovative educational offerings.            ',
+            description: 'We are excited to partner with BYJU’S and working with them as BYJU’S builds on and accelerates its  growth trajectory by forging new partnerships and continuing to cultivate a comprehensive ecosystem of innovative educational offerings.',
 
         },
         {
@@ -105,7 +105,7 @@ const Investor = () => {
         },
         {
             avatar: "https://byjus-f9igwgtqi.whjr.dev/images/aboutus/investors/IFC.png?auto=format&fit=max&w=256",
-            name: 'Ruchira Shukla            ',
+            name: 'Ruchira Shukla',
             description: 'This partnership with BYJU’S will help enhance our focus on technology enabled learning platforms for academic improvement, skill development platforms as well as supplemental and low cost education solutions.            ',
 
         },
