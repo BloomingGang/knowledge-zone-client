@@ -1,7 +1,7 @@
 import React from "react";
 import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import "slick-carousel/slick/slick.css";
 
 const CoursesAutoSlider = () => {
     const sliderItems = [
@@ -35,6 +35,7 @@ const CoursesAutoSlider = () => {
         speed: 4000,
         autoplaySpeed: 4000,
         cssEase: "linear"
+
     };
     return (
         <div className="bg-gradient-to-r from-blue-800 via-indigo-800 to-purple-800 py-12">
@@ -48,7 +49,7 @@ const CoursesAutoSlider = () => {
                 <Slider {...settings}>
                     {
                         sliderItems.map((item, index) => <div
-                        className="bg-white p-8 rounded-2xl m-4 font-bold"
+                        className="bg-white p-8 rounded-2xl  m-4 font-bold"
                             key={index}>
                             <i className="text-2xl text-indigo-900">K<span className="text-purple-900">Z</span></i>
                             <h2 className="text-orange-800 text-xl">{item.course}</h2>
