@@ -5,9 +5,9 @@ import { Link } from 'react-router-dom';
 const ProgramCart = ({info}) => {
     const {icon,title,programs,description,program_img}=info
     return (
-        <div className='w-full hover:shadow-xl'>
+        <div className='w-full hover:shadow-xl border-2 border-gray-100 rounded-xl'>
 
-                <div className=" bg-base-100 shadow-xl p-5">
+                <div className=" bg-base-100 p-5 rounded-xl">
                     <div>
                         <img src={icon} alt="" />
                     </div>

@@ -2,14 +2,13 @@ import React from 'react';
 
 const EduBanner = () => {
     return (
-       <section className='container mx-auto'>
-         <div class=" flex items-center justify-center">
+       <section className='container mx-auto my-10'>
             <div class="flex flex-col lg:flex-row">
-                <div className="flex justify-center  ">
-                    <img src="https://byjus-f9igwgtqi.whjr.dev/images/aboutus/kids.png" alt='' class="max-w-sm md:max-w-md lg:max-w-lg rounded-lg" />
+                <div>
+                    <img src="https://byjus-f9igwgtqi.whjr.dev/images/aboutus/kids.png" alt='' className="md:max-w-md lg:max-w-lg rounded-lg" />
                 </div>
 
-                <div className='w-full flex flex-col lg:px-5 justify-center px-0'>
+                <div className='flex flex-col  justify-center px-5'>
                     <h1 class="lg:text-5xl text-4xl text-blue-500 font-bold">Education for All</h1>
                     <div class="carousel w-full py-8">
                         <div id="item1" class="carousel-item w-full">
@@ -38,7 +37,6 @@ const EduBanner = () => {
                 
                 </div>
             </div>
-        </div>
        </section>
     );
 };
