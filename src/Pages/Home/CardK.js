@@ -20,7 +20,7 @@ const CardK = () => {
           </div>
         </div>
       </div>
-      <div>
+      <div className="container mx-auto">
         <div className="bg-[#F7F5FD] border-2 rounded-3xl">
           <div className=" lg:flex static px-[10%]">
             <div className="lg:w-[50%] w-full flex justify-around flex-col sm:order-2 lg:order-1 gap-y-3 lg:gap-y-0 mt-5 lg:mt-0">
