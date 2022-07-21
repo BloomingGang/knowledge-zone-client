@@ -5,7 +5,7 @@ const EduBanner = () => {
         <div class="hero min-h-screen">
             <div class="hero-content flex-col lg:flex-row">
                 <div className="flex justify-center  ">
-                    <img src="https://byjus-f9igwgtqi.whjr.dev/images/aboutus/kids.png?auto=format&fit=max&w=1920" class="max-w-sm md:max-w-md lg:max-w-lg rounded-lg" />
+                    <img src="https://byjus-f9igwgtqi.whjr.dev/images/aboutus/kids.png?auto=format&fit=max&w=1920" alt='' class="max-w-sm md:max-w-md lg:max-w-lg rounded-lg" />
                 </div>
 
                 <div className='w-full'>
