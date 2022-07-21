@@ -12,8 +12,10 @@ const EduBanner = () => {
                     <h1 class="text-5xl text-blue-500 font-bold">Education for All</h1>
 
 
+
                     <div class="carousel w-full py-8">
                         <div id="item1" class="carousel-item">
+
                             <h1 class="text-3xl font-bold">Making dreams come true with the power of education.</h1>
                         </div>
                         <div id="item2" class="carousel-item">
@@ -24,7 +26,7 @@ const EduBanner = () => {
                         </div>
 
                     </div>
-                    <div class="flex justify-center w-full py-2 gap-2">
+                    <div class="flex justify-center py-2 gap-2">
                         <a href="#item1" class="btn btn-xs">1</a>
                         <a href="#item2" class="btn btn-xs">2</a>
                         <a href="#item3" class="btn btn-xs">3</a>
