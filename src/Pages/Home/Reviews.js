@@ -80,7 +80,7 @@ const Reviews = () => {
     };
 
     return (
-        <div>
+        <div className='mt-10'>
             <section
                 // className='my-20'
                 id='team-section'

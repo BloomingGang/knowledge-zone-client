@@ -2,10 +2,11 @@ import React from "react";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
-import img1 from "../../img/assets/slider1.jpg";
-import img2 from "../../img/assets/slider2.jpg";
-import img3 from "../../img/assets/slider3.jpg";
-import img4 from "../../img/assets/slider4.jpg";
+import carousel1 from '../../img/assets/carusel/carusel-1.jpg'
+import carousel2 from '../../img/assets/carusel/carusel-2.webp'
+import carousel3 from '../../img/assets/carusel/carusel-3.jpg'
+import carousel4 from '../../img/assets/carusel/carusel-4.jpg'
+
 
 const settings = {
   dots: false,
@@ -21,21 +22,23 @@ const settings = {
 
 const CarouselOne = () => {
   return (
-    <div className="px-7">
-      <Slider {...settings}>
+    <div className="px-7 bg-gradient-to-r from-blue-900 via-indigo-900 to-purple-900 pt-24 ">
+     <div className="container mx-auto">
+     <Slider {...settings}>
         <div>
-          <img src={img1} alt="" className="mx-auto w-full h-[300px]" />
+          <img src={carousel1} alt="" className="mx-auto w-full h-[300px]" />
         </div>
         <div>
-          <img src={img2} alt="" className="mx-auto w-full h-[300px]" />
+          <img src={carousel2} alt="" className="mx-auto w-full h-[300px]" />
         </div>
         <div>
-          <img src={img3} alt="" className="mx-auto w-full h-[300px]" />
+          <img src={carousel3} alt="" className="mx-auto w-full h-[300px]" />
         </div>
         <div>
-          <img src={img4} alt="" className="mx-auto w-full h-[300px]" />
+          <img src={carousel4} alt="" className="mx-auto w-full h-[300px]" />
         </div>
       </Slider>
+     </div>
     </div>
   );
 };
