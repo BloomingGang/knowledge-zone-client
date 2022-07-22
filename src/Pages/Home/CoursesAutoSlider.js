@@ -64,7 +64,7 @@ const CoursesAutoSlider = () => {
         ]
     };
     return (
-        <div className="bg-gradient-to-r from-blue-800 via-indigo-800 to-purple-800 py-12">
+        <div className="bg-gradient-to-r from-blue-800 via-indigo-800 to-purple-800 py-12 px-7">
             <div className="">
                 <img style={{ marginTop: "-100px" }} width={100} className='bg-blue-200 p-3 rounded-full mx-auto' src="/images/logo/kz.png" alt="" />
             </div>
@@ -75,6 +75,7 @@ const CoursesAutoSlider = () => {
                 <Slider {...settings}>
 
                     {
+
                         sliderItems.map((item, index) => <div>
                             <div
                                 className="bg-white p-8 rounded-2xl m-4 font-bold"
