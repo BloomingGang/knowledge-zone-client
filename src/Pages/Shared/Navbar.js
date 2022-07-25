@@ -125,6 +125,9 @@ const Navbar = () => {
           </li>
         </ul>
       </div>
+      <div class="navbar-end">
+        <Link to='/login' class="btn btn-outline text-white">Login</Link>
+      </div>
     </div>
   );
 };
