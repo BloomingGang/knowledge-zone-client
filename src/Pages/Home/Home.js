@@ -1,5 +1,4 @@
 import React from "react";
-import LearningProgram from './../Routes/LearningProgram/LearningProgram';
 import CardK from './CardK';
 import CardOne from './CardOne';
 import CarouselOne from './CarouselOne';
@@ -8,6 +7,7 @@ import EduBanner from "./EduBanner";
 import HeroBanner from './HeroBanner';
 import Investor from './Investor';
 import Learners from "./Learners";
+import LearningProgram from "./LearningProgram/LearningProgram";
 import Reviews from './Reviews';
 
 const Home = () => {
