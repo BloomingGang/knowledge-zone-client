@@ -9,7 +9,7 @@ const HeroBanner = () => {
           <img src={heroIMG} alt="" class="max-w-sm pt-10  w-full" />
         </div>
         <div className="md:w-1/2 ">
-          <h1 class="text-5xl font-bold">Welcome to the future of learning</h1>
+          <h1 class="text-5xl font-bold ">Welcome to the future of learning</h1>
           <p class="py-6">
             BYJU'S makes learning engaging & effective by leveraging deep
             pedagogy & cutting edge technology. With offerings ranging from

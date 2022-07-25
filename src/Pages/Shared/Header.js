@@ -1,7 +1,7 @@
+import { MenuIcon, XIcon } from "@heroicons/react/solid";
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import logo from "../../img/logo.png";
-import { MenuIcon, XIcon } from "@heroicons/react/solid";
 
 const Header = () => {
   const [open, setOpen] = useState(false);
@@ -30,7 +30,7 @@ const Header = () => {
         <Link to="/">Contact US</Link>
       </li>
       <li className="mr-4 p-2 hover:bg-blue-500 rounded font-bold">
-        <Link to="/">Login</Link>
+        <Link to="/login">Login</Link>
       </li>
     </>
   );
