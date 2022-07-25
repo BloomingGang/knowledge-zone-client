@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import { Route, Routes } from "react-router-dom";
 import Login from './auth/Login';
 import Register from './auth/Register';
@@ -7,13 +7,13 @@ import GradeFourToEight from "./Pages/Routes/LearningProgram/GradeFourToEight";
 import GradeNineToTwelve from "./Pages/Routes/LearningProgram/GradeNineToTwelve";
 import GradeThree from "./Pages/Routes/LearningProgram/GradeThree";
 import Footer from "./Pages/Shared/Footer";
-import Navbar from './Pages/Shared/Navbar';
+import Header from "./Pages/Shared/Header";
 import NotFound from "./Pages/Shared/NotFound";
 
 function App() {
   return (
     <div>
-      <Navbar />
+      <Header></Header>
       <Routes>
         <Route path="/" element={<Home />}>
           <Route index element={<GradeThree />} />
@@ -25,7 +25,6 @@ function App() {
         <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />
-
     </div>
   );
 }
