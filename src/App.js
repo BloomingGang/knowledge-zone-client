@@ -3,6 +3,10 @@ import { Route, Routes } from "react-router-dom";
 import Login from './auth/Login';
 import Register from './auth/Register';
 import Home from "./Pages/Home/Home";
+import Bengali from "./Pages/Routes/Instructor/Bengali";
+import English from "./Pages/Routes/Instructor/English";
+import Instructor from "./Pages/Routes/Instructor/Instructor";
+import Mathematics from "./Pages/Routes/Instructor/Mathematics";
 import GradeFourToEight from "./Pages/Routes/LearningProgram/GradeFourToEight";
 import GradeNineToTwelve from "./Pages/Routes/LearningProgram/GradeNineToTwelve";
 import GradeThree from "./Pages/Routes/LearningProgram/GradeThree";
@@ -20,8 +24,16 @@ function App() {
           <Route path="gradeEight" element={<GradeFourToEight />} />
           <Route path="gradeTwelve" element={<GradeNineToTwelve />} />
         </Route>
+          {/* instructor route list */}
+        <Route path="/instructor" element={<Instructor />}>
+        <Route index element={<Bengali />} />
+        <Route path="english" element={<English />} />
+        <Route path="mathematics" element={<Mathematics />} />
+        </Route>
+
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
+        <Route path="/instructor" element={<Instructor />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />
