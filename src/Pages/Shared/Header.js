@@ -1,7 +1,7 @@
 import { MenuIcon, XIcon } from "@heroicons/react/solid";
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import logo from "../../img/logo.png";
+import logo from "../../img/assets/kz.png";
 
 const Header = () => {
   const [open, setOpen] = useState(false);
@@ -38,15 +38,15 @@ const Header = () => {
     <div className="bg-gradient-to-r from-blue-900 via-indigo-900 to-purple-900 relative">
       <div className="md:flex flex-row justify-between items-center py-6 px-14 hidden ">
         <div className="flex flex-row items-center">
-          <img src={logo} alt="" width="80" height="80" />
-          <h1 className="text-white font-bold text-2xl px-4">Knowledge Zone</h1>
+          <img src={logo} alt="" width="80" height="60" />
+          <h1 className="text-white font-bold text-3xl px-4">Knowledge Zone</h1>
         </div>
 
         <div>
           <input
             type="search"
             name="text"
-            className="rounded px-4"
+            className="rounded px-8 py-2"
             placeholder="Search"
           />
         </div>
@@ -56,17 +56,17 @@ const Header = () => {
         <nav className="">
           <div className="md:hidden flex flex-row items-center justify-between p-4 ">
             <div className="flex flex-row items-center">
-              <img src={logo} alt="" width="50" height="50" />
-              <h1 className="text-white font-bold text-xl px-4">
+              <img src={logo} alt="" width="50" height="30" />
+              <h1 className="text-white font-bold text-2xl px-4">
                 Knowledge Zone
               </h1>
             </div>
-            <div onClick={() => setOpen(!open)} className="w-6 h-6 text-white">
+            <div onClick={() => setOpen(!open)} className="w-8 h-8 text-white font-bold">
               {open ? <XIcon></XIcon> : <MenuIcon></MenuIcon>}
             </div>
           </div>
           <ul
-            className={`md:flex justify-center bg-white p-2 mx-auto w-full rounded-md absolute md:static duration-500 ease-in z-50 ${
+            className={`md:flex justify-center bg-gradient-to-r from-blue-300 via-indigo-300 to-purple-300  p-2 mx-auto w-full rounded-md absolute md:static duration-500 ease-in z-50 ${
               open ? "top-20 " : "top-[-350px]"
             }`}
           >
