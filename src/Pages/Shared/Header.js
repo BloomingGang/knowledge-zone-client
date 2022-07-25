@@ -1,9 +1,20 @@
 import { MenuIcon, XIcon } from "@heroicons/react/solid";
+import { signOut } from "firebase/auth";
 import React, { useState } from "react";
+import { useAuthState } from "react-firebase-hooks/auth";
 import { Link } from "react-router-dom";
+import auth from "../../firebase.init";
 import logo from "../../img/assets/kz.png";
+import NavDropDown from "./NavDropDown";
 
 const Header = () => {
+  const [user, loading, error] = useAuthState(auth);
+  console.log(user);
+
+  const logout = () => {
+    signOut(auth);
+  };
+
   const [open, setOpen] = useState(false);
 
   const menuItems = (
@@ -29,8 +40,9 @@ const Header = () => {
       <li className="mr-4 p-2 hover:bg-blue-500 rounded font-bold">
         <Link to="/">Contact US</Link>
       </li>
+
       <li className="mr-4 p-2 hover:bg-blue-500 rounded font-bold">
-        <Link to="/login">Login</Link>
+        {user ? <NavDropDown></NavDropDown> : <Link to="/login">Login</Link>}
       </li>
     </>
   );
@@ -61,13 +73,16 @@ const Header = () => {
                 Knowledge Zone
               </h1>
             </div>
-            <div onClick={() => setOpen(!open)} className="w-8 h-8 text-white font-bold">
+            <div
+              onClick={() => setOpen(!open)}
+              className="w-8 h-8 text-white font-bold"
+            >
               {open ? <XIcon></XIcon> : <MenuIcon></MenuIcon>}
             </div>
           </div>
           <ul
             className={`md:flex justify-center bg-gradient-to-r from-blue-300 via-indigo-300 to-purple-300  p-2 mx-auto w-full rounded-md absolute md:static duration-500 ease-in z-50 ${
-              open ? "top-20 " : "top-[-350px]"
+              open ? "top-20 " : "top-[-450px]"
             }`}
           >
             {menuItems}
