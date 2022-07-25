@@ -29,9 +29,6 @@ function App() {
         <Route index element={<Bengali />} />
         <Route path="english" element={<English />} />
         <Route path="mathematics" element={<Mathematics />} />
-        <Route path="instructor" element={<Instructor />} />
-        <Route path="instructor" element={<Instructor />} />
-        <Route path="instructor" element={<Instructor />} />
         </Route>
 
         <Route path="/login" element={<Login />} />
