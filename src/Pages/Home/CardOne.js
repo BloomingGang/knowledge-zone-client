@@ -8,44 +8,37 @@ import logo3 from "../../img/assets/wef-logo.png";
 
 const CardOne = () => {
   return (
-    <div>
-      <div className="grid md:grid-cols-3 gap-10 py-16 px-10">
+    <div className="bg-gradient-to-r from-blue-900 via-indigo-900 to-purple-900 pb-12">
+      <div className="container mx-auto">
+      <div className="grid md:grid-cols-3 gap-10 py-16 ">
         <div className="bg-white rounded-xl p-5">
           <img src={logo1} alt="" className="w-[100px] h-[80px] pb-5" />
           <img src={img1} alt="" className="rounded-lg pb-5" />
           <p className="text-lg text-justify">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat,
-            eius? Quidem nemo atque pariatur esse quis aut vitae. Similique
-            quisquam voluptatem doloribus minus, sunt soluta. Voluptate
-            quibusdam ducimus mollitia suscipit inventore. Non eum fuga
-            accusamus rerum, aliquid nesciunt iste obcaecati ut tempora deleniti
-            in fugiat inventore harum. Tempora, tempore iusto?
+            Bangalore-based education technology company Byju's became India's
+            most valuable startup in 2021, as the demand for online learning
+            surged.
           </p>
         </div>
         <div className="bg-white rounded-xl p-5">
           <img src={logo2} alt="" className="w-[100px] h-[80px] pb-5" />
           <img src={img2} alt="" className="rounded-lg pb-5" />
           <p className="text-lg text-justify">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat,
-            eius? Quidem nemo atque pariatur esse quis aut vitae. Similique
-            quisquam voluptatem doloribus minus, sunt soluta. Voluptate
-            quibusdam ducimus mollitia suscipit inventore. Non eum fuga
-            accusamus rerum, aliquid nesciunt iste obcaecati ut tempora deleniti
-            in fugiat inventore harum. Tempora, tempore iusto?
+            Bangalore-based education technology company Byju's became India's
+            most valuable startup in 2021, as the demand for online learning
+            surged.
           </p>
         </div>
         <div className="bg-white rounded-xl p-5">
           <img src={logo3} alt="" className="w-[100px] h-[80px] pb-5" />
           <img src={img3} alt="" className="rounded-lg pb-5" />
           <p className="text-lg text-justify">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat,
-            eius? Quidem nemo atque pariatur esse quis aut vitae. Similique
-            quisquam voluptatem doloribus minus, sunt soluta. Voluptate
-            quibusdam ducimus mollitia suscipit inventore. Non eum fuga
-            accusamus rerum, aliquid nesciunt iste obcaecati ut tempora deleniti
-            in fugiat inventore harum. Tempora, tempore iusto?
+            Bangalore-based education technology company Byju's became India's
+            most valuable startup in 2021, as the demand for online learning
+            surged.
           </p>
         </div>
+      </div>
       </div>
     </div>
   );
