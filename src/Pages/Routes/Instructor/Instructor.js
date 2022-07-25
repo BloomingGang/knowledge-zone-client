@@ -4,7 +4,7 @@ import { Link, Outlet } from 'react-router-dom';
 const Instructor = () => {
     return (
         <div>
-            <div className="drawer drawer-mobile mt-16">
+            <div className="drawer drawer-mobile mt-8">
                 <input id="dashboard-sidebar" type="checkbox" className="drawer-toggle" />
                 <div className="drawer-content">
                     <h2 className='text-3xl text-center font-bold text-primary my-4'>Instructor List</h2>
