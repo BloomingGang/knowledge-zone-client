@@ -1,7 +1,7 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
-import Login from './auth/Login';
-import Register from './auth/Register';
+import Login from "./auth/Login";
+import Register from "./auth/Register";
 import Home from "./Pages/Home/Home";
 import Bengali from "./Pages/Routes/Instructor/Bengali";
 import Biology from "./Pages/Routes/Instructor/Biology";
@@ -30,8 +30,9 @@ function App() {
           <Route path="gradeEight" element={<GradeFourToEight />} />
           <Route path="gradeTwelve" element={<GradeNineToTwelve />} />
         </Route>
-          {/* instructor route list */}
+        {/* instructor route list */}
         <Route path="/instructor" element={<Instructor />}>
+
         <Route index element={<Bengali />} />
         <Route path="english" element={<English />} />
         <Route path="mathematics" element={<Mathematics />} />
