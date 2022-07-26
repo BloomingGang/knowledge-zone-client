@@ -7,7 +7,7 @@ const Instructor = () => {
             <div className="drawer drawer-mobile mt-8">
                 <input id="dashboard-sidebar" type="checkbox" className="drawer-toggle" />
                 <div className="drawer-content">
-                    <h2 className='text-3xl text-center font-bold text-primary my-4'>Instructor List</h2>
+                    <h2 className='text-3xl text-center font-bold text-primary my-4'>Instructors List</h2>
                     <Outlet></Outlet>
                 </div>
                 <div className="drawer-side">
@@ -16,13 +16,13 @@ const Instructor = () => {
                         {/* <!-- Sidebar content here --> */}
                         <li><Link to='/instructor'>Bengali</Link></li>
                         <li><Link to='/instructor/english'>English</Link></li>
-                        <li><Link to='/instructor/mathematic'>Mathematics</Link></li>
-                        <li><Link to='/instructor/'>Chemistry</Link></li>
-                        <li><Link to='/instructor/'>Physics</Link></li>
-                        <li><Link to='/instructor/'>Biology</Link></li>
-                        <li><Link to='/instructor/'>Finance</Link></li>
-                        <li><Link to='/instructor/'>Religious</Link></li>
-                        <li><Link to='/instructor/'>Programming</Link></li>
+                        <li><Link to='/instructor/mathematics'>Mathematics</Link></li>
+                        <li><Link to='/instructor/chemistry'>Chemistry</Link></li>
+                        <li><Link to='/instructor/physics'>Physics</Link></li>
+                        <li><Link to='/instructor/biology'>Biology</Link></li>
+                        <li><Link to='/instructor/finance'>Finance</Link></li>
+                        <li><Link to='/instructor/religious'>Religious</Link></li>
+                        <li><Link to='/instructor/programming'>Programming</Link></li>
                     </ul>
 
                 </div>
