@@ -13,7 +13,12 @@ const Blog = ({ blog }) => {
       </figure>
       <div class="card-body items-center text-center">
         <h2 class="card-title">{userName}</h2>
-        <p>{description}</p>
+        <p>
+          {description.slice(0, 150)}{" "}
+          <span className="text-orange-400">
+            {description.length > 150 ? "Read More..." : ""}
+          </span>
+        </p>
         <div class="card-actions justify-end">
           <button class="btn btn-primary">Details</button>
         </div>
