@@ -2,6 +2,7 @@ import React from "react";
 import { Route, Routes } from "react-router-dom";
 import Login from "./auth/Login";
 import Register from "./auth/Register";
+import Blogs from "./Pages/Blogs/Blogs";
 import Home from "./Pages/Home/Home";
 import Bengali from "./Pages/Routes/Instructor/Bengali";
 import Biology from "./Pages/Routes/Instructor/Biology";
@@ -32,20 +33,20 @@ function App() {
         </Route>
         {/* instructor route list */}
         <Route path="/instructor" element={<Instructor />}>
-
-        <Route index element={<Bengali />} />
-        <Route path="english" element={<English />} />
-        <Route path="mathematics" element={<Mathematics />} />
-        <Route path="chemistry" element={<Chemistry/>}/>
-        <Route path="physics" element={<Physics/>}/>
-        <Route path="biology" element={<Biology/>}/>
-        <Route path="finance" element={<Finance/>}/>
-        <Route path="religious" element={<Religious/>}/>
-        <Route path="programming" element={<Programming/>}/>
+          <Route index element={<Bengali />} />
+          <Route path="english" element={<English />} />
+          <Route path="mathematics" element={<Mathematics />} />
+          <Route path="chemistry" element={<Chemistry />} />
+          <Route path="physics" element={<Physics />} />
+          <Route path="biology" element={<Biology />} />
+          <Route path="finance" element={<Finance />} />
+          <Route path="religious" element={<Religious />} />
+          <Route path="programming" element={<Programming />} />
         </Route>
 
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
+        <Route path="/blogs" element={<Blogs></Blogs>} />
         <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />
