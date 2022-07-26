@@ -3,6 +3,7 @@ import { Route, Routes } from "react-router-dom";
 import Login from "./auth/Login";
 import Register from "./auth/Register";
 import Blogs from "./Pages/Blogs/Blogs";
+import Books from "./Pages/Books/Books";
 import Home from "./Pages/Home/Home";
 import Bengali from "./Pages/Routes/Instructor/Bengali";
 import Biology from "./Pages/Routes/Instructor/Biology";
@@ -47,6 +48,7 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
         <Route path="/blogs" element={<Blogs></Blogs>} />
+        <Route path="/books" element={<Books></Books>} />
         <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />

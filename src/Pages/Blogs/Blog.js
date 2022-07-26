@@ -1,7 +1,7 @@
 import React from "react";
 
-const Blog = ({ order }) => {
-  const { description, userName } = order;
+const Blog = ({ blog }) => {
+  const { description, userName } = blog;
   return (
     <div class="card w-96 bg-base-100 shadow-xl">
       <figure class="px-10 pt-10">
