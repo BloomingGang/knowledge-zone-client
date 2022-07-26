@@ -22,7 +22,6 @@ const Instructor = () => {
           </svg>
         </label>
       </div>
-
       <div className="drawer drawer-mobile mt-8">
         <input
           id="dashboard-sidebar"
@@ -31,7 +30,7 @@ const Instructor = () => {
         />
         <div className="drawer-content">
           <h2 className="text-3xl text-center font-bold text-primary my-4">
-            Instructor List
+            Instructors List
           </h2>
           <Outlet></Outlet>
         </div>
@@ -46,25 +45,25 @@ const Instructor = () => {
               <Link to="/instructor/english">English</Link>
             </li>
             <li>
-              <Link to="/instructor/mathematic">Mathematics</Link>
+              <Link to="/instructor/mathematics">Mathematics</Link>
             </li>
             <li>
-              <Link to="/instructor/">Chemistry</Link>
+              <Link to="/instructor/chemistry">Chemistry</Link>
             </li>
             <li>
-              <Link to="/instructor/">Physics</Link>
+              <Link to="/instructor/physics">Physics</Link>
             </li>
             <li>
-              <Link to="/instructor/">Biology</Link>
+              <Link to="/instructor/biology">Biology</Link>
             </li>
             <li>
-              <Link to="/instructor/">Finance</Link>
+              <Link to="/instructor/finance">Finance</Link>
             </li>
             <li>
-              <Link to="/instructor/">Religious</Link>
+              <Link to="/instructor/religious">Religious</Link>
             </li>
             <li>
-              <Link to="/instructor/">Programming</Link>
+              <Link to="/instructor/programming">Programming</Link>
             </li>
           </ul>
         </div>
