@@ -36,7 +36,7 @@ const CardK = () => {
               </h2>
               <p className="text-xl">
                 Fuel your child's interest in reading, math, creativity, and
-                more with play-based games!
+                more with play-based games.
               </p>
               <div>
                 <Link to={"#"} className="btn">
