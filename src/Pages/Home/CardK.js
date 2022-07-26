@@ -11,7 +11,11 @@ const CardK = () => {
       <div class="hero min-h-screen">
         <div class="hero-content flex-col lg:flex-row-reverse p-0">
           <div className="lg:w-[60%] w-full flex justify-center  ">
-            <img src={img} class="lg:max-w-sm w-[90%] rounded-lg shadow-2xl   " alt="" />
+            <img
+              src={img}
+              class="lg:max-w-sm w-[90%] rounded-lg shadow-2xl   "
+              alt=""
+            />
           </div>
           <div className="px-16  lg:w-[40%]">
             <h1 class="text-5xl font-bold">Available on all Platforms</h1>
@@ -31,8 +35,8 @@ const CardK = () => {
                 Play-Based Learning
               </h2>
               <p className="text-xl">
-                Fuel your child’s interest in reading, math, creativity, and
-                more with play-based games!
+                Fuel your child's interest in reading, math, creativity, and
+                more with play-based games.
               </p>
               <div>
                 <Link to={"#"} className="btn">
