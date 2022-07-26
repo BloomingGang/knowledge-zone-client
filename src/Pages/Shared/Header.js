@@ -9,11 +9,6 @@ import NavDropDown from "./NavDropDown";
 
 const Header = () => {
   const [user, loading, error] = useAuthState(auth);
-  console.log(user);
-
-  const logout = () => {
-    signOut(auth);
-  };
 
   const [open, setOpen] = useState(false);
 
