@@ -17,13 +17,13 @@ const Book = ({ book }) => {
           <p>
             {description.slice(0, 150)}{" "}
             <span className="text-orange-400">
-              {description.length > 150 ? "Read More..." : ""}
+              {description.length > 150 ? "Read More..." : " "}
             </span>
           </p>
           <div class="card-actions justify-end">
             {/* <button class="btn btn-primary">Download</button> */}
             <a href="kausar.pdf" download class="btn btn-primary">
-              <span class="btn-text">Download</span>
+              <span class="btn-text">Download.</span>
             </a>
           </div>
         </div>
