@@ -1,13 +1,22 @@
 import React from "react";
 
 const Blog = ({ order }) => {
-  const { name, description, userName } = order;
+  const { description, userName } = order;
   return (
-    <div class="card  bg-base-100 shadow-xl">
-      <div class="card-body">
-        <h2 class="card-title">{name}</h2>
-        <p>Order: {description} Unit</p>
-        <p>Price: ${userName}</p>
+    <div class="card w-96 bg-base-100 shadow-xl">
+      <figure class="px-10 pt-10">
+        <img
+          src="https://placeimg.com/400/225/arch"
+          alt="Shoes"
+          class="rounded-xl"
+        />
+      </figure>
+      <div class="card-body items-center text-center">
+        <h2 class="card-title">{userName}</h2>
+        <p>{description}</p>
+        <div class="card-actions justify-end">
+          <button class="btn btn-primary">Details</button>
+        </div>
       </div>
     </div>
   );
