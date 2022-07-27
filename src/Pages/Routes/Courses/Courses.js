@@ -45,7 +45,7 @@ const Courses = () => {
                 <Link to="/courses/english">Offer/discount course</Link>
               </li>
               <li>
-                <Link to="/courses/english">Live course section</Link>
+                <Link to="/courses/english">Live course</Link>
               </li>
               <li>
                 <Link to="/courses/english">Special crash course</Link>
