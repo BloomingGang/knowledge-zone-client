@@ -39,10 +39,28 @@ const Courses = () => {
             <ul className="menu p-4 overflow-y-auto w-48 bg-base-100 text-base-content">
               {/* <!-- Sidebar content here --> */}
               <li>
-                <Link to="/courses">Courses</Link>
+                <Link to="/courses">Free course</Link>
               </li>
               <li>
-                <Link to="/courses/english">English</Link>
+                <Link to="/courses/english">Offer/discount course</Link>
+              </li>
+              <li>
+                <Link to="/courses/english">Live course section</Link>
+              </li>
+              <li>
+                <Link to="/courses/english">Special crash course</Link>
+              </li>
+              <li>
+                <Link to="/courses/english">Islamic course</Link>
+              </li>
+              <li>
+                <Link to="/courses/english">Kids course </Link>
+              </li>
+              <li>
+                <Link to="/courses/english">Entertaining course</Link>
+              </li>
+              <li>
+                <Link to="/courses/english">Book store</Link>
               </li>
             </ul>
           </div>
