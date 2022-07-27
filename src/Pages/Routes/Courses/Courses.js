@@ -3,6 +3,7 @@ import { Link, Outlet } from 'react-router-dom';
 
 const Courses = () => {
   
+  
     return (
         <div>
         <div className="m-4">
