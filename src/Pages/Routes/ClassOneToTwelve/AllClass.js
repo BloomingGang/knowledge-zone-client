@@ -1,9 +1,7 @@
 import React from 'react';
 import { Link, Outlet } from 'react-router-dom';
 
-const Courses = () => {
-  
-  
+const AllClass = () => {
     return (
         <div>
         <div className="m-4">
@@ -32,34 +30,49 @@ const Courses = () => {
           />
           <div className="drawer-content">
             <h2 className="text-3xl text-center font-bold text-primary my-4">
-              Courses List
+              Instructors List
             </h2>
             <Outlet></Outlet>
           </div>
           <div className="drawer-side">
             <label htmlFor="dashboard-sidebar" className="drawer-overlay"></label>
-            <ul className="menu p-4 overflow-y-auto whitespace-nowrap w-56 bg-base-100 text-base-content">
+            <ul className="menu p-4 overflow-y-auto w-48 bg-base-100 text-base-content">
               {/* <!-- Sidebar content here --> */}
               <li>
-                <Link to="/courses">Free course</Link>
+                <Link to="/classes">class 1</Link>
               </li>
               <li>
-                <Link to="/courses/discountCourse">Offer/discount course</Link>
+                <Link to="/classes/two">Class 2</Link>
               </li>
               <li>
-                <Link to="/courses/liveCourse">Live course</Link>
+                <Link to="/classes/three">Class 3</Link>
               </li>
               <li>
-                <Link to="/courses/specialCourse">Special crash course</Link>
+                <Link to="/classes/four">Class 4</Link>
               </li>
               <li>
-                <Link to="/courses/IslamicCourse">Islamic course</Link>
+                <Link to="/classes/five">Class 5</Link>
               </li>
               <li>
-                <Link to="/courses/KidsCourse">Kids course </Link>
+                <Link to="/classes/six">Class 6</Link>
               </li>
               <li>
-                <Link to="/courses/EntertainingCourse">Entertaining course</Link>
+                <Link to="/classes/seven">Class 7</Link>
+              </li>
+              <li>
+                <Link to="/classes/eight">Class 8</Link>
+              </li>
+              <li>
+                <Link to="/classes/nine">Class 9</Link>
+              </li>
+              <li>
+                <Link to="/classes/ten">Class 10</Link>
+              </li>
+              <li>
+                <Link to="/classes/eleven">Class 11</Link>
+              </li>
+              <li>
+                <Link to="/classes/twelve">Class 12</Link>
               </li>
             </ul>
           </div>
@@ -68,4 +81,4 @@ const Courses = () => {
     );
 };
 
-export default Courses;
+export default AllClass;
