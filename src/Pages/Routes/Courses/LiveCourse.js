@@ -1,11 +1,11 @@
 import React from 'react';
 
-const Bangla = () => {
+const LiveCourse = () => {
     return (
         <div>
-            Bangla
+            Live course
         </div>
     );
 };
 
-export default Bangla;
+export default LiveCourse;
