@@ -19,6 +19,18 @@ const Bengali = () => {
             name:'Rakib Mia',
             education: 'B.A',
             speech:'The expert in anything was once a beginner'
+        },
+        {
+            img:'https://i.ibb.co/pjYWSz5/293666536-410740174208712-4704341600776933626-n.png',
+            name:'Kausar Ahamed',
+            education: 'B.A',
+            speech:'The expert in anything was once a beginner'
+        },
+        {
+            img:' https://i.ibb.co/PzND9YF/288865092-1499923620424923-4773973340299341148-n.png',
+            name:'Saddam Hossain',
+            education: 'B.A',
+            speech:'The expert in anything was once a beginner'
         }
     ]
     return (
