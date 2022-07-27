@@ -88,9 +88,8 @@ const CoursesAutoSlider = () => {
 
                 </Slider>
             </div>
-
-        </div>
-    );
+    </div>
+  );
 };
 
 export default CoursesAutoSlider;

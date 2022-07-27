@@ -1,5 +1,6 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
+import Contact from "./Pages/ContactUs/Contact";
 import Login from "./auth/Login";
 import Register from "./auth/Register";
 import Blogs from "./Pages/Blogs/Blogs";
@@ -53,6 +54,8 @@ function App() {
           <Route path="gradeEight" element={<GradeFourToEight />} />
           <Route path="gradeTwelve" element={<GradeNineToTwelve />} />
         </Route>
+
+        <Route path="contact" element={<Contact />} />
         {/* instructor route list */}
         <Route path="/instructor" element={<Instructor />}>
           <Route index element={<Bengali />} />
