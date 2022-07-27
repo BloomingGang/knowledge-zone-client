@@ -8,6 +8,19 @@ import Home from "./Pages/Home/Home";
 import GradeFourToEight from "./Pages/Home/LearningProgram/GradeFourToEight";
 import GradeNineToTwelve from "./Pages/Home/LearningProgram/GradeNineToTwelve";
 import GradeThree from "./Pages/Home/LearningProgram/GradeThree";
+import AllClass from "./Pages/Routes/ClassOneToTwelve/AllClass";
+import ClassEight from "./Pages/Routes/ClassOneToTwelve/ClassEight";
+import ClassEleven from "./Pages/Routes/ClassOneToTwelve/ClassEleven";
+import ClassFIve from "./Pages/Routes/ClassOneToTwelve/ClassFIve";
+import ClassFour from "./Pages/Routes/ClassOneToTwelve/ClassFour";
+import ClassNine from "./Pages/Routes/ClassOneToTwelve/ClassNine";
+import ClassOne from "./Pages/Routes/ClassOneToTwelve/ClassOne";
+import ClassSeven from "./Pages/Routes/ClassOneToTwelve/ClassSeven";
+import ClassSix from "./Pages/Routes/ClassOneToTwelve/ClassSix";
+import ClassTen from "./Pages/Routes/ClassOneToTwelve/ClassTen";
+import ClassThree from "./Pages/Routes/ClassOneToTwelve/ClassThree";
+import ClassTwelve from "./Pages/Routes/ClassOneToTwelve/ClassTwelve";
+import ClassTwo from "./Pages/Routes/ClassOneToTwelve/ClassTwo";
 import Bangla from "./Pages/Routes/Courses/Bangla";
 import Courses from "./Pages/Routes/Courses/Courses";
 import EnglishCourse from "./Pages/Routes/Courses/EnglishCourse";
@@ -51,6 +64,21 @@ function App() {
         <Route path="/courses" element={<Courses />}>
           <Route index element={<Bangla />} />
           <Route path="english" element={<EnglishCourse />} />
+        </Route>
+        {/* class 1 to 12 route list */}
+        <Route path="/classes" element={<AllClass/>}>
+          <Route index element={<ClassOne/>} />
+          <Route path="two" element={<ClassTwo />} />
+          <Route path="three" element={<ClassThree />} />
+          <Route path="four" element={<ClassFour />} />
+          <Route path="five" element={<ClassFIve />} />
+          <Route path="six" element={<ClassSix />} />
+          <Route path="seven" element={<ClassSeven />} />
+          <Route path="eight" element={<ClassEight />} />
+          <Route path="nine" element={<ClassNine />} />
+          <Route path="ten" element={<ClassTen />} />
+          <Route path="eleven" element={<ClassEleven />} />
+          <Route path="twelve" element={<ClassTwelve />} />
         </Route>
 
         <Route path="/login" element={<Login />} />
