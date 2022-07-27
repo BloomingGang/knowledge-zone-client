@@ -21,9 +21,10 @@ import ClassTen from "./Pages/Routes/ClassOneToTwelve/ClassTen";
 import ClassThree from "./Pages/Routes/ClassOneToTwelve/ClassThree";
 import ClassTwelve from "./Pages/Routes/ClassOneToTwelve/ClassTwelve";
 import ClassTwo from "./Pages/Routes/ClassOneToTwelve/ClassTwo";
-import Bangla from "./Pages/Routes/Courses/Bangla";
 import Courses from "./Pages/Routes/Courses/Courses";
+import DiscountCourse from "./Pages/Routes/Courses/DiscountCourse";
 import EnglishCourse from "./Pages/Routes/Courses/EnglishCourse";
+import FreeCourse from "./Pages/Routes/Courses/FreeCourse";
 import Bengali from "./Pages/Routes/Instructor/Bengali";
 import Biology from "./Pages/Routes/Instructor/Biology";
 import Chemistry from "./Pages/Routes/Instructor/Chemistry";
@@ -62,8 +63,8 @@ function App() {
         </Route>
         {/* Courses route list */}
         <Route path="/courses" element={<Courses />}>
-          <Route index element={<Bangla />} />
-          <Route path="english" element={<EnglishCourse />} />
+          <Route index element={< FreeCourse/>} />
+          <Route path="" element={<DiscountCourse />} />
         </Route>
         {/* class 1 to 12 route list */}
         <Route path="/classes" element={<AllClass/>}>
