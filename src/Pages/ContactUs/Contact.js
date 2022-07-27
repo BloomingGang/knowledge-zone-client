@@ -1,12 +1,12 @@
 import React from "react";
 import MapLocation from "./MapLocation";
-import SendEmail from './SendEmail';
+import SendMessage from './SendMessage';
 
 const Contact = () => {
   return (
     <div>
       <MapLocation />
-      <SendEmail />
+      <SendMessage />
     </div>
   );
 };
