@@ -24,6 +24,7 @@ import ClassTwo from "./Pages/Routes/ClassOneToTwelve/ClassTwo";
 import Courses from "./Pages/Routes/Courses/Courses";
 import DiscountCourse from "./Pages/Routes/Courses/DiscountCourse";
 import EnglishCourse from "./Pages/Routes/Courses/EnglishCourse";
+import EntertainingCourse from "./Pages/Routes/Courses/EntertainingCourse";
 import FreeCourse from "./Pages/Routes/Courses/FreeCourse";
 import IslamicCourse from "./Pages/Routes/Courses/IslamicCourse";
 import KidsCourse from "./Pages/Routes/Courses/KidsCourse";
@@ -73,7 +74,7 @@ function App() {
           <Route path="" element={< SpecialCourse/>} />
           <Route path="" element={< IslamicCourse/>} />
           <Route path="" element={< KidsCourse/>} />
-          <Route path="" element={< />} />
+          <Route path="" element={< EntertainingCourse/>} />
           <Route path="" element={< />} />
           <Route path="" element={< />} />
           <Route path="" element={< />} />
