@@ -2,6 +2,7 @@ import React from 'react';
 import { Link, Outlet } from 'react-router-dom';
 
 const Courses = () => {
+  
     return (
         <div>
         <div className="m-4">
@@ -30,37 +31,34 @@ const Courses = () => {
           />
           <div className="drawer-content">
             <h2 className="text-3xl text-center font-bold text-primary my-4">
-              Instructors List
+              Courses List
             </h2>
             <Outlet></Outlet>
           </div>
           <div className="drawer-side">
             <label htmlFor="dashboard-sidebar" className="drawer-overlay"></label>
-            <ul className="menu p-4 overflow-y-auto w-48 bg-base-100 text-base-content">
+            <ul className="menu p-4 overflow-y-auto whitespace-nowrap w-56 bg-base-100 text-base-content">
               {/* <!-- Sidebar content here --> */}
               <li>
                 <Link to="/courses">Free course</Link>
               </li>
               <li>
-                <Link to="/courses/english">Offer/discount course</Link>
+                <Link to="/courses/discountCourse">Offer/discount course</Link>
               </li>
               <li>
-                <Link to="/courses/english">Live course</Link>
+                <Link to="/courses/liveCourse">Live course</Link>
               </li>
               <li>
-                <Link to="/courses/english">Special crash course</Link>
+                <Link to="/courses/specialCourse">Special crash course</Link>
               </li>
               <li>
-                <Link to="/courses/english">Islamic course</Link>
+                <Link to="/courses/IslamicCourse">Islamic course</Link>
               </li>
               <li>
-                <Link to="/courses/english">Kids course </Link>
+                <Link to="/courses/KidsCourse">Kids course </Link>
               </li>
               <li>
-                <Link to="/courses/english">Entertaining course</Link>
-              </li>
-              <li>
-                <Link to="/courses/english">Book store</Link>
+                <Link to="/courses/EntertainingCourse">Entertaining course</Link>
               </li>
             </ul>
           </div>

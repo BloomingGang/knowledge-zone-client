@@ -23,7 +23,6 @@ import ClassTwelve from "./Pages/Routes/ClassOneToTwelve/ClassTwelve";
 import ClassTwo from "./Pages/Routes/ClassOneToTwelve/ClassTwo";
 import Courses from "./Pages/Routes/Courses/Courses";
 import DiscountCourse from "./Pages/Routes/Courses/DiscountCourse";
-import EnglishCourse from "./Pages/Routes/Courses/EnglishCourse";
 import EntertainingCourse from "./Pages/Routes/Courses/EntertainingCourse";
 import FreeCourse from "./Pages/Routes/Courses/FreeCourse";
 import IslamicCourse from "./Pages/Routes/Courses/IslamicCourse";
@@ -69,17 +68,12 @@ function App() {
         {/* Courses route list */}
         <Route path="/courses" element={<Courses />}>
           <Route index element={< FreeCourse/>} />
-          <Route path="" element={<DiscountCourse />} />
-          <Route path="" element={< LiveCourse/>} />
-          <Route path="" element={< SpecialCourse/>} />
-          <Route path="" element={< IslamicCourse/>} />
-          <Route path="" element={< KidsCourse/>} />
-          <Route path="" element={< EntertainingCourse/>} />
-          <Route path="" element={< />} />
-          <Route path="" element={< />} />
-          <Route path="" element={< />} />
-          <Route path="" element={< />} />
-          <Route path="" element={< />} />
+          <Route path="discountCourse" element={<DiscountCourse />} />
+          <Route path="liveCourse" element={< LiveCourse/>} />
+          <Route path="specialCourse" element={< SpecialCourse/>} />
+          <Route path="IslamicCourse" element={< IslamicCourse/>} />
+          <Route path="KidsCourse" element={< KidsCourse/>} />
+          <Route path="EntertainingCourse" element={< EntertainingCourse/>} />
         </Route>
         {/* class 1 to 12 route list */}
         <Route path="/classes" element={<AllClass/>}>
