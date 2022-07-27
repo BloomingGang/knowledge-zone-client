@@ -6,6 +6,12 @@ import Register from "./auth/Register";
 import Blogs from "./Pages/Blogs/Blogs";
 import Books from "./Pages/Books/Books";
 import Home from "./Pages/Home/Home";
+import GradeFourToEight from "./Pages/Home/LearningProgram/GradeFourToEight";
+import GradeNineToTwelve from "./Pages/Home/LearningProgram/GradeNineToTwelve";
+import GradeThree from "./Pages/Home/LearningProgram/GradeThree";
+import Bangla from "./Pages/Routes/Courses/Bangla";
+import Courses from "./Pages/Routes/Courses/Courses";
+import EnglishCourse from "./Pages/Routes/Courses/EnglishCourse";
 import Bengali from "./Pages/Routes/Instructor/Bengali";
 import Biology from "./Pages/Routes/Instructor/Biology";
 import Chemistry from "./Pages/Routes/Instructor/Chemistry";
@@ -16,9 +22,6 @@ import Mathematics from "./Pages/Routes/Instructor/Mathematics";
 import Physics from "./Pages/Routes/Instructor/Physics";
 import Programming from "./Pages/Routes/Instructor/Programming";
 import Religious from "./Pages/Routes/Instructor/Religious";
-import GradeFourToEight from "./Pages/Routes/LearningProgram/GradeFourToEight";
-import GradeNineToTwelve from "./Pages/Routes/LearningProgram/GradeNineToTwelve";
-import GradeThree from "./Pages/Routes/LearningProgram/GradeThree";
 import Footer from "./Pages/Shared/Footer";
 import Header from "./Pages/Shared/Header";
 import NotFound from "./Pages/Shared/NotFound";
@@ -46,6 +49,11 @@ function App() {
           <Route path="finance" element={<Finance />} />
           <Route path="religious" element={<Religious />} />
           <Route path="programming" element={<Programming />} />
+        </Route>
+        {/* Courses route list */}
+        <Route path="/courses" element={<Courses />}>
+          <Route index element={<Bangla />} />
+          <Route path="english" element={<EnglishCourse />} />
         </Route>
 
         <Route path="/login" element={<Login />} />

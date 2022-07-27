@@ -9,11 +9,6 @@ import NavDropDown from "./NavDropDown";
 
 const Header = () => {
   const [user, loading, error] = useAuthState(auth);
-  console.log(user);
-
-  const logout = () => {
-    signOut(auth);
-  };
 
   const [open, setOpen] = useState(false);
 
@@ -23,7 +18,7 @@ const Header = () => {
         <Link to="/">Home</Link>
       </li>
       <li className="mr-4 p-2 hover:bg-blue-500 rounded font-bold">
-        <Link to="/">Class 1-12</Link>
+        <Link to="/courses">Class 1-12</Link>
       </li>
       <li className="mr-4 p-2 hover:bg-blue-500 rounded font-bold">
         <Link to="/">Courses</Link>
