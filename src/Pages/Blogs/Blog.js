@@ -3,24 +3,24 @@ import React from "react";
 const Blog = ({ blog }) => {
   const { description, userName } = blog;
   return (
-    <div class="card w-96 bg-base-100 shadow-xl">
-      <figure class="px-10 pt-10">
+    <div className="card w-96 bg-base-100 shadow-xl">
+      <figure className="px-10 pt-10">
         <img
           src="https://placeimg.com/400/225/arch"
           alt="Shoes"
-          class="rounded-xl"
+          className="rounded-xl"
         />
       </figure>
-      <div class="card-body items-center text-center">
-        <h2 class="card-title">{userName}</h2>
+      <div className="card-body items-center text-center">
+        <h2 className="card-title">{userName}</h2>
         <p>
           {description.slice(0, 150)}{" "}
           <span className="text-orange-400">
             {description.length > 150 ? "Read More..." : ""}
           </span>
         </p>
-        <div class="card-actions justify-end">
-          <button class="btn btn-primary">Details</button>
+        <div className="card-actions justify-end">
+          <button className="btn btn-primary">Details</button>
         </div>
       </div>
     </div>

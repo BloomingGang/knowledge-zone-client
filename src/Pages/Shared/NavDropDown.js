@@ -10,13 +10,13 @@ const NavDropDown = () => {
   };
   return (
     <div>
-      <div class="dropdown">
+      <div className="dropdown">
         <label tabindex="0">
           <ProfilePic></ProfilePic>
         </label>
         <ul
           tabindex="0"
-          class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52"
+          className="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52"
         >
           <li>
             <Link to="/">My Courses</Link>

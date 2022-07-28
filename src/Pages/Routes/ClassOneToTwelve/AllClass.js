@@ -30,7 +30,7 @@ const AllClass = () => {
           />
           <div className="drawer-content">
             <h2 className="text-3xl text-center font-bold text-primary my-4">
-              Instructors List
+              Course List
             </h2>
             <Outlet></Outlet>
           </div>

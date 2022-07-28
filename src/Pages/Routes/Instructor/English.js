@@ -26,12 +26,12 @@ const English = () => {
         {
                 instructors.map((instructor, index) => <div
                 key={index} 
-                class="card bg-base-100 shadow-xl">
-                <figure class="px-4 pt-4">
-                  <img style={{height: "300px"}} src={instructor.img} alt="instructor" class="rounded-xl " />
+                className="card bg-base-100 shadow-xl">
+                <figure className="px-4 pt-4">
+                  <img style={{height: "300px"}} src={instructor.img} alt="instructor" className="rounded-xl " />
                 </figure>
-                <div class="card-body items-center text-center">
-                  <h2 class="card-title">{instructor.name}</h2>
+                <div className="card-body items-center text-center">
+                  <h2 className="card-title">{instructor.name}</h2>
                   <h3>{instructor.education}</h3>
                   <p>{instructor.speech}</p>
                 </div>
