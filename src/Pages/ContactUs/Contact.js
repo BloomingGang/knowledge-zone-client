@@ -4,7 +4,7 @@ import SendMessage from './SendMessage';
 
 const Contact = () => {
   return (
-    <div>
+    <div className="flex">
       <MapLocation />
       <SendMessage />
     </div>
