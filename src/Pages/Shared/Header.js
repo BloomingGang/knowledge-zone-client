@@ -8,7 +8,7 @@ import logo from "../../img/assets/kz.png";
 import NavDropDown from "./NavDropDown";
 
 const Header = () => {
-  const [user, loading, error] = useAuthState(auth);
+  const [user] = useAuthState(auth);
 
   const [open, setOpen] = useState(false);
 

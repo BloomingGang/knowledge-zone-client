@@ -43,6 +43,7 @@ import Religious from "./Pages/Routes/Instructor/Religious";
 import Footer from "./Pages/Shared/Footer";
 import Header from "./Pages/Shared/Header";
 import NotFound from "./Pages/Shared/NotFound";
+import RequireAuth from "./auth/RequireAuth";
 
 function App() {
   return (
@@ -57,7 +58,7 @@ function App() {
 
         <Route path="contact" element={<Contact />} />
         {/* instructor route list */}
-        <Route path="/instructor" element={<Instructor />}>
+        <Route path="/instructor" element={<RequireAuth><Instructor /></RequireAuth>}>
           <Route index element={<Bengali />} />
           <Route path="english" element={<English />} />
           <Route path="mathematics" element={<Mathematics />} />
@@ -69,7 +70,7 @@ function App() {
           <Route path="programming" element={<Programming />} />
         </Route>
         {/* Courses route list */}
-        <Route path="/courses" element={<Courses />}>
+        <Route path="/courses" element={<RequireAuth><Courses /></RequireAuth>}>
           <Route index element={< FreeCourse/>} />
           <Route path="discountCourse" element={<DiscountCourse />} />
           <Route path="liveCourse" element={< LiveCourse/>} />
@@ -79,7 +80,7 @@ function App() {
           <Route path="EntertainingCourse" element={< EntertainingCourse/>} />
         </Route>
         {/* class 1 to 12 route list */}
-        <Route path="/classes" element={<AllClass/>}>
+        <Route path="/classes" element={<RequireAuth><AllClass/></RequireAuth>}>
           <Route index element={<ClassOne/>} />
           <Route path="two" element={<ClassTwo />} />
           <Route path="three" element={<ClassThree />} />
