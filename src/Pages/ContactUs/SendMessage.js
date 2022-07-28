@@ -2,7 +2,7 @@ import React from "react";
 
 const SendMessage = () => {
   return (
-    <div className="w-1/2">
+    <div>
       <form
         action="https://formsubmit.co/knowledgezone404@gmail.com"
         method="POST"
