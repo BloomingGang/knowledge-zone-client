@@ -1,5 +1,4 @@
 import { MenuIcon, XIcon } from "@heroicons/react/solid";
-import { signOut } from "firebase/auth";
 import React, { useState } from "react";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { Link } from "react-router-dom";
@@ -8,7 +7,7 @@ import logo from "../../img/assets/kz.png";
 import NavDropDown from "./NavDropDown";
 
 const Header = () => {
-  const [user, loading, error] = useAuthState(auth);
+  const [user] = useAuthState(auth);
 
   const [open, setOpen] = useState(false);
 
@@ -43,9 +42,9 @@ const Header = () => {
   );
   return (
     <div className="bg-gradient-to-r from-blue-900 via-indigo-900 to-purple-900 relative">
-      <div className="md:flex flex-row justify-between items-center py-6 px-14 hidden ">
+      <div className="md:flex flex-row justify-between items-center py-2 px-14 hidden ">
         <div className="flex flex-row items-center">
-          <img src={logo} alt="" width="80" height="60" />
+          <img src={logo} alt="" width="70" height="50" />
           <h1 className="text-white font-bold text-3xl px-4">Knowledge Zone</h1>
         </div>
 
@@ -61,7 +60,7 @@ const Header = () => {
 
       <div>
         <nav className="">
-          <div className="md:hidden flex flex-row items-center justify-between p-4 ">
+          <div className="md:hidden flex flex-row items-center justify-between px-4 py-2">
             <div className="flex flex-row items-center">
               <img src={logo} alt="" width="50" height="30" />
               <h1 className="text-white font-bold text-2xl px-4">
@@ -76,7 +75,7 @@ const Header = () => {
             </div>
           </div>
           <ul
-            className={`md:flex justify-center bg-gradient-to-r from-blue-300 via-indigo-300 to-purple-300  p-2 mx-auto w-full rounded-md absolute md:static duration-500 ease-in z-50 ${
+            className={`md:flex justify-center items-center bg-gradient-to-r from-blue-300 via-indigo-300 to-purple-300  p-2 mx-auto w-full rounded-md absolute md:static duration-500 ease-in z-50 ${
               open ? "top-20 " : "top-[-450px]"
             }`}
           >

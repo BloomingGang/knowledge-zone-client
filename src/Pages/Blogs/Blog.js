@@ -1,8 +1,9 @@
 import React from "react";
 
 const Blog = ({ blog }) => {
-  const { description, userName } = blog;
+  const { description, userName, img } = blog;
   return (
+<<<<<<< HEAD
     <div className="card w-96 bg-base-100 shadow-xl">
       <figure className="px-10 pt-10">
         <img
@@ -10,6 +11,11 @@ const Blog = ({ blog }) => {
           alt="Shoes"
           className="rounded-xl"
         />
+=======
+    <div class="card w-96 bg-base-100 shadow-xl">
+      <figure class="px-10 pt-10">
+        <img src={img} alt="Shoes" class="rounded-xl" />
+>>>>>>> 4f7c261c5534712c5652198ca34ea121cc160664
       </figure>
       <div className="card-body items-center text-center">
         <h2 className="card-title">{userName}</h2>
