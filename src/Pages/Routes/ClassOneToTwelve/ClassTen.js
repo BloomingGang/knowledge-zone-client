@@ -9,7 +9,7 @@ const ClassTen = () => {
             .then(data => setClassTen(data))
     }, [])
     return (
-        <div className='grid grid-cols-4 gap-4 px-5'>
+        <div className='grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1  gap-4 px-5 '>
             {
                 classTen?.map((course) => <ClassesCart
                     key={course._id}
