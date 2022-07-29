@@ -8,17 +8,17 @@ import { Link } from "react-router-dom";
 const CardK = () => {
   return (
     <div>
-      <div class="hero min-h-screen">
-        <div class="hero-content flex-col lg:flex-row-reverse p-0">
+      <div className="hero min-h-screen">
+        <div className="hero-content flex-col lg:flex-row-reverse p-0">
           <div className="lg:w-[60%] w-full flex justify-center  ">
             <img
               src={img}
-              class="lg:max-w-sm w-[90%] rounded-lg shadow-2xl   "
+              className="lg:max-w-sm w-[90%] rounded-lg shadow-2xl   "
               alt=""
             />
           </div>
           <div className="px-16  lg:w-[40%]">
-            <h1 class="text-5xl font-bold">Available on all Platforms</h1>
+            <h1 className="text-5xl font-bold">Available on all Platforms</h1>
             <h1>Our products can be used on all devices.</h1>
             <img src={devices} alt="" />
           </div>

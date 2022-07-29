@@ -17,11 +17,11 @@ const Footer = () => {
 
                 <div className='text-xl my-4 sm:text-center'>
                     <p className='mb-2'>Follow Us On</p>
-                    <a href="" target={'_blank'}><i class="fa-brands fa-facebook-square mr-4"></i> </a>
-                    <a href="" target={'_blank'} rel='noreferrer'><i class="fa-brands fa-twitter-square mr-4"></i> </a>
-                    <a href="" target={'_blank'} rel='noreferrer'><i class="fa-brands fa-instagram-square mr-4"></i> </a>
-                    <a href="" target={'_blank'} rel='noreferrer'><i class="fa-brands fa-github-square mr-4"></i></a>
-                    <a href="" target={'_blank'} rel='noreferrer'><i class="fa-brands fa-youtube-square"></i></a>
+                    <a href="" target={'_blank'}><i className="fa-brands fa-facebook-square mr-4"></i> </a>
+                    <a href="" target={'_blank'} rel='noreferrer'><i className="fa-brands fa-twitter-square mr-4"></i> </a>
+                    <a href="" target={'_blank'} rel='noreferrer'><i className="fa-brands fa-instagram-square mr-4"></i> </a>
+                    <a href="" target={'_blank'} rel='noreferrer'><i className="fa-brands fa-github-square mr-4"></i></a>
+                    <a href="" target={'_blank'} rel='noreferrer'><i className="fa-brands fa-youtube-square"></i></a>
                 </div>
             </div>
 
