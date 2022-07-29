@@ -31,7 +31,7 @@ const Courses = () => {
             className="drawer-toggle"
           />
           <div className="drawer-content">
-            <h2 className="text-3xl text-center font-bold text-primary my-4">
+            <h2 className="text-3xl text-center font-bold text-primary  mt-4 mb-16">
               Courses List
             </h2>
             <Outlet></Outlet>
