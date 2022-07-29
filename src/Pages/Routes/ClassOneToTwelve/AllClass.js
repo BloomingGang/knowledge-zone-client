@@ -1,5 +1,6 @@
 import React from 'react';
-import { Link, Outlet } from 'react-router-dom';
+import {  Outlet } from 'react-router-dom';
+import CustomLink from '../../Shared/CustomLink';
 
 const AllClass = () => {
     return (
@@ -39,40 +40,40 @@ const AllClass = () => {
             <ul className="menu p-4 overflow-y-auto w-48 bg-base-100 text-base-content">
               {/* <!-- Sidebar content here --> */}
               <li>
-                <Link to="/classes">class 1</Link>
+                <CustomLink className='w-full py-3 px-3 border-2 font-bold uppercase text-center rounded-lg' to="/classes">class 1</CustomLink>
               </li>
               <li>
-                <Link to="/classes/two">Class 2</Link>
+                <CustomLink  className='w-full py-3 px-3 border-2 font-bold uppercase text-center rounded-lg'  to="/classes/two">Class 2</CustomLink>
               </li>
               <li>
-                <Link to="/classes/three">Class 3</Link>
+                <CustomLink className='w-full py-3 px-3 border-2 font-bold uppercase text-center rounded-lg'  to="/classes/three">Class 3</CustomLink>
               </li>
               <li>
-                <Link to="/classes/four">Class 4</Link>
+                <CustomLink className='w-full py-3 px-3 border-2 font-bold uppercase text-center rounded-lg'  to="/classes/four">Class 4</CustomLink>
               </li>
               <li>
-                <Link to="/classes/five">Class 5</Link>
+                <CustomLink  className='w-full py-3 px-3 border-2 font-bold uppercase text-center rounded-lg' to="/classes/five">Class 5</CustomLink>
               </li>
               <li>
-                <Link to="/classes/six">Class 6</Link>
+                <CustomLink className='w-full py-3 px-3 border-2 font-bold uppercase text-center rounded-lg'  to="/classes/six">Class 6</CustomLink>
               </li>
               <li>
-                <Link to="/classes/seven">Class 7</Link>
+                <CustomLink  className='w-full py-3 px-3 border-2 font-bold uppercase text-center rounded-lg' to="/classes/seven">Class 7</CustomLink>
               </li>
               <li>
-                <Link to="/classes/eight">Class 8</Link>
+                <CustomLink  className='w-full py-3 px-3 border-2 font-bold uppercase text-center rounded-lg' to="/classes/eight">Class 8</CustomLink>
               </li>
               <li>
-                <Link to="/classes/nine">Class 9</Link>
+                <CustomLink  className='w-full py-3 px-3 border-2 font-bold uppercase text-center rounded-lg' to="/classes/nine">Class 9</CustomLink>
               </li>
               <li>
-                <Link to="/classes/ten">Class 10</Link>
+                <CustomLink className='w-full py-3 px-3 border-2 font-bold uppercase text-center rounded-lg'  to="/classes/ten">Class 10</CustomLink>
               </li>
               <li>
-                <Link to="/classes/eleven">Class 11</Link>
+                <CustomLink  className='w-full py-3 px-3 border-2 font-bold uppercase text-center rounded-lg' to="/classes/eleven">Class 11</CustomLink>
               </li>
               <li>
-                <Link to="/classes/twelve">Class 12</Link>
+                <CustomLink className='w-full py-3 px-3 border-2 font-bold uppercase text-center rounded-lg'  to="/classes/twelve">Class 12</CustomLink>
               </li>
             </ul>
           </div>

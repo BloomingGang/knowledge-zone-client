@@ -1,5 +1,6 @@
 import React from 'react';
-import { Link, Outlet } from 'react-router-dom';
+import { Outlet } from 'react-router-dom';
+import CustomLink from '../../Shared/CustomLink';
 
 const Courses = () => {
   
@@ -36,30 +37,30 @@ const Courses = () => {
             </h2>
             <Outlet></Outlet>
           </div>
-          <div className="drawer-side">
+          <div className="drawer-side ">
             <label htmlFor="dashboard-sidebar" className="drawer-overlay"></label>
-            <ul className="menu p-4 overflow-y-auto whitespace-nowrap w-56 bg-base-100 text-base-content">
+            <ul className="menu p-4 overflow-y-auto whitespace-nowrap w-68 bg-base-100 text-base-content border-r-2">
               {/* <!-- Sidebar content here --> */}
               <li>
-                <Link to="/courses">Free course</Link>
+                <CustomLink className='w-full py-2 px-2 border-2 font-bold uppercase text-center rounded-lg' to="/courses">Free course</CustomLink>
               </li>
               <li>
-                <Link to="/courses/discountCourse">Offer/discount course</Link>
+                <CustomLink className='w-full py-2 px-2 border-2 font-bold uppercase text-center rounded-lg' to="/courses/discountCourse">Offer/discount course</CustomLink>
               </li>
               <li>
-                <Link to="/courses/liveCourse">Live course</Link>
+                <CustomLink className='w-full py-2 px-2 border-2 font-bold uppercase text-center rounded-lg' to="/courses/liveCourse">Live course</CustomLink>
               </li>
               <li>
-                <Link to="/courses/specialCourse">Special crash course</Link>
+                <CustomLink className='w-full py-2 px-2 border-2 font-bold uppercase text-center rounded-lg' to="/courses/specialCourse">Special crash course</CustomLink>
               </li>
               <li>
-                <Link to="/courses/IslamicCourse">Islamic course</Link>
+                <CustomLink className='w-full py-2 px-2 border-2 font-bold uppercase text-center rounded-lg' to="/courses/IslamicCourse">Islamic course</CustomLink>
               </li>
               <li>
-                <Link to="/courses/KidsCourse">Kids course </Link>
+                <CustomLink className='w-full py-2 px-2 border-2 font-bold uppercase text-center rounded-lg' to="/courses/KidsCourse">Kids course </CustomLink>
               </li>
               <li>
-                <Link to="/courses/EntertainingCourse">Entertaining course</Link>
+                <CustomLink className='w-full py-2 px-2 border-2 font-bold uppercase text-center rounded-lg' to="/courses/EntertainingCourse">Entertaining course</CustomLink>
               </li>
             </ul>
           </div>
