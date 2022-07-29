@@ -37,9 +37,9 @@ const Courses = () => {
             </h2>
             <Outlet></Outlet>
           </div>
-          <div className="drawer-side">
+          <div className="drawer-side ">
             <label htmlFor="dashboard-sidebar" className="drawer-overlay"></label>
-            <ul className="menu p-4 overflow-y-auto whitespace-nowrap w-68 bg-base-100 text-base-content">
+            <ul className="menu p-4 overflow-y-auto whitespace-nowrap w-68 bg-base-100 text-base-content border-r-2">
               {/* <!-- Sidebar content here --> */}
               <li>
                 <CustomLink className='w-full py-2 px-2 border-2 font-bold uppercase text-center rounded-lg' to="/courses">Free course</CustomLink>
