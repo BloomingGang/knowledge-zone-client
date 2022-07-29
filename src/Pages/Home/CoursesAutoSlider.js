@@ -88,19 +88,6 @@ const CoursesAutoSlider = () => {
 
                 </Slider>
             </div>
-
-      <div className="container mx-auto">
-        <Slider {...settings}>
-          {sliderItems.map((item, index) => (
-            <div className="bg-white p-8 rounded-2xl m-4 font-bold" key={index}>
-              <i className="text-2xl text-indigo-900">
-                K<span className="text-purple-900">Z</span>
-              </i>
-              <h2 className="text-orange-800 text-xl">{item.course}</h2>
-            </div>
-          ))}
-        </Slider>
-      </div>
     </div>
   );
 };

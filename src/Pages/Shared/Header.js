@@ -8,7 +8,7 @@ import logo from "../../img/assets/kz.png";
 import NavDropDown from "./NavDropDown";
 
 const Header = () => {
-  const [user, loading, error] = useAuthState(auth);
+  const [user] = useAuthState(auth);
 
   const [open, setOpen] = useState(false);
 
@@ -18,10 +18,10 @@ const Header = () => {
         <Link to="/">Home</Link>
       </li>
       <li className="mr-4 p-2 hover:bg-blue-500 rounded font-bold">
-        <Link to="/">Class 1-12</Link>
+        <Link to="/classes">Class 1-12</Link>
       </li>
       <li className="mr-4 p-2 hover:bg-blue-500 rounded font-bold">
-        <Link to="/">Courses</Link>
+        <Link to="/courses">Courses</Link>
       </li>
       <li className="mr-4 p-2 hover:bg-blue-500 rounded font-bold">
         <Link to="/books">Books</Link>
