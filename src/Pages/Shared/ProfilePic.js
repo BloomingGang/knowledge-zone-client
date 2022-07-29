@@ -5,7 +5,7 @@ import auth from "../../firebase.init";
 const ProfilePic = () => {
   const [user] = useAuthState(auth);
   return (
-    <div>
+    <div className="flex items-center">
       <div class="avatar online">
         <div class="w-8 rounded-full">
           <img

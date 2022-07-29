@@ -9,14 +9,14 @@ const NavDropDown = () => {
     signOut(auth);
   };
   return (
-    <div>
+    <div className="flex items-center">
       <div class="dropdown">
         <label tabindex="0">
           <ProfilePic></ProfilePic>
         </label>
         <ul
           tabindex="0"
-          class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52"
+          class="dropdown-content menu shadow bg-base-100 rounded-box w-52"
         >
           <li>
             <Link to="/">My Courses</Link>
