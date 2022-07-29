@@ -1,0 +1,37 @@
+[
+  {
+    "id": "01",
+    "title": "common broblem",
+    "userName": "Platfrom",
+    "img": "https://i.ibb.co/9pyrbWb/blog1300x250.png",
+    "description": "If you’re looking for the best blog examples to inspire you, you’re on the right page. We have covered a wide variety of top personal blogs and sorted them by niches. Read on!"
+  },
+  {
+    "id": "02",
+    "title": "common broblem2",
+    "userName": "The Beginning of Infinity",
+    "img": "https://i.ibb.co/fSrHVTy/blog2300x250.png",
+    "description": "Apartment Therapy is a blog focusing on interior design. It was launched by Maxwell Ryan in 2001. Ryan is an interior designer who turned to blogging (using the moniker “the apartment therapist”). The blog has reached 20 million followers and has expanded into a full-scale media company."
+  },
+  {
+    "id": "03",
+    "title": "common broblem3",
+    "userName": "Paslms",
+    "img": "https://i.ibb.co/3B2hHnb/blog3300x250.jpg",
+    "description": "Say Yes is an award-winning blog created by Liz Stanley in 2006. Although it could be classified as a mom blog as well, since Liz is a mother of three, it goes beyond that, offering useful advice about other topics, including food, and travel."
+  },
+  {
+    "id": "04",
+    "title": "common broblem4",
+    "userName": "Kinflok",
+    "img": "https://i.ibb.co/n3KwNRt/blog4300x250.jpg",
+    "description": "Bright Bazaar was created by Will Taylor, a journalist-turned-interior designer in 2009. Apart from wonderful home tours and design findings, Will shares other exciting details about his lifestyle, including his outfits, recipes, and life in New York City."
+  },
+  {
+    "id": "05",
+    "title": "common broblem5",
+    "userName": "Hope",
+    "img": "https://i.ibb.co/26rgB1m/blog5300x250.png",
+    "description": "A weekend hobby for Joanna Goddard turned into a full-time job. She started A Cup of Jo in 2007 and became a superstar lifestyle blogger. In fact, the site is barely a personal blog anymore, as Jo now has a team of professional writers who share her interests, such as style, design, food, and motherhood."
+  }
+]
