@@ -9,6 +9,7 @@ const SendMessage = () => {
         className="card-body"
         target="_blank"
       >
+        <h1 className="text-center text-3xl my-4 font-bold text-primary">Contact Us</h1>
         <div className="form-control">
           <label className="label">
             <span className="label-text">Your Name:</span>
