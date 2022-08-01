@@ -2,11 +2,12 @@ import React, { useEffect } from "react";
 import {
   useSendPasswordResetEmail,
   useSignInWithEmailAndPassword,
-  useSignInWithGoogle,
+  useSignInWithGoogle
 } from "react-firebase-hooks/auth";
 import { useForm } from "react-hook-form";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import auth from "../firebase.init";
+import useToken from "../Hooks/useToken";
 import Loading from "../Pages/Shared/Loading";
 
 const Login = () => {
@@ -28,12 +29,12 @@ const Login = () => {
 
   const [sendPasswordResetEmail, sending, pResetError] =
     useSendPasswordResetEmail(auth);
-
+const [token] = useToken(user || gUser);
   useEffect(() => {
-    if (user || gUser) {
+    if (token) {
       navigate(from, { replace: true });
     }
-  }, [from, navigate, user, gUser]);
+  }, [from, navigate, token]);
 
   if (loading || gLoading || sending) {
     return <Loading />;
