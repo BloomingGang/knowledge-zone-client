@@ -1,4 +1,5 @@
 import React from "react";
+import LiveChat from "./LiveChat";
 import MapLocation from "./MapLocation";
 import SendMessage from "./SendMessage";
 
@@ -10,6 +11,7 @@ const Contact = () => {
       </div>
       <div className="flex-1">
         <SendMessage />
+        <LiveChat />
       </div>
     </div>
   );
