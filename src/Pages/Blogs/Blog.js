@@ -14,7 +14,7 @@ const Blog = ({ blog, setModal }) => {
           <span className="text-orange-400">
             {description.length > 150 ? (
               <label
-                for="my-modal"
+                for="my-modal-3"
                 className="cursor-pointer"
                 onClick={() => setModal(blog)}
               >
