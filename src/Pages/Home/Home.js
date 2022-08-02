@@ -1,28 +1,30 @@
 import React from "react";
-import CardK from './CardK';
-import CardOne from './CardOne';
-import CarouselOne from './CarouselOne';
+import LiveChat from "../ContactUs/LiveChat";
+import CardK from "./CardK";
+import CardOne from "./CardOne";
+import CarouselOne from "./CarouselOne";
 import CoursesAutoSlider from "./CoursesAutoSlider";
 import EduBanner from "./EduBanner";
-import HeroBanner from './HeroBanner';
-import Investor from './Investor';
+import HeroBanner from "./HeroBanner";
+import Investor from "./Investor";
 import Learners from "./Learners";
 import LearningProgram from "./LearningProgram/LearningProgram";
-import Reviews from './Reviews';
+import Reviews from "./Reviews";
 
 const Home = () => {
   return (
     <div>
-      <HeroBanner/>
-      <Learners/>
-      <LearningProgram/>
+      <HeroBanner />
+      <Learners />
+      <LearningProgram />
       <CardK></CardK>
-      <Reviews></Reviews>
-      <EduBanner></EduBanner>
-      <Investor></Investor>
+      <Reviews />
+      <EduBanner />
+      <Investor />
       <CarouselOne />
       <CardOne />
-      <CoursesAutoSlider></CoursesAutoSlider>
+      <CoursesAutoSlider />
+      <LiveChat />
     </div>
   );
 };
