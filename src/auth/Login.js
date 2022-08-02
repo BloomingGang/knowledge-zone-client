@@ -7,7 +7,6 @@ import {
 import { useForm } from "react-hook-form";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import auth from "../firebase.init";
-import useToken from "../Hooks/useToken";
 import Loading from "../Pages/Shared/Loading";
 
 const Login = () => {
@@ -29,12 +28,12 @@ const Login = () => {
 
   const [sendPasswordResetEmail, sending, pResetError] =
     useSendPasswordResetEmail(auth);
-const [token] = useToken(user || gUser);
+
   useEffect(() => {
-    if (token) {
+    if (user || gUser) {
       navigate(from, { replace: true });
     }
-  }, [from, navigate, token]);
+  }, [from, navigate, user , gUser]);
 
   if (loading || gLoading || sending) {
     return <Loading />;
