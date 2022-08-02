@@ -1,15 +1,12 @@
-import React from 'react';
-import MessengerCustomerChat from 'react-messenger-customer-chat/lib/MessengerCustomerChat';
+import React from "react";
+import MessengerCustomerChat from "react-messenger-customer-chat/lib/MessengerCustomerChat";
 
 const LiveChat = () => {
-    return (
-        <div>
-            <MessengerCustomerChat
-    pageId="108077368666815"
-    appId="604773450985957"
-  />
-        </div>
-    );
+  return (
+    <div>
+      <MessengerCustomerChat pageId="108077368666815" appId="604773450985957" />
+    </div>
+  );
 };
 
 export default LiveChat;
