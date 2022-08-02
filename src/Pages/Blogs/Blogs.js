@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import LiveChat from "../ContactUs/LiveChat";
 import Blog from "./Blog";
 const Blogs = () => {
   const [blog, setBlogs] = useState([]);
@@ -13,6 +14,7 @@ const Blogs = () => {
         {blog.map((blog) => (
           <Blog key={blog._id} blog={blog}></Blog>
         ))}
+        <LiveChat />
       </div>
     </div>
   );
