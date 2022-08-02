@@ -2,7 +2,7 @@ import React from "react";
 import {
   useCreateUserWithEmailAndPassword,
   useSignInWithGoogle,
-  useUpdateProfile,
+  useUpdateProfile
 } from "react-firebase-hooks/auth";
 import { useForm } from "react-hook-form";
 import { Link, useLocation, useNavigate } from "react-router-dom";
@@ -25,6 +25,7 @@ const Register = () => {
   const [signInWithGoogle, gUser, gLoading, gError] = useSignInWithGoogle(auth);
 
   const [updateProfile, updating, uError] = useUpdateProfile(auth);
+  
 
   const onSubmit = async (data) => {
     await createUserWithEmailAndPassword(data.email, data.password);
