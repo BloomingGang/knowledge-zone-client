@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import {
   useSendPasswordResetEmail,
   useSignInWithEmailAndPassword,
-  useSignInWithGoogle,
+  useSignInWithGoogle
 } from "react-firebase-hooks/auth";
 import { useForm } from "react-hook-form";
 import { Link, useLocation, useNavigate } from "react-router-dom";
@@ -33,7 +33,7 @@ const Login = () => {
     if (user || gUser) {
       navigate(from, { replace: true });
     }
-  }, [from, navigate, user, gUser]);
+  }, [from, navigate, user , gUser]);
 
   if (loading || gLoading || sending) {
     return <Loading />;

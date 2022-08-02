@@ -26,6 +26,7 @@ const Blog = ({ blog, setModal }) => {
             )}
           </span>
         </p>
+
       </div>
     </div>
   );

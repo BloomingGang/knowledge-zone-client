@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import LiveChat from "../ContactUs/LiveChat";
 import Blog from "./Blog";
 import BlogModal from "./BlogModal";
 
@@ -17,6 +18,7 @@ const Blogs = () => {
         {blog.map((blog) => (
           <Blog setModal={setModal} key={blog._id} blog={blog}></Blog>
         ))}
+        <LiveChat />
       </div>
       {modal && <BlogModal modal={modal} setModal={setModal}></BlogModal>}
     </div>
