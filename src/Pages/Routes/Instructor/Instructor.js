@@ -1,5 +1,6 @@
 import React from "react";
-import { Link, Outlet } from "react-router-dom";
+import {  Outlet } from "react-router-dom";
+import CustomLink from "../../Shared/CustomLink";
 
 const Instructor = () => {
   return (
@@ -36,34 +37,34 @@ const Instructor = () => {
         </div>
         <div className="drawer-side">
           <label htmlFor="dashboard-sidebar" className="drawer-overlay"></label>
-          <ul className="menu p-4 overflow-y-auto w-48 bg-base-100 text-base-content">
+          <ul className="menu p-4 overflow-y-auto w-52 bg-base-100 text-base-content border-r-2 ">
             {/* <!-- Sidebar content here --> */}
             <li>
-              <Link to="/instructor">Bengali</Link>
+              <CustomLink className='w-full py-2 px-2 border-2 font-bold uppercase text-center rounded-lg' to="/instructor">Bengali</CustomLink>
             </li>
             <li>
-              <Link to="/instructor/english">English</Link>
+              <CustomLink className='w-full py-2 px-2 border-2 font-bold uppercase text-center rounded-lg' to="/instructor/english">English</CustomLink>
             </li>
             <li>
-              <Link to="/instructor/mathematics">Mathematics</Link>
+              <CustomLink className='w-full py-2 px-2 border-2 font-bold uppercase text-center rounded-lg' to="/instructor/mathematics">Mathematics</CustomLink>
             </li>
             <li>
-              <Link to="/instructor/chemistry">Chemistry</Link>
+              <CustomLink className='w-full py-2 px-2 border-2 font-bold uppercase text-center rounded-lg' to="/instructor/chemistry">Chemistry</CustomLink>
             </li>
             <li>
-              <Link to="/instructor/physics">Physics</Link>
+              <CustomLink className='w-full py-2 px-2 border-2 font-bold uppercase text-center rounded-lg' to="/instructor/physics">Physics</CustomLink>
             </li>
             <li>
-              <Link to="/instructor/biology">Biology</Link>
+              <CustomLink className='w-full py-2 px-2 border-2 font-bold uppercase text-center rounded-lg' to="/instructor/biology">Biology</CustomLink>
             </li>
             <li>
-              <Link to="/instructor/finance">Finance</Link>
+              <CustomLink className='w-full py-2 px-2 border-2 font-bold uppercase text-center rounded-lg' to="/instructor/finance">Finance</CustomLink>
             </li>
             <li>
-              <Link to="/instructor/religious">Religious</Link>
+              <CustomLink className='w-full py-2 px-2 border-2 font-bold uppercase text-center rounded-lg' to="/instructor/religious">Religious</CustomLink>
             </li>
             <li>
-              <Link to="/instructor/programming">Programming</Link>
+              <CustomLink className='w-full py-2 px-2 border-2 font-bold uppercase text-center rounded-lg' to="/instructor/programming">Programming</CustomLink>
             </li>
           </ul>
         </div>

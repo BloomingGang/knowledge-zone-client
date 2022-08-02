@@ -129,13 +129,13 @@ const Investor = () => {
                         >
 
                            <div className="py-16 px-10">
-                           <div class="card bg-base-100 shadow-xl min-h-[400px]">
-                                <figure class="px-10 pt-10">
-                                    <img src={investor.avatar} alt="Shoes" class="rounded-xl" />
+                           <div className="card bg-base-100 shadow-xl min-h-[400px]">
+                                <figure className="px-10 pt-10">
+                                    <img src={investor.avatar} alt="Shoes" className="rounded-xl" />
                                 </figure>
-                                <div class="card-body items-center text-center">
+                                <div className="card-body items-center text-center">
                                     <p>{investor.description}</p>
-                                    <h2 class="card-title">{investor.name}</h2>
+                                    <h2 className="card-title">{investor.name}</h2>
 
                                 </div>
                             </div>

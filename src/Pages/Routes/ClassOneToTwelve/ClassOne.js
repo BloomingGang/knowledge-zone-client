@@ -1,47 +1,23 @@
-import React from 'react';
-import courseImg from '../../../img/assets/LearningProgram/Live.png'
+import React, { useEffect, useState } from 'react';
 import ClassesCart from './ClassesCart';
 
 const ClassOne = () => {
-    const classOne = [
-        {
-            id: 1,
-            img: courseImg,
-            title: 'Buy this course',
-            price: 1000
 
-        },
-        {
-            id: 1,
-            img: courseImg,
-            title: 'Buy this course',
-            price: 100
-
-        },
-        {
-            id: 3,
-            img: courseImg,
-            title: 'Buy this course',
-            price: 2000
-
-        },
-        {
-            id: 4,
-            img: courseImg,
-            title: 'Buy this course',
-            price: 1500
-
-        }
-    ]
+    const [classOne, setClassOne] = useState([]);
+    useEffect(() => {
+        fetch("http://localhost:5000/classOne")
+            .then(res => res.json())
+            .then(data => setClassOne(data))
+    }, [])
     return (
-        <div className='grid grid-cols-4 gap-4'>
+        <div className='grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1  gap-4 px-5 '>
             {
-              classOne?.map((course)=> <ClassesCart
-              key={course.id}
-              course={course}
-              >
+                classOne?.map((course) => <ClassesCart
+                    key={course._id}
+                    course={course}
+                >
 
-              </ClassesCart> ) 
+                </ClassesCart>)
             }
         </div>
     );

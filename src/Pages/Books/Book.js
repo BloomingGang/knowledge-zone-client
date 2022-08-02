@@ -8,8 +8,8 @@ const Book = ({ book }) => {
         <figure class="px-10 pt-10">
           <img src={img} alt="Shoes" class="rounded-xl" />
         </figure>
-        <div class="card-body items-center text-center">
-          <h2 class="card-title">{userName}</h2>
+        <div className="card-body items-center text-center">
+          <h2 className="card-title">{userName}</h2>
           <p>
             {description.slice(0, 150)}{" "}
             <span className="text-orange-400">
