@@ -19,9 +19,9 @@ const Home = () => {
       <CardK></CardK>
       <Reviews></Reviews>
       <EduBanner></EduBanner>
-      <Investor></Investor>
+      <Investor />
       <CarouselOne />
-      <CardOne />
+      {/* <CardOne /> */}
       <CoursesAutoSlider></CoursesAutoSlider>
     </div>
   );

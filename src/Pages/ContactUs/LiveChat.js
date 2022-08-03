@@ -5,9 +5,9 @@ const LiveChat = () => {
     return (
         <div>
             <MessengerCustomerChat
-    pageId="108077368666815"
-    appId="604773450985957"
-  />
+                pageId="108077368666815"
+                appId="604773450985957"
+            />
         </div>
     );
 };
