@@ -11,7 +11,7 @@ const Blog = ({ blog, setModal }) => {
         <h2 className="card-title">{userName}</h2>
         <p>
           {description.slice(0, 150)}{" "}
-          <span className="text-orange-400">
+          <span className="text-primary font-semibold">
             {description.length > 150 ? (
               <label
                 for="my-modal-3"
@@ -19,7 +19,6 @@ const Blog = ({ blog, setModal }) => {
                 onClick={() => setModal(blog)}
               >
                 Read More...
-                {/* <label class="btn modal-button">open modal</label> */}
               </label>
             ) : (
               ""

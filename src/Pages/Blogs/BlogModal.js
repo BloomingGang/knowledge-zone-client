@@ -1,6 +1,6 @@
 import React from "react";
 
-const BlogModal = ({ modal, setModal }) => {
+const BlogModal = ({ modal }) => {
   const { description, userName, img } = modal;
   return (
     <div>
@@ -14,9 +14,9 @@ const BlogModal = ({ modal, setModal }) => {
             ✕
           </label>
           <div className="flex justify-center">
-            <img src={img} alt="" />
+            <img className="w-full" src={img} alt="" />
           </div>
-          <h3 class="text-lg font-bold">{userName}</h3>
+          <h3 class="text-lg font-bold text-center mt-5">{userName}</h3>
           <p class="py-4">{description}</p>
         </div>
       </div>
