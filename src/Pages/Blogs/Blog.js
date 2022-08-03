@@ -1,6 +1,6 @@
 import React from "react";
 
-const Blog = ({ blog }) => {
+const Blog = ({ blog, setModal }) => {
   const { description, userName, img } = blog;
   return (
     <div class="card w-96 bg-base-100 shadow-xl">
@@ -12,12 +12,20 @@ const Blog = ({ blog }) => {
         <p>
           {description.slice(0, 150)}{" "}
           <span className="text-orange-400">
-            {description.length > 150 ? "Read More..." : ""}
+            {description.length > 150 ? (
+              <label
+                for="my-modal-3"
+                className="cursor-pointer"
+                onClick={() => setModal(blog)}
+              >
+                Read More...
+                {/* <label class="btn modal-button">open modal</label> */}
+              </label>
+            ) : (
+              ""
+            )}
           </span>
         </p>
-        <div className="card-actions justify-end">
-          <button className="btn btn-primary">Details</button>
-        </div>
       </div>
     </div>
   );
