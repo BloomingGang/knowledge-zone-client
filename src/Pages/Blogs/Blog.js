@@ -1,27 +1,31 @@
 import React from "react";
 
-const Blog = ({ blog }) => {
-  const { description, userName } = blog;
+const Blog = ({ blog, setModal }) => {
+  const { description, userName, img } = blog;
   return (
     <div class="card w-96 bg-base-100 shadow-xl">
       <figure class="px-10 pt-10">
-        <img
-          src="https://placeimg.com/400/225/arch"
-          alt="Shoes"
-          class="rounded-xl"
-        />
+        <img src={img} alt="Shoes" class="rounded-xl" />
       </figure>
-      <div class="card-body items-center text-center">
-        <h2 class="card-title">{userName}</h2>
+      <div className="card-body items-center text-center">
+        <h2 className="card-title">{userName}</h2>
         <p>
           {description.slice(0, 150)}{" "}
           <span className="text-orange-400">
-            {description.length > 150 ? "Read More..." : ""}
+            {description.length > 150 ? (
+              <label
+                for="my-modal-3"
+                className="cursor-pointer"
+                onClick={() => setModal(blog)}
+              >
+                Read More...
+                {/* <label class="btn modal-button">open modal</label> */}
+              </label>
+            ) : (
+              ""
+            )}
           </span>
         </p>
-        <div class="card-actions justify-end">
-          <button class="btn btn-primary">Details</button>
-        </div>
       </div>
     </div>
   );

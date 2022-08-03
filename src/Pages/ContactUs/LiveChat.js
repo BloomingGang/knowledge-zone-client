@@ -1,5 +1,5 @@
-import React from 'react';
-import MessengerCustomerChat from 'react-messenger-customer-chat/lib/MessengerCustomerChat';
+import React from "react";
+import MessengerCustomerChat from "react-messenger-customer-chat/lib/MessengerCustomerChat";
 
 const LiveChat = () => {
     return (

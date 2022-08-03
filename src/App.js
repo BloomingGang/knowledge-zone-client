@@ -59,7 +59,14 @@ function App() {
 
         <Route path="contact" element={<Contact />} />
         {/* instructor route list */}
-        <Route path="/instructor" element={<RequireAuth><Instructor /></RequireAuth>}>
+        <Route
+          path="/instructor"
+          element={
+            <RequireAuth>
+              <Instructor />
+            </RequireAuth>
+          }
+        >
           <Route index element={<Bengali />} />
           <Route path="english" element={<English />} />
           <Route path="mathematics" element={<Mathematics />} />
@@ -71,18 +78,32 @@ function App() {
           <Route path="programming" element={<Programming />} />
         </Route>
         {/* Courses route list */}
-        <Route path="/courses" element={<RequireAuth><Courses /></RequireAuth>}>
-          <Route index element={< FreeCourse/>} />
+        <Route
+          path="/courses"
+          element={
+            <RequireAuth>
+              <Courses />
+            </RequireAuth>
+          }
+        >
+          <Route index element={<FreeCourse />} />
           <Route path="discountCourse" element={<DiscountCourse />} />
-          <Route path="liveCourse" element={< LiveCourse/>} />
-          <Route path="specialCourse" element={< SpecialCourse/>} />
-          <Route path="IslamicCourse" element={< IslamicCourse/>} />
-          <Route path="KidsCourse" element={< KidsCourse/>} />
-          <Route path="EntertainingCourse" element={< EntertainingCourse/>} />
+          <Route path="liveCourse" element={<LiveCourse />} />
+          <Route path="specialCourse" element={<SpecialCourse />} />
+          <Route path="IslamicCourse" element={<IslamicCourse />} />
+          <Route path="KidsCourse" element={<KidsCourse />} />
+          <Route path="EntertainingCourse" element={<EntertainingCourse />} />
         </Route>
         {/* class 1 to 12 route list */}
-        <Route path="/classes" element={<RequireAuth><AllClass/></RequireAuth>}>
-          <Route index element={<ClassOne/>} />
+        <Route
+          path="/classes"
+          element={
+            <RequireAuth>
+              <AllClass />
+            </RequireAuth>
+          }
+        >
+          <Route index element={<ClassOne />} />
           <Route path="two" element={<ClassTwo />} />
           <Route path="three" element={<ClassThree />} />
           <Route path="four" element={<ClassFour />} />
@@ -98,8 +119,15 @@ function App() {
 
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
-        <Route path="/blogs" element={<Blogs></Blogs>} />
-        <Route path="/books" element={<Books></Books>} />
+        <Route path="/blogs" element={<Blogs />} />
+        <Route
+          path="/books"
+          element={
+            <RequireAuth>
+              <Books />
+            </RequireAuth>
+          }
+        />
         <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />
