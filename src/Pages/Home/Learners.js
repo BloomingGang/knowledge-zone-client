@@ -7,12 +7,12 @@ import trust4 from "../../img/trust_4.svg";
 const Learners = () => {
   return (
     <div className="w-10/12 mx-auto shadow-xl py-6 md:mt-[-50px] bg-white rounded-xl">
-      <h1 className="text-center md:text-4xl text-2xl text-primary font-bold xl mb-10">
+      <h1 className="text-center md:text-3xl text-2xl text-primary font-bold xl mb-10">
         Trusted by 150 million+ learners
       </h1>
       <div className="md:flex justify-evenly mb-4">
         <div>
-          <div className="flex justify-center">
+          <div className="w-3/5 mx-auto">
             <img src={trust1} alt="" />
           </div>
           <p className="font-bold text-center">
@@ -20,7 +20,7 @@ const Learners = () => {
           </p>
         </div>
         <div>
-          <div className="flex justify-center">
+          <div className="w-3/5 mx-auto">
             <img src={trust2} alt="" />
           </div>
           <p className="font-bold text-center">
@@ -28,7 +28,7 @@ const Learners = () => {
           </p>
         </div>
         <div>
-          <div className="flex justify-center">
+          <div className="w-3/5 mx-auto">
             <img src={trust3} alt="" />
           </div>
           <p className="font-bold text-center">
@@ -36,7 +36,7 @@ const Learners = () => {
           </p>
         </div>
         <div>
-          <div className="flex justify-center">
+          <div className="w-3/5 mx-auto">
             <img src={trust4} alt="" />
           </div>
           <p className="font-bold text-center">
