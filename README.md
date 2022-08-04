@@ -1,6 +1,6 @@
 # Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was tailwind with [Create React App](https://knowledge-zone-37325.web.app/?fbclid=IwAR1q8tzlTykBlaT_nPESjm9SxnUxE09Bhlx9m4_gNLhq3FK3oJadgFd4bKQ).
 
 ## Available Scripts
 
