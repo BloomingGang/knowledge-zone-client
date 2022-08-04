@@ -19,8 +19,8 @@ const Learners = () => {
             Live and <br /> Personalised
           </p>
         </div>
-        <div className="mb-8">
-          <div className="flex justify-center">
+        <div>
+          <div className="w-3/5 mx-auto">
             <img src={trust2} alt="" />
           </div>
           <p className="font-bold text-center">
@@ -36,11 +36,19 @@ const Learners = () => {
           </p>
         </div>
         <div>
-          <div className="flex justify-center">
-            <img src={trust4} alt=""/>
+          <div className="w-3/5 mx-auto">
+            <img src={trust3} alt="" />
           </div>
           <p className="font-bold text-center">
-            100% Safe For <br /> Kids
+            Activity-based <br /> learning
+          </p>
+        </div>
+        <div>
+          <div className="w-3/5 mx-auto">
+            <img src={trust4} alt="" />
+          </div>
+          <p className="font-bold text-center">
+            100% safe for <br /> kids
           </p>
         </div>
       </div>

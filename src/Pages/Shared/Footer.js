@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from "react-router-dom";
 
 const Footer = () => {
     return (
@@ -27,15 +28,15 @@ const Footer = () => {
 
             <div className='mt-12'>
                 <div className='flex gap-x-6 justify-center'>
-                    <a className='border-b-2 border-transparent hover:border-b-2 hover:border-b-white rounded-bl duration-500' href="">Home</a>
-                    <a className='border-b-2 border-transparent hover:border-b-2 hover:border-b-white rounded-bl duration-500' href="">Service</a>
-                    <a className='border-b-2 border-transparent hover:border-b-2 hover:border-b-white rounded-bl duration-500' href="">Portfolio</a>
-                    <a className='border-b-2 border-transparent hover:border-b-2 hover:border-b-white rounded-bl duration-500' href="">Blog</a>
-                    <a className='border-b-2 border-transparent hover:border-b-2 hover:border-b-white rounded-bl duration-500' href="">Company</a>
+                    <Link to="/" className='border-b-2 border-transparent hover:border-b-2 hover:border-b-white rounded-bl duration-500'>Home</Link>
+                    <Link to="/" className='border-b-2 border-transparent hover:border-b-2 hover:border-b-white rounded-bl duration-500'>Courses</Link>
+                    <Link to="/" className='border-b-2 border-transparent hover:border-b-2 hover:border-b-white rounded-bl duration-500'>Blog</Link>
+                    <Link to="/" className='border-b-2 border-transparent hover:border-b-2 hover:border-b-white rounded-bl duration-500'>Instructor</Link>
+                    <Link to="/contact" className='border-b-2 border-transparent hover:border-b-2 hover:border-b-white rounded-bl duration-500'>Contact Us</Link>
                 </div>
             </div>
             <hr className='w-4/5 mx-auto my-6' />
-            <p className='text-center'> copyright@knowledge-zone 2022 all the right reserved | Designed by Byzu's</p>
+            <p className='text-center'> copyright@knowledge-zone 2022 all the right reserved | Designed by Knowledge Zone Team</p>
 
 
         </div>
