@@ -2,7 +2,7 @@ import React from "react";
 import {
   useCreateUserWithEmailAndPassword,
   useSignInWithGoogle,
-  useUpdateProfile
+  useUpdateProfile,
 } from "react-firebase-hooks/auth";
 import { useForm } from "react-hook-form";
 import { Link, useLocation, useNavigate } from "react-router-dom";
@@ -26,7 +26,6 @@ const Register = () => {
   const [signInWithGoogle, gUser, gLoading, gError] = useSignInWithGoogle(auth);
 
   const [updateProfile, updating, uError] = useUpdateProfile(auth);
-  
 
   const [token] = useToken(user || gUser);
 
@@ -141,7 +140,7 @@ const Register = () => {
           </div>
 
           <input
-            className="btn w-2/5 mx-auto block"
+            className="btn btn-primary w-2/5 mx-auto block"
             type="submit"
             value="Register"
           />
@@ -163,7 +162,7 @@ const Register = () => {
       <div className="flex justify-center">
         <button
           onClick={handleGoogleSignIn}
-          className="btn btn-outline text-blue-500"
+          className="btn btn-outline btn-primary text-blue-500"
         >
           CONTINUE WITH GOOGLE
         </button>
