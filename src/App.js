@@ -1,4 +1,5 @@
 import React from "react";
+import './App.css';
 import { Route, Routes } from "react-router-dom";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -122,7 +123,7 @@ function App() {
 
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
-        <Route path="/blogs" element={<Blogs></Blogs>} />
+        <Route path="/blogs" element={<Blogs />} />
         <Route
           path="/users"
           element={
@@ -135,7 +136,7 @@ function App() {
           path="/books"
           element={
             <RequireAuth>
-              <Books></Books>
+              <Books />
             </RequireAuth>
           }
         />

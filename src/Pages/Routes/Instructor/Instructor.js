@@ -1,5 +1,6 @@
 import React from "react";
 import {  Outlet } from "react-router-dom";
+import LiveChat from "../../ContactUs/LiveChat";
 import CustomLink from "../../Shared/CustomLink";
 
 const Instructor = () => {
@@ -40,35 +41,81 @@ const Instructor = () => {
           <ul className="menu p-4 overflow-y-auto w-52 bg-base-100 text-base-content border-r-2 ">
             {/* <!-- Sidebar content here --> */}
             <li>
-              <CustomLink className='w-full py-2 px-2 border-2 font-bold uppercase text-center rounded-lg' to="/instructor">Bengali</CustomLink>
+              <CustomLink
+                className="w-full py-2 px-2 border-2 font-bold uppercase text-center rounded-lg"
+                to="/instructor"
+              >
+                Bengali
+              </CustomLink>
             </li>
             <li>
-              <CustomLink className='w-full py-2 px-2 border-2 font-bold uppercase text-center rounded-lg' to="/instructor/english">English</CustomLink>
+              <CustomLink
+                className="w-full py-2 px-2 border-2 font-bold uppercase text-center rounded-lg"
+                to="/instructor/english"
+              >
+                English
+              </CustomLink>
             </li>
             <li>
-              <CustomLink className='w-full py-2 px-2 border-2 font-bold uppercase text-center rounded-lg' to="/instructor/mathematics">Mathematics</CustomLink>
+              <CustomLink
+                className="w-full py-2 px-2 border-2 font-bold uppercase text-center rounded-lg"
+                to="/instructor/mathematics"
+              >
+                Mathematics
+              </CustomLink>
             </li>
             <li>
-              <CustomLink className='w-full py-2 px-2 border-2 font-bold uppercase text-center rounded-lg' to="/instructor/chemistry">Chemistry</CustomLink>
+              <CustomLink
+                className="w-full py-2 px-2 border-2 font-bold uppercase text-center rounded-lg"
+                to="/instructor/chemistry"
+              >
+                Chemistry
+              </CustomLink>
             </li>
             <li>
-              <CustomLink className='w-full py-2 px-2 border-2 font-bold uppercase text-center rounded-lg' to="/instructor/physics">Physics</CustomLink>
+              <CustomLink
+                className="w-full py-2 px-2 border-2 font-bold uppercase text-center rounded-lg"
+                to="/instructor/physics"
+              >
+                Physics
+              </CustomLink>
             </li>
             <li>
-              <CustomLink className='w-full py-2 px-2 border-2 font-bold uppercase text-center rounded-lg' to="/instructor/biology">Biology</CustomLink>
+              <CustomLink
+                className="w-full py-2 px-2 border-2 font-bold uppercase text-center rounded-lg"
+                to="/instructor/biology"
+              >
+                Biology
+              </CustomLink>
             </li>
             <li>
-              <CustomLink className='w-full py-2 px-2 border-2 font-bold uppercase text-center rounded-lg' to="/instructor/finance">Finance</CustomLink>
+              <CustomLink
+                className="w-full py-2 px-2 border-2 font-bold uppercase text-center rounded-lg"
+                to="/instructor/finance"
+              >
+                Finance
+              </CustomLink>
             </li>
             <li>
-              <CustomLink className='w-full py-2 px-2 border-2 font-bold uppercase text-center rounded-lg' to="/instructor/religious">Religious</CustomLink>
+              <CustomLink
+                className="w-full py-2 px-2 border-2 font-bold uppercase text-center rounded-lg"
+                to="/instructor/religious"
+              >
+                Religious
+              </CustomLink>
             </li>
             <li>
-              <CustomLink className='w-full py-2 px-2 border-2 font-bold uppercase text-center rounded-lg' to="/instructor/programming">Programming</CustomLink>
+              <CustomLink
+                className="w-full py-2 px-2 border-2 font-bold uppercase text-center rounded-lg"
+                to="/instructor/programming"
+              >
+                Programming
+              </CustomLink>
             </li>
           </ul>
         </div>
       </div>
+      <LiveChat />
     </div>
   );
 };

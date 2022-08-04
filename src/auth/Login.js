@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import {
   useSendPasswordResetEmail,
   useSignInWithEmailAndPassword,
-  useSignInWithGoogle,
+  useSignInWithGoogle
 } from "react-firebase-hooks/auth";
 import { useForm } from "react-hook-form";
 import { Link, useLocation, useNavigate } from "react-router-dom";
@@ -36,7 +36,9 @@ const Login = () => {
     if (token) {
       navigate(from, { replace: true });
     }
+
   }, [token, from, navigate]);
+
 
   if (loading || gLoading || sending) {
     return <Loading />;

@@ -1,15 +1,17 @@
 import React from "react";
+import LiveChat from "./LiveChat";
 import MapLocation from "./MapLocation";
 import SendMessage from "./SendMessage";
 
 const Contact = () => {
   return (
-    <div className="flex items-center justify-center bg-indigo-100">
-      <div className="flex-1">
+    <div className="grid lg:grid-cols-2 grid-cols-1 bg-indigo-100">
+      <div className="">
         <MapLocation />
       </div>
-      <div className="flex-1">
+      <div className="">
         <SendMessage />
+        <LiveChat />
       </div>
     </div>
   );

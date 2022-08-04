@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import LiveChat from "../ContactUs/LiveChat";
 import Book from "./Book";
 
 const Books = () => {
@@ -14,6 +15,7 @@ const Books = () => {
         {book.map((bo) => (
           <Book key={bo._id} book={bo}></Book>
         ))}
+        <LiveChat />
       </div>
     </div>
   );
