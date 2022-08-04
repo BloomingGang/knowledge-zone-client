@@ -6,7 +6,7 @@ const Book = ({ book }) => {
     <div>
       <div class="card w-96 bg-base-100 shadow-xl">
         <figure class="px-10 pt-10">
-          <img src={img} alt="Shoes" class="rounded-xl" />
+          <img src={img} alt="/" class="rounded-xl" />
         </figure>
         <div className="card-body items-center text-center">
           <h2 className="card-title">{userName}</h2>
@@ -17,7 +17,6 @@ const Book = ({ book }) => {
             </span>
           </p>
           <div class="card-actions justify-end">
-            {/* <button class="btn btn-primary">Download</button> */}
             <a href="kausar.pdf" download class="btn btn-primary">
               <span class="btn-text">Download.</span>
             </a>
