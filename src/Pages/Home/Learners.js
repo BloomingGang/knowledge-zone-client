@@ -13,7 +13,7 @@ const Learners = () => {
       <div className="md:flex justify-evenly">
         <div className="mb-8">
           <div className="flex justify-center">
-            <img src={trust1} alt="" className="h-[85px] w-[85px]" />
+            <img src={trust1} alt="" />
           </div>
           <p className="font-bold text-center">
             Live and <br /> Personalised
@@ -21,7 +21,7 @@ const Learners = () => {
         </div>
         <div className="mb-8">
           <div className="flex justify-center">
-            <img src={trust2} alt="" className="h-[85px] w-[85px]" />
+            <img src={trust2} alt="" />
           </div>
           <p className="font-bold text-center">
             Top Qualified <br /> Teachers
@@ -29,7 +29,7 @@ const Learners = () => {
         </div>
         <div className="mb-8">
           <div className="flex justify-center">
-            <img src={trust3} alt="" className="h-[85px] w-[85px]" />
+            <img src={trust3} alt=""/>
           </div>
           <p className="font-bold text-center">
             Activity-based <br /> Learning
@@ -37,7 +37,7 @@ const Learners = () => {
         </div>
         <div>
           <div className="flex justify-center">
-            <img src={trust4} alt="" className="h-[85px] w-[85px]" />
+            <img src={trust4} alt=""/>
           </div>
           <p className="font-bold text-center">
             100% Safe For <br /> Kids
