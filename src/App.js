@@ -1,4 +1,5 @@
 import React from "react";
+import './App.css';
 import { Route, Routes } from "react-router-dom";
 import Contact from "./Pages/ContactUs/Contact";
 import Login from "./auth/Login";
@@ -118,12 +119,12 @@ function App() {
 
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
-        <Route path="/blogs" element={<Blogs></Blogs>} />
+        <Route path="/blogs" element={<Blogs />} />
         <Route
           path="/books"
           element={
             <RequireAuth>
-              <Books></Books>
+              <Books />
             </RequireAuth>
           }
         />
