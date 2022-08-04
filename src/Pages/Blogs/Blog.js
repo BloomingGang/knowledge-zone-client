@@ -7,12 +7,12 @@ const Blog = ({ blog, setModal }) => {
       <figure class="px-10 pt-10">
         <img src={img} alt="/" class="rounded-xl" />
       </figure>
-      <div className="card-body items-center text-center">
+      <div className="card-body items-center text-justify">
         <h2 className="card-title">{userName}</h2>
         <p>
-          {description.slice(0, 150)}{" "}
+          {description.slice(0, 250)}{" "}
           <span className="text-primary font-semibold">
-            {description.length > 150 ? (
+            {description.length > 250 ? (
               <label
                 for="my-modal-3"
                 className="cursor-pointer"
