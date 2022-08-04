@@ -1,3 +1,4 @@
+import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { useQuery } from "react-query";
 import Loading from "../Shared/Loading";
@@ -7,7 +8,7 @@ const Users = () => {
   const [users, setUsers] = useState([]);
 
   useEffect(() => {
-    fetch(" http://localhost:5000/user", {
+    fetch("https://frozen-sierra-37797.herokuapp.com/user", {
       method: "GET",
       headers: {
         authorization: `Bearer ${localStorage.getItem("accessToken")}`,
@@ -15,15 +16,27 @@ const Users = () => {
     })
       .then((res) => res.json())
       .then((data) => setUsers(data));
-  }, []);
+  }, [users]);
 
-  //   const { data: users, isLoading } = useQuery("users", () =>
-  //     fetch("http://localhost:5000/user").then((res) => res.json())
-  //   );
+  // const {
+  //   isLoading,
+  //   error,
+  //   data: users,
+  //   refetch,
+  // } = useQuery("users", () =>
+  //   fetch("https://frozen-sierra-37797.herokuapp.com/user", {
+  //     method: "GET",
+  //     headers: {
+  //       "content-type": "application/json",
+  //       authorization: `Bearer ${localStorage.getItem("accessToken")}`,
+  //     },
+  //   }).then((res) => res.json())
+  // );
+  // console.log(users);
 
-  //   if (isLoading) {
-  //     return <Loading></Loading>;
-  //   }
+  // if (isLoading) {
+  //   return <Loading></Loading>;
+  // }
 
   return (
     <div className="pt-4 pb-14">
@@ -39,7 +52,7 @@ const Users = () => {
             </tr>
           </thead>
           <tbody>
-            {users.map((user, index) => (
+            {users?.map((user, index) => (
               <UserRow key={user._id} user={user} index={index}></UserRow>
             ))}
           </tbody>

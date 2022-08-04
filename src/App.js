@@ -1,6 +1,6 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
-import { ToastContainer, toast } from "react-toastify";
+import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Contact from "./Pages/ContactUs/Contact";
 import Login from "./auth/Login";
@@ -47,6 +47,7 @@ import Header from "./Pages/Shared/Header";
 import NotFound from "./Pages/Shared/NotFound";
 import RequireAuth from "./auth/RequireAuth";
 import Users from "./Pages/Users/Users";
+import RequireAdmin from "./auth/RequireAdmin";
 
 function App() {
   return (
@@ -122,7 +123,14 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
         <Route path="/blogs" element={<Blogs></Blogs>} />
-        <Route path="/users" element={<Users></Users>} />
+        <Route
+          path="/users"
+          element={
+            <RequireAdmin>
+              <Users></Users>
+            </RequireAdmin>
+          }
+        />
         <Route
           path="/books"
           element={
