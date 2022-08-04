@@ -1,7 +1,7 @@
 import React from "react";
 import devices from "../../img/devices.svg";
 import img from "../../img/handelDevice.png";
-import hoverImg from "../../img/hover.png";
+import hoverImg from "../../img/assets/10005.jpg";
 import icon from "../../img/logo.png";
 import { Link } from "react-router-dom";
 
@@ -46,7 +46,7 @@ const CardK = () => {
               </div>
             </div>
             <div className="lg:w-[50%] w-full flex justify-center sm:order-1 lg:order-2">
-              <img className="py-10 text-center" src={hoverImg} alt="" />
+              <img className="py-10 w-full lg:w-3/5 text-center" src={hoverImg} alt="" />
             </div>
           </div>
         </div>
