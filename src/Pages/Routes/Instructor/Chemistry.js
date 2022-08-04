@@ -40,12 +40,12 @@ const Chemistry = () => {
                 <div className="card-body items-center text-center">
                   <h2 className="card-title text-primary">{instructor.name}</h2>
                   <h3>{instructor.education}</h3>
+                  <div className='text-2xl sm:text-center'>
+                            <a href="" target={'_blank'}><i className="fa-brands fa-facebook-square mr-4"></i> </a>
+                            <a href="" target={'_blank'} rel='noreferrer'><i className="fa-brands fa-twitter-square mr-4"></i> </a>
+                            <a href="" target={'_blank'} rel='noreferrer'><i className="fa-brands fa-youtube-square"></i></a>
+                        </div>
                 </div>
-                <div className='text-2xl pb-4 sm:text-center'>
-                        <a href="" target={'_blank'}><i className="fa-brands fa-facebook-square mr-4"></i> </a>
-                        <a href="" target={'_blank'} rel='noreferrer'><i className="fa-brands fa-twitter-square mr-4"></i> </a>
-                        <a href="" target={'_blank'} rel='noreferrer'><i className="fa-brands fa-youtube-square"></i></a>
-                    </div>
               </div>) 
         }
         
