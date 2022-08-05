@@ -1,37 +1,14 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import CourseCart from './CourseCart';
-import courseImg from '../../../img/assets/LearningProgram/Live.png'
 const DiscountCourse = () => {
-    const discountCourses = [
-        {
-            id: 1,
-            img: courseImg,
-            title: 'Buy this course',
-            price: 100
 
-        },
-        {
-            id: 2,
-            img: courseImg,
-            title: 'Buy this course',
-            price: 500
-
-        },
-        {
-            id: 3,
-            img: courseImg,
-            title: 'Buy this course',
-            price: 100
-
-        },
-        {
-            id: 4,
-            img: courseImg,
-            title: 'Buy this course',
-            price: 150
-
-        }
-    ]
+    const [discountCourses, setDiscountCourses] = useState([]);
+    useEffect(() => {
+        fetch("http://localhost:5000/discountCourse")
+            .then(res => res.json())
+            .then(data => setDiscountCourses(data))
+    }, [])
+   
     return (
         <div className='grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1  gap-4 mx-5'>
             {
