@@ -6,7 +6,7 @@ const Book = ({ book }) => {
     <div>
       <div class="card w-96 bg-base-100 shadow-xl">
         <figure class="px-10 pt-10">
-          <img src={img} alt="Shoes" class="rounded-xl" />
+          <img src={img} alt="Shoes" className="w-[300px] h-[250px]" class="rounded-xl" />
         </figure>
         <div className="card-body items-center text-center">
           <h2 className="card-title">{userName}</h2>
