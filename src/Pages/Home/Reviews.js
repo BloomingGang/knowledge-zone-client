@@ -90,8 +90,8 @@ const Reviews = () => {
       >
         <div className="container mx-auto">
           <div className="mb-12 w-full mx-auto">
-            <h3 className="text-center text-4xl font-bold text-black">
-              Millions of happy students and counting
+            <h3 className="text-center text-4xl font-bold text-primary pt-10">
+              Millions Of Happy Students And Counting
             </h3>
           </div>
 
@@ -102,18 +102,22 @@ const Reviews = () => {
             <Carousel swipeable="true" responsive={responsive} infinite={true}>
               {members.map((member, index) => (
                 <div key={index} className="mx-2">
-                  <div className="rounded-2xl py-4 border w-fit">
+                  <div className="rounded-2xl border-2 w-fit h-[370px]">
                     <div>
                       <img
                         src={member.avatar}
                         alt={`avatar${index}`}
-                        className="mx-auto"
+                        className="mx-auto rounded-t-2xl h-[170px]"
                       />
                     </div>
                     <div className="bg-white text-center rounded-2xl">
                       <div className="ml-2 mb-2">
-                        <h6 className="font-bold text-xl">{member.name}</h6>
-                        <p className="text-sm">{member.description}</p>
+                        <h6 className="font-bold text-2xl pt-1">
+                          {member.name}
+                        </h6>
+                        <p className="text-justify pt-2 px-2">
+                          {member.description}
+                        </p>
                       </div>
                     </div>
                   </div>

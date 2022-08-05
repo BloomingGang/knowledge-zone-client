@@ -37,14 +37,6 @@ const Learners = () => {
         </div>
         <div>
           <div className="w-3/5 mx-auto">
-            <img src={trust3} alt="" />
-          </div>
-          <p className="font-bold text-center">
-            Activity-based <br /> learning
-          </p>
-        </div>
-        <div>
-          <div className="w-3/5 mx-auto">
             <img src={trust4} alt="" />
           </div>
           <p className="font-bold text-center">
