@@ -5,9 +5,9 @@ import { Link } from 'react-router-dom';
 const ProgramCart = ({info}) => {
     const {icon,title,programs,description,program_img}=info
     return (
-        <div className='w-full hover:shadow-xl border-2 border-gray-100 rounded-xl'>
+        <div className='w-full hover:shadow-xl border-2 border-gray-100 bg-blue-200 rounded-xl'>
 
-                <div className=" bg-base-100 p-5 rounded-xl">
+                <div className="p-5 rounded-xl">
                     <div>
                         <img src={icon} alt="" />
                     </div>
@@ -16,7 +16,7 @@ const ProgramCart = ({info}) => {
                             <h3 className='lg:text-4xl md:text-4xl font-bold mb-5 lg:mb-0 md:mb-0  mr-5'>{title}</h3>
                             <div className='mb-5 lg:mb-0 md:mb-0 '>
                                 {
-                                    programs?.map((program)=> <Link to='#' className='text-sm border-2 bg-black text-white rounded-2xl p-2 outline-none whitespace-pre-wrap'> {program}</Link>)
+                                    programs?.map((program)=> <Link to='#' className='text-sm m-2 bg-indigo-800 text-white rounded-xl p-2 outline-none whitespace-pre-wrap'> {program}</Link>)
                                 }
                                
                                
@@ -27,7 +27,7 @@ const ProgramCart = ({info}) => {
                                 </p>
                             </div>
                             <div>
-                                <Link to={'#'} className="btn"> EXPLORE &gt; </Link>
+                                <Link to={'#'} className="btn btn-primary"> EXPLORE &gt; </Link>
                             </div>
 
 
