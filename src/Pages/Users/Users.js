@@ -39,8 +39,8 @@ const Users = () => {
     <div className="pt-4 pb-14">
       <h1 className="text-3xl font-bold text-center p-4">All Users</h1>
 
-      <div class="overflow-x-auto">
-        <table class="table table-zebra w-full">
+      <div className="overflow-x-auto">
+        <table className="table table-zebra w-full">
           <thead>
             <tr>
               <th></th>
