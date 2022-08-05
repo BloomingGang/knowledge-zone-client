@@ -17,7 +17,7 @@ const Home = () => {
       <HeroBanner />
       <Learners />
       <LearningProgram />
-      <CardK></CardK>
+      <CardK />
       <Reviews />
       <EduBanner />
       <Investor />

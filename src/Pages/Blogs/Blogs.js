@@ -20,7 +20,7 @@ const Blogs = () => {
         ))}
         <LiveChat />
       </div>
-      {modal && <BlogModal modal={modal} setModal={setModal}></BlogModal>}
+      {modal && <BlogModal modal={modal}></BlogModal>}
     </div>
   );
 };

@@ -8,27 +8,35 @@ const Learners = () => {
   return (
     <div className="w-10/12 mx-auto shadow-xl py-6 md:mt-[-50px] bg-white rounded-xl">
       <h1 className="text-center md:text-4xl text-2xl text-primary font-bold xl mb-10">
-        Trusted by 150 million+ learners
+        Trusted By 150 Million+ Learners
       </h1>
-      <div className="md:flex justify-evenly mb-4">
-        <div>
+      <div className="md:flex justify-evenly">
+        <div className="mb-8">
           <div className="flex justify-center">
             <img src={trust1} alt="" />
           </div>
           <p className="font-bold text-center">
-            Live and <br /> personalised
+            Live and <br /> Personalised
           </p>
         </div>
         <div>
-          <div className="flex justify-center">
+          <div className="w-3/5 mx-auto">
             <img src={trust2} alt="" />
           </div>
           <p className="font-bold text-center">
-            Top qualified <br /> teachers
+            Top Qualified <br /> Teachers
+          </p>
+        </div>
+        <div className="mb-8">
+          <div className="flex justify-center">
+            <img src={trust3} alt=""/>
+          </div>
+          <p className="font-bold text-center">
+            Activity-based <br /> Learning
           </p>
         </div>
         <div>
-          <div className="flex justify-center">
+          <div className="w-3/5 mx-auto">
             <img src={trust3} alt="" />
           </div>
           <p className="font-bold text-center">
@@ -36,7 +44,7 @@ const Learners = () => {
           </p>
         </div>
         <div>
-          <div className="flex justify-center">
+          <div className="w-3/5 mx-auto">
             <img src={trust4} alt="" />
           </div>
           <p className="font-bold text-center">
