@@ -1,6 +1,6 @@
 import React from "react";
 
-const Book = ({ book }) => {
+const Book = ({ book, setModal }) => {
   const { description, userName, img } = book;
   return (
     <div>
@@ -13,7 +13,17 @@ const Book = ({ book }) => {
           <p>
             {description.slice(0, 250)}{" "}
             <span className="text-primary font-semibold">
-              {description.length > 250 ? "Read More..." : " "}
+              {description.length > 250 ? (
+                <label
+                  for="my-modal-3"
+                  className="cursor-pointer"
+                  onClick={() => setModal(book)}
+                >
+                  Read More...
+                </label>
+              ) : (
+                " "
+              )}
             </span>
           </p>
           <div className="card-actions justify-end">
