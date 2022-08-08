@@ -1,26 +1,34 @@
 import { signOut } from "firebase/auth";
 import React from "react";
+import { useAuthState } from "react-firebase-hooks/auth";
 import { Link } from "react-router-dom";
 import auth from "../../firebase.init";
+import useAdmin from "../../hooks/useAdmin";
 import ProfilePic from "./ProfilePic";
 
 const NavDropDown = () => {
+  const [user] = useAuthState(auth);
+  const [admin] = useAdmin(user);
+
   const logout = () => {
     signOut(auth);
+    localStorage.removeItem("accessToken");
   };
   return (
     <div className="flex items-center">
-      <div class="dropdown">
+      <div className="dropdown">
         <label tabindex="0">
           <ProfilePic></ProfilePic>
         </label>
         <ul
           tabindex="0"
-          class="dropdown-content menu shadow bg-base-100 rounded-box w-52"
+          className="dropdown-content menu shadow bg-base-100 rounded-box w-52"
         >
-          <li>
-            <Link to="/">My Courses</Link>
-          </li>
+          {admin && (
+            <li>
+              <Link to="/users">All Users</Link>
+            </li>
+          )}
           <li>
             <Link to="/">My Courses</Link>
           </li>

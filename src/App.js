@@ -1,5 +1,8 @@
 import React from "react";
+import './App.css';
 import { Route, Routes } from "react-router-dom";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import Contact from "./Pages/ContactUs/Contact";
 import Login from "./auth/Login";
 import Register from "./auth/Register";
@@ -44,6 +47,8 @@ import Footer from "./Pages/Shared/Footer";
 import Header from "./Pages/Shared/Header";
 import NotFound from "./Pages/Shared/NotFound";
 import RequireAuth from "./auth/RequireAuth";
+import Users from "./Pages/Users/Users";
+import RequireAdmin from "./auth/RequireAdmin";
 
 function App() {
   return (
@@ -118,18 +123,27 @@ function App() {
 
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
-        <Route path="/blogs" element={<Blogs></Blogs>} />
+        <Route path="/blogs" element={<Blogs />} />
+        <Route
+          path="/users"
+          element={
+            <RequireAdmin>
+              <Users></Users>
+            </RequireAdmin>
+          }
+        />
         <Route
           path="/books"
           element={
             <RequireAuth>
-              <Books></Books>
+              <Books />
             </RequireAuth>
           }
         />
         <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />
+      <ToastContainer />
     </div>
   );
 }

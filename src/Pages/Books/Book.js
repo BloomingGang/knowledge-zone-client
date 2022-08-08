@@ -4,22 +4,21 @@ const Book = ({ book }) => {
   const { description, userName, img } = book;
   return (
     <div>
-      <div class="card w-96 bg-base-100 shadow-xl">
-        <figure class="px-10 pt-10">
-          <img src={img} alt="Shoes" class="rounded-xl" />
-        </figure>
-        <div className="card-body items-center text-center">
+      <div className="card w-96 bg-base-100 shadow-xl h-[600px]">
+        <div className="px-10 pt-10">
+          <img src={img} alt="/" className="rounded-xl h-[250px] w-[300px]" />
+        </div>
+        <div className="card-body items-center text-justify">
           <h2 className="card-title">{userName}</h2>
           <p>
-            {description.slice(0, 150)}{" "}
-            <span className="text-orange-400">
-              {description.length > 150 ? "Read More..." : " "}
+            {description.slice(0, 250)}{" "}
+            <span className="text-primary font-semibold">
+              {description.length > 250 ? "Read More..." : " "}
             </span>
           </p>
-          <div class="card-actions justify-end">
-            {/* <button class="btn btn-primary">Download</button> */}
-            <a href="kausar.pdf" download class="btn btn-primary">
-              <span class="btn-text">Download.</span>
+          <div className="card-actions justify-end">
+            <a href="kausar.pdf" download className="btn btn-primary">
+              <span className="btn-text">Download.</span>
             </a>
           </div>
         </div>

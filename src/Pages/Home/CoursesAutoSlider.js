@@ -78,10 +78,10 @@ const CoursesAutoSlider = () => {
 
                         sliderItems.map((item, index) => <div>
                             <div
-                                className="bg-white p-8 rounded-2xl m-4 font-bold"
+                                className="bg-white p-6 rounded-2xl m-4 font-bold text-center"
                                 key={index}>
                                 <i className="text-2xl text-indigo-900">K<span className="text-purple-900">Z</span></i>
-                                <h2 className="text-orange-800 text-xl">{item.course}</h2>
+                                <h2 className="text-orange-700 text-2xl">{item.course}</h2>
                             </div>
                         </div>)
                     }
