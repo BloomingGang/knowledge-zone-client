@@ -7,7 +7,7 @@ const FreeCourse = () => {
     const [freeCourses, setFreeCourses] = useState([]);
     const [loading,setLoading]=useState(true);
     useEffect(() => {
-        fetch("https://frozen-sierra-37797.herokuapp.com/freeCourse")
+        fetch("https://immense-meadow-70411.herokuapp.com/freeCourse")
             .then(res => res.json())
             .then(data => {
                 setFreeCourses(data)

@@ -6,7 +6,7 @@ const ClassSix = () => {
   const [classSix, setClassSix] = useState([]);
   const [loading, setLoading] = useState(true);
   useEffect(() => {
-    fetch("https://frozen-sierra-37797.herokuapp.com/classSix")
+    fetch("https://immense-meadow-70411.herokuapp.com/classSix")
       .then((res) => res.json())
       .then((data) => {
         setClassSix(data)
