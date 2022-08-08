@@ -6,7 +6,7 @@ const LiveCourse = () => {
     const [liveCourse, setLiveCourse] = useState([]);
     const [loading, setLoading] = useState(true);
     useEffect(() => {
-        fetch("https://frozen-sierra-37797.herokuapp.com/liveCourse")
+        fetch("https://immense-meadow-70411.herokuapp.com/liveCourse")
             .then(res => res.json())
             .then(data => {
                 setLiveCourse(data)
