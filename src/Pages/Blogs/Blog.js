@@ -3,9 +3,9 @@ import React from "react";
 const Blog = ({ blog, setModal }) => {
   const { description, userName, img } = blog;
   return (
-    <div class="card w-96 bg-base-100 shadow-xl">
-      <figure class="px-10 pt-10">
-        <img src={img} alt="/" class="rounded-xl" />
+    <div className="card w-96 bg-base-100 shadow-xl">
+      <figure className="px-10 pt-10">
+        <img src={img} alt="/" className="rounded-xl" />
       </figure>
       <div className="card-body items-center text-justify">
         <h2 className="card-title">{userName}</h2>

@@ -6,8 +6,8 @@ const ProfilePic = () => {
   const [user] = useAuthState(auth);
   return (
     <div className="flex items-center">
-      <div class="avatar online">
-        <div class="w-8 rounded-full">
+      <div className="avatar online">
+        <div className="w-8 rounded-full">
           <img
             src={user?.photoURL || "https://i.ibb.co/whxhPPg/cute-girl.jpg"} alt='profile'/>
         </div>
