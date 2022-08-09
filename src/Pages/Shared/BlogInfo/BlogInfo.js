@@ -1,19 +1,19 @@
-import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import axios from "axios";
 
-const BookInfo = () => {
+const BlogInfo = () => {
   const { id } = useParams();
-  const [book, setBook] = useState([]);
+  const [blog, setBlog] = useState([]);
   useEffect(() => {
     axios
-      .get(`http://localhost:5000/book/${id}`)
-      .then((data) => setBook(data.data));
+      .get(`http://localhost:5000/blog/${id}`)
+      .then((data) => setBlog(data.data));
     // fetch(`http://localhost:5000/book/${id}`)
     //   .then((response) => response.json())
     //   .then((data) => setBook(data));
   }, []);
-  const { description, userName, img, page, writer } = book;
+  const { description, userName, img, page, writer } = blog;
   return (
     <div>
       <h1>{userName}</h1>
@@ -25,4 +25,4 @@ const BookInfo = () => {
   );
 };
 
-export default BookInfo;
+export default BlogInfo;

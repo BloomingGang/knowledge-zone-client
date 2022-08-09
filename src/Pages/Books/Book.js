@@ -32,11 +32,11 @@ const Book = ({ book, setModal }) => {
             </span>
           </p>
           <div className="card-actions justify-end">
-            {/* <a href="kausar.pdf" download className="btn btn-primary"> */}
-            <span onClick={() => handlebook(_id)} className="btn-text">
-              Download.
-            </span>
-            {/* </a> */}
+            <div className="btn btn-primary">
+              <span onClick={() => handlebook(_id)} className="btn-text">
+                Details
+              </span>
+            </div>
           </div>
         </div>
       </div>
