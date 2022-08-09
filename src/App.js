@@ -49,6 +49,7 @@ import NotFound from "./Pages/Shared/NotFound";
 import RequireAuth from "./auth/RequireAuth";
 import Users from "./Pages/Users/Users";
 import RequireAdmin from "./auth/RequireAdmin";
+import UpdateProfile from './Pages/Dashboard/UpdateProfile';
 
 function App() {
   return (
@@ -137,6 +138,14 @@ function App() {
           element={
             <RequireAuth>
               <Books />
+            </RequireAuth>
+          }
+        />
+        <Route
+          path="/updateProfile"
+          element={
+            <RequireAuth>
+              <UpdateProfile/>
             </RequireAuth>
           }
         />
