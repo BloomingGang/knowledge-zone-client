@@ -4,29 +4,6 @@ import ClassesCart from "./ClassesCart";
 
 const ClassOne = () => {
  
-
-  // const classOne = [
-  //   {"_id":1,
-  //     "img": "https://i.ibb.co/KVL15KR/class-1.png",
-  //     "title": "Buy this course",
-  //     "price": 99
-  //   },
-  //   {"_id":2,
-  //     "img": "https://i.ibb.co/KVL15KR/class-1.png",
-  //     "title": "Buy this course",
-  //     "price": 99
-  //   },
-  //   {"_id":3,
-  //     "img": "https://i.ibb.co/KVL15KR/class-1.png",
-  //     "title": "Buy this course",
-  //     "price": 99
-  //   },
-  //   {"_id":4,
-  //     "img": "https://i.ibb.co/KVL15KR/class-1.png",
-  //     "title": "Buy this course",
-  //     "price": 99
-  //   },
-  // ]
   const [classOne, setClassOne] = useState([]);
   const [loading,setLoading]=useState(true);
   useEffect(() => {

@@ -50,6 +50,7 @@ import RequireAuth from "./auth/RequireAuth";
 import Users from "./Pages/Users/Users";
 import RequireAdmin from "./auth/RequireAdmin";
 import ClassOneInfo from "./Pages/Shared/ClassOneToTwelveInfo/ClassOneInfo";
+import ClassTwoInfo from "./Pages/Shared/ClassOneToTwelveInfo/ClassTwoInfo";
 
 function App() {
   return (
@@ -124,6 +125,7 @@ function App() {
          {/* class 1 to 12 route list */}
         {/* courses information component start */}
         <Route path='/classOne/coursesInfo/:id' element={<RequireAuth><ClassOneInfo/></RequireAuth>}></Route>
+        <Route path='/classTwo/coursesInfo/:id' element={<RequireAuth><ClassTwoInfo/></RequireAuth>}></Route>
   
         {/* courses information component end */}
 

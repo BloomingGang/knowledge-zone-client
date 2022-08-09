@@ -2,11 +2,12 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 
 const ClassesCart = ({course}) => {
+    const {price,title,img,className,_id}=course
     const navigate = useNavigate();
-    const handlePurchase = id => {
-      navigate(`One/coursesInfo/${id}`);
+    const handleCourse = id => {
+      navigate(`/${className}/coursesInfo/${id}`);
   }
-    const {price,title,img,_id}=course
+   
     return (
             <section>
             <div className="card card-compact  bg-base-100 shadow-xl">
@@ -18,7 +19,7 @@ const ClassesCart = ({course}) => {
                         <span > <span className='text-xl font-bold'>Price:</span>  <span className='text-lg font-bold text-primary'>${price}</span></span>
                         <button 
                         className="btn btn-primary"
-                        onClick={()=>handlePurchase(_id)}
+                        onClick={()=>handleCourse(_id)}
                         >Buy Now</button>
                     </div>
                 </div>

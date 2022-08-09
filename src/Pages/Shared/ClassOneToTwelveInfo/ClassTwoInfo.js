@@ -2,14 +2,14 @@ import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 
-const ClassOneInfo = () => {
+const ClassTwoInfo = () => {
     const { id} = useParams();
-    const [classOneInfo,setClassOneInfo]=useState({})
+    const [classTwoInfo,setClassTwoInfo]=useState({})
     useEffect(()=>{
-        axios.get(`http://localhost:5000/classOne/${id}`).then(data=>setClassOneInfo(data.data))
+        axios.get(`http://localhost:5000/classTwo/${id}`).then(data=>setClassTwoInfo(data.data))
     },[id])
-    const {title,price,img}=classOneInfo;
-    console.log(classOneInfo)
+    const {title,price,img}=classTwoInfo;
+    console.log(classTwoInfo)
     return (
         <div>
             <h2>{title}</h2>
@@ -19,4 +19,4 @@ const ClassOneInfo = () => {
     );
 };
 
-export default ClassOneInfo;
+export default ClassTwoInfo;
