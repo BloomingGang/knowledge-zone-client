@@ -3,6 +3,9 @@ import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 
 const ClassTwoInfo = () => {
+
+
+    
     const { id} = useParams();
     const [classTwoInfo,setClassTwoInfo]=useState({})
     useEffect(()=>{
