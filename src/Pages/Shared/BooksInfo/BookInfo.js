@@ -1,8 +1,9 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 
 const BookInfo = () => {
+  const navigate = useNavigate();
   const { id } = useParams();
   const [book, setBook] = useState([]);
   useEffect(() => {
@@ -12,8 +13,8 @@ const BookInfo = () => {
     // fetch(`http://localhost:5000/book/${id}`)
     //   .then((response) => response.json())
     //   .then((data) => setBook(data));
-  }, []);
-  const { description, userName, img, page, writer } = book;
+  }, [id]);
+  const { description, userName, img, page, writer, _id } = book;
   return (
     <div>
       <h1>{userName}</h1>
@@ -21,6 +22,15 @@ const BookInfo = () => {
       <img src={img} alt="" />
       <h1>{page}</h1>
       <h1>{writer}</h1>
+      {!book.paid && (
+        <button
+          onClick={() => navigate(`/payment/${_id}`)}
+          className="btn btn-primary"
+        >
+          Buy Now
+        </button>
+      )}
+      {book.paid && <span className="text-primary">Bought It</span>}
     </div>
   );
 };
