@@ -1,6 +1,11 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
-const ClassesCart = ({course,handlePurchase}) => {
+const ClassesCart = ({course}) => {
+    const navigate = useNavigate();
+    const handlePurchase = id => {
+      navigate(`One/coursesInfo/${id}`);
+  }
     const {price,title,img,_id}=course
     return (
             <section>

@@ -49,6 +49,7 @@ import NotFound from "./Pages/Shared/NotFound";
 import RequireAuth from "./auth/RequireAuth";
 import Users from "./Pages/Users/Users";
 import RequireAdmin from "./auth/RequireAdmin";
+import ClassOneInfo from "./Pages/Shared/ClassOneToTwelveInfo/ClassOneInfo";
 
 function App() {
   return (
@@ -120,6 +121,11 @@ function App() {
           <Route path="eleven" element={<ClassEleven />} />
           <Route path="twelve" element={<ClassTwelve />} />
         </Route>
+         {/* class 1 to 12 route list */}
+        {/* courses information component start */}
+        <Route path='/classOne/coursesInfo/:id' element={<RequireAuth><ClassOneInfo/></RequireAuth>}></Route>
+  
+        {/* courses information component end */}
 
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
