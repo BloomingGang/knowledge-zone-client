@@ -1,15 +1,13 @@
 import React from "react";
+import "./App.css";
 import { Route, Routes } from "react-router-dom";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import './App.css';
+import Contact from "./Pages/ContactUs/Contact";
 import Login from "./auth/Login";
 import Register from "./auth/Register";
-import RequireAdmin from "./auth/RequireAdmin";
-import RequireAuth from "./auth/RequireAuth";
 import Blogs from "./Pages/Blogs/Blogs";
 import Books from "./Pages/Books/Books";
-import Contact from "./Pages/ContactUs/Contact";
 import Home from "./Pages/Home/Home";
 import GradeFourToEight from "./Pages/Home/LearningProgram/GradeFourToEight";
 import GradeNineToTwelve from "./Pages/Home/LearningProgram/GradeNineToTwelve";
@@ -48,7 +46,10 @@ import Religious from "./Pages/Routes/Instructor/Religious";
 import Footer from "./Pages/Shared/Footer";
 import Header from "./Pages/Shared/Header";
 import NotFound from "./Pages/Shared/NotFound";
+import RequireAuth from "./auth/RequireAuth";
 import Users from "./Pages/Users/Users";
+import RequireAdmin from "./auth/RequireAdmin";
+import BookInfo from "./Pages/Shared/BooksInfo/BookInfo";
 import Payment from "./payment/Payment";
 
 function App() {
@@ -141,12 +142,21 @@ function App() {
             </RequireAuth>
           }
         />
-        
+
         <Route
           path="/payment/:id"
           element={
             <RequireAuth>
               <Payment />
+            </RequireAuth>
+          }
+        />
+
+        <Route
+          path="/book/:id"
+          element={
+            <RequireAuth>
+              <BookInfo />
             </RequireAuth>
           }
         />
