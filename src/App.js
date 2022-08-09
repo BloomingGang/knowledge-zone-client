@@ -1,5 +1,5 @@
 import React from "react";
-import './App.css';
+import "./App.css";
 import { Route, Routes } from "react-router-dom";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -49,8 +49,13 @@ import NotFound from "./Pages/Shared/NotFound";
 import RequireAuth from "./auth/RequireAuth";
 import Users from "./Pages/Users/Users";
 import RequireAdmin from "./auth/RequireAdmin";
+<<<<<<< HEAD
 import ClassOneInfo from "./Pages/Shared/ClassOneToTwelveInfo/ClassOneInfo";
 import ClassTwoInfo from "./Pages/Shared/ClassOneToTwelveInfo/ClassTwoInfo";
+=======
+import BookInfo from "./Pages/Shared/BooksInfo/BookInfo";
+import Payment from "./payment/Payment";
+>>>>>>> a66bac25809d325e3d31f52626f548a2d881851b
 
 function App() {
   return (
@@ -145,6 +150,24 @@ function App() {
           element={
             <RequireAuth>
               <Books />
+            </RequireAuth>
+          }
+        />
+
+        <Route
+          path="/payment/:id"
+          element={
+            <RequireAuth>
+              <Payment />
+            </RequireAuth>
+          }
+        />
+
+        <Route
+          path="/book/:id"
+          element={
+            <RequireAuth>
+              <BookInfo />
             </RequireAuth>
           }
         />

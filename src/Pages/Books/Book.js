@@ -1,7 +1,12 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
-const Book = ({ book }) => {
-  const { description, userName, img } = book;
+const Book = ({ book, setModal }) => {
+  const { description, userName, img, _id } = book;
+  const navigate = useNavigate();
+  const handlebook = (id) => {
+    navigate(`/book/${id}`);
+  };
   return (
     <div>
       <div className="card w-96 bg-base-100 shadow-xl h-[600px]">
@@ -13,13 +18,25 @@ const Book = ({ book }) => {
           <p>
             {description.slice(0, 250)}{" "}
             <span className="text-primary font-semibold">
-              {description.length > 250 ? "Read More..." : " "}
+              {description.length > 250 ? (
+                <label
+                  for="my-modal-3"
+                  className="cursor-pointer"
+                  onClick={() => setModal(book)}
+                >
+                  Read More...
+                </label>
+              ) : (
+                " "
+              )}
             </span>
           </p>
           <div className="card-actions justify-end">
-            <a href="kausar.pdf" download className="btn btn-primary">
-              <span className="btn-text">Download.</span>
-            </a>
+            {/* <a href="kausar.pdf" download className="btn btn-primary"> */}
+            <span onClick={() => handlebook(_id)} className="btn-text">
+              Download.
+            </span>
+            {/* </a> */}
           </div>
         </div>
       </div>
