@@ -6,7 +6,7 @@ const IslamicCourse = () => {
     const [islamicCourse, setIslamicCourse] = useState([]);
     const [loading, setLoading] = useState(true);
     useEffect(() => {
-        fetch("https://frozen-sierra-37797.herokuapp.com/islamicCourse")
+        fetch("https://immense-meadow-70411.herokuapp.com/islamicCourse")
             .then(res => res.json())
             .then(data => {
                 setIslamicCourse(data)
