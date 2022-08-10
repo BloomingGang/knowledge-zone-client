@@ -22,6 +22,7 @@ const BookInfo = () => {
       <img src={img} alt="" />
       <h1>{page}</h1>
       <h1>{writer}</h1>
+
       {!book.paid && (
         <button
           onClick={() => navigate(`/payment/${_id}`)}

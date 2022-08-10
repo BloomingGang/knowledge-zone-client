@@ -7,10 +7,11 @@ const Books = () => {
   const [book, setBook] = useState([]);
   const [modal, setModal] = useState(null);
   useEffect(() => {
-    fetch("https://immense-meadow-70411.herokuapp.com/books")
+    fetch("http://localhost:5000/books")
       .then((response) => response.json())
       .then((data) => setBook(data));
   }, []);
+
   return (
     <div>
       <div className="grid md:grid-cols-3 gap-5 px-5">
