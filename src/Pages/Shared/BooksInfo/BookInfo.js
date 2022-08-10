@@ -22,15 +22,6 @@ const BookInfo = () => {
       <img src={img} alt="" />
       <h1>{page}</h1>
       <h1>{writer}</h1>
-      {!book.paid && (
-        <button
-          onClick={() => navigate(`/payment/${_id}`)}
-          className="btn btn-primary"
-        >
-          Buy Now
-        </button>
-      )}
-      {book.paid && <span className="text-primary">Bought It</span>}
     </div>
   );
 };
