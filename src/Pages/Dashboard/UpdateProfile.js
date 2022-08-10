@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { useEffect } from "react";
 import auth from "../../firebase.init";
-import { Swal } from "sweetalert2";
+import Swal from "sweetalert2";
 
 const UpdateProfile = () => {
   const [user] = useAuthState(auth);
@@ -29,7 +29,7 @@ const UpdateProfile = () => {
       phone,
     };
 
-    fetch(`https://immense-meadow-70411.herokuapp.com/user/${email}`, {
+    fetch(`https://immense-meadow-70411.herokuapp.com/users/${email}`, {
       method: "put",
       headers: {
         "content-type": "application/json",
@@ -38,6 +38,7 @@ const UpdateProfile = () => {
     })
       .then((res) => res.json())
       .then((data) => {
+        console.log(data);
         if (data.modifiedCount) {
           e.target.reset();
           Swal.fire({
