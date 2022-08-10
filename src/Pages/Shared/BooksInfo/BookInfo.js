@@ -19,14 +19,13 @@ const BookInfo = () => {
      fetch(`https://immense-meadow-70411.herokuapp.com/book/${id}`, {
        method: "get",
        headers: {
-         authorization: `Bearer ${localStorage.getItem("Token")}`,
+         authorization: `Bearer ${localStorage.getItem("accessToken")}`,
        },
      }).then((res) => res.json())
    );
    if (isLoading) return <Loading />;
    if (error) return "An error has occurred: " + error.message;
    const { description, name, img, price } = book;
-console.log(book)
    
 
    const handleOrder = (e) => {
@@ -46,11 +45,11 @@ console.log(book)
        price,
        number,
      };
-     fetch("https://pacific-hamlet-76531.herokuapp.com/order", {
+     fetch("https://immense-meadow-70411.herokuapp.com/order", {
        method: "post",
        headers: {
          "content-type": "application/json",
-         authorization: `Bearer ${localStorage.getItem("Token")}`,
+         authorization: `Bearer ${localStorage.getItem("accessToken")}`,
        },
        body: JSON.stringify(order),
      })
@@ -58,6 +57,7 @@ console.log(book)
        .then((data) => {
          if (data.insertedId) {
            e.target.reset();
+           alert('order success')
            navigate("/");
          }
        });
