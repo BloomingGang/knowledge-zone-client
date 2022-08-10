@@ -4,7 +4,7 @@ import { toast } from "react-toastify";
 const UserRow = ({ user, index }) => {
   const { email, role } = user;
   const makeAdmin = () => {
-    fetch(`https://frozen-sierra-37797.herokuapp.com/user/admin/${email}`, {
+    fetch(`https://immense-meadow-70411.herokuapp.com/user/admin/${email}`, {
       method: "PUT",
       headers: {
         authorization: `Bearer ${localStorage.getItem("accessToken")}`,
@@ -31,7 +31,7 @@ const UserRow = ({ user, index }) => {
         {role !== "admin" ? (
           <button
             onClick={makeAdmin}
-            class="btn btn-sm btn-primary bg-gradient-to-r from-blue-500 to-violet-700 border-0 "
+            className="btn btn-sm btn-primary bg-gradient-to-r from-blue-500 to-violet-700 border-0 "
           >
             Make Admin
           </button>

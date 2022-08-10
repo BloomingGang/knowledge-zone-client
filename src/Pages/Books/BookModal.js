@@ -1,6 +1,6 @@
 import React from "react";
 
-const BlogModal = ({ modal }) => {
+const BookModal = ({ modal }) => {
   const { description, userName, img } = modal;
   return (
     <div>
@@ -24,4 +24,4 @@ const BlogModal = ({ modal }) => {
   );
 };
 
-export default BlogModal;
+export default BookModal;
