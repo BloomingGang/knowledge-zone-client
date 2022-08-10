@@ -40,7 +40,13 @@ const UpdateProfile = () => {
       .then((data) => {
         if (data.modifiedCount) {
           e.target.reset();
-          console.log("done")
+          Swal.fire({
+            position: "center",
+            icon: "success",
+            title: "Profile Updated Successfully !!",
+            showConfirmButton: false,
+            timer: 1500,
+          });
         }
       });
   };
