@@ -11,6 +11,7 @@ const Books = () => {
       .then((response) => response.json())
       .then((data) => setBook(data));
   }, []);
+
   return (
     <div>
       <div className="grid md:grid-cols-3 gap-5 px-5">
