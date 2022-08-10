@@ -17,7 +17,6 @@ const UserRow = ({ user, index }) => {
         return res.json();
       })
       .then((data) => {
-        console.log(data);
         if (data.modifiedCount > 0) {
           toast.success("Successfully made an admin");
         }

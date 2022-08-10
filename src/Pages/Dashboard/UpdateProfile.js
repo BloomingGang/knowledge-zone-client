@@ -14,7 +14,6 @@ const UpdateProfile = () => {
       .then((res) => res.json())
       .then((data) => setProfile(data));
   }, [email]);
-  console.log(profile);
   const handleUpdateProfile = (e) => {
     e.preventDefault();
     const name = e.target.name.value;
@@ -39,7 +38,6 @@ const UpdateProfile = () => {
     })
       .then((res) => res.json())
       .then((data) => {
-        console.log(data);
         if (data.modifiedCount) {
           e.target.reset();
           Swal.fire({
