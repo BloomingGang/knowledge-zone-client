@@ -1,19 +1,19 @@
 import React from "react";
 import devices from "../../img/devices.svg";
-import img from "../../img/handelDevice.png";
-import hoverImg from "../../img/assets/10005.jpg";
+import img from "../../img/assets/banner1.gif";
+import hoverImg from "../../img/assets/banner3.gif";
 import icon from "../../img/logo.png";
 import { Link } from "react-router-dom";
 
 const CardK = () => {
   return (
     <div>
-      <div className="hero min-h-screen">
-        <div className="hero-content flex-col lg:flex-row-reverse p-0">
+      <div className="hero py-16">
+        <div className="hero-content flex-col lg:flex-row-reverse">
           <div className="lg:w-[60%] w-full flex justify-center  ">
             <img
               src={img}
-              className="lg:max-w-sm w-[90%] rounded-lg shadow-2xl"
+              className="w-3/4"
               alt=""
             />
           </div>
@@ -25,7 +25,7 @@ const CardK = () => {
         </div>
       </div>
       <div className="container mx-auto ">
-        <div className="bg-blue-100 border-2 rounded-3xl">
+        <div className="bg-blue-100 border-2 rounded-2xl">
           <div className=" lg:flex static px-[10%]">
             <div className="lg:w-[50%] w-full flex justify-around flex-col sm:order-2 lg:order-1 gap-y-3 lg:gap-y-0 mt-5 lg:mt-0">
               <div className="w-[50px] h-[50px]">

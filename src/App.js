@@ -49,10 +49,13 @@ import NotFound from "./Pages/Shared/NotFound";
 import RequireAuth from "./auth/RequireAuth";
 import Users from "./Pages/Users/Users";
 import RequireAdmin from "./auth/RequireAdmin";
+import UpdateProfile from "./Pages/Dashboard/UpdateProfile";
 import BookInfo from "./Pages/Shared/BooksInfo/BookInfo";
 import Payment from "./payment/Payment";
+import ClassCourseDetails from "./Pages/Shared/ClassCourseDetails/ClassCourseDetails";
 import BlogInfo from "./Pages/Shared/BlogInfo/BlogInfo";
 import MyOrder from "./Pages/Shared/MyOrder/MyOrder";
+
 
 function App() {
   return (
@@ -124,6 +127,12 @@ function App() {
           <Route path="eleven" element={<ClassEleven />} />
           <Route path="twelve" element={<ClassTwelve />} />
         </Route>
+         {/* class 1 to 12 route list */}
+        {/* courses information component start */}
+        <Route path='/:classCourse/coursesInfo/:id' element={<RequireAuth> <ClassCourseDetails/> </RequireAuth>}></Route>
+       
+  
+        {/* courses information component end */}
 
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
@@ -140,7 +149,7 @@ function App() {
           path="/users"
           element={
             <RequireAdmin>
-              <Users></Users>
+              <Users />
             </RequireAdmin>
           }
         />
@@ -155,6 +164,15 @@ function App() {
         />
 
         <Route
+          path="/updateProfile"
+          element={
+            <RequireAuth>
+              <UpdateProfile />
+            </RequireAuth>
+          }
+            />
+           
+        <Route
           path="/payment/:id"
           element={
             <RequireAuth>
@@ -168,6 +186,7 @@ function App() {
           element={
             <RequireAuth>
               <BookInfo />
+
             </RequireAuth>
           }
         />

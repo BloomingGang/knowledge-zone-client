@@ -30,11 +30,15 @@ const NavDropDown = () => {
             </li>
           )}
           <li>
+            <Link to="/updateProfile">My Profile</Link>
+          </li>
+          <li>
             <Link to="/">My Courses</Link>
           </li>
           <li>
             <Link to="/myOrder">My Order</Link>
           </li>
+
           <li>
             <button
               className="btn btn-ghost text-red-600 font-bold"

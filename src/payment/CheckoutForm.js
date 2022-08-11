@@ -66,11 +66,9 @@ const CheckoutForm = ({ course }) => {
       setCartError(intentError?.message);
     } else {
       setCartError("");
-      console.log(paymentIntent);
       setTransactionId(paymentIntent.id);
       setSuccess("congrats! your payment is completed");
-
-    
+      alert('order success')
     }
   };
   return (
