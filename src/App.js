@@ -1,5 +1,5 @@
 import React from "react";
-import './App.css';
+import "./App.css";
 import { Route, Routes } from "react-router-dom";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -49,7 +49,7 @@ import NotFound from "./Pages/Shared/NotFound";
 import RequireAuth from "./auth/RequireAuth";
 import Users from "./Pages/Users/Users";
 import RequireAdmin from "./auth/RequireAdmin";
-import UpdateProfile from './Pages/Dashboard/UpdateProfile';
+import UpdateProfile from "./Pages/Dashboard/UpdateProfile";
 
 function App() {
   return (
@@ -129,7 +129,7 @@ function App() {
           path="/users"
           element={
             <RequireAdmin>
-              <Users></Users>
+              <Users />
             </RequireAdmin>
           }
         />
@@ -145,7 +145,7 @@ function App() {
           path="/updateProfile"
           element={
             <RequireAuth>
-              <UpdateProfile/>
+              <UpdateProfile />
             </RequireAuth>
           }
         />
