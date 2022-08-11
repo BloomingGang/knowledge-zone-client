@@ -52,6 +52,7 @@ import RequireAdmin from "./auth/RequireAdmin";
 import BookInfo from "./Pages/Shared/BooksInfo/BookInfo";
 import Payment from "./payment/Payment";
 import ClassCourseDetails from "./Pages/Shared/ClassCourseDetails/ClassCourseDetails";
+import BlogInfo from "./Pages/Shared/BlogInfo/BlogInfo";
 
 
 function App() {
@@ -134,6 +135,14 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
         <Route path="/blogs" element={<Blogs />} />
+        <Route
+          path="/blog/:id"
+          element={
+            <RequireAuth>
+              <BlogInfo />
+            </RequireAuth>
+          }
+        />
         <Route
           path="/users"
           element={
