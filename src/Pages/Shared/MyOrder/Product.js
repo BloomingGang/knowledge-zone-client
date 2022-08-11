@@ -1,10 +1,12 @@
 import React from "react";
+import { useNavigate } from 'react-router-dom';
 import useMyOrder from "../../../hooks/useMyOrder";
 
 const Product = ({ order, index }) => {
   console.log(order);
   const [myOrder, setMyOrder] = useMyOrder([]);
   const { _id, productName, email } = order;
+  const navigate =useNavigate()
 
   const handleDelete = (id) => {
     const proceed = window.confirm("Are you sure?");
@@ -29,7 +31,12 @@ const Product = ({ order, index }) => {
 
       <td>{email}</td>
       <td>
-        <button className="btn btn-sm btn-primary border-0 ">PAY</button>
+        <button
+          onClick={() => navigate(`/payment/${_id}`)}
+          className="btn btn-sm btn-primary border-0 "
+        >
+          PAY
+        </button>
       </td>
       <td>
         <button
