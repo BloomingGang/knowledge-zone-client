@@ -3,18 +3,19 @@ import Loading from "../../Shared/Loading";
 import ClassesCart from "./ClassesCart";
 
 const ClassOne = () => {
- 
+  
+
   const [classOne, setClassOne] = useState([]);
-  const [loading,setLoading]=useState(true);
+  const [loading, setLoading] = useState(true);
   useEffect(() => {
-    fetch("https://immense-meadow-70411.herokuapp.com/classOne")
+    fetch(`http://localhost:5000/courses/classOne`)
       .then((res) => res.json())
       .then((data) => {
         setClassOne(data);
         setLoading(false);
       });
   }, []);
-  if(loading){
+  if (loading) {
     return <Loading></Loading>
   }
   return (

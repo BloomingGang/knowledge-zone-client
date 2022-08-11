@@ -49,13 +49,10 @@ import NotFound from "./Pages/Shared/NotFound";
 import RequireAuth from "./auth/RequireAuth";
 import Users from "./Pages/Users/Users";
 import RequireAdmin from "./auth/RequireAdmin";
-<<<<<<< HEAD
-import ClassOneInfo from "./Pages/Shared/ClassOneToTwelveInfo/ClassOneInfo";
-import ClassTwoInfo from "./Pages/Shared/ClassOneToTwelveInfo/ClassTwoInfo";
-=======
 import BookInfo from "./Pages/Shared/BooksInfo/BookInfo";
 import Payment from "./payment/Payment";
->>>>>>> a66bac25809d325e3d31f52626f548a2d881851b
+import ClassCourseDetails from "./Pages/Shared/ClassCourseDetails/ClassCourseDetails";
+
 
 function App() {
   return (
@@ -129,8 +126,8 @@ function App() {
         </Route>
          {/* class 1 to 12 route list */}
         {/* courses information component start */}
-        <Route path='/classOne/coursesInfo/:id' element={<RequireAuth><ClassOneInfo/></RequireAuth>}></Route>
-        <Route path='/classTwo/coursesInfo/:id' element={<RequireAuth><ClassTwoInfo/></RequireAuth>}></Route>
+        <Route path='/:classCourse/coursesInfo/:id' element={<RequireAuth> <ClassCourseDetails/> </RequireAuth>}></Route>
+       
   
         {/* courses information component end */}
 

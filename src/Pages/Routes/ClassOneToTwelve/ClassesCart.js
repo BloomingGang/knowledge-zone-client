@@ -2,10 +2,10 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 
 const ClassesCart = ({course}) => {
-    const {price,title,img,className,_id}=course
+    const {price,title,img,_id,classCourse}=course
     const navigate = useNavigate();
     const handleCourse = id => {
-      navigate(`/${className}/coursesInfo/${id}`);
+      navigate(`/${classCourse}/coursesInfo/${id}`);
   }
    
     return (
@@ -20,7 +20,7 @@ const ClassesCart = ({course}) => {
                         <button 
                         className="btn btn-primary"
                         onClick={()=>handleCourse(_id)}
-                        >Buy Now</button>
+                        >Enroll Now</button>
                     </div>
                 </div>
             </div>
