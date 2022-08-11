@@ -52,6 +52,7 @@ import RequireAdmin from "./auth/RequireAdmin";
 import BookInfo from "./Pages/Shared/BooksInfo/BookInfo";
 import Payment from "./payment/Payment";
 import BlogInfo from "./Pages/Shared/BlogInfo/BlogInfo";
+import MyOrder from "./Pages/Shared/MyOrder/MyOrder";
 
 function App() {
   return (
@@ -143,6 +144,7 @@ function App() {
             </RequireAdmin>
           }
         />
+        <Route path="/myOrder" element={<MyOrder></MyOrder>} />
         <Route
           path="/books"
           element={
