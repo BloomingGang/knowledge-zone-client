@@ -33,6 +33,9 @@ const NavDropDown = () => {
             <Link to="/">My Courses</Link>
           </li>
           <li>
+            <Link to="/updateProfile">Update Profile</Link>
+          </li>
+          <li>
             <button
               className="btn btn-ghost text-red-600 font-bold"
               onClick={logout}

@@ -15,7 +15,26 @@ const Users = () => {
       .then((data) => setUsers(data));
   }, [users]);
 
- 
+
+  // const {
+  //   isLoading,
+  //   error,
+  //   data: users,
+  //   refetch,
+  // } = useQuery("users", () =>
+  //   fetch("https://frozen-sierra-37797.herokuapp.com/user", {
+  //     method: "GET",
+  //     headers: {
+  //       "content-type": "application/json",
+  //       authorization: `Bearer ${localStorage.getItem("accessToken")}`,
+  //     },
+  //   }).then((res) => res.json())
+  // );
+
+  // if (isLoading) {
+  //   return <Loading></Loading>;
+  // }
+
 
   return (
     <div className="pt-4 pb-14">
