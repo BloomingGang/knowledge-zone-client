@@ -65,7 +65,6 @@ function App() {
           <Route path="gradeEight" element={<GradeFourToEight />} />
           <Route path="gradeTwelve" element={<GradeNineToTwelve />} />
         </Route>
-
         <Route path="contact" element={<Contact />} />
         {/* instructor route list */}
         <Route
@@ -125,7 +124,6 @@ function App() {
           <Route path="eleven" element={<ClassEleven />} />
           <Route path="twelve" element={<ClassTwelve />} />
         </Route>
-
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
         <Route path="/blogs" element={<Blogs />} />
@@ -153,7 +151,6 @@ function App() {
             </RequireAuth>
           }
         />
-
         <Route
           path="/updateProfile"
           element={
@@ -162,7 +159,6 @@ function App() {
             </RequireAuth>
           }
             />
-           
         <Route
           path="/payment/:id"
           element={
@@ -171,7 +167,6 @@ function App() {
             </RequireAuth>
           }
         />
-
         <Route
           path="/book/:id"
           element={
