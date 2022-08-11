@@ -49,9 +49,7 @@ const BookInfo = () => {
       .then((res) => res.json())
       .then((data) => {
         if (data.insertedId) {
-          const id=data.insertedId
-          alert("order success");
-          navigate(`/payment/${id}`);
+          navigate("/myOrder");
         }
       });
   };

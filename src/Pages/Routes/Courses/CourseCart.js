@@ -5,6 +5,7 @@ const CourseCart = ({course}) => {
     const {_id,price,title,img}=course
     console.log(course);
     const navigate =useNavigate()
+
     return (
       <section>
         <div className="card card-compact  bg-base-100 shadow-xl">

@@ -16,7 +16,7 @@ const ClassOne = () => {
       });
   }, []);
   if (loading) {
-    return <Loading></Loading>
+    return <Loading> </Loading>
   }
   return (
     <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1  gap-4 px-5 ">
