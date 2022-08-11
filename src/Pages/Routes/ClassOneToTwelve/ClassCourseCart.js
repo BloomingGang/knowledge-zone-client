@@ -1,7 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 
-const ClassesCart = ({course}) => {
+const ClassCourseCart = ({course}) => {
     const {price,title,img,_id,classCourse}=course
     const navigate = useNavigate();
     const handleCourse = id => {
@@ -28,4 +28,4 @@ const ClassesCart = ({course}) => {
     );
 };
 
-export default ClassesCart;
+export default ClassCourseCart;

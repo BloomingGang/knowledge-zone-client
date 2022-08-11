@@ -1,12 +1,13 @@
 import React, { useEffect, useState } from 'react';
 import Loading from '../../Shared/Loading';
-import CourseCart from './CourseCart';
+import ClassCourseCart from '../ClassOneToTwelve/ClassCourseCart';
+
 
 const KidsCourse = () => {
     const [kidsCourse, setKidsCourse] = useState([]);
     const [loading, setLoading] = useState(true);
     useEffect(() => {
-        fetch("https://immense-meadow-70411.herokuapp.com/kidsCourse")
+        fetch("http://localhost:5000/courses/kidsCourse")
             .then(res => res.json())
             .then(data => {
                 setKidsCourse(data)
@@ -20,12 +21,12 @@ const KidsCourse = () => {
     return (
         <div className='grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1  gap-4 mx-5'>
             {
-                kidsCourse?.map((course) => <CourseCart
+                kidsCourse?.map((course) => <ClassCourseCart
                     key={course._id}
                     course={course}
                 >
 
-                </CourseCart>)
+                </ClassCourseCart>)
             }
         </div>
     );

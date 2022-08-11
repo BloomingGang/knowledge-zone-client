@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from "react";
 import Loading from "../../Shared/Loading";
-import ClassesCart from "./ClassesCart";
+import ClassCourseCart from "./ClassCourseCart";
 
 const ClassEleven = () => {
   const [classThree, setClassThree] = useState([]);
   const [loading, setLoading] = useState(true);
   useEffect(() => {
-    fetch("https://immense-meadow-70411.herokuapp.com/classEleven")
+    fetch("http://localhost:5000/courses/classEleven")
       .then((res) => res.json())
       .then((data) => {
         setClassThree(data)
@@ -19,7 +19,7 @@ const ClassEleven = () => {
   return (
     <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1  gap-4 px-5 ">
       {classThree?.map((course) => (
-        <ClassesCart key={course._id} course={course}></ClassesCart>
+        <ClassCourseCart key={course._id} course={course}></ClassCourseCart>
       ))}
     </div>
   );
