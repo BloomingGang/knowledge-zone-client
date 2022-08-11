@@ -50,7 +50,6 @@ const BookInfo = () => {
       .then((data) => {
         if (data.insertedId) {
           const id=data.insertedId
-          alert("order success");
           navigate(`/payment/${id}`);
         }
       });
