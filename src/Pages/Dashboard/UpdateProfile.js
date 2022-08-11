@@ -85,7 +85,6 @@ const UpdateProfile = () => {
             </span>
           </p>
         </div>
-
         <div className="lg:w-2/5 bg-white rounded-2xl">
           <div className="card-body">
             <h1 className="text-2xl font-bold text-center font-serif uppercase pb-5">
