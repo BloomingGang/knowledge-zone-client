@@ -16,13 +16,13 @@ const NavDropDown = () => {
   };
   return (
     <div className="flex items-center">
-      <div class="dropdown">
+      <div className="dropdown">
         <label tabindex="0">
           <ProfilePic></ProfilePic>
         </label>
         <ul
           tabindex="0"
-          class="dropdown-content menu shadow bg-base-100 rounded-box w-52"
+          className="dropdown-content menu shadow bg-base-100 rounded-box w-52"
         >
           {admin && (
             <li>
@@ -31,6 +31,9 @@ const NavDropDown = () => {
           )}
           <li>
             <Link to="/">My Courses</Link>
+          </li>
+          <li>
+            <Link to="/updateProfile">Update Profile</Link>
           </li>
           <li>
             <button

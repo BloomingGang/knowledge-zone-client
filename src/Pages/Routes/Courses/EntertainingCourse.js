@@ -1,9 +1,33 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import Loading from '../../Shared/Loading';
+import ClassCourseCart from '../ClassOneToTwelve/ClassCourseCart';
+
 
 const EntertainingCourse = () => {
+    const [entertainCourse, setEntertainCourse] = useState([]);
+    const [loading,setLoading]=useState(true);
+    useEffect(() => {
+        fetch("http://localhost:5000/courses/entertainCourse")
+            .then(res => res.json())
+            .then(data => {
+                setEntertainCourse(data)
+                setLoading(false);
+            })
+    }, [])
+    if(loading){
+        return <Loading></Loading>
+      }
+
     return (
-        <div>
-            Entertaining Course
+        <div className='grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1  gap-4 mx-5'>
+            {
+                entertainCourse?.map((course) => <ClassCourseCart
+                    key={course._id}
+                    course={course}
+                >
+
+                </ClassCourseCart>)
+            }
         </div>
     );
 };

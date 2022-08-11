@@ -36,6 +36,7 @@ const Learners = () => {
           </p>
         </div>
         <div>
+
           <div className="flex justify-center">
             <img width={50} src={trust4} alt="" />
           </div>

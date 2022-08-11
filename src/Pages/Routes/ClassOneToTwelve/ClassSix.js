@@ -1,17 +1,25 @@
 import React, { useEffect, useState } from "react";
-import ClassesCart from "./ClassesCart";
+import Loading from "../../Shared/Loading";
+import ClassCourseCart from "./ClassCourseCart";
 
 const ClassSix = () => {
   const [classSix, setClassSix] = useState([]);
+  const [loading, setLoading] = useState(true);
   useEffect(() => {
-    fetch("https://frozen-sierra-37797.herokuapp.com/classSix")
+    fetch("http://localhost:5000/courses/classSix")
       .then((res) => res.json())
-      .then((data) => setClassSix(data));
+      .then((data) => {
+        setClassSix(data)
+        setLoading(false);
+      });
   }, []);
+  if (loading) {
+    return <Loading></Loading>
+  }
   return (
     <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1  gap-4 px-5 ">
       {classSix?.map((course) => (
-        <ClassesCart key={course._id} course={course}></ClassesCart>
+        <ClassCourseCart key={course._id} course={course}></ClassCourseCart>
       ))}
     </div>
   );

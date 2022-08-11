@@ -1,6 +1,6 @@
-import React from 'react';
-import {  Outlet } from 'react-router-dom';
-import CustomLink from '../../Shared/CustomLink';
+import React from "react";
+import { Outlet } from "react-router-dom";
+import CustomLink from "../../Shared/CustomLink";
 
 const LearningProgram = () => {
     return (
@@ -14,9 +14,9 @@ const LearningProgram = () => {
             </div>
            </div>
             <Outlet></Outlet>
-
         </section>
     );
+
 };
 
 export default LearningProgram;

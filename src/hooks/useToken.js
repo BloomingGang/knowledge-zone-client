@@ -7,7 +7,7 @@ const useToken = (user) => {
     const email = user?.user?.email;
     const currentUser = { email: email };
     if (email) {
-      fetch(`https://frozen-sierra-37797.herokuapp.com/user/${email}`, {
+      fetch(`https://immense-meadow-70411.herokuapp.com/user/${email}`, {
         method: "PUT",
         headers: {
           "content-type": "application/json",
@@ -16,9 +16,7 @@ const useToken = (user) => {
       })
         .then((res) => res.json())
         .then((data) => {
-          console.log("data from inside", data);
           const accessToken = data.token;
-          console.log(accessToken);
           localStorage.setItem("accessToken", accessToken);
           setToken(accessToken);
         });

@@ -1,5 +1,5 @@
 import React from "react";
-import './App.css';
+import "./App.css";
 import { Route, Routes } from "react-router-dom";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -49,6 +49,12 @@ import NotFound from "./Pages/Shared/NotFound";
 import RequireAuth from "./auth/RequireAuth";
 import Users from "./Pages/Users/Users";
 import RequireAdmin from "./auth/RequireAdmin";
+import UpdateProfile from "./Pages/Dashboard/UpdateProfile";
+import BookInfo from "./Pages/Shared/BooksInfo/BookInfo";
+import Payment from "./payment/Payment";
+import ClassCourseDetails from "./Pages/Shared/ClassCourseDetails/ClassCourseDetails";
+import BlogInfo from "./Pages/Shared/BlogInfo/BlogInfo";
+
 
 function App() {
   return (
@@ -120,15 +126,29 @@ function App() {
           <Route path="eleven" element={<ClassEleven />} />
           <Route path="twelve" element={<ClassTwelve />} />
         </Route>
+         {/* class 1 to 12 route list */}
+        {/* courses information component start */}
+        <Route path='/:classCourse/coursesInfo/:id' element={<RequireAuth> <ClassCourseDetails/> </RequireAuth>}></Route>
+       
+  
+        {/* courses information component end */}
 
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
         <Route path="/blogs" element={<Blogs />} />
         <Route
+          path="/blog/:id"
+          element={
+            <RequireAuth>
+              <BlogInfo />
+            </RequireAuth>
+          }
+        />
+        <Route
           path="/users"
           element={
             <RequireAdmin>
-              <Users></Users>
+              <Users />
             </RequireAdmin>
           }
         />
@@ -137,6 +157,34 @@ function App() {
           element={
             <RequireAuth>
               <Books />
+            </RequireAuth>
+          }
+        />
+
+        <Route
+          path="/updateProfile"
+          element={
+            <RequireAuth>
+              <UpdateProfile />
+            </RequireAuth>
+          }
+            />
+           
+        <Route
+          path="/payment/:id"
+          element={
+            <RequireAuth>
+              <Payment />
+            </RequireAuth>
+          }
+        />
+
+        <Route
+          path="/book/:id"
+          element={
+            <RequireAuth>
+              <BookInfo />
+
             </RequireAuth>
           }
         />

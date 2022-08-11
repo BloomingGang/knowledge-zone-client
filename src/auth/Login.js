@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import {
   useSendPasswordResetEmail,
   useSignInWithEmailAndPassword,
-  useSignInWithGoogle
+  useSignInWithGoogle,
 } from "react-firebase-hooks/auth";
 import { useForm } from "react-hook-form";
 import { Link, useLocation, useNavigate } from "react-router-dom";
@@ -36,9 +36,7 @@ const Login = () => {
     if (token) {
       navigate(from, { replace: true });
     }
-
   }, [token, from, navigate]);
-
 
   if (loading || gLoading || sending) {
     return <Loading />;
@@ -137,7 +135,7 @@ const Login = () => {
         </Link>
       </p>
       <p className="text-center mt-4">
-        Forgat Password?{" "}
+        Forget Password?{" "}
         <button
           className="text-violet-900"
           onClick={async () => {
@@ -153,6 +151,7 @@ const Login = () => {
         <button
           onClick={() => signInWithGoogle()}
           className="btn btn-outline text-violet-900 hover:text-white hover:bg-violet-900 "
+
         >
           CONTINUE WITH GOOGLE
         </button>
