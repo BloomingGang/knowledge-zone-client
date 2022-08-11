@@ -6,14 +6,14 @@
 .socialIcon{
     display: none;
     position: absolute;
-    margin-top: -240px;
+    margin-top: -299px;
     background-color: #1188e28c;
     border-radius: 50%;
     color: white;
-    padding-left: 33px;
-    padding-right: 33px;
-    padding-top: 90px;
-    padding-bottom: 89px;
+    padding-left: 56px;
+    padding-right: 58px;
+    padding-top: 125px;
+    padding-bottom: 116px;
 }
 .instructor:hover .socialIcon{
     display: block;

@@ -6,14 +6,14 @@ import trust4 from "../../img/trust_4.svg";
 
 const Learners = () => {
   return (
-    <div className="w-10/12 mx-auto bg-gradient-to-r from-blue-200 via-indigo-200 to-purple-200 shadow-xl pt-4 md:mt-[-50px] bg-white rounded-xl">
-      <h1 className="text-center md:text-3xl text-2xl text-primary font-bold xl mb-10">
-        Trusted By 150 Million+ Learners
+    <div className="w-11/12 mx-auto bg-gradient-to-r from-blue-200 via-indigo-200 to-purple-200 shadow-xl pt-4 mt-3 bg-white rounded-xl">
+      <h1 className="text-center md:text-4xl text-3xl text-primary font-bold mt-8 mb-10">
+        Trusted By 150+ Million Learners
       </h1>
       <div className="md:flex justify-evenly">
         <div className="mb-8">
           <div className="flex justify-center">
-            <img width={50} src={trust1} alt="" />
+            <img width={55} src={trust1} alt="" />
           </div>
           <p className="font-bold text-center">
             Live and <br /> Personalised
@@ -21,7 +21,7 @@ const Learners = () => {
         </div>
         <div>
           <div className="flex justify-center">
-            <img width={50} src={trust2} alt="" />
+            <img width={55} src={trust2} alt="" />
           </div>
           <p className="font-bold text-center">
             Top Qualified <br /> Teachers
@@ -29,7 +29,7 @@ const Learners = () => {
         </div>
         <div className="mb-8">
           <div className="flex justify-center">
-            <img width={50} src={trust3} alt=""/>
+            <img width={55} src={trust3} alt=""/>
           </div>
           <p className="font-bold text-center">
             Activity-based <br /> Learning
@@ -38,7 +38,7 @@ const Learners = () => {
         <div>
 
           <div className="flex justify-center">
-            <img width={50} src={trust4} alt="" />
+            <img width={55} src={trust4} alt="" />
           </div>
           <p className="font-bold text-center">
             100% safe for <br /> kids
