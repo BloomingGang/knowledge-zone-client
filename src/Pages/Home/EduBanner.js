@@ -9,7 +9,7 @@ const EduBanner = () => {
                 </div>
 
                 <div className='flex flex-col  justify-center px-5'>
-                    <h1 className="lg:text-5xl text-4xl text-blue-500 font-bold">Education for All</h1>
+                    <h1 className="lg:text-5xl text-4xl text-violet-900 font-bold">Education for All</h1>
                     <div className="carousel w-full py-8">
                         <div id="item1" className="carousel-item w-full">
 

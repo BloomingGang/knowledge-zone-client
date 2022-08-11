@@ -2,6 +2,7 @@ import React from 'react';
 
 const CourseCart = ({course}) => {
     const {price,title,img}=course
+
     return (
         <section>
             <div className="card card-compact  bg-base-100 shadow-xl">

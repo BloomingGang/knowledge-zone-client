@@ -48,9 +48,10 @@ const Login = () => {
     signInWithEmailAndPassword(data.email, data.password);
   };
   return (
-    <div className="md:w-1/2 mx-auto p-20 font-serif">
+    <div className="login py-12 bg-violet-200">
+    <div className=" bg-violet-300 rounded-xl md:w-1/2 mx-auto p-20 font-serif">
       <div>
-        <h1 className="text-center text-2xl font-bold  text-blue-500 ">
+        <h1 className="text-center text-2xl font-bold  text-violet-900 ">
           Please Login
         </h1>
         <form className="" onSubmit={handleSubmit(onSubmit)}>
@@ -117,7 +118,7 @@ const Login = () => {
             </label>
           </div>
           <input
-            className="btn w-2/5 mx-auto block"
+            className="btn w-2/5 bg-violet-900 mx-auto block"
             type="submit"
             value="Login"
           />
@@ -131,14 +132,14 @@ const Login = () => {
 
       <p className="text-center mt-4">
         New to Knowledge Zone?{" "}
-        <Link to="/register" className="text-blue-500">
+        <Link to="/register" className="text-violet-900">
           Create new account
         </Link>
       </p>
       <p className="text-center mt-4">
         Forgat Password?{" "}
         <button
-          className="text-blue-500"
+          className="text-violet-900"
           onClick={async () => {
             await sendPasswordResetEmail(email);
             alert("Sent email");
@@ -151,11 +152,12 @@ const Login = () => {
       <div className="flex justify-center">
         <button
           onClick={() => signInWithGoogle()}
-          className="btn btn-outline text-blue-500"
+          className="btn btn-outline text-violet-900 hover:text-white hover:bg-violet-900 "
         >
           CONTINUE WITH GOOGLE
         </button>
       </div>
+    </div>
     </div>
   );
 };
