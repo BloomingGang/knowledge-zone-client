@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import Loading from '../../Shared/Loading';
-import CourseCart from './CourseCart';
+import ClassCourseCart from '../ClassOneToTwelve/ClassCourseCart';
 const DiscountCourse = () => {
 
     const [discountCourses, setDiscountCourses] = useState([]);
     const [loading, setLoading] = useState(true);
     useEffect(() => {
-        fetch("https://immense-meadow-70411.herokuapp.com/discountCourse")
+        fetch("http://localhost:5000/courses/discountCourse")
             .then(res => res.json())
             .then(data => {
                 setDiscountCourses(data)
@@ -20,12 +20,12 @@ const DiscountCourse = () => {
     return (
         <div className='grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1  gap-4 mx-5'>
             {
-                discountCourses?.map((course) => <CourseCart
+                discountCourses?.map((course) => <ClassCourseCart
                     key={course.id}
                     course={course}
                 >
 
-                </CourseCart>)
+                </ClassCourseCart>)
             }
         </div>
     );

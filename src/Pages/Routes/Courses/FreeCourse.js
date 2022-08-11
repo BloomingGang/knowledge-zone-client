@@ -1,13 +1,14 @@
 import React, { useEffect, useState } from 'react';
 import Loading from '../../Shared/Loading';
-import CourseCart from './CourseCart';
+import ClassCourseCart from '../ClassOneToTwelve/ClassCourseCart';
+
 
 
 const FreeCourse = () => {
     const [freeCourses, setFreeCourses] = useState([]);
     const [loading,setLoading]=useState(true);
     useEffect(() => {
-        fetch("https://immense-meadow-70411.herokuapp.com/freeCourse")
+        fetch("http://localhost:5000/courses/freeCourse")
             .then(res => res.json())
             .then(data => {
                 setFreeCourses(data)
@@ -22,12 +23,12 @@ const FreeCourse = () => {
     return (
         <div className='grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1  gap-4 mx-5'>
             {
-                freeCourses?.map((course) => <CourseCart
+                freeCourses?.map((course) => <ClassCourseCart
                     key={course._id}
                     course={course}
                 >
 
-                </CourseCart>)
+                </ClassCourseCart>)
             }
         </div>
     );

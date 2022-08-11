@@ -52,6 +52,7 @@ import RequireAdmin from "./auth/RequireAdmin";
 import UpdateProfile from "./Pages/Dashboard/UpdateProfile";
 import BookInfo from "./Pages/Shared/BooksInfo/BookInfo";
 import Payment from "./payment/Payment";
+import ClassCourseDetails from "./Pages/Shared/ClassCourseDetails/ClassCourseDetails";
 import BlogInfo from "./Pages/Shared/BlogInfo/BlogInfo";
 
 
@@ -125,6 +126,12 @@ function App() {
           <Route path="eleven" element={<ClassEleven />} />
           <Route path="twelve" element={<ClassTwelve />} />
         </Route>
+         {/* class 1 to 12 route list */}
+        {/* courses information component start */}
+        <Route path='/:classCourse/coursesInfo/:id' element={<RequireAuth> <ClassCourseDetails/> </RequireAuth>}></Route>
+       
+  
+        {/* courses information component end */}
 
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />

@@ -1,12 +1,13 @@
 import React, { useEffect, useState } from 'react';
 import Loading from '../../Shared/Loading';
-import CourseCart from './CourseCart';
+import ClassCourseCart from '../ClassOneToTwelve/ClassCourseCart';
+
 
 const EntertainingCourse = () => {
     const [entertainCourse, setEntertainCourse] = useState([]);
     const [loading,setLoading]=useState(true);
     useEffect(() => {
-        fetch("https://immense-meadow-70411.herokuapp.com/entertainCourse")
+        fetch("http://localhost:5000/courses/entertainCourse")
             .then(res => res.json())
             .then(data => {
                 setEntertainCourse(data)
@@ -20,12 +21,12 @@ const EntertainingCourse = () => {
     return (
         <div className='grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1  gap-4 mx-5'>
             {
-                entertainCourse?.map((course) => <CourseCart
+                entertainCourse?.map((course) => <ClassCourseCart
                     key={course._id}
                     course={course}
                 >
 
-                </CourseCart>)
+                </ClassCourseCart>)
             }
         </div>
     );
