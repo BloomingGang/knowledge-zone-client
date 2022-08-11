@@ -134,7 +134,7 @@ const Login = () => {
         </Link>
       </p>
       <p className="text-center mt-4">
-        Forgat Password?{" "}
+        Forget Password?{" "}
         <button
           className="text-blue-500"
           onClick={async () => {

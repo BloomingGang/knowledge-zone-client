@@ -49,9 +49,11 @@ import NotFound from "./Pages/Shared/NotFound";
 import RequireAuth from "./auth/RequireAuth";
 import Users from "./Pages/Users/Users";
 import RequireAdmin from "./auth/RequireAdmin";
+import UpdateProfile from "./Pages/Dashboard/UpdateProfile";
 import BookInfo from "./Pages/Shared/BooksInfo/BookInfo";
 import Payment from "./payment/Payment";
 import BlogInfo from "./Pages/Shared/BlogInfo/BlogInfo";
+
 
 function App() {
   return (
@@ -139,7 +141,7 @@ function App() {
           path="/users"
           element={
             <RequireAdmin>
-              <Users></Users>
+              <Users />
             </RequireAdmin>
           }
         />
@@ -152,6 +154,15 @@ function App() {
           }
         />
 
+        <Route
+          path="/updateProfile"
+          element={
+            <RequireAuth>
+              <UpdateProfile />
+            </RequireAuth>
+          }
+            />
+           
         <Route
           path="/payment/:id"
           element={
@@ -166,6 +177,7 @@ function App() {
           element={
             <RequireAuth>
               <BookInfo />
+
             </RequireAuth>
           }
         />
