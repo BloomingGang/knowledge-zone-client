@@ -78,7 +78,7 @@ const Header = () => {
         <nav className="">
           <div className="md:hidden flex flex-row items-center justify-between px-4 py-2">
             <div className="flex flex-row items-center">
-              <img src={logo} alt="logo" />
+              <img src={logo} alt="logo" width="50" height="50" />
               <h1 className="text-white font-bold text-2xl px-4">
                 Knowledge Zone
               </h1>

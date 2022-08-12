@@ -93,7 +93,7 @@ const CourseDetailsCart = () => {
                     <div className='border-2 rounded-xl p-6'>
                         <div tabindex="0" class="collapse collapse-arrow  bg-base-100 rounded-box">
                             <div class="collapse-title text-xl font-medium hover:text-violet-800">
-                                {syllabus.free.title}
+                                {syllabus.free?.title}
                             </div>
                             <div class="collapse-content">
                                 <p><i class="text-indigo-900 mr-2 font-bold text-xl fa-solid fa-circle-play"></i> {syllabus.free.point1}</p>

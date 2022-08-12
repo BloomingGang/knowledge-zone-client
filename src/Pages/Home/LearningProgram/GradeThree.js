@@ -19,7 +19,7 @@ const GradeThree = () => {
       id: 2,
       icon: iconImg,
       title: "Blooming Gang Live 1-on-1",
-      programs: ["Coding", "Music", "Coding", "Music"],
+      programs: ["Coding", "Music"],
       description:
         "Personalised, 2-on-2 tutoring classes with expert teachers.",
       program_img: img,
