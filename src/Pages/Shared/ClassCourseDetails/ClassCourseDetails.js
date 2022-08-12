@@ -12,7 +12,7 @@ const ClassCourseDetails = () => {
     const [courseInfo,setCourseInfo]=useState({});
     const [loading,setLoading]=useState(true);
     useEffect(()=>{
-        axios.get(`http://localhost:5000/course/${id}`).then(res=>setCourseInfo(res.data));
+        axios.get(`https://immense-meadow-70411.herokuapp.com/course/${id}`).then(res=>setCourseInfo(res.data));
         setLoading(false);
     },[id])
     if(loading){
