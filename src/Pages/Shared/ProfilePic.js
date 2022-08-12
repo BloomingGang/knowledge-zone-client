@@ -9,7 +9,12 @@ const ProfilePic = () => {
       <div className="avatar online">
         <div className="w-8 rounded-full">
           <img
-            src={user?.photoURL || "https://i.ibb.co/whxhPPg/cute-girl.jpg"} alt='profile'/>
+            src={
+              user?.photoURL ||
+              "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT05QbmiwRVyKxlIsQZTLbezR6uzbbxDU1xrA&usqp=CAU"
+            }
+            alt="profile"
+          />
         </div>
       </div>
     </div>
