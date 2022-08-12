@@ -1,6 +1,6 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import Loading from '../Loading';
 
 const ClassCourseDetails = () => {
@@ -107,7 +107,9 @@ const ClassCourseDetails = () => {
                         <p className='text-xl font-bold'>$ {price}</p>
                     </div>
 
-                    <button class="btn btn-primary w-full my-4">Buy the Course</button>
+                    <Link
+                    to={"/myOrder"}
+                    class="btn btn-primary w-full my-4">Buy the Course</Link>
                     <div className='flex justify-between py-6'>
                         <div className='flex items-center'>
                             <div>
