@@ -2,7 +2,7 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 
 const Book = ({ book, setModal }) => {
-  const { description, userName, img, _id } = book;
+  const { about, userName, img, _id } = book;
   const navigate = useNavigate();
   const handlebook = (id) => {
     navigate(`/book/${id}`);
@@ -16,9 +16,9 @@ const Book = ({ book, setModal }) => {
         <div className="card-body items-center text-justify">
           <h2 className="card-title">{userName}</h2>
           <p>
-            {description.slice(0, 250)}{" "}
+            {about.slice(0, 250)}{" "}
             <span className="text-primary font-semibold">
-              {description.length > 250 ? (
+              {about.length > 250 ? (
                 <label
                   for="my-modal-3"
                   className="cursor-pointer"

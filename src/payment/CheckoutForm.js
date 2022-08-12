@@ -1,6 +1,7 @@
 import { CardElement, useElements, useStripe } from "@stripe/react-stripe-js";
 import React, { useEffect, useState } from 'react';
 import { useAuthState } from "react-firebase-hooks/auth";
+import Swal from "sweetalert2";
 import auth from "../firebase.init";
 
 const CheckoutForm = ({ course }) => {
@@ -68,7 +69,13 @@ const CheckoutForm = ({ course }) => {
       setCartError("");
       setTransactionId(paymentIntent.id);
       setSuccess("congrats! your payment is completed");
-      alert('order success')
+      Swal.fire({
+        position: "center",
+        icon: "success",
+        title: "Profile Updated Successfully !!",
+        showConfirmButton: false,
+        timer: 1500,
+      });
     }
   };
   return (
