@@ -38,7 +38,7 @@ const Bengali = () => {
             {
                 instructors.map((instructor, index) => <div
                     key={index}
-                    className="instructor">
+                    className="instructor relative">
                     <figure className="">
                         <img style={{ height: "300px" }} src={instructor.img} alt="instructor" className="picture" />
                     </figure>

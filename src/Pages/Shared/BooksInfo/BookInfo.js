@@ -24,7 +24,7 @@ const BookInfo = () => {
   );
   if (isLoading) return <Loading />;
   if (error) return "An error has occurred: " + error.message;
-  const { description, name, img, price } = book;
+  const { writerImg, description, name, img, price } = book;
 
   const handleOrder = () => {
     const userName = user?.displayName;
@@ -65,6 +65,7 @@ const BookInfo = () => {
           <p>Name:{name}</p>
           <p>{description}</p>
           <p>Price:{price} per Book</p>
+          {/* <img src={writerImg} alt="" /> */}
           <button onClick={handleOrder} className="btn btn-primary">
             Order Now
           </button>
