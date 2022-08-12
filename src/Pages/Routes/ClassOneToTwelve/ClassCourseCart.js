@@ -31,13 +31,20 @@ const ClassCourseCart = ({ course }) => {
 
     return (
         <section>
-            <div className="card card-compact  bg-base-100 shadow-xl">
-                <figure><img src={img} alt="course" /></figure>
+            <div className="card card-compact hover:shadow-2xl  bg-base-100 shadow-xl">
+                <figure><img className='hover:scale-[1.1] transition duration-300' src={img} alt="course" /></figure>
                 <div className="card-body">
                     <h2 className="card-title"> {title}</h2>
                     <hr className='border-2' />
+
+                    
                     <div className="flex  justify-between items-center">
-                        <span > <span className='text-xl font-bold'>Price:</span>  <span className='text-lg font-bold text-primary'>${price}</span></span>
+                    <h3 className="text-2xl font-bold">
+                    $
+                    <span className="text-base font-medium text-red-500">
+                      {price}
+                    </span>
+                  </h3>
                         <button
                             className="border-2 shadow-lg hover:bg-transparent hover:text-black p-2 rounded-lg bg-primary text-white font-bold transition duration-300"
                             onClick={() => handleCourse(_id)}
