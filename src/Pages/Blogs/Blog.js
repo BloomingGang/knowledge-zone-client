@@ -19,24 +19,24 @@ const Blog = ({ blog, setModal }) => {
           <span className="text-primary font-semibold">
             {description.length > 250 ? (
               <label
-                for="my-modal-3"
-                className="cursor-pointer"
                 onClick={() => setModal(blog)}
+                for="my-modal-3"
+                className="cursor-pointer text-indigo-800 font-bold"
               >
-                Read More...
+                Read More ...
               </label>
             ) : (
               ""
             )}
           </span>
         </p>
-        <div className="card-actions justify-end">
+        {/* <div className="card-actions justify-end">
           <div className="btn btn-primary">
             <span onClick={() => handleblog(_id)} className="btn-text">
               Details
             </span>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );

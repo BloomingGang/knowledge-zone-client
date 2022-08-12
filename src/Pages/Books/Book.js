@@ -18,6 +18,11 @@ const Book = ({ book, setModal }) => {
           <p>
             {about.slice(0, 250)}{" "}
             <span className="text-primary font-semibold">
+              {/* <<<<<<< HEAD
+              {description.length > 250 ? (
+                <label for="my-modal-3" className="cursor-pointer">
+                  ...
+======= */}
               {about.length > 250 ? (
                 <label
                   for="my-modal-3"
@@ -25,6 +30,7 @@ const Book = ({ book, setModal }) => {
                   onClick={() => setModal(book)}
                 >
                   Read More...
+                  {/* >>>>>>> 909d2a256fbbd159dfee425034215c541855763b */}
                 </label>
               ) : (
                 " "
@@ -40,6 +46,7 @@ const Book = ({ book, setModal }) => {
           </div>
         </div>
       </div>
+      {/* onClick={() => setModal(book)} */}
     </div>
   );
 };

@@ -1,19 +1,19 @@
 import { CardElement, useElements, useStripe } from "@stripe/react-stripe-js";
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState } from "react";
 import { useAuthState } from "react-firebase-hooks/auth";
 import Swal from "sweetalert2";
 import auth from "../firebase.init";
 
 const CheckoutForm = ({ course }) => {
-    const [user] = useAuthState(auth);
+  const [user] = useAuthState(auth);
   const [clientSecret, setClientSecret] = useState("");
   const [cartError, setCartError] = useState("");
   const [success, setSuccess] = useState("");
   const [transactionId, setTransactionId] = useState("");
   const stripe = useStripe();
   const elements = useElements();
-  const {  price } = course;
-  const { displayName ,email} = user;
+  const { price } = course;
+  const { displayName, email } = user;
   console.log(user);
 
   useEffect(() => {
@@ -72,7 +72,7 @@ const CheckoutForm = ({ course }) => {
       Swal.fire({
         position: "center",
         icon: "success",
-        title: "Profile Updated Successfully !!",
+        title: "Payment Successful !!",
         showConfirmButton: false,
         timer: 1500,
       });
