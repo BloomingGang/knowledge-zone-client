@@ -1,12 +1,12 @@
 import React from "react";
-import { useNavigate } from 'react-router-dom';
+import { useNavigate } from "react-router-dom";
 import useMyOrder from "../../../hooks/useMyOrder";
 
 const Product = ({ order, index }) => {
   console.log(order);
   const [myOrder, setMyOrder] = useMyOrder([]);
   const { _id, productName, email } = order;
-  const navigate =useNavigate()
+  const navigate = useNavigate();
 
   const handleDelete = (id) => {
     const proceed = window.confirm("Are you sure?");
