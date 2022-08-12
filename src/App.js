@@ -67,7 +67,6 @@ function App() {
           <Route path="gradeEight" element={<GradeFourToEight />} />
           <Route path="gradeTwelve" element={<GradeNineToTwelve />} />
         </Route>
-
         <Route path="contact" element={<Contact />} />
         {/* instructor route list */}
         <Route
@@ -127,12 +126,15 @@ function App() {
           <Route path="eleven" element={<ClassEleven />} />
           <Route path="twelve" element={<ClassTwelve />} />
         </Route>
+
+
          {/* class 1 to 12 route list */}
         {/* courses information component start */}
         <Route path='/:classCourse/coursesInfo/:id' element={<RequireAuth> <ClassCourseDetails/> </RequireAuth>}></Route>
        
   
         {/* courses information component end */}
+
 
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
@@ -153,7 +155,7 @@ function App() {
             </RequireAdmin>
           }
         />
-        <Route path="/myOrder" element={<MyOrder></MyOrder>} />
+        <Route path="/myOrder" element={<MyOrder/>} />
         <Route
           path="/books"
           element={
@@ -162,7 +164,6 @@ function App() {
             </RequireAuth>
           }
         />
-
         <Route
           path="/updateProfile"
           element={
@@ -171,7 +172,6 @@ function App() {
             </RequireAuth>
           }
             />
-           
         <Route
           path="/payment/:id"
           element={
@@ -180,7 +180,6 @@ function App() {
             </RequireAuth>
           }
         />
-
         <Route
           path="/book/:id"
           element={

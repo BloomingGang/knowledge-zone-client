@@ -19,12 +19,8 @@ const Book = ({ book, setModal }) => {
             {description.slice(0, 250)}{" "}
             <span className="text-primary font-semibold">
               {description.length > 250 ? (
-                <label
-                  for="my-modal-3"
-                  className="cursor-pointer"
-                  onClick={() => setModal(book)}
-                >
-                  Read More...
+                <label for="my-modal-3" className="cursor-pointer">
+                  ...
                 </label>
               ) : (
                 " "
@@ -40,6 +36,7 @@ const Book = ({ book, setModal }) => {
           </div>
         </div>
       </div>
+      {/* onClick={() => setModal(book)} */}
     </div>
   );
 };

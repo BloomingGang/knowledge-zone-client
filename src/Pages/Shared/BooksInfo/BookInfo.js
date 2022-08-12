@@ -51,6 +51,8 @@ const BookInfo = () => {
         if (data.insertedId) {
           const id = data.insertedId;
           navigate(`/payment/${id}`);
+
+          navigate("/myOrder");
         }
       });
   };
