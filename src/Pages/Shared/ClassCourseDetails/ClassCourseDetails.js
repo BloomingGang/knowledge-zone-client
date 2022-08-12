@@ -1,9 +1,13 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
-import { Link, useParams } from 'react-router-dom';
+import { useAuthState } from 'react-firebase-hooks/auth';
+import { Link, useNavigate, useParams } from 'react-router-dom';
+import auth from '../../../firebase.init';
 import Loading from '../Loading';
 
 const ClassCourseDetails = () => {
+    const navigate = useNavigate();
+    const [user] = useAuthState(auth);
     const { id} = useParams();
     const [courseInfo,setCourseInfo]=useState({});
     const [loading,setLoading]=useState(true);
@@ -16,6 +20,33 @@ const ClassCourseDetails = () => {
     }
     const { title, img, ShortDescription, objective, instructorImg, instructorName, education, about, syllabus, price, Enrolled, hours, videos, quizzes, notes, transcripts } = courseInfo;
 
+    const handleCourseOrder = () => {
+        const userName = user?.displayName;
+        const email = user?.email;
+        const productName = title;
+    
+        const order = {
+          userName,
+          email,
+          productName,
+          img,
+          price,
+        };
+        fetch("https://immense-meadow-70411.herokuapp.com/order", {
+          method: "post",
+          headers: {
+            "content-type": "application/json",
+            authorization: `Bearer ${localStorage.getItem("accessToken")}`,
+          },
+          body: JSON.stringify(order),
+        })
+          .then((res) => res.json())
+          .then((data) => {
+            if (data.insertedId) {
+              navigate("/myOrder");
+            }
+          });
+      };
     return (
         <div className='container mx-auto grid lg:grid-cols-2 grid-cols-1 gap-12 py-12'>
             <div>
@@ -107,9 +138,9 @@ const ClassCourseDetails = () => {
                         <p className='text-xl font-bold'>$ {price}</p>
                     </div>
 
-                    <Link
-                    to={"/myOrder"}
-                    class="btn btn-primary w-full my-4">Buy the Course</Link>
+                    <button
+                    onClick={handleCourseOrder}
+                    class="btn btn-primary w-full my-4">Buy the Course</button>
                     <div className='flex justify-between py-6'>
                         <div className='flex items-center'>
                             <div>
