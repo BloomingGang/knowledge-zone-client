@@ -59,27 +59,27 @@ const UpdateProfile = () => {
       </h1>
       <div className="lg:flex lg:flex-row-reverse justify-center w-full bg-gray-200 px-5 py-10">
         <div className="lg:w-3/5 pl-16 md:pt-20 pt-24">
-          <p className="text-lg py-1 font-bold font-serif">
-            Name: <span className="font-normal font-mono">{name}</span>
+          <p className="text-3xl py-1 font-semibold pt-5">
+            Name: <span className="text-3xl font-normal pl-3">{name}</span>
           </p>
-          <p className="text-lg  py-1 font-bold font-serif">
-            Email: <span className="font-normal font-mono">{email}</span>
+          <p className="text-3xl py-1 font-semibold pt-5">
+            Email: <span className="text-3xl font-normal pl-3">{email}</span>
           </p>
-          <p className="text-lg py-1 font-bold font-serif">
+          <p className="text-3xl py-1 font-semibold pt-5">
             Education:{" "}
-            <span className="font-normal font-mono">
+            <span className="text-3xl font-normal pl-3">
               {education || "Not found"}
             </span>
           </p>
-          <p className="text-lg py-1 font-bold font-serif">
+          <p className="text-3xl py-1 font-semibold pt-5">
             Location:{" "}
-            <span className="font-normal font-mono">
+            <span className="text-3xl font-normal pl-3">
               {location || "Not found"}
             </span>
           </p>
-          <p className="text-lg py-1 font-bold font-serif">
+          <p className="text-3xl py-1 font-semibold pt-5">
             Phone:{" "}
-            <span className="font-normal font-mono">
+            <span className="text-3xl font-normal pl-3">
               {" "}
               {phone || "Not found"}
             </span>
