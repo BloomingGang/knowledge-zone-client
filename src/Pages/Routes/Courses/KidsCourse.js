@@ -7,7 +7,7 @@ const KidsCourse = () => {
     const [kidsCourse, setKidsCourse] = useState([]);
     const [loading, setLoading] = useState(true);
     useEffect(() => {
-        fetch("http://localhost:5000/courses/kidsCourse")
+        fetch("https://immense-meadow-70411.herokuapp.com/courses/kidsCourse")
             .then(res => res.json())
             .then(data => {
                 setKidsCourse(data)
