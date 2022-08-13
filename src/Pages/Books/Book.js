@@ -2,7 +2,7 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 
 const Book = ({ book, setModal }) => {
-  const { about, userName, img, _id } = book;
+  const { about, bookName, img, _id } = book;
   const navigate = useNavigate();
   const handlebook = (id) => {
     navigate(`/book/${id}`);
@@ -14,7 +14,7 @@ const Book = ({ book, setModal }) => {
           <img src={img} alt="/" className="rounded-xl h-[250px] w-[300px]" />
         </div>
         <div className="card-body items-center text-justify">
-          <h2 className="card-title">{userName}</h2>
+          <h2 className="card-title">{bookName}</h2>
           <p>
             {about.slice(0, 250)}{" "}
             <span className="text-primary font-semibold">

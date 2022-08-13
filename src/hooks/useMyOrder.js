@@ -9,10 +9,9 @@ const useMyOrder = () => {
   const [user] = useAuthState(auth);
   const navigate = useNavigate();
   const [myOrder, setMyOrder] = useState([]);
-
+  const email = user.email;
   useEffect(() => {
     const getMyOrder = async () => {
-      const email = user.email;
       const url = `https://immense-meadow-70411.herokuapp.com/order?email=${email}`;
       try {
         const { data } = await axiosPrivate.get(url);
@@ -26,7 +25,7 @@ const useMyOrder = () => {
     };
 
     getMyOrder();
-  }, [user]);
+  }, [email, navigate]);
 
   return [myOrder, setMyOrder];
 };
