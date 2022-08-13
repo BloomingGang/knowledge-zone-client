@@ -19,7 +19,7 @@ const GradeNineToTwelve = () => {
       id: 2,
       icon: iconImg,
       title: "Blooming Gang Live 10-on-10",
-      programs: ["Coding", "Music", "Coding", "Music"],
+      programs: ["Coding", "Music"],
       description:
         "Personalised, 10-on-10 tutoring classes with expert teachers.",
       program_img: img,

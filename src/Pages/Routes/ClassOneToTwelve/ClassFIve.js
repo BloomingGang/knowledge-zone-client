@@ -1,25 +1,25 @@
 import React, { useEffect, useState } from "react";
 import Loading from "../../Shared/Loading";
-import ClassesCart from "./ClassesCart";
+import ClassCourseCart from "./ClassCourseCart";
 
 const ClassFIve = () => {
   const [classFive, setClassFive] = useState([]);
   const [loading, setLoading] = useState(true);
   useEffect(() => {
-    fetch("https://immense-meadow-70411.herokuapp.com/classFive")
+    fetch("https://immense-meadow-70411.herokuapp.com/courses/classFive")
       .then((res) => res.json())
       .then((data) => {
-        setClassFive(data)
+        setClassFive(data);
         setLoading(false);
       });
   }, []);
   if (loading) {
-    return <Loading></Loading>
+    return <Loading></Loading>;
   }
   return (
     <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1  gap-4 px-5 ">
       {classFive?.map((course) => (
-        <ClassesCart key={course._id} course={course}></ClassesCart>
+        <ClassCourseCart key={course._id} course={course}></ClassCourseCart>
       ))}
     </div>
   );

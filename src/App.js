@@ -1,15 +1,13 @@
 import React from "react";
+import "./App.css";
 import { Route, Routes } from "react-router-dom";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import './App.css';
+import Contact from "./Pages/ContactUs/Contact";
 import Login from "./auth/Login";
 import Register from "./auth/Register";
-import RequireAdmin from "./auth/RequireAdmin";
-import RequireAuth from "./auth/RequireAuth";
 import Blogs from "./Pages/Blogs/Blogs";
 import Books from "./Pages/Books/Books";
-import Contact from "./Pages/ContactUs/Contact";
 import Home from "./Pages/Home/Home";
 import GradeFourToEight from "./Pages/Home/LearningProgram/GradeFourToEight";
 import GradeNineToTwelve from "./Pages/Home/LearningProgram/GradeNineToTwelve";
@@ -48,8 +46,16 @@ import Religious from "./Pages/Routes/Instructor/Religious";
 import Footer from "./Pages/Shared/Footer";
 import Header from "./Pages/Shared/Header";
 import NotFound from "./Pages/Shared/NotFound";
+import RequireAuth from "./auth/RequireAuth";
 import Users from "./Pages/Users/Users";
+import RequireAdmin from "./auth/RequireAdmin";
+import UpdateProfile from "./Pages/Dashboard/UpdateProfile";
+import BookInfo from "./Pages/Shared/BooksInfo/BookInfo";
 import Payment from "./payment/Payment";
+import ClassCourseDetails from "./Pages/Shared/ClassCourseDetails/ClassCourseDetails";
+import BlogInfo from "./Pages/Shared/BlogInfo/BlogInfo";
+import MyOrder from "./Pages/Shared/MyOrder/MyOrder";
+
 
 function App() {
   return (
@@ -61,7 +67,6 @@ function App() {
           <Route path="gradeEight" element={<GradeFourToEight />} />
           <Route path="gradeTwelve" element={<GradeNineToTwelve />} />
         </Route>
-
         <Route path="contact" element={<Contact />} />
         {/* instructor route list */}
         <Route
@@ -122,17 +127,35 @@ function App() {
           <Route path="twelve" element={<ClassTwelve />} />
         </Route>
 
+
+         {/* class 1 to 12 route list */}
+        {/* courses information component start */}
+        <Route path='/:classCourse/coursesInfo/:id' element={<RequireAuth> <ClassCourseDetails/> </RequireAuth>}></Route>
+       
+  
+        {/* courses information component end */}
+
+
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
         <Route path="/blogs" element={<Blogs />} />
         <Route
+          path="/blog/:id"
+          element={
+            <RequireAuth>
+              <BlogInfo />
+            </RequireAuth>
+          }
+        />
+        <Route
           path="/users"
           element={
             <RequireAdmin>
-              <Users></Users>
+              <Users />
             </RequireAdmin>
           }
         />
+        <Route path="/myOrder" element={<MyOrder/>} />
         <Route
           path="/books"
           element={
@@ -141,12 +164,28 @@ function App() {
             </RequireAuth>
           }
         />
-        
+        <Route
+          path="/updateProfile"
+          element={
+            <RequireAuth>
+              <UpdateProfile />
+            </RequireAuth>
+          }
+            />
         <Route
           path="/payment/:id"
           element={
             <RequireAuth>
               <Payment />
+            </RequireAuth>
+          }
+        />
+        <Route
+          path="/book/:id"
+          element={
+            <RequireAuth>
+              <BookInfo />
+
             </RequireAuth>
           }
         />

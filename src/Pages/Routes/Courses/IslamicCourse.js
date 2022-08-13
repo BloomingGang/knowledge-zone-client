@@ -1,34 +1,29 @@
-import React, { useEffect, useState } from 'react';
-import Loading from '../../Shared/Loading';
-import CourseCart from './CourseCart';
+import React, { useEffect, useState } from "react";
+import Loading from "../../Shared/Loading";
+import ClassCourseCart from "../ClassOneToTwelve/ClassCourseCart";
 
 const IslamicCourse = () => {
-    const [islamicCourse, setIslamicCourse] = useState([]);
-    const [loading, setLoading] = useState(true);
-    useEffect(() => {
-        fetch("https://immense-meadow-70411.herokuapp.com/islamicCourse")
-            .then(res => res.json())
-            .then(data => {
-                setIslamicCourse(data)
-                setLoading(false);
-            })
-    }, [])
+  const [islamicCourse, setIslamicCourse] = useState([]);
+  const [loading, setLoading] = useState(true);
+  useEffect(() => {
+    fetch("https://immense-meadow-70411.herokuapp.com/courses/islamicCourse")
+      .then((res) => res.json())
+      .then((data) => {
+        setIslamicCourse(data);
+        setLoading(false);
+      });
+  }, []);
 
-    if (loading) {
-        return <Loading></Loading>
-    }
-    return (
-        <div className='grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1  gap-4 mx-5'>
-            {
-                islamicCourse?.map((course) => <CourseCart
-                    key={course._id}
-                    course={course}
-                >
-
-                </CourseCart>)
-            }
-        </div>
-    );
+  if (loading) {
+    return <Loading></Loading>;
+  }
+  return (
+    <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1  gap-4 mx-5">
+      {islamicCourse?.map((course) => (
+        <ClassCourseCart key={course._id} course={course}></ClassCourseCart>
+      ))}
+    </div>
+  );
 };
 
 export default IslamicCourse;

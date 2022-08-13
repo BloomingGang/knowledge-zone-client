@@ -1,7 +1,12 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 const Book = ({ book, setModal }) => {
-  const { description, userName, img } = book;
+  const { about, bookName, img, _id } = book;
+  const navigate = useNavigate();
+  const handlebook = (id) => {
+    navigate(`/book/${id}`);
+  };
   return (
     <div>
       <div className="card w-96 bg-base-100 shadow-xl h-[600px]">
@@ -9,17 +14,23 @@ const Book = ({ book, setModal }) => {
           <img src={img} alt="/" className="rounded-xl h-[250px] w-[300px]" />
         </div>
         <div className="card-body items-center text-justify">
-          <h2 className="card-title">{userName}</h2>
+          <h2 className="card-title">{bookName}</h2>
           <p>
-            {description.slice(0, 250)}{" "}
+            {about.slice(0, 250)}{" "}
             <span className="text-primary font-semibold">
+              {/* <<<<<<< HEAD
               {description.length > 250 ? (
+                <label for="my-modal-3" className="cursor-pointer">
+                  ...
+======= */}
+              {about.length > 250 ? (
                 <label
                   for="my-modal-3"
                   className="cursor-pointer"
                   onClick={() => setModal(book)}
                 >
                   Read More...
+                  {/* >>>>>>> 909d2a256fbbd159dfee425034215c541855763b */}
                 </label>
               ) : (
                 " "
@@ -27,12 +38,15 @@ const Book = ({ book, setModal }) => {
             </span>
           </p>
           <div className="card-actions justify-end">
-            <a href="kausar.pdf" download className="btn btn-primary">
-              <span className="btn-text">Download.</span>
-            </a>
+            <div className="btn btn-primary">
+              <span onClick={() => handlebook(_id)} className="btn-text">
+                Details
+              </span>
+            </div>
           </div>
         </div>
       </div>
+      {/* onClick={() => setModal(book)} */}
     </div>
   );
 };

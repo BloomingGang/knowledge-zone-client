@@ -7,7 +7,7 @@ const Blogs = () => {
   const [blog, setBlogs] = useState([]);
   const [modal, setModal] = useState(null);
   useEffect(() => {
-    fetch("blog2.json")
+    fetch("https://immense-meadow-70411.herokuapp.com/blogs")
       .then((response) => response.json())
       .then((data) => setBlogs(data));
   }, []);

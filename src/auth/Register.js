@@ -46,9 +46,10 @@ const Register = () => {
     await signInWithGoogle();
   };
   return (
-    <div className="md:w-1/2 mx-auto p-16 font-serif">
+    <div className="login sm:none py-12 bg-violet-200">
+    <div className="register bg-violet-300 rounded-xl md:w-1/2 mx-auto p-16 font-serif">
       <div>
-        <h1 className="text-center text-2xl font-bold text-blue-500  ">
+        <h1 className="text-center text-2xl font-bold text-violet-900  ">
           Please Register
         </h1>
 
@@ -140,7 +141,7 @@ const Register = () => {
           </div>
 
           <input
-            className="btn btn-primary w-2/5 mx-auto block"
+            className="btn bg-violet-900 w-2/5 mx-auto block"
             type="submit"
             value="Register"
           />
@@ -154,7 +155,7 @@ const Register = () => {
 
       <p className="text-center mt-4">
         Already You Have an account?{" "}
-        <Link to="/login" className="text-blue-500">
+        <Link to="/login" className="text-violet-900">
           Please Login
         </Link>
       </p>
@@ -162,11 +163,13 @@ const Register = () => {
       <div className="flex justify-center">
         <button
           onClick={handleGoogleSignIn}
-          className="btn btn-outline btn-primary text-blue-500"
+          className="btn btn-outline text-violet-900 hover:text-white hover:bg-violet-900 "
+
         >
           CONTINUE WITH GOOGLE
         </button>
       </div>
+    </div>
     </div>
   );
 };
