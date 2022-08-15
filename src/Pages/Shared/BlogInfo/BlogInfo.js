@@ -13,14 +13,13 @@ const BlogInfo = () => {
     //   .then((response) => response.json())
     //   .then((data) => setBook(data));
   }, []);
-  const { description, userName, img, page, writer } = blog;
+  const { description, writerName, img, date } = blog;
   return (
     <div>
-      <h1>{userName}</h1>
-      <h1>{description}</h1>
+      <span>{writerName}</span>
+      <span>{description}</span>
       <img src={img} alt="" />
-      <h1>{page}</h1>
-      <h1>{writer}</h1>
+      <span>{date}</span>
     </div>
   );
 };
