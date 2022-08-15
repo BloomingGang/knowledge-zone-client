@@ -55,6 +55,7 @@ import Payment from "./payment/Payment";
 import ClassCourseDetails from "./Pages/Shared/ClassCourseDetails/ClassCourseDetails";
 import BlogInfo from "./Pages/Shared/BlogInfo/BlogInfo";
 import MyOrder from "./Pages/Shared/MyOrder/MyOrder";
+import AddCourse from "./Pages/Dashboard/AddCourse";
 
 
 function App() {
@@ -134,6 +135,11 @@ function App() {
        
   
         {/* courses information component end */}
+        <Route path="/addCourse" element={
+          <RequireAdmin>
+             <AddCourse/>
+          </RequireAdmin>
+        }> </Route>
 
 
         <Route path="/login" element={<Login />} />
