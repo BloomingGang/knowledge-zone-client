@@ -1,6 +1,7 @@
 import React from "react";
 import "react-multi-carousel/lib/styles.css";
 import Carousel from "react-multi-carousel";
+import quote from '../../../src/img/quote.png'
 
 const Reviews = () => {
   const members = [
@@ -70,11 +71,11 @@ const Reviews = () => {
     },
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
-      items: 5,
+      items: 3,
     },
     tablet: {
       breakpoint: { max: 1024, min: 464 },
-      items: 1,
+      items: 2,
     },
     mobile: {
       breakpoint: { max: 464, min: 0 },
@@ -90,7 +91,7 @@ const Reviews = () => {
       >
         <div className="container mx-auto">
           <div className="mb-12 w-full mx-auto">
-            <h3 className="text-center text-4xl font-bold text-primary pt-10">
+            <h3 className="text-center text-4xl font-bold text-violet-800 pt-10">
               Millions Of Happy Students And Counting
             </h3>
           </div>
@@ -101,27 +102,20 @@ const Reviews = () => {
           <div>
             <Carousel swipeable="true" responsive={responsive} infinite={true}>
               {members.map((member, index) => (
-                <div key={index} className="mx-2">
-                  <div className="rounded-2xl border-2 w-fit h-[370px]">
-                    <div>
-                      <img
-                        src={member.avatar}
-                        alt={`avatar${index}`}
-                        className="mx-auto rounded-t-2xl h-[170px]"
-                      />
-                    </div>
-                    <div className="bg-white text-center rounded-2xl">
-                      <div className="ml-2 mb-2">
-                        <h6 className="font-bold text-2xl pt-1">
-                          {member.name}
-                        </h6>
-                        <p className="text-justify pt-2 px-2">
-                          {member.description}
-                        </p>
-                      </div>
-                    </div>
-                  </div>
+                <div key={index} class="p-4 w-full">
+                <div class="h-full bg-indigo-100 p-8 rounded-xl">
+                  <img src={quote} width={30} alt="" />
+                  {/* <span className="text-5xl text-blue-800">“”</span> */}
+                  <p class="leading-relaxed mb-6">{member.description}</p>
+                  <a class="inline-flex items-center">
+                    <img alt="testimonial"  src={member.avatar} class="w-14 h-14 rounded-full flex-shrink-0 object-cover object-center"/>
+                    <span class="flex-grow flex flex-col pl-4">
+                      <span class="title-font font-medium text-indigo-800">{member.name}</span>
+                      <span class="text-gray-500 text-sm">UI DEVELOPER</span>
+                    </span>
+                  </a>
                 </div>
+              </div>
               ))}
             </Carousel>
           </div>
