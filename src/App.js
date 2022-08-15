@@ -56,6 +56,7 @@ import ClassCourseDetails from "./Pages/Shared/ClassCourseDetails/ClassCourseDet
 import BlogInfo from "./Pages/Shared/BlogInfo/BlogInfo";
 import MyOrder from "./Pages/Shared/MyOrder/MyOrder";
 import AddCourse from "./Pages/Dashboard/AddCourse";
+import UpdateCourse from "./Pages/Shared/UpdateCourse";
 
 
 function App() {
@@ -132,9 +133,10 @@ function App() {
          {/* class 1 to 12 route list */}
         {/* courses information component start */}
         <Route path='/:classCourse/coursesInfo/:id' element={<RequireAuth> <ClassCourseDetails/> </RequireAuth>}></Route>
+        <Route path='/:classCourse/update/:id' element={<RequireAuth> <UpdateCourse/> </RequireAuth>}></Route>
        
   
-        {/* courses information component end */}
+      
         <Route path="/addCourse" element={
           <RequireAdmin>
              <AddCourse/>

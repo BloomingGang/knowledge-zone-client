@@ -38,6 +38,9 @@ const NavDropDown = () => {
           <li>
             <Link to="/myOrder">My Order</Link>
           </li>
+          <li>
+            <Link to="/addCourse">Add Course</Link>
+          </li>
 
           <li>
             <button
