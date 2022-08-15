@@ -13,6 +13,7 @@ const ClassOne = () => {
         setLoading(false);
       });
   }, []);
+  
   if (loading) {
     return <Loading> </Loading>;
   }
