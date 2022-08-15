@@ -54,13 +54,6 @@ const Reviews = () => {
       description:
         "Why do I like to code? It’s just fun! It’s fun to create your own games – you get to look at all these other games, it’s really fun. It’s exciting to know that you can create your own game.            ",
     },
-    {
-      avatar:
-        "https://byjus-f9igwgtqi.whjr.dev/us/images/students/student2.jpg?auto=format&fit=max&w=3840",
-      name: "Sai",
-      description:
-        "The thing about Tynker is that there are so many ways you can channel your creativity into code, so many different types of projects, and the code is clean and easy to understand.            ",
-    },
   ];
 
   const responsive = {
