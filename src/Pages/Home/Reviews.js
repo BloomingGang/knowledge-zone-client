@@ -1,16 +1,19 @@
 import React, { useEffect, useState } from "react";
 import "react-multi-carousel/lib/styles.css";
 import Carousel from "react-multi-carousel";
-// import quote from '../../../src/img/quote.png'
+import quote from "../../../src/img/quote.png";
 import Rating from "react-rating";
 import { AiFillStar, AiOutlineStar } from "react-icons/ai";
+import { useAuthState } from "react-firebase-hooks/auth";
+import auth from "../../firebase.init";
 
 const Reviews = () => {
-  const [reviwe, setreviwe] = useState([]);
+  const [user] = useAuthState(auth);
+  const [reviews, setReviews] = useState([]);
   useEffect(() => {
     fetch(`https://immense-meadow-70411.herokuapp.com/addreview`)
       .then((response) => response.json())
-      .then((data) => setreviwe(data));
+      .then((data) => setReviews(data));
   }, []);
 
   const responsive = {
@@ -35,10 +38,7 @@ const Reviews = () => {
 
   return (
     <div className="mt-10">
-      <section
-        // className='my-20'
-        id="team-section"
-      >
+      <section id="team-section">
         <div className="container mx-auto">
           <div className="mb-12 w-full mx-auto">
             <h3 className="text-center text-4xl font-bold text-violet-800 pt-10">
@@ -51,26 +51,36 @@ const Reviews = () => {
           </div>
           <div>
             <Carousel swipeable="true" responsive={responsive} infinite={true}>
-              {reviwe.map((reviwe) => (
-                <div className="bg-white rounded-xl py-2">
-                  <h2 className="font-bold text-lg px-5 pb-2">{reviwe.name}</h2>
-                  <p className="px-5 pb-3 text-justify">{reviwe.comment}</p>
-                  <div className="px-5">
-                    <div className="flex justify-start items-center text-bold font-serif">
-                      {/* <p>Ratting: </p> */}
-                      <p>
-                        <Rating
-                          readonly
-                          initialRating={reviwe.ratting}
-                          emptySymbol={
-                            <AiOutlineStar color="orange" size={"15px"} />
-                          }
-                          fullSymbol={
-                            <AiFillStar color="orange" size={"15px"} />
-                          }
-                        />
-                      </p>
-                    </div>
+              {reviews.map((review, index) => (
+                <div key={index} class="p-4 w-full">
+                  <div class="h-full bg-indigo-100 p-8 rounded-xl">
+                    <img src={quote} width={30} alt="" />
+                    {/* <span className="text-5xl text-blue-800">“”</span> */}
+                    <p class="leading-relaxed mb-6">{review.comment}</p>
+                    <a class="inline-flex items-center">
+                      <img
+                        alt="testimonial"
+                        src={review.image}
+                        class="w-14 h-14 rounded-full flex-shrink-0 object-cover object-center"
+                      />
+                      <span class="flex-grow flex flex-col pl-4">
+                        <p>
+                          <Rating
+                            readonly
+                            initialRating={review.ratting}
+                            emptySymbol={
+                              <AiOutlineStar color="orange" size={"15px"} />
+                            }
+                            fullSymbol={
+                              <AiFillStar color="orange" size={"15px"} />
+                            }
+                          />
+                        </p>
+                        <span class="title-font font-medium text-indigo-800">
+                          {review.name}
+                        </span>
+                      </span>
+                    </a>
                   </div>
                 </div>
               ))}
