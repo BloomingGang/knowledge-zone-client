@@ -94,11 +94,10 @@ const Reviews = () => {
           </div>
           <div>
             <Carousel swipeable="true" responsive={responsive} infinite={true}>
-              {members.map((member, index) => (
-                <div key={index} class="p-4 w-full">
-                <div class="h-full bg-indigo-100 p-8 rounded-xl">
+              {members.slice(members.length-3, members.length).map((member, index) => (
+                <div  key={index} class="p-4 w-full">
+                <div class="h-[270px] bg-indigo-100 p-8 rounded-xl">
                   <img src={quote} width={30} alt="" />
-                  {/* <span className="text-5xl text-blue-800">“”</span> */}
                   <p class="leading-relaxed mb-6">{member.description}</p>
                   <a class="inline-flex items-center">
                     <img alt="testimonial"  src={member.avatar} class="w-14 h-14 rounded-full flex-shrink-0 object-cover object-center"/>
