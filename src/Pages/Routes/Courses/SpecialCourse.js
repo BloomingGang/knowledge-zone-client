@@ -6,7 +6,7 @@ const SpecialCourse = () => {
   const [specialCourse, setSpecialCourse] = useState([]);
   const [loading, setLoading] = useState(true);
   useEffect(() => {
-    fetch("https://immense-meadow-70411.herokuapp.com/courses/specialCourse")
+    fetch("http://localhost:5000/courses/specialCourse")
       .then((res) => res.json())
       .then((data) => {
         setSpecialCourse(data);

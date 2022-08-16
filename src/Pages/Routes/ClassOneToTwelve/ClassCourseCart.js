@@ -10,14 +10,14 @@ const ClassCourseCart = ({ course }) => {
   const [user] = useAuthState(auth);
   const [admin] = useAdmin(user);
   const navigate = useNavigate();
-  const [modal,setModal]=useState(false);
+  const [modal, setModal] = useState(false);
   const handleCourse = (id) => {
     navigate(`/${classCourse}/coursesInfo/${id}`);
   };
   const handleDeleteCourse = (id) => {
     const proceed = window.confirm("Are you sure?");
     if (proceed) {
-      const url = `https://immense-meadow-70411.herokuapp.com/course/${id}`;
+      const url = `http://localhost:5000/course/${id}`;
       fetch(url, {
         method: "DELETE",
       })
@@ -28,9 +28,9 @@ const ClassCourseCart = ({ course }) => {
     }
   };
 
-  const handleCourseUpdate = id => {
+  const handleCourseUpdate = (id) => {
     navigate(`/${classCourse}/Update/${id}`);
-  }
+  };
 
   return (
     <section>
@@ -69,13 +69,16 @@ const ClassCourseCart = ({ course }) => {
                   onClick={() => handleDeleteCourse(_id)}
                   className="text-center flex bg-[#7d16eb] border-2 border-gray-700 rounded-lg px-2 py-2 hover:bg-transparent text-white hover:text-black transition duration-300"
                 >
-
-                  <label onClick={()=>setModal(true)} for="my-modal-6"> <TrashIcon className="h-5 text-center w-5" /> Delete</label>
+                  <label onClick={() => setModal(true)} for="my-modal-6">
+                    {" "}
+                    <TrashIcon className="h-5 text-center w-5" /> Delete
+                  </label>
                 </button>
 
                 <button
                   onClick={() => handleCourseUpdate(_id)}
-                  className="text-center flex bg-[#7d16eb] border-2 border-gray-700 rounded-lg px-2 py-2 hover:bg-transparent text-white hover:text-black transition duration-300">
+                  className="text-center flex bg-[#7d16eb] border-2 border-gray-700 rounded-lg px-2 py-2 hover:bg-transparent text-white hover:text-black transition duration-300"
+                >
                   <PencilAltIcon className="h-5 text-center w-5" />
                   Update
                 </button>
@@ -84,20 +87,27 @@ const ClassCourseCart = ({ course }) => {
           )}
         </div>
       </div>
-      {
-        modal &&
+      {modal && (
         <>
           <input type="checkbox" id="my-modal-6" class="modal-toggle" />
           <div class="modal modal-bottom sm:modal-middle">
             <div class="modal-box">
-              <h3 class="font-bold text-lg">Congratulations random Internet user!</h3>
-              <p class="py-4">You've been selected for a chance to get one year of subscription to use Wikipedia for free!</p>
+              <h3 class="font-bold text-lg">
+                Congratulations random Internet user!
+              </h3>
+              <p class="py-4">
+                You've been selected for a chance to get one year of
+                subscription to use Wikipedia for free!
+              </p>
               <div class="modal-action">
-                <label for="my-modal-6" class="btn">Yay!</label>
+                <label for="my-modal-6" class="btn">
+                  Yay!
+                </label>
               </div>
             </div>
-          </div></>
-      }
+          </div>
+        </>
+      )}
     </section>
   );
 };

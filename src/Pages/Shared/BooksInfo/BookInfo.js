@@ -15,7 +15,7 @@ const BookInfo = () => {
     error,
     data: book,
   } = useQuery(["book", id], () =>
-    fetch(`https://immense-meadow-70411.herokuapp.com/book/${id}`, {
+    fetch(`http://localhost:5000/book/${id}`, {
       method: "get",
       headers: {
         authorization: `Bearer ${localStorage.getItem("accessToken")}`,
@@ -24,7 +24,29 @@ const BookInfo = () => {
   );
   if (isLoading) return <Loading />;
   if (error) return "An error has occurred: " + error.message;
-  const { bookName, img, price, writerImg, writerImg2, writerImg3, writerImg4, writerName1, writerName2, writerName3, writerName4, educationWriter1, educationWriter2, educationWriter3, educationWriter4, objective, about, page, interactive, formate, filesize } = book;
+  const {
+    bookName,
+    img,
+    price,
+    writerImg,
+    writerImg2,
+    writerImg3,
+    writerImg4,
+    writerName1,
+    writerName2,
+    writerName3,
+    writerName4,
+    educationWriter1,
+    educationWriter2,
+    educationWriter3,
+    educationWriter4,
+    objective,
+    about,
+    page,
+    interactive,
+    formate,
+    filesize,
+  } = book;
 
   const handleOrder = () => {
     const userName = user?.displayName;
@@ -38,7 +60,7 @@ const BookInfo = () => {
       img,
       price,
     };
-    fetch("https://immense-meadow-70411.herokuapp.com/order", {
+    fetch("http://localhost:5000/order", {
       method: "post",
       headers: {
         "content-type": "application/json",

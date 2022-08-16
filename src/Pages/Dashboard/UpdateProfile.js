@@ -10,7 +10,7 @@ const UpdateProfile = () => {
   const name = user?.displayName;
   const email = user?.email;
   useEffect(() => {
-    fetch(`https://immense-meadow-70411.herokuapp.com/user/${email}`)
+    fetch(`http://localhost:5000/user/${email}`)
       .then((res) => res.json())
       .then((data) => setProfile(data));
   }, [email, profile]);
@@ -29,7 +29,7 @@ const UpdateProfile = () => {
       phone,
     };
 
-    fetch(`https://immense-meadow-70411.herokuapp.com/users/${email}`, {
+    fetch(`http://localhost:5000/users/${email}`, {
       method: "put",
       headers: {
         "content-type": "application/json",

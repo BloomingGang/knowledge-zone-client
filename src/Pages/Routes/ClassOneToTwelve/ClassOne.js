@@ -6,14 +6,14 @@ const ClassOne = () => {
   const [classOne, setClassOne] = useState([]);
   const [loading, setLoading] = useState(true);
   useEffect(() => {
-    fetch(`https://immense-meadow-70411.herokuapp.com/courses/classOne`)
+    fetch(`http://localhost:5000/courses/classOne`)
       .then((res) => res.json())
       .then((data) => {
         setClassOne(data);
         setLoading(false);
       });
   }, []);
-  
+
   if (loading) {
     return <Loading> </Loading>;
   }

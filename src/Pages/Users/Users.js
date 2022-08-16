@@ -5,7 +5,7 @@ const Users = () => {
   const [users, setUsers] = useState([]);
 
   useEffect(() => {
-    fetch("https://immense-meadow-70411.herokuapp.com/user", {
+    fetch("http://localhost:5000/user", {
       method: "GET",
       headers: {
         authorization: `Bearer ${localStorage.getItem("accessToken")}`,
@@ -14,7 +14,6 @@ const Users = () => {
       .then((res) => res.json())
       .then((data) => setUsers(data));
   }, [users]);
-
 
   // const {
   //   isLoading,
@@ -34,7 +33,6 @@ const Users = () => {
   // if (isLoading) {
   //   return <Loading></Loading>;
   // }
-
 
   return (
     <div className="pt-4 pb-14">
