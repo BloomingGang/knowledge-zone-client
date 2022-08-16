@@ -24,7 +24,29 @@ const BookInfo = () => {
   );
   if (isLoading) return <Loading />;
   if (error) return "An error has occurred: " + error.message;
-  const { bookName, img, price, writerImg, writerImg2, writerImg3, writerImg4, writerName1, writerName2, writerName3, writerName4, educationWriter1, educationWriter2, educationWriter3, educationWriter4, objective, about, page, interactive, formate, filesize } = book;
+  const {
+    bookName,
+    img,
+    price,
+    writerImg,
+    writerImg2,
+    writerImg3,
+    writerImg4,
+    writerName1,
+    writerName2,
+    writerName3,
+    writerName4,
+    educationWriter1,
+    educationWriter2,
+    educationWriter3,
+    educationWriter4,
+    objective,
+    about,
+    page,
+    interactive,
+    formate,
+    filesize,
+  } = book;
 
   const handleOrder = () => {
     const userName = user?.displayName;
