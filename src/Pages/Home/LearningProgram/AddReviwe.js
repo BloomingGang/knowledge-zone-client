@@ -17,7 +17,7 @@ const AddReviwe = () => {
     setRattingError("");
     const review = { name, comment, ratting };
 
-    fetch("http://localhost:5000/addreview", {
+    fetch("https://immense-meadow-70411.herokuapp.com/addreview", {
       method: "POST",
       headers: {
         "content-type": "application/json",
@@ -47,7 +47,7 @@ const AddReviwe = () => {
               disabled
             />
           </div>
-          <div class="form-control mb-20">
+          <div class="form-control">
             <label class="label">
               <span class="label-text">Comment</span>
             </label>

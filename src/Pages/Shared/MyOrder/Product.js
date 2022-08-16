@@ -11,7 +11,7 @@ const Product = ({ order, index }) => {
   const handleDelete = (id) => {
     const proceed = window.confirm("Are you sure?");
     if (proceed) {
-      const url = `http://localhost:5000/order/${id}`;
+      const url = `https://immense-meadow-70411.herokuapp.com/order/${id}`;
       fetch(url, {
         method: "DELETE",
       })
