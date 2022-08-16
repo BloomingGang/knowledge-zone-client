@@ -47,7 +47,7 @@ const AddReviwe = () => {
               disabled
             />
           </div>
-          <div class="form-control">
+          <div class="form-control mb-20">
             <label class="label">
               <span class="label-text">Comment</span>
             </label>
@@ -55,7 +55,9 @@ const AddReviwe = () => {
               type="text"
               name="comment"
               placeholder="Comment"
-              class="input input-bordered"
+              class="input input-bordered count-chars"
+              maxLength="50"
+              data-max-chars="50"
             />
           </div>
           <div class="form-control">

@@ -57,7 +57,7 @@ const Reviews = () => {
                   <p className="px-5 pb-3 text-justify">{reviwe.comment}</p>
                   <div className="px-5">
                     <div className="flex justify-start items-center text-bold font-serif">
-                      <p>Ratting: </p>
+                      {/* <p>Ratting: </p> */}
                       <p>
                         <Rating
                           readonly
