@@ -9,12 +9,12 @@ const Book = ({ book, setModal }) => {
   };
   return (
     <div>
-      <div className="card bg-base-100 shadow-xl h-[600px]">
+      <div className="card bg-base-100 shadow-xl h-[650px]">
         <div className="">
           <img src={img} alt="/" className="rounded-t-xl h-[280px] w-full" />
         </div>
         <div className="card-body items-center text-justify">
-          <h2 className="card-title">{bookName}</h2>
+          <h2 className="card-title text-3xl text-indigo-800">{bookName}</h2>
           <p>
             {about.slice(0, 250)}{" "}
             <span className="text-primary font-semibold">
