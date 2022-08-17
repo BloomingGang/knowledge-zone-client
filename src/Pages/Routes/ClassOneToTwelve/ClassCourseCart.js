@@ -61,22 +61,20 @@ const ClassCourseCart = ({ course }) => {
               <hr className="border-2 mb-3" />
               <div className="flex justify-between">
                 <button
-                  onClick={() => handleCourseUpdate(_id)}
-                  className="text-center flex bg-[#7d16eb] border-2 border-gray-700 rounded-lg px-2 py-2 hover:bg-transparent text-white hover:text-black transition duration-300"
-                >
-                  
-                  <PencilAltIcon className="h-5 text-center w-5" />
-                  Update
-                </button>
-
-                <button
                   onClick={() => handleDeleteCourse(_id)}
-                  className="text-center flex bg-[#7d16eb] border-2 border-gray-700 rounded-lg px-2 py-2 hover:bg-transparent text-white hover:text-black transition duration-300"
+                  className="text-red-600 transition ease-in-out delay-100 hover:-translate-y-1 hover:scale-110 duration-300 mt-4 mx-2"
                 >
                   <label onClick={() => setModal(true)} for="my-modal-6">
                     {" "}
-                    <TrashIcon className="h-5 text-center w-5" /> Delete
+                    <TrashIcon className="h-9 w-9 cursor-pointer" />
                   </label>
+                </button>
+
+                <button
+                  onClick={() => handleCourseUpdate(_id)}
+                  className="text-green-600 transition ease-in-out delay-100 hover:-translate-y-1 hover:scale-110 duration-300 mt-4 mx-2"
+                >
+                  <PencilAltIcon className="h-9 w-9" />
                 </button>
               </div>
             </div>
