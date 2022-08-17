@@ -47,14 +47,9 @@ const ClassCourseCart = ({ course }) => {
           <hr className="border-2" />
 
           <div className="flex  justify-between items-center">
-            <h3 className="text-2xl font-bold">
-              $
-              <span className="text-2xl font-bold text-red-500">
-                {price}
-              </span>
-            </h3>
+            <span className="text-2xl font-bold text-green-700">$ {price}</span>
             <button
-              className="border-2 shadow-lg hover:bg-transparent hover:text-black p-2 rounded-lg bg-primary text-white font-bold transition duration-300"
+              className="border-2 shadow-lg hover:bg-indigo-500 hover:text-black p-2 rounded-lg bg-indigo-800 text-white font-bold transition duration-300"
               onClick={() => handleCourse(_id)}
             >
               Enroll Now
