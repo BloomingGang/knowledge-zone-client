@@ -34,7 +34,7 @@ const ClassCourseCart = ({ course }) => {
 
   return (
     <section>
-      <div className="card card-compact hover:shadow-2xl  bg-base-100 shadow-xl">
+      <div className="card card-compact hover:shadow-2xl  bg-gray-100 shadow-xl">
         <figure>
           <img
             className="hover:scale-[1.1] transition duration-300"
@@ -49,7 +49,7 @@ const ClassCourseCart = ({ course }) => {
           <div className="flex  justify-between items-center">
             <h3 className="text-2xl font-bold">
               $
-              <span className="text-base font-medium text-red-500">
+              <span className="text-2xl font-bold text-red-500">
                 {price}
               </span>
             </h3>
