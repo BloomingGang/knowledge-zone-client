@@ -12,14 +12,15 @@ const BlogInfo = () => {
     // fetch(`https://immense-meadow-70411.herokuapp.com/book/${id}`)
     //   .then((response) => response.json())
     //   .then((data) => setBook(data));
-  }, []);
-  const { description, writerName, img, date } = blog;
+  }, [id]);
+  const { description, writerName, img, date, title } = blog;
   return (
     <div>
-      <span>{writerName}</span>
-      <span>{description}</span>
       <img src={img} alt="" />
-      <span>{date}</span>
+      <h1>{title}</h1>
+      <h1>{writerName}</h1>
+      <p>{date}</p>
+      <p>{description}</p>
     </div>
   );
 };
