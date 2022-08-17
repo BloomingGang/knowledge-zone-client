@@ -9,7 +9,7 @@ const Book = ({ book, setModal }) => {
   };
   return (
     <div>
-      <div className="card bg-base-100 shadow-xl h-[600px]">
+      <div className="card bg-base-100 shadow-xl h-[600px] transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-105 duration-300">
         <div className="">
           <img src={img} alt="/" className="rounded-t-xl h-[380px] w-full" />
         </div>
