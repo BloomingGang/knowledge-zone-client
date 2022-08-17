@@ -55,11 +55,10 @@ const Reviews = () => {
                 <div key={index} class="p-4 w-full">
                   <div class="h-full bg-indigo-100 p-8 rounded-xl">
                     <img src={quote} width={30} alt="" />
-                    {/* <span className="text-5xl text-blue-800">“”</span> */}
                     <p class="leading-relaxed mb-6">{review.comment}</p>
                     <a class="inline-flex items-center">
                       <img
-                        alt="testimonial"
+                        alt=""
                         src={review.image}
                         class="w-14 h-14 rounded-full flex-shrink-0 object-cover object-center"
                       />
