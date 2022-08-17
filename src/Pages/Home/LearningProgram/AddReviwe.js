@@ -9,15 +9,16 @@ const AddReviwe = () => {
   const handleForm = (e) => {
     e.preventDefault();
     const name = e.target.name.value;
+    const image = e.target.image.value;
     const comment = e.target.comment.value;
     const ratting = e.target.ratting.value;
     if (ratting < 0 || ratting > 5) {
       return setRattingError("Ratting Will Be Between 0 to 5 ");
     }
     setRattingError("");
-    const review = { name, comment, ratting };
+    const review = { name, comment, ratting, image };
 
-    fetch("https://immense-meadow-70411.herokuapp.com/addreview", {
+    fetch("http://localhost:5000/addreview", {
       method: "POST",
       headers: {
         "content-type": "application/json",
@@ -44,6 +45,19 @@ const AddReviwe = () => {
               name="name"
               class="input input-bordered"
               value={user?.displayName}
+              disabled
+            />
+          </div>
+          <div class="form-control">
+            <label class="label">
+              <span class="label-text">Image</span>
+            </label>
+            <input
+              type="text"
+              placeholder="Image"
+              name="image"
+              class="input input-bordered"
+              value={user?.photoURL}
               disabled
             />
           </div>
