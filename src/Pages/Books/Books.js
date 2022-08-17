@@ -14,7 +14,7 @@ const Books = () => {
 
   return (
     <div>
-      <div className="grid md:grid-cols-3 gap-5 px-5">
+      <div className="grid md:grid-cols-3 gap-16 px-5 bg-slate-400 py-16">
         {book.map((bo) => (
           <Book setModal={setModal} key={bo._id} book={bo}></Book>
         ))}

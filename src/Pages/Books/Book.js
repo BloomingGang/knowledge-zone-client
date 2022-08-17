@@ -9,9 +9,9 @@ const Book = ({ book, setModal }) => {
   };
   return (
     <div>
-      <div className="card w-96 bg-base-100 shadow-xl h-[600px]">
-        <div className="px-10 pt-10">
-          <img src={img} alt="/" className="rounded-xl h-[250px] w-[300px]" />
+      <div className="card bg-base-100 shadow-xl h-[600px]">
+        <div className="">
+          <img src={img} alt="/" className="rounded-t-xl h-[280px] w-full" />
         </div>
         <div className="card-body items-center text-justify">
           <h2 className="card-title">{bookName}</h2>
