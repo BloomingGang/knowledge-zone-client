@@ -1,8 +1,8 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 
-const Book = ({ book, setModal }) => {
-  const { about, bookName, img, _id } = book;
+const Book = ({ book}) => {
+  const { bookName, img, _id } = book;
   const navigate = useNavigate();
   const handleBook = (id) => {
     navigate(`/book/${id}`);
@@ -14,7 +14,9 @@ const Book = ({ book, setModal }) => {
           <img src={img} alt="/" className="rounded-t-xl h-[380px] w-full" />
         </div>
         <div className="card-body">
-          <h2 className="card-title text-2xl pb-8">{bookName}</h2>
+          <h2 className="card-title text-xl font-serif text-indigo-800 pb-8">
+            {bookName}
+          </h2>
           {/* <p className="items-center text-justify">
             {about.slice(0, 250)}{" "}
             <span className="text-primary font-semibold">
@@ -32,11 +34,12 @@ const Book = ({ book, setModal }) => {
             </span>
           </p> */}
           <div className="card-actions justify-center">
-            <div className="btn btn-primary">
-              <span onClick={() => handleBook(_id)} className="btn-text">
-                Book Details
-              </span>
-            </div>
+            <button
+              className="border-2 shadow-lg hover:bg-indigo-500 hover:text-black p-2 rounded-lg bg-indigo-800 text-white font-bold transition duration-300"
+              onClick={() => handleBook(_id)}
+            >
+              View Details
+            </button>
           </div>
         </div>
       </div>
