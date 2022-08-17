@@ -44,7 +44,7 @@ const ClassCourseCart = ({ course }) => {
         </figure>
         <div className="card-body">
           <h2 className="card-title"> {title}</h2>
-          <hr className="border-2" />
+          <div class="divider"></div>
 
           <div className="flex  justify-between items-center">
             <span className="text-2xl font-bold text-green-700">$ {price}</span>
@@ -58,7 +58,7 @@ const ClassCourseCart = ({ course }) => {
 
           {admin && (
             <div>
-              <hr className="border-2 mb-3" />
+              <div class="divider"></div>
               <div className="flex justify-between">
                 <button
                   onClick={() => handleDeleteCourse(_id)}
