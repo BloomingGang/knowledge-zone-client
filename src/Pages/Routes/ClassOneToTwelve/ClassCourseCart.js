@@ -64,6 +64,7 @@ const ClassCourseCart = ({ course }) => {
                   onClick={() => handleCourseUpdate(_id)}
                   className="text-center flex bg-[#7d16eb] border-2 border-gray-700 rounded-lg px-2 py-2 hover:bg-transparent text-white hover:text-black transition duration-300"
                 >
+                  
                   <PencilAltIcon className="h-5 text-center w-5" />
                   Update
                 </button>
