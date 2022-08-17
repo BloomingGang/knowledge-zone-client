@@ -34,7 +34,7 @@ const ClassCourseCart = ({ course }) => {
 
   return (
     <section>
-      <div className="card card-compact bg-gray-100 ">
+      <div className="card card-compact bg-gray-100 transition ease-in-out delay-150 hover:-translate-1 hover:scale-105 duration-300">
         <figure>
           <img
             className="hover:scale-[1.1] transition duration-300"
