@@ -51,7 +51,7 @@ const Reviews = () => {
           </div>
           <div>
             <Carousel swipeable="true" responsive={responsive} infinite={true}>
-              {reviews.map((review, index) => (
+              {reviews.slice(-9).map((review, index) => (
                 <div key={index} class="p-4 w-full">
                   <div class="h-full bg-indigo-100 p-8 rounded-xl">
                     <img src={quote} width={30} alt="" />
