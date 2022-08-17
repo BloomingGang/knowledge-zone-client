@@ -1,60 +1,70 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "react-multi-carousel/lib/styles.css";
 import Carousel from "react-multi-carousel";
-import quote from '../../../src/img/quote.png'
+// import quote from '../../../src/img/quote.png'
+import Rating from "react-rating";
+import { AiFillStar, AiOutlineStar } from "react-icons/ai";
 
 const Reviews = () => {
-  const members = [
-    {
-      avatar:
-        "https://byjus-f9igwgtqi.whjr.dev/us/images/students/student1.jpg?auto=format&fit=max&w=3840",
-      name: "Chiamaka",
-      description:
-        "You are learning and you're having fun at the same time. And it's almost like you are playing a game.",
-    },
-    {
-      avatar:
-        "https://byjus-f9igwgtqi.whjr.dev/us/images/students/student8.jpg?auto=format&fit=max&w=1920",
-      name: "Alex",
-      description:
-        "Learning coding is like learning a new language. If you get the right teacher, you can learn it very easily.            ",
-    },
-    {
-      avatar:
-        "https://byjus-f9igwgtqi.whjr.dev/us/images/students/student3.jpg?auto=format&fit=max&w=3840",
-      name: "Jake            ",
-      description:
-        "What I'm doing with block coding, HTML and mobile apps is I'm actually making publishable apps which is really cool!",
-    },
-    {
-      avatar:
-        "https://byjus-f9igwgtqi.whjr.dev/us/images/students/student4.jpg?auto=format&fit=max&w=3840",
-      name: "Tyler",
-      description:
-        "My teacher and I are coding a new space simulator comparing the gravities of black holes to Mars.            ",
-    },
-    {
-      avatar:
-        "https://byjus-f9igwgtqi.whjr.dev/us/images/students/student5.jpg?auto=format&fit=max&w=3840",
-      name: "Anay",
-      description:
-        "My skills have really improved!...I also like coding because it serves as a fun way to learn math, which is one of my least favorite subjects.            ",
-    },
-    {
-      avatar:
-        "https://byjus-f9igwgtqi.whjr.dev/us/images/students/student6.jpg?auto=format&fit=max&w=3840",
-      name: "Chris",
-      description:
-        "I really like how there’s different courses that you can learn with and how there are contests like the Summer Code Jam that you can win cool prizes.            ",
-    },
-    {
-      avatar:
-        "https://byjus-f9igwgtqi.whjr.dev/us/images/students/student7.jpg?auto=format&fit=max&w=3840",
-      name: "Tessa            ",
-      description:
-        "Why do I like to code? It’s just fun! It’s fun to create your own games – you get to look at all these other games, it’s really fun. It’s exciting to know that you can create your own game.            ",
-    },
-  ];
+// <<<<<<< HEAD
+//   const members = [
+//     {
+//       avatar:
+//         "https://byjus-f9igwgtqi.whjr.dev/us/images/students/student1.jpg?auto=format&fit=max&w=3840",
+//       name: "Chiamaka",
+//       description:
+//         "You are learning and you're having fun at the same time. And it's almost like you are playing a game.",
+//     },
+//     {
+//       avatar:
+//         "https://byjus-f9igwgtqi.whjr.dev/us/images/students/student8.jpg?auto=format&fit=max&w=1920",
+//       name: "Alex",
+//       description:
+//         "Learning coding is like learning a new language. If you get the right teacher, you can learn it very easily.            ",
+//     },
+//     {
+//       avatar:
+//         "https://byjus-f9igwgtqi.whjr.dev/us/images/students/student3.jpg?auto=format&fit=max&w=3840",
+//       name: "Jake            ",
+//       description:
+//         "What I'm doing with block coding, HTML and mobile apps is I'm actually making publishable apps which is really cool!",
+//     },
+//     {
+//       avatar:
+//         "https://byjus-f9igwgtqi.whjr.dev/us/images/students/student4.jpg?auto=format&fit=max&w=3840",
+//       name: "Tyler",
+//       description:
+//         "My teacher and I are coding a new space simulator comparing the gravities of black holes to Mars.            ",
+//     },
+//     {
+//       avatar:
+//         "https://byjus-f9igwgtqi.whjr.dev/us/images/students/student5.jpg?auto=format&fit=max&w=3840",
+//       name: "Anay",
+//       description:
+//         "My skills have really improved!...I also like coding because it serves as a fun way to learn math, which is one of my least favorite subjects.            ",
+//     },
+//     {
+//       avatar:
+//         "https://byjus-f9igwgtqi.whjr.dev/us/images/students/student6.jpg?auto=format&fit=max&w=3840",
+//       name: "Chris",
+//       description:
+//         "I really like how there’s different courses that you can learn with and how there are contests like the Summer Code Jam that you can win cool prizes.            ",
+//     },
+//     {
+//       avatar:
+//         "https://byjus-f9igwgtqi.whjr.dev/us/images/students/student7.jpg?auto=format&fit=max&w=3840",
+//       name: "Tessa            ",
+//       description:
+//         "Why do I like to code? It’s just fun! It’s fun to create your own games – you get to look at all these other games, it’s really fun. It’s exciting to know that you can create your own game.            ",
+//     },
+//   ];
+// =======
+  const [reviews, setReviews] = useState([]);
+  useEffect(() => {
+    fetch(`https://immense-meadow-70411.herokuapp.com/addreview`)
+      .then((response) => response.json())
+      .then((data) => setReviews(data));
+  }, []);
 
   const responsive = {
     superLargeDesktop: {
@@ -94,6 +104,7 @@ const Reviews = () => {
           </div>
           <div>
             <Carousel swipeable="true" responsive={responsive} infinite={true}>
+{/* <<<<<<< HEAD
               {members.slice(members.length-3, members.length).map((member, index) => (
                 <div  key={index} class="p-4 w-full">
                 <div class="h-[270px] bg-indigo-100 p-8 rounded-xl">
@@ -106,8 +117,29 @@ const Reviews = () => {
                       <span class="text-gray-500 text-sm">UI DEVELOPER</span>
                     </span>
                   </a>
+======= */}
+              {reviews.map((review) => (
+                <div className="bg-white rounded-xl py-2">
+                  <h2 className="font-bold text-lg px-5 pb-2">{review.name}</h2>
+                  <p className="px-5 pb-3 text-justify">{review.comment}</p>
+                  <div className="px-5">
+                    <div className="flex justify-start items-center text-bold font-serif">
+                      {/* <p>Ratting: </p> */}
+                      <p>
+                        <Rating
+                          readonly
+                          initialRating={review.ratting}
+                          emptySymbol={
+                            <AiOutlineStar color="orange" size={"15px"} />
+                          }
+                          fullSymbol={
+                            <AiFillStar color="orange" size={"15px"} />
+                          }
+                        />
+                      </p>
+                    </div>
+                  </div>
                 </div>
-              </div>
               ))}
             </Carousel>
           </div>

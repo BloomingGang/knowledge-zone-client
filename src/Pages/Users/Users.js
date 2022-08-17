@@ -15,7 +15,6 @@ const Users = () => {
       .then((data) => setUsers(data));
   }, [users]);
 
-
   // const {
   //   isLoading,
   //   error,
@@ -34,7 +33,6 @@ const Users = () => {
   // if (isLoading) {
   //   return <Loading></Loading>;
   // }
-
 
   return (
     <div className="pt-4 pb-14">
