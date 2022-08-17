@@ -57,7 +57,7 @@ const Reviews = () => {
                     <img src={quote} width={30} alt="" />
                     {/* <span className="text-5xl text-blue-800">“”</span> */}
                     <p class="leading-relaxed mb-6">{review.comment}</p>
-                    <a class="inline-flex items-center">
+                    <a class="inline-flex items-center" href="/">
                       <img
                         alt="testimonial"
                         src={review.image}
