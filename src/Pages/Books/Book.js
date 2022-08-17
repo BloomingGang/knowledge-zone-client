@@ -4,25 +4,20 @@ import { useNavigate } from "react-router-dom";
 const Book = ({ book, setModal }) => {
   const { about, bookName, img, _id } = book;
   const navigate = useNavigate();
-  const handlebook = (id) => {
+  const handleBook = (id) => {
     navigate(`/book/${id}`);
   };
   return (
     <div>
-      <div className="card w-96 bg-base-100 shadow-xl h-[600px]">
-        <div className="px-10 pt-10">
-          <img src={img} alt="/" className="rounded-xl h-[250px] w-[300px]" />
+      <div className="card bg-gray-100 h-[600px] transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-105 duration-300">
+        <div className="">
+          <img src={img} alt="/" className="rounded-t-xl h-[380px] w-full" />
         </div>
-        <div className="card-body items-center text-justify">
-          <h2 className="card-title">{bookName}</h2>
-          <p>
+        <div className="card-body">
+          <h2 className="card-title text-2xl pb-8">{bookName}</h2>
+          {/* <p className="items-center text-justify">
             {about.slice(0, 250)}{" "}
             <span className="text-primary font-semibold">
-              {/* <<<<<<< HEAD
-              {description.length > 250 ? (
-                <label for="my-modal-3" className="cursor-pointer">
-                  ...
-======= */}
               {about.length > 250 ? (
                 <label
                   for="my-modal-3"
@@ -30,17 +25,16 @@ const Book = ({ book, setModal }) => {
                   onClick={() => setModal(book)}
                 >
                   Read More...
-                  {/* >>>>>>> 909d2a256fbbd159dfee425034215c541855763b */}
                 </label>
               ) : (
                 " "
               )}
             </span>
-          </p>
-          <div className="card-actions justify-end">
+          </p> */}
+          <div className="card-actions justify-center">
             <div className="btn btn-primary">
-              <span onClick={() => handlebook(_id)} className="btn-text">
-                Details
+              <span onClick={() => handleBook(_id)} className="btn-text">
+                Book Details
               </span>
             </div>
           </div>

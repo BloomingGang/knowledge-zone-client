@@ -56,7 +56,7 @@ const Reviews = () => {
                   <div class="h-full bg-indigo-100 p-8 rounded-xl">
                     <img src={quote} width={30} alt="" />
                     <p class="leading-relaxed mb-6">{review.comment}</p>
-                    <a class="inline-flex items-center">
+                    <a class="inline-flex items-center" href="/">
                       <img
                         alt=""
                         src={review.image}
