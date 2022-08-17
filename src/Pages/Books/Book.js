@@ -9,20 +9,15 @@ const Book = ({ book, setModal }) => {
   };
   return (
     <div>
-      <div className="card bg-base-100 shadow-xl h-[650px]">
+      <div className="card bg-base-100 shadow-xl h-[600px]">
         <div className="">
-          <img src={img} alt="/" className="rounded-t-xl h-[280px] w-full" />
+          <img src={img} alt="/" className="rounded-t-xl h-[380px] w-full" />
         </div>
-        <div className="card-body items-center text-justify">
-          <h2 className="card-title text-3xl text-indigo-800">{bookName}</h2>
-          <p>
+        <div className="card-body">
+          <h2 className="card-title text-2xl pb-8">{bookName}</h2>
+          {/* <p className="items-center text-justify">
             {about.slice(0, 250)}{" "}
             <span className="text-primary font-semibold">
-              {/* <<<<<<< HEAD
-              {description.length > 250 ? (
-                <label for="my-modal-3" className="cursor-pointer">
-                  ...
-======= */}
               {about.length > 250 ? (
                 <label
                   for="my-modal-3"
@@ -30,17 +25,16 @@ const Book = ({ book, setModal }) => {
                   onClick={() => setModal(book)}
                 >
                   Read More...
-                  {/* >>>>>>> 909d2a256fbbd159dfee425034215c541855763b */}
                 </label>
               ) : (
                 " "
               )}
             </span>
-          </p>
-          <div className="card-actions justify-end">
+          </p> */}
+          <div className="card-actions justify-center">
             <div className="btn btn-primary">
               <span onClick={() => handleBook(_id)} className="btn-text">
-                Details
+                Book Details
               </span>
             </div>
           </div>
