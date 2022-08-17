@@ -18,7 +18,7 @@ const SpecialCourse = () => {
   }
 
   return (
-    <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1  gap-4 mx-5">
+    <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6 p-6 ">
       {specialCourse?.map((course) => (
         <CourseCart key={course.id} course={course}></CourseCart>
       ))}

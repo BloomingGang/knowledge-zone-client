@@ -17,7 +17,7 @@ const ClassEight = () => {
     return <Loading></Loading>;
   }
   return (
-    <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6 p-6 ">
+    <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6 p-6">
       {classEight?.map((course) => (
         <ClassCourseCart key={course._id} course={course}></ClassCourseCart>
       ))}
