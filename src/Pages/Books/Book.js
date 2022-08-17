@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 const Book = ({ book, setModal }) => {
   const { about, bookName, img, _id } = book;
   const navigate = useNavigate();
-  const handlebook = (id) => {
+  const handleBook = (id) => {
     navigate(`/book/${id}`);
   };
   return (
@@ -39,7 +39,7 @@ const Book = ({ book, setModal }) => {
           </p>
           <div className="card-actions justify-end">
             <div className="btn btn-primary">
-              <span onClick={() => handlebook(_id)} className="btn-text">
+              <span onClick={() => handleBook(_id)} className="btn-text">
                 Details
               </span>
             </div>
