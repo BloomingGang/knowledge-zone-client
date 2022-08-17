@@ -61,6 +61,14 @@ const ClassCourseCart = ({ course }) => {
               <hr className="border-2 mb-3" />
               <div className="flex justify-between">
                 <button
+                  onClick={() => handleCourseUpdate(_id)}
+                  className="text-center flex bg-[#7d16eb] border-2 border-gray-700 rounded-lg px-2 py-2 hover:bg-transparent text-white hover:text-black transition duration-300"
+                >
+                  <PencilAltIcon className="h-5 text-center w-5" />
+                  Update
+                </button>
+
+                <button
                   onClick={() => handleDeleteCourse(_id)}
                   className="text-center flex bg-[#7d16eb] border-2 border-gray-700 rounded-lg px-2 py-2 hover:bg-transparent text-white hover:text-black transition duration-300"
                 >
@@ -68,14 +76,6 @@ const ClassCourseCart = ({ course }) => {
                     {" "}
                     <TrashIcon className="h-5 text-center w-5" /> Delete
                   </label>
-                </button>
-
-                <button
-                  onClick={() => handleCourseUpdate(_id)}
-                  className="text-center flex bg-[#7d16eb] border-2 border-gray-700 rounded-lg px-2 py-2 hover:bg-transparent text-white hover:text-black transition duration-300"
-                >
-                  <PencilAltIcon className="h-5 text-center w-5" />
-                  Update
                 </button>
               </div>
             </div>
