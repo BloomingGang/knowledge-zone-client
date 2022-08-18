@@ -34,7 +34,7 @@ const ClassCourseCart = ({ course }) => {
 
   return (
     <section>
-      <div className="card card-compact hover:shadow-2xl  bg-base-100 shadow-xl">
+      <div className="card card-compact hover:shadow-2xl  bg-gray-100 shadow-xl">
         <figure>
           <img
             className="hover:scale-[1.1] transition duration-300"
@@ -47,14 +47,9 @@ const ClassCourseCart = ({ course }) => {
           <hr className="border-2" />
 
           <div className="flex  justify-between items-center">
-            <h3 className="text-2xl font-bold">
-              $
-              <span className="text-base font-medium text-red-500">
-                {price}
-              </span>
-            </h3>
+            <span className="text-2xl font-bold text-green-700">$ {price}</span>
             <button
-              className="border-2 shadow-lg hover:bg-transparent hover:text-black p-2 rounded-lg bg-primary text-white font-bold transition duration-300"
+              className="border-2 shadow-lg hover:bg-indigo-500 hover:text-black p-2 rounded-lg bg-indigo-800 text-white font-bold transition duration-300"
               onClick={() => handleCourse(_id)}
             >
               Enroll Now
@@ -67,20 +62,19 @@ const ClassCourseCart = ({ course }) => {
               <div className="flex justify-between">
                 <button
                   onClick={() => handleDeleteCourse(_id)}
-                  className="text-center flex bg-[#7d16eb] border-2 border-gray-700 rounded-lg px-2 py-2 hover:bg-transparent text-white hover:text-black transition duration-300"
+                  className="text-red-600 transition ease-in-out delay-100 hover:-translate-y-1 hover:scale-110 duration-300 mt-4 mx-2"
                 >
                   <label onClick={() => setModal(true)} for="my-modal-6">
                     {" "}
-                    <TrashIcon className="h-5 text-center w-5" /> Delete
+                    <TrashIcon className="h-9 w-9 cursor-pointer" />
                   </label>
                 </button>
 
                 <button
                   onClick={() => handleCourseUpdate(_id)}
-                  className="text-center flex bg-[#7d16eb] border-2 border-gray-700 rounded-lg px-2 py-2 hover:bg-transparent text-white hover:text-black transition duration-300"
+                  className="text-green-600 transition ease-in-out delay-100 hover:-translate-y-1 hover:scale-110 duration-300 mt-4 mx-2"
                 >
-                  <PencilAltIcon className="h-5 text-center w-5" />
-                  Update
+                  <PencilAltIcon className="h-9 w-9" />
                 </button>
               </div>
             </div>
