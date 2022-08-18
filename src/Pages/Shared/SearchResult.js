@@ -4,26 +4,29 @@ import ClassCourseCart from '../Routes/ClassOneToTwelve/ClassCourseCart';
 import Loading from './Loading';
 const SearchResult = () => {
     const { searchCourse } = useParams();
-    const [courses,setCourses]=useState([])
-    const [loading,setLoading]=useState(true);
-    useEffect(()=>{
+    const [courses, setCourses] = useState([])
+    const [loading, setLoading] = useState(true);
+    useEffect(() => {
         fetch("http://localhost:5000/searchCourse")
-        .then(res => res.json())
-        .then(courses =>{
-         const matchCourse = courses.filter(course => course.title.toLowerCase().includes(searchCourse.toLowerCase()));
-         setCourses(matchCourse);
-         setLoading(false)
-        })
-    },[searchCourse])
-if(loading){
-    return <Loading></Loading>
-}
+            .then(res => res.json())
+            .then(courses => {
+                const matchCourse = courses.filter(course => course.title.toLowerCase().includes(searchCourse.toLowerCase()));
+                setCourses(matchCourse);
+                setLoading(false)
+            })
+    }, [searchCourse])
+    if (loading) {
+        return <Loading></Loading>
+    }
     return (
-        <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6 p-6">
-      {courses?.map((course) => (
-        <ClassCourseCart key={course._id} course={course}></ClassCourseCart>
-      ))}
-    </div>
+        <div>
+            <h2 className='text-4xl text-center font-bold py-8'>Total Result Found:{courses?.length}</h2>
+            <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6 p-6">
+                {courses?.map((course) => (
+                    <ClassCourseCart key={course._id} course={course}></ClassCourseCart>
+                ))}
+            </div>
+        </div>
     );
 };
 
