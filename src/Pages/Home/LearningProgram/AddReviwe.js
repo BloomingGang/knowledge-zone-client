@@ -32,8 +32,11 @@ const AddReviwe = () => {
       });
   };
   return (
-    <div>
-      <form onSubmit={handleForm}>
+    <div className="py-12 bg-violet-200">
+      <form
+        onSubmit={handleForm}
+        className="bg-violet-300 rounded-xl md:w-1/2 mx-auto p-20 font-serif"
+      >
         <div class="card-body">
           <div class="form-control">
             <label class="label">
