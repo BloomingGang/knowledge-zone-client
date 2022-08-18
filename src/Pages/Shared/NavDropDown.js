@@ -30,7 +30,7 @@ const NavDropDown = () => {
             </li>
           )}
           <li>
-            <Link to="/updateProfile">My Profile</Link>
+            <Link to="/myProfile">My Profile</Link>
           </li>
           <li>
             <Link to="/">My Courses</Link>

@@ -4,7 +4,7 @@ import { useEffect } from "react";
 import auth from "../../firebase.init";
 import Swal from "sweetalert2";
 
-const UpdateProfile = () => {
+const MyProfile = () => {
   const [user] = useAuthState(auth);
   const [profile, setProfile] = useState({});
   const name = user?.displayName;
@@ -161,4 +161,4 @@ const UpdateProfile = () => {
   );
 };
 
-export default UpdateProfile;
+export default MyProfile;
