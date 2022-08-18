@@ -104,13 +104,15 @@ const AddCourse = () => {
         onSubmit={handleAddCourse}
       >
         <h1 className="text-center p-8 text-3xl font-bold pb-16 text-violet-900 ">
-          Add Courses Here
+          Add Courses Here:
         </h1>
         <div className="grid md:grid-cols-2 gap-x-10 gap-y-0">
           <div className="mb-6">
             <label class="label">
               {" "}
-              <span className="label-text text-lg font-sans">Courses Type</span>
+              <span className="label-text text-lg font-sans">
+                Courses Type:
+              </span>
             </label>
             <select
               name="course"
@@ -118,7 +120,7 @@ const AddCourse = () => {
               class="select select-bordered w-full max-w-xs"
             >
               <option disabled selected>
-                Select Course Name
+                Select Course Name:
               </option>
               {selectCourse.map((course) => (
                 <option>{course}</option>
@@ -131,7 +133,7 @@ const AddCourse = () => {
               <label class="label">
                 {" "}
                 <span className="label-text text-lg font-sans">
-                  Course Title
+                  Course Title:
                 </span>
               </label>
               <input
@@ -149,7 +151,7 @@ const AddCourse = () => {
               <label class="label">
                 {" "}
                 <span className="label-text text-lg font-sans">
-                  Course Image
+                  Course Image:
                 </span>
               </label>
               <input
@@ -167,7 +169,7 @@ const AddCourse = () => {
               <label class="label">
                 {" "}
                 <span className="label-text text-lg font-sans">
-                  Course Price
+                  Course Price:
                 </span>
               </label>
               <input
@@ -185,7 +187,7 @@ const AddCourse = () => {
               <label class="label">
                 {" "}
                 <span className="label-text text-lg font-sans">
-                  Course Description
+                  Course Description:
                 </span>
               </label>
               <textarea
@@ -203,7 +205,7 @@ const AddCourse = () => {
               <label class="label">
                 {" "}
                 <span className="label-text text-lg font-sans">
-                  Instructor Name
+                  Instructor Name:
                 </span>
               </label>
               <input
@@ -221,7 +223,7 @@ const AddCourse = () => {
               <label class="label">
                 {" "}
                 <span className="label-text text-lg font-sans">
-                  Instructor Education
+                  Instructor Education:
                 </span>
               </label>
               <textarea
@@ -239,7 +241,7 @@ const AddCourse = () => {
               <label class="label">
                 {" "}
                 <span className="label-text text-lg font-sans">
-                  About Course
+                  About Course:
                 </span>
               </label>
               <textarea
@@ -257,7 +259,7 @@ const AddCourse = () => {
               <label class="label">
                 {" "}
                 <span className="label-text text-lg font-sans">
-                  Total video duration
+                  Total video duration:
                 </span>
               </label>
               <input
@@ -276,7 +278,7 @@ const AddCourse = () => {
               <label class="label">
                 {" "}
                 <span className="label-text text-lg font-sans">
-                  Total Videos
+                  Total Videos:
                 </span>
               </label>
               <input
@@ -294,7 +296,9 @@ const AddCourse = () => {
             <div class="form-control w-full max-w-xs">
               <label class="label">
                 {" "}
-                <span className="label-text text-lg font-sans">Total Quiz</span>
+                <span className="label-text text-lg font-sans">
+                  Total Quiz:
+                </span>
               </label>
               <input
                 required
@@ -312,7 +316,7 @@ const AddCourse = () => {
               <label class="label">
                 {" "}
                 <span className="label-text text-lg font-sans">
-                  Total Notes
+                  Total Notes:
                 </span>
               </label>
               <input
