@@ -1,7 +1,7 @@
 import { MenuIcon, XIcon } from "@heroicons/react/solid";
 import React, { useState } from "react";
 import { useAuthState } from "react-firebase-hooks/auth";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import auth from "../../firebase.init";
 import logo from "../../img/assets/kz.png";
 import NavDropDown from "./NavDropDown";
@@ -10,17 +10,15 @@ import axios from "axios";
 
 const Header = () => {
   const [user] = useAuthState(auth);
-
   const [open, setOpen] = useState(false);
-  const [searchCourse,setSearchCourse]=useState("asdfa");
-  const [course,setCourse]=useState([]);
-  console.log(searchCourse,"search course")
+  const [searchCourse,setSearchCourse]=useState("");
+  const navigate = useNavigate();
+
   const  handleSearch=  ()=>{
-    console.log("serach");
-     axios.post('http://localhost:5000/searchCourse', searchCourse);
-    
+    navigate(`/searchCourse/${searchCourse}`)
+
   } 
-  
+
 
 
   // CCIS => classes and courses infos
@@ -129,7 +127,7 @@ const Header = () => {
             className="rounded px-8 py-2"
             placeholder="Search Course"
           />
-         <button   onClick={()=>handleSearch()} className="btn btn-primary">search</button>
+         <button   onClick={(e)=>handleSearch(e)} className="btn btn-primary">search</button>
         </div>
       </div>
 
