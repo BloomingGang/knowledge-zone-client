@@ -4,16 +4,17 @@ import ClassCourseCart from "./ClassCourseCart";
 
 const ClassTwelve = () => {
   const [classTwelve, setClassTwelve] = useState([]);
-  const [loading,setLoading]=useState(true);
+  const [loading, setLoading] = useState(true);
   useEffect(() => {
-    fetch("http://localhost:5000/courses/classTwelve")
+    fetch("https://immense-meadow-70411.herokuapp.com/courses/classTwelve")
       .then((res) => res.json())
       .then((data) => {
-        setClassTwelve(data)
-        setLoading(false);});
+        setClassTwelve(data);
+        setLoading(false);
+      });
   }, []);
-  if(loading){
-    return <Loading></Loading>
+  if (loading) {
+    return <Loading></Loading>;
   }
   return (
     <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1  gap-4 px-5 ">

@@ -55,7 +55,9 @@ import Payment from "./payment/Payment";
 import ClassCourseDetails from "./Pages/Shared/ClassCourseDetails/ClassCourseDetails";
 import BlogInfo from "./Pages/Shared/BlogInfo/BlogInfo";
 import MyOrder from "./Pages/Shared/MyOrder/MyOrder";
-
+import AddCourse from "./Pages/Dashboard/AddCourse";
+import UpdateCourse from "./Pages/Shared/UpdateCourse";
+import AddReviwe from "./Pages/Home/LearningProgram/AddReviwe";
 
 function App() {
   return (
@@ -127,14 +129,37 @@ function App() {
           <Route path="twelve" element={<ClassTwelve />} />
         </Route>
 
-
-         {/* class 1 to 12 route list */}
+        {/* class 1 to 12 route list */}
         {/* courses information component start */}
-        <Route path='/:classCourse/coursesInfo/:id' element={<RequireAuth> <ClassCourseDetails/> </RequireAuth>}></Route>
-       
-  
-        {/* courses information component end */}
+        <Route
+          path="/:classCourse/coursesInfo/:id"
+          element={
+            <RequireAuth>
+              {" "}
+              <ClassCourseDetails />{" "}
+            </RequireAuth>
+          }
+        ></Route>
+        <Route
+          path="/:classCourse/update/:id"
+          element={
+            <RequireAuth>
+              {" "}
+              <UpdateCourse />{" "}
+            </RequireAuth>
+          }
+        ></Route>
 
+        <Route
+          path="/addCourse"
+          element={
+            <RequireAdmin>
+              <AddCourse />
+            </RequireAdmin>
+          }
+        >
+          {" "}
+        </Route>
 
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
@@ -155,7 +180,8 @@ function App() {
             </RequireAdmin>
           }
         />
-        <Route path="/myOrder" element={<MyOrder/>} />
+        <Route path="/myOrder" element={<MyOrder />} />
+        <Route path="/addReviwe" element={<AddReviwe />} />
         <Route
           path="/books"
           element={
@@ -171,7 +197,7 @@ function App() {
               <UpdateProfile />
             </RequireAuth>
           }
-            />
+        />
         <Route
           path="/payment/:id"
           element={
@@ -185,7 +211,6 @@ function App() {
           element={
             <RequireAuth>
               <BookInfo />
-
             </RequireAuth>
           }
         />
