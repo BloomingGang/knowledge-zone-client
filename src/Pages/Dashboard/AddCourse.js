@@ -102,7 +102,7 @@ const AddCourse = () => {
         onSubmit={handleAddCourse}
       >
         <h1 className="text-center p-8 text-3xl font-bold pb-16 text-violet-900 ">
-          Add Courses Here:
+          Add Courses Here
         </h1>
         <div className="grid md:grid-cols-2 gap-x-10 gap-y-0">
           <div className="mb-6">
