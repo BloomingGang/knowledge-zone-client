@@ -292,13 +292,17 @@ const AddBook = () => {
                 {" "}
                 <span class="label-text">Interactive</span>
               </label>
-              <input
+
+              <select
                 required
                 type="text"
                 name="interactive"
                 placeholder="Interactive"
                 class="input input-bordered w-full max-w-xs"
-              />
+              >
+                <option>YES</option>
+                <option>NO</option>
+              </select>
             </div>
           </div>
           <div className="mb-6">
