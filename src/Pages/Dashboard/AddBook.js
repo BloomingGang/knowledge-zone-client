@@ -65,8 +65,14 @@ const AddBook = () => {
   };
 
   return (
-    <div>
-      <form className="container mx-auto " onSubmit={handleAddBook}>
+    <div className="p-12 bg-violet-200">
+      <form
+        className="bg-violet-300 rounded-xl md:w-2/3 mx-auto font-serif px-8 pb-12"
+        onSubmit={handleAddBook}
+      >
+        <h1 className="text-center p-8 text-3xl font-bold pb-16 text-violet-900 ">
+          Add Books From Here
+        </h1>
         <div className="grid grid-cols-4 gap-4">
           <div className="mb-6">
             <div class="form-control w-full max-w-xs">
