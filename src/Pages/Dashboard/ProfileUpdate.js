@@ -77,15 +77,15 @@ const ProfileUpdate = ({ name, email, setShowProfile }) => {
           {updating ? (
             <Loading />
           ) : (
-            <div className={` bg-white rounded-2xl`}>
+            <div className={`bg-violet-200 rounded-2xl`}>
               <div className="card-body">
-                <h1 className="text-2xl font-bold text-center font-serif uppercase pb-5">
+                <h1 className="text-center p-8 text-3xl font-bold pb-16 text-violet-900">
                   Update Your Profile
                 </h1>
                 <form onSubmit={handleUpdateProfile}>
                   <div className="form-control">
                     <label className="label">
-                      <span className="label-text">Name</span>
+                      <span className="label-text">Name:</span>
                     </label>
                     <input
                       type="text"
@@ -98,7 +98,7 @@ const ProfileUpdate = ({ name, email, setShowProfile }) => {
                   </div>
                   <div className="form-control">
                     <label className="label">
-                      <span className="label-text">Email</span>
+                      <span className="label-text">Email:</span>
                     </label>
                     <input
                       type="email"
@@ -111,7 +111,7 @@ const ProfileUpdate = ({ name, email, setShowProfile }) => {
                   </div>
                   <div className="form-control">
                     <label className="label">
-                      <span className="label-text">Education</span>
+                      <span className="label-text">Education:</span>
                     </label>
                     <input
                       type="text"
@@ -122,7 +122,7 @@ const ProfileUpdate = ({ name, email, setShowProfile }) => {
                   </div>
                   <div className="form-control">
                     <label className="label">
-                      <span className="label-text">Location</span>
+                      <span className="label-text">Location:</span>
                     </label>
                     <input
                       type="text"
@@ -133,7 +133,7 @@ const ProfileUpdate = ({ name, email, setShowProfile }) => {
                   </div>
                   <div className="form-control">
                     <label className="label">
-                      <span className="label-text">Phone</span>
+                      <span className="label-text">Phone:</span>
                     </label>
                     <input
                       type="text"
@@ -144,7 +144,7 @@ const ProfileUpdate = ({ name, email, setShowProfile }) => {
                   </div>
                   <div className="form-control">
                     <label className="label">
-                      <span className="label-text">Phone</span>
+                      <span className="label-text">Phone:</span>
                     </label>
                     <input
                       type="file"
@@ -155,7 +155,9 @@ const ProfileUpdate = ({ name, email, setShowProfile }) => {
                     />
                   </div>
                   <div className="form-control mt-6">
-                    <button className="btn btn-primary">Update profile</button>
+                    <button className="border-2 shadow-lg hover:bg-indigo-500 hover:text-black p-2 rounded-lg bg-indigo-800 text-white font-bold transition duration-300">
+                      UPDATE PROFILE
+                    </button>
                   </div>
                 </form>
               </div>

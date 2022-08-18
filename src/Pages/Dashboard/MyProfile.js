@@ -63,7 +63,7 @@ const MyProfile = () => {
               onClick={() => setShowProfile(true)}
               className="border-2 shadow-lg hover:bg-indigo-500 hover:text-black p-2 rounded-lg bg-indigo-800 text-white font-bold transition duration-300"
             >
-              Update Profile
+              UPDATE YOUR PROFILE
             </label>
           </div>
         </div>
