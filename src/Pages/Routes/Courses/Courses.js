@@ -62,7 +62,7 @@ const Courses = () => {
                   className="w-full py-2 px-2 border-2 font-bold uppercase text-center rounded-lg"
                   to="/courses/discountCourse"
                 >
-                  Offer/discount course
+                  discounted course
                 </CustomLink>
               </li>
               <li>
@@ -78,7 +78,7 @@ const Courses = () => {
                   className="w-full py-2 px-2 border-2 font-bold uppercase text-center rounded-lg"
                   to="/courses/specialCourse"
                 >
-                  Special crash course
+                  crash course
                 </CustomLink>
               </li>
               <li>

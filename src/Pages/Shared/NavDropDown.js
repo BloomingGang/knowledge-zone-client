@@ -22,7 +22,7 @@ const NavDropDown = () => {
         </label>
         <ul
           tabindex="0"
-          className="dropdown-content menu shadow bg-base-100 rounded-box w-52"
+          className="dropdown-content menu shadow bg-base-100 rounded-box w-44"
         >
           {admin && (
             <li>
@@ -30,7 +30,7 @@ const NavDropDown = () => {
             </li>
           )}
           <li>
-            <Link to="/updateProfile">My Profile</Link>
+            <Link to="/myProfile">My Profile</Link>
           </li>
           <li>
             <Link to="/">My Courses</Link>
@@ -38,13 +38,25 @@ const NavDropDown = () => {
           <li>
             <Link to="/myOrder">My Order</Link>
           </li>
+          {admin && (
+            <li>
+              <Link to="/addCourse">Add Course</Link>
+            </li>
+          )}
           <li>
+
+
             <Link to="/addCourse">Add Course</Link>
           </li>
           <li>
-            <Link to="/addReviwe">Add Reviwe</Link>
-          </li>
 
+            <Link to="/addReviwe">Add Review</Link>
+          </li>
+          {admin && (
+            <li>
+              <Link to="/addBook">Add Book</Link>
+            </li>
+          )}
           <li>
             <button
               className="btn btn-ghost text-red-600 font-bold"

@@ -3,7 +3,6 @@ import { useNavigate } from 'react-router-dom';
 
 const CourseCart = ({course}) => {
     const {_id,price,title,img}=course
-    console.log(course);
     const navigate =useNavigate()
 
     return (

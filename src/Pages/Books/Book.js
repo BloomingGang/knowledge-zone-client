@@ -1,28 +1,30 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 
-const Book = ({ book, setModal }) => {
-  const { about, bookName, img, _id } = book;
+// import { PencilAltIcon, TrashIcon } from "@heroicons/react/solid";
+// import { useAuthState } from "react-firebase-hooks/auth";
+// import useAdmin from "../../hooks/useAdmin";
+// import auth from "../../firebase.init";
+
+const Book = ({ book }) => {
+  const { bookName, img, _id } = book;
   const navigate = useNavigate();
-  const handlebook = (id) => {
+  const handleBook = (id) => {
     navigate(`/book/${id}`);
   };
   return (
     <div>
-      <div className="card w-96 bg-base-100 shadow-xl h-[600px]">
-        <div className="px-10 pt-10">
-          <img src={img} alt="/" className="rounded-xl h-[250px] w-[300px]" />
+      <div className="card bg-gray-100 h-[600px] transition ease-in-out delay-150 hover:-translate-1 hover:scale-105 duration-300">
+        <div className="">
+          <img src={img} alt="/" className="rounded-t-xl h-[350px] w-full" />
         </div>
-        <div className="card-body items-center text-justify">
-          <h2 className="card-title">{bookName}</h2>
-          <p>
+        <div className="card-body">
+          <h2 className="card-title text-xl font-serif text-indigo-800 pb-8">
+            {bookName}
+          </h2>
+          {/* <p className="items-center text-justify">
             {about.slice(0, 250)}{" "}
             <span className="text-primary font-semibold">
-              {/* <<<<<<< HEAD
-              {description.length > 250 ? (
-                <label for="my-modal-3" className="cursor-pointer">
-                  ...
-======= */}
               {about.length > 250 ? (
                 <label
                   for="my-modal-3"
@@ -30,22 +32,23 @@ const Book = ({ book, setModal }) => {
                   onClick={() => setModal(book)}
                 >
                   Read More...
-                  {/* >>>>>>> 909d2a256fbbd159dfee425034215c541855763b */}
                 </label>
               ) : (
                 " "
               )}
             </span>
-          </p>
-          <div className="card-actions justify-end">
-            <div className="btn btn-primary">
-              <span onClick={() => handlebook(_id)} className="btn-text">
-                Details
-              </span>
-            </div>
+          </p> */}
+          <div className="card-actions justify-center">
+            <button
+              className="border-2 shadow-lg hover:bg-indigo-500 hover:text-black p-2 rounded-lg bg-indigo-800 text-white font-bold transition duration-300"
+              onClick={() => handleBook(_id)}
+            >
+              View Details
+            </button>
           </div>
         </div>
       </div>
+
       {/* onClick={() => setModal(book)} */}
     </div>
   );
