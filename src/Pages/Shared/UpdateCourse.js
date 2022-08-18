@@ -114,7 +114,7 @@ const UpdateCourse = () => {
         onSubmit={handleUpdateCourse}
       >
         <h1 className="text-center p-8 text-3xl font-bold pb-16 text-violet-900 ">
-          Update Courses Here:
+          Update Courses Here
         </h1>
         <div className="grid md:grid-cols-2 gap-x-10 gap-y-0">
           <div className="mb-6">
@@ -122,7 +122,7 @@ const UpdateCourse = () => {
               <label class="label">
                 {" "}
                 <span className="label-text text-lg font-sans">
-                  Course Title
+                  Course Title:
                 </span>
               </label>
               <input
@@ -139,7 +139,7 @@ const UpdateCourse = () => {
               <label class="label">
                 {" "}
                 <span className="label-text text-lg font-sans">
-                  Course Image
+                  Course Image:
                 </span>
               </label>
               <input
@@ -156,7 +156,7 @@ const UpdateCourse = () => {
               <label class="label">
                 {" "}
                 <span className="label-text text-lg font-sans">
-                  Course Price
+                  Course Price:
                 </span>
               </label>
               <input
@@ -173,7 +173,7 @@ const UpdateCourse = () => {
               <label class="label">
                 {" "}
                 <span className="label-text text-lg font-sans">
-                  Course Description
+                  Course Description:
                 </span>
               </label>
               <textarea
@@ -190,7 +190,7 @@ const UpdateCourse = () => {
               <label class="label">
                 {" "}
                 <span className="label-text text-lg font-sans">
-                  Instructor Name
+                  Instructor Name:
                 </span>
               </label>
               <input
@@ -207,7 +207,7 @@ const UpdateCourse = () => {
               <label class="label">
                 {" "}
                 <span className="label-text text-lg font-sans">
-                  Instructor Education
+                  Instructor Education:
                 </span>
               </label>
               <textarea
@@ -224,7 +224,7 @@ const UpdateCourse = () => {
               <label class="label">
                 {" "}
                 <span className="label-text text-lg font-sans">
-                  About Course
+                  About Course:
                 </span>
               </label>
               <textarea
@@ -241,7 +241,7 @@ const UpdateCourse = () => {
               <label class="label">
                 {" "}
                 <span className="label-text text-lg font-sans">
-                  Total video duration
+                  Total Video Duration:
                 </span>
               </label>
               <input
@@ -258,7 +258,7 @@ const UpdateCourse = () => {
               <label class="label">
                 {" "}
                 <span className="label-text text-lg font-sans">
-                  Total Videos
+                  Total Videos:
                 </span>
               </label>
               <input
@@ -290,7 +290,7 @@ const UpdateCourse = () => {
               <label class="label">
                 {" "}
                 <span className="label-text text-lg font-sans">
-                  Total Notes
+                  Total Notes:
                 </span>
               </label>
               <input
@@ -306,8 +306,7 @@ const UpdateCourse = () => {
         <input
           type="submit"
           value="Update Course"
-          className="text-white  bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 cursor-pointer"
-          style={{ display: "block", width: "100%" }}
+          className="btn w-full bg-violet-900 mx-auto block hover:bg-transparent hover:text-violet-900 hover:border-violet-900"
         />
       </form>
     </div>
