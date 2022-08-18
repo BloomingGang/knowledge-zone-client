@@ -4,7 +4,7 @@ import { useEffect } from "react";
 import auth from "../../firebase.init";
 import Swal from "sweetalert2";
 
-const UpdateProfile = () => {
+const MyProfile = () => {
   const [user] = useAuthState(auth);
   const [profile, setProfile] = useState({});
   const name = user?.displayName;
@@ -38,7 +38,6 @@ const UpdateProfile = () => {
     })
       .then((res) => res.json())
       .then((data) => {
-        console.log(data);
         if (data.modifiedCount) {
           e.target.reset();
           Swal.fire({
@@ -54,10 +53,10 @@ const UpdateProfile = () => {
   const { education, location, phone } = profile;
   return (
     <div>
-      <h1 className="text-center pt-5 font-serif font-bold text-3xl text-blue-500">
+      <h1 className="text-center pt-10 font-serif font-bold text-4xl text-indigo-800">
         My Profile
       </h1>
-      <div className="lg:flex lg:flex-row-reverse justify-center w-full bg-gray-200 px-5 py-10">
+      <div className="lg:flex lg:flex-row-reverse justify-center w-full px-5 py-8">
         <div className="lg:w-3/5 pl-16 md:pt-20 pt-24">
           <p className="text-3xl py-1 font-semibold pt-5">
             Name: <span className="text-3xl font-normal pl-3">{name}</span>
@@ -161,4 +160,4 @@ const UpdateProfile = () => {
   );
 };
 
-export default UpdateProfile;
+export default MyProfile;

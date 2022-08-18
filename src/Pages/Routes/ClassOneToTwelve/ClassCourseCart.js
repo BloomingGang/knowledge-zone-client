@@ -34,7 +34,7 @@ const ClassCourseCart = ({ course }) => {
 
   return (
     <section>
-      <div className="card card-compact hover:shadow-2xl  bg-gray-100 shadow-xl">
+      <div className="card card-compact bg-gray-100 transition ease-in-out delay-150 hover:-translate-1 hover:scale-105 duration-300">
         <figure>
           <img
             className="hover:scale-[1.1] transition duration-300"
@@ -44,7 +44,7 @@ const ClassCourseCart = ({ course }) => {
         </figure>
         <div className="card-body">
           <h2 className="card-title"> {title}</h2>
-          <hr className="border-2" />
+          <div class="divider"></div>
 
           <div className="flex  justify-between items-center">
             <span className="text-2xl font-bold text-green-700">$ {price}</span>
@@ -58,7 +58,7 @@ const ClassCourseCart = ({ course }) => {
 
           {admin && (
             <div>
-              <hr className="border-2 mb-3" />
+              <div class="divider"></div>
               <div className="flex justify-between">
                 <button
                   onClick={() => handleDeleteCourse(_id)}

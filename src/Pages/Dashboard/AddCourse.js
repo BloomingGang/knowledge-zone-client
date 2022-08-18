@@ -98,13 +98,21 @@ const AddCourse = () => {
     console.log(addCourse);
   };
   return (
-    <div>
-      <form className="container mx-auto " onSubmit={handleAddCourse}>
-        <div className="grid grid-cols-4 gap-4">
+    <div className="p-12 bg-violet-200">
+      <form
+        className="bg-violet-300 rounded-xl md:w-2/3 mx-auto font-serif px-8 pb-12"
+        onSubmit={handleAddCourse}
+      >
+        <h1 className="text-center p-8 text-3xl font-bold pb-16 text-violet-900 ">
+          Add Courses Here:
+        </h1>
+        <div className="grid md:grid-cols-2 gap-x-10 gap-y-0">
           <div className="mb-6">
             <label class="label">
               {" "}
-              <span class="label-text">Courses Type</span>
+              <span className="label-text text-lg font-sans">
+                Courses Type:
+              </span>
             </label>
             <select
               name="course"
@@ -112,7 +120,7 @@ const AddCourse = () => {
               class="select select-bordered w-full max-w-xs"
             >
               <option disabled selected>
-                Select Course Name
+                Select Course Name:
               </option>
               {selectCourse.map((course) => (
                 <option>{course}</option>
@@ -124,37 +132,45 @@ const AddCourse = () => {
             <div class="form-control w-full max-w-xs">
               <label class="label">
                 {" "}
-                <span class="label-text">Course Title</span>
+                <span className="label-text text-lg font-sans">
+                  Course Title:
+                </span>
               </label>
               <input
                 required
                 type="text"
                 name="title"
-                placeholder="Course title"
+                placeholder="Course Title"
                 class="input input-bordered w-full max-w-xs"
               />
             </div>
           </div>
+
           <div className="mb-6">
             <div class="form-control w-full max-w-xs">
               <label class="label">
                 {" "}
-                <span class="label-text">Course Image</span>
+                <span className="label-text text-lg font-sans">
+                  Course Image:
+                </span>
               </label>
               <input
                 required
                 type="text"
                 name="image"
-                placeholder="Course Image Url"
+                placeholder="Course Image url"
                 class="input input-bordered w-full max-w-xs"
               />
             </div>
           </div>
+
           <div className="mb-6">
             <div class="form-control w-full max-w-xs">
               <label class="label">
                 {" "}
-                <span class="label-text">Course Price</span>
+                <span className="label-text text-lg font-sans">
+                  Course Price:
+                </span>
               </label>
               <input
                 required
@@ -165,11 +181,14 @@ const AddCourse = () => {
               />
             </div>
           </div>
+
           <div className="mb-6">
             <div class="form-control w-full max-w-xs">
               <label class="label">
                 {" "}
-                <span class="label-text">Course Description</span>
+                <span className="label-text text-lg font-sans">
+                  Course Description:
+                </span>
               </label>
               <textarea
                 required
@@ -180,11 +199,14 @@ const AddCourse = () => {
               />
             </div>
           </div>
+
           <div className="mb-6">
             <div class="form-control w-full max-w-xs">
               <label class="label">
                 {" "}
-                <span class="label-text">Instructor Name</span>
+                <span className="label-text text-lg font-sans">
+                  Instructor Name:
+                </span>
               </label>
               <input
                 required
@@ -195,11 +217,14 @@ const AddCourse = () => {
               />
             </div>
           </div>
+
           <div className="mb-6">
             <div class="form-control w-full max-w-xs">
               <label class="label">
                 {" "}
-                <span class="label-text">Instructor Education</span>
+                <span className="label-text text-lg font-sans">
+                  Instructor Education:
+                </span>
               </label>
               <textarea
                 required
@@ -210,11 +235,14 @@ const AddCourse = () => {
               />
             </div>
           </div>
+
           <div className="mb-6">
             <div class="form-control w-full max-w-xs">
               <label class="label">
                 {" "}
-                <span class="label-text">About Course</span>
+                <span className="label-text text-lg font-sans">
+                  About Course:
+                </span>
               </label>
               <textarea
                 required
@@ -225,61 +253,77 @@ const AddCourse = () => {
               />
             </div>
           </div>
+
           <div className="mb-6">
             <div class="form-control w-full max-w-xs">
               <label class="label">
                 {" "}
-                <span class="label-text">Total video duration</span>
+                <span className="label-text text-lg font-sans">
+                  Total video duration:
+                </span>
               </label>
               <input
                 required
                 type="number"
                 name="hour"
+                min={1}
                 placeholder="Total video duration"
                 class="input input-bordered w-full max-w-xs"
               />
             </div>
           </div>
+
           <div className="mb-6">
             <div class="form-control w-full max-w-xs">
               <label class="label">
                 {" "}
-                <span class="label-text">Total Videos</span>
+                <span className="label-text text-lg font-sans">
+                  Total Videos:
+                </span>
               </label>
               <input
                 required
                 type="Number"
                 name="videos"
+                min={1}
                 placeholder="Total Videos"
                 class="input input-bordered w-full max-w-xs"
               />
             </div>
           </div>
+
           <div className="mb-6">
             <div class="form-control w-full max-w-xs">
               <label class="label">
                 {" "}
-                <span class="label-text">Total Quiz</span>
+                <span className="label-text text-lg font-sans">
+                  Total Quiz:
+                </span>
               </label>
               <input
                 required
                 type="Number"
                 name="quiz"
+                min={1}
                 placeholder="Total Quiz"
                 class="input input-bordered w-full max-w-xs"
               />
             </div>
           </div>
+
           <div className="mb-6">
-            <div class="form-control w-full max-w-xs">
+            <div class="form-control w-full max-w-xs pb-8">
               <label class="label">
                 {" "}
-                <span class="label-text">Total Notes</span>
+                <span className="label-text text-lg font-sans">
+                  Total Notes:
+                </span>
               </label>
               <input
                 required
                 type="Number"
                 name="note"
+                min={1}
                 placeholder="Total Notes"
                 class="input input-bordered w-full max-w-xs"
               />
@@ -289,8 +333,7 @@ const AddCourse = () => {
         <input
           type="submit"
           value="Add Course"
-          className="text-white  bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 cursor-pointer"
-          style={{ display: "block", width: "100%" }}
+          className="btn w-full bg-violet-900 mx-auto block hover:bg-transparent hover:text-violet-900 hover:border-violet-900"
         />
       </form>
     </div>
