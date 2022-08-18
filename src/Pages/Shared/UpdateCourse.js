@@ -108,14 +108,22 @@ const UpdateCourse = () => {
   };
 
   return (
-    <div>
-      <form className="container mx-auto " onSubmit={handleUpdateCourse}>
-        <div className="grid grid-cols-4 gap-4">
+    <div className="p-12 bg-violet-200">
+      <form
+        className="bg-violet-300 rounded-xl md:w-2/3 mx-auto font-serif px-8 pb-12"
+        onSubmit={handleUpdateCourse}
+      >
+        <h1 className="text-center p-8 text-3xl font-bold pb-16 text-violet-900 ">
+          Update Courses Here:
+        </h1>
+        <div className="grid md:grid-cols-2 gap-x-10 gap-y-0">
           <div className="mb-6">
             <div class="form-control w-full max-w-xs">
               <label class="label">
                 {" "}
-                <span class="label-text">Course Title</span>
+                <span className="label-text text-lg font-sans">
+                  Course Title
+                </span>
               </label>
               <input
                 required
@@ -130,7 +138,9 @@ const UpdateCourse = () => {
             <div class="form-control w-full max-w-xs">
               <label class="label">
                 {" "}
-                <span class="label-text">Course Image</span>
+                <span className="label-text text-lg font-sans">
+                  Course Image
+                </span>
               </label>
               <input
                 required
@@ -145,7 +155,9 @@ const UpdateCourse = () => {
             <div class="form-control w-full max-w-xs">
               <label class="label">
                 {" "}
-                <span class="label-text">Course Price</span>
+                <span className="label-text text-lg font-sans">
+                  Course Price
+                </span>
               </label>
               <input
                 required
@@ -160,7 +172,9 @@ const UpdateCourse = () => {
             <div class="form-control w-full max-w-xs">
               <label class="label">
                 {" "}
-                <span class="label-text">Course Description</span>
+                <span className="label-text text-lg font-sans">
+                  Course Description
+                </span>
               </label>
               <textarea
                 required
@@ -175,7 +189,9 @@ const UpdateCourse = () => {
             <div class="form-control w-full max-w-xs">
               <label class="label">
                 {" "}
-                <span class="label-text">Instructor Name</span>
+                <span className="label-text text-lg font-sans">
+                  Instructor Name
+                </span>
               </label>
               <input
                 required
@@ -190,7 +206,9 @@ const UpdateCourse = () => {
             <div class="form-control w-full max-w-xs">
               <label class="label">
                 {" "}
-                <span class="label-text">Instructor Education</span>
+                <span className="label-text text-lg font-sans">
+                  Instructor Education
+                </span>
               </label>
               <textarea
                 required
@@ -205,7 +223,9 @@ const UpdateCourse = () => {
             <div class="form-control w-full max-w-xs">
               <label class="label">
                 {" "}
-                <span class="label-text">About Course</span>
+                <span className="label-text text-lg font-sans">
+                  About Course
+                </span>
               </label>
               <textarea
                 required
@@ -220,7 +240,9 @@ const UpdateCourse = () => {
             <div class="form-control w-full max-w-xs">
               <label class="label">
                 {" "}
-                <span class="label-text">Total video duration</span>
+                <span className="label-text text-lg font-sans">
+                  Total video duration
+                </span>
               </label>
               <input
                 required
@@ -235,7 +257,9 @@ const UpdateCourse = () => {
             <div class="form-control w-full max-w-xs">
               <label class="label">
                 {" "}
-                <span class="label-text">Total Videos</span>
+                <span className="label-text text-lg font-sans">
+                  Total Videos
+                </span>
               </label>
               <input
                 required
@@ -250,7 +274,7 @@ const UpdateCourse = () => {
             <div class="form-control w-full max-w-xs">
               <label class="label">
                 {" "}
-                <span class="label-text">Total Quiz</span>
+                <span className="label-text text-lg font-sans">Total Quiz</span>
               </label>
               <input
                 required
@@ -265,7 +289,9 @@ const UpdateCourse = () => {
             <div class="form-control w-full max-w-xs">
               <label class="label">
                 {" "}
-                <span class="label-text">Total Notes</span>
+                <span className="label-text text-lg font-sans">
+                  Total Notes
+                </span>
               </label>
               <input
                 required
