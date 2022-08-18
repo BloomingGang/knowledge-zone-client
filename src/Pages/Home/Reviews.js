@@ -53,7 +53,7 @@ const Reviews = () => {
             <Carousel swipeable="true" responsive={responsive} infinite={true}>
               {reviews.map((review, index) => (
                 <div key={index} class="p-4 w-full">
-                  <div class="h-full bg-indigo-100 p-8 rounded-xl">
+                  <div class="h-[250px] bg-indigo-100 p-8 rounded-xl">
                     <img src={quote} width={30} alt="" />
                     <p class="leading-relaxed mb-6">{review.comment}</p>
                     <a class="inline-flex items-center">
