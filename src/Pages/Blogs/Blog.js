@@ -8,7 +8,7 @@ const Blog = ({ blog, setModal }) => {
     navigate(`/blog/${id}`);
   };
   return (
-    <div className="card w-full bg-gray-100 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-105 duration-300">
+    <div className="card w-full bg-gray-100 transition ease-in-out delay-150 hover:-translate-1 hover:scale-105 duration-300">
       <div className="">
         <img src={img} alt="/" className="rounded-t-xl w-full h-[330px]" />
       </div>

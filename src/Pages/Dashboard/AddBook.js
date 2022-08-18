@@ -65,14 +65,20 @@ const AddBook = () => {
   };
 
   return (
-    <div>
-      <form className="container mx-auto " onSubmit={handleAddBook}>
-        <div className="grid grid-cols-4 gap-4">
+    <div className="p-12 bg-violet-200">
+      <form
+        className="bg-violet-300 rounded-xl md:w-2/3 mx-auto font-serif px-8 pb-12"
+        onSubmit={handleAddBook}
+      >
+        <h1 className="text-center p-8 text-3xl font-bold pb-16 text-violet-900 ">
+          Add Books From Here
+        </h1>
+        <div className="grid md:grid-cols-2 gap-x-10 gap-y-0">
           <div className="mb-6">
             <div class="form-control w-full max-w-xs">
               <label class="label">
                 {" "}
-                <span class="label-text">Book Name</span>
+                <span className="label-text text-lg font-sans">Book Name</span>
               </label>
               <input
                 required
@@ -88,7 +94,9 @@ const AddBook = () => {
             <div class="form-control w-full max-w-xs">
               <label class="label">
                 {" "}
-                <span class="label-text">Writer Name 1</span>
+                <span className="label-text text-lg font-sans">
+                  Writer Name 1
+                </span>
               </label>
               <input
                 required
@@ -103,7 +111,9 @@ const AddBook = () => {
             <div class="form-control w-full max-w-xs">
               <label class="label">
                 {" "}
-                <span class="label-text">Writer Name 2</span>
+                <span className="label-text text-lg font-sans">
+                  Writer Name 2
+                </span>
               </label>
               <input
                 type="text"
@@ -117,7 +127,9 @@ const AddBook = () => {
             <div class="form-control w-full max-w-xs">
               <label class="label">
                 {" "}
-                <span class="label-text">Writer Name 3</span>
+                <span className="label-text text-lg font-sans">
+                  Writer Name 3
+                </span>
               </label>
               <input
                 type="text"
@@ -131,7 +143,9 @@ const AddBook = () => {
             <div class="form-control w-full max-w-xs">
               <label class="label">
                 {" "}
-                <span class="label-text">Writer Name 4</span>
+                <span className="label-text text-lg font-sans">
+                  Writer Name 4
+                </span>
               </label>
               <input
                 type="text"
@@ -145,7 +159,9 @@ const AddBook = () => {
             <div class="form-control w-full max-w-xs">
               <label class="label">
                 {" "}
-                <span class="label-text">Writer img 1</span>
+                <span className="label-text text-lg font-sans">
+                  Writer img 1
+                </span>
               </label>
               <input
                 required
@@ -160,7 +176,9 @@ const AddBook = () => {
             <div class="form-control w-full max-w-xs">
               <label class="label">
                 {" "}
-                <span class="label-text">Writer img 2</span>
+                <span className="label-text text-lg font-sans">
+                  Writer img 2
+                </span>
               </label>
               <input
                 type="text"
@@ -174,7 +192,9 @@ const AddBook = () => {
             <div class="form-control w-full max-w-xs">
               <label class="label">
                 {" "}
-                <span class="label-text">Writer img 3</span>
+                <span className="label-text text-lg font-sans">
+                  Writer img 3
+                </span>
               </label>
               <input
                 type="text"
@@ -188,7 +208,9 @@ const AddBook = () => {
             <div class="form-control w-full max-w-xs">
               <label class="label">
                 {" "}
-                <span class="label-text">Writer img 4</span>
+                <span className="label-text text-lg font-sans">
+                  Writer img 4
+                </span>
               </label>
               <input
                 type="text"
@@ -202,7 +224,9 @@ const AddBook = () => {
             <div class="form-control w-full max-w-xs">
               <label class="label">
                 {" "}
-                <span class="label-text">Writer Education 1</span>
+                <span className="label-text text-lg font-sans">
+                  Writer Education 1
+                </span>
               </label>
               <input
                 required
@@ -217,7 +241,9 @@ const AddBook = () => {
             <div class="form-control w-full max-w-xs">
               <label class="label">
                 {" "}
-                <span class="label-text">Writer Education 2</span>
+                <span className="label-text text-lg font-sans">
+                  Writer Education 2
+                </span>
               </label>
               <input
                 type="text"
@@ -231,7 +257,9 @@ const AddBook = () => {
             <div class="form-control w-full max-w-xs">
               <label class="label">
                 {" "}
-                <span class="label-text">Writer Education 3</span>
+                <span className="label-text text-lg font-sans">
+                  Writer Education 3
+                </span>
               </label>
               <input
                 type="text"
@@ -245,7 +273,9 @@ const AddBook = () => {
             <div class="form-control w-full max-w-xs">
               <label class="label">
                 {" "}
-                <span class="label-text">Writer Education 4</span>
+                <span className="label-text text-lg font-sans">
+                  Writer Education 4
+                </span>
               </label>
               <input
                 type="text"
@@ -260,7 +290,7 @@ const AddBook = () => {
             <div class="form-control w-full max-w-xs">
               <label class="label">
                 {" "}
-                <span class="label-text">About</span>
+                <span className="label-text text-lg font-sans">About</span>
               </label>
               <textarea
                 required
@@ -275,7 +305,9 @@ const AddBook = () => {
             <div class="form-control w-full max-w-xs">
               <label class="label">
                 {" "}
-                <span class="label-text">Page Number</span>
+                <span className="label-text text-lg font-sans">
+                  Page Number
+                </span>
               </label>
               <input
                 required
@@ -290,7 +322,9 @@ const AddBook = () => {
             <div class="form-control w-full max-w-xs">
               <label class="label">
                 {" "}
-                <span class="label-text">Interactive</span>
+                <span className="label-text text-lg font-sans">
+                  Interactive
+                </span>
               </label>
 
               <select
@@ -309,7 +343,7 @@ const AddBook = () => {
             <div class="form-control w-full max-w-xs">
               <label class="label">
                 {" "}
-                <span class="label-text">Formate</span>
+                <span className="label-text text-lg font-sans">Formate</span>
               </label>
               <textarea
                 required
@@ -324,7 +358,7 @@ const AddBook = () => {
             <div class="form-control w-full max-w-xs">
               <label class="label">
                 {" "}
-                <span class="label-text">File Size</span>
+                <span className="label-text text-lg font-sans">File Size</span>
               </label>
               <input
                 required
@@ -339,7 +373,7 @@ const AddBook = () => {
             <div class="form-control w-full max-w-xs">
               <label class="label">
                 {" "}
-                <span class="label-text">Price</span>
+                <span className="label-text text-lg font-sans">Price</span>
               </label>
               <input
                 required
@@ -354,7 +388,7 @@ const AddBook = () => {
             <div class="form-control w-full max-w-xs">
               <label class="label">
                 {" "}
-                <span class="label-text">Book Image</span>
+                <span className="label-text text-lg font-sans">Book Image</span>
               </label>
               <input
                 required
@@ -370,8 +404,7 @@ const AddBook = () => {
         <input
           type="submit"
           value="Add Book"
-          className="text-white  bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 cursor-pointer"
-          style={{ display: "block", width: "100%" }}
+          className="btn w-full bg-violet-900 mx-auto block hover:bg-transparent hover:text-violet-900 hover:border-violet-900"
         />
       </form>
     </div>
