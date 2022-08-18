@@ -98,9 +98,15 @@ const AddCourse = () => {
     console.log(addCourse);
   };
   return (
-    <div>
-      <form className="container mx-auto " onSubmit={handleAddCourse}>
-        <div className="grid grid-cols-4 gap-4">
+    <div className="p-12 bg-violet-200">
+      <form
+        className="bg-violet-300 rounded-xl md:w-2/3 mx-auto font-serif px-8 pb-12"
+        onSubmit={handleAddCourse}
+      >
+        <h1 className="text-center p-8 text-3xl font-bold pb-16 text-violet-900 ">
+          Add Courses Here
+        </h1>
+        <div className="grid grid-cols-2 gap-x-10 gap-y-0">
           <div className="mb-6">
             <label class="label">
               {" "}
@@ -135,6 +141,7 @@ const AddCourse = () => {
               />
             </div>
           </div>
+
           <div className="mb-6">
             <div class="form-control w-full max-w-xs">
               <label class="label">
@@ -150,6 +157,7 @@ const AddCourse = () => {
               />
             </div>
           </div>
+
           <div className="mb-6">
             <div class="form-control w-full max-w-xs">
               <label class="label">
@@ -165,6 +173,7 @@ const AddCourse = () => {
               />
             </div>
           </div>
+
           <div className="mb-6">
             <div class="form-control w-full max-w-xs">
               <label class="label">
@@ -180,6 +189,7 @@ const AddCourse = () => {
               />
             </div>
           </div>
+
           <div className="mb-6">
             <div class="form-control w-full max-w-xs">
               <label class="label">
@@ -195,6 +205,7 @@ const AddCourse = () => {
               />
             </div>
           </div>
+
           <div className="mb-6">
             <div class="form-control w-full max-w-xs">
               <label class="label">
@@ -210,6 +221,7 @@ const AddCourse = () => {
               />
             </div>
           </div>
+
           <div className="mb-6">
             <div class="form-control w-full max-w-xs">
               <label class="label">
@@ -225,6 +237,7 @@ const AddCourse = () => {
               />
             </div>
           </div>
+
           <div className="mb-6">
             <div class="form-control w-full max-w-xs">
               <label class="label">
@@ -235,11 +248,13 @@ const AddCourse = () => {
                 required
                 type="number"
                 name="hour"
+                min={1}
                 placeholder="Total video duration"
                 class="input input-bordered w-full max-w-xs"
               />
             </div>
           </div>
+
           <div className="mb-6">
             <div class="form-control w-full max-w-xs">
               <label class="label">
@@ -250,11 +265,13 @@ const AddCourse = () => {
                 required
                 type="Number"
                 name="videos"
+                min={1}
                 placeholder="Total Videos"
                 class="input input-bordered w-full max-w-xs"
               />
             </div>
           </div>
+
           <div className="mb-6">
             <div class="form-control w-full max-w-xs">
               <label class="label">
@@ -265,11 +282,13 @@ const AddCourse = () => {
                 required
                 type="Number"
                 name="quiz"
+                min={1}
                 placeholder="Total Quiz"
                 class="input input-bordered w-full max-w-xs"
               />
             </div>
           </div>
+
           <div className="mb-6">
             <div class="form-control w-full max-w-xs">
               <label class="label">
@@ -280,6 +299,7 @@ const AddCourse = () => {
                 required
                 type="Number"
                 name="note"
+                min={1}
                 placeholder="Total Notes"
                 class="input input-bordered w-full max-w-xs"
               />
@@ -289,8 +309,7 @@ const AddCourse = () => {
         <input
           type="submit"
           value="Add Course"
-          className="text-white  bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 cursor-pointer"
-          style={{ display: "block", width: "100%" }}
+          className="btn w-full bg-violet-900 mx-auto block hover:bg-transparent hover:text-violet-900 hover:border-violet-900"
         />
       </form>
     </div>

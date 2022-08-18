@@ -87,6 +87,8 @@ const AddReviwe = () => {
             <input
               type="number"
               name="ratting"
+              min={0}
+              max={5}
               placeholder="Ratting"
               class="input input-bordered"
             />
