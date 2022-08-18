@@ -71,22 +71,17 @@ const Header = () => {
         } to="/contact">Contact</NavLink>
       </li>
 
-      <li className="mr-4 p-2 hover:bg-blue-500 rounded font-bold">
-        {user ? <NavDropDown></NavDropDown> : <NavLink className={({ isActive }) =>
-          isActive ? "text-blue-700" : "text-black"
-        } to="/login">Login</NavLink>}
-      </li>
       {/* notification panel */}
       <li className="mr-4 p-2 hover:bg-blue-500 rounded font-bold">
         {/* panel credentials */}
         <div class="dropdown">
           <label tabindex="0" class="text-xl m-1">
-            <i class="fa-solid fa-bell"></i>
+            <i className="text-violet-800 fa-solid fa-bell"></i>
             {/* <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
               <path stroke-linecap="round" stroke-linejoin="round" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
             </svg> */}
           </label>
-          <div tabindex="0" class="dropdown-content card card-compact w-64 p-2 shadow bg-white h-[200px] overflow-auto">
+          <div tabindex="0" class="dropdown-content card card-compact w-52 p-2 shadow bg-white h-[200px] overflow-auto">
             <div class="card-body">
               <h3 class="card-title">Latest updates! <span className="text-purple-500">{ccis?.unreadCount}</span></h3>
               <div className="flex flex-col gap-y-2">
@@ -109,6 +104,13 @@ const Header = () => {
           </div>
         </div>
       </li>
+
+      <li className="mr-4 p-2 hover:bg-blue-500 rounded font-bold">
+        {user ? <NavDropDown></NavDropDown> : <NavLink className={({ isActive }) =>
+          isActive ? "text-blue-700" : "text-black"
+        } to="/login">Login</NavLink>}
+      </li>
+      
     </>
   );
   return (

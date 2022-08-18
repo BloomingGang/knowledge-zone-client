@@ -22,7 +22,7 @@ const NavDropDown = () => {
         </label>
         <ul
           tabindex="0"
-          className="dropdown-content menu shadow bg-base-100 rounded-box w-52"
+          className="dropdown-content menu shadow bg-base-100 rounded-box w-44"
         >
           {admin && (
             <li>
