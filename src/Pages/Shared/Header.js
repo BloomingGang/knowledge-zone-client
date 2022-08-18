@@ -19,7 +19,8 @@ const Header = () => {
     console.log("serach");
      axios.post('http://localhost:5000/searchCourse', searchCourse);
     
-  }
+  } 
+  
 
 
   // CCIS => classes and courses infos
