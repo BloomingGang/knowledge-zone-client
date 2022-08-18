@@ -49,7 +49,6 @@ import NotFound from "./Pages/Shared/NotFound";
 import RequireAuth from "./auth/RequireAuth";
 import Users from "./Pages/Users/Users";
 import RequireAdmin from "./auth/RequireAdmin";
-import UpdateProfile from "./Pages/Dashboard/UpdateProfile";
 import BookInfo from "./Pages/Shared/BooksInfo/BookInfo";
 import Payment from "./payment/Payment";
 import ClassCourseDetails from "./Pages/Shared/ClassCourseDetails/ClassCourseDetails";
@@ -58,7 +57,8 @@ import MyOrder from "./Pages/Shared/MyOrder/MyOrder";
 import AddCourse from "./Pages/Dashboard/AddCourse";
 import UpdateCourse from "./Pages/Shared/UpdateCourse";
 import AddReviwe from "./Pages/Home/LearningProgram/AddReviwe";
-import AddBook from "./Pages/Dashboard/AddBook";
+import MyProfile from './Pages/Dashboard/MyProfile';
+import AddBook from './Pages/Dashboard/AddBook';
 
 function App() {
   return (
@@ -210,10 +210,10 @@ function App() {
           }
         />
         <Route
-          path="/updateProfile"
+          path="/myProfile"
           element={
             <RequireAuth>
-              <UpdateProfile />
+              <MyProfile />
             </RequireAuth>
           }
         />

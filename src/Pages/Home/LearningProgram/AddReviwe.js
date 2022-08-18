@@ -32,12 +32,18 @@ const AddReviwe = () => {
       });
   };
   return (
-    <div>
-      <form onSubmit={handleForm}>
+    <div className="p-12 bg-violet-200">
+      <form
+        onSubmit={handleForm}
+        className="bg-violet-300 rounded-xl md:w-1/2 mx-auto pb-8 font-serif"
+      >
+        <h1 className="text-center p-8 text-3xl font-bold  text-violet-800 ">
+          Put Your Review Here
+        </h1>
         <div class="card-body">
           <div class="form-control">
             <label class="label">
-              <span class="label-text">Name</span>
+              <span className="label-text text-lg font-sans">Name:</span>
             </label>
             <input
               type="text"
@@ -50,7 +56,7 @@ const AddReviwe = () => {
           </div>
           <div class="form-control">
             <label class="label">
-              <span class="label-text">Image</span>
+              <span className="label-text text-lg font-sans">Image:</span>
             </label>
             <input
               type="text"
@@ -63,7 +69,7 @@ const AddReviwe = () => {
           </div>
           <div class="form-control">
             <label class="label">
-              <span class="label-text">Comment</span>
+              <span className="label-text text-lg font-sans">Comment:</span>
             </label>
             <input
               type="text"
@@ -76,20 +82,24 @@ const AddReviwe = () => {
           </div>
           <div class="form-control">
             <label class="label">
-              <span class="label-text">Ratting</span>
+              <span className="label-text text-lg font-sans">Ratting:</span>
             </label>
             <input
               type="number"
               name="ratting"
+              min={0}
+              max={5}
               placeholder="Ratting"
               class="input input-bordered"
             />
           </div>
         </div>
         {rattingError && <p className="text-red-500">{rattingError}</p>}
-        <span className="text-center">
-          <button class="btn btn-accent">Add Review</button>
-        </span>
+        <div className="flex justify-center">
+          <button className="btn text-white hover:text-black bg-indigo-800 hover:bg-indigo-500 border-0">
+            submit review
+          </button>
+        </div>
       </form>
     </div>
   );
