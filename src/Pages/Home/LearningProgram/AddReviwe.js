@@ -32,11 +32,14 @@ const AddReviwe = () => {
       });
   };
   return (
-    <div className="py-12 bg-violet-200">
+    <div className="p-12 bg-violet-200">
       <form
         onSubmit={handleForm}
-        className="bg-violet-300 rounded-xl md:w-1/2 mx-auto p-20 font-serif"
+        className="bg-violet-300 rounded-xl md:w-1/2 mx-auto pb-8 font-serif"
       >
+        <h1 className="text-center p-8 text-3xl font-bold  text-violet-800 ">
+          Put Your Review Here
+        </h1>
         <div class="card-body">
           <div class="form-control">
             <label class="label">
@@ -90,9 +93,11 @@ const AddReviwe = () => {
           </div>
         </div>
         {rattingError && <p className="text-red-500">{rattingError}</p>}
-        <span className="text-center">
-          <button class="btn btn-accent">Add Review</button>
-        </span>
+        <div className="flex justify-center">
+          <button className="btn text-white hover:text-black bg-indigo-800 hover:bg-indigo-500 border-0">
+            submit review
+          </button>
+        </div>
       </form>
     </div>
   );
