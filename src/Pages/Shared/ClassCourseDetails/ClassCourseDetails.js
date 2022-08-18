@@ -13,7 +13,9 @@ const ClassCourseDetails = () => {
   const [loading, setLoading] = useState(true);
   useEffect(() => {
     axios
+
       .get(`https://immense-meadow-70411.herokuapp.com/course/${id}`)
+
       .then((res) => setCourseInfo(res.data));
     setLoading(false);
   }, [id]);
@@ -51,6 +53,7 @@ const ClassCourseDetails = () => {
       img,
       price,
     };
+
     fetch("https://immense-meadow-70411.herokuapp.com/order", {
       method: "post",
       headers: {
