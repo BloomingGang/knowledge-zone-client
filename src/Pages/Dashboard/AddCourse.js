@@ -106,11 +106,11 @@ const AddCourse = () => {
         <h1 className="text-center p-8 text-3xl font-bold pb-16 text-violet-900 ">
           Add Courses Here
         </h1>
-        <div className="grid grid-cols-2 gap-x-10 gap-y-0">
+        <div className="grid md:grid-cols-2 gap-x-10 gap-y-0">
           <div className="mb-6">
             <label class="label">
               {" "}
-              <span class="label-text">Courses Type</span>
+              <span className="label-text text-lg font-sans">Courses Type</span>
             </label>
             <select
               name="course"
@@ -130,13 +130,15 @@ const AddCourse = () => {
             <div class="form-control w-full max-w-xs">
               <label class="label">
                 {" "}
-                <span class="label-text">Course Title</span>
+                <span className="label-text text-lg font-sans">
+                  Course Title
+                </span>
               </label>
               <input
                 required
                 type="text"
                 name="title"
-                placeholder="Course title"
+                placeholder="Course Title"
                 class="input input-bordered w-full max-w-xs"
               />
             </div>
@@ -146,13 +148,15 @@ const AddCourse = () => {
             <div class="form-control w-full max-w-xs">
               <label class="label">
                 {" "}
-                <span class="label-text">Course Image</span>
+                <span className="label-text text-lg font-sans">
+                  Course Image
+                </span>
               </label>
               <input
                 required
                 type="text"
                 name="image"
-                placeholder="Course Image Url"
+                placeholder="Course Image url"
                 class="input input-bordered w-full max-w-xs"
               />
             </div>
@@ -162,7 +166,9 @@ const AddCourse = () => {
             <div class="form-control w-full max-w-xs">
               <label class="label">
                 {" "}
-                <span class="label-text">Course Price</span>
+                <span className="label-text text-lg font-sans">
+                  Course Price
+                </span>
               </label>
               <input
                 required
@@ -178,7 +184,9 @@ const AddCourse = () => {
             <div class="form-control w-full max-w-xs">
               <label class="label">
                 {" "}
-                <span class="label-text">Course Description</span>
+                <span className="label-text text-lg font-sans">
+                  Course Description
+                </span>
               </label>
               <textarea
                 required
@@ -194,7 +202,9 @@ const AddCourse = () => {
             <div class="form-control w-full max-w-xs">
               <label class="label">
                 {" "}
-                <span class="label-text">Instructor Name</span>
+                <span className="label-text text-lg font-sans">
+                  Instructor Name
+                </span>
               </label>
               <input
                 required
@@ -210,7 +220,9 @@ const AddCourse = () => {
             <div class="form-control w-full max-w-xs">
               <label class="label">
                 {" "}
-                <span class="label-text">Instructor Education</span>
+                <span className="label-text text-lg font-sans">
+                  Instructor Education
+                </span>
               </label>
               <textarea
                 required
@@ -226,7 +238,9 @@ const AddCourse = () => {
             <div class="form-control w-full max-w-xs">
               <label class="label">
                 {" "}
-                <span class="label-text">About Course</span>
+                <span className="label-text text-lg font-sans">
+                  About Course
+                </span>
               </label>
               <textarea
                 required
@@ -242,7 +256,9 @@ const AddCourse = () => {
             <div class="form-control w-full max-w-xs">
               <label class="label">
                 {" "}
-                <span class="label-text">Total video duration</span>
+                <span className="label-text text-lg font-sans">
+                  Total video duration
+                </span>
               </label>
               <input
                 required
@@ -259,7 +275,9 @@ const AddCourse = () => {
             <div class="form-control w-full max-w-xs">
               <label class="label">
                 {" "}
-                <span class="label-text">Total Videos</span>
+                <span className="label-text text-lg font-sans">
+                  Total Videos
+                </span>
               </label>
               <input
                 required
@@ -276,7 +294,7 @@ const AddCourse = () => {
             <div class="form-control w-full max-w-xs">
               <label class="label">
                 {" "}
-                <span class="label-text">Total Quiz</span>
+                <span className="label-text text-lg font-sans">Total Quiz</span>
               </label>
               <input
                 required
@@ -290,10 +308,12 @@ const AddCourse = () => {
           </div>
 
           <div className="mb-6">
-            <div class="form-control w-full max-w-xs">
+            <div class="form-control w-full max-w-xs pb-8">
               <label class="label">
                 {" "}
-                <span class="label-text">Total Notes</span>
+                <span className="label-text text-lg font-sans">
+                  Total Notes
+                </span>
               </label>
               <input
                 required
