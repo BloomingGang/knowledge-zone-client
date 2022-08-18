@@ -57,7 +57,8 @@ import MyOrder from "./Pages/Shared/MyOrder/MyOrder";
 import AddCourse from "./Pages/Dashboard/AddCourse";
 import UpdateCourse from "./Pages/Shared/UpdateCourse";
 import AddReviwe from "./Pages/Home/LearningProgram/AddReviwe";
-import MyProfile from "./Pages/Dashboard/MyProfile";
+import MyProfile from './Pages/Dashboard/MyProfile';
+import AddBook from './Pages/Dashboard/AddBook';
 
 function App() {
   return (
@@ -155,6 +156,16 @@ function App() {
           element={
             <RequireAdmin>
               <AddCourse />
+            </RequireAdmin>
+          }
+        >
+          {" "}
+        </Route>
+        <Route
+          path="/addBook"
+          element={
+            <RequireAdmin>
+              <AddBook />
             </RequireAdmin>
           }
         >
