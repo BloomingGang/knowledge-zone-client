@@ -76,8 +76,8 @@ const AddReviwe = () => {
               name="comment"
               placeholder="Comment"
               class="input input-bordered count-chars"
-              maxLength="50"
-              data-max-chars="50"
+              maxLength="200"
+              data-max-chars="200"
             />
           </div>
           <div class="form-control">
