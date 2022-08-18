@@ -194,6 +194,14 @@ function App() {
         <Route path="/myOrder" element={<MyOrder />} />
         <Route path="/addReviwe" element={<AddReviwe />} />
         <Route
+          path="/addBook"
+          element={
+            <RequireAdmin>
+              <AddBook />
+            </RequireAdmin>
+          }
+        />
+        <Route
           path="/books"
           element={
             <RequireAuth>

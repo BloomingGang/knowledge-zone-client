@@ -38,13 +38,19 @@ const NavDropDown = () => {
           <li>
             <Link to="/myOrder">My Order</Link>
           </li>
+          {admin && (
+            <li>
+              <Link to="/addCourse">Add Course</Link>
+            </li>
+          )}
           <li>
-            <Link to="/addCourse">Add Course</Link>
+            <Link to="/addReviwe">Add Review</Link>
           </li>
-          <li>
-            <Link to="/addReviwe">Add Reviwe</Link>
-          </li>
-
+          {admin && (
+            <li>
+              <Link to="/addBook">Add Book</Link>
+            </li>
+          )}
           <li>
             <button
               className="btn btn-ghost text-red-600 font-bold"
