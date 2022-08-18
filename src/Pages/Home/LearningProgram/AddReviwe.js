@@ -43,7 +43,7 @@ const AddReviwe = () => {
         <div class="card-body">
           <div class="form-control">
             <label class="label">
-              <span class="label-text">Name</span>
+              <span className="label-text text-lg font-sans">Name:</span>
             </label>
             <input
               type="text"
@@ -56,7 +56,7 @@ const AddReviwe = () => {
           </div>
           <div class="form-control">
             <label class="label">
-              <span class="label-text">Image</span>
+              <span className="label-text text-lg font-sans">Image:</span>
             </label>
             <input
               type="text"
@@ -69,7 +69,7 @@ const AddReviwe = () => {
           </div>
           <div class="form-control">
             <label class="label">
-              <span class="label-text">Comment</span>
+              <span className="label-text text-lg font-sans">Comment:</span>
             </label>
             <input
               type="text"
@@ -82,7 +82,7 @@ const AddReviwe = () => {
           </div>
           <div class="form-control">
             <label class="label">
-              <span class="label-text">Ratting</span>
+              <span className="label-text text-lg font-sans">Ratting:</span>
             </label>
             <input
               type="number"
