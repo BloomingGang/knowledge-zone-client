@@ -3,10 +3,12 @@ import { useAuthState } from "react-firebase-hooks/auth";
 import { useEffect } from "react";
 import auth from "../../firebase.init";
 import Swal from "sweetalert2";
+import ProfileUpdate from "./ProfileUpdate";
 
 const MyProfile = () => {
   const [user] = useAuthState(auth);
   const [profile, setProfile] = useState({});
+  const [showProfile, setShowProfile] = useState(true);
   const name = user?.displayName;
   const email = user?.email;
   useEffect(() => {
@@ -83,8 +85,22 @@ const MyProfile = () => {
               {phone || "Not found"}
             </span>
           </p>
+          <div className="card-actions justify-center">
+            <label
+              for="profileUpdate"
+              onClick={() => setShowProfile(true)}
+              className="border-2 shadow-lg hover:bg-indigo-500 hover:text-black p-2 rounded-lg bg-indigo-800 text-white font-bold transition duration-300"
+            >
+              Update Profile
+            </label>
+          </div>
         </div>
-        <div className="lg:w-2/5 bg-white rounded-2xl">
+
+        <div
+          className={`lg:w-2/5 bg-white rounded-2xl ${
+            showProfile ? "block" : "hidden"
+          }`}
+        >
           <div className="card-body">
             <h1 className="text-2xl font-bold text-center font-serif uppercase pb-5">
               Update Your Profile
@@ -156,6 +172,7 @@ const MyProfile = () => {
           </div>
         </div>
       </div>
+      {showProfile && <ProfileUpdate/>}
     </div>
   );
 };
