@@ -106,7 +106,6 @@ const AddBook = () => {
                 <span class="label-text">Writer Name 2</span>
               </label>
               <input
-                required
                 type="text"
                 name="writerName2"
                 placeholder="Writer Name 2"
@@ -121,7 +120,6 @@ const AddBook = () => {
                 <span class="label-text">Writer Name 3</span>
               </label>
               <input
-                required
                 type="text"
                 name="writerName3"
                 placeholder="Writer Name 3"
@@ -136,7 +134,6 @@ const AddBook = () => {
                 <span class="label-text">Writer Name 4</span>
               </label>
               <input
-                required
                 type="text"
                 name="writerName4"
                 placeholder="Writer Name 4"
@@ -166,7 +163,6 @@ const AddBook = () => {
                 <span class="label-text">Writer img 2</span>
               </label>
               <input
-                required
                 type="text"
                 name="writerImg2"
                 placeholder="Writer img 2"
@@ -181,7 +177,6 @@ const AddBook = () => {
                 <span class="label-text">Writer img 3</span>
               </label>
               <input
-                required
                 type="text"
                 name="writerImg3"
                 placeholder="Writer img 3"
@@ -196,7 +191,6 @@ const AddBook = () => {
                 <span class="label-text">Writer img 4</span>
               </label>
               <input
-                required
                 type="text"
                 name="writerImg4"
                 placeholder="Writer img 4"
@@ -226,7 +220,6 @@ const AddBook = () => {
                 <span class="label-text">Writer Education 2</span>
               </label>
               <input
-                required
                 type="text"
                 name="writerEducation2"
                 placeholder="Writer img 2"
@@ -241,7 +234,6 @@ const AddBook = () => {
                 <span class="label-text">Writer Education 3</span>
               </label>
               <input
-                required
                 type="text"
                 name="writerEducation3"
                 placeholder="Writer img 3"
@@ -256,7 +248,6 @@ const AddBook = () => {
                 <span class="label-text">Writer Education 4</span>
               </label>
               <input
-                required
                 type="text"
                 name="writerEducation4"
                 placeholder="Writer img 4"
