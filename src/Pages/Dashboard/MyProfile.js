@@ -19,8 +19,8 @@ const MyProfile = () => {
 
   const { education, location, phone } = profile;
   return (
-    <div>
-      <h1 className="text-center pt-10 font-serif font-bold text-4xl text-indigo-800">
+    <div className="bg-gray-200">
+      <h1 className="text-center pt-10 font-serif font-bold text-4xl text-violet-800">
         My Profile
       </h1>
       <div className="lg:flex lg:flex-row-reverse justify-center w-full px-5 py-8">
