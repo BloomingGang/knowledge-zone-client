@@ -20,30 +20,31 @@ const MyProfile = () => {
 
   const { education, location, phone } = profile;
   return (
-    <div className="bg-violet-100">
-      <div className="md:w-2/3 md:mx-auto bg-violet-200">
-        <div className="flex justify-between  items-center">
-          <h1 className="text-center pt-10 font-serif font-bold text-4xl text-violet-800">
+    <div className="bg-violet-100 py-12">
+      <div className="md:w-3/5 md:mx-auto bg-violet-200 rounded-xl pt-8 pb-12">
+        <div className="flex justify-between  items-center px-12 ">
+          <h1 className="text-center font-serif font-bold text-4xl text-violet-800">
             My Profile
           </h1>
           <span>
             <label
               for="profileUpdate"
               onClick={() => setShowProfile(true)}
-              className="text-green-600 transition ease-in-out delay-100 hover:-translate-y-1 hover:scale-110 duration-300 mt-4 mx-2"
+              className="text-violet-800 transition ease-in-out delay-100 hover:-translate-y-1 hover:scale-110 duration-300"
             >
               <PencilAltIcon className="h-9 w-9" />
             </label>
           </span>
         </div>
-        <div className="lg:flex lg:flex-row-reverse justify-center w-full px-5 py-8">
-          <div class="avatar">
-            <div class="w-64 h-64 rounded-full">
+        <div class="divider"></div> 
+        <div className="flex justify-around align-center">
+          <div class="avatar  md:p-6">
+            <div class="w-64 h-64 rounded-full ring ring-violet-500 ring-offset-base-100 ring-offset-2">
               <img src={photoUrl} alt="" />
             </div>
           </div>
 
-          <div className="lg:w-3/5 pl-16 md:pt-20 pt-24">
+          <div className="text-justify">
             <p className="text-3xl py-1 font-semibold pt-5">
               Name: <span className="text-3xl font-normal pl-3">{name}</span>
             </p>
