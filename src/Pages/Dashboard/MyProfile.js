@@ -30,42 +30,42 @@ const MyProfile = () => {
             <label
               for="profileUpdate"
               onClick={() => setShowProfile(true)}
-              className="text-violet-800 transition ease-in-out delay-100 hover:-translate-y-1 hover:scale-110 duration-300"
+              className="text-violet-800"
             >
-              <PencilAltIcon className="h-9 w-9" />
+              <PencilAltIcon className="h-9 w-9 transition ease-in-out delay-100 hover:-translate-y-1 hover:scale-110 duration-300 cursor-pointer" />
             </label>
           </span>
         </div>
         <div class="divider"></div> 
-        <div className="md:flex justify-around align-center sm:text-center">
+        <div className="md:flex justify-around align-center text-center">
           <div class="avatar p-6">
             <div class="w-64 h-64 rounded-full ring ring-violet-500 ring-offset-base-100 ring-offset-2">
               <img src={photoUrl} alt="" />
             </div>
           </div>
 
-          <div className="text-justify">
-            <p className="text-3xl py-1 font-semibold pt-5">
-              Name: <span className="text-3xl font-normal pl-3">{name}</span>
+          <div className="md:text-justify text-2xl md:text-3xl">
+            <p className=" py-1 font-semibold pt-5">
+              Name: <span className=" font-normal pl-3">{name}</span>
             </p>
-            <p className="text-3xl py-1 font-semibold pt-5">
-              Email: <span className="text-3xl font-normal pl-3">{email}</span>
+            <p className=" py-1 font-semibold pt-5">
+              Email: <span className=" font-normal pl-3">{email}</span>
             </p>
-            <p className="text-3xl py-1 font-semibold pt-5">
+            <p className=" py-1 font-semibold pt-5">
               Education:{" "}
-              <span className="text-3xl font-normal pl-3">
+              <span className=" font-normal pl-3">
                 {education || "Not found"}
               </span>
             </p>
-            <p className="text-3xl py-1 font-semibold pt-5">
+            <p className=" py-1 font-semibold pt-5">
               Location:{" "}
-              <span className="text-3xl font-normal pl-3">
+              <span className=" font-normal pl-3">
                 {location || "Not found"}
               </span>
             </p>
-            <p className="text-3xl py-1 font-semibold pt-5">
+            <p className=" py-1 font-semibold pt-5">
               Phone:{" "}
-              <span className="text-3xl font-normal pl-3">
+              <span className=" font-normal pl-3">
                 {" "}
                 {phone || "Not found"}
               </span>
