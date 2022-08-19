@@ -6,7 +6,6 @@ import Loading from "../Shared/Loading";
 
 const ProfileUpdate = ({ name, email, setShowProfile }) => {
   const [updateProfile, updating] = useUpdateProfile(auth);
-
   const imageStorageKey = "cb1a7d020847680d78193b615dbd3aff";
 
   const handleUpdateProfile = async (e) => {
@@ -17,7 +16,6 @@ const ProfileUpdate = ({ name, email, setShowProfile }) => {
     const location = e.target.location.value;
     const phone = e.target.phone.value;
     const profileImg = e.target.profileImg.files[0];
-    console.log(profileImg, "img ki asche");
 
     const formData = new FormData();
     formData.append("image", profileImg);
@@ -77,15 +75,17 @@ const ProfileUpdate = ({ name, email, setShowProfile }) => {
           {updating ? (
             <Loading />
           ) : (
-            <div className={`bg-violet-200 rounded-2xl`}>
+            <div className="bg-violet-200 rounded-2xl">
               <div className="card-body">
-                <h1 className="text-center p-8 text-3xl font-bold pb-16 text-violet-900">
+                <h1 className="text-center text-3xl font-bold pb-10 text-violet-900">
                   Update Your Profile
                 </h1>
                 <form onSubmit={handleUpdateProfile}>
                   <div className="form-control">
                     <label className="label">
-                      <span className="label-text">Name:</span>
+                      <span className="label-text text-lg font-sans">
+                        Name:
+                      </span>
                     </label>
                     <input
                       type="text"
@@ -98,7 +98,9 @@ const ProfileUpdate = ({ name, email, setShowProfile }) => {
                   </div>
                   <div className="form-control">
                     <label className="label">
-                      <span className="label-text">Email:</span>
+                      <span className="label-text text-lg font-sans">
+                        Email:
+                      </span>
                     </label>
                     <input
                       type="email"
@@ -111,7 +113,9 @@ const ProfileUpdate = ({ name, email, setShowProfile }) => {
                   </div>
                   <div className="form-control">
                     <label className="label">
-                      <span className="label-text">Education:</span>
+                      <span className="label-text text-lg font-sans">
+                        Education:
+                      </span>
                     </label>
                     <input
                       type="text"
@@ -122,7 +126,9 @@ const ProfileUpdate = ({ name, email, setShowProfile }) => {
                   </div>
                   <div className="form-control">
                     <label className="label">
-                      <span className="label-text">Location:</span>
+                      <span className="label-text text-lg font-sans">
+                        Location:
+                      </span>
                     </label>
                     <input
                       type="text"
@@ -133,7 +139,9 @@ const ProfileUpdate = ({ name, email, setShowProfile }) => {
                   </div>
                   <div className="form-control">
                     <label className="label">
-                      <span className="label-text">Phone:</span>
+                      <span className="label-text text-lg font-sans">
+                        Phone:
+                      </span>
                     </label>
                     <input
                       type="text"
@@ -143,8 +151,10 @@ const ProfileUpdate = ({ name, email, setShowProfile }) => {
                     />
                   </div>
                   <div className="form-control">
-                    <label className="label">
-                      <span className="label-text">Phone:</span>
+                    <label className="label pt-3">
+                      <span className="label-text text-lg font-sans">
+                        Upload Your Image:
+                      </span>
                     </label>
                     <input
                       type="file"
@@ -152,9 +162,10 @@ const ProfileUpdate = ({ name, email, setShowProfile }) => {
                       id="icon"
                       accept="image/png, image/jpeg, image/jpg"
                       required
+                      className="pl-1 border-0"
                     />
                   </div>
-                  <div className="form-control mt-6">
+                  <div className="form-control mt-10">
                     <button className="border-2 shadow-lg hover:bg-indigo-500 hover:text-black p-2 rounded-lg bg-indigo-800 text-white font-bold transition duration-300">
                       UPDATE PROFILE
                     </button>
