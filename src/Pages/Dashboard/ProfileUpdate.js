@@ -6,7 +6,6 @@ import Loading from "../Shared/Loading";
 
 const ProfileUpdate = ({ name, email, setShowProfile }) => {
   const [updateProfile, updating] = useUpdateProfile(auth);
-
   const imageStorageKey = "cb1a7d020847680d78193b615dbd3aff";
 
   const handleUpdateProfile = async (e) => {
@@ -17,7 +16,6 @@ const ProfileUpdate = ({ name, email, setShowProfile }) => {
     const location = e.target.location.value;
     const phone = e.target.phone.value;
     const profileImg = e.target.profileImg.files[0];
-    console.log(profileImg, "img ki asche");
 
     const formData = new FormData();
     formData.append("image", profileImg);
