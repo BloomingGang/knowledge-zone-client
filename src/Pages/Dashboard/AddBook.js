@@ -379,6 +379,7 @@ const AddBook = () => {
                 required
                 type="number"
                 name="price"
+                min={1}
                 placeholder="Price"
                 class="input input-bordered w-full max-w-xs"
               />

@@ -59,6 +59,7 @@ import UpdateCourse from "./Pages/Shared/UpdateCourse";
 import AddReviwe from "./Pages/Home/LearningProgram/AddReviwe";
 import MyProfile from './Pages/Dashboard/MyProfile';
 import AddBook from './Pages/Dashboard/AddBook';
+import SearchResult from "./Pages/Shared/SearchResult";
 
 function App() {
   return (
@@ -168,6 +169,12 @@ function App() {
               <AddBook />
             </RequireAdmin>
           }
+        >
+          {" "}
+        </Route>
+        <Route
+          path="/searchCourse/:searchCourse"
+          element={<SearchResult />}
         >
           {" "}
         </Route>
