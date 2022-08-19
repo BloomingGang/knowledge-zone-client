@@ -20,15 +20,11 @@ const Header = () => {
 
   // CCIS => classes and courses infos
   const { data: ccis, refetch } = useQuery(["ccis"], () =>
-    fetch("https://immense-meadow-70411.herokuapp.com/ccis").then((res) =>
-      res.json()
-    )
+    fetch("http://localhost:5000/ccis").then((res) => res.json())
   );
 
   const handleUnreadState = async (id) => {
-    const { data } = await axios.put(
-      `https://immense-meadow-70411.herokuapp.com/cci/${id}`
-    );
+    const { data } = await axios.put(`http://localhost:5000/cci/${id}`);
     console.log(data);
     refetch();
   };

@@ -38,7 +38,7 @@ const ProfileUpdate = ({ name, email, setShowProfile }) => {
         phone,
       };
 
-      fetch(`https://immense-meadow-70411.herokuapp.com/users/${email}`, {
+      fetch(`http://localhost:5000/users/${email}`, {
         method: "put",
         headers: {
           "content-type": "application/json",
@@ -136,15 +136,15 @@ const ProfileUpdate = ({ name, email, setShowProfile }) => {
                       <span className="label-text">Phone:</span>
                     </label>
                     <input
-                      type="text"
-                      required
+                      type="number"
                       name="phone"
                       className="input input-bordered"
+                      required
                     />
                   </div>
                   <div className="form-control">
                     <label className="label">
-                      <span className="label-text">Phone:</span>
+                      <span className="label-text">Iamge:</span>
                     </label>
                     <input
                       type="file"

@@ -89,12 +89,10 @@ const AddCourse = () => {
       transcripts: 10,
     };
 
-    axios
-      .post(`https://immense-meadow-70411.herokuapp.com/addCourse`, addCourse)
-      .then((res) => {
-        toast.success(`Add a Course for ${classCourse}`);
-        event.target.reset();
-      });
+    axios.post(`http://localhost:5000/addCourse`, addCourse).then((res) => {
+      toast.success(`Add a Course for ${classCourse}`);
+      event.target.reset();
+    });
     console.log(addCourse);
   };
   return (
