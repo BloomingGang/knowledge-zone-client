@@ -37,8 +37,8 @@ const MyProfile = () => {
           </span>
         </div>
         <div class="divider"></div> 
-        <div className="flex justify-around align-center">
-          <div class="avatar  md:p-6">
+        <div className="md:flex justify-around align-center sm:text-center">
+          <div class="avatar p-6">
             <div class="w-64 h-64 rounded-full ring ring-violet-500 ring-offset-base-100 ring-offset-2">
               <img src={photoUrl} alt="" />
             </div>
