@@ -9,7 +9,7 @@ const useMyOrder = () => {
   const [user] = useAuthState(auth);
   const navigate = useNavigate();
   const [myOrder, setMyOrder] = useState([]);
-  const email = user.email;
+  const email = user?.email;
   useEffect(() => {
     const getMyOrder = async () => {
       const url = `https://immense-meadow-70411.herokuapp.com/order?email=${email}`;

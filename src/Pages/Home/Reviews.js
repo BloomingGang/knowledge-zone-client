@@ -51,38 +51,40 @@ const Reviews = () => {
           </div>
           <div>
             <Carousel swipeable="true" responsive={responsive} infinite={true}>
-              {reviews.slice(-9).map((review, index) => (
-                <div key={index} class="p-4 w-full">
-                  <div class="h-[250px] bg-indigo-100 p-8 rounded-xl">
-                    <img src={quote} width={30} alt="" />
-                    <p class="leading-relaxed mb-6">{review.comment}</p>
-                    <a class="inline-flex items-center" href="/">
-                      <img
-                        alt=""
-                        src={review.image}
-                        class="w-14 h-14 rounded-full flex-shrink-0 object-cover object-center"
-                      />
-                      <span class="flex-grow flex flex-col pl-4">
-                        <p>
-                          <Rating
-                            readonly
-                            initialRating={review.ratting}
-                            emptySymbol={
-                              <AiOutlineStar color="orange" size={"15px"} />
-                            }
-                            fullSymbol={
-                              <AiFillStar color="orange" size={"15px"} />
-                            }
-                          />
-                        </p>
-                        <span class="title-font font-medium text-indigo-800">
-                          {review.name}
+              {reviews
+                .slice(reviews.length - 9, reviews.length)
+                .map((review, index) => (
+                  <div key={index} class="p-4 w-full">
+                    <div class="h-[250px] bg-indigo-100 p-8 rounded-xl">
+                      <img src={quote} width={30} alt="" />
+                      <p class="leading-relaxed mb-6">{review.comment}</p>
+                      <a class="inline-flex items-center">
+                        <img
+                          alt=""
+                          src={review.image}
+                          class="w-14 h-14 rounded-full flex-shrink-0 object-cover object-center"
+                        />
+                        <span class="flex-grow flex flex-col pl-4">
+                          <p>
+                            <Rating
+                              readonly
+                              initialRating={review.ratting}
+                              emptySymbol={
+                                <AiOutlineStar color="orange" size={"15px"} />
+                              }
+                              fullSymbol={
+                                <AiFillStar color="orange" size={"15px"} />
+                              }
+                            />
+                          </p>
+                          <span class="title-font font-medium text-indigo-800">
+                            {review.name}
+                          </span>
                         </span>
-                      </span>
-                    </a>
+                      </a>
+                    </div>
                   </div>
-                </div>
-              ))}
+                ))}
             </Carousel>
           </div>
         </div>

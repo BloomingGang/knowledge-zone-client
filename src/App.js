@@ -57,9 +57,14 @@ import MyOrder from "./Pages/Shared/MyOrder/MyOrder";
 import AddCourse from "./Pages/Dashboard/AddCourse";
 import UpdateCourse from "./Pages/Shared/UpdateCourse";
 import AddReviwe from "./Pages/Home/LearningProgram/AddReviwe";
+
+// import MyProfile from "./Pages/Dashboard/MyProfile";
+// import AddBook from "./Pages/Dashboard/AddBook";
+import UpdateBook from "./Pages/Shared/UpdateBook";
+
 import MyProfile from "./Pages/Dashboard/MyProfile";
 import AddBook from "./Pages/Dashboard/AddBook";
-import UpdateBook from "./Pages/Shared/UpdateBook";
+import SearchResult from "./Pages/Shared/SearchResult";
 
 function App() {
   return (
@@ -179,6 +184,9 @@ function App() {
             </RequireAdmin>
           }
         >
+          {" "}
+        </Route>
+        <Route path="/searchCourse/:searchCourse" element={<SearchResult />}>
           {" "}
         </Route>
 
