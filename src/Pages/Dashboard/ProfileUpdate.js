@@ -151,7 +151,6 @@ const ProfileUpdate = ({ name, email, setShowProfile }) => {
                       name="profileImg"
                       id="icon"
                       accept="image/png, image/jpeg, image/jpg"
-                      required
                     />
                   </div>
                   <div className="form-control mt-6">
