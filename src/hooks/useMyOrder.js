@@ -12,7 +12,7 @@ const useMyOrder = () => {
   const email = user.email;
   useEffect(() => {
     const getMyOrder = async () => {
-      const url = `https://immense-meadow-70411.herokuapp.com/order?email=${email}`;
+      const url = `http://localhost:5000/order?email=${email}`;
       try {
         const { data } = await axiosPrivate.get(url);
         setMyOrder(data);

@@ -13,7 +13,7 @@ const ClassCourseDetails = () => {
   const [loading, setLoading] = useState(true);
   useEffect(() => {
     axios
-      .get(`https://immense-meadow-70411.herokuapp.com/course/${id}`)
+      .get(`http://localhost:5000/course/${id}`)
       .then((res) => setCourseInfo(res.data));
     setLoading(false);
   }, [id]);
@@ -51,7 +51,7 @@ const ClassCourseDetails = () => {
       img,
       price,
     };
-    fetch("https://immense-meadow-70411.herokuapp.com/order", {
+    fetch("http://localhost:5000/order", {
       method: "post",
       headers: {
         "content-type": "application/json",
@@ -77,7 +77,7 @@ const ClassCourseDetails = () => {
           <div className="flex border-2 rounded-xl p-6">
             <div class="avatar mr-8">
               <div class="w-20 rounded-full">
-                <img src={instructorImg} alt=""/>
+                <img src={instructorImg} alt="" />
               </div>
             </div>
             <div>
