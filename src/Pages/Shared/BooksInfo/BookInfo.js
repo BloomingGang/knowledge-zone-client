@@ -15,7 +15,7 @@ const BookInfo = () => {
     error,
     data: book,
   } = useQuery(["book", id], () =>
-    fetch(`http://localhost:5000/book/${id}`, {
+    fetch(`https://immense-meadow-70411.herokuapp.com/book/${id}`, {
       method: "get",
       headers: {
         authorization: `Bearer ${localStorage.getItem("accessToken")}`,
@@ -60,7 +60,7 @@ const BookInfo = () => {
       img,
       price,
     };
-    fetch("http://localhost:5000/order", {
+    fetch("https://immense-meadow-70411.herokuapp.com/order", {
       method: "post",
       headers: {
         "content-type": "application/json",
