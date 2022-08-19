@@ -58,10 +58,12 @@ const AddBook = () => {
       price: price,
     };
 
-    axios.post(`http://localhost:5000/addBook`, addBook).then((res) => {
-      toast.success(`Add a Book`);
-      event.target.reset();
-    });
+    axios
+      .post(`https://immense-meadow-70411.herokuapp.com/addBook`, addBook)
+      .then((res) => {
+        toast.success(`Add a Book`);
+        event.target.reset();
+      });
   };
 
   return (
@@ -389,7 +391,9 @@ const AddBook = () => {
             <div class="form-control w-full max-w-xs">
               <label class="label">
                 {" "}
-                <span className="label-text text-lg font-sans">Book Image:</span>
+                <span className="label-text text-lg font-sans">
+                  Book Image:
+                </span>
               </label>
               <input
                 required
