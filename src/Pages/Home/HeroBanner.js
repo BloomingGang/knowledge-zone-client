@@ -19,7 +19,7 @@ const HeroBanner = () => {
             classes with expert teachers for ages 4-18+, we have programs for
             every learner.
           </p>
-          <button className="btn btn-primary">Explore Learning Programs</button>
+          {/* <button className="btn btn-primary">Explore Learning Programs</button> */}
         </div>
       </div>
     </div>

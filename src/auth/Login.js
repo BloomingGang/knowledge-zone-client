@@ -116,7 +116,7 @@ const Login = () => {
             </label>
           </div>
           <input
-            className="btn w-2/5 bg-violet-900 mx-auto block"
+            className="btn w-2/5 bg-violet-900 mx-auto block hover:bg-transparent hover:text-violet-900 hover:border-violet-900"
             type="submit"
             value="Login"
           />

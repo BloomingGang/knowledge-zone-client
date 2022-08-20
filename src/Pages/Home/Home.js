@@ -19,7 +19,7 @@ const Home = () => {
       <LearningProgram />
       <CardK />
       <Reviews />
-      <EduBanner />
+      {/* <EduBanner /> */}
       <Investor />
       <CarouselOne />
       <CardOne />

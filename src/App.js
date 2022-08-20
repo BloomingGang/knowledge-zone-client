@@ -49,13 +49,17 @@ import NotFound from "./Pages/Shared/NotFound";
 import RequireAuth from "./auth/RequireAuth";
 import Users from "./Pages/Users/Users";
 import RequireAdmin from "./auth/RequireAdmin";
-import UpdateProfile from "./Pages/Dashboard/UpdateProfile";
 import BookInfo from "./Pages/Shared/BooksInfo/BookInfo";
 import Payment from "./payment/Payment";
 import ClassCourseDetails from "./Pages/Shared/ClassCourseDetails/ClassCourseDetails";
 import BlogInfo from "./Pages/Shared/BlogInfo/BlogInfo";
 import MyOrder from "./Pages/Shared/MyOrder/MyOrder";
-
+import AddCourse from "./Pages/Dashboard/AddCourse";
+import UpdateCourse from "./Pages/Shared/UpdateCourse";
+import AddReviwe from "./Pages/Home/LearningProgram/AddReviwe";
+import MyProfile from './Pages/Dashboard/MyProfile';
+import AddBook from './Pages/Dashboard/AddBook';
+import SearchResult from "./Pages/Shared/SearchResult";
 
 function App() {
   return (
@@ -127,14 +131,53 @@ function App() {
           <Route path="twelve" element={<ClassTwelve />} />
         </Route>
 
-
-         {/* class 1 to 12 route list */}
+        {/* class 1 to 12 route list */}
         {/* courses information component start */}
-        <Route path='/:classCourse/coursesInfo/:id' element={<RequireAuth> <ClassCourseDetails/> </RequireAuth>}></Route>
-       
-  
-        {/* courses information component end */}
+        <Route
+          path="/:classCourse/coursesInfo/:id"
+          element={
+            <RequireAuth>
+              {" "}
+              <ClassCourseDetails />{" "}
+            </RequireAuth>
+          }
+        ></Route>
+        <Route
+          path="/:classCourse/update/:id"
+          element={
+            <RequireAuth>
+              {" "}
+              <UpdateCourse />{" "}
+            </RequireAuth>
+          }
+        ></Route>
 
+        <Route
+          path="/addCourse"
+          element={
+            <RequireAdmin>
+              <AddCourse />
+            </RequireAdmin>
+          }
+        >
+          {" "}
+        </Route>
+        <Route
+          path="/addBook"
+          element={
+            <RequireAdmin>
+              <AddBook />
+            </RequireAdmin>
+          }
+        >
+          {" "}
+        </Route>
+        <Route
+          path="/searchCourse/:searchCourse"
+          element={<SearchResult />}
+        >
+          {" "}
+        </Route>
 
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
@@ -155,7 +198,16 @@ function App() {
             </RequireAdmin>
           }
         />
-        <Route path="/myOrder" element={<MyOrder/>} />
+        <Route path="/myOrder" element={<MyOrder />} />
+        <Route path="/addReviwe" element={<AddReviwe />} />
+        <Route
+          path="/addBook"
+          element={
+            <RequireAdmin>
+              <AddBook />
+            </RequireAdmin>
+          }
+        />
         <Route
           path="/books"
           element={
@@ -165,13 +217,13 @@ function App() {
           }
         />
         <Route
-          path="/updateProfile"
+          path="/myProfile"
           element={
             <RequireAuth>
-              <UpdateProfile />
+              <MyProfile />
             </RequireAuth>
           }
-            />
+        />
         <Route
           path="/payment/:id"
           element={
@@ -185,7 +237,6 @@ function App() {
           element={
             <RequireAuth>
               <BookInfo />
-
             </RequireAuth>
           }
         />

@@ -13,7 +13,9 @@ const ClassCourseDetails = () => {
   const [loading, setLoading] = useState(true);
   useEffect(() => {
     axios
+
       .get(`https://immense-meadow-70411.herokuapp.com/course/${id}`)
+
       .then((res) => setCourseInfo(res.data));
     setLoading(false);
   }, [id]);
@@ -51,6 +53,7 @@ const ClassCourseDetails = () => {
       img,
       price,
     };
+
     fetch("https://immense-meadow-70411.herokuapp.com/order", {
       method: "post",
       headers: {
@@ -77,7 +80,7 @@ const ClassCourseDetails = () => {
           <div className="flex border-2 rounded-xl p-6">
             <div class="avatar mr-8">
               <div class="w-20 rounded-full">
-                <img src={instructorImg} />
+                <img src={instructorImg} alt=""/>
               </div>
             </div>
             <div>
@@ -198,7 +201,7 @@ const ClassCourseDetails = () => {
           <img className="w-full rounded-xl" src={img} alt="" />
           <div className="p-8">
             <div className="flex justify-between">
-              <a className="text-indigo-700" href="#">
+              <a className="text-indigo-700" href="/">
                 <u>Promo Code</u>
               </a>
               <p className="text-xl font-bold">$ {price}</p>

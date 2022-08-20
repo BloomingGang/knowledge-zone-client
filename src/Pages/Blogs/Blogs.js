@@ -14,7 +14,7 @@ const Blogs = () => {
 
   return (
     <div>
-      <div className="grid md:grid-cols-3 gap-5 px-5">
+      <div className="lg:w-3/4 mx-auto grid md:grid-cols-2  gap-16 px-8 py-16">
         {blog.map((blog) => (
           <Blog setModal={setModal} key={blog._id} blog={blog}></Blog>
         ))}
