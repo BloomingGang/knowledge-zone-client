@@ -1,8 +1,9 @@
 import React from "react";
 import { toast } from "react-toastify";
+import Swal from "sweetalert2";
 
 const UserRow = ({ user, index }) => {
-  const { email, role } = user;
+  const { _id, email, role } = user;
   const makeAdmin = () => {
     fetch(`https://immense-meadow-70411.herokuapp.com/user/admin/${email}`, {
       method: "PUT",
@@ -22,6 +23,30 @@ const UserRow = ({ user, index }) => {
         }
       });
   };
+
+  const handleDelete = (id) => {
+    Swal.fire({
+      title: "Are you sure?",
+      text: "You won't be able to revert this!",
+      icon: "warning",
+      showCancelButton: true,
+      confirmButtonColor: "#3085d6",
+      cancelButtonColor: "#d33",
+      confirmButtonText: "Yes, delete it!",
+    }).then((result) => {
+      if (result.isConfirmed) {
+        Swal.fire("Deleted!", "Your file has been deleted.", "success");
+        const url = `http://localhost:5000/user/${id}`;
+        fetch(url, {
+          method: "DELETE",
+        })
+          .then((res) => res.json())
+          .then((data) => {
+            window.location.reload();
+          });
+      }
+    });
+  };
   return (
     <tr>
       <th>{index + 1}</th>
@@ -37,6 +62,14 @@ const UserRow = ({ user, index }) => {
         ) : (
           <h1 className="font-bold text-xl text-green-600">ADMIN</h1>
         )}
+      </td>
+      <td>
+        <button
+          onClick={() => handleDelete(_id)}
+          className="btn btn-sm bg-red-600 hover:bg-red-500 border-0 "
+        >
+          Delete
+        </button>
       </td>
     </tr>
   );
