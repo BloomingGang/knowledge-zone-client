@@ -14,7 +14,7 @@ const BlogInfo = () => {
   return (
     <div className="w-11/12 md:w-9/12 mx-auto py-8">
       <img className="mb-5 w-full lg:h-[85vh]" src={img} alt="" />
-      <h1 className="text-3xl md:text-5xl font-bold font-mono text-justify text-indigo-600">
+      <h1 className="text-3xl md:text-5xl font-bold    text-justify text-indigo-600">
         {title}
       </h1>
       <div className="pt-3 text-2xl leading-9 md:text-3xl font-semibold text-gray-600">
@@ -23,7 +23,9 @@ const BlogInfo = () => {
         <span className="text-indigo-600">{writerName}</span>
       </div>
       <div class="divider"></div>
-      <p className="text-xl md:text-2xl text-justify leading-8 md:leading-10 pt-3 pb-8">{description}</p>
+      <p className="text-xl md:text-2xl text-justify leading-8 md:leading-10 pt-3 pb-8">
+        {description}
+      </p>
     </div>
   );
 };

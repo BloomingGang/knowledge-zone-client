@@ -9,7 +9,7 @@ const HeroBanner = () => {
           <img src={heroIMG} alt="banner" class="w-full" />
         </div>
         <div className="md:w-1/2 ">
-          <h1 className="lg:text-5xl text-3xl text-violet-900 font-bold font-serif">
+          <h1 className="lg:text-5xl text-3xl text-violet-900 font-bold  ">
             Welcome To The Future Of Learning
           </h1>
           <p className="py-6 text-lg">

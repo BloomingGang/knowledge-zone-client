@@ -35,7 +35,7 @@ const AddReviwe = () => {
     <div className="p-12 bg-violet-200">
       <form
         onSubmit={handleForm}
-        className="bg-violet-300 rounded-xl md:w-1/2 mx-auto pb-8 font-serif"
+        className="bg-violet-300 rounded-xl md:w-1/2 mx-auto pb-8  "
       >
         <h1 className="text-center p-8 text-3xl font-bold  text-violet-800 ">
           Put Your Review Here
@@ -43,7 +43,7 @@ const AddReviwe = () => {
         <div class="card-body">
           <div class="form-control">
             <label class="label">
-              <span className="label-text text-lg font-sans">Name:</span>
+              <span className="label-text text-lg    ">Name:</span>
             </label>
             <input
               type="text"
@@ -56,7 +56,7 @@ const AddReviwe = () => {
           </div>
           <div class="form-control">
             <label class="label">
-              <span className="label-text text-lg font-sans">Image:</span>
+              <span className="label-text text-lg    ">Image:</span>
             </label>
             <input
               type="text"
@@ -69,7 +69,7 @@ const AddReviwe = () => {
           </div>
           <div class="form-control">
             <label class="label">
-              <span className="label-text text-lg font-sans">Comment:</span>
+              <span className="label-text text-lg    ">Comment:</span>
             </label>
             <input
               type="text"
@@ -82,7 +82,7 @@ const AddReviwe = () => {
           </div>
           <div class="form-control">
             <label class="label">
-              <span className="label-text text-lg font-sans">Ratting:</span>
+              <span className="label-text text-lg    ">Ratting:</span>
             </label>
             <input
               type="number"
