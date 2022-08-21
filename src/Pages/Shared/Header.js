@@ -114,10 +114,10 @@ const Header = () => {
             class="dropdown-content card card-compact w-52  bg-gray-100 h-[415px] overflow-auto rounded-md"
           >
             <div class="card-body">
-              <h3 class="card-title">
-                New Updates{" "}
+              <span className="card-title flex justify-around border-b-4 text-red-500">
+                New{" "}
                 <span className="text-red-500">{ccis?.unreadCount}</span>
-              </h3>
+              </span>
               <div className="flex flex-col gap-y-2">
                 {ccis?.unreadData
                   ?.map((cci) => (
