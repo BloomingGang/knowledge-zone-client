@@ -18,7 +18,7 @@ const NavDropDown = () => {
     <div className="flex items-center">
       <div className="dropdown">
         <label tabindex="0">
-          <ProfilePic></ProfilePic>
+          <ProfilePic />
         </label>
         <ul
           tabindex="0"
@@ -44,12 +44,9 @@ const NavDropDown = () => {
             </li>
           )}
           <li>
-
-
             <Link to="/addCourse">Add Course</Link>
           </li>
           <li>
-
             <Link to="/addReviwe">Add Review</Link>
           </li>
           {admin && (

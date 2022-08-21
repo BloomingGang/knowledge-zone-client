@@ -48,7 +48,7 @@ const Header = () => {
           }
           to="/classes"
         >
-          Academic Courses
+          Academic Course
         </NavLink>
       </li>
       <li className="mr-4 p-2 hover:bg-blue-500 rounded font-bold">
@@ -58,7 +58,7 @@ const Header = () => {
           }
           to="/courses"
         >
-          Skill Development Courses
+          Skill Development Course
         </NavLink>
       </li>
       <li className="mr-4 p-2 hover:bg-blue-500 rounded font-bold">
@@ -68,7 +68,7 @@ const Header = () => {
           }
           to="/books"
         >
-          Books
+          Book
         </NavLink>
       </li>
       <li className="mr-4 p-2 hover:bg-blue-500 rounded font-bold">
@@ -103,20 +103,20 @@ const Header = () => {
       </li>
 
       {/* notification panel */}
-      <li className="mr-4 p-2 hover:bg-blue-500 rounded font-bold">
+      <li className="mr-4 p-2 hover:bg-blue-500 rounded font-bold cursor-pointer">
         {/* panel credentials */}
         <div class="dropdown">
           <label tabindex="0" class="text-xl m-1">
-            <i className="text-violet-800 fa-solid fa-bell"></i>
+            <i className="text-violet-800 fa-solid fa-bell cursor-pointer"></i>
           </label>
           <div
             tabindex="0"
-            class="dropdown-content card card-compact w-52 p-2 shadow bg-white h-[200px] overflow-auto"
+            class="dropdown-content card card-compact w-52  bg-gray-100 h-[415px] overflow-auto rounded-md"
           >
             <div class="card-body">
               <h3 class="card-title">
-                Latest updates!{" "}
-                <span className="text-purple-500">{ccis?.unreadCount}</span>
+                New Updates{" "}
+                <span className="text-red-500">{ccis?.unreadCount}</span>
               </h3>
               <div className="flex flex-col gap-y-2">
                 {ccis?.unreadData
@@ -156,9 +156,9 @@ const Header = () => {
         </div>
       </li>
 
-      <li className="mr-4 p-2 hover:bg-blue-500 rounded font-bold">
+      <li className="mr-4 p-2 hover:bg-blue-500 rounded cursor-pointer font-bold">
         {user ? (
-          <NavDropDown></NavDropDown>
+          <NavDropDown />
         ) : (
           <NavLink
             className={({ isActive }) =>
