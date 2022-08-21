@@ -29,9 +29,11 @@ const Footer = () => {
             <div className='mt-12'>
                 <div className='flex gap-x-6 justify-center'>
                     <Link to="/" className='border-b-2 border-transparent hover:border-b-2 hover:border-b-white rounded-bl duration-500'>Home</Link>
-                    <Link to="/" className='border-b-2 border-transparent hover:border-b-2 hover:border-b-white rounded-bl duration-500'>Courses</Link>
-                    <Link to="/" className='border-b-2 border-transparent hover:border-b-2 hover:border-b-white rounded-bl duration-500'>Blog</Link>
-                    <Link to="/" className='border-b-2 border-transparent hover:border-b-2 hover:border-b-white rounded-bl duration-500'>Instructor</Link>
+                    <Link to="/classes" className='border-b-2 border-transparent hover:border-b-2 hover:border-b-white rounded-bl duration-500'>Courses</Link>
+                    <Link to="/blogs" className='border-b-2 border-transparent hover:border-b-2 hover:border-b-white rounded-bl duration-500'>Blog</Link>
+                    <Link to="/books" className='border-b-2 border-transparent hover:border-b-2 hover:border-b-white rounded-bl duration-500'>Book</Link>
+                    <Link to="/instructor" className='border-b-2 border-transparent hover:border-b-2 hover:border-b-white rounded-bl duration-500'>Instructor</Link>
+                    <Link to="/privacy" className='border-b-2 border-transparent hover:border-b-2 hover:border-b-white rounded-bl duration-500'>Privacy Policy</Link>
                     <Link to="/contact" className='border-b-2 border-transparent hover:border-b-2 hover:border-b-white rounded-bl duration-500'>Contact Us</Link>
                 </div>
             </div>
