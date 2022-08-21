@@ -91,9 +91,8 @@ const CoursesAutoSlider = () => {
                             </div>
                         </div>)
                     }
-
-                </Slider>
-            </div>
+        </Slider>
+      </div>
     </div>
   );
 };

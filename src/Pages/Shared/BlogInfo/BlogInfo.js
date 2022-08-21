@@ -9,13 +9,10 @@ const BlogInfo = () => {
     axios
       .get(`https://immense-meadow-70411.herokuapp.com/blog/${id}`)
       .then((data) => setBlog(data.data));
-    // fetch(`https://immense-meadow-70411.herokuapp.com/book/${id}`)
-    //   .then((response) => response.json())
-    //   .then((data) => setBook(data));
   }, [id]);
   const { description, writerName, img, date, title } = blog;
   return (
-    <div className="p-8">
+    <div className="w-11/12 md:w-9/12 mx-auto py-8">
       <img className="mb-5 w-full lg:h-[85vh]" src={img} alt="" />
       <h1 className="text-3xl md:text-5xl font-bold    text-justify text-indigo-600">
         {title}

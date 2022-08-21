@@ -45,6 +45,7 @@ const Users = () => {
               <th></th>
               <th className="text-xl">Email</th>
               <th className="text-xl">Role</th>
+              <th className="text-xl">Delete User</th>
             </tr>
           </thead>
           <tbody>
