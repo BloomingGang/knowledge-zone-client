@@ -47,9 +47,9 @@ const UserRow = ({ user, index }) => {
     });
   };
   return (
-    <tr>
-      <th>{index + 1}</th>
-      <td>{email}</td>
+    <tr className="text-center">
+      <th className="font-bold text-xl">{index + 1}</th>
+      <td className="font-bold text-xl">{email}</td>
       <td>
         {role !== "admin" ? (
           <button
@@ -59,7 +59,7 @@ const UserRow = ({ user, index }) => {
             Make Admin
           </button>
         ) : (
-          <h1 className="font-bold text-xl text-green-600">ADMIN</h1>
+          <h1 className="font-bold text-xl text-green-500">ADMIN</h1>
         )}
       </td>
       <td>

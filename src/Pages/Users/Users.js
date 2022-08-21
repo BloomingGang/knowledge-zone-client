@@ -36,15 +36,17 @@ const Users = () => {
 
   return (
     <div className="pt-4 pb-14">
-      <h1 className="text-3xl font-bold text-center p-4">All Users</h1>
+      <h1 className="text-3xl text-center font-bold text-primary  mt-4 mb-16">
+        All Users
+      </h1>
 
       <div className="overflow-x-auto">
         <table className="table table-zebra w-full">
           <thead>
-            <tr>
-              <th></th>
+            <tr className="text-center">
+              <th className="text-xl">Serial No</th>
               <th className="text-xl">Email</th>
-              <th className="text-xl">Role</th>
+              <th className="text-xl">User Role</th>
               <th className="text-xl">Delete User</th>
             </tr>
           </thead>
