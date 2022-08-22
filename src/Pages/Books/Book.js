@@ -19,7 +19,7 @@ const Book = ({ book }) => {
           <img src={img} alt="/" className="rounded-t-xl h-[350px] w-full" />
         </div>
         <div className="card-body">
-          <h2 className="card-title text-xl font-serif text-indigo-800 pb-8">
+          <h2 className="card-title text-xl   text-indigo-800 pb-8">
             {bookName}
           </h2>
           {/* <p className="items-center text-justify">

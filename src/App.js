@@ -60,6 +60,7 @@ import AddReviwe from "./Pages/Home/LearningProgram/AddReviwe";
 import MyProfile from './Pages/Dashboard/MyProfile';
 import AddBook from './Pages/Dashboard/AddBook';
 import SearchResult from "./Pages/Shared/SearchResult";
+import PrivacyPolicy from "./Pages/Home/PrivacyPolicy";
 
 function App() {
   return (
@@ -182,6 +183,7 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
         <Route path="/blogs" element={<Blogs />} />
+        <Route path="/privacy" element={<PrivacyPolicy />} />
         <Route
           path="/blog/:id"
           element={

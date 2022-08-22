@@ -10,16 +10,15 @@ const Product = ({ order, index }) => {
 
   const handleDelete = (id) => {
     Swal.fire({
-      title: "Are you sure?",
-      text: "You won't be able to revert this!",
+      title: "Do You Want To Delete This ??",
       icon: "warning",
       showCancelButton: true,
-      confirmButtonColor: "#3085d6",
-      cancelButtonColor: "#d33",
-      confirmButtonText: "Yes, delete it!",
+      confirmButtonColor: "#eb2f06",
+      cancelButtonColor: "#00ab41",
+      confirmButtonText: "Delete",
     }).then((result) => {
       if (result.isConfirmed) {
-        Swal.fire("Deleted!", "Your file has been deleted.", "success");
+       Swal.fire("Deleted!", "Your File Has Been Deleted !!", "success");
         const url = `https://immense-meadow-70411.herokuapp.com/order/${id}`;
         fetch(url, {
           method: "DELETE",

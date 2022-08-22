@@ -15,27 +15,21 @@ const CardOne = () => {
             <img src={logo1} alt="" className="w-[115px] h-[80px] pb-5" />
             <img src={img1} alt="" className="rounded-lg pb-5 h-[250px] w-96" />
             <p className="text-lg text-justify">
-              Bangalore-based education technology company Byju's became India's
-              most valuable startup in 2021, as the demand for online learning
-              surged.
+            Students are getting increasingly used to accessing information through video in their day-to-day lives, so are naturally eager to use similar resources in the classroom.
             </p>
           </div>
           <div className="bg-white rounded-xl p-5">
             <img src={logo2} alt="" className="w-[115px] h-[80px] pb-5" />
             <img src={img2} alt="" className="rounded-lg pb-5 h-[250px] w-96" />
             <p className="text-lg text-justify">
-              Bangalore-based education technology company Byju's became India's
-              most valuable startup in 2021, as the demand for online learning
-              surged.
+            Knowledge Zone targets the entire education market from primary through to Secondary, Higher Education, Corporate learning, English Language learning and lifelong learning.
             </p>
           </div>
           <div className="bg-white rounded-xl p-5">
             <img src={logo3} alt="" className="w-[115px] h-[80px] pb-5" />
             <img src={img3} alt="" className="rounded-lg pb-5 h-[250px] w-96" />
             <p className="text-lg text-justify">
-              Bangalore-based education technology company Byju's became India's
-              most valuable startup in 2021, as the demand for online learning
-              surged.
+            Knowledge Zone is now looking to build more relationships with various content providers, and to build up their search algorithm that allows you to refine clip searches by curriculum, topic, and source.
             </p>
           </div>
         </div>

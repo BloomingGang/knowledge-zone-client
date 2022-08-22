@@ -1,0 +1,452 @@
+[
+    {
+      "img": "https://i.ibb.co/5K8Jrcy/20210309-143715.jpg",
+      "name": "Faisal Karim",
+      "education": "B.Sc in Zoology, DU",
+      "Subject": "Biology",
+      "facebook": "https://www.google.com/",
+      "twitter": "https://www.google.com/",
+      "linkedin": "https://www.google.com/",
+      "instagram": "https://www.google.com/"
+    },
+    {
+      "img": "https://i.ibb.co/QcXxxGJ/me.jpg",
+      "name": "Hossain Rafi",
+      "education": "B.Sc in Zoology, JU",
+      "Subject": "Biology",
+      "facebook": "https://www.google.com/",
+      "twitter": "https://www.google.com/",
+      "linkedin": "https://www.google.com/",
+      "instagram": "https://www.google.com/"
+    },
+    {
+      "img": "https://i.ibb.co/k0VGsrX/294706853-594656798735676-1883816395034222539-n-removebg-preview.png",
+      "name": "Rakib Mia",
+      "education": "B.Sc in Zoology, RU",
+      "Subject": "Biology",
+      "facebook": "https://www.google.com/",
+      "twitter": "https://www.google.com/",
+      "linkedin": "https://www.google.com/",
+      "instagram": "https://www.google.com/"
+    },
+    {
+      "img": "https://i.ibb.co/pjYWSz5/293666536-410740174208712-4704341600776933626-n.png",
+      "name": "Kausar Ahamed",
+      "education": "B.Sc in Botany, BU",
+      "Subject": "Biology",
+      "facebook": "https://www.google.com/",
+      "twitter": "https://www.google.com/",
+      "linkedin": "https://www.google.com/",
+      "instagram": "https://www.google.com/"
+    },
+    {
+      "img": " https://i.ibb.co/PzND9YF/288865092-1499923620424923-4773973340299341148-n.png",
+      "name": "Saddam Hossain",
+      "education": "B.Sc in Botany, CU",
+      "Subject": "Biology",
+      "facebook": "https://www.google.com/",
+      "twitter": "https://www.google.com/",
+      "linkedin": "https://www.google.com/",
+      "instagram": "https://www.google.com/"
+    },
+    {
+        "img":"https://i.ibb.co/5K8Jrcy/20210309-143715.jpg",
+        "name":"Faisal Karim",
+        "education": "B.Sc. in Chemistry, DU",
+        "Subject": "Chemistry",
+        "facebook": "https://www.google.com/",
+        "twitter": "https://www.google.com/",
+        "linkedin": "https://www.google.com/",
+        "instagram": "https://www.google.com/"
+    },
+    {
+        "img":"https://i.ibb.co/QcXxxGJ/me.jpg",
+        "name":"Hossain Rafi",
+        "education": "B.Sc. in Chemistry, JU",
+        "Subject": "Chemistry",
+        "facebook": "https://www.google.com/",
+        "twitter": "https://www.google.com/",
+        "linkedin": "https://www.google.com/",
+        "instagram": "https://www.google.com/"
+    },
+    {
+        "img":"https://i.ibb.co/k0VGsrX/294706853-594656798735676-1883816395034222539-n-removebg-preview.png",
+        "name":"Rakib Mia",
+        "education": "B.Sc. in Chemistry, RU",
+        "Subject": "Chemistry",
+        "facebook": "https://www.google.com/",
+        "twitter": "https://www.google.com/",
+        "linkedin": "https://www.google.com/",
+        "instagram": "https://www.google.com/"
+    },
+    {
+        "img":"https://i.ibb.co/pjYWSz5/293666536-410740174208712-4704341600776933626-n.png",
+        "name":"Kausar Ahamed",
+        "education": "B.Sc. in Chemistry, BU",
+        "Subject": "Chemistry",
+        "facebook": "https://www.google.com/",
+        "twitter": "https://www.google.com/",
+        "linkedin": "https://www.google.com/",
+        "instagram": "https://www.google.com/"
+    },
+    {
+        "img":"https://i.ibb.co/PzND9YF/288865092-1499923620424923-4773973340299341148-n.png",
+        "name":"Saddam Hossain",
+        "education": "B.Sc. in Chemistry, CU",
+        "Subject": "Chemistry",
+        "facebook": "https://www.google.com/",
+        "twitter": "https://www.google.com/",
+        "linkedin": "https://www.google.com/",
+        "instagram": "https://www.google.com/"
+    },
+    {
+        "img": "https://i.ibb.co/5K8Jrcy/20210309-143715.jpg",
+        "name": "Faisal Karim",
+        "education": "B.A Honours in English, DU",
+        "Subject": "English",
+        "facebook": "https://www.google.com/",
+        "twitter": "https://www.google.com/",
+        "linkedin": "https://www.google.com/",
+        "instagram": "https://www.google.com/"
+      },
+      {
+        "img": "https://i.ibb.co/QcXxxGJ/me.jpg",
+        "name": "Hossain Rafi",
+        "education": "B.A Honours in English, JU",
+        "Subject": "English",
+        "facebook": "https://www.google.com/",
+        "twitter": "https://www.google.com/",
+        "linkedin": "https://www.google.com/",
+        "instagram": "https://www.google.com/"
+      },
+      {
+        "img": "https://i.ibb.co/k0VGsrX/294706853-594656798735676-1883816395034222539-n-removebg-preview.png",
+        "name": "Rakib Mia",
+        "education": "B.A Honours in English, RU",
+        "Subject": "English",
+        "facebook": "https://www.google.com/",
+        "twitter": "https://www.google.com/",
+        "linkedin": "https://www.google.com/",
+        "instagram": "https://www.google.com/"
+      },
+      {
+        "img": "https://i.ibb.co/pjYWSz5/293666536-410740174208712-4704341600776933626-n.png",
+        "name": "Kausar Ahamed",
+        "education": "B.A Honours in English, BU",
+        "Subject": "English",
+        "facebook": "https://www.google.com/",
+        "twitter": "https://www.google.com/",
+        "linkedin": "https://www.google.com/",
+        "instagram": "https://www.google.com/"
+      },
+      {
+        "img": " https://i.ibb.co/PzND9YF/288865092-1499923620424923-4773973340299341148-n.png",
+        "name": "Saddam Hossain",
+        "education": "B.A Honours in English, CU",
+        "Subject": "English",
+        "facebook": "https://www.google.com/",
+        "twitter": "https://www.google.com/",
+        "linkedin": "https://www.google.com/",
+        "instagram": "https://www.google.com/"
+      },
+    {
+        "img": "https://i.ibb.co/5K8Jrcy/20210309-143715.jpg",
+        "name": "Faisal Karim",
+        "education": "B.A Honours in Bengali, DU",
+        "Subject": "Bengali",
+        "facebook": "https://www.google.com/",
+        "twitter": "https://www.google.com/",
+        "linkedin": "https://www.google.com/",
+        "instagram": "https://www.google.com/"
+      },
+      {
+        "img": "https://i.ibb.co/QcXxxGJ/me.jpg",
+        "name": "Hossain Rafi",
+        "education": "B.A Honours in Bengali, JU",
+        "Subject": "Bengali",
+        "facebook": "https://www.google.com/",
+        "twitter": "https://www.google.com/",
+        "linkedin": "https://www.google.com/",
+        "instagram": "https://www.google.com/"
+      },
+      {
+        "img": "https://i.ibb.co/k0VGsrX/294706853-594656798735676-1883816395034222539-n-removebg-preview.png",
+        "name": "Rakib Mia",
+        "education": "B.A Honours in Bengali, RU",
+        "Subject": "Bengali",
+        "facebook": "https://www.google.com/",
+        "twitter": "https://www.google.com/",
+        "linkedin": "https://www.google.com/",
+        "instagram": "https://www.google.com/"
+      },
+      {
+        "img": "https://i.ibb.co/pjYWSz5/293666536-410740174208712-4704341600776933626-n.png",
+        "name": "Kausar Ahamed",
+        "education": "B.A Honours in Bengali, BU",
+        "Subject": "Bengali",
+        "facebook": "https://www.google.com/",
+        "twitter": "https://www.google.com/",
+        "linkedin": "https://www.google.com/",
+        "instagram": "https://www.google.com/"
+      },
+      {
+        "img": " https://i.ibb.co/PzND9YF/288865092-1499923620424923-4773973340299341148-n.png",
+        "name": "Saddam Hossain",
+        "education": "B.A Honours in Bengali, CU",
+        "Subject": "Bengali",
+        "facebook": "https://www.google.com/",
+        "twitter": "https://www.google.com/",
+        "linkedin": "https://www.google.com/",
+        "instagram": "https://www.google.com/"
+      },
+    {
+        "img": "https://i.ibb.co/5K8Jrcy/20210309-143715.jpg",
+        "name": "Faisal Karim",
+        "education": "B.Sc Honours in Mathematics, DU",
+        "Subject": "Mathematics",
+        "facebook": "https://www.google.com/",
+        "twitter": "https://www.google.com/",
+        "linkedin": "https://www.google.com/",
+        "instagram": "https://www.google.com/"
+      },
+      {
+        "img": "https://i.ibb.co/QcXxxGJ/me.jpg",
+        "name": "Hossain Rafi",
+        "education": "B.Sc Honours in Mathematics, JU",
+        "Subject": "Mathematics",
+        "facebook": "https://www.google.com/",
+        "twitter": "https://www.google.com/",
+        "linkedin": "https://www.google.com/",
+        "instagram": "https://www.google.com/"
+      },
+      {
+        "img": "https://i.ibb.co/k0VGsrX/294706853-594656798735676-1883816395034222539-n-removebg-preview.png",
+        "name": "Rakib Mia",
+        "education": "B.Sc Honours in Mathematics, RU",
+        "Subject": "Mathematics",
+        "facebook": "https://www.google.com/",
+        "twitter": "https://www.google.com/",
+        "linkedin": "https://www.google.com/",
+        "instagram": "https://www.google.com/"
+      },
+      {
+        "img": "https://i.ibb.co/pjYWSz5/293666536-410740174208712-4704341600776933626-n.png",
+        "name": "Kausar Ahamed",
+        "education": "B.Sc Honours in Mathematics, BU",
+        "Subject": "Mathematics",
+        "facebook": "https://www.google.com/",
+        "twitter": "https://www.google.com/",
+        "linkedin": "https://www.google.com/",
+        "instagram": "https://www.google.com/"
+      },
+      {
+        "img": " https://i.ibb.co/PzND9YF/288865092-1499923620424923-4773973340299341148-n.png",
+        "name": "Saddam Hossain",
+        "education": "B.Sc Honours in Mathematics, CU",
+        "Subject": "Mathematics",
+        "facebook": "https://www.google.com/",
+        "twitter": "https://www.google.com/",
+        "linkedin": "https://www.google.com/",
+        "instagram": "https://www.google.com/"
+      },
+    {
+        "img": "https://i.ibb.co/5K8Jrcy/20210309-143715.jpg",
+        "name": "Faisal Karim",
+        "education": "B.Sc Honours in Physics, DU",
+        "Subject": "Physics",
+        "facebook": "https://www.google.com/",
+        "twitter": "https://www.google.com/",
+        "linkedin": "https://www.google.com/",
+        "instagram": "https://www.google.com/"
+      },
+      {
+        "img": "https://i.ibb.co/QcXxxGJ/me.jpg",
+        "name": "Hossain Rafi",
+        "education": "B.Sc Honours in Physics, JU",
+        "Subject": "Physics",
+        "facebook": "https://www.google.com/",
+        "twitter": "https://www.google.com/",
+        "linkedin": "https://www.google.com/",
+        "instagram": "https://www.google.com/"
+      },
+      {
+        "img": "https://i.ibb.co/k0VGsrX/294706853-594656798735676-1883816395034222539-n-removebg-preview.png",
+        "name": "Rakib Mia",
+        "education": "B.Sc Honours in Physics, RU",
+        "Subject": "Physics",
+        "facebook": "https://www.google.com/",
+        "twitter": "https://www.google.com/",
+        "linkedin": "https://www.google.com/",
+        "instagram": "https://www.google.com/"
+      },
+      {
+        "img": "https://i.ibb.co/pjYWSz5/293666536-410740174208712-4704341600776933626-n.png",
+        "name": "Kausar Ahamed",
+        "education": "B.Sc Honours in Physics, BU",
+        "Subject": "Physics",
+        "facebook": "https://www.google.com/",
+        "twitter": "https://www.google.com/",
+        "linkedin": "https://www.google.com/",
+        "instagram": "https://www.google.com/"
+      },
+      {
+        "img": " https://i.ibb.co/PzND9YF/288865092-1499923620424923-4773973340299341148-n.png",
+        "name": "Saddam Hossain",
+        "education": "B.Sc Honours in Physics, CU",
+        "Subject": "Physics",
+        "facebook": "https://www.google.com/",
+        "twitter": "https://www.google.com/",
+        "linkedin": "https://www.google.com/",
+        "instagram": "https://www.google.com/"
+      },
+    {
+        "img": "https://i.ibb.co/5K8Jrcy/20210309-143715.jpg",
+        "name": "Faisal Karim",
+        "education": "B.Sc in CSE, DU",
+        "Subject": "Programming",
+        "facebook": "https://www.google.com/",
+        "twitter": "https://www.google.com/",
+        "linkedin": "https://www.google.com/",
+        "instagram": "https://www.google.com/"
+      },
+      {
+        "img": "https://i.ibb.co/QcXxxGJ/me.jpg",
+        "name": "Hossain Rafi",
+        "education": "B.Sc in CSE, JU",
+        "Subject": "Programming",
+        "facebook": "https://www.google.com/",
+        "twitter": "https://www.google.com/",
+        "linkedin": "https://www.google.com/",
+        "instagram": "https://www.google.com/"
+      },
+      {
+        "img": "https://i.ibb.co/k0VGsrX/294706853-594656798735676-1883816395034222539-n-removebg-preview.png",
+        "name": "Rakib Mia",
+        "education": "B.Sc in CSE, RU",
+        "Subject": "Programming",
+        "facebook": "https://www.google.com/",
+        "twitter": "https://www.google.com/",
+        "linkedin": "https://www.google.com/",
+        "instagram": "https://www.google.com/"
+      },
+      {
+        "img": "https://i.ibb.co/pjYWSz5/293666536-410740174208712-4704341600776933626-n.png",
+        "name": "Kausar Ahamed",
+        "education": "B.Sc in CSE, BU",
+        "Subject": "Programming",
+        "facebook": "https://www.google.com/",
+        "twitter": "https://www.google.com/",
+        "linkedin": "https://www.google.com/",
+        "instagram": "https://www.google.com/"
+      },
+      {
+        "img": " https://i.ibb.co/PzND9YF/288865092-1499923620424923-4773973340299341148-n.png",
+        "name": "Saddam Hossain",
+        "education": "B.Sc in CSE, CU",
+        "Subject": "Programming",
+        "facebook": "https://www.google.com/",
+        "twitter": "https://www.google.com/",
+        "linkedin": "https://www.google.com/",
+        "instagram": "https://www.google.com/"
+      },
+    {
+        "img": "https://i.ibb.co/5K8Jrcy/20210309-143715.jpg",
+        "name": "Faisal Karim",
+        "education": "BBA in Finance, DU",
+        "Subject": "Finance",
+        "facebook": "https://www.google.com/",
+        "twitter": "https://www.google.com/",
+        "linkedin": "https://www.google.com/",
+        "instagram": "https://www.google.com/"
+      },
+      {
+        "img": "https://i.ibb.co/QcXxxGJ/me.jpg",
+        "name": "Hossain Rafi",
+        "education": "BBA in Finance, JU",
+        "Subject": "Finance",
+        "facebook": "https://www.google.com/",
+        "twitter": "https://www.google.com/",
+        "linkedin": "https://www.google.com/",
+        "instagram": "https://www.google.com/"
+      },
+      {
+        "img": "https://i.ibb.co/k0VGsrX/294706853-594656798735676-1883816395034222539-n-removebg-preview.png",
+        "name": "Rakib Mia",
+        "education": "BBA in Finance, RU",
+        "Subject": "Finance",
+        "facebook": "https://www.google.com/",
+        "twitter": "https://www.google.com/",
+        "linkedin": "https://www.google.com/",
+        "instagram": "https://www.google.com/"
+      },
+      {
+        "img": "https://i.ibb.co/pjYWSz5/293666536-410740174208712-4704341600776933626-n.png",
+        "name": "Kausar Ahamed",
+        "education": "BBA in Finance, BU",
+        "Subject": "Finance",
+        "facebook": "https://www.google.com/",
+        "twitter": "https://www.google.com/",
+        "linkedin": "https://www.google.com/",
+        "instagram": "https://www.google.com/"
+      },
+      {
+        "img": " https://i.ibb.co/PzND9YF/288865092-1499923620424923-4773973340299341148-n.png",
+        "name": "Saddam Hossain",
+        "education": "BBA in Finance, CU",
+        "Subject": "Finance",
+        "facebook": "https://www.google.com/",
+        "twitter": "https://www.google.com/",
+        "linkedin": "https://www.google.com/",
+        "instagram": "https://www.google.com/"
+      },
+    {
+        "img": "https://i.ibb.co/5K8Jrcy/20210309-143715.jpg",
+        "name": "Faisal Karim",
+        "education": "B. A. in Religion Study, DU",
+        "Subject": "Religion",
+        "facebook": "https://www.google.com/",
+        "twitter": "https://www.google.com/",
+        "linkedin": "https://www.google.com/",
+        "instagram": "https://www.google.com/"
+      },
+      {
+        "img": "https://i.ibb.co/QcXxxGJ/me.jpg",
+        "name": "Hossain Rafi",
+        "education": "B. A. in Religion Study, JU",
+        "Subject": "Religion",
+        "facebook": "https://www.google.com/",
+        "twitter": "https://www.google.com/",
+        "linkedin": "https://www.google.com/",
+        "instagram": "https://www.google.com/"
+      },
+      {
+        "img": "https://i.ibb.co/k0VGsrX/294706853-594656798735676-1883816395034222539-n-removebg-preview.png",
+        "name": "Rakib Mia",
+        "education": "B. A. in Religion Study, RU",
+        "Subject": "Religion",
+        "facebook": "https://www.google.com/",
+        "twitter": "https://www.google.com/",
+        "linkedin": "https://www.google.com/",
+        "instagram": "https://www.google.com/"
+      },
+      {
+        "img": "https://i.ibb.co/pjYWSz5/293666536-410740174208712-4704341600776933626-n.png",
+        "name": "Kausar Ahamed",
+        "education": "B. A. in Religion Study, BU",
+        "Subject": "Religion",
+        "facebook": "https://www.google.com/",
+        "twitter": "https://www.google.com/",
+        "linkedin": "https://www.google.com/",
+        "instagram": "https://www.google.com/"
+      },
+      {
+        "img": " https://i.ibb.co/PzND9YF/288865092-1499923620424923-4773973340299341148-n.png",
+        "name": "Saddam Hossain",
+        "education": "B. A. in Religion Study, CU",
+        "Subject": "Religion",
+        "facebook": "https://www.google.com/",
+        "twitter": "https://www.google.com/",
+        "linkedin": "https://www.google.com/",
+        "instagram": "https://www.google.com/"
+      }
+  ]

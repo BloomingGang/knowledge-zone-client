@@ -81,7 +81,7 @@ const AllClass = () => {
               </li>
               <li>
                 <CustomLink
-                  className="w-full py-3 px-3 border-2 font-bold uppercase text-center rounded-lg"
+                  className="w-full py-3 px-3 border-2 font-bold uppercase text-center rounded-lg font"
                   to="/classes/five"
                 >
                   Class 5
