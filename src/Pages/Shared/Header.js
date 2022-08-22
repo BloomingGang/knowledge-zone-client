@@ -186,7 +186,7 @@ const Header = () => {
               onChange={(e) => setSearchCourse(e.target.value)}
               type="search"
               name="text"
-              placeholder="Search…"
+              placeholder="Search Courses"
               className="input"
             />
             <button onClick={(e) => handleSearch(e)} className="btn btn-square bg-blue-500 hover:bg-blue-500">

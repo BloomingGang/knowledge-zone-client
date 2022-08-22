@@ -45,7 +45,7 @@ const GradeFourToEight = () => {
   ];
 
   return (
-    <div className=" grid lg:grid-cols-2 grid-cols-1 items-center container mx-auto gap-5">
+    <div className=" grid lg:grid-cols-2 grid-cols-1 items-center container mx-auto gap-8">
       {programData.map((info) => (
         <ProgramCart key={info.id} info={info}></ProgramCart>
       ))}

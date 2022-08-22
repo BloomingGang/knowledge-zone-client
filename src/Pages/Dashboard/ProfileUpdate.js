@@ -115,7 +115,6 @@ const ProfileUpdate = ({ name, email, setShowProfile }) => {
                       type="text"
                       name="education"
                       className="input input-bordered"
-                      required
                     />
                   </div>
                   <div className="form-control">
@@ -124,7 +123,6 @@ const ProfileUpdate = ({ name, email, setShowProfile }) => {
                     </label>
                     <input
                       type="text"
-                      required
                       name="location"
                       className="input input-bordered"
                     />
@@ -135,7 +133,6 @@ const ProfileUpdate = ({ name, email, setShowProfile }) => {
                     </label>
                     <input
                       type="text"
-                      required
                       name="phone"
                       className="input input-bordered"
                     />
@@ -151,7 +148,6 @@ const ProfileUpdate = ({ name, email, setShowProfile }) => {
                       name="profileImg"
                       id="icon"
                       accept="image/png, image/jpeg, image/jpg"
-                      required
                       className="pl-1 border-0"
                     />
                   </div>
