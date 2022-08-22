@@ -7,9 +7,9 @@ const BlogInfo = () => {
   const [blog, setBlog] = useState([]);
   useEffect(() => {
     axios
-      .get(`https://immense-meadow-70411.herokuapp.com/blog/${id}`)
+      .get(`http://localhost:5000/blog/${id}`)
       .then((data) => setBlog(data.data));
-    // fetch(`https://immense-meadow-70411.herokuapp.com/book/${id}`)
+    // fetch(`http://localhost:5000/book/${id}`)
     //   .then((response) => response.json())
     //   .then((data) => setBook(data));
   }, [id]);

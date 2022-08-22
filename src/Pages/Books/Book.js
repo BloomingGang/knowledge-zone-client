@@ -27,7 +27,7 @@ const Book = ({ book }) => {
     }).then((result) => {
       if (result.isConfirmed) {
         Swal.fire("Deleted!", "Your file has been deleted.", "success");
-        const url = `https://immense-meadow-70411.herokuapp.com/bookDelete/${id}`;
+        const url = `http://localhost:5000/bookDelete/${id}`;
         fetch(url, {
           method: "DELETE",
         })

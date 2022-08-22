@@ -7,6 +7,8 @@ import logo from "../../img/assets/kz.png";
 import NavDropDown from "./NavDropDown";
 import { useQuery } from "react-query";
 import axios from "axios";
+import { data } from "autoprefixer";
+import SearchBook from "./SearchBook";
 
 const Header = () => {
   const [user] = useAuthState(auth);
@@ -20,15 +22,20 @@ const Header = () => {
 
   // CCIS => classes and courses infos
   const { data: ccis, refetch } = useQuery(["ccis"], () =>
-    fetch("https://immense-meadow-70411.herokuapp.com/ccis").then((res) =>
-      res.json()
-    )
+    fetch("http://localhost:5000/ccis").then((res) => res.json())
+  );
+  // CCIS => classes and courses infos
+  const { data: bookN } = useQuery(["bookN"], () =>
+    fetch("http://localhost:5000/bookN").then((res) => res.json())
   );
 
   const handleUnreadState = async (id) => {
-    const { data } = await axios.put(
-      `https://immense-meadow-70411.herokuapp.com/cci/${id}`
-    );
+    const { data } = await axios.put(`http://localhost:5000/cci/${id}`);
+    console.log(data);
+    refetch();
+  };
+  const handleUnreadStateBookN = async (id) => {
+    const { data } = await axios.put(`http://localhost:5000/bookN/${id}`);
     console.log(data);
     refetch();
   };
@@ -123,7 +130,8 @@ const Header = () => {
             <div class="card-body">
               <h3 class="card-title">
                 Latest updates!{" "}
-                <span className="text-purple-500">{ccis?.unreadCount}</span>
+                {/* <span className="text-purple-500">{bookN?.unreadCount}</span>
+                <span className="text-purple-500">{ccis?.unreadCount}</span> */}
               </h3>
               <div className="flex flex-col gap-y-2">
                 {ccis?.unreadData
@@ -137,6 +145,37 @@ const Header = () => {
                       <span
                         className={`${
                           cci.state === "read"
+                            ? "text-green-500"
+                            : "text-red-500"
+                        }`}
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="h-5 w-5"
+                          viewBox="0 0 20 20"
+                          fill="currentColor"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                            clip-rule="evenodd"
+                          />
+                        </svg>
+                      </span>
+                    </p>
+                  ))
+                  ?.reverse()}
+                {bookN?.unreadData
+                  ?.map((bookN) => (
+                    <p
+                      key={bookN?._id}
+                      className="flex justify-between shadow p-2 rounded"
+                      onClick={() => handleUnreadStateBookN(bookN?._id)}
+                    >
+                      <span>{bookN?.bookName}</span>
+                      <span
+                        className={`${
+                          bookN.state === "read"
                             ? "text-green-500"
                             : "text-red-500"
                         }`}
@@ -195,9 +234,19 @@ const Header = () => {
             className="rounded px-8 py-2"
             placeholder="Search Course"
           />
+          {/* <input
+            onChange={(e) => setSearchBook(e.target.value)}
+            type="search"
+            name="text"
+            className="rounded px-8 py-2"
+            placeholder="Search Book"
+          /> */}
           <button onClick={(e) => handleSearch(e)} className="btn btn-primary">
             search
           </button>
+          {/* <button onClick={(e) => handleBook(e)} className="btn btn-primary">
+            search2
+          </button> */}
         </div>
       </div>
 
