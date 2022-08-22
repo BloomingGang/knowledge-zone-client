@@ -52,6 +52,11 @@ const NavDropDown = () => {
               <Link to="/addBook">Add Book</Link>
             </li>
           )}
+          {admin && (
+            <li>
+              <Link to="/addBlog">Add Blog</Link>
+            </li>
+          )}
           <li>
             <button
               className="btn btn-ghost text-red-600 font-bold"

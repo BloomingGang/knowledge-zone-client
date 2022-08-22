@@ -61,6 +61,7 @@ import UpdateBook from "./Pages/Shared/UpdateBook";
 import MyProfile from "./Pages/Dashboard/MyProfile";
 import AddBook from "./Pages/Dashboard/AddBook";
 import SearchResult from "./Pages/Shared/SearchResult";
+import AddBlog from "./Pages/Dashboard/AddBlog";
 // import SearchBook from "./Pages/Shared/SearchBook";
 
 function App() {
@@ -178,6 +179,16 @@ function App() {
           element={
             <RequireAdmin>
               <AddBook />
+            </RequireAdmin>
+          }
+        >
+          {" "}
+        </Route>
+        <Route
+          path="/addBlog"
+          element={
+            <RequireAdmin>
+              <AddBlog />
             </RequireAdmin>
           }
         >
