@@ -36,7 +36,7 @@ const Users = () => {
 
   return (
     <div className="pt-4 pb-14">
-      <h1 className="text-3xl text-center font-bold text-primary  mt-4 mb-16">
+      <h1 className="text-3xl text-center font-bold text-violet-800  mt-4 mb-16">
         All Users
       </h1>
 
@@ -44,10 +44,10 @@ const Users = () => {
         <table className="table table-zebra w-full">
           <thead>
             <tr className="text-center">
-              <th className="text-xl">Serial No</th>
-              <th className="text-xl">Email</th>
-              <th className="text-xl">User Role</th>
-              <th className="text-xl">Delete User</th>
+              <th className="text-xl text-blue-600">Serial</th>
+              <th className="text-xl text-blue-600">Email</th>
+              <th className="text-xl text-blue-600">User Role</th>
+              <th className="text-xl text-red-500">Delete</th>
             </tr>
           </thead>
           <tbody>

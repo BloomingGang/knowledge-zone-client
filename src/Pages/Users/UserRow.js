@@ -1,3 +1,4 @@
+import { TrashIcon } from "@heroicons/react/solid";
 import React from "react";
 import { toast } from "react-toastify";
 import Swal from "sweetalert2";
@@ -65,9 +66,10 @@ const UserRow = ({ user, index }) => {
       <td>
         <button
           onClick={() => handleDelete(_id)}
-          className="btn btn-sm bg-red-600 hover:bg-red-500 border-0 "
+          // className="btn btn-sm bg-red-600 hover:bg-red-500 border-0 "
+          className="text-red-600 transition ease-in-out delay-100 hover:-translate-y-1 hover:scale-110 duration-300 mt-4 mx-2"
         >
-          Delete
+          <TrashIcon className="h-9 w-9 cursor-pointer" />
         </button>
       </td>
     </tr>
