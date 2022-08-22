@@ -9,7 +9,7 @@ const SendMessage = () => {
         className="card-body"
         target="_blank"
       >
-        <h1 className="text-2xl text-violet-800 text-center pb-4">Send Your Message Here</h1>
+        <h1 className="text-2xl text-violet-800 text-center pb-4">Send Your Message</h1>
         <div className="form-control">
           <div className="grid grid-cols-2 gap-4">
           <input
@@ -41,7 +41,7 @@ const SendMessage = () => {
         </div>
         <div className="form-control">
           <textarea
-            class="textarea textarea-primary pb-12"
+            class="textarea textarea-primary pb-16 resize-none"
             placeholder="Write your message here"
             name="message"
             required
