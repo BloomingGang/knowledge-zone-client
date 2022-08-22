@@ -47,3 +47,14 @@
     background-repeat: no-repeat, no-repeat;
     background-position: bottom right, top left;
   }
+
+
+  .contact{
+    background-image: url('../src/img/assets/contact.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: rgb(58, 15, 88);
+    background-blend-mode: overlay;
+  }

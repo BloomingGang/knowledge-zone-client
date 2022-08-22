@@ -3,7 +3,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick-theme.css";
 import "slick-carousel/slick/slick.css";
 import logo from "../../img/assets/kz.png";
-import brand from '../../img/assets/knowlwdge.png';
+import brand from '../../img/assets/1.png';
 import brand1 from '../../img/assets/2.png';
 import brand2 from '../../img/assets/3.png';
 import brand3 from '../../img/assets/4.png';
