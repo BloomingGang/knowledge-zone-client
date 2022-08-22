@@ -48,7 +48,7 @@ const Header = () => {
           }
           to="/classes"
         >
-          Academic Courses
+          Academic Course
         </NavLink>
       </li>
       <li className="mr-4 p-2 hover:bg-blue-500 rounded font-bold">
@@ -58,7 +58,7 @@ const Header = () => {
           }
           to="/courses"
         >
-          Skill Development Courses
+          Skill Development Course
         </NavLink>
       </li>
       <li className="mr-4 p-2 hover:bg-blue-500 rounded font-bold">
@@ -68,7 +68,7 @@ const Header = () => {
           }
           to="/books"
         >
-          Books
+          Book
         </NavLink>
       </li>
       <li className="mr-4 p-2 hover:bg-blue-500 rounded font-bold">
@@ -103,24 +103,21 @@ const Header = () => {
       </li>
 
       {/* notification panel */}
-      <li className="mr-4 p-2 hover:bg-blue-500 rounded font-bold">
+      <li className="mr-4 p-2 hover:bg-blue-500 rounded font-bold cursor-pointer">
         {/* panel credentials */}
         <div class="dropdown">
           <label tabindex="0" class="text-xl m-1">
-            <i className="text-violet-800 fa-solid fa-bell"></i>
-            {/* <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
-            </svg> */}
+            <i className="text-violet-800 fa-solid fa-bell cursor-pointer"></i>
           </label>
           <div
             tabindex="0"
-            class="dropdown-content card card-compact w-52 p-2 shadow bg-white h-[200px] overflow-auto"
+            class="dropdown-content card card-compact w-52  bg-gray-100 h-[415px] overflow-auto rounded-md"
           >
             <div class="card-body">
-              <h3 class="card-title">
-                Latest updates!{" "}
-                <span className="text-purple-500">{ccis?.unreadCount}</span>
-              </h3>
+              <span className="card-title flex justify-around border-b-4 text-red-500">
+                New{" "}
+                <span className="text-red-500">{ccis?.unreadCount}</span>
+              </span>
               <div className="flex flex-col gap-y-2">
                 {ccis?.unreadData
                   ?.map((cci) => (
@@ -159,9 +156,9 @@ const Header = () => {
         </div>
       </li>
 
-      <li className="mr-4 p-2 hover:bg-blue-500 rounded font-bold">
+      <li className="mr-4 p-2 hover:bg-blue-500 rounded cursor-pointer font-bold">
         {user ? (
-          <NavDropDown></NavDropDown>
+          <NavDropDown />
         ) : (
           <NavLink
             className={({ isActive }) =>
@@ -184,20 +181,6 @@ const Header = () => {
         </div>
 
         <div>
-          {/* <input
-            onChange={(e) => setSearchCourse(e.target.value)}
-            type="search"
-            name="text"
-            className="rounded px-8 py-2"
-            placeholder="Search Course"
-          />
-          <button
-            className="border-0 shadow-lg hover:bg-indigo-500 hover:text-black p-2 rounded-md bg-indigo-800 text-white font-bold transition duration-300"
-            onClick={(e) => handleSearch(e)}
-          >
-            Search
-          </button> */}
-
           <div class="input-group">
             <input
               onChange={(e) => setSearchCourse(e.target.value)}
