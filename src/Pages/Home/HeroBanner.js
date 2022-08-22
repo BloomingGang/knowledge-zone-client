@@ -3,7 +3,7 @@ import heroIMG from "../../img/assets/banner2.gif";
 
 const HeroBanner = () => {
   return (
-    <div className="hero pb-10">
+    <div className="hero pb-10 px-6">
       <div class="hero-content flex-col lg:flex-row-reverse ">
         <div className="w-1/2 flex justify-center">
           <img src={heroIMG} alt="banner" class="w-full" />
@@ -19,7 +19,6 @@ const HeroBanner = () => {
             classes with expert teachers for ages 4-18+, we have programs for
             every learner.
           </p>
-          {/* <button className="btn btn-primary">Explore Learning Programs</button> */}
         </div>
       </div>
     </div>

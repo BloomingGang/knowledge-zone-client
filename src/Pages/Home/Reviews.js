@@ -18,7 +18,6 @@ const Reviews = () => {
 
   const responsive = {
     superLargeDesktop: {
-      // the naming can be any, depends on you.
       breakpoint: { max: 4000, min: 3000 },
       items: 7,
     },
@@ -42,7 +41,7 @@ const Reviews = () => {
         <div className="container mx-auto">
           <div className="mb-12 w-full mx-auto">
             <h3 className="text-center text-4xl font-bold text-violet-800 pt-10">
-              Millions Of Happy Students And Counting
+              What Our Students Say About Us
             </h3>
           </div>
 
@@ -54,7 +53,7 @@ const Reviews = () => {
               {reviews.slice(-9).map((review, index) => (
                 <div key={index} class="p-4 w-full">
                   <div class="h-[250px] bg-indigo-100 p-8 rounded-xl">
-                    <img src={quote} width={30} alt="" />
+                    <img src={quote} width={30} alt="" className="pb-3" />
                     <p class="leading-relaxed mb-6">{review.comment}</p>
                     <a class="inline-flex items-center">
                       <img

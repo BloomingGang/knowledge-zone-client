@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 const CardK = () => {
   return (
-    <div>
+    <div className="px-6">
       <div className="hero py-16">
         <div className="hero-content flex-col lg:flex-row-reverse">
           <div className="lg:w-[60%] w-full flex justify-center  ">
