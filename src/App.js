@@ -57,10 +57,11 @@ import MyOrder from "./Pages/Shared/MyOrder/MyOrder";
 import AddCourse from "./Pages/Dashboard/AddCourse";
 import UpdateCourse from "./Pages/Shared/UpdateCourse";
 import AddReviwe from "./Pages/Home/LearningProgram/AddReviwe";
-import MyProfile from './Pages/Dashboard/MyProfile';
-import AddBook from './Pages/Dashboard/AddBook';
+import MyProfile from "./Pages/Dashboard/MyProfile";
+import AddBook from "./Pages/Dashboard/AddBook";
 import SearchResult from "./Pages/Shared/SearchResult";
 import PrivacyPolicy from "./Pages/Home/PrivacyPolicy";
+import AddInstructor from "./Pages/Dashboard/AddInstructor";
 
 function App() {
   return (
@@ -173,10 +174,7 @@ function App() {
         >
           {" "}
         </Route>
-        <Route
-          path="/searchCourse/:searchCourse"
-          element={<SearchResult />}
-        >
+        <Route path="/searchCourse/:searchCourse" element={<SearchResult />}>
           {" "}
         </Route>
 
@@ -207,6 +205,14 @@ function App() {
           element={
             <RequireAdmin>
               <AddBook />
+            </RequireAdmin>
+          }
+        />
+        <Route
+          path="/addInstructor"
+          element={
+            <RequireAdmin>
+              <AddInstructor></AddInstructor>
             </RequireAdmin>
           }
         />
