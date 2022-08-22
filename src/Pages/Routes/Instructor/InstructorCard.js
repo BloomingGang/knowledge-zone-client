@@ -22,9 +22,9 @@ const InstructorCard = ({ instructor, index }) => {
         />
       </figure>
 
-      <div className=" items-center text-center">
-        <h2 className=" text-primary">{name}</h2>
-        <h3>{education}</h3>
+      <div className=" items-center text-center pt-3">
+        <h2 className="text-2xl font-bold text-primary">{name}</h2>
+        <p className="pb-3">{education}</p>
         <div className="text-2xl sm:text-center">
           <a href={facebook} target={"_blank"}>
             <i className="fa-brands fa-facebook-square mr-4"></i>{" "}
@@ -36,16 +36,15 @@ const InstructorCard = ({ instructor, index }) => {
             <i className="fa-brands fa-youtube-square"></i>
           </a>
         </div>
-
         {admin && (
           <div>
             <div class="divider"></div>
             <div className="flex justify-between">
-              <button className="text-red-600 transition ease-in-out delay-100 hover:-translate-y-1 hover:scale-110 duration-300 mt-4 mx-2">
+              <button className="text-red-600 transition ease-in-out delay-100 hover:-translate-y-1 hover:scale-110 duration-300 mx-6 mb-4">
                 <TrashIcon className="h-9 w-9 cursor-pointer" />
               </button>
 
-              <button className="text-green-600 transition ease-in-out delay-100 hover:-translate-y-1 hover:scale-110 duration-300 mt-4 mx-2">
+              <button className="text-green-600 transition ease-in-out delay-100 hover:-translate-y-1 hover:scale-110 duration-300 mx-6 mb-4">
                 <PencilAltIcon className="h-9 w-9" />
               </button>
             </div>
