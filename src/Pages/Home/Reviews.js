@@ -18,7 +18,6 @@ const Reviews = () => {
 
   const responsive = {
     superLargeDesktop: {
-      // the naming can be any, depends on you.
       breakpoint: { max: 4000, min: 3000 },
       items: 7,
     },
@@ -42,7 +41,7 @@ const Reviews = () => {
         <div className="container mx-auto">
           <div className="mb-12 w-full mx-auto">
             <h3 className="text-center text-4xl font-bold text-violet-800 pt-10">
-              Millions Of Happy Students And Counting
+              What Our Students Say About Us
             </h3>
           </div>
 
@@ -51,40 +50,38 @@ const Reviews = () => {
           </div>
           <div>
             <Carousel swipeable="true" responsive={responsive} infinite={true}>
-              {reviews
-                .slice(reviews.length - 3, reviews.length)
-                .map((review, index) => (
-                  <div key={index} class="p-4 w-full">
-                    <div class="h-full bg-indigo-100 p-8 rounded-xl">
-                      <img src={quote} width={30} alt="" />
-                      <p class="leading-relaxed mb-6">{review.comment}</p>
-                      <a class="inline-flex items-center">
-                        <img
-                          alt=""
-                          src={review.image}
-                          class="w-14 h-14 rounded-full flex-shrink-0 object-cover object-center"
-                        />
-                        <span class="flex-grow flex flex-col pl-4">
-                          <p>
-                            <Rating
-                              readonly
-                              initialRating={review.ratting}
-                              emptySymbol={
-                                <AiOutlineStar color="orange" size={"15px"} />
-                              }
-                              fullSymbol={
-                                <AiFillStar color="orange" size={"15px"} />
-                              }
-                            />
-                          </p>
-                          <span class="title-font font-medium text-indigo-800">
-                            {review.name}
-                          </span>
+              {reviews.slice(-9).map((review, index) => (
+                <div key={index} class="p-4 w-full">
+                  <div class="h-[250px] bg-indigo-100 p-8 rounded-xl">
+                    <img src={quote} width={30} alt="" className="pb-3" />
+                    <p class="leading-relaxed mb-6">{review.comment}</p>
+                    <a class="inline-flex items-center">
+                      <img
+                        alt=""
+                        src={review.image}
+                        class="w-14 h-14 rounded-full flex-shrink-0 object-cover object-center"
+                      />
+                      <span class="flex-grow flex flex-col pl-4">
+                        <p>
+                          <Rating
+                            readonly
+                            initialRating={review.ratting}
+                            emptySymbol={
+                              <AiOutlineStar color="orange" size={"15px"} />
+                            }
+                            fullSymbol={
+                              <AiFillStar color="orange" size={"15px"} />
+                            }
+                          />
+                        </p>
+                        <span class="title-font font-medium text-indigo-800">
+                          {review.name}
                         </span>
-                      </a>
-                    </div>
+                      </span>
+                    </a>
                   </div>
-                ))}
+                </div>
+              ))}
             </Carousel>
           </div>
         </div>

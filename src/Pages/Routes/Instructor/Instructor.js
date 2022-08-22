@@ -1,5 +1,5 @@
 import React from "react";
-import {  Outlet } from "react-router-dom";
+import { Outlet } from "react-router-dom";
 import LiveChat from "../../ContactUs/LiveChat";
 import CustomLink from "../../Shared/CustomLink";
 
@@ -31,7 +31,7 @@ const Instructor = () => {
           className="drawer-toggle"
         />
         <div className="drawer-content">
-          <h2 className="text-5xl text-center font-bold text-primary mb-12 font-serif">
+          <h2 className="text-5xl text-center font-bold text-primary mb-12  ">
             Our Instructors
           </h2>
           <Outlet></Outlet>

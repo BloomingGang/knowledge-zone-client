@@ -1,9 +1,4 @@
 import React, { useEffect, useState } from "react";
-import img1 from "../../../img/assets/10001.jpg";
-import img2 from "../../../img/assets/10002.jpg";
-import img3 from "../../../img/assets/10003.jpg";
-import img4 from "../../../img/assets/10005 (2).jpg";
-import img5 from "../../../img/assets/10006 (2).jpg";
 import Loading from "../../Shared/Loading";
 import InstructorCard from "./InstructorCard";
 

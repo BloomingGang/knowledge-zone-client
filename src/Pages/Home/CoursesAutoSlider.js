@@ -2,30 +2,35 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick-theme.css";
 import "slick-carousel/slick/slick.css";
+import logo from "../../img/assets/kz.png";
+import brand from '../../img/assets/knowlwdge.png';
+import brand1 from '../../img/assets/2.png';
+import brand2 from '../../img/assets/3.png';
+import brand3 from '../../img/assets/4.png';
+import brand4 from '../../img/assets/5.png';
+import brand5 from '../../img/assets/6.png';
 
 const CoursesAutoSlider = () => {
     const sliderItems = [
         {
-            course: "Math"
+            course: brand
         },
         {
-            course: "English"
+            course: brand1
         },
         {
-            course: "Bangla"
+            course: brand2
         },
         {
-            course: "Music"
+            course: brand3
         },
         {
-            course: "Psycology"
+            course: brand4
         },
         {
-            course: "Sociology"
+            course: brand5
         },
-        {
-            course: "Coding"
-        },
+       
     ]
     var settings = {
         infinite: true,
@@ -66,7 +71,7 @@ const CoursesAutoSlider = () => {
     return (
         <div className="bg-gradient-to-r from-blue-800 via-indigo-800 to-purple-800 py-12 px-7">
             <div className="">
-                <img style={{ marginTop: "-100px" }} width={100} className='bg-blue-200 p-3 rounded-full mx-auto' src="/images/logo/kz.png" alt="" />
+                <img style={{ marginTop: "-100px" }} width="60" height="60" className='mx-auto' src={logo} alt="" />
             </div>
 
             <h1 className="text-white text-center text-3xl my-8">Our Brands & Products</h1>
@@ -78,16 +83,16 @@ const CoursesAutoSlider = () => {
 
                         sliderItems.map((item, index) => <div>
                             <div
-                                className="bg-white p-6 rounded-2xl m-4 font-bold text-center"
+                                // className="bg-white p-6 rounded-2xl m-4 font-bold text-center"
                                 key={index}>
-                                <i className="text-2xl text-indigo-900">K<span className="text-purple-900">Z</span></i>
-                                <h2 className="text-orange-700 text-2xl">{item.course}</h2>
+                                {/* <i className="text-2xl text-indigo-900">K<span className="text-purple-900">Z</span></i>
+                                <h2 className="text-orange-700 text-2xl">{item.course}</h2> */}
+                                <img    className="rounded-xl" src={item.course} alt="" />
                             </div>
                         </div>)
                     }
-
-                </Slider>
-            </div>
+        </Slider>
+      </div>
     </div>
   );
 };
