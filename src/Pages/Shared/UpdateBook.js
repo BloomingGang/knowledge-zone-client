@@ -6,13 +6,13 @@ import Loading from "./Loading";
 
 const UpdateBook = () => {
   const { id } = useParams();
-  const [updateBook, serUpdateBook] = useState({});
+  const [updateBook, setUpdateBook] = useState({});
   const [loading, setLoading] = useState(true);
   const navigate = useNavigate();
   useEffect(() => {
     axios
       .get(`http://localhost:5000/books/${id}`)
-      .then((res) => serUpdateBook(res.data));
+      .then((res) => setUpdateBook(res.data));
     setLoading(false);
   }, [id]);
   if (loading) {

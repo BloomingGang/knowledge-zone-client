@@ -62,6 +62,7 @@ import MyProfile from "./Pages/Dashboard/MyProfile";
 import AddBook from "./Pages/Dashboard/AddBook";
 import SearchResult from "./Pages/Shared/SearchResult";
 import AddBlog from "./Pages/Dashboard/AddBlog";
+import UpdateBlog from "./Pages/Shared/UpdateBlog";
 // import SearchBook from "./Pages/Shared/SearchBook";
 
 function App() {
@@ -160,6 +161,15 @@ function App() {
             <RequireAuth>
               {" "}
               <UpdateBook />{" "}
+            </RequireAuth>
+          }
+        ></Route>
+        <Route
+          path="/updateBlog/:id"
+          element={
+            <RequireAuth>
+              {" "}
+              <UpdateBlog />{" "}
             </RequireAuth>
           }
         ></Route>
