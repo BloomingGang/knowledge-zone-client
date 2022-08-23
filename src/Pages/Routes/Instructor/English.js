@@ -5,7 +5,6 @@ import InstructorCard from "./InstructorCard";
 const English = () => {
   const [instructors, setInstructors] = useState([]);
   const [loading, setLoading] = useState(true);
-  console.log(instructors);
   useEffect(() => {
     fetch("http://localhost:5000/instructors/English")
       .then((res) => res.json())
