@@ -46,36 +46,30 @@ const MyProfile = () => {
 
           <div className="md:text-justify text-2xl md:text-3xl">
             <p className=" py-1 font-semibold pt-5">
-              Name: <span className=" font-normal pl-3">{name}</span>
+              Name: <span className="font-normal pl-3">{name}</span>
             </p>
             <p className=" py-1 font-semibold pt-5">
-              Email: <span className=" font-normal pl-3">{email}</span>
+              Email: <span className="font-normal pl-3">{email}</span>
             </p>
-            <p className=" py-1 font-semibold pt-5">
+            <p className="py-1 font-semibold pt-5">
               Education:{" "}
-              <span className=" font-normal pl-3">
-                {education || "Not found"}
+              <span className="font-normal pl-3">
+                {education || "Not Updated"}
               </span>
             </p>
-            <p className=" py-1 font-semibold pt-5">
+            <p className="py-1 font-semibold pt-5">
               Location:{" "}
-              <span className=" font-normal pl-3">
-                {location || "Not found"}
+              <span className="font-normal pl-3">
+                {location || "Not Updated"}
               </span>
             </p>
-            <p className=" py-1 font-semibold pt-5">
+            <p className="py-1 font-semibold pt-5">
               Phone:{" "}
-              <span className=" font-normal pl-3"> {phone || "Not found"}</span>
+              <span className="font-normal pl-3">
+                {" "}
+                {phone || "Not Updated"}
+              </span>
             </p>
-            {/* <div className="card-actions justify-center">
-            <label
-              for="profileUpdate"
-              onClick={() => setShowProfile(true)}
-              className="border-2 shadow-lg hover:bg-indigo-500 hover:text-black p-2 rounded-lg bg-indigo-800 text-white font-bold transition duration-300"
-            >
-              UPDATE YOUR PROFILE
-            </label>
-          </div> */}
           </div>
         </div>
         {showProfile && (
