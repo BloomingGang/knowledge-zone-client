@@ -73,7 +73,7 @@ const SkillDevCourses = () => {
     return (
         <div>
         <div className="container mx-auto py-24">
-           <h1 className='text-4xl font-bold text-center text-violet-800 pb-12'>Academic Courses</h1>
+           <h1 className='text-4xl font-bold text-center text-violet-800 pb-12'>Skill Development Courses</h1>
    <Slider {...settings}>
      {skillDevelopment.map((courses, index) => (
        <div>
