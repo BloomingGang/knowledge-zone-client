@@ -5,7 +5,6 @@ import InstructorCard from "./InstructorCard";
 const Physics = () => {
   const [instructors, setInstructors] = useState([]);
   const [loading, setLoading] = useState(true);
-  console.log(instructors);
   useEffect(() => {
     fetch("http://localhost:5000/instructors/Physics")
       .then((res) => res.json())
