@@ -11,22 +11,22 @@ const InstructorCard = ({ instructor, index }) => {
   return (
     <div
       key={index}
-      className="card card-compact bg-gray-100 transition ease-in-out delay-150 hover:-translate-1 hover:scale-110 duration-300"
+      className="bg-gray-100 transition ease-in-out delay-150 hover:-translate-1 hover:scale-110 duration-300 rounded-lg"
     >
       <figure>
         <img
           style={{ height: "350px" }}
           src={img}
           alt="instructor"
-          className="rounded-t-xl w-full"
+          className="rounded-t-lg w-full"
         />
       </figure>
 
-      <div className=" items-center text-center pt-3">
+      <div className="items-center text-center pt-3">
         <h2 className="text-2xl font-bold text-primary">{name}</h2>
         <p className="pb-3">{education}</p>
         <div className="text-2xl sm:text-center">
-          <a href={facebook} target={"_blank"}>
+          <a href={facebook} target={"_blank"} rel="noreferrer">
             <i className="fa-brands fa-facebook-square mr-4"></i>{" "}
           </a>
           <a href={twitter} target={"_blank"} rel="noreferrer">

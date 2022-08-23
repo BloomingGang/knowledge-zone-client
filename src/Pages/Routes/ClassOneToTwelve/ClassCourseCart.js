@@ -34,19 +34,18 @@ const ClassCourseCart = ({ course }) => {
 
   return (
     <section>
-      <div className="card card-compact bg-gray-100 transition ease-in-out delay-150 hover:-translate-1 hover:scale-105 duration-300">
+      <div className="bg-gray-100 transition ease-in-out delay-150 hover:-translate-1 hover:scale-105 duration-300 rounded-lg">
         <figure>
           <img
-            className="w-full"
+            className="w-full rounded-t-lg"
             src={img}
             alt="course"
           />
         </figure>
-        <div className="card-body">
-          <h2 className="card-title"> {title}</h2>
+        <div className="px-5">
+          <h2 className="text-center pt-3 font-bold text-xl text-violet-800"> {title}</h2>
           <div class="divider"></div>
-
-          <div className="flex  justify-between items-center">
+          <div className="flex justify-between items-center">
             <span className="text-2xl font-bold text-green-700">$ {price}</span>
             <button
               className="border-2 shadow-lg hover:bg-indigo-500 hover:text-black p-2 rounded-lg bg-indigo-800 text-white font-bold transition duration-300"
@@ -59,10 +58,10 @@ const ClassCourseCart = ({ course }) => {
           {admin && (
             <div>
               <div class="divider"></div>
-              <div className="flex justify-between">
+              <div className="flex justify-between pb-4">
                 <button
                   onClick={() => handleDeleteCourse(_id)}
-                  className="text-red-600 transition ease-in-out delay-100 hover:-translate-y-1 hover:scale-110 duration-300 mt-4 mx-2"
+                  className="text-red-600 transition ease-in-out delay-100 hover:-translate-y-1 hover:scale-110 duration-300 mx-2"
                 >
                   <label onClick={() => setModal(true)} for="my-modal-6">
                  
@@ -72,7 +71,7 @@ const ClassCourseCart = ({ course }) => {
 
                 <button
                   onClick={() => handleCourseUpdate(_id)}
-                  className="text-green-600 transition ease-in-out delay-100 hover:-translate-y-1 hover:scale-110 duration-300 mt-4 mx-2"
+                  className="text-green-600 transition ease-in-out delay-100 hover:-translate-y-1 hover:scale-110 duration-300 mx-2"
                 >
                   <PencilAltIcon className="h-9 w-9" />
                 </button>
