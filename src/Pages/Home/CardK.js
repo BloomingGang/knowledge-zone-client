@@ -17,8 +17,7 @@ const CardK = () => {
             />
           </div>
           <div className="px-16  lg:w-[40%]">
-            <h1 className="text-5xl font-bold">Available on all Platforms</h1>
-            <h1 className="text-indigo-700 font-bold">Our products can be used on all devices.</h1>
+            <h1 className="text-4xl font-bold text-center pb-5 text-violet-800">Available For All Platforms</h1>
             <img src={devices} alt="" />
           </div>
         </div>
