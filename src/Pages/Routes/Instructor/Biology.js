@@ -15,7 +15,7 @@ const Biology = () => {
       });
   }, []);
   if (loading) {
-    <Loading></Loading>;
+    <Loading />;
   }
 
   return (

@@ -15,7 +15,7 @@ const Chemistry = () => {
       });
   }, []);
   if (loading) {
-    <Loading></Loading>;
+    <Loading />;
   }
 
   return (

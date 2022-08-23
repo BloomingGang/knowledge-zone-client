@@ -15,7 +15,7 @@ const UpdateCourse = () => {
     setLoading(false);
   }, [id]);
   if (loading) {
-    return <Loading></Loading>;
+    return <Loading />;
   }
   const {
     notes,
