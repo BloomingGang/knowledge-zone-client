@@ -1,4 +1,5 @@
 import React from "react";
+import BooksCarousel from "../Books/BooksCarousel";
 import LiveChat from "../ContactUs/LiveChat";
 import CardK from "./CardK";
 import CardOne from "./CardOne";
@@ -18,6 +19,7 @@ const Home = () => {
       <Learners />
       <LearningProgram />
       <CardK />
+      <BooksCarousel />
       <Reviews />
       {/* <EduBanner /> */}
       <Investor />
