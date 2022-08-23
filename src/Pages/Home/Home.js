@@ -1,5 +1,6 @@
 import React from "react";
 import LiveChat from "../ContactUs/LiveChat";
+import AcademicCourses from "./AcademicCourses";
 import CardK from "./CardK";
 import CardOne from "./CardOne";
 import CarouselOne from "./CarouselOne";
@@ -10,11 +11,14 @@ import Investor from "./Investor";
 import Learners from "./Learners";
 import LearningProgram from "./LearningProgram/LearningProgram";
 import Reviews from "./Reviews";
+import SkillDevCourses from "./SkillDevCourses";
 
 const Home = () => {
   return (
     <div>
       <HeroBanner />
+      <AcademicCourses/>
+      <SkillDevCourses/>
       {/* <Learners /> */}
       {/* <LearningProgram /> */}
       {/* <CardK /> */}
