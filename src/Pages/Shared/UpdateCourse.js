@@ -1,7 +1,7 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
+import toast from "react-hot-toast";
 import { useParams } from "react-router-dom";
-import { toast } from "react-toastify";
 import Loading from "./Loading";
 
 const UpdateCourse = () => {
@@ -15,7 +15,7 @@ const UpdateCourse = () => {
     setLoading(false);
   }, [id]);
   if (loading) {
-    return <Loading></Loading>;
+    return <Loading />;
   }
   const {
     notes,

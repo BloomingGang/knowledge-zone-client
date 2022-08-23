@@ -18,11 +18,11 @@ const Home = () => {
     <div>
       <HeroBanner />
       <AcademicCourses/>
-      <Learners />
       <SkillDevCourses/>
-      {/* <LearningProgram />
-      <CardK />
-      <Reviews /> */}
+      {/* <Learners /> */}
+      {/* <LearningProgram /> */}
+      {/* <CardK /> */}
+      <Reviews />
       {/* <EduBanner /> */}
       <Investor />
       {/* <CarouselOne /> */}

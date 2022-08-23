@@ -14,7 +14,7 @@ const ClassFour = () => {
       });
   }, []);
   if (loading) {
-    return <Loading></Loading>;
+    return <Loading />;
   }
   return (
     <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6 p-6 ">
