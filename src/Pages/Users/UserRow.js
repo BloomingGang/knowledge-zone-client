@@ -1,6 +1,6 @@
 import { TrashIcon } from "@heroicons/react/solid";
 import React from "react";
-import { toast } from "react-toastify";
+import toast from "react-hot-toast";
 import Swal from "sweetalert2";
 
 const UserRow = ({ user, index }) => {

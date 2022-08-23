@@ -5,7 +5,6 @@ import InstructorCard from "./InstructorCard";
 const Mathematics = () => {
   const [instructors, setInstructors] = useState([]);
   const [loading, setLoading] = useState(true);
-  console.log(instructors);
   useEffect(() => {
     fetch("http://localhost:5000/instructors/Mathematics")
       .then((res) => res.json())
@@ -15,7 +14,7 @@ const Mathematics = () => {
       });
   }, []);
   if (loading) {
-    <Loading></Loading>;
+    <Loading />;
   }
 
   return (
