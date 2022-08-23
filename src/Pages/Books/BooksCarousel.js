@@ -1,9 +1,13 @@
 import React, { useEffect, useState } from "react";
 import Carousel from "react-multi-carousel";
-import Book from "./Book";
+import { useNavigate } from "react-router-dom";
 
 const BooksCarousel = () => {
   const [books, setBooks] = useState([]);
+  const navigate = useNavigate();
+  const handleBook = (id) => {
+    navigate(`/book/${id}`);
+  };
   useEffect(() => {
     fetch(`http://localhost:5000/books`)
       .then((response) => response.json())
@@ -11,13 +15,12 @@ const BooksCarousel = () => {
   }, []);
   const responsive = {
     superLargeDesktop: {
-      // the naming can be any, depends on you.
       breakpoint: { max: 4000, min: 3000 },
       items: 7,
     },
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
-      items: 3,
+      items: 4,
     },
     tablet: {
       breakpoint: { max: 1024, min: 464 },
@@ -45,7 +48,13 @@ const BooksCarousel = () => {
             <Carousel swipeable="true" responsive={responsive} infinite={true}>
               {books?.slice(-6).map((book, index) => (
                 <div>
-                  <Book key={index} book={book}></Book>
+                  <img src={book.img} alt="" />
+                  <button
+                    className="border-2 shadow-lg hover:bg-indigo-500 hover:text-black p-2 rounded-lg bg-indigo-800 text-white font-bold transition duration-300 "
+                    onClick={() => handleBook(book._id)}
+                  >
+                    Details
+                  </button>
                 </div>
               ))}
             </Carousel>

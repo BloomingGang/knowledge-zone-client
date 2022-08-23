@@ -14,10 +14,14 @@ const Header = () => {
   const [user] = useAuthState(auth);
   const [open, setOpen] = useState(false);
   const [searchCourse, setSearchCourse] = useState("");
+  const [searchBook, setSearchBook] = useState("");
   const navigate = useNavigate();
 
   const handleSearch = () => {
     navigate(`/searchCourse/${searchCourse}`);
+  };
+  const handleBook = () => {
+    navigate(`/searchBook/${searchBook}`);
   };
 
   // CCIS => classes and courses infos
@@ -130,8 +134,10 @@ const Header = () => {
             <div class="card-body">
               <h3 class="card-title">
                 Latest updates!{" "}
-                {/* <span className="text-purple-500">{bookN?.unreadCount}</span>
-                <span className="text-purple-500">{ccis?.unreadCount}</span> */}
+                <span className="text-purple-500">
+                  {bookN?.unreadCount + ccis?.unreadCount}
+                </span>
+                {/* <span className="text-purple-500">{ccis?.unreadCount}</span> */}
               </h3>
               <div className="flex flex-col gap-y-2">
                 {ccis?.unreadData
@@ -234,19 +240,19 @@ const Header = () => {
             className="rounded px-8 py-2"
             placeholder="Search Course"
           />
-          {/* <input
+          <input
             onChange={(e) => setSearchBook(e.target.value)}
             type="search"
             name="text"
             className="rounded px-8 py-2"
             placeholder="Search Book"
-          /> */}
+          />
           <button onClick={(e) => handleSearch(e)} className="btn btn-primary">
             search
           </button>
-          {/* <button onClick={(e) => handleBook(e)} className="btn btn-primary">
+          <button onClick={(e) => handleBook(e)} className="btn btn-primary">
             search2
-          </button> */}
+          </button>
         </div>
       </div>
 
