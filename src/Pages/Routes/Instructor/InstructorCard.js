@@ -1,15 +1,21 @@
 import { PencilAltIcon, TrashIcon } from "@heroicons/react/solid";
 import React from "react";
 import { useAuthState } from "react-firebase-hooks/auth";
+import { useNavigate } from "react-router-dom";
 import Swal from "sweetalert2";
 import auth from "../../../firebase.init";
 import useAdmin from "../../../hooks/useAdmin";
 
 const InstructorCard = ({ instructor, index }) => {
-  const { _id, name, img, education, facebook, twitter, instagram } =
+  const { _id, name, img, education, Subject, facebook, twitter, instagram } =
     instructor;
   const [user] = useAuthState(auth);
   const [admin] = useAdmin(user);
+  const navigate = useNavigate();
+
+  const handleUpdateInstructor = (id) => {
+    navigate(`/${Subject}/newAdd/${id}`);
+  };
 
   const handleDeleteInstructor = (id) => {
     Swal.fire({
@@ -58,7 +64,7 @@ const InstructorCard = ({ instructor, index }) => {
             <i className="fa-brands fa-twitter-square mr-4"></i>{" "}
           </a>
           <a href={instagram} target={"_blank"} rel="noreferrer">
-            <i className="fa-brands fa-youtube-square"></i>
+            <i className="fa-brands fa-instagram-square"></i>
           </a>
         </div>
         {admin && (
@@ -72,7 +78,10 @@ const InstructorCard = ({ instructor, index }) => {
                 <TrashIcon className="h-9 w-9 cursor-pointer" />
               </button>
 
-              <button className="text-green-600 transition ease-in-out delay-100 hover:-translate-y-1 hover:scale-110 duration-300 mx-6 mb-4">
+              <button
+                onClick={() => handleUpdateInstructor(_id)}
+                className="text-green-600 transition ease-in-out delay-100 hover:-translate-y-1 hover:scale-110 duration-300 mx-6 mb-4"
+              >
                 <PencilAltIcon className="h-9 w-9" />
               </button>
             </div>
