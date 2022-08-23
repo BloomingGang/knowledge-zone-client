@@ -61,7 +61,11 @@ const ClassCourseCart = ({ course }) => {
               <div className="flex justify-between pb-4">
                 <button
                   onClick={() => handleDeleteCourse(_id)}
+
                   className="text-red-600 transition ease-in-out delay-100 hover:-translate-y-1 hover:scale-110 duration-300 mx-2"
+
+             
+
                 >
                   <label onClick={() => setModal(true)} for="my-modal-6">
                  
@@ -71,7 +75,10 @@ const ClassCourseCart = ({ course }) => {
 
                 <button
                   onClick={() => handleCourseUpdate(_id)}
+
                   className="text-green-600 transition ease-in-out delay-100 hover:-translate-y-1 hover:scale-110 duration-300 mx-2"
+
+                 
                 >
                   <PencilAltIcon className="h-9 w-9" />
                 </button>
