@@ -1,7 +1,7 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { useAuthState } from "react-firebase-hooks/auth";
-import { Link, useNavigate, useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import auth from "../../../firebase.init";
 import Loading from "../Loading";
 
@@ -20,7 +20,7 @@ const ClassCourseDetails = () => {
     setLoading(false);
   }, [id]);
   if (loading) {
-    return <Loading></Loading>;
+    return <Loading />;
   }
   const {
     title,

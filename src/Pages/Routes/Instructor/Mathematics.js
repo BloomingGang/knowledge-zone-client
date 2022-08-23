@@ -15,7 +15,7 @@ const Mathematics = () => {
       });
   }, []);
   if (loading) {
-    <Loading></Loading>;
+    <Loading />;
   }
 
   return (
