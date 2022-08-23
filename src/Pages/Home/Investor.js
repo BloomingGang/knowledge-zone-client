@@ -134,7 +134,7 @@ const Investor = () => {
           {investors.map((investor, index) => (
             <div key={index}>
               <div className="py-16 px-6">
-                <div className="card bg-base-100 shadow-xl h-[500px]">
+                <div className="card bg-base-100 shadow-xl min-h-[500px]">
                   <figure className="px-10 pt-6">
                     <img
                       src={investor.avatar}
