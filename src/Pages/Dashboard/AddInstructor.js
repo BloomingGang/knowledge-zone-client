@@ -28,7 +28,7 @@ const AddInstructor = () => {
     const twitter = event.target.twitter.value;
 
     const addInstructor = {
-      subject: subject,
+      Subject: subject,
       name: name,
       img: getImg,
       education: education,
@@ -44,8 +44,6 @@ const AddInstructor = () => {
         toast.success(`Instructor added successfully!!`);
         event.target.reset();
       });
-
-    console.log(addInstructor);
   };
   return (
     <div className="p-12 bg-violet-200">
