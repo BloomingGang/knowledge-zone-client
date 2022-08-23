@@ -62,6 +62,7 @@ import AddBook from "./Pages/Dashboard/AddBook";
 import SearchResult from "./Pages/Shared/SearchResult";
 import PrivacyPolicy from "./Pages/Home/PrivacyPolicy";
 import AddInstructor from "./Pages/Dashboard/AddInstructor";
+import UpdateInstructor from "./Pages/Dashboard/UpdateInstructor";
 
 function App() {
   return (
@@ -216,6 +217,16 @@ function App() {
             </RequireAdmin>
           }
         />
+
+        <Route
+          path="/:Subject/newAdd/:id"
+          element={
+            <RequireAuth>
+              <UpdateInstructor />
+            </RequireAuth>
+          }
+        ></Route>
+
         <Route
           path="/books"
           element={
