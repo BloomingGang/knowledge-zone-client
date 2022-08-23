@@ -14,7 +14,7 @@ const Finance = () => {
       });
   }, []);
   if (loading) {
-    <Loading></Loading>;
+    <Loading />;
   }
 
   return (

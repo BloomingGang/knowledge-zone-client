@@ -14,7 +14,7 @@ const English = () => {
       });
   }, []);
   if (loading) {
-    <Loading></Loading>;
+    <Loading />;
   }
 
   return (

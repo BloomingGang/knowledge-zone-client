@@ -14,7 +14,7 @@ const Programming = () => {
       });
   }, []);
   if (loading) {
-    <Loading></Loading>;
+    <Loading />;
   }
 
   return (

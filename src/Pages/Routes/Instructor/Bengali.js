@@ -14,7 +14,7 @@ const Bengali = () => {
       });
   }, []);
   if (loading) {
-    <Loading></Loading>;
+    <Loading />;
   }
 
   return (

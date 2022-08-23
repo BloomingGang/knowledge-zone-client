@@ -15,7 +15,7 @@ const FreeCourse = () => {
   }, []);
 
   if (loading) {
-    return <Loading></Loading>;
+    return <Loading />;
   }
 
   return (

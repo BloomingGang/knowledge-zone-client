@@ -15,13 +15,13 @@ const Home = () => {
   return (
     <div>
       <HeroBanner />
-      <Learners />
-      <LearningProgram />
-      <CardK />
+      {/* <Learners /> */}
+      {/* <LearningProgram /> */}
+      {/* <CardK /> */}
       <Reviews />
       {/* <EduBanner /> */}
       <Investor />
-      <CarouselOne />
+      {/* <CarouselOne /> */}
       <CardOne />
       <CoursesAutoSlider />
       <LiveChat />
