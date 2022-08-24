@@ -99,16 +99,16 @@
 //           <div className="border-2 rounded-xl">
 //             <div className="p-6">
 //               <p>
-//                 <i class="text-indigo-900 mr-4 font-bold text-xl fa-solid fa-angles-right"></i>
+//                 <i class="text-violet-900 mr-4 font-bold text-xl fa-solid fa-angles-right"></i>
 //                 {objective.point1}
 //               </p>
 //               <p>
-//                 <i class="text-indigo-900 mr-4 font-bold text-xl fa-solid fa-angles-right"></i>{" "}
+//                 <i class="text-violet-900 mr-4 font-bold text-xl fa-solid fa-angles-right"></i>{" "}
 //                 {objective.point2}
 //               </p>
 //               <p>
 //                 {" "}
-//                 <i class="text-indigo-900 mr-4 font-bold text-xl fa-solid fa-angles-right"></i>
+//                 <i class="text-violet-900 mr-4 font-bold text-xl fa-solid fa-angles-right"></i>
 //                 {objective.point3}
 //               </p>
 //             </div>
@@ -136,15 +136,15 @@
 //               </div>
 //               <div class="collapse-content">
 //                 <p>
-//                   <i class="text-indigo-900 mr-2 font-bold text-xl fa-solid fa-circle-play"></i>{" "}
+//                   <i class="text-violet-900 mr-2 font-bold text-xl fa-solid fa-circle-play"></i>{" "}
 //                   {syllabus.free.point1}
 //                 </p>
 //                 <p>
-//                   <i class="text-indigo-900 mr-2 font-bold text-xl fa-solid fa-circle-play"></i>{" "}
+//                   <i class="text-violet-900 mr-2 font-bold text-xl fa-solid fa-circle-play"></i>{" "}
 //                   {syllabus.free.point2}
 //                 </p>
 //                 <p>
-//                   <i class="text-indigo-900 mr-2 font-bold text-xl fa-solid fa-circle-play"></i>{" "}
+//                   <i class="text-violet-900 mr-2 font-bold text-xl fa-solid fa-circle-play"></i>{" "}
 //                   {syllabus.free.point3}
 //                 </p>
 //               </div>
@@ -159,15 +159,15 @@
 //               </div>
 //               <div class="collapse-content">
 //                 <p>
-//                   <i class="text-indigo-900 mr-2 font-bold text-xl fa-solid fa-circle-play"></i>{" "}
+//                   <i class="text-violet-900 mr-2 font-bold text-xl fa-solid fa-circle-play"></i>{" "}
 //                   {syllabus.email.point1}
 //                 </p>
 //                 <p>
-//                   <i class="text-indigo-900 mr-2 font-bold text-xl fa-solid fa-circle-play"></i>{" "}
+//                   <i class="text-violet-900 mr-2 font-bold text-xl fa-solid fa-circle-play"></i>{" "}
 //                   {syllabus.email.point2}
 //                 </p>
 //                 <p>
-//                   <i class="text-indigo-900 mr-2 font-bold text-xl fa-solid fa-circle-play"></i>{" "}
+//                   <i class="text-violet-900 mr-2 font-bold text-xl fa-solid fa-circle-play"></i>{" "}
 //                   {syllabus.email.point3}
 //                 </p>
 //               </div>
@@ -182,15 +182,15 @@
 //               </div>
 //               <div class="collapse-content">
 //                 <p>
-//                   <i class="text-indigo-900 mr-2 font-bold text-xl fa-solid fa-circle-play"></i>{" "}
+//                   <i class="text-violet-900 mr-2 font-bold text-xl fa-solid fa-circle-play"></i>{" "}
 //                   {syllabus.monologues.point1}
 //                 </p>
 //                 <p>
-//                   <i class="text-indigo-900 mr-2 font-bold text-xl fa-solid fa-circle-play"></i>{" "}
+//                   <i class="text-violet-900 mr-2 font-bold text-xl fa-solid fa-circle-play"></i>{" "}
 //                   {syllabus.monologues.point2}
 //                 </p>
 //                 <p>
-//                   <i class="text-indigo-900 mr-2 font-bold text-xl fa-solid fa-circle-play"></i>{" "}
+//                   <i class="text-violet-900 mr-2 font-bold text-xl fa-solid fa-circle-play"></i>{" "}
 //                   {syllabus.monologues.point3}
 //                 </p>
 //               </div>
@@ -204,7 +204,7 @@
 //           <img className="w-full rounded-xl" src={img} alt="" />
 //           <div className="p-8">
 //             <div className="flex justify-between">
-//               <a className="text-indigo-700" href="/">
+//               <a className="text-violet-700" href="/">
 //                 <u>Promo Code</u>
 //               </a>
 //               <p className="text-xl font-bold">$ {price}</p>
@@ -214,7 +214,7 @@
 //             <div className="flex justify-between py-6">
 //               <div className="flex items-center">
 //                 <div>
-//                   <i class="text-indigo-900 mr-4 font-bold text-3xl fa-solid fa-users"></i>
+//                   <i class="text-violet-900 mr-4 font-bold text-3xl fa-solid fa-users"></i>
 //                 </div>
 //                 <div>
 //                   <p>Enrolled</p>
@@ -224,7 +224,7 @@
 //               </div>
 //               <div className="flex items-center">
 //                 <div>
-//                   <i class="text-indigo-900 mr-4 font-bold text-3xl fa-solid fa-clock"></i>
+//                   <i class="text-violet-900 mr-4 font-bold text-3xl fa-solid fa-clock"></i>
 // =======
 
 //                 <div className='py-6'>
@@ -235,9 +235,9 @@
 //                                 {syllabus.free?.title}
 //                             </div>
 //                             <div class="collapse-content">
-//                                 <p><i class="text-indigo-900 mr-2 font-bold text-xl fa-solid fa-circle-play"></i> {syllabus.free.point1}</p>
-//                                 <p><i class="text-indigo-900 mr-2 font-bold text-xl fa-solid fa-circle-play"></i> {syllabus.free.point2}</p>
-//                                 <p><i class="text-indigo-900 mr-2 font-bold text-xl fa-solid fa-circle-play"></i> {syllabus.free.point3}</p>
+//                                 <p><i class="text-violet-900 mr-2 font-bold text-xl fa-solid fa-circle-play"></i> {syllabus.free.point1}</p>
+//                                 <p><i class="text-violet-900 mr-2 font-bold text-xl fa-solid fa-circle-play"></i> {syllabus.free.point2}</p>
+//                                 <p><i class="text-violet-900 mr-2 font-bold text-xl fa-solid fa-circle-play"></i> {syllabus.free.point3}</p>
 //                             </div>
 //                         </div>
 //                         <hr />
@@ -246,9 +246,9 @@
 //                             {syllabus.email.title}
 //                             </div>
 //                             <div class="collapse-content">
-//                             <p><i class="text-indigo-900 mr-2 font-bold text-xl fa-solid fa-circle-play"></i> {syllabus.email.point1}</p>
-//                                 <p><i class="text-indigo-900 mr-2 font-bold text-xl fa-solid fa-circle-play"></i> {syllabus.email.point2}</p>
-//                                 <p><i class="text-indigo-900 mr-2 font-bold text-xl fa-solid fa-circle-play"></i> {syllabus.email.point3}</p>
+//                             <p><i class="text-violet-900 mr-2 font-bold text-xl fa-solid fa-circle-play"></i> {syllabus.email.point1}</p>
+//                                 <p><i class="text-violet-900 mr-2 font-bold text-xl fa-solid fa-circle-play"></i> {syllabus.email.point2}</p>
+//                                 <p><i class="text-violet-900 mr-2 font-bold text-xl fa-solid fa-circle-play"></i> {syllabus.email.point3}</p>
 //                             </div>
 //                         </div>
 //                         <hr />
@@ -257,9 +257,9 @@
 //                             {syllabus.monologues.title}
 //                             </div>
 //                             <div class="collapse-content">
-//                             <p><i class="text-indigo-900 mr-2 font-bold text-xl fa-solid fa-circle-play"></i> {syllabus.monologues.point1}</p>
-//                                 <p><i class="text-indigo-900 mr-2 font-bold text-xl fa-solid fa-circle-play"></i> {syllabus.monologues.point2}</p>
-//                                 <p><i class="text-indigo-900 mr-2 font-bold text-xl fa-solid fa-circle-play"></i> {syllabus.monologues.point3}</p>
+//                             <p><i class="text-violet-900 mr-2 font-bold text-xl fa-solid fa-circle-play"></i> {syllabus.monologues.point1}</p>
+//                                 <p><i class="text-violet-900 mr-2 font-bold text-xl fa-solid fa-circle-play"></i> {syllabus.monologues.point2}</p>
+//                                 <p><i class="text-violet-900 mr-2 font-bold text-xl fa-solid fa-circle-play"></i> {syllabus.monologues.point3}</p>
 //                             </div>
 //                         </div>
 
@@ -278,21 +278,21 @@
 //             <div className="flex justify-between py-6">
 //               <div>
 //                 <p>
-//                   <i class="text-indigo-900 mr-4 font-bold text-xl fa-solid fa-angles-right"></i>{" "}
+//                   <i class="text-violet-900 mr-4 font-bold text-xl fa-solid fa-angles-right"></i>{" "}
 //                   {videos} Videos
 //                 </p>
 //                 <p>
-//                   <i class="text-indigo-900 mr-4 font-bold text-xl fa-solid fa-angles-right"></i>{" "}
+//                   <i class="text-violet-900 mr-4 font-bold text-xl fa-solid fa-angles-right"></i>{" "}
 //                   {notes} Notes
 //                 </p>
 //               </div>
 //               <div>
 //                 <p>
-//                   <i class="text-indigo-900 mr-4 font-bold text-xl fa-solid fa-angles-right"></i>{" "}
+//                   <i class="text-violet-900 mr-4 font-bold text-xl fa-solid fa-angles-right"></i>{" "}
 //                   {quizzes} Sets of Quizzes
 //                 </p>
 //                 <p>
-//                   <i class="text-indigo-900 mr-4 font-bold text-xl fa-solid fa-angles-right"></i>{" "}
+//                   <i class="text-violet-900 mr-4 font-bold text-xl fa-solid fa-angles-right"></i>{" "}
 //                   {transcripts} Transcripts
 //                 </p>
 //               </div>

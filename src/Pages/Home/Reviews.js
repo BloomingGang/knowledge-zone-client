@@ -44,7 +44,6 @@ const Reviews = () => {
               What Our Students Say About Us
             </h3>
           </div>
-
           <div className="flex lg:justify-between lg:flex-row flex-col lg:mx-0 mx-2 lg:mb-0 mb-4">
             <div></div>
           </div>
@@ -52,7 +51,7 @@ const Reviews = () => {
             <Carousel swipeable="true" responsive={responsive} infinite={true}>
               {reviews.slice(-9).map((review, index) => (
                 <div key={index} class="p-4 w-full">
-                  <div class="h-[250px] bg-indigo-100 p-8 rounded-xl">
+                  <div class="h-[250px] bg-violet-100 p-8 rounded-xl">
                     <img src={quote} width={30} alt="" className="pb-3" />
                     <p class="leading-relaxed mb-6">{review.comment}</p>
                     <a class="inline-flex items-center">
@@ -74,7 +73,7 @@ const Reviews = () => {
                             }
                           />
                         </p>
-                        <span class="title-font font-medium text-indigo-800">
+                        <span class="title-font font-medium text-violet-800">
                           {review.name}
                         </span>
                       </span>

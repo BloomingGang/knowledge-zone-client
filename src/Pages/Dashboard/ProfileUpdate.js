@@ -152,7 +152,7 @@ const ProfileUpdate = ({ name, email, setShowProfile }) => {
                     />
                   </div>
                   <div className="form-control mt-10">
-                    <button className="border-2 shadow-lg hover:bg-indigo-500 hover:text-black p-2 rounded-lg bg-indigo-800 text-white font-bold transition duration-300">
+                    <button className="border-2 shadow-lg hover:bg-violet-500 hover:text-black p-2 rounded-lg bg-violet-800 text-white font-bold transition duration-300">
                       UPDATE PROFILE
                     </button>
                   </div>

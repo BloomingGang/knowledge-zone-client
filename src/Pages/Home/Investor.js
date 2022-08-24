@@ -122,7 +122,7 @@ const Investor = () => {
 
   return (
     <div>
-      <div className="bg-blue-100 p-10">
+      <div className="p-10">
         <h2 className="text-center text-5xl font-bold text-black">
           {" "}
           Our Investors{" "}

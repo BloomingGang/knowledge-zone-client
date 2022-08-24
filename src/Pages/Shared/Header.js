@@ -34,7 +34,7 @@ const Header = () => {
       <li className="mr-4 p-2 hover:bg-blue-500 rounded font-bold">
         <NavLink
           className={({ isActive }) =>
-            isActive ? "text-blue-700" : "text-black"
+            isActive ? "text-violet-900" : "text-black"
           }
           to="/"
         >
@@ -44,7 +44,7 @@ const Header = () => {
       <li className="mr-4 p-2 hover:bg-blue-500 rounded font-bold">
         <NavLink
           className={({ isActive }) =>
-            isActive ? "text-blue-700" : "text-black"
+            isActive ? "text-violet-900" : "text-black"
           }
           to="/classes"
         >
@@ -54,7 +54,7 @@ const Header = () => {
       <li className="mr-4 p-2 hover:bg-blue-500 rounded font-bold">
         <NavLink
           className={({ isActive }) =>
-            isActive ? "text-blue-700" : "text-black"
+            isActive ? "text-violet-900" : "text-black"
           }
           to="/courses"
         >
@@ -64,7 +64,7 @@ const Header = () => {
       <li className="mr-4 p-2 hover:bg-blue-500 rounded font-bold">
         <NavLink
           className={({ isActive }) =>
-            isActive ? "text-blue-700" : "text-black"
+            isActive ? "text-violet-900" : "text-black"
           }
           to="/books"
         >
@@ -74,7 +74,7 @@ const Header = () => {
       <li className="mr-4 p-2 hover:bg-blue-500 rounded font-bold">
         <NavLink
           className={({ isActive }) =>
-            isActive ? "text-blue-700" : "text-black"
+            isActive ? "text-violet-900" : "text-black"
           }
           to="/instructor"
         >
@@ -84,7 +84,7 @@ const Header = () => {
       <li className="mr-4 p-2 hover:bg-blue-500 rounded font-bold">
         <NavLink
           className={({ isActive }) =>
-            isActive ? "text-blue-700" : "text-black"
+            isActive ? "text-violet-900" : "text-black"
           }
           to="/blogs"
         >
@@ -94,7 +94,7 @@ const Header = () => {
       <li className="mr-4 p-2 hover:bg-blue-500 rounded font-bold">
         <NavLink
           className={({ isActive }) =>
-            isActive ? "text-blue-700" : "text-black"
+            isActive ? "text-violet-900" : "text-black"
           }
           to="/contact"
         >
@@ -115,8 +115,7 @@ const Header = () => {
           >
             <div class="card-body">
               <span className="card-title flex justify-around border-b-4 text-red-500">
-                New{" "}
-                <span className="text-red-500">{ccis?.unreadCount}</span>
+                New <span className="text-red-500">{ccis?.unreadCount}</span>
               </span>
               <div className="flex flex-col gap-y-2">
                 {ccis?.unreadData
@@ -173,7 +172,7 @@ const Header = () => {
     </>
   );
   return (
-    <div className="bg-gradient-to-r from-blue-900 via-indigo-900 to-violet-900 sticky top-0 z-50">
+    <div className="bg-violet-900 sticky top-0 z-50">
       <div className="md:flex flex-row justify-between items-center py-2 px-20 hidden ">
         <div className="flex flex-row items-center">
           <img src={logo} alt="" className="w-[40px] h-[50px]" />
@@ -187,23 +186,13 @@ const Header = () => {
               type="search"
               name="text"
               placeholder="Search Courses"
-              className="input"
+              className="input input-sm"
             />
-            <button onClick={(e) => handleSearch(e)} className="btn btn-square bg-blue-500 hover:bg-blue-500">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-6 w-6"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-                />
-              </svg>
+            <button
+              onClick={(e) => handleSearch(e)}
+              className="btn btn-square btn-sm bg-violet-300 hover:bg-violet-300"
+            >
+              <i className="fa-solid fa-magnifying-glass text-lg text-violet-900"></i>
             </button>
           </div>
         </div>
@@ -226,7 +215,7 @@ const Header = () => {
             </div>
           </div>
           <ul
-            className={`md:flex px-2 py-2 md:px-2 md:py-0 justify-center items-center bg-gradient-to-r from-violet-300 via-indigo-300 to-purple-300 mx-auto w-full absolute md:static duration-500 ease-in z-50 ${
+            className={`md:flex px-2 py-2 md:px-2 md:py-0 justify-center items-center bg-violet-300 mx-auto w-full absolute md:static duration-500 ease-in z-50 ${
               open ? "top-20 " : "top-[-450px]"
             }`}
           >

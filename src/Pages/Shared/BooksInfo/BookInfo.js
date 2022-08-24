@@ -144,15 +144,15 @@ const BookInfo = () => {
           <div className="py-12">
             <h2 className="text-xl text-violet-800 pb-4">Objective</h2>
             <p>
-              <i class="text-indigo-900 mr-4 font-bold text-xl fa-solid fa-angles-right"></i>
+              <i class="text-violet-900 mr-4 font-bold text-xl fa-solid fa-angles-right"></i>
               {objective.point1}
             </p>
             <p>
-              <i class="text-indigo-900 mr-4 font-bold text-xl fa-solid fa-angles-right"></i>
+              <i class="text-violet-900 mr-4 font-bold text-xl fa-solid fa-angles-right"></i>
               {objective.point2}
             </p>
             <p>
-              <i class="text-indigo-900 mr-4 font-bold text-xl fa-solid fa-angles-right"></i>
+              <i class="text-violet-900 mr-4 font-bold text-xl fa-solid fa-angles-right"></i>
               {objective.point3}
             </p>
           </div>
@@ -204,7 +204,7 @@ const BookInfo = () => {
               </div>
             </div>
             <div className="flex justify-between py-4">
-              <a className="text-indigo-700" href="/">
+              <a className="text-violet-700" href="/">
                 <u>Promo Code</u>
               </a>
               <p className="text-xl font-bold">$ {price}</p>

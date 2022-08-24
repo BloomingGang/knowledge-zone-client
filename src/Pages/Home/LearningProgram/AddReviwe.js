@@ -96,7 +96,7 @@ const AddReviwe = () => {
         </div>
         {rattingError && <p className="text-red-500">{rattingError}</p>}
         <div className="flex justify-center">
-          <button className="btn text-white hover:text-black bg-indigo-800 hover:bg-indigo-500 border-0">
+          <button className="btn text-white hover:text-black bg-violet-800 hover:bg-violet-500 border-0">
             submit review
           </button>
         </div>
