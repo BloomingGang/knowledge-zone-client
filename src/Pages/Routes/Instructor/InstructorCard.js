@@ -42,11 +42,11 @@ const InstructorCard = ({ instructor, index }) => {
   return (
     <div
       key={index}
-      className="bg-gray-100 transition ease-in-out delay-150 hover:-translate-1 hover:scale-110 duration-300 rounded-lg"
+      className="bg-gray-100 transition ease-in-out delay-150 hover:-translate-1 hover:scale-105 duration-300 rounded-lg"
     >
       <figure>
         <img
-          style={{ height: "350px" }}
+          style={{ height: "300px" }}
           src={img}
           alt="instructor"
           className="rounded-t-lg w-full"
@@ -75,14 +75,14 @@ const InstructorCard = ({ instructor, index }) => {
                 onClick={() => handleDeleteInstructor(_id)}
                 className="text-red-600 transition ease-in-out delay-100 hover:-translate-y-1 hover:scale-110 duration-300 mx-6 mb-4"
               >
-                <TrashIcon className="h-9 w-9 cursor-pointer" />
+                <TrashIcon className="h-7 w-7 cursor-pointer" />
               </button>
 
               <button
                 onClick={() => handleUpdateInstructor(_id)}
                 className="text-green-600 transition ease-in-out delay-100 hover:-translate-y-1 hover:scale-110 duration-300 mx-6 mb-4"
               >
-                <PencilAltIcon className="h-9 w-9" />
+                <PencilAltIcon className="h-7 w-7" />
               </button>
             </div>
           </div>

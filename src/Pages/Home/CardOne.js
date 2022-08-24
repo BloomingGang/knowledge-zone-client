@@ -11,7 +11,12 @@ const CardOne = () => {
     <div className="bg-violet-900 pb-12">
       <div className="container mx-auto">
         <div className="grid md:grid-cols-3 gap-10 py-16 ">
-          <div className="bg-white rounded-xl p-5">
+          <div
+            className="bg-white rounded-xl p-5"
+            data-aos-delay="200"
+            data-aos="zoom-in"
+            data-aos-duration="1000"
+          >
             <img src={logo1} alt="" className="w-[115px] h-[80px] pb-5" />
             <img src={img1} alt="" className="rounded-lg pb-5 h-[250px] w-96" />
             <p className="text-lg text-justify">
@@ -20,7 +25,12 @@ const CardOne = () => {
               use similar resources in the classroom.
             </p>
           </div>
-          <div className="bg-white rounded-xl p-5">
+          <div
+            className="bg-white rounded-xl p-5"
+            data-aos-delay="200"
+            data-aos="zoom-in"
+            data-aos-duration="1000"
+          >
             <img src={logo2} alt="" className="w-[115px] h-[80px] pb-5" />
             <img src={img2} alt="" className="rounded-lg pb-5 h-[250px] w-96" />
             <p className="text-lg text-justify">
@@ -29,7 +39,12 @@ const CardOne = () => {
               English Language learning and lifelong learning.
             </p>
           </div>
-          <div className="bg-white rounded-xl p-5">
+          <div
+            className="bg-white rounded-xl p-5"
+            data-aos-delay="200"
+            data-aos="zoom-in"
+            data-aos-duration="1000"
+          >
             <img src={logo3} alt="" className="w-[115px] h-[80px] pb-5" />
             <img src={img3} alt="" className="rounded-lg pb-5 h-[250px] w-96" />
             <p className="text-lg text-justify">
