@@ -1,7 +1,7 @@
 import React from "react";
-import { Outlet } from "react-router-dom";
+import {  Outlet } from "react-router-dom";
 import LiveChat from "../../ContactUs/LiveChat";
-import Link from "../../Shared/Link";
+import CustomLink from "../../Shared/CustomLink";
 
 const AllClass = () => {
   return (
@@ -42,100 +42,100 @@ const AllClass = () => {
           <ul className="menu p-4 overflow-y-auto w-48 text-base-content bg-violet-300">
             {/* <!-- Sidebar content here --> */}
             <li>
-              <Link
+              <CustomLink
                 className="w-full p-2 border-0 font-bold uppercase text-center rounded-lg"
                 to="/classes"
               >
                 class 1
-              </Link>
+              </CustomLink>
             </li>
             <li>
-              <Link
+              <CustomLink
                 className="w-full p-2 border-0 font-bold uppercase text-center rounded-lg"
                 to="/classes/two"
               >
                 Class 2
-              </Link>
+              </CustomLink>
             </li>
             <li>
-              <Link
+              <CustomLink
                 className="w-full p-2 border-0 font-bold uppercase text-center rounded-lg"
                 to="/classes/three"
               >
                 Class 3
-              </Link>
+              </CustomLink>
             </li>
             <li>
-              <Link
+              <CustomLink
                 className="w-full p-2 border-0 font-bold uppercase text-center rounded-lg"
                 to="/classes/four"
               >
                 Class 4
-              </Link>
+              </CustomLink>
             </li>
             <li>
-              <Link
+              <CustomLink
                 className="w-full p-2 border-0 font-bold uppercase text-center rounded-lg font"
                 to="/classes/five"
               >
                 Class 5
-              </Link>
+              </CustomLink>
             </li>
             <li>
-              <Link
+              <CustomLink
                 className="w-full p-2 border-0 font-bold uppercase text-center rounded-lg"
                 to="/classes/six"
               >
                 Class 6
-              </Link>
+              </CustomLink>
             </li>
             <li>
-              <Link
+              <CustomLink
                 className="w-full p-2 border-0 font-bold uppercase text-center rounded-lg"
                 to="/classes/seven"
               >
                 Class 7
-              </Link>
+              </CustomLink>
             </li>
             <li>
-              <Link
+              <CustomLink
                 className="w-full p-2 border-0 font-bold uppercase text-center rounded-lg"
                 to="/classes/eight"
               >
                 Class 8
-              </Link>
+              </CustomLink>
             </li>
             <li>
-              <Link
+              <CustomLink
                 className="w-full p-2 border-0 font-bold uppercase text-center rounded-lg"
                 to="/classes/nine"
               >
                 Class 9
-              </Link>
+              </CustomLink>
             </li>
             <li>
-              <Link
+              <CustomLink
                 className="w-full p-2 border-0 font-bold uppercase text-center rounded-lg"
                 to="/classes/ten"
               >
                 Class 10
-              </Link>
+              </CustomLink>
             </li>
             <li>
-              <Link
+              <CustomLink
                 className="w-full p-2 border-0 font-bold uppercase text-center rounded-lg"
                 to="/classes/eleven"
               >
                 Class 11-12
-              </Link>
+              </CustomLink>
             </li>
             <li>
-              {/* <Link
+              {/* <CustomLink
                   className="w-full py-3 px-3 border-2 font-bold uppercase text-center rounded-lg"
                   to="/classes/twelve"
                 >
                   Class 12
-                </Link> */}
+                </CustomLink> */}
             </li>
           </ul>
         </div>

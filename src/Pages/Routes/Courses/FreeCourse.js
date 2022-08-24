@@ -10,7 +10,7 @@ const FreeCourse = () => {
       .then((res) => res.json())
       .then((data) => {
         setFreeCourses(data);
-        // setLoading(false);
+        setLoading(false);
       });
   }, []);
 

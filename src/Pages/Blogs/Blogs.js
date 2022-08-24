@@ -1,16 +1,24 @@
 import React, { useEffect, useState } from "react";
 import LiveChat from "../ContactUs/LiveChat";
+import Loading from "../Shared/Loading";
 import Blog from "./Blog";
 import BlogModal from "./BlogModal";
 
 const Blogs = () => {
   const [blog, setBlogs] = useState([]);
   const [modal, setModal] = useState(null);
+  const [loading,setLoading]=useState(true)
   useEffect(() => {
     fetch("http://localhost:5000/blogs")
       .then((response) => response.json())
-      .then((data) => setBlogs(data));
+      .then((data) => {
+        setBlogs(data);
+        setLoading(false);
+      });
   }, []);
+  if(loading){
+    return <Loading></Loading>
+  }
 
   return (
     <div>
