@@ -15,7 +15,7 @@ const Blogs = () => {
   return (
     <div>
       <div className="lg:w-3/4 mx-auto grid md:grid-cols-2  gap-16 px-8 py-16">
-        {blog.map((blog) => (
+        {blog?.map((blog) => (
           <Blog setModal={setModal} key={blog._id} blog={blog}></Blog>
         ))}
         <LiveChat />

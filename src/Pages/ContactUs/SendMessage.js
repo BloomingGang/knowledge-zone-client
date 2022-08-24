@@ -9,47 +9,45 @@ const SendMessage = () => {
         className="card-body"
         target="_blank"
       >
-        <h1 className="text-center text-3xl my-4 font-bold text-primary">Contact Us</h1>
+        <h1 className="text-2xl text-violet-800 text-center pb-4">Send Your Message</h1>
         <div className="form-control">
-          <label className="label">
-            <span className="label-text">Your Name:</span>
-          </label>
+          <div className="grid grid-cols-2 gap-4">
           <input
             type="text"
-            placeholder="Enter your name"
+            placeholder="First Name"
             name="name"
-            className="input input-bordered"
+            class="input input-bordered input-primary"
             required
           />
-        </div>
-        <div className="form-control">
-          <label className="label">
-            <span className="label-text">Your E-mail:</span>
-          </label>
-          <input
-            type="email"
-            placeholder="Enter your E-mail"
-            name="email"
-            className="input input-bordered"
-            required
-          />
-        </div>
-        <div className="form-control">
-          <label className="label">
-            <span className="label-text">Your Message:</span>
-          </label>
-          <textarea
+           <input
             type="text"
+            placeholder="Last Name"
+            className="input input-bordered input-primary "
+            required
+          />
+
+          </div>
+         
+        </div>
+       
+        <div className="form-control">
+          <input
+            type="text"
+            placeholder="Subject"
+            name="subject"
+            className="input input-bordered input-primary "
+            required
+          />
+        </div>
+        <div className="form-control">
+          <textarea
+            class="textarea textarea-primary pb-16 resize-none"
             placeholder="Write your message here"
             name="message"
-            className="input input-bordered"
-            id=""
-            cols="50"
-            rows="6"
             required
-          />
+          ></textarea>
         </div>
-        <div className="form-control mt-6">
+        <div className="form-control">
           <input
             type="submit"
             className="btn btn-primary"

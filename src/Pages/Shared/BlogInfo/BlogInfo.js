@@ -9,15 +9,12 @@ const BlogInfo = () => {
     axios
       .get(`http://localhost:5000/blog/${id}`)
       .then((data) => setBlog(data.data));
-    // fetch(`http://localhost:5000/book/${id}`)
-    //   .then((response) => response.json())
-    //   .then((data) => setBook(data));
   }, [id]);
   const { description, writerName, img, date, title } = blog;
   return (
-    <div className="p-8">
+    <div className="w-11/12 md:w-9/12 mx-auto py-8">
       <img className="mb-5 w-full lg:h-[85vh]" src={img} alt="" />
-      <h1 className="text-3xl md:text-5xl font-bold font-mono text-justify text-indigo-600">
+      <h1 className="text-3xl md:text-5xl font-bold    text-justify text-indigo-600">
         {title}
       </h1>
       <div className="pt-3 text-2xl leading-9 md:text-3xl font-semibold text-gray-600">

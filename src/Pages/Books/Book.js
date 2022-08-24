@@ -44,16 +44,20 @@ const Book = ({ book }) => {
   };
   return (
     <div>
-      <div className="card bg-gray-100 h-[640px] transition ease-in-out delay-150 hover:-translate-1 hover:scale-105 duration-300">
-        <div className="">
-          <img src={img} alt="/" className="rounded-t-xl h-[350px] w-full" />
+      {/* // <div className="card bg-gray-100 h-[640px] transition ease-in-out delay-150 hover:-translate-1 hover:scale-105 duration-300">
+      //   <div className="">
+      //     <img src={img} alt="/" className="rounded-t-xl h-[350px] w-full" /> */}
+
+      <div className="rounded-lg bg-gray-100 transition ease-in-out delay-150 hover:-translate-1 hover:scale-105 duration-300">
+        <div>
+          <img src={img} alt="/" className="rounded-t-lg w-full" />
         </div>
-        <div className="card-body">
-          <h2 className="card-title text-xl font-serif text-indigo-800 pb-8">
+        <div className="">
+          <h2 className="text-center font-bold uppercase text-xl pt-4 text-indigo-800">
             {bookName}
           </h2>
 
-          <div className="card-actions justify-center">
+          <div className="card-actions justify-center py-4">
             <button
               className="border-2 shadow-lg hover:bg-indigo-500 hover:text-black p-2 rounded-lg bg-indigo-800 text-white font-bold transition duration-300"
               onClick={() => handleBook(_id)}

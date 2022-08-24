@@ -47,14 +47,14 @@ const BooksCarousel = () => {
           <div>
             <Carousel swipeable="true" responsive={responsive} infinite={true}>
               {books?.slice(-6).map((book, index) => (
-                <div>
+                <div onClick={() => handleBook(book._id)}>
                   <img src={book.img} alt="" />
-                  <button
+                  {/* <button
                     className="border-2 shadow-lg hover:bg-indigo-500 hover:text-black p-2 rounded-lg bg-indigo-800 text-white font-bold transition duration-300 "
                     onClick={() => handleBook(book._id)}
                   >
                     Details
-                  </button>
+                  </button> */}
                 </div>
               ))}
             </Carousel>

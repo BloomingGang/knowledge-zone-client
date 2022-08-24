@@ -1,7 +1,7 @@
 import React from "react";
 import "./App.css";
 import { Route, Routes } from "react-router-dom";
-import { ToastContainer } from "react-toastify";
+import { Toaster } from "react-hot-toast";
 import "react-toastify/dist/ReactToastify.css";
 import Contact from "./Pages/ContactUs/Contact";
 import Login from "./auth/Login";
@@ -64,6 +64,9 @@ import SearchResult from "./Pages/Shared/SearchResult";
 import AddBlog from "./Pages/Dashboard/AddBlog";
 import UpdateBlog from "./Pages/Shared/UpdateBlog";
 // import SearchBook from "./Pages/Shared/SearchBook";
+import PrivacyPolicy from "./Pages/Home/PrivacyPolicy";
+import AddInstructor from "./Pages/Dashboard/AddInstructor";
+import UpdateInstructor from "./Pages/Dashboard/UpdateInstructor";
 
 function App() {
   return (
@@ -194,6 +197,7 @@ function App() {
         >
           {" "}
         </Route>
+
         <Route
           path="/addBlog"
           element={
@@ -201,9 +205,8 @@ function App() {
               <AddBlog />
             </RequireAdmin>
           }
-        >
-          {" "}
-        </Route>
+        />
+
         <Route path="/searchCourse/:searchCourse" element={<SearchResult />}>
           {" "}
         </Route>
@@ -214,6 +217,7 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
         <Route path="/blogs" element={<Blogs />} />
+        <Route path="/privacy" element={<PrivacyPolicy />} />
         <Route
           path="/blog/:id"
           element={
@@ -241,6 +245,24 @@ function App() {
             </RequireAdmin>
           }
         />
+        <Route
+          path="/addInstructor"
+          element={
+            <RequireAdmin>
+              <AddInstructor></AddInstructor>
+            </RequireAdmin>
+          }
+        />
+
+        <Route
+          path="/:Subject/newAdd/:id"
+          element={
+            <RequireAuth>
+              <UpdateInstructor />
+            </RequireAuth>
+          }
+        ></Route>
+
         <Route
           path="/books"
           element={
@@ -276,7 +298,7 @@ function App() {
         <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />
-      <ToastContainer />
+      <Toaster />
     </div>
   );
 }
