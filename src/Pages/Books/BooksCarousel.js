@@ -21,6 +21,7 @@ const BooksCarousel = () => {
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
       items: 4,
+      gap: "20px",
     },
     tablet: {
       breakpoint: { max: 1024, min: 464 },
@@ -41,20 +42,22 @@ const BooksCarousel = () => {
             </h3>
           </div>
 
-          <div className="flex lg:justify-between lg:flex-row flex-col lg:mx-0 mx-2 lg:mb-0 mb-4">
-            <div></div>
-          </div>
+          <div className="flex lg:justify-between lg:flex-row flex-col lg:mx-0 mx-2 lg:mb-0 mb-4"></div>
           <div>
             <Carousel swipeable="true" responsive={responsive} infinite={true}>
               {books?.slice(-6).map((book, index) => (
-                <div onClick={() => handleBook(book._id)}>
-                  <img src={book.img} alt="" />
-                  {/* <button
-                    className="border-2 shadow-lg hover:bg-indigo-500 hover:text-black p-2 rounded-lg bg-indigo-800 text-white font-bold transition duration-300 "
-                    onClick={() => handleBook(book._id)}
-                  >
-                    Details
-                  </button> */}
+                <div className="border-2 rounded-lg">
+                  <img className="" src={book.img} alt="" />
+                  <hr />
+                  <h1 className="text-center text-sm md:text-xl p-2 md:p-3 font-semibold pt-2 pb-2 md:pb-4 truncate">
+                    {book.bookName}
+                  </h1>
+                  <hr />
+                  <div className="flex justify-center items-center text-sm md:text-lg font-medium md:font-semibold cursor-pointer py-2 md:py-3 text-blue-700">
+                    <button onClick={() => handleBook(book._id)}>
+                      Viwe Details
+                    </button>
+                  </div>
                 </div>
               ))}
             </Carousel>
