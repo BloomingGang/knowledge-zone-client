@@ -1,20 +1,25 @@
 import React from "react";
+import ContactInfo from "./ContactInfo";
 import LiveChat from "./LiveChat";
 import MapLocation from "./MapLocation";
 import SendMessage from "./SendMessage";
+import email from "../../img/assets/output-onlinegiftools.gif"
 
 const Contact = () => {
   return (
-    <div>
-      <div className="grid lg:grid-cols-2 grid-cols-1 bg-indigo-100">
-        <div>
-          <MapLocation />
+    <div className="bg-violet-200">
+      <div>
+        <div className="contact text-white text-center">
+          <h1 className="text-2xl font-bold">Contact Us</h1>
+          <p>Knowledge Zone an EdTech Platform</p>
         </div>
-
-        <div>
-          <SendMessage />
-          <LiveChat />
+        <ContactInfo />
+        <div className="grid md:grid-cols-2 gap-8">
+        <img className="w-3/4 mx-auto" src={email} alt="" />
+        <SendMessage/>
         </div>
+        <MapLocation />
+        <LiveChat/>
       </div>
     </div>
   );

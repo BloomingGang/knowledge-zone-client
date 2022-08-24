@@ -18,11 +18,11 @@ const NavDropDown = () => {
     <div className="flex items-center">
       <div className="dropdown">
         <label tabindex="0">
-          <ProfilePic></ProfilePic>
+          <ProfilePic />
         </label>
         <ul
           tabindex="0"
-          className="dropdown-content menu shadow bg-base-100 rounded-box w-44"
+          className="dropdown-content menu shadow bg-gray-100 rounded-md w-44"
         >
           {admin && (
             <li>
@@ -43,13 +43,13 @@ const NavDropDown = () => {
               <Link to="/addCourse">Add Course</Link>
             </li>
           )}
+          {admin && (
+            <li>
+              <Link to="/addInstructor">Add Instructor</Link>
+            </li>
+          )}
+
           <li>
-
-
-            <Link to="/addCourse">Add Course</Link>
-          </li>
-          <li>
-
             <Link to="/addReviwe">Add Review</Link>
           </li>
           {admin && (

@@ -32,7 +32,7 @@ const Payment = () => {
   const { productName, price, img } = course;
   return (
     <div className=" w-3/5 mx-auto min-h-screen my-20">
-      <div className=" bg-base-100 shadow-xl text-center font-serif py-4">
+      <div className=" bg-base-100 shadow-xl text-center   py-4">
         <p className="font-bold text-blue-500">Hello, {user.displayName}</p>
         <h2 className=" text-center text-2xl font-bold">
           Please pay for {productName}

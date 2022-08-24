@@ -9,27 +9,7 @@ const Product = ({ order, index }) => {
   const navigate = useNavigate();
 
   const handleDelete = (id) => {
-    Swal.fire({
-      title: "Are you sure?",
-      text: "You won't be able to revert this!",
-      icon: "warning",
-      showCancelButton: true,
-      confirmButtonColor: "#3085d6",
-      cancelButtonColor: "#d33",
-      confirmButtonText: "Yes, delete it!",
-    }).then((result) => {
-      if (result.isConfirmed) {
-        Swal.fire("Deleted!", "Your file has been deleted.", "success");
-        const url = `http://localhost:5000/order/${id}`;
-        fetch(url, {
-          method: "DELETE",
-        })
-          .then((res) => res.json())
-          .then((data) => {
-            window.location.reload();
-          });
-      }
-    });
+   
   };
   return (
     <tr>
@@ -41,7 +21,7 @@ const Product = ({ order, index }) => {
       <td>
         <button
           onClick={() => navigate(`/payment/${_id}`)}
-          className="btn btn-sm btn-primary border-0 "
+          className="btn btn-sm bg-violet-800 border-0 "
         >
           PAY
         </button>

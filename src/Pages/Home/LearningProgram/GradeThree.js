@@ -18,7 +18,7 @@ const GradeThree = () => {
     {
       id: 2,
       icon: iconImg,
-      title: "Blooming Gang Live 1-on-1",
+      title: "Blooming Gang Live 2-on-2",
       programs: ["Coding", "Music"],
       description:
         "Personalised, 2-on-2 tutoring classes with expert teachers.",
@@ -36,7 +36,7 @@ const GradeThree = () => {
   ];
 
   return (
-    <div className=" grid lg:grid-cols-2 grid-cols-1 items-center container mx-auto gap-5">
+    <div className="grid lg:grid-cols-2 grid-cols-1 items-center container mx-auto gap-8">
       {programData.map((info) => (
         <ProgramCart key={info.id} info={info}></ProgramCart>
       ))}

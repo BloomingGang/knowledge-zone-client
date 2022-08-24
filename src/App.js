@@ -1,7 +1,7 @@
 import React from "react";
 import "./App.css";
 import { Route, Routes } from "react-router-dom";
-import { ToastContainer } from "react-toastify";
+import { Toaster } from "react-hot-toast";
 import "react-toastify/dist/ReactToastify.css";
 import Contact from "./Pages/ContactUs/Contact";
 import Login from "./auth/Login";
@@ -57,13 +57,16 @@ import MyOrder from "./Pages/Shared/MyOrder/MyOrder";
 import AddCourse from "./Pages/Dashboard/AddCourse";
 import UpdateCourse from "./Pages/Shared/UpdateCourse";
 import AddReviwe from "./Pages/Home/LearningProgram/AddReviwe";
-import MyProfile from './Pages/Dashboard/MyProfile';
-import AddBook from './Pages/Dashboard/AddBook';
+import MyProfile from "./Pages/Dashboard/MyProfile";
+import AddBook from "./Pages/Dashboard/AddBook";
 import SearchResult from "./Pages/Shared/SearchResult";
+import PrivacyPolicy from "./Pages/Home/PrivacyPolicy";
+import AddInstructor from "./Pages/Dashboard/AddInstructor";
+import UpdateInstructor from "./Pages/Dashboard/UpdateInstructor";
 
 function App() {
   return (
-    <div>
+    <div className="bg-violet-200">
       <Header></Header>
       <Routes>
         <Route path="/" element={<Home />}>
@@ -172,16 +175,14 @@ function App() {
         >
           {" "}
         </Route>
-        <Route
-          path="/searchCourse/:searchCourse"
-          element={<SearchResult />}
-        >
+        <Route path="/searchCourse/:searchCourse" element={<SearchResult />}>
           {" "}
         </Route>
 
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
         <Route path="/blogs" element={<Blogs />} />
+        <Route path="/privacy" element={<PrivacyPolicy />} />
         <Route
           path="/blog/:id"
           element={
@@ -208,6 +209,24 @@ function App() {
             </RequireAdmin>
           }
         />
+        <Route
+          path="/addInstructor"
+          element={
+            <RequireAdmin>
+              <AddInstructor></AddInstructor>
+            </RequireAdmin>
+          }
+        />
+
+        <Route
+          path="/:Subject/newAdd/:id"
+          element={
+            <RequireAuth>
+              <UpdateInstructor />
+            </RequireAuth>
+          }
+        ></Route>
+
         <Route
           path="/books"
           element={
@@ -243,7 +262,7 @@ function App() {
         <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />
-      <ToastContainer />
+      <Toaster />
     </div>
   );
 }

@@ -14,7 +14,7 @@ const EntertainingCourse = () => {
       });
   }, []);
   if (loading) {
-    return <Loading></Loading>;
+    return <Loading />;
   }
 
   return (
