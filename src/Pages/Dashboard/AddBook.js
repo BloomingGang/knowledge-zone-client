@@ -325,13 +325,16 @@ const AddBook = () => {
                 {" "}
                 <span className="label-text text-lg    ">Formate:</span>
               </label>
-              <textarea
+              <select
                 required
                 type="text"
                 name="formate"
                 placeholder="Formate"
                 class="input input-bordered w-full max-w-xs"
-              />
+              >
+                <option>PDF</option>
+                <option>MP3</option>
+              </select>
             </div>
           </div>
           <div className="mb-6">

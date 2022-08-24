@@ -71,9 +71,6 @@ const BookInfo = () => {
       .then((res) => res.json())
       .then((data) => {
         if (data.insertedId) {
-          const id = data.insertedId;
-          navigate(`/payment/${id}`);
-
           navigate("/myOrder");
         }
       });

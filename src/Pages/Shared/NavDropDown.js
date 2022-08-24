@@ -43,6 +43,7 @@ const NavDropDown = () => {
               <Link to="/addCourse">Add Course</Link>
             </li>
           )}
+
           {admin && (
             <li>
               <Link to="/addInstructor">Add Instructor</Link>
@@ -55,6 +56,11 @@ const NavDropDown = () => {
           {admin && (
             <li>
               <Link to="/addBook">Add Book</Link>
+            </li>
+          )}
+          {admin && (
+            <li>
+              <Link to="/addBlog">Add Blog</Link>
             </li>
           )}
           <li>

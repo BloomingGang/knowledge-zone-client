@@ -96,15 +96,11 @@ const UpdateCourse = () => {
     };
 
     axios
-      .put(
-        `http://localhost:5000/courseUpdate/${id}`,
-        updateCourse
-      )
+      .put(`http://localhost:5000/courseUpdate/${id}`, updateCourse)
       .then((res) => {
         toast.success(`Update ${classCourse}`);
         event.target.reset();
       });
-    console.log(updateCourse);
   };
 
   return (
