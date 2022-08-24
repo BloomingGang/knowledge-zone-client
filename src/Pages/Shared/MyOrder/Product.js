@@ -40,7 +40,7 @@ const Product = ({ order, index }) => {
       <td>
         <button
           onClick={() => navigate(`/payment/${_id}`)}
-          className="btn btn-sm bg-violet-800 border-0 "
+          className="btn btn-sm bg-violet-800 hover:bg-transparent hover:text-violet-900 hover:border-violet-900"
         >
           PAY
         </button>
@@ -48,7 +48,7 @@ const Product = ({ order, index }) => {
       <td>
         <button
           onClick={() => handleDelete(_id)}
-          className="btn btn-sm bg-red-500 border-0 "
+          className="btn btn-sm bg-red-500 border-red-500 hover:bg-transparent hover:text-red-500 hover:border-red-500 "
         >
           Cancel
         </button>

@@ -50,7 +50,7 @@ const SendMessage = () => {
         <div className="form-control">
           <input
             type="submit"
-            className="btn bg-violet-800"
+            className="btn bg-violet-800 hover:bg-transparent hover:text-violet-900 hover:border-violet-900"
             value="Send Message"
           />
         </div>

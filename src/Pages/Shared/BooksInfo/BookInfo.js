@@ -210,7 +210,7 @@ const BookInfo = () => {
               <p className="text-xl font-bold">$ {price}</p>
             </div>
 
-            <button onClick={handleOrder} class="btn bg-violet-800 w-full my-4">
+            <button onClick={handleOrder} class="btn bg-violet-800 hover:bg-transparent hover:text-violet-900 hover:border-violet-900 w-full my-4">
               Buy the Book
             </button>
           </div>

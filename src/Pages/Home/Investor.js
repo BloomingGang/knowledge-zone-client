@@ -123,7 +123,7 @@ const Investor = () => {
   return (
     <div>
       <div className="p-10">
-        <h2 className="text-center text-5xl font-bold text-black">
+        <h2 className="text-center text-5xl font-bold text-violet-800">
           {" "}
           Our Investors{" "}
         </h2>
@@ -134,7 +134,7 @@ const Investor = () => {
           {investors.map((investor, index) => (
             <div key={index}>
               <div className="py-16 px-6">
-                <div className="card bg-base-100 shadow-xl min-h-[500px]">
+                <div className="card bg-gray-100 shadow-xl min-h-[450px]">
                   <figure className="px-10 pt-6">
                     <img
                       src={investor.avatar}

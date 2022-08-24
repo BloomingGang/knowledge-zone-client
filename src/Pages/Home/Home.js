@@ -19,13 +19,13 @@ const Home = () => {
       <HeroBanner />
       <AcademicCourses/>
       <SkillDevCourses/>
-      {/* <Learners /> */}
-      {/* <LearningProgram /> */}
-      {/* <CardK /> */}
+      {/* <Learners />
+      <LearningProgram />
+      <CardK /> */}
       <Reviews />
-      {/* <EduBanner /> */}
       <Investor />
-      {/* <CarouselOne /> */}
+      {/* <EduBanner />
+      <CarouselOne /> */}
       <CardOne />
       <CoursesAutoSlider />
       <LiveChat />
