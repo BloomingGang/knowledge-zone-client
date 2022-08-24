@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./App.css";
 import { Route, Routes } from "react-router-dom";
 import { Toaster } from "react-hot-toast";
@@ -63,8 +63,13 @@ import SearchResult from "./Pages/Shared/SearchResult";
 import PrivacyPolicy from "./Pages/Home/PrivacyPolicy";
 import AddInstructor from "./Pages/Dashboard/AddInstructor";
 import UpdateInstructor from "./Pages/Dashboard/UpdateInstructor";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function App() {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     <div className="bg-violet-200">
       <Header></Header>
