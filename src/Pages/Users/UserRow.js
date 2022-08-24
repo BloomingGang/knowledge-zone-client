@@ -55,7 +55,7 @@ const UserRow = ({ user, index }) => {
         {role !== "admin" ? (
           <button
             onClick={makeAdmin}
-            className="btn btn-sm btn-primary bg-gradient-to-r from-blue-500 to-violet-700 border-0 "
+            className="btn btn-sm bg-violet-800 bg-gradient-to-r from-blue-500 to-violet-700 border-0 "
           >
             Make Admin
           </button>

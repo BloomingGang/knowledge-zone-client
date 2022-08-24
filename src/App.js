@@ -66,7 +66,7 @@ import UpdateInstructor from "./Pages/Dashboard/UpdateInstructor";
 
 function App() {
   return (
-    <div>
+    <div className="bg-violet-200">
       <Header></Header>
       <Routes>
         <Route path="/" element={<Home />}>

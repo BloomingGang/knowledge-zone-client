@@ -9,39 +9,39 @@ const SendMessage = () => {
         className="card-body"
         target="_blank"
       >
-        <h1 className="text-2xl text-violet-800 text-center pb-4">Send Your Message</h1>
+        <h1 className="text-2xl text-violet-800 text-center pb-4">
+          Send Your Message
+        </h1>
         <div className="form-control">
           <div className="grid grid-cols-2 gap-4">
-          <input
-            type="text"
-            placeholder="First Name"
-            name="name"
-            class="input input-bordered input-primary"
-            required
-          />
-           <input
-            type="text"
-            placeholder="Last Name"
-            className="input input-bordered input-primary "
-            required
-          />
-
+            <input
+              type="text"
+              placeholder="First Name"
+              name="name"
+              class="input input-bordered input-violet-800"
+              required
+            />
+            <input
+              type="text"
+              placeholder="Last Name"
+              className="input input-bordered input-violet-800 "
+              required
+            />
           </div>
-         
         </div>
-       
+
         <div className="form-control">
           <input
             type="text"
             placeholder="Subject"
             name="subject"
-            className="input input-bordered input-primary "
+            className="input input-bordered input-violet-800 "
             required
           />
         </div>
         <div className="form-control">
           <textarea
-            class="textarea textarea-primary pb-16 resize-none"
+            class="textarea textarea-violet-800 pb-16 resize-none"
             placeholder="Write your message here"
             name="message"
             required
@@ -50,7 +50,7 @@ const SendMessage = () => {
         <div className="form-control">
           <input
             type="submit"
-            className="btn btn-primary"
+            className="btn bg-violet-800"
             value="Send Message"
           />
         </div>

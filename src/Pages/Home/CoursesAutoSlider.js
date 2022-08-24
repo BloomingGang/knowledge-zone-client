@@ -68,7 +68,7 @@ const CoursesAutoSlider = () => {
     ],
   };
   return (
-    <div className="bg-gradient-to-r from-blue-800 via-indigo-800 to-purple-800 py-12 px-7">
+    <div className="bg-violet-800 py-12 px-7">
       <div className="">
         <img
           style={{ marginTop: "-100px" }}

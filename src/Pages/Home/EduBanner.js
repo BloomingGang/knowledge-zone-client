@@ -46,7 +46,7 @@ const EduBanner = () => {
           </div>
 
           <div>
-            <button className="btn btn-primary border-0 ">Know More</button>
+            <button className="btn bg-violet-800 border-0 ">Know More</button>
           </div>
         </div>
       </div>

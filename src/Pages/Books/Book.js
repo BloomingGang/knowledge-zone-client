@@ -19,12 +19,12 @@ const Book = ({ book }) => {
           <img src={img} alt="/" className="rounded-t-lg w-full" />
         </div>
         <div className="">
-          <h2 className="text-center font-bold uppercase text-xl pt-4 text-indigo-800">
+          <h2 className="text-center font-bold uppercase text-xl pt-4 text-violet-800">
             {bookName}
           </h2>
           <div className="card-actions justify-center py-4">
             <button
-              className="border-2 shadow-lg hover:bg-indigo-500 hover:text-black p-2 rounded-lg bg-indigo-800 text-white font-bold transition duration-300"
+              className="border-2 shadow-lg hover:bg-violet-500 hover:text-black p-2 rounded-lg bg-violet-800 text-white font-bold transition duration-300"
               onClick={() => handleBook(_id)}
             >
               View Details

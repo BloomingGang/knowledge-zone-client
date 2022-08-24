@@ -18,7 +18,7 @@ const Product = ({ order, index }) => {
       confirmButtonText: "Delete",
     }).then((result) => {
       if (result.isConfirmed) {
-       Swal.fire("Deleted!", "Your File Has Been Deleted !!", "success");
+        Swal.fire("Deleted!", "Your File Has Been Deleted !!", "success");
         const url = `https://immense-meadow-70411.herokuapp.com/order/${id}`;
         fetch(url, {
           method: "DELETE",
@@ -40,7 +40,7 @@ const Product = ({ order, index }) => {
       <td>
         <button
           onClick={() => navigate(`/payment/${_id}`)}
-          className="btn btn-sm btn-primary border-0 "
+          className="btn btn-sm bg-violet-800 border-0 "
         >
           PAY
         </button>

@@ -36,19 +36,18 @@ const ClassCourseCart = ({ course }) => {
     <section>
       <div className="bg-gray-100 transition ease-in-out delay-150 hover:-translate-1 hover:scale-105 duration-300 rounded-lg">
         <figure>
-          <img
-            className="w-full rounded-t-lg"
-            src={img}
-            alt="course"
-          />
+          <img className="w-full rounded-t-lg" src={img} alt="course" />
         </figure>
         <div className="px-5">
-          <h2 className="text-center pt-3 font-bold text-xl text-violet-800"> {title}</h2>
+          <h2 className="text-center pt-3 font-bold text-xl text-violet-800">
+            {" "}
+            {title}
+          </h2>
           <div class="divider"></div>
           <div className="flex justify-between items-center">
             <span className="text-2xl font-bold text-green-700">$ {price}</span>
             <button
-              className="border-2 shadow-lg hover:bg-indigo-500 hover:text-black p-2 rounded-lg bg-indigo-800 text-white font-bold transition duration-300"
+              className="border-2 shadow-lg hover:bg-violet-500 hover:text-black p-2 rounded-lg bg-violet-800 text-white font-bold transition duration-300"
               onClick={() => handleCourse(_id)}
             >
               Enroll Now
@@ -61,24 +60,16 @@ const ClassCourseCart = ({ course }) => {
               <div className="flex justify-between pb-4">
                 <button
                   onClick={() => handleDeleteCourse(_id)}
-
                   className="text-red-600 transition ease-in-out delay-100 hover:-translate-y-1 hover:scale-110 duration-300 mx-2"
-
-             
-
                 >
                   <label onClick={() => setModal(true)} for="my-modal-6">
-                 
                     <TrashIcon className="h-9 w-9 cursor-pointer" />
                   </label>
                 </button>
 
                 <button
                   onClick={() => handleCourseUpdate(_id)}
-
                   className="text-green-600 transition ease-in-out delay-100 hover:-translate-y-1 hover:scale-110 duration-300 mx-2"
-
-                 
                 >
                   <PencilAltIcon className="h-9 w-9" />
                 </button>

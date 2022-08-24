@@ -13,15 +13,15 @@ const Blog = ({ blog, setModal }) => {
         <img src={img} alt="/" className="rounded-t-xl w-full h-[330px]" />
       </div>
       <div className="text-justify px-6">
-        <h2 className="text-3xl text-indigo-800 text-center py-3">{title}</h2>
+        <h2 className="text-3xl text-violet-800 text-center py-3">{title}</h2>
         <p>
           {description.slice(0, 255)}{" "}
-          <span className="text-primary font-semibold pl-3">
+          <span className="text-violet-800 font-semibold pl-3">
             {description.length > 255 ? (
               <label
                 onClick={() => handleBlog(_id)}
                 for="my-modal-3"
-                className="cursor-pointer text-indigo-800 font-bold"
+                className="cursor-pointer text-violet-800 font-bold"
               >
                 Read More ...
               </label>
