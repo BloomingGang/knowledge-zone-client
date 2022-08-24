@@ -11,6 +11,7 @@ const Product = ({ order, index }) => {
   const handleDelete = (id) => {
    
   };
+  
   return (
     <tr>
       <th>{index + 1}</th>
