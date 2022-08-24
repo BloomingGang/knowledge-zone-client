@@ -34,7 +34,7 @@ const Header = () => {
       <li className="mr-4 p-2 hover:bg-blue-500 rounded font-bold">
         <NavLink
           className={({ isActive }) =>
-            isActive ? "text-violet-900" : "text-black"
+            isActive ? "text-white" : "text-black"
           }
           to="/"
         >
@@ -44,7 +44,7 @@ const Header = () => {
       <li className="mr-4 p-2 hover:bg-blue-500 rounded font-bold">
         <NavLink
           className={({ isActive }) =>
-            isActive ? "text-violet-900" : "text-black"
+          isActive ? "text-white" : "text-black"
           }
           to="/classes"
         >
@@ -54,7 +54,7 @@ const Header = () => {
       <li className="mr-4 p-2 hover:bg-blue-500 rounded font-bold">
         <NavLink
           className={({ isActive }) =>
-            isActive ? "text-violet-900" : "text-black"
+          isActive ? "text-white" : "text-black"
           }
           to="/courses"
         >
@@ -64,7 +64,7 @@ const Header = () => {
       <li className="mr-4 p-2 hover:bg-blue-500 rounded font-bold">
         <NavLink
           className={({ isActive }) =>
-            isActive ? "text-violet-900" : "text-black"
+          isActive ? "text-white" : "text-black"
           }
           to="/books"
         >
@@ -74,7 +74,7 @@ const Header = () => {
       <li className="mr-4 p-2 hover:bg-blue-500 rounded font-bold">
         <NavLink
           className={({ isActive }) =>
-            isActive ? "text-violet-900" : "text-black"
+          isActive ? "text-white" : "text-black"
           }
           to="/instructor"
         >
@@ -84,7 +84,7 @@ const Header = () => {
       <li className="mr-4 p-2 hover:bg-blue-500 rounded font-bold">
         <NavLink
           className={({ isActive }) =>
-            isActive ? "text-violet-900" : "text-black"
+          isActive ? "text-white" : "text-black"
           }
           to="/blogs"
         >
@@ -94,7 +94,7 @@ const Header = () => {
       <li className="mr-4 p-2 hover:bg-blue-500 rounded font-bold">
         <NavLink
           className={({ isActive }) =>
-            isActive ? "text-violet-900" : "text-black"
+          isActive ? "text-white" : "text-black"
           }
           to="/contact"
         >
@@ -161,7 +161,7 @@ const Header = () => {
         ) : (
           <NavLink
             className={({ isActive }) =>
-              isActive ? "text-blue-700" : "text-black"
+            isActive ? "text-white" : "text-black"
             }
             to="/login"
           >
@@ -214,7 +214,7 @@ const Header = () => {
             </div>
           </div>
           <ul
-            className={`md:flex px-2 py-2 md:px-2 md:py-0 justify-center items-center bg-violet-300 mx-auto w-full absolute md:static duration-500 ease-in z-50 ${
+            className={`md:flex px-2 py-2 md:px-2 md:py-0 justify-center items-center bg-violet-400 mx-auto w-full absolute md:static duration-500 ease-in z-50 ${
               open ? "top-20 " : "top-[-450px]"
             }`}
           >
