@@ -124,7 +124,7 @@ const Investor = () => {
     <div>
       <div className="p-10">
         <h2
-          className="text-center text-5xl font-bold text-black"
+          className="text-center text-5xl font-bold text-violet-800"
           data-aos="zoom-in"
           data-aos-duration="1500"
           data-aos-delay="200"
@@ -145,7 +145,7 @@ const Investor = () => {
             <div key={index}>
               <div className="py-16 px-6">
                 <div
-                  className="card bg-base-100 shadow-xl min-h-[500px]"
+                  className="card bg-gray-100 shadow-xl min-h-[450px]"
                   data-aos-delay="200"
                   data-aos="zoom-in"
                   data-aos-duration="1000"

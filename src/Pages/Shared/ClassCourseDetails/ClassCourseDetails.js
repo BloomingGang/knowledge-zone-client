@@ -14,7 +14,7 @@ const ClassCourseDetails = () => {
   useEffect(() => {
     axios
 
-      .get(`https://immense-meadow-70411.herokuapp.com/course/${id}`)
+      .get(`http://localhost:5000/course/${id}`)
 
       .then((res) => setCourseInfo(res.data));
     setLoading(false);
@@ -54,7 +54,7 @@ const ClassCourseDetails = () => {
       price,
     };
 
-    fetch("https://immense-meadow-70411.herokuapp.com/order", {
+    fetch("http://localhost:5000/order", {
       method: "post",
       headers: {
         "content-type": "application/json",
@@ -209,7 +209,7 @@ const ClassCourseDetails = () => {
 
             <button
               onClick={handleCourseOrder}
-              class="btn bg-violet-800 w-full my-4"
+              class="btn bg-violet-800 hover:bg-transparent hover:text-violet-900 hover:border-violet-900 w-full my-4"
             >
               Buy the Course
             </button>

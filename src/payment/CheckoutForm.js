@@ -17,7 +17,7 @@ const CheckoutForm = ({ course }) => {
   console.log(user);
 
   useEffect(() => {
-    fetch("https://immense-meadow-70411.herokuapp.com/create-payment-intent", {
+    fetch("http://localhost:5000/create-payment-intent", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

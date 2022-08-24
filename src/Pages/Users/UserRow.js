@@ -6,7 +6,7 @@ import Swal from "sweetalert2";
 const UserRow = ({ user, index }) => {
   const { _id, email, role } = user;
   const makeAdmin = () => {
-    fetch(`https://immense-meadow-70411.herokuapp.com/user/admin/${email}`, {
+    fetch(`http://localhost:5000/user/admin/${email}`, {
       method: "PUT",
       headers: {
         authorization: `Bearer ${localStorage.getItem("accessToken")}`,
@@ -55,7 +55,7 @@ const UserRow = ({ user, index }) => {
         {role !== "admin" ? (
           <button
             onClick={makeAdmin}
-            className="btn btn-sm bg-violet-800 bg-gradient-to-r from-blue-500 to-violet-700 border-0 "
+            className="btn btn-sm bg-violet-800 hover:bg-transparent hover:text-violet-900 hover:border-violet-900 "
           >
             Make Admin
           </button>
@@ -66,7 +66,6 @@ const UserRow = ({ user, index }) => {
       <td>
         <button
           onClick={() => handleDelete(_id)}
-          // className="btn btn-sm bg-red-600 hover:bg-red-500 border-0 "
           className="text-red-600 transition ease-in-out delay-100 hover:-translate-y-1 hover:scale-110 duration-300 mt-4 mx-2"
         >
           <TrashIcon className="h-9 w-9 cursor-pointer" />

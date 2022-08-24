@@ -6,7 +6,7 @@ import CustomLink from "../../Shared/CustomLink";
 const Courses = () => {
   return (
     <div>
-      <div className="m-4">
+      <div>
         <label tabIndex="0" htmlFor="dashboard-sidebar" className=" lg:hidden">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -24,14 +24,14 @@ const Courses = () => {
           </svg>
         </label>
       </div>
-      <div className="drawer drawer-mobile mt-8">
+      <div className="drawer drawer-mobile">
         <input
           id="dashboard-sidebar"
           type="checkbox"
           className="drawer-toggle"
         />
         <div className="drawer-content">
-          <h2 className="text-3xl text-center font-bold text-violet-800  mt-4 mb-16">
+          <h2 className="text-4xl text-center font-bold text-violet-800  mt-6 mb-8">
             Courses List
           </h2>
           <Outlet></Outlet>

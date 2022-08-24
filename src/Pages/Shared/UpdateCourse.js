@@ -10,7 +10,7 @@ const UpdateCourse = () => {
   const [loading, setLoading] = useState(true);
   useEffect(() => {
     axios
-      .get(`https://immense-meadow-70411.herokuapp.com/course/${id}`)
+      .get(`http://localhost:5000/course/${id}`)
       .then((res) => serUpdateCourse(res.data));
     setLoading(false);
   }, [id]);
@@ -97,7 +97,7 @@ const UpdateCourse = () => {
 
     axios
       .put(
-        `https://immense-meadow-70411.herokuapp.com/courseUpdate/${id}`,
+        `http://localhost:5000/courseUpdate/${id}`,
         updateCourse
       )
       .then((res) => {

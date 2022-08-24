@@ -33,7 +33,7 @@ const CardK = () => {
                 reading, math, creativity, and more with play-based games.
               </p>
               <div>
-                <Link to={"#"} className="btn bg-violet-800">
+                <Link to={"#"} className="btn bg-violet-800 hover:bg-transparent hover:text-violet-900 hover:border-violet-900">
                   {" "}
                   EXPLORE &gt;{" "}
                 </Link>
