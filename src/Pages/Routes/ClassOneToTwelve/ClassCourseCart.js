@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 import auth from "../../../firebase.init";
 import useAdmin from "../../../hooks/useAdmin";
 import { TrashIcon, PencilAltIcon } from "@heroicons/react/solid";
+import Swal from "sweetalert2";
 
 const ClassCourseCart = ({ course }) => {
   const { price, title, img, _id, classCourse } = course;
@@ -15,17 +16,38 @@ const ClassCourseCart = ({ course }) => {
     navigate(`/${classCourse}/coursesInfo/${id}`);
   };
   const handleDeleteCourse = (id) => {
-    const proceed = window.confirm("Are you sure?");
-    if (proceed) {
-      const url = `https://immense-meadow-70411.herokuapp.com/course/${id}`;
-      fetch(url, {
-        method: "DELETE",
-      })
-        .then((res) => res.json())
-        .then((data) => {
-          window.location.reload();
-        });
-    }
+    // const proceed = window.confirm("Are you sure?");
+    // if (proceed) {
+    //   const url = `http://localhost:5000/course/${id}`;
+    //   fetch(url, {
+    //     method: "DELETE",
+    //   })
+    //     .then((res) => res.json())
+    //     .then((data) => {
+    //       window.location.reload();
+    //     });
+    // }
+
+    Swal.fire({
+      title: "Do You Want To Delete This ??",
+      icon: "warning",
+      showCancelButton: true,
+      confirmButtonColor: "#eb2f06",
+      cancelButtonColor: "#00ab41",
+      confirmButtonText: "Delete",
+    }).then((result) => {
+      if (result.isConfirmed) {
+        Swal.fire("Deleted!", "Your file has been deleted.", "success");
+        const url = `http://localhost:5000/course/${id}`;
+        fetch(url, {
+          method: "DELETE",
+        })
+          .then((res) => res.json())
+          .then((data) => {
+            window.location.reload();
+          });
+      }
+    });
   };
 
   const handleCourseUpdate = (id) => {
@@ -78,7 +100,7 @@ const ClassCourseCart = ({ course }) => {
           )}
         </div>
       </div>
-      {modal && (
+      {/* {modal && (
         <>
           <input type="checkbox" id="my-modal-6" class="modal-toggle" />
           <div class="modal modal-bottom sm:modal-middle">
@@ -98,7 +120,7 @@ const ClassCourseCart = ({ course }) => {
             </div>
           </div>
         </>
-      )}
+      )} */}
     </section>
   );
 };

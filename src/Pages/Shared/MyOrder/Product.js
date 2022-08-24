@@ -18,8 +18,8 @@ const Product = ({ order, index }) => {
       confirmButtonText: "Delete",
     }).then((result) => {
       if (result.isConfirmed) {
-        Swal.fire("Deleted!", "Your File Has Been Deleted !!", "success");
-        const url = `https://immense-meadow-70411.herokuapp.com/order/${id}`;
+        Swal.fire("Deleted!", "Your file has been deleted.", "success");
+        const url = `http://localhost:5000/order/${id}`;
         fetch(url, {
           method: "DELETE",
         })

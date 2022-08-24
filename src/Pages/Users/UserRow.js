@@ -6,7 +6,7 @@ import Swal from "sweetalert2";
 const UserRow = ({ user, index }) => {
   const { _id, email, role } = user;
   const makeAdmin = () => {
-    fetch(`https://immense-meadow-70411.herokuapp.com/user/admin/${email}`, {
+    fetch(`http://localhost:5000/user/admin/${email}`, {
       method: "PUT",
       headers: {
         authorization: `Bearer ${localStorage.getItem("accessToken")}`,

@@ -36,7 +36,7 @@ const ProfileUpdate = ({ name, email, setShowProfile }) => {
         phone,
       };
 
-      fetch(`https://immense-meadow-70411.herokuapp.com/users/${email}`, {
+      fetch(`http://localhost:5000/users/${email}`, {
         method: "put",
         headers: {
           "content-type": "application/json",
