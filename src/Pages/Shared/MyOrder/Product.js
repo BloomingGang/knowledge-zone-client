@@ -9,9 +9,27 @@ const Product = ({ order, index }) => {
   const navigate = useNavigate();
 
   const handleDelete = (id) => {
-   
+    Swal.fire({
+      title: "Do You Want To Delete This ??",
+      icon: "warning",
+      showCancelButton: true,
+      confirmButtonColor: "#eb2f06",
+      cancelButtonColor: "#00ab41",
+      confirmButtonText: "Delete",
+    }).then((result) => {
+      if (result.isConfirmed) {
+        Swal.fire("Deleted!", "Your file has been deleted.", "success");
+        const url = `http://localhost:5000/order/${id}`;
+        fetch(url, {
+          method: "DELETE",
+        })
+          .then((res) => res.json())
+          .then((data) => {
+            window.location.reload();
+          });
+      }
+    });
   };
-  
   return (
     <tr>
       <th>{index + 1}</th>
