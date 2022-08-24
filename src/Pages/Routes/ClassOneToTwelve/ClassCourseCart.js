@@ -17,7 +17,7 @@ const ClassCourseCart = ({ course }) => {
   const handleDeleteCourse = (id) => {
     const proceed = window.confirm("Are you sure?");
     if (proceed) {
-      const url = `https://immense-meadow-70411.herokuapp.com/course/${id}`;
+      const url = `http://localhost:5000/course/${id}`;
       fetch(url, {
         method: "DELETE",
       })
