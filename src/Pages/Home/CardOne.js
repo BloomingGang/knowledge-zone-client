@@ -24,7 +24,7 @@ const CardOne = () => {
             <img src={logo2} alt="" className="w-[115px] h-[80px] pb-5" />
             <img src={img2} alt="" className="rounded-lg pb-5 h-[250px] w-96" />
             <p className="text-lg text-justify">
-              Knowledge Zone targets the entire education market from primary
+              Knowledge Zone targets the entire education market from violet-800
               through to Secondary, Higher Education, Corporate learning,
               English Language learning and lifelong learning.
             </p>

@@ -54,7 +54,7 @@ const InstructorCard = ({ instructor, index }) => {
       </figure>
 
       <div className="items-center text-center pt-3">
-        <h2 className="text-2xl font-bold text-primary">{name}</h2>
+        <h2 className="text-2xl font-bold text-violet-800">{name}</h2>
         <p className="pb-3">{education}</p>
         <div className="text-2xl sm:text-center">
           <a href={facebook} target={"_blank"} rel="noreferrer">

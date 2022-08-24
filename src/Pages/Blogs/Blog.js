@@ -16,7 +16,7 @@ const Blog = ({ blog, setModal }) => {
         <h2 className="text-3xl text-violet-800 text-center py-3">{title}</h2>
         <p>
           {description.slice(0, 255)}{" "}
-          <span className="text-primary font-semibold pl-3">
+          <span className="text-violet-800 font-semibold pl-3">
             {description.length > 255 ? (
               <label
                 onClick={() => handleBlog(_id)}

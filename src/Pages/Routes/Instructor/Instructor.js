@@ -31,18 +31,18 @@ const Instructor = () => {
           className="drawer-toggle"
         />
         <div className="drawer-content">
-          <h2 className="text-5xl text-center font-bold text-primary mb-12  ">
+          <h2 className="text-5xl text-center font-bold text-violet-800 mb-12  ">
             Our Instructors
           </h2>
           <Outlet></Outlet>
         </div>
         <div className="drawer-side">
           <label htmlFor="dashboard-sidebar" className="drawer-overlay"></label>
-          <ul className="menu p-4 overflow-y-auto w-52 bg-base-100 text-base-content border-r-2 ">
+          <ul className="menu p-4 overflow-y-auto w-52 text-base-content border-r-2 bg-violet-300">
             {/* <!-- Sidebar content here --> */}
             <li>
               <CustomLink
-                className="w-full py-2 px-2 border-2 font-bold uppercase text-center rounded-lg"
+                className="w-full p-2 border-0 font-bold uppercase text-center rounded-lg"
                 to="/instructor"
               >
                 Bengali
@@ -50,7 +50,7 @@ const Instructor = () => {
             </li>
             <li>
               <CustomLink
-                className="w-full py-2 px-2 border-2 font-bold uppercase text-center rounded-lg"
+                className="w-full p-2 border-0 font-bold uppercase text-center rounded-lg"
                 to="/instructor/english"
               >
                 English
@@ -58,7 +58,7 @@ const Instructor = () => {
             </li>
             <li>
               <CustomLink
-                className="w-full py-2 px-2 border-2 font-bold uppercase text-center rounded-lg"
+                className="w-full p-2 border-0 font-bold uppercase text-center rounded-lg"
                 to="/instructor/mathematics"
               >
                 Mathematics
@@ -66,7 +66,7 @@ const Instructor = () => {
             </li>
             <li>
               <CustomLink
-                className="w-full py-2 px-2 border-2 font-bold uppercase text-center rounded-lg"
+                className="w-full p-2 border-0 font-bold uppercase text-center rounded-lg"
                 to="/instructor/chemistry"
               >
                 Chemistry
@@ -74,7 +74,7 @@ const Instructor = () => {
             </li>
             <li>
               <CustomLink
-                className="w-full py-2 px-2 border-2 font-bold uppercase text-center rounded-lg"
+                className="w-full p-2 border-0 font-bold uppercase text-center rounded-lg"
                 to="/instructor/physics"
               >
                 Physics
@@ -82,7 +82,7 @@ const Instructor = () => {
             </li>
             <li>
               <CustomLink
-                className="w-full py-2 px-2 border-2 font-bold uppercase text-center rounded-lg"
+                className="w-full p-2 border-0 font-bold uppercase text-center rounded-lg"
                 to="/instructor/biology"
               >
                 Biology
@@ -90,7 +90,7 @@ const Instructor = () => {
             </li>
             <li>
               <CustomLink
-                className="w-full py-2 px-2 border-2 font-bold uppercase text-center rounded-lg"
+                className="w-full p-2 border-0 font-bold uppercase text-center rounded-lg"
                 to="/instructor/finance"
               >
                 Finance
@@ -98,7 +98,7 @@ const Instructor = () => {
             </li>
             <li>
               <CustomLink
-                className="w-full py-2 px-2 border-2 font-bold uppercase text-center rounded-lg"
+                className="w-full p-2 border-0 font-bold uppercase text-center rounded-lg"
                 to="/instructor/religious"
               >
                 Religious
@@ -106,7 +106,7 @@ const Instructor = () => {
             </li>
             <li>
               <CustomLink
-                className="w-full py-2 px-2 border-2 font-bold uppercase text-center rounded-lg"
+                className="w-full p-2 border-0 font-bold uppercase text-center rounded-lg"
                 to="/instructor/programming"
               >
                 Programming

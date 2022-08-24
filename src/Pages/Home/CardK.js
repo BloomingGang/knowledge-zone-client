@@ -10,14 +10,12 @@ const CardK = () => {
       <div className="hero py-16">
         <div className="hero-content flex-col lg:flex-row-reverse">
           <div className="lg:w-[60%] w-full flex justify-center  ">
-            <img
-              src={img}
-              className="w-3/4"
-              alt=""
-            />
+            <img src={img} className="w-3/4" alt="" />
           </div>
           <div className="px-16  lg:w-[40%]">
-            <h1 className="text-4xl font-bold text-center pb-5 text-violet-800">Available For All Platforms</h1>
+            <h1 className="text-4xl font-bold text-center pb-5 text-violet-800">
+              Available For All Platforms
+            </h1>
             <img src={devices} alt="" />
           </div>
         </div>
@@ -31,19 +29,22 @@ const CardK = () => {
               </h2>
               <p className="text-xl">
                 Fuel your child's interest in reading, math, creativity, and
-                more with play-based games.
-                Fuel your child's interest in reading, math, creativity, and
-                more with play-based games.
+                more with play-based games. Fuel your child's interest in
+                reading, math, creativity, and more with play-based games.
               </p>
               <div>
-                <Link to={"#"} className="btn btn-primary">
+                <Link to={"#"} className="btn bg-violet-800">
                   {" "}
                   EXPLORE &gt;{" "}
                 </Link>
               </div>
             </div>
             <div className="lg:w-[50%] w-full flex justify-center sm:order-1 lg:order-2">
-              <img className="py-10 w-full lg:w-3/5 text-center" src={hoverImg} alt="" />
+              <img
+                className="py-10 w-full lg:w-3/5 text-center"
+                src={hoverImg}
+                alt=""
+              />
             </div>
           </div>
         </div>

@@ -210,7 +210,7 @@
 //               <p className="text-xl font-bold">$ {price}</p>
 //             </div>
 
-//             <button class="btn btn-primary w-full my-4">Buy the Course</button>
+//             <button class="btn bg-violet-800 w-full my-4">Buy the Course</button>
 //             <div className="flex justify-between py-6">
 //               <div className="flex items-center">
 //                 <div>

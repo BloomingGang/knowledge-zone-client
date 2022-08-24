@@ -209,7 +209,7 @@ const ClassCourseDetails = () => {
 
             <button
               onClick={handleCourseOrder}
-              class="btn btn-primary w-full my-4"
+              class="btn bg-violet-800 w-full my-4"
             >
               Buy the Course
             </button>
