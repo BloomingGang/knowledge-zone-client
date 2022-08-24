@@ -105,7 +105,7 @@ const AcademicCourses = () => {
             <div>
               <div key={index}>
                 <a href={courses.link}>
-                  <img className="rounded-xl" src={courses.picture} alt="" />
+                  <img className="rounded-lg" src={courses.picture} alt="" />
                 </a>
               </div>
             </div>

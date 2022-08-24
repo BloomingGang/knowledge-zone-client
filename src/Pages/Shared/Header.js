@@ -180,20 +180,19 @@ const Header = () => {
         </div>
 
         <div>
-          <div class="input-group">
-            <input
-              onChange={(e) => setSearchCourse(e.target.value)}
-              type="search"
-              name="text"
-              placeholder="Search Courses"
-              className="input input-sm"
-            />
-            <button
-              onClick={(e) => handleSearch(e)}
-              className="btn btn-square btn-sm bg-violet-300 hover:bg-violet-300"
-            >
-              <i className="fa-solid fa-magnifying-glass text-lg text-violet-900"></i>
-            </button>
+          <div class="form-control">
+            <label class="input-group input-group-sm">
+              <input
+                onChange={(e) => setSearchCourse(e.target.value)}
+                type="search"
+                name="text"
+                placeholder="Search Courses"
+                className="input input-bordered input-sm"
+              />
+              <span onClick={(e) => handleSearch(e)} className="bg-violet-300">
+                <i className="fa-solid fa-magnifying-glass text-lg text-violet-800"></i>
+              </span>
+            </label>
           </div>
         </div>
       </div>
