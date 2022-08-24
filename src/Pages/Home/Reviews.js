@@ -51,9 +51,9 @@ const Reviews = () => {
             <Carousel swipeable="true" responsive={responsive} infinite={true}>
               {reviews.slice(-9).map((review, index) => (
                 <div key={index} class="p-4 w-full">
-                  <div class="h-[250px] bg-violet-100 p-8 rounded-xl">
+                  <div class="bg-gray-100 p-8 rounded-lg">
                     <img src={quote} width={30} alt="" className="pb-3" />
-                    <p class="leading-relaxed mb-6">{review.comment}</p>
+                    <p class="h-[100px] leading-relaxed mb-6">{review.comment}</p>
                     <a class="inline-flex items-center">
                       <img
                         alt=""

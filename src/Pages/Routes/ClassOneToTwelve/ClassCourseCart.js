@@ -69,7 +69,7 @@ const ClassCourseCart = ({ course }) => {
           <div className="flex justify-between items-center">
             <span className="text-2xl font-bold text-green-700">$ {price}</span>
             <button
-              className="border-2 shadow-lg hover:bg-violet-500 hover:text-black p-2 rounded-lg bg-violet-800 text-white font-bold transition duration-300"
+              className="btn border-violet-800 rounded-lg bg-violet-800 text-white font-bold hover:bg-transparent hover:text-violet-900 hover:border-violet-900"
               onClick={() => handleCourse(_id)}
             >
               Enroll Now

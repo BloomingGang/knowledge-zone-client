@@ -29,7 +29,7 @@ const ProgramCart = ({ info }) => {
               <p className="text-base">{description}</p>
             </div>
             <div>
-              <Link to={"/classes"} className="btn bg-violet-800">
+              <Link to={"/classes"} className="btn bg-violet-800 hover:bg-transparent hover:text-violet-900 hover:border-violet-900">
                 {" "}
                 EXPLORE &gt;{" "}
               </Link>

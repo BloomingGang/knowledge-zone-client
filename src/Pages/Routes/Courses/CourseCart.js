@@ -25,7 +25,7 @@ const CourseCart = ({ course }) => {
             {!course.paid && (
               <button
                 onClick={() => navigate(`/payment/${_id}`)}
-                className="btn bg-violet-800"
+                className="btn bg-violet-800 hover:bg-transparent hover:text-violet-900 hover:border-violet-900"
               >
                 Buy Now
               </button>
