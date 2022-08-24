@@ -123,18 +123,33 @@ const Investor = () => {
   return (
     <div>
       <div className="p-10">
-        <h2 className="text-center text-5xl font-bold text-black">
+        <h2
+          className="text-center text-5xl font-bold text-black"
+          data-aos="zoom-in"
+          data-aos-duration="1500"
+          data-aos-delay="200"
+        >
           {" "}
           Our Investors{" "}
         </h2>
-        <h4 className="text-center text-xl text-black py-4">
+        <p
+          className="text-center text-xl text-black py-4"
+          data-aos="zoom-in"
+          data-aos-duration="1000"
+          data-aos-delay="200"
+        >
           50+ Investors who have been strong partners in our growth story
-        </h4>
+        </p>
         <Slider {...settings}>
           {investors.map((investor, index) => (
             <div key={index}>
               <div className="py-16 px-6">
-                <div className="card bg-base-100 shadow-xl min-h-[500px]">
+                <div
+                  className="card bg-base-100 shadow-xl min-h-[500px]"
+                  data-aos-delay="200"
+                  data-aos="zoom-in"
+                  data-aos-duration="1000"
+                >
                   <figure className="px-10 pt-6">
                     <img
                       src={investor.avatar}
@@ -143,7 +158,9 @@ const Investor = () => {
                     />
                   </figure>
                   <div className="card-body items-center text-center">
-                    <p className="text-justify text-lg">{investor.description}</p>
+                    <p className="text-justify text-lg">
+                      {investor.description}
+                    </p>
                     <h2 className="card-title">{investor.name}</h2>
                   </div>
                 </div>

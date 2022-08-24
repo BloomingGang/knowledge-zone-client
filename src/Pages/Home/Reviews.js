@@ -39,7 +39,12 @@ const Reviews = () => {
     <div className="mt-10">
       <section id="team-section">
         <div className="container mx-auto">
-          <div className="mb-12 w-full mx-auto">
+          <div
+            className="mb-12 w-full mx-auto"
+            data-aos-delay="200"
+            data-aos="zoom-in"
+            data-aos-duration="1000"
+          >
             <h3 className="text-center text-4xl font-bold text-violet-800 pt-10">
               What Our Students Say About Us
             </h3>
@@ -51,7 +56,12 @@ const Reviews = () => {
             <Carousel swipeable="true" responsive={responsive} infinite={true}>
               {reviews.slice(-9).map((review, index) => (
                 <div key={index} class="p-4 w-full">
-                  <div class="h-[250px] bg-violet-100 p-8 rounded-xl">
+                  <div
+                    class="h-[250px] bg-violet-100 p-8 rounded-xl"
+                    data-aos-delay="200"
+                    data-aos="zoom-in"
+                    data-aos-duration="1000"
+                  >
                     <img src={quote} width={30} alt="" className="pb-3" />
                     <p class="leading-relaxed mb-6">{review.comment}</p>
                     <a class="inline-flex items-center">
