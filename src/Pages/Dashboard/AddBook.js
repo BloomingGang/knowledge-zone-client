@@ -372,7 +372,7 @@ const AddBook = () => {
             <div class="form-control w-full max-w-xs">
               <label class="label">
                 {" "}
-                <span className="label-text text-lg    ">Book Image:</span>
+                <span className="label-text text-lg">Book Image:</span>
               </label>
               <input
                 required

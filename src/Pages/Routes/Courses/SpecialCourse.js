@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Loading from "../../Shared/Loading";
+import ClassCourseCart from "../ClassOneToTwelve/ClassCourseCart";
 import CourseCart from "./CourseCart";
 
 const SpecialCourse = () => {
@@ -20,7 +21,7 @@ const SpecialCourse = () => {
   return (
     <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6 p-6 ">
       {specialCourse?.map((course) => (
-        <CourseCart key={course.id} course={course}></CourseCart>
+        <ClassCourseCart key={course.id} course={course}></ClassCourseCart>
       ))}
     </div>
   );

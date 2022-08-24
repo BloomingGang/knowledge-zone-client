@@ -6,8 +6,8 @@ import trust4 from "../../img/trust_4.svg";
 
 const Learners = () => {
   return (
-    <div className="w-11/12 mx-auto bg-gradient-to-r from-blue-200 via-indigo-200 to-purple-200 shadow-xl pt-4 mt-3 bg-white rounded-xl">
-      <h1 className="text-center md:text-4xl text-3xl text-primary font-bold mt-8 mb-10">
+    <div className="w-11/12 mx-auto bg-gradient-to-r from-blue-200 via-violet-200 to-purple-200 shadow-xl pt-4 mt-3 bg-white rounded-xl">
+      <h1 className="text-center md:text-4xl text-3xl text-violet-800 font-bold mt-8 mb-10">
         Trusted By 150+ Million Learners
       </h1>
       <div className="md:flex justify-evenly">
@@ -29,14 +29,13 @@ const Learners = () => {
         </div>
         <div className="mb-8">
           <div className="flex justify-center">
-            <img width={55} src={trust3} alt=""/>
+            <img width={55} src={trust3} alt="" />
           </div>
           <p className="font-bold text-center">
             Activity-based <br /> Learning
           </p>
         </div>
         <div>
-
           <div className="flex justify-center">
             <img width={55} src={trust4} alt="" />
           </div>

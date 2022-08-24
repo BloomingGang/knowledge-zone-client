@@ -9,7 +9,7 @@ const AddReviwe = () => {
   const handleForm = (e) => {
     e.preventDefault();
     const name = e.target.name.value;
-    const image = e.target.image.value;
+    const image = user?.photoURL;
     const comment = e.target.comment.value;
     const ratting = e.target.ratting.value;
     if (ratting < 0 || ratting > 5) {
@@ -54,19 +54,7 @@ const AddReviwe = () => {
               disabled
             />
           </div>
-          <div class="form-control">
-            <label class="label">
-              <span className="label-text text-lg    ">Image:</span>
-            </label>
-            <input
-              type="text"
-              placeholder="Image"
-              name="image"
-              class="input input-bordered"
-              value={user?.photoURL}
-              disabled
-            />
-          </div>
+
           <div class="form-control">
             <label class="label">
               <span className="label-text text-lg    ">Comment:</span>
@@ -100,7 +88,7 @@ const AddReviwe = () => {
           </p>
         )}
         <div className="flex justify-center">
-          <button className="btn text-white hover:text-black bg-indigo-800 hover:bg-indigo-500 border-0">
+          <button className="btn text-white hover:text-black bg-violet-800 hover:bg-violet-500 border-0">
             submit review
           </button>
         </div>

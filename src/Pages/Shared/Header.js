@@ -44,9 +44,7 @@ const Header = () => {
     <>
       <li className="mr-4 p-2 hover:bg-blue-500 rounded font-bold">
         <NavLink
-          className={({ isActive }) =>
-            isActive ? "text-blue-700" : "text-black"
-          }
+          className={({ isActive }) => (isActive ? "text-white" : "text-black")}
           to="/"
         >
           Home
@@ -54,9 +52,7 @@ const Header = () => {
       </li>
       <li className="mr-4 p-2 hover:bg-blue-500 rounded font-bold">
         <NavLink
-          className={({ isActive }) =>
-            isActive ? "text-blue-700" : "text-black"
-          }
+          className={({ isActive }) => (isActive ? "text-white" : "text-black")}
           to="/classes"
         >
           Academic Course
@@ -64,9 +60,7 @@ const Header = () => {
       </li>
       <li className="mr-4 p-2 hover:bg-blue-500 rounded font-bold">
         <NavLink
-          className={({ isActive }) =>
-            isActive ? "text-blue-700" : "text-black"
-          }
+          className={({ isActive }) => (isActive ? "text-white" : "text-black")}
           to="/courses"
         >
           Skill Development Course
@@ -74,9 +68,7 @@ const Header = () => {
       </li>
       <li className="mr-4 p-2 hover:bg-blue-500 rounded font-bold">
         <NavLink
-          className={({ isActive }) =>
-            isActive ? "text-blue-700" : "text-black"
-          }
+          className={({ isActive }) => (isActive ? "text-white" : "text-black")}
           to="/books"
         >
           Books
@@ -84,9 +76,7 @@ const Header = () => {
       </li>
       <li className="mr-4 p-2 hover:bg-blue-500 rounded font-bold">
         <NavLink
-          className={({ isActive }) =>
-            isActive ? "text-blue-700" : "text-black"
-          }
+          className={({ isActive }) => (isActive ? "text-white" : "text-black")}
           to="/instructor"
         >
           Instructor
@@ -94,9 +84,7 @@ const Header = () => {
       </li>
       <li className="mr-4 p-2 hover:bg-blue-500 rounded font-bold">
         <NavLink
-          className={({ isActive }) =>
-            isActive ? "text-blue-700" : "text-black"
-          }
+          className={({ isActive }) => (isActive ? "text-white" : "text-black")}
           to="/blogs"
         >
           Blog
@@ -104,9 +92,7 @@ const Header = () => {
       </li>
       <li className="mr-4 p-2 hover:bg-blue-500 rounded font-bold">
         <NavLink
-          className={({ isActive }) =>
-            isActive ? "text-blue-700" : "text-black"
-          }
+          className={({ isActive }) => (isActive ? "text-white" : "text-black")}
           to="/contact"
         >
           Contact
@@ -127,7 +113,7 @@ const Header = () => {
             <div class="card-body">
               <span class="card-title flex justify-around border-b-4 text-red-500">
                 New{" "}
-                <span className="text-purple-500">
+                <span className="text-red-500">
                   {bookN?.unreadCount + ccis?.unreadCount}
                 </span>
                 {/* <span className="text-purple-500">{ccis?.unreadCount}</span> */}
@@ -215,7 +201,7 @@ const Header = () => {
         ) : (
           <NavLink
             className={({ isActive }) =>
-              isActive ? "text-blue-700" : "text-black"
+              isActive ? "text-white" : "text-black"
             }
             to="/login"
           >
@@ -226,7 +212,7 @@ const Header = () => {
     </>
   );
   return (
-    <div className="bg-gradient-to-r from-blue-900 via-indigo-900 to-violet-900 sticky top-0 z-50">
+    <div className="bg-violet-900 sticky top-0 z-50">
       <div className="md:flex flex-row justify-between items-center py-2 px-20 hidden ">
         <div className="flex flex-row items-center">
           <img src={logo} alt="" className="w-[40px] h-[50px]" />
@@ -234,6 +220,7 @@ const Header = () => {
         </div>
 
         <div>
+          {/* <<<<<<< HEAD
           <div>
             <div class="form-control">
               <label class="input-group input-group-sm">
@@ -252,6 +239,21 @@ const Header = () => {
                 </span>
               </label>
             </div>
+======= */}
+          <div class="form-control">
+            <label class="input-group input-group-sm">
+              <input
+                onChange={(e) => setSearchCourse(e.target.value)}
+                type="search"
+                name="text"
+                placeholder="Search Courses"
+                className="input input-bordered input-sm"
+              />
+              <span onClick={(e) => handleSearch(e)} className="bg-violet-300">
+                <i className="fa-solid fa-magnifying-glass text-lg text-violet-800"></i>
+              </span>
+            </label>
+            {/* >>>>>>> e0b77533e1d1083037497bea89a1b40663334637 */}
           </div>
         </div>
       </div>
@@ -273,10 +275,7 @@ const Header = () => {
             </div>
           </div>
           <ul
-            // <<<<<<< HEAD
-            //             className={`md:flex p-2 justify-center items-center bg-gradient-to-r from-violet-300 via-indigo-300 to-purple-300 mx-auto w-full absolute md:static duration-500 ease-in z-50 ${
-            // =======
-            className={`md:flex px-2 py-2 md:px-2 md:py-0 justify-center items-center bg-gradient-to-r from-violet-300 via-indigo-300 to-purple-300 mx-auto w-full absolute md:static duration-500 ease-in z-50 ${
+            className={`md:flex px-2 py-2 md:px-2 md:py-0 justify-center items-center bg-violet-400 mx-auto w-full absolute md:static duration-500 ease-in z-50 ${
               open ? "top-20 " : "top-[-450px]"
             }`}
           >

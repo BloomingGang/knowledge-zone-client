@@ -21,7 +21,7 @@ const settings = {
 
 const CarouselOne = () => {
   return (
-    <div className="px-7 bg-gradient-to-r from-blue-900 via-indigo-900 to-purple-900 py-24 ">
+    <div className="px-7 bg-gradient-to-r from-blue-900 via-violet-900 to-purple-900 py-24 ">
       <div className="container mx-auto">
         <Slider {...settings}>
           <div>

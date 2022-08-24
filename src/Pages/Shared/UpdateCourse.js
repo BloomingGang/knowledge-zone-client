@@ -101,7 +101,6 @@ const UpdateCourse = () => {
         toast.success(`Update ${classCourse}`);
         event.target.reset();
       });
-    console.log(updateCourse);
   };
 
   return (

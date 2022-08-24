@@ -12,6 +12,9 @@ const Books = () => {
 
   return (
     <div>
+         <h2 className="text-4xl text-center font-bold text-violet-800  mt-4">
+            Books List
+          </h2>
       <div className="grid md:grid-cols-4 gap-10 px-8 py-16">
         {book.map((bo) => (
           <Book key={bo._id} book={bo}></Book>

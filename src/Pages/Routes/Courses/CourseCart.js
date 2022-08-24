@@ -18,17 +18,19 @@ const CourseCart = ({ course }) => {
             <span>
               {" "}
               <span className="text-xl font-bold">Price:</span>{" "}
-              <span className="text-lg font-bold text-primary">${price}</span>
+              <span className="text-lg font-bold text-violet-800">
+                ${price}
+              </span>
             </span>
             {!course.paid && (
               <button
                 onClick={() => navigate(`/payment/${_id}`)}
-                className="btn btn-primary"
+                className="btn bg-violet-800 hover:bg-transparent hover:text-violet-900 hover:border-violet-900"
               >
                 Buy Now
               </button>
             )}
-            {course.paid && <span className="text-primary">Bought It</span>}
+            {course.paid && <span className="text-violet-800">Bought It</span>}
           </div>
         </div>
       </div>
