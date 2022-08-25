@@ -46,8 +46,8 @@ const SkillDevCourses = () => {
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 4,
-          slidesToScroll: 4,
+          slidesToShow: 3,
+          slidesToScroll: 3,
           infinite: true,
           dots: true,
         },
@@ -61,6 +61,14 @@ const SkillDevCourses = () => {
         },
       },
       {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          initialSlide: 1,
+        },
+      },
+      {
         breakpoint: 480,
         settings: {
           slidesToShow: 1,
@@ -71,9 +79,9 @@ const SkillDevCourses = () => {
   };
   return (
     <div>
-      <div className="container mx-auto py-24">
+      <div className="container mx-auto mt-24 md:mt-32">
         <h1
-          className="text-4xl font-bold text-center text-violet-800 pb-12"
+          className="text-4xl font-bold text-center text-violet-800 pb-16"
           data-aos-delay="200"
           data-aos="zoom-in"
           data-aos-duration="1000"
@@ -87,8 +95,7 @@ const SkillDevCourses = () => {
               data-aos="zoom-in"
               data-aos-duration="1000"
             >
-              <div key={index}
-               className=" flex justify-center">
+              <div key={index} className=" flex justify-center">
                 <a href={courses.link}>
                   <img className="rounded-lg" src={courses.picture} alt="" />
                 </a>

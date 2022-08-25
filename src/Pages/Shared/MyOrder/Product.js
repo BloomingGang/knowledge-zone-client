@@ -2,11 +2,10 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import Swal from "sweetalert2";
 // import useMyOrder from "../../../hooks/useMyOrder";
-import { TrashIcon } from '@heroicons/react/solid';
+import { TrashIcon } from "@heroicons/react/solid";
 
 const Product = ({ order, index }) => {
-  const { _id, productName, email ,paid} = order;
-  console.log(order,'order detail');
+  const { _id, productName, email, paid } = order;
   const navigate = useNavigate();
 
   const handleDelete = (id) => {

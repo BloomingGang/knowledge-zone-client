@@ -32,10 +32,11 @@ const Courses = () => {
         />
         <div className="drawer-content">
           <h2
-           data-aos-delay="200"
-           data-aos="zoom-in"
-           data-aos-duration="1000"
-            className="text-4xl text-center font-bold text-violet-800  mt-6 mb-8">
+            data-aos-delay="200"
+            data-aos="zoom-in"
+            data-aos-duration="1000"
+            className="text-4xl text-center font-bold text-violet-800  mt-6 mb-8"
+          >
             Skill Development Courses
           </h2>
           <Outlet></Outlet>

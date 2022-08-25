@@ -114,8 +114,8 @@ const UpdateCourse = () => {
         </h1>
         <div className="grid md:grid-cols-2 gap-x-10 gap-y-0">
           <div className="mb-6">
-            <div class="form-control w-full max-w-xs">
-              <label class="label">
+            <div className="form-control w-full max-w-xs">
+              <label className="label">
                 {" "}
                 <span className="label-text text-lg    ">Course Title:</span>
               </label>
@@ -124,13 +124,13 @@ const UpdateCourse = () => {
                 type="text"
                 name="title"
                 placeholder={title}
-                class="input input-bordered w-full max-w-xs"
+                className="input input-bordered w-full max-w-xs"
               />
             </div>
           </div>
           <div className="mb-6">
-            <div class="form-control w-full max-w-xs">
-              <label class="label">
+            <div className="form-control w-full max-w-xs">
+              <label className="label">
                 {" "}
                 <span className="label-text text-lg    ">Course Image:</span>
               </label>
@@ -139,13 +139,13 @@ const UpdateCourse = () => {
                 type="text"
                 name="image"
                 placeholder={img}
-                class="input input-bordered w-full max-w-xs"
+                className="input input-bordered w-full max-w-xs"
               />
             </div>
           </div>
           <div className="mb-6">
-            <div class="form-control w-full max-w-xs">
-              <label class="label">
+            <div className="form-control w-full max-w-xs">
+              <label className="label">
                 {" "}
                 <span className="label-text text-lg    ">Course Price:</span>
               </label>
@@ -154,13 +154,13 @@ const UpdateCourse = () => {
                 type="number"
                 name="price"
                 placeholder={price}
-                class="input input-bordered w-full max-w-xs"
+                className="input input-bordered w-full max-w-xs"
               />
             </div>
           </div>
           <div className="mb-6">
-            <div class="form-control w-full max-w-xs">
-              <label class="label">
+            <div className="form-control w-full max-w-xs">
+              <label className="label">
                 {" "}
                 <span className="label-text text-lg    ">
                   Course Description:
@@ -171,13 +171,13 @@ const UpdateCourse = () => {
                 type="text"
                 name="sortDesc"
                 placeholder={ShortDescription}
-                class="input input-bordered w-full max-w-xs"
+                className="input input-bordered w-full max-w-xs"
               />
             </div>
           </div>
           <div className="mb-6">
-            <div class="form-control w-full max-w-xs">
-              <label class="label">
+            <div className="form-control w-full max-w-xs">
+              <label className="label">
                 {" "}
                 <span className="label-text text-lg    ">Instructor Name:</span>
               </label>
@@ -186,13 +186,13 @@ const UpdateCourse = () => {
                 type="text"
                 name="instructorName"
                 placeholder={instructorName}
-                class="input input-bordered w-full max-w-xs"
+                className="input input-bordered w-full max-w-xs"
               />
             </div>
           </div>
           <div className="mb-6">
-            <div class="form-control w-full max-w-xs">
-              <label class="label">
+            <div className="form-control w-full max-w-xs">
+              <label className="label">
                 {" "}
                 <span className="label-text text-lg    ">
                   Instructor Education:
@@ -203,13 +203,13 @@ const UpdateCourse = () => {
                 type="text"
                 name="education"
                 placeholder={education}
-                class="input input-bordered w-full max-w-xs"
+                className="input input-bordered w-full max-w-xs"
               />
             </div>
           </div>
           <div className="mb-6">
-            <div class="form-control w-full max-w-xs">
-              <label class="label">
+            <div className="form-control w-full max-w-xs">
+              <label className="label">
                 {" "}
                 <span className="label-text text-lg    ">About Course:</span>
               </label>
@@ -218,13 +218,13 @@ const UpdateCourse = () => {
                 type="text"
                 name="about"
                 placeholder={about}
-                class="input input-bordered w-full max-w-xs"
+                className="input input-bordered w-full max-w-xs"
               />
             </div>
           </div>
           <div className="mb-6">
-            <div class="form-control w-full max-w-xs">
-              <label class="label">
+            <div className="form-control w-full max-w-xs">
+              <label className="label">
                 {" "}
                 <span className="label-text text-lg    ">
                   Total Video Duration:
@@ -235,13 +235,13 @@ const UpdateCourse = () => {
                 type="number"
                 name="hour"
                 placeholder={hours}
-                class="input input-bordered w-full max-w-xs"
+                className="input input-bordered w-full max-w-xs"
               />
             </div>
           </div>
           <div className="mb-6">
-            <div class="form-control w-full max-w-xs">
-              <label class="label">
+            <div className="form-control w-full max-w-xs">
+              <label className="label">
                 {" "}
                 <span className="label-text text-lg    ">Total Videos:</span>
               </label>
@@ -250,13 +250,13 @@ const UpdateCourse = () => {
                 type="Number"
                 name="videos"
                 placeholder={videos}
-                class="input input-bordered w-full max-w-xs"
+                className="input input-bordered w-full max-w-xs"
               />
             </div>
           </div>
           <div className="mb-6">
-            <div class="form-control w-full max-w-xs">
-              <label class="label">
+            <div className="form-control w-full max-w-xs">
+              <label className="label">
                 {" "}
                 <span className="label-text text-lg    ">Total Quiz</span>
               </label>
@@ -265,13 +265,13 @@ const UpdateCourse = () => {
                 type="Number"
                 name="quiz"
                 placeholder={quizzes}
-                class="input input-bordered w-full max-w-xs"
+                className="input input-bordered w-full max-w-xs"
               />
             </div>
           </div>
           <div className="mb-6">
-            <div class="form-control w-full max-w-xs">
-              <label class="label">
+            <div className="form-control w-full max-w-xs">
+              <label className="label">
                 {" "}
                 <span className="label-text text-lg    ">Total Notes:</span>
               </label>
@@ -280,7 +280,7 @@ const UpdateCourse = () => {
                 type="Number"
                 name="note"
                 placeholder={notes}
-                class="input input-bordered w-full max-w-xs"
+                className="input input-bordered w-full max-w-xs"
               />
             </div>
           </div>

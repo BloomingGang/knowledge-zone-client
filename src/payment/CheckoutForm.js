@@ -12,9 +12,8 @@ const CheckoutForm = ({ course }) => {
   const [transactionId, setTransactionId] = useState("");
   const stripe = useStripe();
   const elements = useElements();
-  const { price,_id } = course;
+  const { price, _id } = course;
   const { displayName, email } = user;
-  console.log(user);
 
   useEffect(() => {
     fetch("http://localhost:5000/create-payment-intent", {
@@ -78,20 +77,19 @@ const CheckoutForm = ({ course }) => {
       });
 
       const payment = {
-        transactionId: paymentIntent.id
-    }
+        transactionId: paymentIntent.id,
+      };
 
-    fetch(`http://localhost:5000/enrollCourse/${_id}`, {
-        method: 'PATCH',
+      fetch(`http://localhost:5000/enrollCourse/${_id}`, {
+        method: "PATCH",
         headers: {
-            'content-type': 'application/json',
-            'authorization': `Bearer ${localStorage.getItem("accessToken")}`
+          "content-type": "application/json",
+          authorization: `Bearer ${localStorage.getItem("accessToken")}`,
         },
-        body: JSON.stringify(payment)
-    }).then(res => res.json())
-        .then(data => {
-            console.log(data);
-        })
+        body: JSON.stringify(payment),
+      })
+        .then((res) => res.json())
+        .then((data) => {});
     }
   };
   return (
