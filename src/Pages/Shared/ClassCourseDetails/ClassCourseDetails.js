@@ -70,7 +70,7 @@ const ClassCourseDetails = () => {
       });
   };
   return (
-    <div className="container mx-auto grid lg:grid-cols-2 grid-cols-1 gap-12 py-12">
+    <div className="container mx-auto grid lg:grid-cols-2 grid-cols-1 gap-12 py-12 px-6 md:px-0">
       <div>
         <h1 className="text-3xl text-violet-800 mb-4">{title}</h1>
         <p>{ShortDescription}</p>
@@ -79,7 +79,7 @@ const ClassCourseDetails = () => {
           <h1 className="text-2xl text-violet-700 mb-4">Instructor</h1>
           <div className="flex border-2 rounded-xl p-6">
             <div class="avatar mr-8">
-              <div class="w-20 rounded-full">
+              <div class="w-20 h-20 rounded-full">
                 <img src={instructorImg} alt="" />
               </div>
             </div>
@@ -149,7 +149,7 @@ const ClassCourseDetails = () => {
             <hr />
             <div
               tabindex="0"
-              class="collapse collapse-arrow  bg-base-100 rounded-box"
+              class="collapse collapse-arrow  bg-base-100 rounded-box my-4"
             >
               <div class="collapse-title text-xl font-medium hover:text-violet-800">
                 {syllabus?.email?.title}
