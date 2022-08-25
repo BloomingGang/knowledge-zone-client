@@ -35,12 +35,13 @@ const ClassCourseDetails = () => {
   } = courseInfo;
   useEffect(() => {
     axios.get(`http://localhost:5000/course/${id}`).then((res) => setCourseInfo(res.data));
-    setLoading(false);
+    
      myOrder?.find(paid => {
       if(paid.id == _id) 
       return setMatchPaid(true);
       
     });
+    setLoading(false);
    
   }, [id,_id,myOrder]);
  
@@ -48,7 +49,7 @@ const ClassCourseDetails = () => {
   if (loading) {
     return <Loading />;
   }
- 
+ console.log(matchPaid,'match paid');
   
 
   const handleCourseOrder = () => {
@@ -218,13 +219,22 @@ const ClassCourseDetails = () => {
               </a>
               <p className="text-xl font-bold">$ {price}</p>
             </div>
-
+              {
+                matchPaid?
+            <button
+              
+              class={`btn-disabled btn bg-violet-800 text-white  w-full my-4`}
+            >
+              Already Paid
+            </button>
+            :
             <button
               onClick={handleCourseOrder}
-              class={`${matchPaid === false && "btn-disabled"} btn bg-violet-800 hover:bg-transparent hover:text-violet-900 hover:border-violet-900 w-full my-4`}
+              class={`btn bg-violet-800 hover:bg-transparent hover:text-violet-900 hover:border-violet-900 w-full my-4`}
             >
               Buy the Course
             </button>
+              }
             <div className="flex justify-between py-6">
               <div className="flex items-center">
                 <div>
