@@ -3,7 +3,8 @@ import useMyOrder from "../../../hooks/useMyOrder";
 import Product from "./Product";
 
 const MyOrder = () => {
-  const [myOrder, setMyOrder] = useMyOrder([]);
+  const [myOrder] = useMyOrder(["order"]);
+
 
   return (
     <div>

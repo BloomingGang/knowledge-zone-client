@@ -5,14 +5,15 @@ import { useNavigate } from "react-router-dom";
 import axiosPrivate from "../api/axiosPrivate";
 import auth from "../firebase.init";
 
-const useMyOrder = () => {
+const useMyOrder = (props) => {
+  console.log(props,"props value")
   const [user] = useAuthState(auth);
   const navigate = useNavigate();
   const [myOrder, setMyOrder] = useState([]);
   const email = user?.email;
   useEffect(() => {
     const getMyOrder = async () => {
-      const url = `http://localhost:5000/order?email=${email}`;
+      const url = `http://localhost:5000/${props}?email=${email}`;
       try {
         const { data } = await axiosPrivate.get(url);
         setMyOrder(data);

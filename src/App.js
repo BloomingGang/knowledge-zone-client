@@ -65,6 +65,7 @@ import AddInstructor from "./Pages/Dashboard/AddInstructor";
 import UpdateInstructor from "./Pages/Dashboard/UpdateInstructor";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import MyCollection from "./Pages/Shared/MyCollection";
 
 function App() {
   useEffect(() => {
@@ -206,6 +207,7 @@ function App() {
         />
         <Route path="/myOrder" element={<MyOrder />} />
         <Route path="/addReviwe" element={<AddReviwe />} />
+        <Route path="/myCollection" element={<MyCollection/>} />
         <Route
           path="/addBook"
           element={

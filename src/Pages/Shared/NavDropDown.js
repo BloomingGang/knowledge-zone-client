@@ -33,7 +33,7 @@ const NavDropDown = () => {
             <Link to="/myProfile">My Profile</Link>
           </li>
           <li>
-            <Link to="/">My Courses</Link>
+            <Link to="myCollection">My Collection</Link>
           </li>
           <li>
             <Link to="/myOrder">My Order</Link>

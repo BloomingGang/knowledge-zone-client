@@ -23,6 +23,7 @@ const ClassCourseDetails = () => {
     return <Loading />;
   }
   const {
+    _id,
     title,
     img,
     ShortDescription,
@@ -52,6 +53,8 @@ const ClassCourseDetails = () => {
       productName,
       img,
       price,
+      paid:false,
+      id:_id
     };
 
     fetch("http://localhost:5000/order", {
