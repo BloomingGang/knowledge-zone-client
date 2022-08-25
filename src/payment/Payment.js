@@ -38,27 +38,18 @@ const Payment = () => {
             <img src={img} alt="" />
           </div>
         </div>
-        <h1 className="text-center text-xl font-semibold text-violet-800 mb-2 px-4">
+        <h1 className="text-center text-xl font-semibold text-violet-800 mb-2 px-4 leading-8">
           Hello Dear{" "}
-          <span className="font-bold text-red-500">{user.displayName}</span>,
-          Please Pay <span className="font-bold text-red-500">${price}</span>{" "}
+          <span className="font-bold">{user.displayName}</span>,
+          Please Pay <span className="font-bold">${price}</span>{" "}
           To Confirm Your Order
         </h1>
-        {/* ============================================================== */}
       </div>
       <div className="px-6 py-6 text-center">
         <Elements stripe={stripePromise}>
           <CheckoutForm course={course} />
         </Elements>
       </div>
-      {/* ===================================================================== */}
-      {/* <div className="card bg-base-100 shadow-xl my-12">
-        <div className="card-body">
-          <Elements stripe={stripePromise}>
-            <CheckoutForm course={course} />
-          </Elements>
-        </div>
-      </div> */}
     </div>
   );
 };
