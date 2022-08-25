@@ -6,7 +6,6 @@ import axiosPrivate from "../api/axiosPrivate";
 import auth from "../firebase.init";
 
 const useMyOrder = (props) => {
-  console.log(props,"props value")
   const [user] = useAuthState(auth);
   const navigate = useNavigate();
   const [myOrder, setMyOrder] = useState([]);
