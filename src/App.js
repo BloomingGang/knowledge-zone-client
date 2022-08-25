@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./App.css";
 import { Route, Routes } from "react-router-dom";
 import { Toaster } from "react-hot-toast";
@@ -57,14 +57,23 @@ import MyOrder from "./Pages/Shared/MyOrder/MyOrder";
 import AddCourse from "./Pages/Dashboard/AddCourse";
 import UpdateCourse from "./Pages/Shared/UpdateCourse";
 import AddReviwe from "./Pages/Home/LearningProgram/AddReviwe";
+import UpdateBook from "./Pages/Shared/UpdateBook";
 import MyProfile from "./Pages/Dashboard/MyProfile";
 import AddBook from "./Pages/Dashboard/AddBook";
 import SearchResult from "./Pages/Shared/SearchResult";
+import AddBlog from "./Pages/Dashboard/AddBlog";
+import UpdateBlog from "./Pages/Shared/UpdateBlog";
+// import SearchBook from "./Pages/Shared/SearchBook";
 import PrivacyPolicy from "./Pages/Home/PrivacyPolicy";
 import AddInstructor from "./Pages/Dashboard/AddInstructor";
 import UpdateInstructor from "./Pages/Dashboard/UpdateInstructor";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function App() {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     <div className="bg-violet-200">
       <Header></Header>
@@ -154,6 +163,24 @@ function App() {
             </RequireAuth>
           }
         ></Route>
+        <Route
+          path="/updateBook/:id"
+          element={
+            <RequireAuth>
+              {" "}
+              <UpdateBook />{" "}
+            </RequireAuth>
+          }
+        ></Route>
+        <Route
+          path="/updateBlog/:id"
+          element={
+            <RequireAuth>
+              {" "}
+              <UpdateBlog />{" "}
+            </RequireAuth>
+          }
+        ></Route>
 
         <Route
           path="/addCourse"
@@ -175,9 +202,22 @@ function App() {
         >
           {" "}
         </Route>
+
+        <Route
+          path="/addBlog"
+          element={
+            <RequireAdmin>
+              <AddBlog />
+            </RequireAdmin>
+          }
+        />
+
         <Route path="/searchCourse/:searchCourse" element={<SearchResult />}>
           {" "}
         </Route>
+        {/* <Route path="/searchBook/:searchBook" element={<SearchBook />}>
+          {" "}
+        </Route> */}
 
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
@@ -200,6 +240,7 @@ function App() {
           }
         />
         <Route path="/myOrder" element={<MyOrder />} />
+
         <Route path="/addReviwe" element={<AddReviwe />} />
         <Route
           path="/addBook"

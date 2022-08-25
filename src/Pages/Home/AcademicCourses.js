@@ -97,14 +97,27 @@ const AcademicCourses = () => {
   return (
     <div>
       <div className="container mx-auto py-24">
-        <h1 className="text-4xl font-bold text-center text-violet-800 pb-12">
+        <h1
+          className="text-4xl font-bold text-center text-violet-800 pb-12"
+          data-aos-delay="200"
+          data-aos="zoom-in"
+          data-aos-duration="1000"
+        >
           Academic Courses
         </h1>
-        <Slider {...settings}>
+        <Slider
+          {...settings}
+          data-aos-delay="200"
+          data-aos="zoom-in"
+          data-aos-duration="1000"
+        >
           {academicCourses.map((courses, index) => (
-            <div>
-              <div key={index}
-              className=" flex justify-center">
+            <div
+              data-aos-delay="200"
+              data-aos="zoom-in"
+              data-aos-duration="1000"
+            >
+              <div key={index} className=" flex justify-center">
                 <a href={courses.link}>
                   <img className="rounded-lg" src={courses.picture} alt="" />
                 </a>

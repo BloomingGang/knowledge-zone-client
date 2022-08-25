@@ -39,7 +39,12 @@ const Reviews = () => {
     <div className="mt-10">
       <section id="team-section">
         <div className="container mx-auto">
-          <div className="mb-12 w-full mx-auto">
+          <div
+            className="mb-12 w-full mx-auto"
+            data-aos-delay="200"
+            data-aos="zoom-in"
+            data-aos-duration="1000"
+          >
             <h3 className="text-center text-4xl font-bold text-violet-800 pt-10">
               What Our Students Say About Us
             </h3>
@@ -49,38 +54,47 @@ const Reviews = () => {
           </div>
           <div>
             <Carousel swipeable="true" responsive={responsive} infinite={true}>
-              {reviews.slice(-9).map((review, index) => (
-                <div key={index} class="p-4 w-full">
-                  <div class="bg-gray-100 p-8 rounded-lg">
-                    <img src={quote} width={30} alt="" className="pb-3" />
-                    <p class="h-[100px] leading-relaxed mb-6">{review.comment}</p>
-                    <a class="inline-flex items-center">
-                      <img
-                        alt=""
-                        src={review.image}
-                        class="w-14 h-14 rounded-full flex-shrink-0 object-cover object-center"
-                      />
-                      <span class="flex-grow flex flex-col pl-4">
-                        <p>
-                          <Rating
-                            readonly
-                            initialRating={review.ratting}
-                            emptySymbol={
-                              <AiOutlineStar color="orange" size={"15px"} />
-                            }
-                            fullSymbol={
-                              <AiFillStar color="orange" size={"15px"} />
-                            }
-                          />
-                        </p>
-                        <span class="title-font font-medium text-violet-800">
-                          {review.name}
+              {reviews
+                .slice(reviews.length - 3, reviews.length)
+                .map((review, index) => (
+                  <div key={index} class="p-4 w-full">
+                    <div
+                      class="bg-gray-100 p-8 rounded-lg"
+                      data-aos="zoom-in"
+                      data-aos-duration="1000"
+                      data-aos-delay="200"
+                    >
+                      <img src={quote} width={30} alt="" className="pb-3" />
+                      <p class="h-[100px] leading-relaxed mb-6">
+                        {review.comment}
+                      </p>
+                      <a class="inline-flex items-center">
+                        <img
+                          alt=""
+                          src={review.image}
+                          class="w-14 h-14 rounded-full flex-shrink-0 object-cover object-center"
+                        />
+                        <span class="flex-grow flex flex-col pl-4">
+                          <p>
+                            <Rating
+                              readonly
+                              initialRating={review.ratting}
+                              emptySymbol={
+                                <AiOutlineStar color="orange" size={"15px"} />
+                              }
+                              fullSymbol={
+                                <AiFillStar color="orange" size={"15px"} />
+                              }
+                            />
+                          </p>
+                          <span class="title-font font-medium text-violet-800">
+                            {review.name}
+                          </span>
                         </span>
-                      </span>
-                    </a>
+                      </a>
+                    </div>
                   </div>
-                </div>
-              ))}
+                ))}
             </Carousel>
           </div>
         </div>

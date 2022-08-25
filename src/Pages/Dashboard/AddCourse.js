@@ -91,7 +91,6 @@ const AddCourse = () => {
       toast.success(`Add a Course for ${classCourse}`);
       event.target.reset();
     });
-    console.log(addCourse);
   };
   return (
     <div className="p-12 bg-violet-200">
