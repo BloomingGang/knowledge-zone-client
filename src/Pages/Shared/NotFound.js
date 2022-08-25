@@ -1,10 +1,10 @@
 import React from "react";
-import photo from "../../img/header_image_1.png";
+import photo from "../../img/assets/error-404-Page.gif";
 
 const NotFound = () => {
   return (
     <div>
-      <img src={photo} alt="" />
+      <img className="w-full" src={photo} alt="" />
     </div>
   );
 };

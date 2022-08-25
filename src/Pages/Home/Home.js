@@ -18,7 +18,7 @@ const Home = () => {
   return (
     <div>
       <HeroBanner />
-      {/* <AcademicCourses /> */}
+      <AcademicCourses />
       {/* <SkillDevCourses /> */}
       {/* <Learners />
       <LearningProgram />

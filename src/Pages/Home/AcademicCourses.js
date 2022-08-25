@@ -59,6 +59,7 @@ const AcademicCourses = () => {
       link: "/classes/eleven",
     },
   ];
+
   var settings = {
     dots: true,
     infinite: true,
@@ -71,8 +72,8 @@ const AcademicCourses = () => {
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 4,
-          slidesToScroll: 4,
+          slidesToShow: 3,
+          slidesToScroll: 3,
           infinite: true,
           dots: true,
         },
@@ -86,6 +87,14 @@ const AcademicCourses = () => {
         },
       },
       {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          initialSlide: 1,
+        },
+      },
+      {
         breakpoint: 480,
         settings: {
           slidesToShow: 1,
@@ -96,7 +105,7 @@ const AcademicCourses = () => {
   };
   return (
     <div>
-      <div className="container mx-auto py-24">
+      <div className="container mx-auto md:py-24">
         <h1
           className="text-4xl font-bold text-center text-violet-800 pb-12"
           data-aos-delay="200"
