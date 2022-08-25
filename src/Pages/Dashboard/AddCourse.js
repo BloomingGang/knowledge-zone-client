@@ -33,6 +33,7 @@ const AddCourse = () => {
     const price = event.target.price.value;
     const shortDesc = event.target.sortDesc.value;
     const instructorName = event.target.instructorName.value;
+    const instructorImg = event.target.instructorImg.value;
     const education = event.target.education.value;
     const about = event.target.about.value;
     const hour = event.target.hour.value;
@@ -47,7 +48,7 @@ const AddCourse = () => {
       price: price,
       state: "unread",
       ShortDescription: shortDesc,
-      instructorImg: getImg,
+      instructorImg: instructorImg,
       instructorName: instructorName,
       education: education,
       objective: {
@@ -218,6 +219,23 @@ const AddCourse = () => {
                 type="text"
                 name="education"
                 placeholder="Instructor Education"
+                class="input input-bordered w-full max-w-xs"
+              />
+            </div>
+          </div>
+          <div className="mb-6">
+            <div class="form-control w-full max-w-xs">
+              <label class="label">
+                {" "}
+                <span className="label-text text-lg    ">
+                  Instructor Image:
+                </span>
+              </label>
+              <input
+                required
+                type="text"
+                name="instructorImg"
+                placeholder="Instructor Image"
                 class="input input-bordered w-full max-w-xs"
               />
             </div>
