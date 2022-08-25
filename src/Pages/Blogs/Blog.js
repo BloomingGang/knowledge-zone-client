@@ -46,7 +46,7 @@ const Blog = ({ blog }) => {
     data-aos-duration="1000"
     className="w-full bg-gray-100 transition ease-in-out delay-150 hover:-translate-1 hover:scale-105 duration-300 rounded-lg">
       <div className="">
-        <img src={img} alt="/" className="rounded-t-xl w-full h-[330px]" />
+        <img src={img} alt="/" className="rounded-t-lg w-full h-[330px]" />
       </div>
       <div className="text-justify px-6">
         <h2 className="text-3xl text-violet-800 text-center py-3">{title}</h2>
@@ -80,18 +80,18 @@ const Blog = ({ blog }) => {
             <div className="flex justify-between">
               <button
                 onClick={() => handleDeleteBlog(_id)}
-                className="text-red-600 transition ease-in-out delay-100 hover:-translate-y-1 hover:scale-110 duration-300 mt-4 mx-2"
+                className="text-red-600 transition ease-in-out delay-100 hover:-translate-y-1 hover:scale-110 duration-300  mx-4 mb-4"
               >
                 <label for="my-modal-6">
-                  <TrashIcon className="h-9 w-9 cursor-pointer" />
+                  <TrashIcon className="h-7 w-7 cursor-pointer" />
                 </label>
               </button>
 
               <button
                 onClick={() => handleBlogUpdate(_id)}
-                className="text-green-600 transition ease-in-out delay-100 hover:-translate-y-1 hover:scale-110 duration-300 mt-4 mx-2"
+                className="text-green-600 transition ease-in-out delay-100 hover:-translate-y-1 hover:scale-110 duration-300  mx-4 mb-4"
               >
-                <PencilAltIcon className="h-9 w-9" />
+                <PencilAltIcon className="h-7 w-7" />
               </button>
             </div>
           </div>

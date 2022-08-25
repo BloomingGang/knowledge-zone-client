@@ -60,7 +60,7 @@ const Product = ({ order, index }) => {
       <td>
         <button
           onClick={() => handleDelete(_id)}
-          className={ `${paid===true && 'btn-disabled'}  btn btn-sm bg-red-500  hover:text-red-500 hover:border-red-500 `}
+          className={ `${paid===true && 'btn-disabled'}  btn btn-sm bg-red-500 hover:bg-transparent  hover:text-red-500 border-red-500 `}
         >
           Cancel
         </button>

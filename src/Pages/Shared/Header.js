@@ -104,7 +104,7 @@ const Header = () => {
         {/* panel credentials */}
         <div class="dropdown md:dropdown-end">
           <label tabindex="0" class="text-xl m-1">
-            <i className="text-violet-800 fa-solid fa-bell cursor-pointer"></i>
+            <i className="text-black fa-solid fa-bell cursor-pointer"></i>
           </label>
           <div
             tabindex="0"

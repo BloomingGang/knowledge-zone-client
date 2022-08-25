@@ -41,7 +41,7 @@ const BooksCarousel = () => {
              data-aos-delay="200"
              data-aos="zoom-in"
              data-aos-duration="1000">
-              Books
+              Our Available Books
             </h3>
           </div>
 
@@ -55,15 +55,9 @@ const BooksCarousel = () => {
                 data-aos-delay="200"
                 data-aos="zoom-in"
                 data-aos-duration="1000">
-                  <div onClick={() => handleBook(book._id)}  className="cursor-pointer flex justify-center">
-                  <img className="rounded-lg" src={book.img} alt="" />
+                  <div onClick={() => handleBook(book._id)}  className="flex justify-center">
+                  <img className="rounded-lg cursor-pointer" src={book.img} alt="" />
                   </div>
-                    {/* <div className="text-center absolute">
-                    <button   className="btn btn-xs border-violet-800 rounded-lg bg-violet-800 text-white font-bold hover:bg-transparent hover:text-violet-900 hover:border-violet-900" 
-                    onClick={() => handleBook(book._id)}>
-                      View Details
-                    </button>
-                  </div> */}
                
                 </div>
                
