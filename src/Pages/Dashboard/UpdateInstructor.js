@@ -69,8 +69,8 @@ const UpdateInstructor = () => {
         </h1>
         <div className="grid md:grid-cols-2 gap-x-10 gap-y-0">
           <div className="mb-6">
-            <div class="form-control w-full max-w-xs">
-              <label class="label">
+            <div className="form-control w-full max-w-xs">
+              <label className="label">
                 {" "}
                 <span className="label-text text-lg    ">Subject Name</span>
               </label>
@@ -79,13 +79,13 @@ const UpdateInstructor = () => {
                 type="text"
                 name="Subject"
                 placeholder={Subject}
-                class="input input-bordered w-full max-w-xs"
+                className="input input-bordered w-full max-w-xs"
               />
             </div>
           </div>
           <div className="mb-6">
-            <div class="form-control w-full max-w-xs">
-              <label class="label">
+            <div className="form-control w-full max-w-xs">
+              <label className="label">
                 {" "}
                 <span className="label-text text-lg    ">
                   Instructor Image:
@@ -96,13 +96,13 @@ const UpdateInstructor = () => {
                 type="text"
                 name="image"
                 placeholder={img}
-                class="input input-bordered w-full max-w-xs"
+                className="input input-bordered w-full max-w-xs"
               />
             </div>
           </div>
           <div className="mb-6">
-            <div class="form-control w-full max-w-xs">
-              <label class="label">
+            <div className="form-control w-full max-w-xs">
+              <label className="label">
                 {" "}
                 <span className="label-text text-lg    ">Instructor Name:</span>
               </label>
@@ -111,14 +111,14 @@ const UpdateInstructor = () => {
                 type="text"
                 name="name"
                 placeholder={name}
-                class="input input-bordered w-full max-w-xs"
+                className="input input-bordered w-full max-w-xs"
               />
             </div>
           </div>
 
           <div className="mb-6">
-            <div class="form-control w-full max-w-xs">
-              <label class="label">
+            <div className="form-control w-full max-w-xs">
+              <label className="label">
                 {" "}
                 <span className="label-text text-lg    ">
                   Instructor Education:
@@ -129,13 +129,13 @@ const UpdateInstructor = () => {
                 type="text"
                 name="education"
                 placeholder={education}
-                class="input input-bordered w-full max-w-xs"
+                className="input input-bordered w-full max-w-xs"
               />
             </div>
           </div>
           <div className="mb-6">
-            <div class="form-control w-full max-w-xs">
-              <label class="label">
+            <div className="form-control w-full max-w-xs">
+              <label className="label">
                 {" "}
                 <span className="label-text text-lg    ">Facebook:</span>
               </label>
@@ -144,13 +144,13 @@ const UpdateInstructor = () => {
                 type="text"
                 name="facebook"
                 placeholder={facebook}
-                class="input input-bordered w-full max-w-xs"
+                className="input input-bordered w-full max-w-xs"
               />
             </div>
           </div>
           <div className="mb-6">
-            <div class="form-control w-full max-w-xs">
-              <label class="label">
+            <div className="form-control w-full max-w-xs">
+              <label className="label">
                 {" "}
                 <span className="label-text text-lg    ">LinkedIn:</span>
               </label>
@@ -159,13 +159,13 @@ const UpdateInstructor = () => {
                 type="text"
                 name="linkedin"
                 placeholder={linkedin}
-                class="input input-bordered w-full max-w-xs"
+                className="input input-bordered w-full max-w-xs"
               />
             </div>
           </div>
           <div className="mb-6">
-            <div class="form-control w-full max-w-xs">
-              <label class="label">
+            <div className="form-control w-full max-w-xs">
+              <label className="label">
                 {" "}
                 <span className="label-text text-lg    ">Instagram:</span>
               </label>
@@ -174,14 +174,14 @@ const UpdateInstructor = () => {
                 type="text"
                 name="instagram"
                 placeholder={instagram}
-                class="input input-bordered w-full max-w-xs"
+                className="input input-bordered w-full max-w-xs"
               />
             </div>
           </div>
 
           <div className="mb-6">
-            <div class="form-control w-full max-w-xs">
-              <label class="label">
+            <div className="form-control w-full max-w-xs">
+              <label className="label">
                 {" "}
                 <span className="label-text text-lg    ">Twitter:</span>
               </label>
@@ -190,7 +190,7 @@ const UpdateInstructor = () => {
                 type="text"
                 name="twitter"
                 placeholder={twitter}
-                class="input input-bordered w-full max-w-xs"
+                className="input input-bordered w-full max-w-xs"
               />
             </div>
           </div>

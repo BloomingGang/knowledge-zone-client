@@ -44,17 +44,18 @@ const ClassCourseCart = ({ course }) => {
 
   return (
     <section>
-      <div 
-       data-aos-delay="200"
-       data-aos="zoom-in"
-       data-aos-duration="1000"
-      className="bg-gray-100 transition ease-in-out delay-150 hover:-translate-1 hover:scale-105 duration-300 rounded-lg">
+      <div
+        data-aos-delay="200"
+        data-aos="zoom-in"
+        data-aos-duration="1000"
+        className="bg-gray-100 transition ease-in-out delay-150 hover:-translate-1 hover:scale-105 duration-300 rounded-lg"
+      >
         <figure>
           <img className="w-full rounded-t-lg" src={img} alt="course" />
         </figure>
         <div className="px-5 pb-2">
           <h2 className="text-center pt-3 font-bold text-xl"> {title}</h2>
-          <div class="divider"></div>
+          <div className="divider"></div>
           <div className="flex justify-between items-center">
             <span className="text-xl font-bold text-violet-800">$ {price}</span>
             <button
@@ -67,7 +68,7 @@ const ClassCourseCart = ({ course }) => {
 
           {admin && (
             <div>
-              <div class="divider"></div>
+              <div className="divider"></div>
               <div className="flex justify-between pb-4">
                 <button
                   onClick={() => handleDeleteCourse(_id)}
@@ -91,18 +92,18 @@ const ClassCourseCart = ({ course }) => {
       </div>
       {/* {modal && (
         <>
-          <input type="checkbox" id="my-modal-6" class="modal-toggle" />
-          <div class="modal modal-bottom sm:modal-middle">
-            <div class="modal-box">
-              <h3 class="font-bold text-lg">
+          <input type="checkbox" id="my-modal-6" className="modal-toggle" />
+          <div className="modal modal-bottom sm:modal-middle">
+            <div className="modal-box">
+              <h3 className="font-bold text-lg">
                 Congratulations random Internet user!
               </h3>
-              <p class="py-4">
+              <p className="py-4">
                 You've been selected for a chance to get one year of
                 subscription to use Wikipedia for free!
               </p>
-              <div class="modal-action">
-                <label for="my-modal-6" class="btn">
+              <div className="modal-action">
+                <label for="my-modal-6" className="btn">
                   Yay!
                 </label>
               </div>

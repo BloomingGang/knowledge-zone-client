@@ -60,16 +60,16 @@ const Header = () => {
       {/* notification panel */}
       <li className="mr-4 p-2 hover:bg-blue-500 rounded font-bold cursor-pointer md:hidden">
         {/* panel credentials */}
-        <div class="dropdown md:dropdown-end">
-          <label tabindex="0" class="text-xl m-1">
+        <div className="dropdown md:dropdown-end">
+          <label tabIndex="0" className="text-xl m-1">
             <i className="text-violet-800 fa-solid fa-bell cursor-pointer"></i>
           </label>
           <div
-            tabindex="0"
-            class="dropdown-content  rounded-md card-compact w-52  bg-gray-100 h-[365px] overflow-auto"
+            tabIndex="0"
+            className="dropdown-content  rounded-md card-compact w-52  bg-gray-100 h-[365px] overflow-auto"
           >
-            <div class="py-3">
-              <span class="flex justify-around border-b-4 text-red-500">
+            <div className="py-3">
+              <span className="flex justify-around border-b-4 text-red-500">
                 New{" "}
                 <span className="text-red-500">
                   {bookN?.unreadCount + ccis?.unreadCount}
@@ -77,7 +77,7 @@ const Header = () => {
                 {/* <span className="text-purple-500">{ccis?.unreadCount}</span> */}
               </span>
 
-              <div class="card-body">
+              <div className="card-body">
                 {/* <span className="card-title flex justify-around border-b-4 text-red-500">
                   New <span className="text-red-500">{ccis?.unreadCount}</span>
                 </span> */}
@@ -100,14 +100,14 @@ const Header = () => {
                         >
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
-                            class="h-5 w-5"
+                            className="h-5 w-5"
                             viewBox="0 0 20 20"
                             fill="currentColor"
                           >
                             <path
-                              fill-rule="evenodd"
+                              fillRule="evenodd"
                               d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                              clip-rule="evenodd"
+                              clipRule="evenodd"
                             />
                           </svg>
                         </span>
@@ -132,14 +132,14 @@ const Header = () => {
                         >
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
-                            class="h-5 w-5"
+                            className="h-5 w-5"
                             viewBox="0 0 20 20"
                             fill="currentColor"
                           >
                             <path
-                              fill-rule="evenodd"
+                              fillRule="evenodd"
                               d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                              clip-rule="evenodd"
+                              clipRule="evenodd"
                             />
                           </svg>
                         </span>
@@ -213,16 +213,16 @@ const Header = () => {
       {/* notification panel */}
       <li className="mr-4 p-2 hover:bg-blue-500 rounded font-bold cursor-pointer hidden md:block">
         {/* panel credentials */}
-        <div class="dropdown md:dropdown-end">
-          <label tabindex="0" class="text-xl m-1">
+        <div className="dropdown md:dropdown-end">
+          <label tabIndex="0" className="text-xl m-1">
             <i className="text-violet-800 fa-solid fa-bell cursor-pointer"></i>
           </label>
           <div
-            tabindex="0"
-            class="dropdown-content  rounded-md card-compact w-52  bg-gray-100 h-[365px] overflow-auto"
+            tabIndex="0"
+            className="dropdown-content  rounded-md card-compact w-52  bg-gray-100 h-[365px] overflow-auto"
           >
-            <div class="py-3">
-              <span class="flex justify-around border-b-4 text-red-500">
+            <div className="py-3">
+              <span className="flex justify-around border-b-4 text-red-500">
                 New{" "}
                 <span className="text-red-500">
                   {bookN?.unreadCount + ccis?.unreadCount}
@@ -230,7 +230,7 @@ const Header = () => {
                 {/* <span className="text-purple-500">{ccis?.unreadCount}</span> */}
               </span>
 
-              <div class="card-body">
+              <div className="card-body">
                 {/* <span className="card-title flex justify-around border-b-4 text-red-500">
                   New <span className="text-red-500">{ccis?.unreadCount}</span>
                 </span> */}
@@ -253,14 +253,14 @@ const Header = () => {
                         >
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
-                            class="h-5 w-5"
+                            className="h-5 w-5"
                             viewBox="0 0 20 20"
                             fill="currentColor"
                           >
                             <path
-                              fill-rule="evenodd"
+                              fillRule="evenodd"
                               d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                              clip-rule="evenodd"
+                              clipRule="evenodd"
                             />
                           </svg>
                         </span>
@@ -285,14 +285,14 @@ const Header = () => {
                         >
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
-                            class="h-5 w-5"
+                            className="h-5 w-5"
                             viewBox="0 0 20 20"
                             fill="currentColor"
                           >
                             <path
-                              fill-rule="evenodd"
+                              fillRule="evenodd"
                               d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                              clip-rule="evenodd"
+                              clipRule="evenodd"
                             />
                           </svg>
                         </span>
@@ -333,8 +333,8 @@ const Header = () => {
         <div>
           {/* <<<<<<< HEAD
           <div>
-            <div class="form-control">
-              <label class="input-group input-group-sm">
+            <div className="form-control">
+              <label className="input-group input-group-sm">
                 <input
                   onChange={(e) => setSearchCourse(e.target.value)}
                   type="search"
@@ -351,8 +351,8 @@ const Header = () => {
               </label>
             </div>
 ======= */}
-          <div class="form-control">
-            <label class="input-group input-group-sm">
+          <div className="form-control">
+            <label className="input-group input-group-sm">
               <input
                 onChange={(e) => setSearchCourse(e.target.value)}
                 type="search"

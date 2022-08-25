@@ -12,8 +12,8 @@ const BookInfo = () => {
   const { id } = useParams();
   const [user] = useAuthState(auth);
   const [myOrder] = useMyOrder(["paidOrder"]);
-  const [matchPaid,setMatchPaid]=useState(false)
-  const [bookInfo,setBookInfo]=useState({})
+  const [matchPaid, setMatchPaid] = useState(false);
+  const [bookInfo, setBookInfo] = useState({});
   const [loading, setLoading] = useState(true);
   const {
     bookName,
@@ -37,17 +37,18 @@ const BookInfo = () => {
     interactive,
     formate,
     filesize,
-    _id
+    _id,
   } = bookInfo;
 
   useEffect(() => {
-    axios.get(`http://localhost:5000/book/${id}`).then((res) => setBookInfo(res.data));
-     myOrder?.find(paid => { 
-      if(paid.id == _id)
-       return setMatchPaid(true)
-      });
-      setLoading(false);
-  },[myOrder,_id,id])
+    axios
+      .get(`http://localhost:5000/book/${id}`)
+      .then((res) => setBookInfo(res.data));
+    myOrder?.find((paid) => {
+      if (paid.id == _id) return setMatchPaid(true);
+    });
+    setLoading(false);
+  }, [myOrder, _id, id]);
 
   // const {
   //   isLoading,
@@ -63,8 +64,6 @@ const BookInfo = () => {
   // );
   // if (isLoading) return <Loading />;
   // if (error) return "An error has occurred: " + error.message;
-  
-  
 
   const handleOrder = () => {
     const userName = user?.displayName;
@@ -77,8 +76,8 @@ const BookInfo = () => {
       productName,
       img,
       price,
-      paid:false,
-      id:_id
+      paid: false,
+      id: _id,
     };
     fetch("http://localhost:5000/order", {
       method: "post",
@@ -95,10 +94,10 @@ const BookInfo = () => {
         }
       });
   };
-if(loading){
-  return <Loading/>
-}
-console.log(matchPaid,"matchPaid")
+  if (loading) {
+    return <Loading />;
+  }
+  console.log(matchPaid, "matchPaid");
   return (
     <div className="container mx-auto py-16 ">
       <div className="grid lg:grid-cols-2 grid-cols-1 gap-12 px-6 md:px-0">
@@ -108,8 +107,8 @@ console.log(matchPaid,"matchPaid")
             <h2 className="text-xl pb-4">Writers</h2>
             <div className="grid md:grid-cols-2 border-2 rounded-xl px-6 py-8 gap-4">
               <div className="flex items-center">
-                <div class="avatar mr-8">
-                  <div class="w-16 rounded-full">
+                <div className="avatar mr-8">
+                  <div className="w-16 rounded-full">
                     <img src={writerImg} alt="" />
                   </div>
                 </div>
@@ -119,8 +118,8 @@ console.log(matchPaid,"matchPaid")
                 </div>
               </div>
               <div className="flex items-center">
-                <div class="avatar mr-8">
-                  <div class="w-16  rounded-full">
+                <div className="avatar mr-8">
+                  <div className="w-16  rounded-full">
                     <img src={writerImg2} alt="" />
                   </div>
                 </div>
@@ -130,8 +129,8 @@ console.log(matchPaid,"matchPaid")
                 </div>
               </div>
               <div className="flex items-center">
-                <div class="avatar mr-8">
-                  <div class="w-16  rounded-full">
+                <div className="avatar mr-8">
+                  <div className="w-16  rounded-full">
                     <img src={writerImg3} alt="" />
                   </div>
                 </div>
@@ -141,8 +140,8 @@ console.log(matchPaid,"matchPaid")
                 </div>
               </div>
               <div className="flex items-center">
-                <div class="avatar mr-8">
-                  <div class="w-16  rounded-full">
+                <div className="avatar mr-8">
+                  <div className="w-16  rounded-full">
                     <img src={writerImg4} alt="" />
                   </div>
                 </div>
@@ -164,15 +163,15 @@ console.log(matchPaid,"matchPaid")
           <div className="py-12">
             <h2 className="text-xl text-violet-800 pb-4">Objective</h2>
             <p>
-              <i class="text-violet-900 mr-4 font-bold text-xl fa-solid fa-angles-right"></i>
+              <i className="text-violet-900 mr-4 font-bold text-xl fa-solid fa-angles-right"></i>
               {objective?.point1}
             </p>
             <p>
-              <i class="text-violet-900 mr-4 font-bold text-xl fa-solid fa-angles-right"></i>
+              <i className="text-violet-900 mr-4 font-bold text-xl fa-solid fa-angles-right"></i>
               {objective?.point2}
             </p>
             <p>
-              <i class="text-violet-900 mr-4 font-bold text-xl fa-solid fa-angles-right"></i>
+              <i className="text-violet-900 mr-4 font-bold text-xl fa-solid fa-angles-right"></i>
               {objective?.point3}
             </p>
           </div>
@@ -229,17 +228,21 @@ console.log(matchPaid,"matchPaid")
               </a>
               <p className="text-xl font-bold">$ {price}</p>
             </div>
-            {
-              matchPaid?
-            <button
-            onClick={()=> navigate("/myCollection")}
-             class="btn bg-violet-800 hover:bg-transparent hover:text-violet-900 hover:border-violet-900 w-full my-4">
-              ALREADY PAID
-            </button>:
-            <button onClick={handleOrder} class="btn bg-violet-800 hover:bg-transparent hover:text-violet-900 hover:border-violet-900 w-full my-4">
-              Buy the Book
-            </button>
-            }
+            {matchPaid ? (
+              <button
+                onClick={() => navigate("/myCollection")}
+                className="btn bg-violet-800 hover:bg-transparent hover:text-violet-900 hover:border-violet-900 w-full my-4"
+              >
+                ALREADY PAID
+              </button>
+            ) : (
+              <button
+                onClick={handleOrder}
+                className="btn bg-violet-800 hover:bg-transparent hover:text-violet-900 hover:border-violet-900 w-full my-4"
+              >
+                Buy the Book
+              </button>
+            )}
           </div>
         </div>
       </div>

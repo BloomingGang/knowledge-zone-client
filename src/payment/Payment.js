@@ -33,16 +33,15 @@ const Payment = () => {
   return (
     <div className="w-11/12 md:w-2/5 mx-auto min-h-scree my-10 bg-gray-100 rounded-xl">
       <div className="text-center py-4">
-        <div class="avatar my-2">
-          <div class="w-28 rounded flex justify-center items-center">
+        <div className="avatar my-2">
+          <div className="w-28 rounded flex justify-center items-center">
             <img src={img} alt="" />
           </div>
         </div>
         <h1 className="text-center text-xl font-semibold text-violet-800 mb-2 px-4 leading-8">
-          Hello Dear{" "}
-          <span className="font-bold">{user.displayName}</span>,
-          Please Pay <span className="font-bold">${price}</span>{" "}
-          To Confirm Your Order
+          Hello Dear <span className="font-bold">{user.displayName}</span>,
+          Please Pay <span className="font-bold">${price}</span> To Confirm Your
+          Order
         </h1>
       </div>
       <div className="px-6 py-6 text-center">
