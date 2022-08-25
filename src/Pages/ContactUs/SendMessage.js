@@ -2,7 +2,10 @@ import React from "react";
 
 const SendMessage = () => {
   return (
-    <div>
+    <div
+    data-aos-delay="200"
+    data-aos="zoom-in"
+    data-aos-duration="1000">
       <form
         action="https://formsubmit.co/knowledgezone404@gmail.com"
         method="POST"

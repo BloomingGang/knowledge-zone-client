@@ -10,7 +10,7 @@ const Courses = () => {
         <label tabIndex="0" htmlFor="dashboard-sidebar" className=" lg:hidden">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className="h-6 w-6"
+            className="h-7 w-7 m-2 text-violet-900"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
@@ -31,8 +31,12 @@ const Courses = () => {
           className="drawer-toggle"
         />
         <div className="drawer-content">
-          <h2 className="text-4xl text-center font-bold text-violet-800  mt-6 mb-8">
-            Courses List
+          <h2
+           data-aos-delay="200"
+           data-aos="zoom-in"
+           data-aos-duration="1000"
+            className="text-4xl text-center font-bold text-violet-800  mt-6 mb-8">
+            Skill Development Courses
           </h2>
           <Outlet></Outlet>
         </div>

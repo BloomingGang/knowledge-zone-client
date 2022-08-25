@@ -2,7 +2,10 @@ import React from "react";
 
 const ContactInfo = () => {
   return (
-    <div className=" py-12">
+    <div  data-aos-delay="200"
+    data-aos="zoom-in"
+    data-aos-duration="1000"
+     className=" py-12">
       <h1 className="text-center text-violet-800 text-2xl font-bold pb-8">If You Have Any Query, Feel <br /> Free To Contact Us</h1>
     <div className="w-10/12 md:w-11/12 mx-auto grid md:grid-cols-3 gap-3">
       <div className="text-xl flex items-center">

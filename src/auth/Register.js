@@ -46,7 +46,7 @@ const Register = () => {
     await signInWithGoogle();
   };
   return (
-    <div className="login sm:none py-12 bg-violet-200">
+    <div className="py-12 bg-violet-200">
       <div className="register bg-violet-300 rounded-xl md:w-1/2 mx-auto p-16  ">
         <div>
           <h1 className="text-center text-2xl font-bold text-violet-900  ">
