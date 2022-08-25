@@ -41,8 +41,8 @@ const Payment = () => {
         <h1 className="text-center text-xl font-semibold text-violet-800 mb-2 px-4">
           Hello Dear{" "}
           <span className="font-bold text-red-500">{user.displayName}</span>,
-          Please Pay <span className="font-bold text-red-500">${price}</span>{" "}
-          To Confirm Your Order
+          Please Pay <span className="font-bold text-red-500">${price}</span> To
+          Confirm Your Order
         </h1>
         {/* ============================================================== */}
       </div>

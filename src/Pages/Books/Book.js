@@ -44,11 +44,12 @@ const Book = ({ book }) => {
   };
   return (
     <div>
-      <div 
-       data-aos-delay="200"
-       data-aos="zoom-in"
-       data-aos-duration="1000"
-       className="rounded-lg bg-gray-100 transition ease-in-out delay-150 hover:-translate-1 hover:scale-105 duration-300">
+      <div
+        data-aos-delay="200"
+        data-aos="zoom-in"
+        data-aos-duration="1000"
+        className="rounded-lg bg-gray-100 transition ease-in-out delay-150 hover:-translate-1 hover:scale-105 duration-300"
+      >
         <div>
           <img src={img} alt="/" className="rounded-t-lg w-full" />
         </div>

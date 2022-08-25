@@ -44,11 +44,12 @@ const ClassCourseCart = ({ course }) => {
 
   return (
     <section>
-      <div 
-       data-aos-delay="200"
-       data-aos="zoom-in"
-       data-aos-duration="1000"
-      className="bg-gray-100 transition ease-in-out delay-150 hover:-translate-1 hover:scale-105 duration-300 rounded-lg">
+      <div
+        data-aos-delay="200"
+        data-aos="zoom-in"
+        data-aos-duration="1000"
+        className="bg-gray-100 transition ease-in-out delay-150 hover:-translate-1 hover:scale-105 duration-300 rounded-lg"
+      >
         <figure>
           <img className="w-full rounded-t-lg" src={img} alt="course" />
         </figure>

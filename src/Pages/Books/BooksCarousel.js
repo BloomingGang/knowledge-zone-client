@@ -37,10 +37,12 @@ const BooksCarousel = () => {
       <section id="team-section">
         <div className="container mx-auto">
           <div className="mb-12 w-full mx-auto">
-            <h3 className="text-center text-4xl font-bold text-violet-800 pt-10"
-             data-aos-delay="200"
-             data-aos="zoom-in"
-             data-aos-duration="1000">
+            <h3
+              className="text-center text-4xl font-bold text-violet-800 pt-10"
+              data-aos-delay="200"
+              data-aos="zoom-in"
+              data-aos-duration="1000"
+            >
               Books
             </h3>
           </div>
@@ -50,23 +52,25 @@ const BooksCarousel = () => {
             <Carousel swipeable="true" responsive={responsive} infinite={true}>
               {books?.slice(-6).map((book, index) => (
                 <div
-                className="relative"
-                key={index}
-                data-aos-delay="200"
-                data-aos="zoom-in"
-                data-aos-duration="1000">
-                  <div onClick={() => handleBook(book._id)}  className="cursor-pointer flex justify-center">
-                  <img className="rounded-lg" src={book.img} alt="" />
+                  className="relative"
+                  key={index}
+                  data-aos-delay="200"
+                  data-aos="zoom-in"
+                  data-aos-duration="1000"
+                >
+                  <div
+                    onClick={() => handleBook(book._id)}
+                    className="cursor-pointer flex justify-center"
+                  >
+                    <img className="rounded-lg" src={book.img} alt="" />
                   </div>
-                    {/* <div className="text-center absolute">
+                  {/* <div className="text-center absolute">
                     <button   className="btn btn-xs border-violet-800 rounded-lg bg-violet-800 text-white font-bold hover:bg-transparent hover:text-violet-900 hover:border-violet-900" 
                     onClick={() => handleBook(book._id)}>
                       View Details
                     </button>
                   </div> */}
-               
                 </div>
-               
               ))}
             </Carousel>
           </div>
