@@ -222,8 +222,8 @@ const ClassCourseDetails = () => {
               {
                 matchPaid?
             <button
-              
-              class={`btn-disabled btn bg-violet-800 text-white  w-full my-4`}
+            onClick={()=> navigate("/myCollection")}
+              class={` btn bg-violet-800 hover:bg-transparent hover:text-violet-900 hover:border-violet-900 w-full my-4`}
             >
               Already Paid
             </button>

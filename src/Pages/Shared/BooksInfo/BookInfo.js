@@ -232,6 +232,7 @@ console.log(matchPaid,"matchPaid")
             {
               matchPaid?
             <button
+            onClick={()=> navigate("/myCollection")}
              class="btn bg-violet-800 hover:bg-transparent hover:text-violet-900 hover:border-violet-900 w-full my-4">
               ALREADY PAID
             </button>:
