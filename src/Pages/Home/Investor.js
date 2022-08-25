@@ -122,7 +122,7 @@ const Investor = () => {
 
   return (
     <div>
-      <div className="p-10">
+      <div className="mt-24 md:mt-32">
         <h2
           className="text-center text-5xl font-bold text-violet-800"
           data-aos="zoom-in"
@@ -133,7 +133,7 @@ const Investor = () => {
           Our Investors{" "}
         </h2>
         <p
-          className="text-center text-xl text-black py-4"
+          className="text-center text-xl text-black pt-4"
           data-aos="zoom-in"
           data-aos-duration="1000"
           data-aos-delay="200"

@@ -79,9 +79,9 @@ const SkillDevCourses = () => {
   };
   return (
     <div>
-      <div className="container mx-auto py-24">
+      <div className="container mx-auto mt-24 md:mt-32">
         <h1
-          className="text-4xl font-bold text-center text-violet-800 pb-12"
+          className="text-4xl font-bold text-center text-violet-800 pb-16"
           data-aos-delay="200"
           data-aos="zoom-in"
           data-aos-duration="1000"
