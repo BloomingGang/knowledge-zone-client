@@ -1,4 +1,5 @@
 import React from "react";
+import BooksCarousel from "../Books/BooksCarousel";
 import LiveChat from "../ContactUs/LiveChat";
 import AcademicCourses from "./AcademicCourses";
 import CardK from "./CardK";
@@ -17,11 +18,13 @@ const Home = () => {
   return (
     <div>
       <HeroBanner />
-      <AcademicCourses/>
-      <SkillDevCourses/>
+
+      <AcademicCourses />
+      <SkillDevCourses />
       {/* <Learners />
       <LearningProgram />
       <CardK /> */}
+      <BooksCarousel />
       <Reviews />
       <Investor />
       {/* <EduBanner />

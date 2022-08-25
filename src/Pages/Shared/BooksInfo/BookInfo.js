@@ -74,22 +74,19 @@ const BookInfo = () => {
       .then((res) => res.json())
       .then((data) => {
         if (data.insertedId) {
-          const id = data.insertedId;
-          navigate(`/payment/${id}`);
-
           navigate("/myOrder");
         }
       });
   };
 
   return (
-    <div className="container mx-auto py-16">
-      <div className="grid lg:grid-cols-2 grid-cols-1 gap-12">
+    <div className="container mx-auto py-16 ">
+      <div className="grid lg:grid-cols-2 grid-cols-1 gap-12 px-6 md:px-0">
         <div>
           <h1 className="text-2xl text-violet-800 font-bold">{bookName}</h1>
           <div className="py-12">
             <h2 className="text-xl pb-4">Writers</h2>
-            <div className="grid grid-cols-2 border-2 rounded-xl px-6 py-8 gap-4">
+            <div className="grid md:grid-cols-2 border-2 rounded-xl px-6 py-8 gap-4">
               <div className="flex items-center">
                 <div class="avatar mr-8">
                   <div class="w-16 rounded-full">
@@ -163,7 +160,7 @@ const BookInfo = () => {
 
         <div>
           <div className="border-2 p-4 rounded-xl">
-            <div className="grid grid-cols-2 gap-12">
+            <div className="grid md:grid-cols-2 gap-12 justify-center">
               <div>
                 <img src={img} alt="" />
               </div>

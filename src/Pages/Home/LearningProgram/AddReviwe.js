@@ -9,7 +9,7 @@ const AddReviwe = () => {
   const handleForm = (e) => {
     e.preventDefault();
     const name = e.target.name.value;
-    const image = e.target.image.value;
+    const image = user?.photoURL;
     const comment = e.target.comment.value;
     const ratting = e.target.ratting.value;
     if (ratting < 0 || ratting > 5) {
@@ -54,19 +54,7 @@ const AddReviwe = () => {
               disabled
             />
           </div>
-          <div class="form-control">
-            <label class="label">
-              <span className="label-text text-lg    ">Image:</span>
-            </label>
-            <input
-              type="text"
-              placeholder="Image"
-              name="image"
-              class="input input-bordered"
-              value={user?.photoURL}
-              disabled
-            />
-          </div>
+
           <div class="form-control">
             <label class="label">
               <span className="label-text text-lg    ">Comment:</span>
@@ -76,8 +64,8 @@ const AddReviwe = () => {
               name="comment"
               placeholder="Comment"
               class="input input-bordered count-chars"
-              maxLength="200"
-              data-max-chars="200"
+              maxLength="120"
+              data-max-chars="120"
             />
           </div>
           <div class="form-control">
@@ -87,14 +75,18 @@ const AddReviwe = () => {
             <input
               type="number"
               name="ratting"
-              min={0}
-              max={5}
+              // min={0}
+              // max={5}
               placeholder="Ratting"
               class="input input-bordered"
             />
           </div>
         </div>
-        {rattingError && <p className="text-red-500">{rattingError}</p>}
+        {rattingError && (
+          <p className="text-red-500 text-center pb-3 font-semibold">
+            {rattingError}
+          </p>
+        )}
         <div className="flex justify-center">
           <button className="btn text-white hover:text-black bg-violet-800 hover:bg-violet-500 border-0">
             submit review

@@ -46,7 +46,7 @@ const Login = () => {
     signInWithEmailAndPassword(data.email, data.password);
   };
   return (
-    <div className="login py-12 bg-violet-200">
+    <div className="py-12 bg-violet-200">
       <div className=" bg-violet-300 rounded-xl md:w-1/2 mx-auto p-20  ">
         <div>
           <h1 className="text-center text-2xl font-bold  text-violet-900 ">

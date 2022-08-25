@@ -101,34 +101,39 @@ const CheckoutForm = ({ course }) => {
           options={{
             style: {
               base: {
-                fontSize: "16px",
-                color: "#424770",
+                fontSize: "18px",
+                color: "#575fcf",
                 "::placeholder": {
-                  color: "#aab7c4",
+                  color: "#34495e",
                 },
               },
               invalid: {
-                color: "#9e2146",
+                color: "#f53b57",
               },
             },
           }}
         />
         <button
-          className="btn btn-sm bg-blue-500 mt-6 border-0"
+          className="btn btn-sm border-violet-800 rounded-lg bg-violet-800 text-white font-bold hover:bg-transparent hover:text-violet-900 hover:border-violet-900 mt-8"
           type="submit"
           disabled={!stripe || !clientSecret}
         >
-          Pay
+          Confirm Payment
         </button>
       </form>
-      {cartError && <p className="text-red-500">{cartError}</p>}
+      {cartError && (
+        <p className="text-red-500 py-2 text-base font-semibold text-center uppercase">
+          {cartError}
+        </p>
+      )}
       {success && (
-        <div className="text-green-500">
-          <p>{success}</p>
-          <p>
-            your transaction Id:{" "}
-            <span className="text-blue-500 font-bold">{transactionId}</span>
-          </p>
+        <div className="py-2 text-base font-semibold text-center text-green-600">
+          <span className="uppercase">
+            {success}
+            <span> and your </span>
+            <span>Transaction ID is :</span>{" "}
+          </span>
+          <span className="text-violet-800 font-semibold">{transactionId}</span>
         </div>
       )}
     </>

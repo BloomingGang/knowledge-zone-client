@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+// import SearchUser from "./SearchUser";
 import UserRow from "./UserRow";
 
 const Users = () => {
@@ -20,7 +21,7 @@ const Users = () => {
       <h1 className="text-3xl text-center font-bold text-violet-800  mt-4 mb-16">
         All Users
       </h1>
-
+      {/* <SearchUser></SearchUser> */}
       <div className="overflow-x-auto">
         <table className="table table-zebra w-full">
           <thead>

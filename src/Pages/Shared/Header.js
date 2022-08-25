@@ -23,8 +23,19 @@ const Header = () => {
     fetch("http://localhost:5000/ccis").then((res) => res.json())
   );
 
+  // bookN= book notification
+  const { data: bookN } = useQuery(["bookN"], () =>
+    fetch("http://localhost:5000/bookN").then((res) => res.json())
+  );
+
   const handleUnreadState = async (id) => {
     const { data } = await axios.put(`http://localhost:5000/cci/${id}`);
+    console.log(data);
+    refetch();
+  };
+
+  const handleUnreadStateBookN = async (id) => {
+    const { data } = await axios.put(`http://localhost:5000/bookN/${id}`);
     console.log(data);
     refetch();
   };
@@ -33,9 +44,7 @@ const Header = () => {
     <>
       <li className="mr-4 p-2 hover:bg-blue-500 rounded font-bold">
         <NavLink
-          className={({ isActive }) =>
-            isActive ? "text-white" : "text-black"
-          }
+          className={({ isActive }) => (isActive ? "text-white" : "text-black")}
           to="/"
         >
           Home
@@ -43,9 +52,7 @@ const Header = () => {
       </li>
       <li className="mr-4 p-2 hover:bg-blue-500 rounded font-bold">
         <NavLink
-          className={({ isActive }) =>
-          isActive ? "text-white" : "text-black"
-          }
+          className={({ isActive }) => (isActive ? "text-white" : "text-black")}
           to="/classes"
         >
           Academic Course
@@ -53,9 +60,7 @@ const Header = () => {
       </li>
       <li className="mr-4 p-2 hover:bg-blue-500 rounded font-bold">
         <NavLink
-          className={({ isActive }) =>
-          isActive ? "text-white" : "text-black"
-          }
+          className={({ isActive }) => (isActive ? "text-white" : "text-black")}
           to="/courses"
         >
           Skill Development Course
@@ -63,19 +68,15 @@ const Header = () => {
       </li>
       <li className="mr-4 p-2 hover:bg-blue-500 rounded font-bold">
         <NavLink
-          className={({ isActive }) =>
-          isActive ? "text-white" : "text-black"
-          }
+          className={({ isActive }) => (isActive ? "text-white" : "text-black")}
           to="/books"
         >
-          Book
+          Books
         </NavLink>
       </li>
       <li className="mr-4 p-2 hover:bg-blue-500 rounded font-bold">
         <NavLink
-          className={({ isActive }) =>
-          isActive ? "text-white" : "text-black"
-          }
+          className={({ isActive }) => (isActive ? "text-white" : "text-black")}
           to="/instructor"
         >
           Instructor
@@ -83,9 +84,7 @@ const Header = () => {
       </li>
       <li className="mr-4 p-2 hover:bg-blue-500 rounded font-bold">
         <NavLink
-          className={({ isActive }) =>
-          isActive ? "text-white" : "text-black"
-          }
+          className={({ isActive }) => (isActive ? "text-white" : "text-black")}
           to="/blogs"
         >
           Blog
@@ -93,9 +92,7 @@ const Header = () => {
       </li>
       <li className="mr-4 p-2 hover:bg-blue-500 rounded font-bold">
         <NavLink
-          className={({ isActive }) =>
-          isActive ? "text-white" : "text-black"
-          }
+          className={({ isActive }) => (isActive ? "text-white" : "text-black")}
           to="/contact"
         >
           Contact
@@ -105,50 +102,93 @@ const Header = () => {
       {/* notification panel */}
       <li className="mr-4 p-2 hover:bg-blue-500 rounded font-bold cursor-pointer">
         {/* panel credentials */}
-        <div class="dropdown">
+        <div class="dropdown md:dropdown-end">
           <label tabindex="0" class="text-xl m-1">
             <i className="text-violet-800 fa-solid fa-bell cursor-pointer"></i>
           </label>
           <div
             tabindex="0"
-            class="dropdown-content card card-compact w-52  bg-gray-100 h-[415px] overflow-auto rounded-md"
+            class="dropdown-content  rounded-md card-compact w-52  bg-gray-100 h-[365px] overflow-auto"
           >
-            <div class="card-body">
-              <span className="card-title flex justify-around border-b-4 text-red-500">
-                New <span className="text-red-500">{ccis?.unreadCount}</span>
+            <div class="py-3">
+              <span class="flex justify-around border-b-4 text-red-500">
+                New{" "}
+                <span className="text-red-500">
+                  {bookN?.unreadCount + ccis?.unreadCount}
+                </span>
+                {/* <span className="text-purple-500">{ccis?.unreadCount}</span> */}
               </span>
-              <div className="flex flex-col gap-y-2">
-                {ccis?.unreadData
-                  ?.map((cci) => (
-                    <p
-                      key={cci?._id}
-                      className="flex justify-between shadow p-2 rounded"
-                      onClick={() => handleUnreadState(cci?._id)}
-                    >
-                      <span>{cci?.title}</span>
-                      <span
-                        className={`${
-                          cci.state === "read"
-                            ? "text-green-500"
-                            : "text-red-500"
-                        }`}
+
+              <div class="card-body">
+                {/* <span className="card-title flex justify-around border-b-4 text-red-500">
+                  New <span className="text-red-500">{ccis?.unreadCount}</span>
+                </span> */}
+
+                <div className="flex flex-col gap-y-2">
+                  {ccis?.unreadData
+                    ?.map((cci) => (
+                      <p
+                        key={cci?._id}
+                        className="flex justify-between shadow p-2 rounded"
+                        onClick={() => handleUnreadState(cci?._id)}
                       >
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          class="h-5 w-5"
-                          viewBox="0 0 20 20"
-                          fill="currentColor"
+                        <span>{cci?.title}</span>
+                        <span
+                          className={`${
+                            cci.state === "read"
+                              ? "text-green-500"
+                              : "text-red-500"
+                          }`}
                         >
-                          <path
-                            fill-rule="evenodd"
-                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                            clip-rule="evenodd"
-                          />
-                        </svg>
-                      </span>
-                    </p>
-                  ))
-                  ?.reverse()}
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="h-5 w-5"
+                            viewBox="0 0 20 20"
+                            fill="currentColor"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                              clip-rule="evenodd"
+                            />
+                          </svg>
+                        </span>
+                      </p>
+                    ))
+                    ?.reverse()}
+
+                  {bookN?.unreadData
+                    ?.map((bookN) => (
+                      <p
+                        key={bookN?._id}
+                        className="flex justify-between shadow p-2 rounded"
+                        onClick={() => handleUnreadStateBookN(bookN?._id)}
+                      >
+                        <span>{bookN?.bookName}</span>
+                        <span
+                          className={`${
+                            bookN.state === "read"
+                              ? "text-green-500"
+                              : "text-red-500"
+                          }`}
+                        >
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="h-5 w-5"
+                            viewBox="0 0 20 20"
+                            fill="currentColor"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                              clip-rule="evenodd"
+                            />
+                          </svg>
+                        </span>
+                      </p>
+                    ))
+                    ?.reverse()}
+                </div>
               </div>
             </div>
           </div>
@@ -161,7 +201,7 @@ const Header = () => {
         ) : (
           <NavLink
             className={({ isActive }) =>
-            isActive ? "text-white" : "text-black"
+              isActive ? "text-white" : "text-black"
             }
             to="/login"
           >
@@ -180,6 +220,26 @@ const Header = () => {
         </div>
 
         <div>
+          {/* <<<<<<< HEAD
+          <div>
+            <div class="form-control">
+              <label class="input-group input-group-sm">
+                <input
+                  onChange={(e) => setSearchCourse(e.target.value)}
+                  type="search"
+                  name="text"
+                  placeholder="Search Courses"
+                  className="input input-bordered input-sm"
+                />
+                <span
+                  onClick={(e) => handleSearch(e)}
+                  className="bg-violet-300"
+                >
+                  <i className="fa-solid fa-magnifying-glass text-lg text-violet-800"></i>
+                </span>
+              </label>
+            </div>
+======= */}
           <div class="form-control">
             <label class="input-group input-group-sm">
               <input
@@ -193,6 +253,7 @@ const Header = () => {
                 <i className="fa-solid fa-magnifying-glass text-lg text-violet-800"></i>
               </span>
             </label>
+            {/* >>>>>>> e0b77533e1d1083037497bea89a1b40663334637 */}
           </div>
         </div>
       </div>

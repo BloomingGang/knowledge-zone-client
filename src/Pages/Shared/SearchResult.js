@@ -18,8 +18,17 @@ const SearchResult = () => {
       });
   }, [searchCourse]);
   if (loading) {
-    return <Loading />;
+    return <Loading></Loading>;
   }
+  //   return (
+  //     <div>
+  //       <h2 className="text-4xl text-center font-bold py-8">
+  //         Total Result Found:{courses?.length}
+  //       </h2>
+  //       <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6 p-6">
+  // =======
+  //     return <Loading />;
+  //   }
   return (
     <div>
       <h2 className="text-4xl text-center font-bold text-violet-800 py-8">

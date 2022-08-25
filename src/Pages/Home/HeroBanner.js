@@ -3,7 +3,7 @@ import hero from "../../img/assets/removed.gif";
 
 const HeroBanner = () => {
   return (
-    <div className="hero pb-10 px-6">
+    <div className="hero pb-8 px-6">
       <div class="hero-content flex-col lg:flex-row-reverse ">
         <div
           className="w-1/2 flex justify-center"
