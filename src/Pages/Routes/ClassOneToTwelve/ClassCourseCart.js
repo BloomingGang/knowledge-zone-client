@@ -74,7 +74,7 @@ const ClassCourseCart = ({ course }) => {
                   onClick={() => handleDeleteCourse(_id)}
                   className="text-red-600 transition ease-in-out delay-100 hover:-translate-y-1 hover:scale-110 duration-300 mx-2"
                 >
-                  <label onClick={() => setModal(true)} for="my-modal-6">
+                  <label onClick={() => setModal(true)} htmlFor="my-modal-6">
                     <TrashIcon className="h-7 w-7 cursor-pointer" />
                   </label>
                 </button>
@@ -103,7 +103,7 @@ const ClassCourseCart = ({ course }) => {
                 subscription to use Wikipedia for free!
               </p>
               <div className="modal-action">
-                <label for="my-modal-6" className="btn">
+                <label htmlFor="my-modal-6" className="btn">
                   Yay!
                 </label>
               </div>

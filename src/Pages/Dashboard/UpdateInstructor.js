@@ -56,7 +56,6 @@ const UpdateInstructor = () => {
         toast.success(`Update the instructor successfully!!`);
         event.target.reset();
       });
-    console.log(updateCourse);
   };
   return (
     <div className="p-12 bg-violet-200">

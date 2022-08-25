@@ -28,7 +28,7 @@ const MyProfile = () => {
           </h1>
           <span>
             <label
-              for="profileUpdate"
+              htmlFor="profileUpdate"
               onClick={() => setShowProfile(true)}
               className="text-violet-800"
             >

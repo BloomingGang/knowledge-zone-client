@@ -67,7 +67,7 @@ const ProfileUpdate = ({ name, email, setShowProfile }) => {
       <div className="modal">
         <div className="modal-box relative p-0 rounded-2xl">
           <label
-            for="profileUpdate"
+            htmlFor="profileUpdate"
             className="btn btn-sm btn-circle absolute right-3 top-3 bg-violet-600 hover:bg-violet-900"
           >
             ✕

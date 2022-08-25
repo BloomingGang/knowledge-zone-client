@@ -15,7 +15,6 @@ const stripePromise = loadStripe(
 const Payment = () => {
   const [user] = useAuthState(auth);
   const { id } = useParams();
-  console.log(id);
   const url = `http://localhost:5000/payment/${id}`;
   const { data: course, isLoading } = useQuery(["payment", id], () =>
     fetch(url, {
@@ -28,7 +27,6 @@ const Payment = () => {
   if (isLoading) {
     return <Loading />;
   }
-  console.log(course);
   const { productName, price, img } = course;
   return (
     <div className="w-11/12 md:w-2/5 mx-auto min-h-scree my-10 bg-gray-100 rounded-xl">

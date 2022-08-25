@@ -47,7 +47,6 @@ const ClassCourseDetails = () => {
   if (loading) {
     return <Loading />;
   }
-  console.log(matchPaid, "match paid");
 
   const handleCourseOrder = () => {
     const userName = user?.displayName;

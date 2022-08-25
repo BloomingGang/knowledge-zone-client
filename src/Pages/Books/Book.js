@@ -74,7 +74,7 @@ const Book = ({ book }) => {
                   onClick={() => handleDeleteBook(_id)}
                   className="text-red-600 transition ease-in-out delay-100 hover:-translate-y-1 hover:scale-110 duration-300 mx-6 mb-4"
                 >
-                  <label for="my-modal-6">
+                  <label htmlFor="my-modal-6">
                     <TrashIcon className="h-7 w-7 cursor-pointer" />
                   </label>
                 </button>

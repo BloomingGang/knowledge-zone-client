@@ -97,7 +97,6 @@ const BookInfo = () => {
   if (loading) {
     return <Loading />;
   }
-  console.log(matchPaid, "matchPaid");
   return (
     <div className="container mx-auto py-16 ">
       <div className="grid lg:grid-cols-2 grid-cols-1 gap-12 px-6 md:px-0">

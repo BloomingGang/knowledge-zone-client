@@ -58,7 +58,7 @@ const Blog = ({ blog }) => {
             {description.length > 255 ? (
               <label
                 onClick={() => handleBlog(_id)}
-                for="my-modal-3"
+                htmlFor="my-modal-3"
                 className="cursor-pointer text-violet-800 font-bold"
               >
                 Read More ...
@@ -84,7 +84,7 @@ const Blog = ({ blog }) => {
                 onClick={() => handleDeleteBlog(_id)}
                 className="text-red-600 transition ease-in-out delay-100 hover:-translate-y-1 hover:scale-110 duration-300 mt-4 mx-2"
               >
-                <label for="my-modal-6">
+                <label htmlFor="my-modal-6">
                   <TrashIcon className="h-9 w-9 cursor-pointer" />
                 </label>
               </button>
