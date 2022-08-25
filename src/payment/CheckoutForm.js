@@ -105,17 +105,19 @@ const CheckoutForm = ({ course }) => {
           Confirm Payment
         </button>
       </form>
-      {cartError && <p className="text-red-500">{cartError}</p>}
+      {cartError && (
+        <p className="text-red-500 py-2 text-base font-semibold text-center uppercase">
+          {cartError}
+        </p>
+      )}
       {success && (
-        <div>
-          <h1 className="py-2 text-base font-semibold uppercase text-center text-green-600">
+        <div className="py-2 text-base font-semibold text-center text-green-600">
+          <span className="uppercase">
             {success}
             <span> and your </span>
             <span>Transaction ID is :</span>{" "}
-            <span className="text-violet-800 font-semibold">
-              {transactionId}
-            </span>
-          </h1>
+          </span>
+          <span className="text-violet-800 font-semibold">{transactionId}</span>
         </div>
       )}
     </>
