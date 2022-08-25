@@ -108,10 +108,10 @@ const Header = () => {
           </label>
           <div
             tabindex="0"
-            class="dropdown-content card card-compact w-52 p-2 shadow bg-white h-[200px] overflow-auto"
+            class="dropdown-content  rounded-md card-compact w-52  bg-gray-100 h-[365px] overflow-auto"
           >
-            <div class="card-body">
-              <span class="card-title flex justify-around border-b-4 text-red-500">
+            <div class="py-3">
+              <span class="flex justify-around border-b-4 text-red-500">
                 New{" "}
                 <span className="text-red-500">
                   {bookN?.unreadCount + ccis?.unreadCount}
