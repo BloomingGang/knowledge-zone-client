@@ -16,7 +16,7 @@ const Payment = () => {
   const [user] = useAuthState(auth);
   const { id } = useParams();
   console.log(id);
-  const url = `http://localhost:5000/payment/${id}`;
+  const url = `https://shielded-forest-27142.herokuapp.com/payment/${id}`;
   const { data: course, isLoading } = useQuery(["payment", id], () =>
     fetch(url, {
       method: "GET",
@@ -29,7 +29,7 @@ const Payment = () => {
     return <Loading />;
   }
   console.log(course);
-  const { productName, price, img } = course;
+  const { price, img } = course;
   return (
     <div className="w-11/12 md:w-2/5 mx-auto min-h-scree my-10 bg-gray-100 rounded-xl">
       <div className="text-center py-4">
@@ -38,27 +38,17 @@ const Payment = () => {
             <img src={img} alt="" />
           </div>
         </div>
-        <h1 className="text-center text-xl font-semibold text-violet-800 mb-2 px-4">
-          Hello Dear{" "}
-          <span className="font-bold text-red-500">{user.displayName}</span>,
-          Please Pay <span className="font-bold text-red-500">${price}</span> To
-          Confirm Your Order
+        <h1 className="text-center text-xl font-semibold text-violet-800 mb-2 px-4 leading-8">
+          Hello Dear <span className="font-bold">{user.displayName}</span>,
+          Please Pay <span className="font-bold">${price}</span> To Confirm Your
+          Order
         </h1>
-        {/* ============================================================== */}
       </div>
       <div className="px-6 py-6 text-center">
         <Elements stripe={stripePromise}>
           <CheckoutForm course={course} />
         </Elements>
       </div>
-      {/* ===================================================================== */}
-      {/* <div className="card bg-base-100 shadow-xl my-12">
-        <div className="card-body">
-          <Elements stripe={stripePromise}>
-            <CheckoutForm course={course} />
-          </Elements>
-        </div>
-      </div> */}
     </div>
   );
 };

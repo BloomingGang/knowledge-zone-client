@@ -10,7 +10,7 @@ const UpdateInstructor = () => {
   const [loading, setLoading] = useState(true);
   useEffect(() => {
     axios
-      .get(`http://localhost:5000/instructor/${id}`)
+      .get(`https://shielded-forest-27142.herokuapp.com/instructor/${id}`)
       .then((res) => setUpdateInstructor(res.data));
     setLoading(false);
   }, [id]);
@@ -51,7 +51,10 @@ const UpdateInstructor = () => {
     };
 
     axios
-      .put(`http://localhost:5000/updateInstructor/${id}`, updateCourse)
+      .put(
+        `https://shielded-forest-27142.herokuapp.com/updateInstructor/${id}`,
+        updateCourse
+      )
       .then((res) => {
         toast.success(`Update the instructor successfully!!`);
         event.target.reset();

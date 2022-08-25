@@ -7,7 +7,7 @@ const SearchResult = () => {
   const [courses, setCourses] = useState([]);
   const [loading, setLoading] = useState(true);
   useEffect(() => {
-    fetch("http://localhost:5000/searchCourse")
+    fetch("https://shielded-forest-27142.herokuapp.com/searchCourse")
       .then((res) => res.json())
       .then((courses) => {
         const matchCourse = courses.filter((course) =>

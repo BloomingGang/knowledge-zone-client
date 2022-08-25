@@ -6,7 +6,7 @@ const Physics = () => {
   const [instructors, setInstructors] = useState([]);
   const [loading, setLoading] = useState(true);
   useEffect(() => {
-    fetch("http://localhost:5000/instructors/Physics")
+    fetch("https://shielded-forest-27142.herokuapp.com/instructors/Physics")
       .then((res) => res.json())
       .then((data) => {
         setInstructors(data);

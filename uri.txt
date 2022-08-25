@@ -1,1 +1,1 @@
-server uri: http://localhost:5000/
+server uri: https://shielded-forest-27142.herokuapp.com/

@@ -20,22 +20,30 @@ const Header = () => {
 
   // CCIS => classes and courses infos
   const { data: ccis, refetch } = useQuery(["ccis"], () =>
-    fetch("http://localhost:5000/ccis").then((res) => res.json())
+    fetch("https://shielded-forest-27142.herokuapp.com/ccis").then((res) =>
+      res.json()
+    )
   );
 
   // bookN= book notification
   const { data: bookN } = useQuery(["bookN"], () =>
-    fetch("http://localhost:5000/bookN").then((res) => res.json())
+    fetch("https://shielded-forest-27142.herokuapp.com/bookN").then((res) =>
+      res.json()
+    )
   );
-
+  console.log(bookN, "bookN");
   const handleUnreadState = async (id) => {
-    const { data } = await axios.put(`http://localhost:5000/cci/${id}`);
+    const { data } = await axios.put(
+      `https://shielded-forest-27142.herokuapp.com/cci/${id}`
+    );
     console.log(data);
     refetch();
   };
 
   const handleUnreadStateBookN = async (id) => {
-    const { data } = await axios.put(`http://localhost:5000/bookN/${id}`);
+    const { data } = await axios.put(
+      `https://shielded-forest-27142.herokuapp.com/bookN/${id}`
+    );
     console.log(data);
     refetch();
   };

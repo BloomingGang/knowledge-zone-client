@@ -9,7 +9,7 @@ const BooksCarousel = () => {
     navigate(`/book/${id}`);
   };
   useEffect(() => {
-    fetch(`http://localhost:5000/books`)
+    fetch(`https://shielded-forest-27142.herokuapp.com/books`)
       .then((response) => response.json())
       .then((data) => setBooks(data));
   }, []);

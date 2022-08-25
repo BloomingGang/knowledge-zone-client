@@ -39,7 +39,10 @@ const AddInstructor = () => {
     };
 
     axios
-      .post(`http://localhost:5000/addInstructor`, addInstructor)
+      .post(
+        `https://shielded-forest-27142.herokuapp.com/addInstructor`,
+        addInstructor
+      )
       .then((res) => {
         toast.success(`Instructor added successfully!!`);
         event.target.reset();

@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { useNavigate, useParams } from "react-router-dom";
 import auth from "../../../firebase.init";
+import useMyOrder from "../../../hooks/useMyOrder";
 import Loading from "../Loading";
 
 const ClassCourseDetails = () => {
@@ -11,18 +12,10 @@ const ClassCourseDetails = () => {
   const { id } = useParams();
   const [courseInfo, setCourseInfo] = useState({});
   const [loading, setLoading] = useState(true);
-  useEffect(() => {
-    axios
-
-      .get(`http://localhost:5000/course/${id}`)
-
-      .then((res) => setCourseInfo(res.data));
-    setLoading(false);
-  }, [id]);
-  if (loading) {
-    return <Loading />;
-  }
+  const [myOrder] = useMyOrder(["paidOrder"]);
+  const [matchPaid, setMatchPaid] = useState(false);
   const {
+    _id,
     title,
     img,
     ShortDescription,
@@ -40,6 +33,21 @@ const ClassCourseDetails = () => {
     notes,
     transcripts,
   } = courseInfo;
+  useEffect(() => {
+    axios
+      .get(`https://shielded-forest-27142.herokuapp.com/course/${id}`)
+      .then((res) => setCourseInfo(res.data));
+
+    myOrder?.find((paid) => {
+      if (paid.id == _id) return setMatchPaid(true);
+    });
+    setLoading(false);
+  }, [id, _id, myOrder]);
+
+  if (loading) {
+    return <Loading />;
+  }
+  console.log(matchPaid, "match paid");
 
   const handleCourseOrder = () => {
     const userName = user?.displayName;
@@ -52,9 +60,11 @@ const ClassCourseDetails = () => {
       productName,
       img,
       price,
+      paid: false,
+      id: _id,
     };
 
-    fetch("http://localhost:5000/order", {
+    fetch("https://shielded-forest-27142.herokuapp.com/order", {
       method: "post",
       headers: {
         "content-type": "application/json",
@@ -206,13 +216,21 @@ const ClassCourseDetails = () => {
               </a>
               <p className="text-xl font-bold">$ {price}</p>
             </div>
-
-            <button
-              onClick={handleCourseOrder}
-              class="btn bg-violet-800 hover:bg-transparent hover:text-violet-900 hover:border-violet-900 w-full my-4"
-            >
-              Buy the Course
-            </button>
+            {matchPaid ? (
+              <button
+                onClick={() => navigate("/myCollection")}
+                class={` btn bg-violet-800 hover:bg-transparent hover:text-violet-900 hover:border-violet-900 w-full my-4`}
+              >
+                Already Paid
+              </button>
+            ) : (
+              <button
+                onClick={handleCourseOrder}
+                class={`btn bg-violet-800 hover:bg-transparent hover:text-violet-900 hover:border-violet-900 w-full my-4`}
+              >
+                Buy the Course
+              </button>
+            )}
             <div className="flex justify-between py-6">
               <div className="flex items-center">
                 <div>

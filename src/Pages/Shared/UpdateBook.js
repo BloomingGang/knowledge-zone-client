@@ -11,7 +11,7 @@ const UpdateBook = () => {
   const navigate = useNavigate();
   useEffect(() => {
     axios
-      .get(`http://localhost:5000/books/${id}`)
+      .get(`https://shielded-forest-27142.herokuapp.com/books/${id}`)
       .then((res) => setUpdateBook(res.data));
     setLoading(false);
   }, [id]);
@@ -55,7 +55,10 @@ const UpdateBook = () => {
     };
 
     axios
-      .put(`http://localhost:5000/bookUpdate/${id}`, updateBook)
+      .put(
+        `https://shielded-forest-27142.herokuapp.com/bookUpdate/${id}`,
+        updateBook
+      )
       .then((res) => {
         toast.success(`Update Book successfully`);
         event.target.reset();
