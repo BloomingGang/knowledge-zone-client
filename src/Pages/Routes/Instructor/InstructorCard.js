@@ -42,6 +42,9 @@ const InstructorCard = ({ instructor, index }) => {
   return (
     <div
       key={index}
+      data-aos-delay="200"
+      data-aos="zoom-in"
+      data-aos-duration="1000"
       className="bg-gray-100 transition ease-in-out delay-150 hover:-translate-1 hover:scale-105 duration-300 rounded-lg"
     >
       <figure>
@@ -53,7 +56,7 @@ const InstructorCard = ({ instructor, index }) => {
         />
       </figure>
 
-      <div className="items-center text-center pt-3">
+      <div className="items-center text-center py-2">
         <h2 className="text-2xl font-bold text-violet-800">{name}</h2>
         <p className="pb-3">{education}</p>
         <div className="text-2xl sm:text-center">
