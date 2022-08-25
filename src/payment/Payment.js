@@ -31,25 +31,24 @@ const Payment = () => {
   console.log(course);
   const { productName, price, img } = course;
   return (
-    <div className=" w-3/5 mx-auto min-h-screen my-20">
-      <div className=" bg-base-100 shadow-xl text-center   py-4">
-        <p className="font-bold text-blue-500">Hello, {user.displayName}</p>
-        <h2 className=" text-center text-2xl font-bold">
-          Please pay for {productName}
-        </h2>
-        <div class="avatar my-4">
-          <div class="w-24 mask mask-hexagon flex justify-center items-center">
+    <div className="w-11/12 md:w-2/5 mx-auto min-h-scree my-10 bg-gray-100 rounded-xl">
+      <div className="text-center py-4">
+        <div class="avatar my-2">
+          <div class="w-28 rounded flex justify-center items-center">
             <img src={img} alt="" />
           </div>
         </div>
-        <p>Please Pay : $ {price}</p>
+        <h1 className="text-center text-xl font-semibold text-violet-800 mb-2 px-4 leading-8">
+          Hello Dear{" "}
+          <span className="font-bold">{user.displayName}</span>,
+          Please Pay <span className="font-bold">${price}</span>{" "}
+          To Confirm Your Order
+        </h1>
       </div>
-      <div className="card bg-base-100 shadow-xl my-12">
-        <div className="card-body">
-          <Elements stripe={stripePromise}>
-            <CheckoutForm course={course} />
-          </Elements>
-        </div>
+      <div className="px-6 py-6 text-center">
+        <Elements stripe={stripePromise}>
+          <CheckoutForm course={course} />
+        </Elements>
       </div>
     </div>
   );

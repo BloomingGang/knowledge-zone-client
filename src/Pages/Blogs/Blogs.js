@@ -22,11 +22,14 @@ const Blogs = () => {
 
   return (
     <div>
-         <h2 className="text-4xl text-center font-bold text-violet-800  mt-4">
+         <h2  data-aos-delay="200"
+          data-aos="zoom-in"
+          data-aos-duration="1000"
+          className="text-4xl text-center font-bold text-violet-800  mt-4">
             Blogs
           </h2>
       <div className="lg:w-3/4 mx-auto grid md:grid-cols-2  gap-16 px-8 py-16">
-        {blog.map((blog) => (
+        {blog?.map((blog) => (
           <Blog setModal={setModal} key={blog._id} blog={blog}></Blog>
         ))}
         <LiveChat />

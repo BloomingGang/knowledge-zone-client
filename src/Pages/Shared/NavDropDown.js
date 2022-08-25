@@ -16,13 +16,13 @@ const NavDropDown = () => {
   };
   return (
     <div className="flex items-center">
-      <div className="dropdown dropdown-right dropdown-end">
+      <div className="dropdown md:dropdown-end">
         <label tabindex="0">
           <ProfilePic />
         </label>
         <ul
           tabindex="0"
-          className="dropdown-content menu shadow bg-gray-100 rounded-md w-44"
+          className="dropdown-content menu shadow bg-gray-100 rounded-md w-44 "
         >
           {admin && (
             <li>
@@ -33,7 +33,7 @@ const NavDropDown = () => {
             <Link to="/myProfile">My Profile</Link>
           </li>
           <li>
-            <Link to="/">My Courses</Link>
+            <Link to="myCollection">My Collection</Link>
           </li>
           <li>
             <Link to="/myOrder">My Order</Link>
@@ -43,6 +43,7 @@ const NavDropDown = () => {
               <Link to="/addCourse">Add Course</Link>
             </li>
           )}
+
           {admin && (
             <li>
               <Link to="/addInstructor">Add Instructor</Link>
@@ -55,6 +56,11 @@ const NavDropDown = () => {
           {admin && (
             <li>
               <Link to="/addBook">Add Book</Link>
+            </li>
+          )}
+          {admin && (
+            <li>
+              <Link to="/addBlog">Add Blog</Link>
             </li>
           )}
           <li>

@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { useNavigate, useParams } from "react-router-dom";
 import auth from "../../../firebase.init";
+import useMyOrder from "../../../hooks/useMyOrder";
 import Loading from "../Loading";
 
 const ClassCourseDetails = () => {
@@ -11,18 +12,10 @@ const ClassCourseDetails = () => {
   const { id } = useParams();
   const [courseInfo, setCourseInfo] = useState({});
   const [loading, setLoading] = useState(true);
-  useEffect(() => {
-    axios
-
-      .get(`http://localhost:5000/course/${id}`)
-
-      .then((res) => setCourseInfo(res.data));
-    setLoading(false);
-  }, [id]);
-  if (loading) {
-    return <Loading />;
-  }
+  const [myOrder] = useMyOrder(["paidOrder"]);
+  const [matchPaid,setMatchPaid]=useState(false)
   const {
+    _id,
     title,
     img,
     ShortDescription,
@@ -40,6 +33,24 @@ const ClassCourseDetails = () => {
     notes,
     transcripts,
   } = courseInfo;
+  useEffect(() => {
+    axios.get(`http://localhost:5000/course/${id}`).then((res) => setCourseInfo(res.data));
+    
+     myOrder?.find(paid => {
+      if(paid.id == _id) 
+      return setMatchPaid(true);
+      
+    });
+    setLoading(false);
+   
+  }, [id,_id,myOrder]);
+ 
+
+  if (loading) {
+    return <Loading />;
+  }
+ console.log(matchPaid,'match paid');
+  
 
   const handleCourseOrder = () => {
     const userName = user?.displayName;
@@ -52,6 +63,8 @@ const ClassCourseDetails = () => {
       productName,
       img,
       price,
+      paid:false,
+      id:_id
     };
 
     fetch("http://localhost:5000/order", {
@@ -70,7 +83,7 @@ const ClassCourseDetails = () => {
       });
   };
   return (
-    <div className="container mx-auto grid lg:grid-cols-2 grid-cols-1 gap-12 py-12">
+    <div className="container mx-auto grid lg:grid-cols-2 grid-cols-1 gap-12 py-12 px-6 md:px-0">
       <div>
         <h1 className="text-3xl text-violet-800 mb-4">{title}</h1>
         <p>{ShortDescription}</p>
@@ -79,7 +92,7 @@ const ClassCourseDetails = () => {
           <h1 className="text-2xl text-violet-700 mb-4">Instructor</h1>
           <div className="flex border-2 rounded-xl p-6">
             <div class="avatar mr-8">
-              <div class="w-20 rounded-full">
+              <div class="w-20 h-20 rounded-full">
                 <img src={instructorImg} alt="" />
               </div>
             </div>
@@ -149,7 +162,7 @@ const ClassCourseDetails = () => {
             <hr />
             <div
               tabindex="0"
-              class="collapse collapse-arrow  bg-base-100 rounded-box"
+              class="collapse collapse-arrow  bg-base-100 rounded-box my-4"
             >
               <div class="collapse-title text-xl font-medium hover:text-violet-800">
                 {syllabus?.email?.title}
@@ -206,13 +219,22 @@ const ClassCourseDetails = () => {
               </a>
               <p className="text-xl font-bold">$ {price}</p>
             </div>
-
+              {
+                matchPaid?
+            <button
+            onClick={()=> navigate("/myCollection")}
+              class={` btn bg-violet-800 hover:bg-transparent hover:text-violet-900 hover:border-violet-900 w-full my-4`}
+            >
+              Already Paid
+            </button>
+            :
             <button
               onClick={handleCourseOrder}
-              class="btn bg-violet-800 hover:bg-transparent hover:text-violet-900 hover:border-violet-900 w-full my-4"
+              class={`btn bg-violet-800 hover:bg-transparent hover:text-violet-900 hover:border-violet-900 w-full my-4`}
             >
               Buy the Course
             </button>
+              }
             <div className="flex justify-between py-6">
               <div className="flex items-center">
                 <div>

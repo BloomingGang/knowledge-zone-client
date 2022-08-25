@@ -19,3 +19,10 @@ html {
   background-image: linear-gradient(45deg, #ad98bd, #ab90c6);
   border-radius: 0px;
 }
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}

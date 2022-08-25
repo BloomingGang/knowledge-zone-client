@@ -1,29 +1,20 @@
-import React from "react";
+import axios from "axios";
+import React, { useEffect, useState } from "react";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { useQuery } from "react-query";
 import { useNavigate, useParams } from "react-router-dom";
 import auth from "../../../firebase.init";
+import useMyOrder from "../../../hooks/useMyOrder";
 import Loading from "../Loading";
 
 const BookInfo = () => {
   const navigate = useNavigate();
   const { id } = useParams();
   const [user] = useAuthState(auth);
-
-  const {
-    isLoading,
-    error,
-    data: book,
-  } = useQuery(["book", id], () =>
-    fetch(`http://localhost:5000/book/${id}`, {
-      method: "get",
-      headers: {
-        authorization: `Bearer ${localStorage.getItem("accessToken")}`,
-      },
-    }).then((res) => res.json())
-  );
-  if (isLoading) return <Loading />;
-  if (error) return "An error has occurred: " + error.message;
+  const [myOrder] = useMyOrder(["paidOrder"]);
+  const [matchPaid,setMatchPaid]=useState(false)
+  const [bookInfo,setBookInfo]=useState({})
+  const [loading, setLoading] = useState(true);
   const {
     bookName,
     img,
@@ -46,7 +37,34 @@ const BookInfo = () => {
     interactive,
     formate,
     filesize,
-  } = book;
+    _id
+  } = bookInfo;
+
+  useEffect(() => {
+    axios.get(`http://localhost:5000/book/${id}`).then((res) => setBookInfo(res.data));
+     myOrder?.find(paid => { 
+      if(paid.id == _id)
+       return setMatchPaid(true)
+      });
+      setLoading(false);
+  },[myOrder,_id,id])
+
+  // const {
+  //   isLoading,
+  //   error,
+  //   data: book,
+  // } = useQuery(["book", id], () =>
+  //   fetch(`http://localhost:5000/book/${id}`, {
+  //     method: "get",
+  //     headers: {
+  //       authorization: `Bearer ${localStorage.getItem("accessToken")}`,
+  //     },
+  //   }).then((res) => res.json())
+  // );
+  // if (isLoading) return <Loading />;
+  // if (error) return "An error has occurred: " + error.message;
+  
+  
 
   const handleOrder = () => {
     const userName = user?.displayName;
@@ -59,6 +77,8 @@ const BookInfo = () => {
       productName,
       img,
       price,
+      paid:false,
+      id:_id
     };
     fetch("http://localhost:5000/order", {
       method: "post",
@@ -71,22 +91,22 @@ const BookInfo = () => {
       .then((res) => res.json())
       .then((data) => {
         if (data.insertedId) {
-          const id = data.insertedId;
-          navigate(`/payment/${id}`);
-
           navigate("/myOrder");
         }
       });
   };
-
+if(loading){
+  return <Loading/>
+}
+console.log(matchPaid,"matchPaid")
   return (
-    <div className="container mx-auto py-16">
-      <div className="grid lg:grid-cols-2 grid-cols-1 gap-12">
+    <div className="container mx-auto py-16 ">
+      <div className="grid lg:grid-cols-2 grid-cols-1 gap-12 px-6 md:px-0">
         <div>
           <h1 className="text-2xl text-violet-800 font-bold">{bookName}</h1>
           <div className="py-12">
             <h2 className="text-xl pb-4">Writers</h2>
-            <div className="grid grid-cols-2 border-2 rounded-xl px-6 py-8 gap-4">
+            <div className="grid md:grid-cols-2 border-2 rounded-xl px-6 py-8 gap-4">
               <div className="flex items-center">
                 <div class="avatar mr-8">
                   <div class="w-16 rounded-full">
@@ -145,22 +165,22 @@ const BookInfo = () => {
             <h2 className="text-xl text-violet-800 pb-4">Objective</h2>
             <p>
               <i class="text-violet-900 mr-4 font-bold text-xl fa-solid fa-angles-right"></i>
-              {objective.point1}
+              {objective?.point1}
             </p>
             <p>
               <i class="text-violet-900 mr-4 font-bold text-xl fa-solid fa-angles-right"></i>
-              {objective.point2}
+              {objective?.point2}
             </p>
             <p>
               <i class="text-violet-900 mr-4 font-bold text-xl fa-solid fa-angles-right"></i>
-              {objective.point3}
+              {objective?.point3}
             </p>
           </div>
         </div>
 
         <div>
           <div className="border-2 p-4 rounded-xl">
-            <div className="grid grid-cols-2 gap-12">
+            <div className="grid md:grid-cols-2 gap-12 justify-center">
               <div>
                 <img src={img} alt="" />
               </div>
@@ -209,10 +229,17 @@ const BookInfo = () => {
               </a>
               <p className="text-xl font-bold">$ {price}</p>
             </div>
-
+            {
+              matchPaid?
+            <button
+            onClick={()=> navigate("/myCollection")}
+             class="btn bg-violet-800 hover:bg-transparent hover:text-violet-900 hover:border-violet-900 w-full my-4">
+              ALREADY PAID
+            </button>:
             <button onClick={handleOrder} class="btn bg-violet-800 hover:bg-transparent hover:text-violet-900 hover:border-violet-900 w-full my-4">
               Buy the Book
             </button>
+            }
           </div>
         </div>
       </div>
