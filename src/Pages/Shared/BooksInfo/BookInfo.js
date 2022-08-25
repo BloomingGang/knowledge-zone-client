@@ -46,6 +46,7 @@ const BookInfo = () => {
     interactive,
     formate,
     filesize,
+    _id
   } = book;
 
   const handleOrder = () => {
@@ -59,6 +60,8 @@ const BookInfo = () => {
       productName,
       img,
       price,
+      paid:false,
+      id:_id
     };
     fetch("http://localhost:5000/order", {
       method: "post",

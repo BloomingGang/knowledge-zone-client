@@ -12,7 +12,7 @@ const CheckoutForm = ({ course }) => {
   const [transactionId, setTransactionId] = useState("");
   const stripe = useStripe();
   const elements = useElements();
-  const { price } = course;
+  const { price,_id } = course;
   const { displayName, email } = user;
   console.log(user);
 
@@ -68,7 +68,7 @@ const CheckoutForm = ({ course }) => {
     } else {
       setCartError("");
       setTransactionId(paymentIntent.id);
-      setSuccess("congrats! your payment is completed");
+      setSuccess("congrats! your payment is completed! ");
       Swal.fire({
         position: "center",
         icon: "success",
@@ -76,6 +76,22 @@ const CheckoutForm = ({ course }) => {
         showConfirmButton: false,
         timer: 1500,
       });
+
+      const payment = {
+        transactionId: paymentIntent.id
+    }
+
+    fetch(`http://localhost:5000/enrollCourse/${_id}`, {
+        method: 'PATCH',
+        headers: {
+            'content-type': 'application/json',
+            'authorization': `Bearer ${localStorage.getItem("accessToken")}`
+        },
+        body: JSON.stringify(payment)
+    }).then(res => res.json())
+        .then(data => {
+            console.log(data);
+        })
     }
   };
   return (

@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { useNavigate, useParams } from "react-router-dom";
 import auth from "../../../firebase.init";
+import useMyOrder from "../../../hooks/useMyOrder";
 import Loading from "../Loading";
 
 const ClassCourseDetails = () => {
@@ -11,18 +12,10 @@ const ClassCourseDetails = () => {
   const { id } = useParams();
   const [courseInfo, setCourseInfo] = useState({});
   const [loading, setLoading] = useState(true);
-  useEffect(() => {
-    axios
-
-      .get(`http://localhost:5000/course/${id}`)
-
-      .then((res) => setCourseInfo(res.data));
-    setLoading(false);
-  }, [id]);
-  if (loading) {
-    return <Loading />;
-  }
+  const [myOrder] = useMyOrder(["paidOrder"]);
+  const [matchPaid,setMatchPaid]=useState(false)
   const {
+    _id,
     title,
     img,
     ShortDescription,
@@ -40,6 +33,23 @@ const ClassCourseDetails = () => {
     notes,
     transcripts,
   } = courseInfo;
+  useEffect(() => {
+    axios.get(`http://localhost:5000/course/${id}`).then((res) => setCourseInfo(res.data));
+    setLoading(false);
+     myOrder?.find(paid => {
+      if(paid.id == _id) 
+      return setMatchPaid(true);
+      
+    });
+   
+  }, [id,_id,myOrder]);
+ 
+
+  if (loading) {
+    return <Loading />;
+  }
+ 
+  
 
   const handleCourseOrder = () => {
     const userName = user?.displayName;
@@ -52,6 +62,8 @@ const ClassCourseDetails = () => {
       productName,
       img,
       price,
+      paid:false,
+      id:_id
     };
 
     fetch("http://localhost:5000/order", {
@@ -209,7 +221,7 @@ const ClassCourseDetails = () => {
 
             <button
               onClick={handleCourseOrder}
-              class="btn bg-violet-800 hover:bg-transparent hover:text-violet-900 hover:border-violet-900 w-full my-4"
+              class={`${matchPaid === false && "btn-disabled"} btn bg-violet-800 hover:bg-transparent hover:text-violet-900 hover:border-violet-900 w-full my-4`}
             >
               Buy the Course
             </button>
