@@ -18,9 +18,8 @@ const Home = () => {
   return (
     <div>
       <HeroBanner />
-
-      <AcademicCourses />
-      <SkillDevCourses />
+      {/* <AcademicCourses /> */}
+      {/* <SkillDevCourses /> */}
       {/* <Learners />
       <LearningProgram />
       <CardK /> */}
@@ -31,7 +30,7 @@ const Home = () => {
       <CarouselOne /> */}
       <CardOne />
       <CoursesAutoSlider />
-      <LiveChat />
+      {/* <LiveChat /> */}
     </div>
   );
 };

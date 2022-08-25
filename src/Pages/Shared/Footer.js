@@ -1,7 +1,8 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
 const Footer = () => {
+  const today = new Date();
+  const year = today.getFullYear();
   return (
     <div className="bg-violet-900 text-white py-12">
       <div className="w-4/5 mx-auto lg:flex lg:justify-between sm:grid sm:grid-cols-1 items-center">
@@ -19,7 +20,7 @@ const Footer = () => {
         </div>
 
         <div>
-          <p className="font-bold">Contact Us</p>
+          <p className="font-bold pt-4 md:pt-0">Contact Us</p>
           <p>knowledgezone404@gmail.com</p>
         </div>
 
@@ -43,51 +44,11 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="mt-12">
-        <div className="flex md:gap-x-6 gap-x-4 justify-center">
-          <Link
-            to="/"
-            className="border-b-2 border-transparent hover:border-b-2 hover:border-b-white rounded-bl duration-500"
-          >
-            Home
-          </Link>
-          <Link
-            to="/classes"
-            className="border-b-2 border-transparent hover:border-b-2 hover:border-b-white rounded-bl duration-500"
-          >
-            Courses
-          </Link>
-          <Link
-            to="/books"
-            className="border-b-2 border-transparent hover:border-b-2 hover:border-b-white rounded-bl duration-500"
-          >
-            Book
-          </Link>
-          <Link
-            to="/instructor"
-            className="border-b-2 border-transparent hover:border-b-2 hover:border-b-white rounded-bl duration-500"
-          >
-            Instructor
-          </Link>
-          <Link
-            to="/privacy"
-            className="border-b-2 border-transparent hover:border-b-2 hover:border-b-white rounded-bl duration-500"
-          >
-            Privacy Policy
-          </Link>
-          <Link
-            to="/contact"
-            className="border-b-2 border-transparent hover:border-b-2 hover:border-b-white rounded-bl duration-500"
-          >
-            Contact Us
-          </Link>
-        </div>
-      </div>
       <hr className="w-4/5 mx-auto my-6" />
       <p className="text-center">
         {" "}
-        copyright@knowledge-zone 2022 all the right reserved | Designed by
-        Knowledge Zone Team
+        Copyright &copy; knowledge-zone {year} all the right reserved | Designed
+        by Knowledge Zone Team
       </p>
     </div>
   );
