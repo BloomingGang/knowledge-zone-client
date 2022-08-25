@@ -16,7 +16,7 @@ const NavDropDown = () => {
   };
   return (
     <div className="flex items-center">
-      <div className="dropdown dropdown-right">
+      <div className="dropdown dropdown-right dropdown-end">
         <label tabindex="0">
           <ProfilePic />
         </label>
