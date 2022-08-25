@@ -18,7 +18,7 @@ const Book = ({ book }) => {
         <div>
           <img src={img} alt="/" className="rounded-t-lg w-full" />
         </div>
-        <div className="">
+        <div>
           <h2 className="text-center font-bold uppercase text-xl pt-4 text-violet-800">
             {bookName}
           </h2>
