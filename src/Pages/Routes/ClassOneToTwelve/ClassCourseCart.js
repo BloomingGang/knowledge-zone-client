@@ -44,11 +44,15 @@ const ClassCourseCart = ({ course }) => {
 
   return (
     <section>
-      <div className="bg-gray-100 transition ease-in-out delay-150 hover:-translate-1 hover:scale-105 duration-300 rounded-lg">
+      <div 
+       data-aos-delay="200"
+       data-aos="zoom-in"
+       data-aos-duration="1000"
+      className="bg-gray-100 transition ease-in-out delay-150 hover:-translate-1 hover:scale-105 duration-300 rounded-lg">
         <figure>
           <img className="w-full rounded-t-lg" src={img} alt="course" />
         </figure>
-        <div className="px-5">
+        <div className="px-5 pb-2">
           <h2 className="text-center pt-3 font-bold text-xl"> {title}</h2>
           <div class="divider"></div>
           <div className="flex justify-between items-center">

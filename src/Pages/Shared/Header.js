@@ -102,16 +102,16 @@ const Header = () => {
       {/* notification panel */}
       <li className="mr-4 p-2 hover:bg-blue-500 rounded font-bold cursor-pointer">
         {/* panel credentials */}
-        <div class="dropdown">
+        <div class="dropdown md:dropdown-end">
           <label tabindex="0" class="text-xl m-1">
             <i className="text-violet-800 fa-solid fa-bell cursor-pointer"></i>
           </label>
           <div
             tabindex="0"
-            class="dropdown-content card card-compact w-52 p-2 shadow bg-white h-[200px] overflow-auto"
+            class="dropdown-content  rounded-md card-compact w-52  bg-gray-100 h-[365px] overflow-auto"
           >
-            <div class="card-body">
-              <span class="card-title flex justify-around border-b-4 text-red-500">
+            <div class="py-3">
+              <span class="flex justify-around border-b-4 text-red-500">
                 New{" "}
                 <span className="text-red-500">
                   {bookN?.unreadCount + ccis?.unreadCount}

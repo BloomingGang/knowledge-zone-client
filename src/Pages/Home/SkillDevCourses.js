@@ -53,7 +53,7 @@ const SkillDevCourses = () => {
         },
       },
       {
-        breakpoint: 600,
+        breakpoint: 800,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 2,
@@ -87,7 +87,8 @@ const SkillDevCourses = () => {
               data-aos="zoom-in"
               data-aos-duration="1000"
             >
-              <div key={index}>
+              <div key={index}
+               className=" flex justify-center">
                 <a href={courses.link}>
                   <img className="rounded-lg" src={courses.picture} alt="" />
                 </a>

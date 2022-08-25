@@ -44,22 +44,22 @@ const Book = ({ book }) => {
   };
   return (
     <div>
-      {/* // <div className="card bg-gray-100 h-[640px] transition ease-in-out delay-150 hover:-translate-1 hover:scale-105 duration-300">
-      //   <div className="">
-      //     <img src={img} alt="/" className="rounded-t-xl h-[350px] w-full" /> */}
-
-      <div className="rounded-lg bg-gray-100 transition ease-in-out delay-150 hover:-translate-1 hover:scale-105 duration-300">
+      <div 
+       data-aos-delay="200"
+       data-aos="zoom-in"
+       data-aos-duration="1000"
+       className="rounded-lg bg-gray-100 transition ease-in-out delay-150 hover:-translate-1 hover:scale-105 duration-300">
         <div>
           <img src={img} alt="/" className="rounded-t-lg w-full" />
         </div>
-        <div className="">
+        <div>
           <h2 className="text-center font-bold uppercase text-xl pt-4 text-violet-800">
             {bookName}
           </h2>
 
-          <div className="card-actions justify-center py-4">
+          <div className="card-actions justify-center pt-4 pb-2">
             <button
-              className="border-2 shadow-lg hover:bg-violet-500 hover:text-black p-2 rounded-lg bg-violet-800 text-white font-bold transition duration-300"
+              className="btn btn-sm border-violet-800 rounded-lg bg-violet-800 text-white font-bold hover:bg-transparent hover:text-violet-900 hover:border-violet-900"
               onClick={() => handleBook(_id)}
             >
               View Details
@@ -71,18 +71,18 @@ const Book = ({ book }) => {
               <div className="flex justify-between">
                 <button
                   onClick={() => handleDeleteBook(_id)}
-                  className="text-red-600 transition ease-in-out delay-100 hover:-translate-y-1 hover:scale-110 duration-300 mt-4 mx-2"
+                  className="text-red-600 transition ease-in-out delay-100 hover:-translate-y-1 hover:scale-110 duration-300 mx-6 mb-4"
                 >
                   <label for="my-modal-6">
-                    <TrashIcon className="h-9 w-9 cursor-pointer" />
+                    <TrashIcon className="h-7 w-7 cursor-pointer" />
                   </label>
                 </button>
 
                 <button
                   onClick={() => handleBookUpdate(_id)}
-                  className="text-green-600 transition ease-in-out delay-100 hover:-translate-y-1 hover:scale-110 duration-300 mt-4 mx-2"
+                  className="text-green-600 transition ease-in-out delay-100 hover:-translate-y-1 hover:scale-110 duration-300 mx-6 mb-4"
                 >
-                  <PencilAltIcon className="h-9 w-9" />
+                  <PencilAltIcon className="h-7 w-7" />
                 </button>
               </div>
             </div>
