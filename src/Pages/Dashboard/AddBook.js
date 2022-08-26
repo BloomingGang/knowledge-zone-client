@@ -75,8 +75,8 @@ const AddBook = () => {
         </h1>
         <div className="grid md:grid-cols-2 gap-x-10 gap-y-0">
           <div className="mb-6">
-            <div class="form-control w-full max-w-xs">
-              <label class="label">
+            <div className="form-control w-full max-w-xs">
+              <label className="label">
                 {" "}
                 <span className="label-text text-lg    ">Book Name:</span>
               </label>
@@ -85,14 +85,14 @@ const AddBook = () => {
                 type="text"
                 name="bookName"
                 placeholder="Book Name"
-                class="input input-bordered w-full max-w-xs"
+                className="input input-bordered w-full max-w-xs"
               />
             </div>
           </div>
 
           <div className="mb-6">
-            <div class="form-control w-full max-w-xs">
-              <label class="label">
+            <div className="form-control w-full max-w-xs">
+              <label className="label">
                 {" "}
                 <span className="label-text text-lg    ">Writer Name 1:</span>
               </label>
@@ -101,13 +101,13 @@ const AddBook = () => {
                 type="text"
                 name="writerName1"
                 placeholder="Writer Name 1"
-                class="input input-bordered w-full max-w-xs"
+                className="input input-bordered w-full max-w-xs"
               />
             </div>
           </div>
           <div className="mb-6">
-            <div class="form-control w-full max-w-xs">
-              <label class="label">
+            <div className="form-control w-full max-w-xs">
+              <label className="label">
                 {" "}
                 <span className="label-text text-lg    ">Writer Name 2:</span>
               </label>
@@ -115,13 +115,13 @@ const AddBook = () => {
                 type="text"
                 name="writerName2"
                 placeholder="Writer Name 2"
-                class="input input-bordered w-full max-w-xs"
+                className="input input-bordered w-full max-w-xs"
               />
             </div>
           </div>
           <div className="mb-6">
-            <div class="form-control w-full max-w-xs">
-              <label class="label">
+            <div className="form-control w-full max-w-xs">
+              <label className="label">
                 {" "}
                 <span className="label-text text-lg    ">Writer Name 3:</span>
               </label>
@@ -129,13 +129,13 @@ const AddBook = () => {
                 type="text"
                 name="writerName3"
                 placeholder="Writer Name 3"
-                class="input input-bordered w-full max-w-xs"
+                className="input input-bordered w-full max-w-xs"
               />
             </div>
           </div>
           <div className="mb-6">
-            <div class="form-control w-full max-w-xs">
-              <label class="label">
+            <div className="form-control w-full max-w-xs">
+              <label className="label">
                 {" "}
                 <span className="label-text text-lg    ">Writer Name 4:</span>
               </label>
@@ -143,13 +143,13 @@ const AddBook = () => {
                 type="text"
                 name="writerName4"
                 placeholder="Writer Name 4"
-                class="input input-bordered w-full max-w-xs"
+                className="input input-bordered w-full max-w-xs"
               />
             </div>
           </div>
           <div className="mb-6">
-            <div class="form-control w-full max-w-xs">
-              <label class="label">
+            <div className="form-control w-full max-w-xs">
+              <label className="label">
                 {" "}
                 <span className="label-text text-lg    ">Writer img 1:</span>
               </label>
@@ -158,13 +158,13 @@ const AddBook = () => {
                 type="text"
                 name="writerImg1"
                 placeholder="Writer img 1"
-                class="input input-bordered w-full max-w-xs"
+                className="input input-bordered w-full max-w-xs"
               />
             </div>
           </div>
           <div className="mb-6">
-            <div class="form-control w-full max-w-xs">
-              <label class="label">
+            <div className="form-control w-full max-w-xs">
+              <label className="label">
                 {" "}
                 <span className="label-text text-lg    ">Writer img 2:</span>
               </label>
@@ -172,13 +172,13 @@ const AddBook = () => {
                 type="text"
                 name="writerImg2"
                 placeholder="Writer img 2"
-                class="input input-bordered w-full max-w-xs"
+                className="input input-bordered w-full max-w-xs"
               />
             </div>
           </div>
           <div className="mb-6">
-            <div class="form-control w-full max-w-xs">
-              <label class="label">
+            <div className="form-control w-full max-w-xs">
+              <label className="label">
                 {" "}
                 <span className="label-text text-lg    ">Writer img 3:</span>
               </label>
@@ -186,13 +186,13 @@ const AddBook = () => {
                 type="text"
                 name="writerImg3"
                 placeholder="Writer img 3"
-                class="input input-bordered w-full max-w-xs"
+                className="input input-bordered w-full max-w-xs"
               />
             </div>
           </div>
           <div className="mb-6">
-            <div class="form-control w-full max-w-xs">
-              <label class="label">
+            <div className="form-control w-full max-w-xs">
+              <label className="label">
                 {" "}
                 <span className="label-text text-lg    ">Writer img 4:</span>
               </label>
@@ -200,13 +200,13 @@ const AddBook = () => {
                 type="text"
                 name="writerImg4"
                 placeholder="Writer img 4"
-                class="input input-bordered w-full max-w-xs"
+                className="input input-bordered w-full max-w-xs"
               />
             </div>
           </div>
           <div className="mb-6">
-            <div class="form-control w-full max-w-xs">
-              <label class="label">
+            <div className="form-control w-full max-w-xs">
+              <label className="label">
                 {" "}
                 <span className="label-text text-lg    ">
                   Writer Education 1:
@@ -217,13 +217,13 @@ const AddBook = () => {
                 type="text"
                 name="writerEducation1"
                 placeholder="Writer img 1"
-                class="input input-bordered w-full max-w-xs"
+                className="input input-bordered w-full max-w-xs"
               />
             </div>
           </div>
           <div className="mb-6">
-            <div class="form-control w-full max-w-xs">
-              <label class="label">
+            <div className="form-control w-full max-w-xs">
+              <label className="label">
                 {" "}
                 <span className="label-text text-lg    ">
                   Writer Education 2:
@@ -233,13 +233,13 @@ const AddBook = () => {
                 type="text"
                 name="writerEducation2"
                 placeholder="Writer img 2"
-                class="input input-bordered w-full max-w-xs"
+                className="input input-bordered w-full max-w-xs"
               />
             </div>
           </div>
           <div className="mb-6">
-            <div class="form-control w-full max-w-xs">
-              <label class="label">
+            <div className="form-control w-full max-w-xs">
+              <label className="label">
                 {" "}
                 <span className="label-text text-lg    ">
                   Writer Education 3:
@@ -249,13 +249,13 @@ const AddBook = () => {
                 type="text"
                 name="writerEducation3"
                 placeholder="Writer img 3"
-                class="input input-bordered w-full max-w-xs"
+                className="input input-bordered w-full max-w-xs"
               />
             </div>
           </div>
           <div className="mb-6">
-            <div class="form-control w-full max-w-xs">
-              <label class="label">
+            <div className="form-control w-full max-w-xs">
+              <label className="label">
                 {" "}
                 <span className="label-text text-lg    ">
                   Writer Education 4:
@@ -265,14 +265,14 @@ const AddBook = () => {
                 type="text"
                 name="writerEducation4"
                 placeholder="Writer img 4"
-                class="input input-bordered w-full max-w-xs"
+                className="input input-bordered w-full max-w-xs"
               />
             </div>
           </div>
 
           <div className="mb-6">
-            <div class="form-control w-full max-w-xs">
-              <label class="label">
+            <div className="form-control w-full max-w-xs">
+              <label className="label">
                 {" "}
                 <span className="label-text text-lg    ">About:</span>
               </label>
@@ -281,13 +281,13 @@ const AddBook = () => {
                 type="text"
                 name="about"
                 placeholder="About Book"
-                class="input input-bordered w-full max-w-xs"
+                className="input input-bordered w-full max-w-xs"
               />
             </div>
           </div>
           <div className="mb-6">
-            <div class="form-control w-full max-w-xs">
-              <label class="label">
+            <div className="form-control w-full max-w-xs">
+              <label className="label">
                 {" "}
                 <span className="label-text text-lg    ">Page Number:</span>
               </label>
@@ -296,13 +296,13 @@ const AddBook = () => {
                 type="number"
                 name="pageNumber"
                 placeholder="Course Description"
-                class="input input-bordered w-full max-w-xs"
+                className="input input-bordered w-full max-w-xs"
               />
             </div>
           </div>
           <div className="mb-6">
-            <div class="form-control w-full max-w-xs">
-              <label class="label">
+            <div className="form-control w-full max-w-xs">
+              <label className="label">
                 {" "}
                 <span className="label-text text-lg    ">Interactive:</span>
               </label>
@@ -312,7 +312,7 @@ const AddBook = () => {
                 type="text"
                 name="interactive"
                 placeholder="Interactive"
-                class="input input-bordered w-full max-w-xs"
+                className="input input-bordered w-full max-w-xs"
               >
                 <option>YES</option>
                 <option>NO</option>
@@ -320,8 +320,8 @@ const AddBook = () => {
             </div>
           </div>
           <div className="mb-6">
-            <div class="form-control w-full max-w-xs">
-              <label class="label">
+            <div className="form-control w-full max-w-xs">
+              <label className="label">
                 {" "}
                 <span className="label-text text-lg    ">Formate:</span>
               </label>
@@ -330,7 +330,7 @@ const AddBook = () => {
                 type="text"
                 name="formate"
                 placeholder="Formate"
-                class="input input-bordered w-full max-w-xs"
+                className="input input-bordered w-full max-w-xs"
               >
                 <option>PDF</option>
                 <option>MP3</option>
@@ -338,8 +338,8 @@ const AddBook = () => {
             </div>
           </div>
           <div className="mb-6">
-            <div class="form-control w-full max-w-xs">
-              <label class="label">
+            <div className="form-control w-full max-w-xs">
+              <label className="label">
                 {" "}
                 <span className="label-text text-lg    ">File Size:</span>
               </label>
@@ -348,13 +348,13 @@ const AddBook = () => {
                 type="text"
                 name="fileSize"
                 placeholder="File size"
-                class="input input-bordered w-full max-w-xs"
+                className="input input-bordered w-full max-w-xs"
               />
             </div>
           </div>
           <div className="mb-6">
-            <div class="form-control w-full max-w-xs">
-              <label class="label">
+            <div className="form-control w-full max-w-xs">
+              <label className="label">
                 {" "}
                 <span className="label-text text-lg    ">Price:</span>
               </label>
@@ -364,13 +364,13 @@ const AddBook = () => {
                 name="price"
                 min={1}
                 placeholder="Price"
-                class="input input-bordered w-full max-w-xs"
+                className="input input-bordered w-full max-w-xs"
               />
             </div>
           </div>
           <div className="mb-6">
-            <div class="form-control w-full max-w-xs">
-              <label class="label">
+            <div className="form-control w-full max-w-xs">
+              <label className="label">
                 {" "}
                 <span className="label-text text-lg">Book Image:</span>
               </label>
@@ -379,7 +379,7 @@ const AddBook = () => {
                 type="text"
                 name="bookImg"
                 placeholder="Book Image link"
-                class="input input-bordered w-full max-w-xs"
+                className="input input-bordered w-full max-w-xs"
               />
             </div>
           </div>

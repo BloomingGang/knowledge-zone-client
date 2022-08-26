@@ -6,6 +6,7 @@ import "slick-carousel/slick/slick-theme.css";
 const Investor = () => {
   var settings = {
     dots: true,
+    arrows:false,
     infinite: false,
     speed: 500,
     slidesToShow: 3,
@@ -121,8 +122,8 @@ const Investor = () => {
   ];
 
   return (
-    <div>
-      <div className="p-10">
+    <div className="container mx-auto">
+      <div className="mt-24 md:mt-32">
         <h2
           className="text-center text-5xl font-bold text-violet-800"
           data-aos="zoom-in"
@@ -133,7 +134,7 @@ const Investor = () => {
           Our Investors{" "}
         </h2>
         <p
-          className="text-center text-xl text-black py-4"
+          className="text-center text-xl text-black pt-4"
           data-aos="zoom-in"
           data-aos-duration="1000"
           data-aos-delay="200"
@@ -143,7 +144,7 @@ const Investor = () => {
         <Slider {...settings}>
           {investors.map((investor, index) => (
             <div key={index}>
-              <div className="py-16 px-6">
+              <div className="py-16 px-4">
                 <div
                   className="card bg-gray-100 shadow-xl min-h-[450px]"
                   data-aos-delay="200"

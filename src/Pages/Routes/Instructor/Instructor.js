@@ -31,10 +31,12 @@ const Instructor = () => {
           className="drawer-toggle"
         />
         <div className="drawer-content">
-          <h2  data-aos-delay="200"
-          data-aos="zoom-in"
-          data-aos-duration="1000"
-          className="text-4xl text-center font-bold text-violet-800 mb-8 mt-6 ">
+          <h2
+            data-aos-delay="200"
+            data-aos="zoom-in"
+            data-aos-duration="1000"
+            className="text-4xl text-center font-bold text-violet-800 mb-8 mt-6 "
+          >
             Our Instructors
           </h2>
           <Outlet></Outlet>

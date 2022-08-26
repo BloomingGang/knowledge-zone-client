@@ -18,7 +18,7 @@ const Users = () => {
 
   return (
     <div className="pt-4 pb-14">
-      <h1 className="text-3xl text-center font-bold text-violet-800  mt-4 mb-16">
+      <h1 className="text-3xl text-center font-bold text-violet-800  mt-2 mb-10 uppercase">
         All Users
       </h1>
       {/* <SearchUser></SearchUser> */}
@@ -26,10 +26,10 @@ const Users = () => {
         <table className="table table-zebra w-full">
           <thead>
             <tr className="text-center">
-              <th className="text-xl text-blue-600">Serial</th>
-              <th className="text-xl text-blue-600">Email</th>
-              <th className="text-xl text-blue-600">User Role</th>
-              <th className="text-xl text-red-500">Delete</th>
+              <th className="text-lg text-violet-800">Serial</th>
+              <th className="text-lg text-violet-800">Email</th>
+              <th className="text-lg text-violet-800">User Role</th>
+              <th className="text-lg text-red-500">Delete</th>
             </tr>
           </thead>
           <tbody>

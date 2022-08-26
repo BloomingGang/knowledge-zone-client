@@ -72,7 +72,7 @@ const InstructorCard = ({ instructor, index }) => {
         </div>
         {admin && (
           <div>
-            <div class="divider"></div>
+            <div className="divider"></div>
             <div className="flex justify-between">
               <button
                 onClick={() => handleDeleteInstructor(_id)}
