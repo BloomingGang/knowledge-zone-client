@@ -1,13 +1,10 @@
 import React from "react";
+import photo from "../../img/assets/error-404-Page.gif";
 
 const NotFound = () => {
   return (
     <div>
-      <img
-        className="w-full"
-        src="https://www.gpkumar.com/wp-content/uploads/2020/05/HTML-404-Page.gif"
-        alt=""
-      />
+      <img className="w-full" src={photo} alt="" />
     </div>
   );
 };

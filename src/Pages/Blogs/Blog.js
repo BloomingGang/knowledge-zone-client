@@ -41,10 +41,12 @@ const Blog = ({ blog }) => {
     navigate(`/updateBlog/${id}`);
   };
   return (
-    <div  data-aos-delay="200"
-    data-aos="zoom-in"
-    data-aos-duration="1000"
-    className="w-full bg-gray-100 transition ease-in-out delay-150 hover:-translate-1 hover:scale-105 duration-300 rounded-lg">
+    <div
+      data-aos-delay="200"
+      data-aos="zoom-in"
+      data-aos-duration="1000"
+      className="w-full bg-gray-100 transition ease-in-out delay-150 hover:-translate-1 hover:scale-105 duration-300 rounded-lg"
+    >
       <div className="">
         <img src={img} alt="/" className="rounded-t-lg w-full h-[330px]" />
       </div>
@@ -56,7 +58,7 @@ const Blog = ({ blog }) => {
             {description.length > 255 ? (
               <label
                 onClick={() => handleBlog(_id)}
-                for="my-modal-3"
+                htmlFor="my-modal-3"
                 className="cursor-pointer text-violet-800 font-bold"
               >
                 Read More ...
@@ -76,7 +78,7 @@ const Blog = ({ blog }) => {
 
         {admin && (
           <div>
-            <div class="divider"></div>
+            <div className="divider"></div>
             <div className="flex justify-between">
               <button
                 onClick={() => handleDeleteBlog(_id)}

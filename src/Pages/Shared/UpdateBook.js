@@ -73,8 +73,8 @@ const UpdateBook = () => {
         </h1>
         <div className="grid md:grid-cols-2 gap-x-10 gap-y-0">
           <div className="mb-6">
-            <div class="form-control w-full max-w-xs">
-              <label class="label">
+            <div className="form-control w-full max-w-xs">
+              <label className="label">
                 {" "}
                 <span className="label-text text-lg font-sans">Book Name:</span>
               </label>
@@ -83,13 +83,13 @@ const UpdateBook = () => {
                 type="text"
                 name="bookName"
                 placeholder={bookName}
-                class="input input-bordered w-full max-w-xs"
+                className="input input-bordered w-full max-w-xs"
               />
             </div>
           </div>
           <div className="mb-6">
-            <div class="form-control w-full max-w-xs">
-              <label class="label">
+            <div className="form-control w-full max-w-xs">
+              <label className="label">
                 {" "}
                 <span className="label-text text-lg font-sans">
                   Book Image:
@@ -100,13 +100,13 @@ const UpdateBook = () => {
                 type="text"
                 name="bookImg"
                 placeholder={bookImg}
-                class="input input-bordered w-full max-w-xs"
+                className="input input-bordered w-full max-w-xs"
               />
             </div>
           </div>
           <div className="mb-6">
-            <div class="form-control w-full max-w-xs">
-              <label class="label">
+            <div className="form-control w-full max-w-xs">
+              <label className="label">
                 {" "}
                 <span className="label-text text-lg font-sans">
                   Page Number:
@@ -117,13 +117,13 @@ const UpdateBook = () => {
                 type="number"
                 name="pageNumber"
                 placeholder={pageNumber}
-                class="input input-bordered w-full max-w-xs"
+                className="input input-bordered w-full max-w-xs"
               />
             </div>
           </div>
           <div className="mb-6">
-            <div class="form-control w-full max-w-xs">
-              <label class="label">
+            <div className="form-control w-full max-w-xs">
+              <label className="label">
                 {" "}
                 <span className="label-text text-lg font-sans">About:</span>
               </label>
@@ -132,13 +132,13 @@ const UpdateBook = () => {
                 type="text"
                 name="about"
                 placeholder={about}
-                class="input input-bordered w-full max-w-xs"
+                className="input input-bordered w-full max-w-xs"
               />
             </div>
           </div>
           <div className="mb-6">
-            <div class="form-control w-full max-w-xs">
-              <label class="label">
+            <div className="form-control w-full max-w-xs">
+              <label className="label">
                 {" "}
                 <span className="label-text text-lg font-sans">
                   Writer Name 1:
@@ -149,13 +149,13 @@ const UpdateBook = () => {
                 type="text"
                 name="writerName1"
                 placeholder={writerName1}
-                class="input input-bordered w-full max-w-xs"
+                className="input input-bordered w-full max-w-xs"
               />
             </div>
           </div>
           <div className="mb-6">
-            <div class="form-control w-full max-w-xs">
-              <label class="label">
+            <div className="form-control w-full max-w-xs">
+              <label className="label">
                 {" "}
                 <span className="label-text text-lg font-sans">
                   Writer img 1:
@@ -166,13 +166,13 @@ const UpdateBook = () => {
                 type="text"
                 name="writerImg1"
                 placeholder={writerImg1}
-                class="input input-bordered w-full max-w-xs"
+                className="input input-bordered w-full max-w-xs"
               />
             </div>
           </div>
           <div className="mb-6">
-            <div class="form-control w-full max-w-xs">
-              <label class="label">
+            <div className="form-control w-full max-w-xs">
+              <label className="label">
                 {" "}
                 <span className="label-text text-lg font-sans">File Size:</span>
               </label>
@@ -181,13 +181,13 @@ const UpdateBook = () => {
                 type="number"
                 name="fileSize"
                 placeholder={fileSize}
-                class="input input-bordered w-full max-w-xs"
+                className="input input-bordered w-full max-w-xs"
               />
             </div>
           </div>
           <div className="mb-6">
-            <div class="form-control w-full max-w-xs">
-              <label class="label">
+            <div className="form-control w-full max-w-xs">
+              <label className="label">
                 {" "}
                 <span className="label-text text-lg font-sans">Formate:</span>
               </label>
@@ -196,7 +196,7 @@ const UpdateBook = () => {
                 type="text"
                 name="formate"
                 placeholder={formate}
-                class="input input-bordered w-full max-w-xs"
+                className="input input-bordered w-full max-w-xs"
               >
                 <option>PDF</option>
                 <option>MP3</option>
@@ -204,8 +204,8 @@ const UpdateBook = () => {
             </div>
           </div>
           <div className="mb-6">
-            <div class="form-control w-full max-w-xs">
-              <label class="label">
+            <div className="form-control w-full max-w-xs">
+              <label className="label">
                 {" "}
                 <span className="label-text text-lg font-sans">Price:</span>
               </label>
@@ -215,7 +215,7 @@ const UpdateBook = () => {
                 name="price"
                 min={1}
                 placeholder={price}
-                class="input input-bordered w-full max-w-xs"
+                className="input input-bordered w-full max-w-xs"
               />
             </div>
           </div>

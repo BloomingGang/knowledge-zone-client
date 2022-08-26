@@ -2,10 +2,7 @@ import React from "react";
 
 const SendMessage = () => {
   return (
-    <div
-    data-aos-delay="200"
-    data-aos="zoom-in"
-    data-aos-duration="1000">
+    <div data-aos-delay="200" data-aos="zoom-in" data-aos-duration="1000">
       <form
         action="https://formsubmit.co/knowledgezone404@gmail.com"
         method="POST"
@@ -21,7 +18,7 @@ const SendMessage = () => {
               type="text"
               placeholder="First Name"
               name="name"
-              class="input input-bordered input-violet-800"
+              className="input input-bordered input-violet-800"
               required
             />
             <input
@@ -44,7 +41,7 @@ const SendMessage = () => {
         </div>
         <div className="form-control">
           <textarea
-            class="textarea textarea-violet-800 pb-16 resize-none"
+            className="textarea textarea-violet-800 pb-16 resize-none"
             placeholder="Write your message here"
             name="message"
             required

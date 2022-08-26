@@ -17,13 +17,12 @@ const NavDropDown = () => {
   return (
     <div className="flex items-center">
       <div className="dropdown md:dropdown-end">
-
-        <label tabindex="0">
+        <label tabIndex="0">
           <ProfilePic />
         </label>
         <ul
-          tabindex="0"
-          className="dropdown-content menu shadow bg-gray-100 rounded-md w-44"
+          tabIndex="0"
+          className="dropdown-content menu shadow bg-gray-100 rounded-md w-44 "
         >
           {admin && (
             <li>

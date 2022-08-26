@@ -243,7 +243,7 @@ function App() {
         <Route path="/myOrder" element={<MyOrder />} />
 
         <Route path="/addReviwe" element={<AddReviwe />} />
-        <Route path="/myCollection" element={<MyCollection/>} />
+        <Route path="/myCollection" element={<MyCollection />} />
         <Route
           path="/addBook"
           element={

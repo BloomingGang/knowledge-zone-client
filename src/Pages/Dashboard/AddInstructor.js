@@ -56,7 +56,7 @@ const AddInstructor = () => {
         </h1>
         <div className="grid md:grid-cols-2 gap-x-10 gap-y-0">
           <div className="mb-6">
-            <label class="label">
+            <label className="label">
               {" "}
               <span className="label-text text-lg    ">
                 Choose Subject for Instructor:
@@ -65,7 +65,7 @@ const AddInstructor = () => {
             <select
               name="subject"
               required
-              class="select select-bordered w-full max-w-xs"
+              className="select select-bordered w-full max-w-xs"
             >
               <option disabled selected>
                 Select Subject Name:
@@ -77,8 +77,8 @@ const AddInstructor = () => {
           </div>
 
           <div className="mb-6">
-            <div class="form-control w-full max-w-xs">
-              <label class="label">
+            <div className="form-control w-full max-w-xs">
+              <label className="label">
                 {" "}
                 <span className="label-text text-lg  ">Instructor Name:</span>
               </label>
@@ -87,14 +87,14 @@ const AddInstructor = () => {
                 type="text"
                 name="name"
                 placeholder="Instructor Name"
-                class="input input-bordered w-full max-w-xs"
+                className="input input-bordered w-full max-w-xs"
               />
             </div>
           </div>
 
           <div className="mb-6">
-            <div class="form-control w-full max-w-xs">
-              <label class="label">
+            <div className="form-control w-full max-w-xs">
+              <label className="label">
                 {" "}
                 <span className="label-text text-lg    ">
                   Instructor Image:
@@ -105,14 +105,14 @@ const AddInstructor = () => {
                 type="text"
                 name="image"
                 placeholder="Instructor Image url"
-                class="input input-bordered w-full max-w-xs"
+                className="input input-bordered w-full max-w-xs"
               />
             </div>
           </div>
 
           <div className="mb-6">
-            <div class="form-control w-full max-w-xs">
-              <label class="label">
+            <div className="form-control w-full max-w-xs">
+              <label className="label">
                 {" "}
                 <span className="label-text text-lg    ">
                   Educational Qualification
@@ -123,14 +123,14 @@ const AddInstructor = () => {
                 type="text"
                 name="education"
                 placeholder="Educational Qualification"
-                class="input input-bordered w-full max-w-xs"
+                className="input input-bordered w-full max-w-xs"
               />
             </div>
           </div>
 
           <div className="mb-6">
-            <div class="form-control w-full max-w-xs">
-              <label class="label">
+            <div className="form-control w-full max-w-xs">
+              <label className="label">
                 {" "}
                 <span className="label-text text-lg  ">Facebook:</span>
               </label>
@@ -139,14 +139,14 @@ const AddInstructor = () => {
                 type="text"
                 name="facebook"
                 placeholder="Facebook Profile Link"
-                class="input input-bordered w-full max-w-xs"
+                className="input input-bordered w-full max-w-xs"
               />
             </div>
           </div>
 
           <div className="mb-6">
-            <div class="form-control w-full max-w-xs">
-              <label class="label">
+            <div className="form-control w-full max-w-xs">
+              <label className="label">
                 {" "}
                 <span className="label-text text-lg    ">Linkedin:</span>
               </label>
@@ -155,14 +155,14 @@ const AddInstructor = () => {
                 type="text"
                 name="linkedin"
                 placeholder="Linkedin Profile Link"
-                class="input input-bordered w-full max-w-xs"
+                className="input input-bordered w-full max-w-xs"
               />
             </div>
           </div>
 
           <div className="mb-6">
-            <div class="form-control w-full max-w-xs">
-              <label class="label">
+            <div className="form-control w-full max-w-xs">
+              <label className="label">
                 {" "}
                 <span className="label-text text-lg    ">Instagram:</span>
               </label>
@@ -171,14 +171,14 @@ const AddInstructor = () => {
                 type="text"
                 name="instagram"
                 placeholder="Instagram Profile Link"
-                class="input input-bordered w-full max-w-xs"
+                className="input input-bordered w-full max-w-xs"
               />
             </div>
           </div>
 
           <div className="mb-6">
-            <div class="form-control w-full max-w-xs">
-              <label class="label">
+            <div className="form-control w-full max-w-xs">
+              <label className="label">
                 {" "}
                 <span className="label-text text-lg    ">Twitter:</span>
               </label>
@@ -187,7 +187,7 @@ const AddInstructor = () => {
                 type="text"
                 name="twitter"
                 placeholder="Twitter Profile Link"
-                class="input input-bordered w-full max-w-xs"
+                className="input input-bordered w-full max-w-xs"
               />
             </div>
           </div>

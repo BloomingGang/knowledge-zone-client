@@ -103,14 +103,14 @@ const AddCourse = () => {
         </h1>
         <div className="grid md:grid-cols-2 gap-x-10 gap-y-0">
           <div className="mb-6">
-            <label class="label">
+            <label className="label">
               {" "}
               <span className="label-text text-lg    ">Courses Type:</span>
             </label>
             <select
               name="course"
               required
-              class="select select-bordered w-full max-w-xs"
+              className="select select-bordered w-full max-w-xs"
             >
               <option disabled selected>
                 Select Course Name:
@@ -122,8 +122,8 @@ const AddCourse = () => {
           </div>
 
           <div className="mb-6">
-            <div class="form-control w-full max-w-xs">
-              <label class="label">
+            <div className="form-control w-full max-w-xs">
+              <label className="label">
                 {" "}
                 <span className="label-text text-lg    ">Course Title:</span>
               </label>
@@ -132,14 +132,14 @@ const AddCourse = () => {
                 type="text"
                 name="title"
                 placeholder="Course Title"
-                class="input input-bordered w-full max-w-xs"
+                className="input input-bordered w-full max-w-xs"
               />
             </div>
           </div>
 
           <div className="mb-6">
-            <div class="form-control w-full max-w-xs">
-              <label class="label">
+            <div className="form-control w-full max-w-xs">
+              <label className="label">
                 {" "}
                 <span className="label-text text-lg    ">Course Image:</span>
               </label>
@@ -148,14 +148,14 @@ const AddCourse = () => {
                 type="text"
                 name="image"
                 placeholder="Course Image url"
-                class="input input-bordered w-full max-w-xs"
+                className="input input-bordered w-full max-w-xs"
               />
             </div>
           </div>
 
           <div className="mb-6">
-            <div class="form-control w-full max-w-xs">
-              <label class="label">
+            <div className="form-control w-full max-w-xs">
+              <label className="label">
                 {" "}
                 <span className="label-text text-lg    ">Course Price:</span>
               </label>
@@ -164,14 +164,14 @@ const AddCourse = () => {
                 type="number"
                 name="price"
                 placeholder="Course Price"
-                class="input input-bordered w-full max-w-xs"
+                className="input input-bordered w-full max-w-xs"
               />
             </div>
           </div>
 
           <div className="mb-6">
-            <div class="form-control w-full max-w-xs">
-              <label class="label">
+            <div className="form-control w-full max-w-xs">
+              <label className="label">
                 {" "}
                 <span className="label-text text-lg    ">
                   Course Description:
@@ -182,14 +182,14 @@ const AddCourse = () => {
                 type="text"
                 name="sortDesc"
                 placeholder="Course Description"
-                class="input input-bordered w-full max-w-xs"
+                className="input input-bordered w-full max-w-xs"
               />
             </div>
           </div>
 
           <div className="mb-6">
-            <div class="form-control w-full max-w-xs">
-              <label class="label">
+            <div className="form-control w-full max-w-xs">
+              <label className="label">
                 {" "}
                 <span className="label-text text-lg    ">Instructor Name:</span>
               </label>
@@ -198,14 +198,14 @@ const AddCourse = () => {
                 type="text"
                 name="instructorName"
                 placeholder="Instructor Name"
-                class="input input-bordered w-full max-w-xs"
+                className="input input-bordered w-full max-w-xs"
               />
             </div>
           </div>
 
           <div className="mb-6">
-            <div class="form-control w-full max-w-xs">
-              <label class="label">
+            <div className="form-control w-full max-w-xs">
+              <label className="label">
                 {" "}
                 <span className="label-text text-lg    ">
                   Instructor Education:
@@ -216,14 +216,14 @@ const AddCourse = () => {
                 type="text"
                 name="education"
                 placeholder="Instructor Education"
-                class="input input-bordered w-full max-w-xs"
+                className="input input-bordered w-full max-w-xs"
               />
             </div>
           </div>
 
           <div className="mb-6">
-            <div class="form-control w-full max-w-xs">
-              <label class="label">
+            <div className="form-control w-full max-w-xs">
+              <label className="label">
                 {" "}
                 <span className="label-text text-lg    ">About Course:</span>
               </label>
@@ -232,14 +232,14 @@ const AddCourse = () => {
                 type="text"
                 name="about"
                 placeholder="About Course"
-                class="input input-bordered w-full max-w-xs"
+                className="input input-bordered w-full max-w-xs"
               />
             </div>
           </div>
 
           <div className="mb-6">
-            <div class="form-control w-full max-w-xs">
-              <label class="label">
+            <div className="form-control w-full max-w-xs">
+              <label className="label">
                 {" "}
                 <span className="label-text text-lg    ">
                   Total video duration:
@@ -251,14 +251,14 @@ const AddCourse = () => {
                 name="hour"
                 min={1}
                 placeholder="Total video duration"
-                class="input input-bordered w-full max-w-xs"
+                className="input input-bordered w-full max-w-xs"
               />
             </div>
           </div>
 
           <div className="mb-6">
-            <div class="form-control w-full max-w-xs">
-              <label class="label">
+            <div className="form-control w-full max-w-xs">
+              <label className="label">
                 {" "}
                 <span className="label-text text-lg    ">Total Videos:</span>
               </label>
@@ -268,14 +268,14 @@ const AddCourse = () => {
                 name="videos"
                 min={1}
                 placeholder="Total Videos"
-                class="input input-bordered w-full max-w-xs"
+                className="input input-bordered w-full max-w-xs"
               />
             </div>
           </div>
 
           <div className="mb-6">
-            <div class="form-control w-full max-w-xs">
-              <label class="label">
+            <div className="form-control w-full max-w-xs">
+              <label className="label">
                 {" "}
                 <span className="label-text text-lg    ">Total Quiz:</span>
               </label>
@@ -285,14 +285,14 @@ const AddCourse = () => {
                 name="quiz"
                 min={1}
                 placeholder="Total Quiz"
-                class="input input-bordered w-full max-w-xs"
+                className="input input-bordered w-full max-w-xs"
               />
             </div>
           </div>
 
           <div className="mb-6">
-            <div class="form-control w-full max-w-xs pb-8">
-              <label class="label">
+            <div className="form-control w-full max-w-xs pb-8">
+              <label className="label">
                 {" "}
                 <span className="label-text text-lg    ">Total Notes:</span>
               </label>
@@ -302,7 +302,7 @@ const AddCourse = () => {
                 name="note"
                 min={1}
                 placeholder="Total Notes"
-                class="input input-bordered w-full max-w-xs"
+                className="input input-bordered w-full max-w-xs"
               />
             </div>
           </div>

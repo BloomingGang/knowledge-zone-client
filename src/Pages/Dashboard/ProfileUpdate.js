@@ -63,12 +63,12 @@ const ProfileUpdate = ({ name, email, setShowProfile }) => {
 
   return (
     <div>
-      <input type="checkbox" id="profileUpdate" class="modal-toggle" />
-      <div class="modal">
-        <div class="modal-box relative p-0 rounded-2xl">
+      <input type="checkbox" id="profileUpdate" className="modal-toggle" />
+      <div className="modal">
+        <div className="modal-box relative p-0 rounded-2xl">
           <label
-            for="profileUpdate"
-            class="btn btn-sm btn-circle absolute right-3 top-3 bg-violet-600 hover:bg-violet-900"
+            htmlFor="profileUpdate"
+            className="btn btn-sm btn-circle absolute right-3 top-3 bg-violet-600 hover:bg-violet-900"
           >
             ✕
           </label>

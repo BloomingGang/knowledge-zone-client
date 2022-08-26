@@ -44,11 +44,12 @@ const Book = ({ book }) => {
   };
   return (
     <div>
-      <div 
-       data-aos-delay="200"
-       data-aos="zoom-in"
-       data-aos-duration="1000"
-       className="rounded-lg bg-gray-100 transition ease-in-out delay-150 hover:-translate-1 hover:scale-105 duration-300">
+      <div
+        data-aos-delay="200"
+        data-aos="zoom-in"
+        data-aos-duration="1000"
+        className="rounded-lg bg-gray-100 transition ease-in-out delay-150 hover:-translate-1 hover:scale-105 duration-300"
+      >
         <div>
           <img src={img} alt="/" className="rounded-t-lg w-full" />
         </div>
@@ -67,13 +68,13 @@ const Book = ({ book }) => {
           </div>
           {admin && (
             <div>
-              <div class="divider"></div>
+              <div className="divider"></div>
               <div className="flex justify-between">
                 <button
                   onClick={() => handleDeleteBook(_id)}
                   className="text-red-600 transition ease-in-out delay-100 hover:-translate-y-1 hover:scale-110 duration-300 mx-6 mb-4"
                 >
-                  <label for="my-modal-6">
+                  <label htmlFor="my-modal-6">
                     <TrashIcon className="h-7 w-7 cursor-pointer" />
                   </label>
                 </button>
