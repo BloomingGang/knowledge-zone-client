@@ -1,10 +1,10 @@
 import React from "react";
-import img1 from "../../img/assets/card1.png";
-import img2 from "../../img/assets/card2.jpg";
-import img3 from "../../img/assets/card3.jpg";
-import logo1 from "../../img/assets/tds.png";
-import logo2 from "../../img/assets/pa.png";
-import logo3 from "../../img/assets/bbc.png";
+import img1 from "../../img/assets/newspaper/1.png";
+import img2 from "../../img/assets/newspaper/2.png";
+import img3 from "../../img/assets/newspaper/3.png";
+import logo1 from "../../img/assets/newspaper/tds.png";
+import logo2 from "../../img/assets/newspaper/pa.png";
+import logo3 from "../../img/assets/newspaper/bbc.png";
 
 const CardOne = () => {
   return (
@@ -21,7 +21,7 @@ const CardOne = () => {
             <img
               src={img1}
               alt=""
-              className="rounded-lg pb-5 h-[250px] w-96 mx-auto"
+              className="rounded-lg pb-5"
             />
             <p className="text-lg text-justify">
               Students are getting increasingly used to accessing information
