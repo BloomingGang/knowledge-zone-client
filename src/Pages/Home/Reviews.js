@@ -45,7 +45,7 @@ const Reviews = () => {
             data-aos="zoom-in"
             data-aos-duration="1000"
           >
-            <h3 className="text-center text-4xl font-bold text-violet-800 pb-8 md:pb-16">
+            <h3 className="text-center px-4 text-4xl font-bold text-violet-800 pb-8 md:pb-16">
               What Our Students Say About Us
             </h3>
           </div>
