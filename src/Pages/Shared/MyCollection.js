@@ -20,7 +20,6 @@ const MyCollection = () => {
               <tr className="text-center">
                 <th className="text-lg text-violet-800">Serial</th>
                 <th className="text-lg text-violet-800">Course Name</th>
-                {/* <th className="text-xl">Email</th> */}
                 <th className="text-lg text-violet-800">Pay</th>
                 <th className="text-lg text-violet-800">Cancel</th>
               </tr>
