@@ -11,7 +11,7 @@ const UpdateBlog = () => {
   const navigate = useNavigate();
   useEffect(() => {
     axios
-      .get(`https://shielded-forest-27142.herokuapp.com/blogs/${id}`)
+      .get(`https://desolate-beach-15424.herokuapp.com/blogs/${id}`)
       .then((res) => setUpdateBlog(res.data));
     setLoading(false);
   }, [id]);
@@ -37,7 +37,7 @@ const UpdateBlog = () => {
 
     axios
       .put(
-        `https://shielded-forest-27142.herokuapp.com/blogUpdate/${id}`,
+        `https://desolate-beach-15424.herokuapp.com/blogUpdate/${id}`,
         updateBlog
       )
       .then((res) => {

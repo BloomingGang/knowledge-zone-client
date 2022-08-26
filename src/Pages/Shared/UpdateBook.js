@@ -11,7 +11,7 @@ const UpdateBook = () => {
   const navigate = useNavigate();
   useEffect(() => {
     axios
-      .get(`https://shielded-forest-27142.herokuapp.com/books/${id}`)
+      .get(`https://desolate-beach-15424.herokuapp.com/books/${id}`)
       .then((res) => setUpdateBook(res.data));
     setLoading(false);
   }, [id]);
@@ -56,7 +56,7 @@ const UpdateBook = () => {
 
     axios
       .put(
-        `https://shielded-forest-27142.herokuapp.com/bookUpdate/${id}`,
+        `https://desolate-beach-15424.herokuapp.com/bookUpdate/${id}`,
         updateBook
       )
       .then((res) => {

@@ -28,7 +28,7 @@ const InstructorCard = ({ instructor, index }) => {
     }).then((result) => {
       if (result.isConfirmed) {
         Swal.fire("Deleted!", "Your File Has Been Deleted !!", "success");
-        const url = `https://shielded-forest-27142.herokuapp.com/instructor/${id}`;
+        const url = `https://desolate-beach-15424.herokuapp.com/instructor/${id}`;
         fetch(url, {
           method: "DELETE",
         })

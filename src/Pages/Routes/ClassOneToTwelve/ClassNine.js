@@ -6,7 +6,7 @@ const ClassNine = () => {
   const [classNine, setClassNine] = useState([]);
   const [loading, setLoading] = useState(true);
   useEffect(() => {
-    fetch("https://shielded-forest-27142.herokuapp.com/courses/classNine")
+    fetch("https://desolate-beach-15424.herokuapp.com/courses/classNine")
       .then((res) => res.json())
       .then((data) => {
         setClassNine(data);

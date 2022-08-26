@@ -20,7 +20,7 @@ const AddBlog = () => {
     };
 
     axios
-      .post(`https://shielded-forest-27142.herokuapp.com/addBlog`, addBlog)
+      .post(`https://desolate-beach-15424.herokuapp.com/addBlog`, addBlog)
       .then((res) => {
         toast.success(`Add a Blog`);
         event.target.reset();

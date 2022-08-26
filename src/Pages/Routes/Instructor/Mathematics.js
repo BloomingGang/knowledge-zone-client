@@ -6,7 +6,7 @@ const Mathematics = () => {
   const [instructors, setInstructors] = useState([]);
   const [loading, setLoading] = useState(true);
   useEffect(() => {
-    fetch("https://shielded-forest-27142.herokuapp.com/instructors/Mathematics")
+    fetch("https://desolate-beach-15424.herokuapp.com/instructors/Mathematics")
       .then((res) => res.json())
       .then((data) => {
         setInstructors(data);

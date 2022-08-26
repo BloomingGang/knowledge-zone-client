@@ -10,7 +10,7 @@ const UpdateInstructor = () => {
   const [loading, setLoading] = useState(true);
   useEffect(() => {
     axios
-      .get(`https://shielded-forest-27142.herokuapp.com/instructor/${id}`)
+      .get(`https://desolate-beach-15424.herokuapp.com/instructor/${id}`)
       .then((res) => setUpdateInstructor(res.data));
     setLoading(false);
   }, [id]);
@@ -52,7 +52,7 @@ const UpdateInstructor = () => {
 
     axios
       .put(
-        `https://shielded-forest-27142.herokuapp.com/updateInstructor/${id}`,
+        `https://desolate-beach-15424.herokuapp.com/updateInstructor/${id}`,
         updateCourse
       )
       .then((res) => {

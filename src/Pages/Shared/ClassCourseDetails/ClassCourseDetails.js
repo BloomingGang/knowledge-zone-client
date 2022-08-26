@@ -35,7 +35,7 @@ const ClassCourseDetails = () => {
   } = courseInfo;
   useEffect(() => {
     axios
-      .get(`https://shielded-forest-27142.herokuapp.com/course/${id}`)
+      .get(`https://desolate-beach-15424.herokuapp.com/course/${id}`)
       .then((res) => setCourseInfo(res.data));
 
     myOrder?.find((paid) => {
@@ -64,7 +64,7 @@ const ClassCourseDetails = () => {
       id: _id,
     };
 
-    fetch("https://shielded-forest-27142.herokuapp.com/order", {
+    fetch("https://desolate-beach-15424.herokuapp.com/order", {
       method: "post",
       headers: {
         "content-type": "application/json",

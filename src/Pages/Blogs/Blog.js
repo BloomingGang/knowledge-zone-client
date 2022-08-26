@@ -26,7 +26,7 @@ const Blog = ({ blog }) => {
     }).then((result) => {
       if (result.isConfirmed) {
         Swal.fire("Deleted!", "Your blog has been deleted.", "success");
-        const url = `https://shielded-forest-27142.herokuapp.com/blogDelete/${id}`;
+        const url = `https://desolate-beach-15424.herokuapp.com/blogDelete/${id}`;
         fetch(url, {
           method: "DELETE",
         })

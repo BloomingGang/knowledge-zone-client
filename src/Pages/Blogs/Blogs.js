@@ -9,7 +9,7 @@ const Blogs = () => {
   const [modal, setModal] = useState(null);
   const [loading, setLoading] = useState(true);
   useEffect(() => {
-    fetch("https://shielded-forest-27142.herokuapp.com/blogs")
+    fetch("https://desolate-beach-15424.herokuapp.com/blogs")
       .then((response) => response.json())
       .then((data) => {
         setBlogs(data);

@@ -89,7 +89,7 @@ const AddCourse = () => {
     };
 
     axios
-      .post(`https://shielded-forest-27142.herokuapp.com/addCourse`, addCourse)
+      .post(`https://desolate-beach-15424.herokuapp.com/addCourse`, addCourse)
       .then((res) => {
         toast.success(`Add a Course for ${classCourse}`);
         event.target.reset();

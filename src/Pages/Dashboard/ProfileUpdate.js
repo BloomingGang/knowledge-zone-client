@@ -36,7 +36,7 @@ const ProfileUpdate = ({ name, email, setShowProfile }) => {
         phone,
       };
 
-      fetch(`https://shielded-forest-27142.herokuapp.com/users/${email}`, {
+      fetch(`https://desolate-beach-15424.herokuapp.com/users/${email}`, {
         method: "put",
         headers: {
           "content-type": "application/json",

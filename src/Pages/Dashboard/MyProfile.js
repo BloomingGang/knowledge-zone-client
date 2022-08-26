@@ -13,7 +13,7 @@ const MyProfile = () => {
   const email = user?.email;
   const photoUrl = user?.photoURL;
   useEffect(() => {
-    fetch(`https://shielded-forest-27142.herokuapp.com/user/${email}`)
+    fetch(`https://desolate-beach-15424.herokuapp.com/user/${email}`)
       .then((res) => res.json())
       .then((data) => setProfile(data));
   }, [email, profile, photoUrl]);

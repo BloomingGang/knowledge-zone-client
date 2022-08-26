@@ -7,7 +7,7 @@ const BlogInfo = () => {
   const [blog, setBlog] = useState([]);
   useEffect(() => {
     axios
-      .get(`https://shielded-forest-27142.herokuapp.com/blog/${id}`)
+      .get(`https://desolate-beach-15424.herokuapp.com/blog/${id}`)
       .then((data) => setBlog(data.data));
   }, [id]);
   const { description, writerName, img, date, title } = blog;

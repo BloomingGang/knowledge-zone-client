@@ -40,7 +40,7 @@ const AddInstructor = () => {
 
     axios
       .post(
-        `https://shielded-forest-27142.herokuapp.com/addInstructor`,
+        `https://desolate-beach-15424.herokuapp.com/addInstructor`,
         addInstructor
       )
       .then((res) => {

@@ -20,21 +20,21 @@ const Header = () => {
 
   // CCIS => classes and courses infos
   const { data: ccis, refetch } = useQuery(["ccis"], () =>
-    fetch("https://shielded-forest-27142.herokuapp.com/ccis").then((res) =>
+    fetch("https://desolate-beach-15424.herokuapp.com/ccis").then((res) =>
       res.json()
     )
   );
 
   // bookN= book notification
   const { data: bookN } = useQuery(["bookN"], () =>
-    fetch("https://shielded-forest-27142.herokuapp.com/bookN").then((res) =>
+    fetch("https://desolate-beach-15424.herokuapp.com/bookN").then((res) =>
       res.json()
     )
   );
   console.log(bookN, "bookN");
   const handleUnreadState = async (id) => {
     const { data } = await axios.put(
-      `https://shielded-forest-27142.herokuapp.com/cci/${id}`
+      `https://desolate-beach-15424.herokuapp.com/cci/${id}`
     );
     console.log(data);
     refetch();
@@ -42,7 +42,7 @@ const Header = () => {
 
   const handleUnreadStateBookN = async (id) => {
     const { data } = await axios.put(
-      `https://shielded-forest-27142.herokuapp.com/bookN/${id}`
+      `https://desolate-beach-15424.herokuapp.com/bookN/${id}`
     );
     console.log(data);
     refetch();

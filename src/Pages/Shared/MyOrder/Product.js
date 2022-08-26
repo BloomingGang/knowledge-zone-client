@@ -20,7 +20,7 @@ const Product = ({ order, index }) => {
     }).then((result) => {
       if (result.isConfirmed) {
         Swal.fire("Deleted!", "Your file has been deleted.", "success");
-        const url = `https://shielded-forest-27142.herokuapp.com/order/${id}`;
+        const url = `https://desolate-beach-15424.herokuapp.com/order/${id}`;
 
         fetch(url, {
           method: "DELETE",
