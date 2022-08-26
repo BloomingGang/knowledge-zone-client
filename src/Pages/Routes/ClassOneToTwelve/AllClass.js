@@ -134,14 +134,6 @@ const AllClass = () => {
                 Class 11-12
               </CustomLink>
             </li>
-            <li>
-              {/* <CustomLink
-                  className="w-full py-3 px-3 border-2 font-bold uppercase text-center rounded-lg"
-                  to="/classes/twelve"
-                >
-                  Class 12
-                </CustomLink> */}
-            </li>
           </ul>
         </div>
       </div>

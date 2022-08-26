@@ -44,7 +44,6 @@ const Courses = () => {
         <div className="drawer-side">
           <label htmlFor="dashboard-sidebar" className="drawer-overlay"></label>
           <ul className="menu p-4 overflow-y-auto whitespace-nowrap w-68 text-base-content border-r-2 bg-violet-300">
-            {/* <!-- Sidebar content here --> */}
             <li>
               <CustomLink
                 className="w-full p-2 border-0 font-bold uppercase text-center rounded-lg"
@@ -61,14 +60,6 @@ const Courses = () => {
                 discounted course
               </CustomLink>
             </li>
-            {/* <li>
-                <CustomLink
-                  className="w-full py-2 px-2 border-2 font-bold uppercase text-center rounded-lg"
-                  to="/courses/liveCourse"
-                >
-                  Live course
-                </CustomLink>
-              </li> */}
             <li>
               <CustomLink
                 className="w-full p-2 border-0 font-bold uppercase text-center rounded-lg"

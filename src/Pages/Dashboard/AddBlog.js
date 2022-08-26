@@ -27,7 +27,7 @@ const AddBlog = () => {
   return (
     <div className="p-12 bg-violet-200">
       <form
-        className="bg-violet-300 rounded-xl md:w-2/3 mx-auto font-serif px-8 pb-12"
+        className="bg-violet-300 rounded-xl md:w-2/3 mx-auto px-8 pb-12"
         onSubmit={handleAddBlog}
       >
         <h1 className="text-center p-8 text-3xl font-bold pb-16 text-violet-900 ">

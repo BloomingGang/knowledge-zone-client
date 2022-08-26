@@ -44,7 +44,6 @@ const Instructor = () => {
         <div className="drawer-side">
           <label htmlFor="dashboard-sidebar" className="drawer-overlay"></label>
           <ul className="menu p-4 overflow-y-auto w-52 text-base-content border-r-2 bg-violet-300">
-            {/* <!-- Sidebar content here --> */}
             <li>
               <CustomLink
                 className="w-full p-2 border-0 font-bold uppercase text-center rounded-lg"
