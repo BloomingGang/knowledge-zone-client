@@ -211,8 +211,8 @@ const Header = () => {
       {/* notification panel */}
       <li className="mr-4 p-2 hover:bg-blue-500 rounded font-bold cursor-pointer hidden md:block">
         {/* panel credentials */}
-        <div class="dropdown md:dropdown-end">
-          <label tabindex="0" class="text-xl m-1">
+        <div className="dropdown md:dropdown-end">
+          <label tabIndex="0" className="text-xl m-1">
             <i className="text-black fa-solid fa-bell cursor-pointer"></i>
           </label>
           <div
