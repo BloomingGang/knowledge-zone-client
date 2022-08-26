@@ -12,12 +12,14 @@ const Books = () => {
 
   return (
     <div>
-         <h2  data-aos-delay="200"
-          data-aos="zoom-in"
-          data-aos-duration="1000"
-          className="text-4xl text-center font-bold text-violet-800  mt-4">
-            Books List
-          </h2>
+      <h2
+        data-aos-delay="200"
+        data-aos="zoom-in"
+        data-aos-duration="1000"
+        className="text-4xl text-center font-bold text-violet-800  mt-4"
+      >
+        Books List
+      </h2>
       <div className="grid md:grid-cols-4 gap-10 px-8 py-8">
         {book.map((bo) => (
           <Book key={bo._id} book={bo}></Book>
