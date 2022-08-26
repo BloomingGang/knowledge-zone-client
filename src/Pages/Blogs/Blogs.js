@@ -3,19 +3,34 @@ import LiveChat from "../ContactUs/LiveChat";
 import Loading from "../Shared/Loading";
 import Blog from "./Blog";
 import BlogModal from "./BlogModal";
+import { useSelector, useDispatch } from "react-redux";
+import { getBlog, clearError } from "../../actions/blogActions";
+import { error } from "daisyui/src/colors";
 
 const Blogs = () => {
   const [blog, setBlogs] = useState([]);
   const [modal, setModal] = useState(null);
   const [loading, setLoading] = useState(true);
+  const dispatch = useDispatch();
+  const { blogs } = useSelector((state) => state.blogs);
+
   useEffect(() => {
-    fetch("https://desolate-beach-15424.herokuapp.com/blogs")
-      .then((response) => response.json())
-      .then((data) => {
-        setBlogs(data);
-        setLoading(false);
-      });
-  }, []);
+    if (error) {
+      dispatch(clearError());
+    } else {
+      dispatch(getBlog());
+    }
+  }, [dispatch]);
+  console.log(blogs);
+
+  // useEffect(() => {
+  //   fetch("https://desolate-beach-15424.herokuapp.com/blogs")
+  //     .then((response) => response.json())
+  //     .then((data) => {
+  //       setBlogs(data);
+  //       setLoading(false);
+  //     });
+  // }, []);
   if (loading) {
     return <Loading></Loading>;
   }
