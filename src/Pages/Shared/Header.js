@@ -17,7 +17,7 @@ const Header = () => {
   const handleSearch = () => {
     navigate(`/searchCourse/${searchCourse}`);
   };
-
+ 
   // CCIS => classes and courses infos
   const { data: ccis, refetch } = useQuery(["ccis"], () =>
     fetch("http://localhost:5000/ccis").then((res) => res.json())
@@ -37,8 +37,6 @@ const Header = () => {
     const { data } = await axios.put(`http://localhost:5000/bookN/${id}`);
     refetch();
   };
-
-  
 
   const menuItems = (
     <>
