@@ -17,7 +17,7 @@ const CheckoutForm = ({ course }) => {
   console.log(user);
 
   useEffect(() => {
-    fetch("https://desolate-beach-15424.herokuapp.com/create-payment-intent", {
+    fetch("http://localhost:5000/create-payment-intent", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -81,7 +81,7 @@ const CheckoutForm = ({ course }) => {
         transactionId: paymentIntent.id,
       };
 
-      fetch(`https://desolate-beach-15424.herokuapp.com/enrollCourse/${_id}`, {
+      fetch(`http://localhost:5000/enrollCourse/${_id}`, {
         method: "PATCH",
         headers: {
           "content-type": "application/json",

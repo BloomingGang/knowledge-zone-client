@@ -11,7 +11,7 @@ const Reviews = () => {
   const [user] = useAuthState(auth);
   const [reviews, setReviews] = useState([]);
   useEffect(() => {
-    fetch(`https://desolate-beach-15424.herokuapp.com/addreview`)
+    fetch(`http://localhost:5000/addreview`)
       .then((response) => response.json())
       .then((data) => setReviews(data));
   }, []);

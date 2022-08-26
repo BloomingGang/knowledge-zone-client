@@ -16,7 +16,7 @@ const Payment = () => {
   const [user] = useAuthState(auth);
   const { id } = useParams();
   console.log(id);
-  const url = `https://desolate-beach-15424.herokuapp.com/payment/${id}`;
+  const url = `http://localhost:5000/payment/${id}`;
   const { data: course, isLoading } = useQuery(["payment", id], () =>
     fetch(url, {
       method: "GET",

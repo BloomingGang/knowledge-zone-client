@@ -6,7 +6,7 @@ const Chemistry = () => {
   const [instructors, setInstructors] = useState([]);
   const [loading, setLoading] = useState(true);
   useEffect(() => {
-    fetch("https://desolate-beach-15424.herokuapp.com/instructors/Chemistry")
+    fetch("http://localhost:5000/instructors/Chemistry")
       .then((res) => res.json())
       .then((data) => {
         setInstructors(data);

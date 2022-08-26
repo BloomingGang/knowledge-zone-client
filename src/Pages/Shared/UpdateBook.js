@@ -11,7 +11,7 @@ const UpdateBook = () => {
   const navigate = useNavigate();
   useEffect(() => {
     axios
-      .get(`https://desolate-beach-15424.herokuapp.com/books/${id}`)
+      .get(`http://localhost:5000/books/${id}`)
       .then((res) => setUpdateBook(res.data));
     setLoading(false);
   }, [id]);
@@ -55,10 +55,7 @@ const UpdateBook = () => {
     };
 
     axios
-      .put(
-        `https://desolate-beach-15424.herokuapp.com/bookUpdate/${id}`,
-        updateBook
-      )
+      .put(`http://localhost:5000/bookUpdate/${id}`, updateBook)
       .then((res) => {
         toast.success(`Update Book successfully`);
         event.target.reset();

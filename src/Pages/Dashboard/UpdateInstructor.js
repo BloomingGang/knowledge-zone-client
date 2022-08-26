@@ -10,7 +10,7 @@ const UpdateInstructor = () => {
   const [loading, setLoading] = useState(true);
   useEffect(() => {
     axios
-      .get(`https://desolate-beach-15424.herokuapp.com/instructor/${id}`)
+      .get(`http://localhost:5000/instructor/${id}`)
       .then((res) => setUpdateInstructor(res.data));
     setLoading(false);
   }, [id]);
@@ -51,10 +51,7 @@ const UpdateInstructor = () => {
     };
 
     axios
-      .put(
-        `https://desolate-beach-15424.herokuapp.com/updateInstructor/${id}`,
-        updateCourse
-      )
+      .put(`http://localhost:5000/updateInstructor/${id}`, updateCourse)
       .then((res) => {
         toast.success(`Update the instructor successfully!!`);
         event.target.reset();

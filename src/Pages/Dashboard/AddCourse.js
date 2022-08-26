@@ -88,12 +88,10 @@ const AddCourse = () => {
       transcripts: 10,
     };
 
-    axios
-      .post(`https://desolate-beach-15424.herokuapp.com/addCourse`, addCourse)
-      .then((res) => {
-        toast.success(`Add a Course for ${classCourse}`);
-        event.target.reset();
-      });
+    axios.post(`http://localhost:5000/addCourse`, addCourse).then((res) => {
+      toast.success(`Add a Course for ${classCourse}`);
+      event.target.reset();
+    });
   };
   return (
     <div className="p-12 bg-violet-200">

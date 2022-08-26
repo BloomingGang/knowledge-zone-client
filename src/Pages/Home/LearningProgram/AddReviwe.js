@@ -18,7 +18,7 @@ const AddReviwe = () => {
     setRattingError("");
     const review = { name, comment, ratting, image };
 
-    fetch("https://desolate-beach-15424.herokuapp.com/addreview", {
+    fetch("http://localhost:5000/addreview", {
       method: "POST",
       headers: {
         "content-type": "application/json",

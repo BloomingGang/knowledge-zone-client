@@ -20,30 +20,22 @@ const Header = () => {
 
   // CCIS => classes and courses infos
   const { data: ccis, refetch } = useQuery(["ccis"], () =>
-    fetch("https://desolate-beach-15424.herokuapp.com/ccis").then((res) =>
-      res.json()
-    )
+    fetch("http://localhost:5000/ccis").then((res) => res.json())
   );
 
   // bookN= book notification
   const { data: bookN } = useQuery(["bookN"], () =>
-    fetch("https://desolate-beach-15424.herokuapp.com/bookN").then((res) =>
-      res.json()
-    )
+    fetch("http://localhost:5000/bookN").then((res) => res.json())
   );
   console.log(bookN, "bookN");
   const handleUnreadState = async (id) => {
-    const { data } = await axios.put(
-      `https://desolate-beach-15424.herokuapp.com/cci/${id}`
-    );
+    const { data } = await axios.put(`http://localhost:5000/cci/${id}`);
     console.log(data);
     refetch();
   };
 
   const handleUnreadStateBookN = async (id) => {
-    const { data } = await axios.put(
-      `https://desolate-beach-15424.herokuapp.com/bookN/${id}`
-    );
+    const { data } = await axios.put(`http://localhost:5000/bookN/${id}`);
     console.log(data);
     refetch();
   };

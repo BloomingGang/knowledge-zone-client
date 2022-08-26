@@ -42,7 +42,7 @@ const BookInfo = () => {
 
   useEffect(() => {
     axios
-      .get(`https://desolate-beach-15424.herokuapp.com/book/${id}`)
+      .get(`http://localhost:5000/book/${id}`)
       .then((res) => setBookInfo(res.data));
     myOrder?.find((paid) => {
       if (paid.id == _id) return setMatchPaid(true);
@@ -55,7 +55,7 @@ const BookInfo = () => {
   //   error,
   //   data: book,
   // } = useQuery(["book", id], () =>
-  //   fetch(https://desolate-beach-15424.herokuapp.com/book/${id}, {
+  //   fetch(http://localhost:5000/book/${id}, {
   //     method: "get",
   //     headers: {
   //       authorization: Bearer ${localStorage.getItem("accessToken")},
@@ -79,7 +79,7 @@ const BookInfo = () => {
       paid: false,
       id: _id,
     };
-    fetch("https://desolate-beach-15424.herokuapp.com/order", {
+    fetch("http://localhost:5000/order", {
       method: "post",
       headers: {
         "content-type": "application/json",

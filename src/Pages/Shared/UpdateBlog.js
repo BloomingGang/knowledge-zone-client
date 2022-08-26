@@ -11,7 +11,7 @@ const UpdateBlog = () => {
   const navigate = useNavigate();
   useEffect(() => {
     axios
-      .get(`https://desolate-beach-15424.herokuapp.com/blogs/${id}`)
+      .get(`http://localhost:5000/blogs/${id}`)
       .then((res) => setUpdateBlog(res.data));
     setLoading(false);
   }, [id]);
@@ -36,10 +36,7 @@ const UpdateBlog = () => {
     };
 
     axios
-      .put(
-        `https://desolate-beach-15424.herokuapp.com/blogUpdate/${id}`,
-        updateBlog
-      )
+      .put(`http://localhost:5000/blogUpdate/${id}`, updateBlog)
       .then((res) => {
         toast.success(`Update Blog successfully`);
         event.target.reset();

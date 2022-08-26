@@ -24,7 +24,7 @@ const Blogs = () => {
   console.log(blogs);
 
   // useEffect(() => {
-  //   fetch("https://desolate-beach-15424.herokuapp.com/blogs")
+  //   fetch("http://localhost:5000/blogs")
   //     .then((response) => response.json())
   //     .then((data) => {
   //       setBlogs(data);

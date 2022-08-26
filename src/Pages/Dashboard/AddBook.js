@@ -58,12 +58,10 @@ const AddBook = () => {
       price: price,
     };
 
-    axios
-      .post(`https://desolate-beach-15424.herokuapp.com/addBook`, addBook)
-      .then((res) => {
-        toast.success(`Add a Book`);
-        event.target.reset();
-      });
+    axios.post(`http://localhost:5000/addBook`, addBook).then((res) => {
+      toast.success(`Add a Book`);
+      event.target.reset();
+    });
   };
 
   return (

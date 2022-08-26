@@ -35,7 +35,7 @@ const ClassCourseDetails = () => {
   } = courseInfo;
   useEffect(() => {
     axios
-      .get(`https://desolate-beach-15424.herokuapp.com/course/${id}`)
+      .get(`http://localhost:5000/course/${id}`)
       .then((res) => setCourseInfo(res.data));
 
     myOrder?.find((paid) => {
@@ -64,7 +64,7 @@ const ClassCourseDetails = () => {
       id: _id,
     };
 
-    fetch("https://desolate-beach-15424.herokuapp.com/order", {
+    fetch("http://localhost:5000/order", {
       method: "post",
       headers: {
         "content-type": "application/json",
