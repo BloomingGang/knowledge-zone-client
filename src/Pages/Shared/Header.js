@@ -27,7 +27,7 @@ const Header = () => {
   const { data: bookN } = useQuery(["bookN"], () =>
     fetch("http://localhost:5000/bookN").then((res) => res.json())
   );
-
+ console.log(bookN,"bookN")
   const handleUnreadState = async (id) => {
     const { data } = await axios.put(`http://localhost:5000/cci/${id}`);
     console.log(data);
