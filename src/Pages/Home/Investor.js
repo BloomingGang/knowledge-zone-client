@@ -125,7 +125,7 @@ const Investor = () => {
     <div className="container mx-auto">
       <div className="mt-24 md:mt-32">
         <h2
-          className="text-center text-5xl font-bold text-violet-800"
+          className="text-center text-4xl font-bold text-violet-800"
           data-aos="zoom-in"
           data-aos-duration="1500"
           data-aos-delay="200"
