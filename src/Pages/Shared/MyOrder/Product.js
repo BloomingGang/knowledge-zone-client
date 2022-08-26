@@ -58,7 +58,6 @@ const Product = ({ order, index }) => {
           className={`${
             paid === true && "btn-disabled bg-white text-red-500"
           } text-red-600 transition ease-in-out delay-100 hover:-translate-y-1 hover:scale-110 duration-300 mt-4 mx-2`}
-
         >
           <TrashIcon className="h-7 w-7 cursor-pointer" />
         </button>
