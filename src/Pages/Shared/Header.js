@@ -211,9 +211,9 @@ const Header = () => {
       {/* notification panel */}
       <li className="mr-4 p-2 hover:bg-blue-500 rounded font-bold cursor-pointer hidden md:block">
         {/* panel credentials */}
-        <div className="dropdown md:dropdown-end">
-          <label tabIndex="0" className="text-xl m-1">
-            <i className="text-violet-800 fa-solid fa-bell cursor-pointer"></i>
+        <div class="dropdown md:dropdown-end">
+          <label tabindex="0" class="text-xl m-1">
+            <i className="text-black fa-solid fa-bell cursor-pointer"></i>
           </label>
           <div
             tabIndex="0"
@@ -329,26 +329,6 @@ const Header = () => {
         </div>
 
         <div>
-          {/* <<<<<<< HEAD
-          <div>
-            <div className="form-control">
-              <label className="input-group input-group-sm">
-                <input
-                  onChange={(e) => setSearchCourse(e.target.value)}
-                  type="search"
-                  name="text"
-                  placeholder="Search Courses"
-                  className="input input-bordered input-sm"
-                />
-                <span
-                  onClick={(e) => handleSearch(e)}
-                  className="bg-violet-300"
-                >
-                  <i className="fa-solid fa-magnifying-glass text-lg text-violet-800"></i>
-                </span>
-              </label>
-            </div>
-======= */}
           <div className="form-control">
             <label className="input-group input-group-sm">
               <input
@@ -362,7 +342,6 @@ const Header = () => {
                 <i className="fa-solid fa-magnifying-glass text-lg text-violet-800"></i>
               </span>
             </label>
-            {/* >>>>>>> e0b77533e1d1083037497bea89a1b40663334637 */}
           </div>
         </div>
       </div>

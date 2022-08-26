@@ -11,6 +11,7 @@ import course8 from "../../img/assets/academicCourses/8.png";
 import course9 from "../../img/assets/academicCourses/9.png";
 import course10 from "../../img/assets/academicCourses/10.png";
 import course11 from "../../img/assets/academicCourses/11.png";
+import { Link } from "react-router-dom";
 
 const AcademicCourses = () => {
   const academicCourses = [
@@ -62,6 +63,7 @@ const AcademicCourses = () => {
 
   var settings = {
     dots: true,
+   arrows:false,
     infinite: true,
     slidesToShow: 4,
     slidesToScroll: 4,
@@ -126,10 +128,10 @@ const AcademicCourses = () => {
               data-aos="zoom-in"
               data-aos-duration="1000"
             >
-              <div key={index} className=" flex justify-center">
-                <a href={courses.link}>
+              <div key={index} className="flex justify-center">
+                <Link to={courses.link}>
                   <img className="rounded-lg" src={courses.picture} alt="" />
-                </a>
+                </Link>
               </div>
             </div>
           ))}

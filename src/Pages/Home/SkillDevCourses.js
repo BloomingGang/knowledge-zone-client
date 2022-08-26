@@ -36,6 +36,7 @@ const SkillDevCourses = () => {
   ];
   var settings = {
     dots: true,
+    arrows:false,
     infinite: true,
     slidesToShow: 4,
     slidesToScroll: 4,

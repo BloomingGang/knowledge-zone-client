@@ -64,12 +64,6 @@ const BooksCarousel = () => {
                   >
                     <img className="rounded-lg" src={book.img} alt="" />
                   </div>
-                  {/* <div className="text-center absolute">
-                    <button   className="btn btn-xs border-violet-800 rounded-lg bg-violet-800 text-white font-bold hover:bg-transparent hover:text-violet-900 hover:border-violet-900" 
-                    onClick={() => handleBook(book._id)}>
-                      View Details
-                    </button>
-                  </div> */}
                 </div>
               ))}
             </Carousel>

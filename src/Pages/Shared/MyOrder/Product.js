@@ -46,7 +46,7 @@ const Product = ({ order, index }) => {
           </button>
         ) : (
           <button
-            className={`btn-disabled text-green-500 btn btn-sm border-b-violet-900`}
+            className={`btn-disabled text-green-500 btn btn-sm border-green-500 bg-white`}
           >
             PAID
           </button>
@@ -56,8 +56,9 @@ const Product = ({ order, index }) => {
         <button
           onClick={() => handleDelete(_id)}
           className={`${
-            paid === true && "btn-disabled bg-white text-green-500"
+            paid === true && "btn-disabled bg-white text-red-500"
           } text-red-600 transition ease-in-out delay-100 hover:-translate-y-1 hover:scale-110 duration-300 mt-4 mx-2`}
+
         >
           <TrashIcon className="h-7 w-7 cursor-pointer" />
         </button>
