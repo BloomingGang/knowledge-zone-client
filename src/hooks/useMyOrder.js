@@ -25,7 +25,7 @@ const useMyOrder = (props) => {
     };
 
     getMyOrder();
-  }, [email, navigate]);
+  }, [email, navigate,props]);
 
   return [myOrder, setMyOrder];
 };
