@@ -61,14 +61,7 @@ const Courses = () => {
                 discounted course
               </CustomLink>
             </li>
-            {/* <li>
-                <CustomLink
-                  className="w-full py-2 px-2 border-2 font-bold uppercase text-center rounded-lg"
-                  to="/courses/liveCourse"
-                >
-                  Live course
-                </CustomLink>
-              </li> */}
+            
             <li>
               <CustomLink
                 className="w-full p-2 border-0 font-bold uppercase text-center rounded-lg"
