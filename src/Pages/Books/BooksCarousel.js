@@ -43,7 +43,7 @@ const BooksCarousel = () => {
               data-aos="zoom-in"
               data-aos-duration="1000"
             >
-              Books
+              Our Available Books
             </h3>
           </div>
 
