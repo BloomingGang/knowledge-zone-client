@@ -9,7 +9,7 @@ const BooksCarousel = () => {
     navigate(`/book/${id}`);
   };
   useEffect(() => {
-    fetch(`http://localhost:5000/books`)
+    fetch(`https://desolate-beach-15424.herokuapp.com/books`)
       .then((response) => response.json())
       .then((data) => setBooks(data));
   }, []);

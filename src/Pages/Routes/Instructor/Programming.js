@@ -6,7 +6,7 @@ const Programming = () => {
   const [instructors, setInstructors] = useState([]);
   const [loading, setLoading] = useState(true);
   useEffect(() => {
-    fetch("http://localhost:5000/instructors/Programming")
+    fetch("https://desolate-beach-15424.herokuapp.com/instructors/Programming")
       .then((res) => res.json())
       .then((data) => {
         setInstructors(data);

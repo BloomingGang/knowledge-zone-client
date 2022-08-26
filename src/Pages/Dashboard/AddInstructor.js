@@ -39,7 +39,10 @@ const AddInstructor = () => {
     };
 
     axios
-      .post(`http://localhost:5000/addInstructor`, addInstructor)
+      .post(
+        `https://desolate-beach-15424.herokuapp.com/addInstructor`,
+        addInstructor
+      )
       .then((res) => {
         toast.success(`Instructor added successfully!!`);
         event.target.reset();

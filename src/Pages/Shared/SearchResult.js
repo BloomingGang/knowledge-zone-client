@@ -7,7 +7,7 @@ const SearchResult = () => {
   const [courses, setCourses] = useState([]);
   const [loading, setLoading] = useState(true);
   useEffect(() => {
-    fetch("http://localhost:5000/searchCourse")
+    fetch("https://desolate-beach-15424.herokuapp.com/searchCourse")
       .then((res) => res.json())
       .then((courses) => {
         const matchCourse = courses.filter((course) =>

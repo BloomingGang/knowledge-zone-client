@@ -19,10 +19,12 @@ const AddBlog = () => {
       description: description,
     };
 
-    axios.post(`http://localhost:5000/addBlog`, addBlog).then((res) => {
-      toast.success(`Add a Blog`);
-      event.target.reset();
-    });
+    axios
+      .post(`https://desolate-beach-15424.herokuapp.com/addBlog`, addBlog)
+      .then((res) => {
+        toast.success(`Add a Blog`);
+        event.target.reset();
+      });
   };
   return (
     <div className="p-12 bg-violet-200">

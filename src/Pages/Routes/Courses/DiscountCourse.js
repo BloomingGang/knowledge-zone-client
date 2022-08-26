@@ -5,7 +5,7 @@ const DiscountCourse = () => {
   const [discountCourses, setDiscountCourses] = useState([]);
   const [loading, setLoading] = useState(true);
   useEffect(() => {
-    fetch("http://localhost:5000/courses/discountCourse")
+    fetch("https://desolate-beach-15424.herokuapp.com/courses/discountCourse")
       .then((res) => res.json())
       .then((data) => {
         setDiscountCourses(data);

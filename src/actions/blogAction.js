@@ -8,7 +8,7 @@ import axios from "axios";
 export const getBlogs = () => async (dispatch) => {
   try {
     dispatch({ type: ALL_BLOG_REQUEST });
-    let link = `http://localhost:5000/blogs`;
+    let link = `https://desolate-beach-15424.herokuapp.com/blogs`;
     console.log(link);
     const { data } = await axios.get(link);
 

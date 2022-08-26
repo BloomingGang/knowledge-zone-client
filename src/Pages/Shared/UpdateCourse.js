@@ -10,7 +10,7 @@ const UpdateCourse = () => {
   const [loading, setLoading] = useState(true);
   useEffect(() => {
     axios
-      .get(`http://localhost:5000/course/${id}`)
+      .get(`https://desolate-beach-15424.herokuapp.com/course/${id}`)
       .then((res) => serUpdateCourse(res.data));
     setLoading(false);
   }, [id]);
@@ -96,7 +96,10 @@ const UpdateCourse = () => {
     };
 
     axios
-      .put(`http://localhost:5000/courseUpdate/${id}`, updateCourse)
+      .put(
+        `https://desolate-beach-15424.herokuapp.com/courseUpdate/${id}`,
+        updateCourse
+      )
       .then((res) => {
         toast.success(`Update ${classCourse}`);
         event.target.reset();

@@ -12,7 +12,7 @@ const useMyOrder = (props) => {
   const email = user?.email;
   useEffect(() => {
     const getMyOrder = async () => {
-      const url = `http://localhost:5000/${props}?email=${email}`;
+      const url = `https://desolate-beach-15424.herokuapp.com/${props}?email=${email}`;
       try {
         const { data } = await axiosPrivate.get(url);
         setMyOrder(data);

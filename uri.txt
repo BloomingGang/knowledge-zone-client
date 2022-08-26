@@ -1,1 +1,1 @@
-server uri: http://localhost:5000/
+server uri: https://desolate-beach-15424.herokuapp.com/

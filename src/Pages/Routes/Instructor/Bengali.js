@@ -6,7 +6,7 @@ const Bengali = () => {
   const [instructors, setInstructors] = useState([]);
   const [loading, setLoading] = useState(true);
   useEffect(() => {
-    fetch("http://localhost:5000/instructors/Bengali")
+    fetch("https://desolate-beach-15424.herokuapp.com/instructors/Bengali")
       .then((res) => res.json())
       .then((data) => {
         setInstructors(data);
