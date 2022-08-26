@@ -54,7 +54,7 @@ const Book = ({ book }) => {
           <img src={img} alt="/" className="rounded-t-lg w-full" />
         </div>
         <div>
-          <h2 className="text-center font-bold uppercase text-xl pt-4 text-violet-800">
+          <h2 className="text-center font-bold uppercase text-lg pt-4 text-violet-800">
             {bookName}
           </h2>
 
@@ -68,13 +68,13 @@ const Book = ({ book }) => {
           </div>
           {admin && (
             <div>
-              <div class="divider"></div>
+              <div className="divider"></div>
               <div className="flex justify-between">
                 <button
                   onClick={() => handleDeleteBook(_id)}
                   className="text-red-600 transition ease-in-out delay-100 hover:-translate-y-1 hover:scale-110 duration-300 mx-6 mb-4"
                 >
-                  <label for="my-modal-6">
+                  <label htmlFor="my-modal-6">
                     <TrashIcon className="h-7 w-7 cursor-pointer" />
                   </label>
                 </button>

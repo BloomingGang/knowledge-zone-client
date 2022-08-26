@@ -49,18 +49,18 @@ const UserRow = ({ user, index }) => {
   };
   return (
     <tr className="text-center">
-      <th className="font-bold text-xl">{index + 1}</th>
-      <td className="font-bold text-xl">{email}</td>
+      <th className="font-bold">{index + 1}</th>
+      <td className="font-bold">{email}</td>
       <td>
         {role !== "admin" ? (
           <button
             onClick={makeAdmin}
-            className="btn btn-sm bg-violet-800 hover:bg-transparent hover:text-violet-900 hover:border-violet-900 "
+            className="btn btn-sm bg-violet-800 hover:bg-transparent hover:text-violet-900 hover:border-violet-900"
           >
             Make Admin
           </button>
         ) : (
-          <h1 className="font-bold text-xl text-green-500">ADMIN</h1>
+          <h1 className="font-bold text-green-500">ADMIN</h1>
         )}
       </td>
       <td>
@@ -68,7 +68,7 @@ const UserRow = ({ user, index }) => {
           onClick={() => handleDelete(_id)}
           className="text-red-600 transition ease-in-out delay-100 hover:-translate-y-1 hover:scale-110 duration-300 mt-4 mx-2"
         >
-          <TrashIcon className="h-9 w-9 cursor-pointer" />
+          <TrashIcon className="h-7 w-7 cursor-pointer" />
         </button>
       </td>
     </tr>

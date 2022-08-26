@@ -55,7 +55,7 @@ const ClassCourseCart = ({ course }) => {
         </figure>
         <div className="px-5 pb-2">
           <h2 className="text-center pt-3 font-bold text-xl"> {title}</h2>
-          <div class="divider"></div>
+          <div className="divider"></div>
           <div className="flex justify-between items-center">
             <span className="text-xl font-bold text-violet-800">$ {price}</span>
             <button
@@ -68,13 +68,13 @@ const ClassCourseCart = ({ course }) => {
 
           {admin && (
             <div>
-              <div class="divider"></div>
+              <div className="divider"></div>
               <div className="flex justify-between pb-4">
                 <button
                   onClick={() => handleDeleteCourse(_id)}
                   className="text-red-600 transition ease-in-out delay-100 hover:-translate-y-1 hover:scale-110 duration-300 mx-2"
                 >
-                  <label onClick={() => setModal(true)} for="my-modal-6">
+                  <label onClick={() => setModal(true)} htmlFor="my-modal-6">
                     <TrashIcon className="h-7 w-7 cursor-pointer" />
                   </label>
                 </button>
@@ -90,27 +90,6 @@ const ClassCourseCart = ({ course }) => {
           )}
         </div>
       </div>
-      {/* {modal && (
-        <>
-          <input type="checkbox" id="my-modal-6" class="modal-toggle" />
-          <div class="modal modal-bottom sm:modal-middle">
-            <div class="modal-box">
-              <h3 class="font-bold text-lg">
-                Congratulations random Internet user!
-              </h3>
-              <p class="py-4">
-                You've been selected for a chance to get one year of
-                subscription to use Wikipedia for free!
-              </p>
-              <div class="modal-action">
-                <label for="my-modal-6" class="btn">
-                  Yay!
-                </label>
-              </div>
-            </div>
-          </div>
-        </>
-      )} */}
     </section>
   );
 };

@@ -33,17 +33,17 @@ const BooksCarousel = () => {
     },
   };
   return (
-    <div className="mt-10">
+    <div className="mt-24 md:mt-32">
       <section id="team-section">
         <div className="container mx-auto">
-          <div className="mb-12 w-full mx-auto">
+          <div className="w-full mx-auto">
             <h3
-              className="text-center text-4xl font-bold text-violet-800 pt-10"
+              className="text-center text-4xl font-bold text-violet-800 pb-10 md:pb-16"
               data-aos-delay="200"
               data-aos="zoom-in"
               data-aos-duration="1000"
             >
-              Books
+              Our Available Books
             </h3>
           </div>
 
@@ -64,12 +64,6 @@ const BooksCarousel = () => {
                   >
                     <img className="rounded-lg" src={book.img} alt="" />
                   </div>
-                  {/* <div className="text-center absolute">
-                    <button   className="btn btn-xs border-violet-800 rounded-lg bg-violet-800 text-white font-bold hover:bg-transparent hover:text-violet-900 hover:border-violet-900" 
-                    onClick={() => handleBook(book._id)}>
-                      View Details
-                    </button>
-                  </div> */}
                 </div>
               ))}
             </Carousel>

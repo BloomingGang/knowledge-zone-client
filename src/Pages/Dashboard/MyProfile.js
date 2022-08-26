@@ -28,7 +28,7 @@ const MyProfile = () => {
           </h1>
           <span>
             <label
-              for="profileUpdate"
+              htmlFor="profileUpdate"
               onClick={() => setShowProfile(true)}
               className="text-violet-800"
             >
@@ -36,10 +36,10 @@ const MyProfile = () => {
             </label>
           </span>
         </div>
-        <div class="divider"></div>
+        <div className="divider"></div>
         <div className="md:flex justify-around align-center text-center">
-          <div class="avatar p-6">
-            <div class="w-56 h-56 rounded-full ring ring-violet-500 ring-offset-gray-100 ring-offset-2">
+          <div className="avatar p-6">
+            <div className="w-56 h-56 rounded-full ring ring-violet-500 ring-offset-gray-100 ring-offset-2">
               <img src={photoUrl} alt="" />
             </div>
           </div>

@@ -14,7 +14,6 @@ const CheckoutForm = ({ course }) => {
   const elements = useElements();
   const { price, _id } = course;
   const { displayName, email } = user;
-  console.log(user);
 
   useEffect(() => {
     fetch("http://localhost:5000/create-payment-intent", {
@@ -90,9 +89,8 @@ const CheckoutForm = ({ course }) => {
         body: JSON.stringify(payment),
       })
         .then((res) => res.json())
-        .then((data) => {
-          console.log(data);
-        });
+
+        .then((data) => {});
     }
   };
   return (

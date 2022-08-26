@@ -63,7 +63,6 @@ import AddBook from "./Pages/Dashboard/AddBook";
 import SearchResult from "./Pages/Shared/SearchResult";
 import AddBlog from "./Pages/Dashboard/AddBlog";
 import UpdateBlog from "./Pages/Shared/UpdateBlog";
-// import SearchBook from "./Pages/Shared/SearchBook";
 import PrivacyPolicy from "./Pages/Home/PrivacyPolicy";
 import AddInstructor from "./Pages/Dashboard/AddInstructor";
 import UpdateInstructor from "./Pages/Dashboard/UpdateInstructor";
@@ -104,7 +103,6 @@ function App() {
           <Route path="religious" element={<Religious />} />
           <Route path="programming" element={<Programming />} />
         </Route>
-        {/* Courses route list */}
         <Route
           path="/courses"
           element={
@@ -121,7 +119,6 @@ function App() {
           <Route path="KidsCourse" element={<KidsCourse />} />
           <Route path="EntertainingCourse" element={<EntertainingCourse />} />
         </Route>
-        {/* class 1 to 12 route list */}
         <Route
           path="/classes"
           element={
@@ -243,7 +240,7 @@ function App() {
         <Route path="/myOrder" element={<MyOrder />} />
 
         <Route path="/addReviwe" element={<AddReviwe />} />
-        <Route path="/myCollection" element={<MyCollection/>} />
+        <Route path="/myCollection" element={<MyCollection />} />
         <Route
           path="/addBook"
           element={

@@ -32,10 +32,11 @@ const Courses = () => {
         />
         <div className="drawer-content">
           <h2
-           data-aos-delay="200"
-           data-aos="zoom-in"
-           data-aos-duration="1000"
-            className="text-4xl text-center font-bold text-violet-800  mt-6 mb-8">
+            data-aos-delay="200"
+            data-aos="zoom-in"
+            data-aos-duration="1000"
+            className="text-4xl text-center font-bold text-violet-800  mt-6 mb-8"
+          >
             Skill Development Courses
           </h2>
           <Outlet></Outlet>
@@ -43,7 +44,6 @@ const Courses = () => {
         <div className="drawer-side">
           <label htmlFor="dashboard-sidebar" className="drawer-overlay"></label>
           <ul className="menu p-4 overflow-y-auto whitespace-nowrap w-68 text-base-content border-r-2 bg-violet-300">
-            {/* <!-- Sidebar content here --> */}
             <li>
               <CustomLink
                 className="w-full p-2 border-0 font-bold uppercase text-center rounded-lg"
@@ -60,14 +60,6 @@ const Courses = () => {
                 discounted course
               </CustomLink>
             </li>
-            {/* <li>
-                <CustomLink
-                  className="w-full py-2 px-2 border-2 font-bold uppercase text-center rounded-lg"
-                  to="/courses/liveCourse"
-                >
-                  Live course
-                </CustomLink>
-              </li> */}
             <li>
               <CustomLink
                 className="w-full p-2 border-0 font-bold uppercase text-center rounded-lg"

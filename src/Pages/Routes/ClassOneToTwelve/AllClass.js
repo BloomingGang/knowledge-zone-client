@@ -1,5 +1,5 @@
 import React from "react";
-import {  Outlet } from "react-router-dom";
+import { Outlet } from "react-router-dom";
 import LiveChat from "../../ContactUs/LiveChat";
 import CustomLink from "../../Shared/CustomLink";
 
@@ -31,16 +31,17 @@ const AllClass = () => {
           className="drawer-toggle"
         />
         <div className="drawer-content">
-          <h2 
-           data-aos-delay="200"
-           data-aos="zoom-in"
-           data-aos-duration="1000"
-           className="text-4xl text-center font-bold text-violet-800 mt-6 mb-8">
-            Academic Courses 
+          <h2
+            data-aos-delay="200"
+            data-aos="zoom-in"
+            data-aos-duration="1000"
+            className="text-4xl text-center font-bold text-violet-800 mt-6 mb-8"
+          >
+            Academic Courses
           </h2>
           <Outlet></Outlet>
         </div>
-  
+
         <div className="drawer-side">
           <label htmlFor="dashboard-sidebar" className="drawer-overlay"></label>
           <ul className="menu p-4 overflow-y-auto w-48 text-base-content bg-violet-300">
@@ -132,14 +133,6 @@ const AllClass = () => {
               >
                 Class 11-12
               </CustomLink>
-            </li>
-            <li>
-              {/* <CustomLink
-                  className="w-full py-3 px-3 border-2 font-bold uppercase text-center rounded-lg"
-                  to="/classes/twelve"
-                >
-                  Class 12
-                </CustomLink> */}
             </li>
           </ul>
         </div>

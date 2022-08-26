@@ -22,7 +22,7 @@ const BlogInfo = () => {
         <span className="text-red-500">{date} </span> <span>By </span>
         <span className="text-violet-600">{writerName}</span>
       </div>
-      <div class="divider"></div>
+      <div className="divider"></div>
       <p className="text-xl md:text-2xl text-justify leading-8 md:leading-10 pt-3 pb-8">
         {description}
       </p>

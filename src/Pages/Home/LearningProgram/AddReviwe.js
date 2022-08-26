@@ -40,36 +40,36 @@ const AddReviwe = () => {
         <h1 className="text-center p-8 text-3xl font-bold  text-violet-800 ">
           Put Your Review Here
         </h1>
-        <div class="card-body">
-          <div class="form-control">
-            <label class="label">
+        <div className="card-body">
+          <div className="form-control">
+            <label className="label">
               <span className="label-text text-lg    ">Name:</span>
             </label>
             <input
               type="text"
               placeholder="Name"
               name="name"
-              class="input input-bordered"
+              className="input input-bordered"
               value={user?.displayName}
               disabled
             />
           </div>
 
-          <div class="form-control">
-            <label class="label">
+          <div className="form-control">
+            <label className="label">
               <span className="label-text text-lg    ">Comment:</span>
             </label>
             <input
               type="text"
               name="comment"
               placeholder="Comment"
-              class="input input-bordered count-chars"
+              className="input input-bordered count-chars"
               maxLength="120"
               data-max-chars="120"
             />
           </div>
-          <div class="form-control">
-            <label class="label">
+          <div className="form-control">
+            <label className="label">
               <span className="label-text text-lg    ">Ratting:</span>
             </label>
             <input
@@ -78,7 +78,7 @@ const AddReviwe = () => {
               // min={0}
               // max={5}
               placeholder="Ratting"
-              class="input input-bordered"
+              className="input input-bordered"
             />
           </div>
         </div>

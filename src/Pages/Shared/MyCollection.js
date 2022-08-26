@@ -9,29 +9,30 @@ const MyCollection = () => {
       return <Loading></Loading>
     }
     return (
-        <div>
-          <h1 className="text-3xl font-bold text-center p-4">My Collection </h1>
-    
-          <div className="overflow-x-auto">
-            <table className="table table-zebra w-full">
-              <thead>
-                <tr>
-                  <th className="text-xl">No</th>
-                  <th className="text-xl">Product Name</th>
-                  <th className="text-xl">Email</th>
-                  <th className="text-xl">Pay</th>
-                  <th className="text-xl">Cancel Order</th>
-                </tr>
-              </thead>
-              <tbody>
-                {myOrder.map((order, index) => (
-                  <Product order={order} index={index}></Product>
-                ))}
-              </tbody>
-            </table>
-          </div>
+      <div className="pt-4 pb-14">
+        <h1 className="text-3xl text-center font-bold text-violet-800  mt-2 mb-10  uppercase">
+          My Collection
+        </h1>
+
+        <div className="overflow-x-auto">
+          <table className="table table-zebra w-full">
+            <thead>
+              <tr className="text-center">
+                <th className="text-lg text-violet-800">Serial</th>
+                <th className="text-lg text-violet-800">Course Name</th>
+                <th className="text-lg text-violet-800">Pay</th>
+                <th className="text-lg text-violet-800">Cancel</th>
+              </tr>
+            </thead>
+            <tbody>
+              {myOrder.map((order, index) => (
+                <Product order={order} index={index}></Product>
+              ))}
+            </tbody>
+          </table>
         </div>
-      );
+      </div>
+    );
 };
 
 export default MyCollection;
