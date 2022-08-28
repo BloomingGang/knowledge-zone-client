@@ -9,7 +9,7 @@ const AddReviwe = () => {
   const handleForm = (e) => {
     e.preventDefault();
     const name = e.target.name.value;
-    const image = e.target.image.value;
+    const image = user?.photoURL;
     const comment = e.target.comment.value;
     const ratting = e.target.ratting.value;
     if (ratting < 0 || ratting > 5) {
@@ -35,68 +35,60 @@ const AddReviwe = () => {
     <div className="p-12 bg-violet-200">
       <form
         onSubmit={handleForm}
-        className="bg-violet-300 rounded-xl md:w-1/2 mx-auto pb-8 font-serif"
+        className="bg-violet-300 rounded-xl md:w-1/2 mx-auto pb-8  "
       >
         <h1 className="text-center p-8 text-3xl font-bold  text-violet-800 ">
           Put Your Review Here
         </h1>
-        <div class="card-body">
-          <div class="form-control">
-            <label class="label">
-              <span className="label-text text-lg font-sans">Name:</span>
+        <div className="card-body">
+          <div className="form-control">
+            <label className="label">
+              <span className="label-text text-lg    ">Name:</span>
             </label>
             <input
               type="text"
               placeholder="Name"
               name="name"
-              class="input input-bordered"
+              className="input input-bordered"
               value={user?.displayName}
               disabled
             />
           </div>
-          <div class="form-control">
-            <label class="label">
-              <span className="label-text text-lg font-sans">Image:</span>
-            </label>
-            <input
-              type="text"
-              placeholder="Image"
-              name="image"
-              class="input input-bordered"
-              value={user?.photoURL}
-              disabled
-            />
-          </div>
-          <div class="form-control">
-            <label class="label">
-              <span className="label-text text-lg font-sans">Comment:</span>
+
+          <div className="form-control">
+            <label className="label">
+              <span className="label-text text-lg    ">Comment:</span>
             </label>
             <input
               type="text"
               name="comment"
               placeholder="Comment"
-              class="input input-bordered count-chars"
-              maxLength="200"
-              data-max-chars="200"
+              className="input input-bordered count-chars"
+              maxLength="120"
+              data-max-chars="120"
             />
           </div>
-          <div class="form-control">
-            <label class="label">
-              <span className="label-text text-lg font-sans">Ratting:</span>
+          <div className="form-control">
+            <label className="label">
+              <span className="label-text text-lg    ">Ratting:</span>
             </label>
             <input
               type="number"
               name="ratting"
-              min={0}
-              max={5}
+              // min={0}
+              // max={5}
               placeholder="Ratting"
-              class="input input-bordered"
+              className="input input-bordered"
             />
           </div>
         </div>
-        {rattingError && <p className="text-red-500">{rattingError}</p>}
+        {rattingError && (
+          <p className="text-red-500 text-center pb-3 font-semibold">
+            {rattingError}
+          </p>
+        )}
         <div className="flex justify-center">
-          <button className="btn text-white hover:text-black bg-indigo-800 hover:bg-indigo-500 border-0">
+          <button className="btn text-white hover:text-black bg-violet-800 hover:bg-violet-500 border-0">
             submit review
           </button>
         </div>

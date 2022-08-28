@@ -3,21 +3,21 @@ import useMyOrder from "../../../hooks/useMyOrder";
 import Product from "./Product";
 
 const MyOrder = () => {
-  const [myOrder, setMyOrder] = useMyOrder([]);
+  const [myOrder] = useMyOrder(["order"]);
 
   return (
-    <div>
-      <h1 className="text-3xl font-bold text-center p-4">My Order </h1>
-
+    <div className="pt-4 pb-14">
+      <h1 className="text-3xl text-center font-bold text-violet-800  mt-2 mb-10  uppercase">
+        My Order
+      </h1>
       <div className="overflow-x-auto">
         <table className="table table-zebra w-full">
           <thead>
-            <tr>
-              <th className="text-xl">No</th>
-              <th className="text-xl">Product Name</th>
-              <th className="text-xl">Email</th>
-              <th className="text-xl">Pay</th>
-              <th className="text-xl">Cancel Order</th>
+            <tr className="text-center">
+              <th className="text-lg text-violet-800">Serial</th>
+              <th className="text-lg text-violet-800">Course Name</th>
+              <th className="text-lg text-violet-800">Pay</th>
+              <th className="text-lg text-red-500">Cancel</th>
             </tr>
           </thead>
           <tbody>

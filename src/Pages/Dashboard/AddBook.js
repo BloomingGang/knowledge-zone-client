@@ -1,6 +1,6 @@
 import axios from "axios";
 import React from "react";
-import { toast } from "react-toastify";
+import toast from "react-hot-toast";
 
 const AddBook = () => {
   const handleAddBook = (event) => {
@@ -67,7 +67,7 @@ const AddBook = () => {
   return (
     <div className="p-12 bg-violet-200">
       <form
-        className="bg-violet-300 rounded-xl md:w-2/3 mx-auto font-serif px-8 pb-12"
+        className="bg-violet-300 rounded-xl md:w-2/3 mx-auto   px-8 pb-12"
         onSubmit={handleAddBook}
       >
         <h1 className="text-center p-8 text-3xl font-bold pb-16 text-violet-900 ">
@@ -75,156 +75,140 @@ const AddBook = () => {
         </h1>
         <div className="grid md:grid-cols-2 gap-x-10 gap-y-0">
           <div className="mb-6">
-            <div class="form-control w-full max-w-xs">
-              <label class="label">
+            <div className="form-control w-full max-w-xs">
+              <label className="label">
                 {" "}
-                <span className="label-text text-lg font-sans">Book Name:</span>
+                <span className="label-text text-lg    ">Book Name:</span>
               </label>
               <input
                 required
                 type="text"
                 name="bookName"
                 placeholder="Book Name"
-                class="input input-bordered w-full max-w-xs"
+                className="input input-bordered w-full max-w-xs"
               />
             </div>
           </div>
 
           <div className="mb-6">
-            <div class="form-control w-full max-w-xs">
-              <label class="label">
+            <div className="form-control w-full max-w-xs">
+              <label className="label">
                 {" "}
-                <span className="label-text text-lg font-sans">
-                  Writer Name 1:
-                </span>
+                <span className="label-text text-lg    ">Writer Name 1:</span>
               </label>
               <input
                 required
                 type="text"
                 name="writerName1"
                 placeholder="Writer Name 1"
-                class="input input-bordered w-full max-w-xs"
+                className="input input-bordered w-full max-w-xs"
               />
             </div>
           </div>
           <div className="mb-6">
-            <div class="form-control w-full max-w-xs">
-              <label class="label">
+            <div className="form-control w-full max-w-xs">
+              <label className="label">
                 {" "}
-                <span className="label-text text-lg font-sans">
-                  Writer Name 2:
-                </span>
+                <span className="label-text text-lg    ">Writer Name 2:</span>
               </label>
               <input
                 type="text"
                 name="writerName2"
                 placeholder="Writer Name 2"
-                class="input input-bordered w-full max-w-xs"
+                className="input input-bordered w-full max-w-xs"
               />
             </div>
           </div>
           <div className="mb-6">
-            <div class="form-control w-full max-w-xs">
-              <label class="label">
+            <div className="form-control w-full max-w-xs">
+              <label className="label">
                 {" "}
-                <span className="label-text text-lg font-sans">
-                  Writer Name 3:
-                </span>
+                <span className="label-text text-lg    ">Writer Name 3:</span>
               </label>
               <input
                 type="text"
                 name="writerName3"
                 placeholder="Writer Name 3"
-                class="input input-bordered w-full max-w-xs"
+                className="input input-bordered w-full max-w-xs"
               />
             </div>
           </div>
           <div className="mb-6">
-            <div class="form-control w-full max-w-xs">
-              <label class="label">
+            <div className="form-control w-full max-w-xs">
+              <label className="label">
                 {" "}
-                <span className="label-text text-lg font-sans">
-                  Writer Name 4:
-                </span>
+                <span className="label-text text-lg    ">Writer Name 4:</span>
               </label>
               <input
                 type="text"
                 name="writerName4"
                 placeholder="Writer Name 4"
-                class="input input-bordered w-full max-w-xs"
+                className="input input-bordered w-full max-w-xs"
               />
             </div>
           </div>
           <div className="mb-6">
-            <div class="form-control w-full max-w-xs">
-              <label class="label">
+            <div className="form-control w-full max-w-xs">
+              <label className="label">
                 {" "}
-                <span className="label-text text-lg font-sans">
-                  Writer img 1:
-                </span>
+                <span className="label-text text-lg    ">Writer img 1:</span>
               </label>
               <input
                 required
                 type="text"
                 name="writerImg1"
                 placeholder="Writer img 1"
-                class="input input-bordered w-full max-w-xs"
+                className="input input-bordered w-full max-w-xs"
               />
             </div>
           </div>
           <div className="mb-6">
-            <div class="form-control w-full max-w-xs">
-              <label class="label">
+            <div className="form-control w-full max-w-xs">
+              <label className="label">
                 {" "}
-                <span className="label-text text-lg font-sans">
-                  Writer img 2:
-                </span>
+                <span className="label-text text-lg    ">Writer img 2:</span>
               </label>
               <input
                 type="text"
                 name="writerImg2"
                 placeholder="Writer img 2"
-                class="input input-bordered w-full max-w-xs"
+                className="input input-bordered w-full max-w-xs"
               />
             </div>
           </div>
           <div className="mb-6">
-            <div class="form-control w-full max-w-xs">
-              <label class="label">
+            <div className="form-control w-full max-w-xs">
+              <label className="label">
                 {" "}
-                <span className="label-text text-lg font-sans">
-                  Writer img 3:
-                </span>
+                <span className="label-text text-lg    ">Writer img 3:</span>
               </label>
               <input
                 type="text"
                 name="writerImg3"
                 placeholder="Writer img 3"
-                class="input input-bordered w-full max-w-xs"
+                className="input input-bordered w-full max-w-xs"
               />
             </div>
           </div>
           <div className="mb-6">
-            <div class="form-control w-full max-w-xs">
-              <label class="label">
+            <div className="form-control w-full max-w-xs">
+              <label className="label">
                 {" "}
-                <span className="label-text text-lg font-sans">
-                  Writer img 4:
-                </span>
+                <span className="label-text text-lg    ">Writer img 4:</span>
               </label>
               <input
                 type="text"
                 name="writerImg4"
                 placeholder="Writer img 4"
-                class="input input-bordered w-full max-w-xs"
+                className="input input-bordered w-full max-w-xs"
               />
             </div>
           </div>
           <div className="mb-6">
-            <div class="form-control w-full max-w-xs">
-              <label class="label">
+            <div className="form-control w-full max-w-xs">
+              <label className="label">
                 {" "}
-                <span className="label-text text-lg font-sans">
+                <span className="label-text text-lg    ">
                   Writer Education 1:
                 </span>
               </label>
@@ -233,15 +217,15 @@ const AddBook = () => {
                 type="text"
                 name="writerEducation1"
                 placeholder="Writer img 1"
-                class="input input-bordered w-full max-w-xs"
+                className="input input-bordered w-full max-w-xs"
               />
             </div>
           </div>
           <div className="mb-6">
-            <div class="form-control w-full max-w-xs">
-              <label class="label">
+            <div className="form-control w-full max-w-xs">
+              <label className="label">
                 {" "}
-                <span className="label-text text-lg font-sans">
+                <span className="label-text text-lg    ">
                   Writer Education 2:
                 </span>
               </label>
@@ -249,15 +233,15 @@ const AddBook = () => {
                 type="text"
                 name="writerEducation2"
                 placeholder="Writer img 2"
-                class="input input-bordered w-full max-w-xs"
+                className="input input-bordered w-full max-w-xs"
               />
             </div>
           </div>
           <div className="mb-6">
-            <div class="form-control w-full max-w-xs">
-              <label class="label">
+            <div className="form-control w-full max-w-xs">
+              <label className="label">
                 {" "}
-                <span className="label-text text-lg font-sans">
+                <span className="label-text text-lg    ">
                   Writer Education 3:
                 </span>
               </label>
@@ -265,15 +249,15 @@ const AddBook = () => {
                 type="text"
                 name="writerEducation3"
                 placeholder="Writer img 3"
-                class="input input-bordered w-full max-w-xs"
+                className="input input-bordered w-full max-w-xs"
               />
             </div>
           </div>
           <div className="mb-6">
-            <div class="form-control w-full max-w-xs">
-              <label class="label">
+            <div className="form-control w-full max-w-xs">
+              <label className="label">
                 {" "}
-                <span className="label-text text-lg font-sans">
+                <span className="label-text text-lg    ">
                   Writer Education 4:
                 </span>
               </label>
@@ -281,50 +265,46 @@ const AddBook = () => {
                 type="text"
                 name="writerEducation4"
                 placeholder="Writer img 4"
-                class="input input-bordered w-full max-w-xs"
+                className="input input-bordered w-full max-w-xs"
               />
             </div>
           </div>
 
           <div className="mb-6">
-            <div class="form-control w-full max-w-xs">
-              <label class="label">
+            <div className="form-control w-full max-w-xs">
+              <label className="label">
                 {" "}
-                <span className="label-text text-lg font-sans">About:</span>
+                <span className="label-text text-lg    ">About:</span>
               </label>
               <textarea
                 required
                 type="text"
                 name="about"
                 placeholder="About Book"
-                class="input input-bordered w-full max-w-xs"
+                className="input input-bordered w-full max-w-xs"
               />
             </div>
           </div>
           <div className="mb-6">
-            <div class="form-control w-full max-w-xs">
-              <label class="label">
+            <div className="form-control w-full max-w-xs">
+              <label className="label">
                 {" "}
-                <span className="label-text text-lg font-sans">
-                  Page Number:
-                </span>
+                <span className="label-text text-lg    ">Page Number:</span>
               </label>
               <input
                 required
                 type="number"
                 name="pageNumber"
                 placeholder="Course Description"
-                class="input input-bordered w-full max-w-xs"
+                className="input input-bordered w-full max-w-xs"
               />
             </div>
           </div>
           <div className="mb-6">
-            <div class="form-control w-full max-w-xs">
-              <label class="label">
+            <div className="form-control w-full max-w-xs">
+              <label className="label">
                 {" "}
-                <span className="label-text text-lg font-sans">
-                  Interactive:
-                </span>
+                <span className="label-text text-lg    ">Interactive:</span>
               </label>
 
               <select
@@ -332,7 +312,7 @@ const AddBook = () => {
                 type="text"
                 name="interactive"
                 placeholder="Interactive"
-                class="input input-bordered w-full max-w-xs"
+                className="input input-bordered w-full max-w-xs"
               >
                 <option>YES</option>
                 <option>NO</option>
@@ -340,40 +320,43 @@ const AddBook = () => {
             </div>
           </div>
           <div className="mb-6">
-            <div class="form-control w-full max-w-xs">
-              <label class="label">
+            <div className="form-control w-full max-w-xs">
+              <label className="label">
                 {" "}
-                <span className="label-text text-lg font-sans">Formate:</span>
+                <span className="label-text text-lg    ">Formate:</span>
               </label>
-              <textarea
+              <select
                 required
                 type="text"
                 name="formate"
                 placeholder="Formate"
-                class="input input-bordered w-full max-w-xs"
-              />
+                className="input input-bordered w-full max-w-xs"
+              >
+                <option>PDF</option>
+                <option>MP3</option>
+              </select>
             </div>
           </div>
           <div className="mb-6">
-            <div class="form-control w-full max-w-xs">
-              <label class="label">
+            <div className="form-control w-full max-w-xs">
+              <label className="label">
                 {" "}
-                <span className="label-text text-lg font-sans">File Size:</span>
+                <span className="label-text text-lg    ">File Size:</span>
               </label>
               <input
                 required
                 type="text"
                 name="fileSize"
                 placeholder="File size"
-                class="input input-bordered w-full max-w-xs"
+                className="input input-bordered w-full max-w-xs"
               />
             </div>
           </div>
           <div className="mb-6">
-            <div class="form-control w-full max-w-xs">
-              <label class="label">
+            <div className="form-control w-full max-w-xs">
+              <label className="label">
                 {" "}
-                <span className="label-text text-lg font-sans">Price:</span>
+                <span className="label-text text-lg    ">Price:</span>
               </label>
               <input
                 required
@@ -381,22 +364,22 @@ const AddBook = () => {
                 name="price"
                 min={1}
                 placeholder="Price"
-                class="input input-bordered w-full max-w-xs"
+                className="input input-bordered w-full max-w-xs"
               />
             </div>
           </div>
           <div className="mb-6">
-            <div class="form-control w-full max-w-xs">
-              <label class="label">
+            <div className="form-control w-full max-w-xs">
+              <label className="label">
                 {" "}
-                <span className="label-text text-lg font-sans">Book Image:</span>
+                <span className="label-text text-lg">Book Image:</span>
               </label>
               <input
                 required
                 type="text"
                 name="bookImg"
                 placeholder="Book Image link"
-                class="input input-bordered w-full max-w-xs"
+                className="input input-bordered w-full max-w-xs"
               />
             </div>
           </div>

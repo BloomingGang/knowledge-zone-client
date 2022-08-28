@@ -1,6 +1,6 @@
 import axios from "axios";
 import React from "react";
-import { toast } from "react-toastify";
+import toast from "react-hot-toast";
 
 const AddCourse = () => {
   const selectCourse = [
@@ -14,9 +14,7 @@ const AddCourse = () => {
     "classEight",
     "classNine",
     "classTen",
-    "classEleven",
-    "classTwelve",
-    "liveCourse",
+    "classXI-XII",
     "discountCourse",
     "entertainCourse",
     "freeCourse",
@@ -93,12 +91,11 @@ const AddCourse = () => {
       toast.success(`Add a Course for ${classCourse}`);
       event.target.reset();
     });
-    console.log(addCourse);
   };
   return (
     <div className="p-12 bg-violet-200">
       <form
-        className="bg-violet-300 rounded-xl md:w-2/3 mx-auto font-serif px-8 pb-12"
+        className="bg-violet-300 rounded-xl md:w-2/3 mx-auto   px-8 pb-12"
         onSubmit={handleAddCourse}
       >
         <h1 className="text-center p-8 text-3xl font-bold pb-16 text-violet-900 ">
@@ -106,16 +103,14 @@ const AddCourse = () => {
         </h1>
         <div className="grid md:grid-cols-2 gap-x-10 gap-y-0">
           <div className="mb-6">
-            <label class="label">
+            <label className="label">
               {" "}
-              <span className="label-text text-lg font-sans">
-                Courses Type:
-              </span>
+              <span className="label-text text-lg    ">Courses Type:</span>
             </label>
             <select
               name="course"
               required
-              class="select select-bordered w-full max-w-xs"
+              className="select select-bordered w-full max-w-xs"
             >
               <option disabled selected>
                 Select Course Name:
@@ -127,64 +122,58 @@ const AddCourse = () => {
           </div>
 
           <div className="mb-6">
-            <div class="form-control w-full max-w-xs">
-              <label class="label">
+            <div className="form-control w-full max-w-xs">
+              <label className="label">
                 {" "}
-                <span className="label-text text-lg font-sans">
-                  Course Title:
-                </span>
+                <span className="label-text text-lg    ">Course Title:</span>
               </label>
               <input
                 required
                 type="text"
                 name="title"
                 placeholder="Course Title"
-                class="input input-bordered w-full max-w-xs"
+                className="input input-bordered w-full max-w-xs"
               />
             </div>
           </div>
 
           <div className="mb-6">
-            <div class="form-control w-full max-w-xs">
-              <label class="label">
+            <div className="form-control w-full max-w-xs">
+              <label className="label">
                 {" "}
-                <span className="label-text text-lg font-sans">
-                  Course Image:
-                </span>
+                <span className="label-text text-lg    ">Course Image:</span>
               </label>
               <input
                 required
                 type="text"
                 name="image"
                 placeholder="Course Image url"
-                class="input input-bordered w-full max-w-xs"
+                className="input input-bordered w-full max-w-xs"
               />
             </div>
           </div>
 
           <div className="mb-6">
-            <div class="form-control w-full max-w-xs">
-              <label class="label">
+            <div className="form-control w-full max-w-xs">
+              <label className="label">
                 {" "}
-                <span className="label-text text-lg font-sans">
-                  Course Price:
-                </span>
+                <span className="label-text text-lg    ">Course Price:</span>
               </label>
               <input
                 required
                 type="number"
                 name="price"
                 placeholder="Course Price"
-                class="input input-bordered w-full max-w-xs"
+                className="input input-bordered w-full max-w-xs"
               />
             </div>
           </div>
 
           <div className="mb-6">
-            <div class="form-control w-full max-w-xs">
-              <label class="label">
+            <div className="form-control w-full max-w-xs">
+              <label className="label">
                 {" "}
-                <span className="label-text text-lg font-sans">
+                <span className="label-text text-lg    ">
                   Course Description:
                 </span>
               </label>
@@ -193,34 +182,32 @@ const AddCourse = () => {
                 type="text"
                 name="sortDesc"
                 placeholder="Course Description"
-                class="input input-bordered w-full max-w-xs"
+                className="input input-bordered w-full max-w-xs"
               />
             </div>
           </div>
 
           <div className="mb-6">
-            <div class="form-control w-full max-w-xs">
-              <label class="label">
+            <div className="form-control w-full max-w-xs">
+              <label className="label">
                 {" "}
-                <span className="label-text text-lg font-sans">
-                  Instructor Name:
-                </span>
+                <span className="label-text text-lg    ">Instructor Name:</span>
               </label>
               <input
                 required
                 type="text"
                 name="instructorName"
                 placeholder="Instructor Name"
-                class="input input-bordered w-full max-w-xs"
+                className="input input-bordered w-full max-w-xs"
               />
             </div>
           </div>
 
           <div className="mb-6">
-            <div class="form-control w-full max-w-xs">
-              <label class="label">
+            <div className="form-control w-full max-w-xs">
+              <label className="label">
                 {" "}
-                <span className="label-text text-lg font-sans">
+                <span className="label-text text-lg    ">
                   Instructor Education:
                 </span>
               </label>
@@ -229,34 +216,32 @@ const AddCourse = () => {
                 type="text"
                 name="education"
                 placeholder="Instructor Education"
-                class="input input-bordered w-full max-w-xs"
+                className="input input-bordered w-full max-w-xs"
               />
             </div>
           </div>
 
           <div className="mb-6">
-            <div class="form-control w-full max-w-xs">
-              <label class="label">
+            <div className="form-control w-full max-w-xs">
+              <label className="label">
                 {" "}
-                <span className="label-text text-lg font-sans">
-                  About Course:
-                </span>
+                <span className="label-text text-lg    ">About Course:</span>
               </label>
               <textarea
                 required
                 type="text"
                 name="about"
                 placeholder="About Course"
-                class="input input-bordered w-full max-w-xs"
+                className="input input-bordered w-full max-w-xs"
               />
             </div>
           </div>
 
           <div className="mb-6">
-            <div class="form-control w-full max-w-xs">
-              <label class="label">
+            <div className="form-control w-full max-w-xs">
+              <label className="label">
                 {" "}
-                <span className="label-text text-lg font-sans">
+                <span className="label-text text-lg    ">
                   Total video duration:
                 </span>
               </label>
@@ -266,18 +251,16 @@ const AddCourse = () => {
                 name="hour"
                 min={1}
                 placeholder="Total video duration"
-                class="input input-bordered w-full max-w-xs"
+                className="input input-bordered w-full max-w-xs"
               />
             </div>
           </div>
 
           <div className="mb-6">
-            <div class="form-control w-full max-w-xs">
-              <label class="label">
+            <div className="form-control w-full max-w-xs">
+              <label className="label">
                 {" "}
-                <span className="label-text text-lg font-sans">
-                  Total Videos:
-                </span>
+                <span className="label-text text-lg    ">Total Videos:</span>
               </label>
               <input
                 required
@@ -285,18 +268,16 @@ const AddCourse = () => {
                 name="videos"
                 min={1}
                 placeholder="Total Videos"
-                class="input input-bordered w-full max-w-xs"
+                className="input input-bordered w-full max-w-xs"
               />
             </div>
           </div>
 
           <div className="mb-6">
-            <div class="form-control w-full max-w-xs">
-              <label class="label">
+            <div className="form-control w-full max-w-xs">
+              <label className="label">
                 {" "}
-                <span className="label-text text-lg font-sans">
-                  Total Quiz:
-                </span>
+                <span className="label-text text-lg    ">Total Quiz:</span>
               </label>
               <input
                 required
@@ -304,18 +285,16 @@ const AddCourse = () => {
                 name="quiz"
                 min={1}
                 placeholder="Total Quiz"
-                class="input input-bordered w-full max-w-xs"
+                className="input input-bordered w-full max-w-xs"
               />
             </div>
           </div>
 
           <div className="mb-6">
-            <div class="form-control w-full max-w-xs pb-8">
-              <label class="label">
+            <div className="form-control w-full max-w-xs pb-8">
+              <label className="label">
                 {" "}
-                <span className="label-text text-lg font-sans">
-                  Total Notes:
-                </span>
+                <span className="label-text text-lg    ">Total Notes:</span>
               </label>
               <input
                 required
@@ -323,7 +302,7 @@ const AddCourse = () => {
                 name="note"
                 min={1}
                 placeholder="Total Notes"
-                class="input input-bordered w-full max-w-xs"
+                className="input input-bordered w-full max-w-xs"
               />
             </div>
           </div>

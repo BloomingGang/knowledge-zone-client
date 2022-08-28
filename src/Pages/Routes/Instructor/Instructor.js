@@ -1,16 +1,16 @@
 import React from "react";
-import {  Outlet } from "react-router-dom";
+import { Outlet } from "react-router-dom";
 import LiveChat from "../../ContactUs/LiveChat";
 import CustomLink from "../../Shared/CustomLink";
 
 const Instructor = () => {
   return (
     <div>
-      <div className="m-4">
+      <div>
         <label tabIndex="0" htmlFor="dashboard-sidebar" className=" lg:hidden">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className="h-6 w-6"
+            className="h-7 w-7 m-2 text-violet-900"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
@@ -24,25 +24,29 @@ const Instructor = () => {
           </svg>
         </label>
       </div>
-      <div className="drawer drawer-mobile mt-8">
+      <div className="drawer drawer-mobile">
         <input
           id="dashboard-sidebar"
           type="checkbox"
           className="drawer-toggle"
         />
         <div className="drawer-content">
-          <h2 className="text-5xl text-center font-bold text-primary mb-12 font-serif">
+          <h2
+            data-aos-delay="200"
+            data-aos="zoom-in"
+            data-aos-duration="1000"
+            className="text-4xl text-center font-bold text-violet-800 mb-8 mt-6 "
+          >
             Our Instructors
           </h2>
           <Outlet></Outlet>
         </div>
         <div className="drawer-side">
           <label htmlFor="dashboard-sidebar" className="drawer-overlay"></label>
-          <ul className="menu p-4 overflow-y-auto w-52 bg-base-100 text-base-content border-r-2 ">
-            {/* <!-- Sidebar content here --> */}
+          <ul className="menu p-4 overflow-y-auto w-52 text-base-content border-r-2 bg-violet-300">
             <li>
               <CustomLink
-                className="w-full py-2 px-2 border-2 font-bold uppercase text-center rounded-lg"
+                className="w-full p-2 border-0 font-bold uppercase text-center rounded-lg"
                 to="/instructor"
               >
                 Bengali
@@ -50,7 +54,7 @@ const Instructor = () => {
             </li>
             <li>
               <CustomLink
-                className="w-full py-2 px-2 border-2 font-bold uppercase text-center rounded-lg"
+                className="w-full p-2 border-0 font-bold uppercase text-center rounded-lg"
                 to="/instructor/english"
               >
                 English
@@ -58,7 +62,7 @@ const Instructor = () => {
             </li>
             <li>
               <CustomLink
-                className="w-full py-2 px-2 border-2 font-bold uppercase text-center rounded-lg"
+                className="w-full p-2 border-0 font-bold uppercase text-center rounded-lg"
                 to="/instructor/mathematics"
               >
                 Mathematics
@@ -66,7 +70,7 @@ const Instructor = () => {
             </li>
             <li>
               <CustomLink
-                className="w-full py-2 px-2 border-2 font-bold uppercase text-center rounded-lg"
+                className="w-full p-2 border-0 font-bold uppercase text-center rounded-lg"
                 to="/instructor/chemistry"
               >
                 Chemistry
@@ -74,7 +78,7 @@ const Instructor = () => {
             </li>
             <li>
               <CustomLink
-                className="w-full py-2 px-2 border-2 font-bold uppercase text-center rounded-lg"
+                className="w-full p-2 border-0 font-bold uppercase text-center rounded-lg"
                 to="/instructor/physics"
               >
                 Physics
@@ -82,7 +86,7 @@ const Instructor = () => {
             </li>
             <li>
               <CustomLink
-                className="w-full py-2 px-2 border-2 font-bold uppercase text-center rounded-lg"
+                className="w-full p-2 border-0 font-bold uppercase text-center rounded-lg"
                 to="/instructor/biology"
               >
                 Biology
@@ -90,7 +94,7 @@ const Instructor = () => {
             </li>
             <li>
               <CustomLink
-                className="w-full py-2 px-2 border-2 font-bold uppercase text-center rounded-lg"
+                className="w-full p-2 border-0 font-bold uppercase text-center rounded-lg"
                 to="/instructor/finance"
               >
                 Finance
@@ -98,7 +102,7 @@ const Instructor = () => {
             </li>
             <li>
               <CustomLink
-                className="w-full py-2 px-2 border-2 font-bold uppercase text-center rounded-lg"
+                className="w-full p-2 border-0 font-bold uppercase text-center rounded-lg"
                 to="/instructor/religious"
               >
                 Religious
@@ -106,7 +110,7 @@ const Instructor = () => {
             </li>
             <li>
               <CustomLink
-                className="w-full py-2 px-2 border-2 font-bold uppercase text-center rounded-lg"
+                className="w-full p-2 border-0 font-bold uppercase text-center rounded-lg"
                 to="/instructor/programming"
               >
                 Programming

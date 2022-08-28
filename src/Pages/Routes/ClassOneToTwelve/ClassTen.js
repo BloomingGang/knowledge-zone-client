@@ -6,7 +6,7 @@ const ClassTen = () => {
   const [classTen, setClassTen] = useState([]);
   const [loading, setLoading] = useState(true);
   useEffect(() => {
-    fetch("https://immense-meadow-70411.herokuapp.com/courses/classTen")
+    fetch("http://localhost:5000/courses/classTen")
       .then((res) => res.json())
       .then((data) => {
         setClassTen(data);
@@ -14,7 +14,7 @@ const ClassTen = () => {
       });
   }, []);
   if (loading) {
-    return <Loading></Loading>;
+    return <Loading />;
   }
   return (
     <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6 p-6 ">

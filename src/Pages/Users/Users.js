@@ -1,11 +1,12 @@
 import React, { useEffect, useState } from "react";
+// import SearchUser from "./SearchUser";
 import UserRow from "./UserRow";
 
 const Users = () => {
   const [users, setUsers] = useState([]);
 
   useEffect(() => {
-    fetch("https://immense-meadow-70411.herokuapp.com/user", {
+    fetch("http://localhost:5000/user", {
       method: "GET",
       headers: {
         authorization: `Bearer ${localStorage.getItem("accessToken")}`,
@@ -15,36 +16,20 @@ const Users = () => {
       .then((data) => setUsers(data));
   }, [users]);
 
-  // const {
-  //   isLoading,
-  //   error,
-  //   data: users,
-  //   refetch,
-  // } = useQuery("users", () =>
-  //   fetch("https://frozen-sierra-37797.herokuapp.com/user", {
-  //     method: "GET",
-  //     headers: {
-  //       "content-type": "application/json",
-  //       authorization: `Bearer ${localStorage.getItem("accessToken")}`,
-  //     },
-  //   }).then((res) => res.json())
-  // );
-
-  // if (isLoading) {
-  //   return <Loading></Loading>;
-  // }
-
   return (
     <div className="pt-4 pb-14">
-      <h1 className="text-3xl font-bold text-center p-4">All Users</h1>
-
+      <h1 className="text-3xl text-center font-bold text-violet-800  mt-2 mb-10 uppercase">
+        All Users
+      </h1>
+      {/* <SearchUser></SearchUser> */}
       <div className="overflow-x-auto">
         <table className="table table-zebra w-full">
           <thead>
-            <tr>
-              <th></th>
-              <th className="text-xl">Email</th>
-              <th className="text-xl">Role</th>
+            <tr className="text-center">
+              <th className="text-lg text-violet-800">Serial</th>
+              <th className="text-lg text-violet-800">Email</th>
+              <th className="text-lg text-violet-800">User Role</th>
+              <th className="text-lg text-red-500">Delete</th>
             </tr>
           </thead>
           <tbody>

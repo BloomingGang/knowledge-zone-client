@@ -36,7 +36,7 @@ const ProfileUpdate = ({ name, email, setShowProfile }) => {
         phone,
       };
 
-      fetch(`https://immense-meadow-70411.herokuapp.com/users/${email}`, {
+      fetch(`http://localhost:5000/users/${email}`, {
         method: "put",
         headers: {
           "content-type": "application/json",
@@ -63,29 +63,27 @@ const ProfileUpdate = ({ name, email, setShowProfile }) => {
 
   return (
     <div>
-      <input type="checkbox" id="profileUpdate" class="modal-toggle" />
-      <div class="modal">
-        <div class="modal-box relative">
+      <input type="checkbox" id="profileUpdate" className="modal-toggle" />
+      <div className="modal">
+        <div className="modal-box relative p-0 rounded-2xl">
           <label
-            for="profileUpdate"
-            class="btn btn-sm btn-circle absolute right-2 top-2"
+            htmlFor="profileUpdate"
+            className="btn btn-sm btn-circle absolute right-3 top-3 bg-violet-600 hover:bg-violet-900"
           >
             ✕
           </label>
           {updating ? (
             <Loading />
           ) : (
-            <div className="bg-violet-200 rounded-2xl">
-              <div className="card-body">
-                <h1 className="text-center text-3xl font-bold pb-10 text-violet-900">
+            <div className="bg-violet-200 rounded-lg">
+              <div className="px-4 md:px-10 py-5">
+                <h1 className="text-center text-2xl font-bold pb-4 text-violet-800 uppercase">
                   Update Your Profile
                 </h1>
                 <form onSubmit={handleUpdateProfile}>
-                  <div className="form-control">
+                  <div className="form-control hidden">
                     <label className="label">
-                      <span className="label-text text-lg font-sans">
-                        Name:
-                      </span>
+                      <span className="label-text text-lg">Name:</span>
                     </label>
                     <input
                       type="text"
@@ -96,11 +94,9 @@ const ProfileUpdate = ({ name, email, setShowProfile }) => {
                       className="input input-bordered"
                     />
                   </div>
-                  <div className="form-control">
+                  <div className="form-control hidden">
                     <label className="label">
-                      <span className="label-text text-lg font-sans">
-                        Email:
-                      </span>
+                      <span className="label-text text-lg">Email:</span>
                     </label>
                     <input
                       type="email"
@@ -113,46 +109,40 @@ const ProfileUpdate = ({ name, email, setShowProfile }) => {
                   </div>
                   <div className="form-control">
                     <label className="label">
-                      <span className="label-text text-lg font-sans">
-                        Education:
-                      </span>
+                      <span className="label-text text-lg">Education:</span>
                     </label>
                     <input
                       type="text"
                       name="education"
-                      className="input input-bordered"
                       required
+                      className="input input-bordered"
                     />
                   </div>
                   <div className="form-control">
                     <label className="label">
-                      <span className="label-text text-lg font-sans">
-                        Location:
-                      </span>
+                      <span className="label-text text-lg">Location:</span>
                     </label>
                     <input
                       type="text"
-                      required
                       name="location"
+                      required
                       className="input input-bordered"
                     />
                   </div>
                   <div className="form-control">
                     <label className="label">
-                      <span className="label-text text-lg font-sans">
-                        Phone:
-                      </span>
+                      <span className="label-text text-lg">Mobile No:</span>
                     </label>
                     <input
                       type="text"
-                      required
                       name="phone"
+                      required
                       className="input input-bordered"
                     />
                   </div>
                   <div className="form-control">
                     <label className="label pt-3">
-                      <span className="label-text text-lg font-sans">
+                      <span className="label-text text-lg">
                         Upload Your Image:
                       </span>
                     </label>
@@ -160,14 +150,14 @@ const ProfileUpdate = ({ name, email, setShowProfile }) => {
                       type="file"
                       name="profileImg"
                       id="icon"
-                      accept="image/png, image/jpeg, image/jpg"
                       required
+                      accept="image/png, image/jpeg, image/jpg"
                       className="pl-1 border-0"
                     />
                   </div>
-                  <div className="form-control mt-10">
-                    <button className="border-2 shadow-lg hover:bg-indigo-500 hover:text-black p-2 rounded-lg bg-indigo-800 text-white font-bold transition duration-300">
-                      UPDATE PROFILE
+                  <div className="form-control mt-6">
+                    <button className="btn w-2/6 mx-auto border-violet-800 rounded-md bg-violet-800 text-white font-bold hover:bg-transparent hover:text-violet-900 hover:border-violet-900">
+                      UPDATE
                     </button>
                   </div>
                 </form>

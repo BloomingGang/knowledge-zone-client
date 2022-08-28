@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const ProgramCart = ({ info }) => {
   const { icon, title, programs, description, program_img } = info;
   return (
-    <div className="w-full hover:shadow-xl border-2 border-gray-100 bg-blue-200 rounded-xl">
+    <div className="w-full bg-violet-200 rounded-xl">
       <div className="p-5 rounded-xl">
         <div>
           <img src={icon} alt="" />
@@ -18,7 +18,7 @@ const ProgramCart = ({ info }) => {
               {programs?.map((program) => (
                 <Link
                   to="#"
-                  className="text-sm m-2 bg-indigo-800 text-white rounded-xl p-2 outline-none whitespace-pre-wrap"
+                  className="text-sm m-2 bg-violet-800 text-white rounded-xl p-2 outline-none whitespace-pre-wrap"
                 >
                   {" "}
                   {program}
@@ -29,7 +29,7 @@ const ProgramCart = ({ info }) => {
               <p className="text-base">{description}</p>
             </div>
             <div>
-              <Link to={"/classes"} className="btn btn-primary">
+              <Link to={"/classes"} className="btn bg-violet-800 hover:bg-transparent hover:text-violet-900 hover:border-violet-900">
                 {" "}
                 EXPLORE &gt;{" "}
               </Link>

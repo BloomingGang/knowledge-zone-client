@@ -6,7 +6,7 @@ const FreeCourse = () => {
   const [freeCourses, setFreeCourses] = useState([]);
   const [loading, setLoading] = useState(true);
   useEffect(() => {
-    fetch("https://immense-meadow-70411.herokuapp.com/courses/freeCourse")
+    fetch("http://localhost:5000/courses/freeCourse")
       .then((res) => res.json())
       .then((data) => {
         setFreeCourses(data);
@@ -15,7 +15,7 @@ const FreeCourse = () => {
   }, []);
 
   if (loading) {
-    return <Loading></Loading>;
+    return <Loading />;
   }
 
   return (
