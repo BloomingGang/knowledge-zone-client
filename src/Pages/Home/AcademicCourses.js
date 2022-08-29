@@ -63,7 +63,7 @@ const AcademicCourses = () => {
 
   var settings = {
     dots: true,
-   arrows:false,
+    arrows: false,
     infinite: true,
     slidesToShow: 4,
     slidesToScroll: 4,
