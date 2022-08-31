@@ -80,7 +80,7 @@ const CoursesAutoSlider = () => {
         />
       </div>
 
-      <h1 className="text-white text-center text-3xl my-8">
+      <h1 className="text-white text-center text-4xl font-bold my-8">
         Our Brands & Products
       </h1>
 
