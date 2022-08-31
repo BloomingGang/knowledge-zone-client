@@ -45,11 +45,11 @@ const InstructorCard = ({ instructor, index }) => {
       data-aos-delay="200"
       data-aos="zoom-in"
       data-aos-duration="1000"
-      className="bg-gray-100 transition ease-in-out delay-150 hover:-translate-1 hover:scale-105 duration-300 rounded-lg"
+      className="transition ease-in-out delay-150 hover:-translate-1 hover:scale-105 duration-300 rounded-lg"
     >
       <figure>
         <img
-          // style={{ height: "300px" }}
+          style={{ height: "250px",width:"250px" }}
           src={img}
           alt="instructor"
           className="rounded-full mx-auto"
