@@ -59,7 +59,7 @@ const Reviews = () => {
                 .map((review, index) => (
                   <div key={index} className="p-4 w-full">
                     <div
-                      className="bg-gray-100 p-8 rounded-lg"
+                      className="bg-white drop-shadow-md p-8 rounded-lg"
                       data-aos="zoom-in"
                       data-aos-duration="1000"
                       data-aos-delay="200"

@@ -194,7 +194,7 @@ const AddCourse = () => {
             <div className="form-control w-full max-w-xs">
               <label className="label">
                 {" "}
-                <span className="label-text text-lg    ">Instructor Name:</span>
+                <span className="label-text text-lg">Instructor Name:</span>
               </label>
               <input
                 required
