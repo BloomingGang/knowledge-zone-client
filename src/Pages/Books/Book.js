@@ -1,6 +1,5 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-
 import { PencilAltIcon, TrashIcon } from "@heroicons/react/solid";
 import { useAuthState } from "react-firebase-hooks/auth";
 import useAdmin from "../../hooks/useAdmin";

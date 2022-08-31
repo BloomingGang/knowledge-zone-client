@@ -49,10 +49,10 @@ const InstructorCard = ({ instructor, index }) => {
     >
       <figure>
         <img
-          style={{ height: "300px" }}
+          // style={{ height: "300px" }}
           src={img}
           alt="instructor"
-          className="rounded-t-lg w-full"
+          className="rounded-full mx-auto"
         />
       </figure>
 
