@@ -230,7 +230,7 @@ const BookInfo = () => {
             {matchPaid ? (
               <button
                 onClick={() => navigate("/myCollection")}
-                className="btn bg-violet-800 hover:bg-transparent hover:text-violet-900 hover:border-violet-900 w-full my-4"
+                className="btn bg-red-600 hover:bg-transparent hover:text-red-600 border-red-600 hover:border-red-600 w-full my-4"
               >
                 ALREADY PAID
               </button>
