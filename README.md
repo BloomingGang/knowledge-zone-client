@@ -1,70 +1,46 @@
-# Getting Started with Create React App
+### The name of Our project is "Knowledge Zone". It's an EdTech based website.
+## Server Site:  [Live link](https://knowledge-zone-2022.onrender.com/). 
 
-This project was tailwind with [Create React App](https://knowledge-zone-37325.web.app/?fbclid=IwAR1q8tzlTykBlaT_nPESjm9SxnUxE09Bhlx9m4_gNLhq3FK3oJadgFd4bKQ).
+### Project Main Features
 
-## Available Scripts
+#### There are different dashboard for admin and user.
 
-In the project directory, you can run:
+##### User Panel
+* User can login and register by email and password or google account.
+* If user forget password they can make a new password.
+* Registered user can see all available courses and books of our website.
+* User can search courses on our website.
+* User can buy courses and books from our website.
+* Chosen courses and books will be added in "My Order" page.
+* Bought courses and books will be stored in "My Collection" page. 
+* Stripe payment system is implemented here.
+* User can see their own profile and update profile.
+* User can give review to our website.
+* All users can see notifications of our website.
+* User can contact with us by email and messenger chatting. 
 
-### `npm start`
+##### Admin Panel
+* Admin can add, delete and update courses.
+* Admin can add, delete and update books.
+* Admin can add, delete and update instructors.
+* Admin can add, delete and update blogs.
+* Admin can see all users, delete users, make user as an admin.  
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Technology, Library and Packages that we use:
+* React
+* Redux
+* React-Redux
+* React Router Dom
+* Tailwind CSS
+* Daisy UI
+* AOS
+* Axios
+* React Query
+* React Hook Form
+* React Hot Toast
+* Firebase
+* React Firebase Hooks
+* Stripe (payment system)
+* React Messenger Customer Chat
+# knowledge_zone_client
